@@ -36,7 +36,7 @@ export const TrendingRadarBar: React.FC<TrendingRadarBarProps> = ({
               <button
                 key={item.id}
                 onClick={() => onTagClick && onTagClick(item.tag)}
-                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-200 border ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-200 border cursor-pointer hover:scale-105 active:scale-95 ${
                   isActive
                     ? 'bg-neon-pink text-white border-neon-pink shadow-neon-pink'
                     : 'bg-velvet/90 text-slate-300 hover:text-white border-slate-700/60 hover:border-neon-cyan/50 hover:bg-velvet-card'

@@ -10,6 +10,7 @@ import { QuickShareBar } from '@/components/signature/QuickShareBar';
 import { ReactionPollMini } from '@/components/signature/ReactionPollMini';
 import { CelebrityDossierWidget } from '@/components/signature/CelebrityDossierWidget';
 import { AdSlot } from '@/components/ads/AdSlot';
+import { ReadingProgressBar } from '@/components/article/ReadingProgressBar';
 import {
   Clock,
   Calendar,
@@ -133,6 +134,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
 
   return (
     <>
+      <ReadingProgressBar />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -314,7 +314,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 <Link
                   key={article.id}
                   href={`/artikel/${article.slug}`}
-                  className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-velvet-border bg-velvet shadow-card-glow hover:border-slate-600 transition-all duration-300"
+                  className="group card-hover-fx flex flex-col justify-between overflow-hidden rounded-2xl border border-velvet-border bg-velvet shadow-card-glow"
                 >
                   <div>
                     {/* Thumbnail */}
