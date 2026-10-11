@@ -5,6 +5,12 @@ interface Env {
 }
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
+  // 1. Pass through to pre-rendered static HTML if available in deployment assets
+  const response = await context.next();
+  if (response.status !== 404) {
+    return response;
+  }
+
   const { params, request } = context;
   const slug = (params.slug as string) || '';
 
@@ -133,6 +139,25 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
         <a href="/seleb" class="text-[#00F0FF] hover:underline font-mono">← Kembali ke Direktori Lengkap</a>
         <span class="text-slate-600">•</span>
         <a href="/hak-jawab" class="text-emerald-400 hover:underline font-mono">Ajukan Hak Jawab / Koreksi Profil</a>
+      </div>
+    </div>
+
+    <!-- Related Articles Grid -->
+    <div class="mt-8">
+      <h2 class="font-bold text-lg text-white mb-4 flex items-center gap-2">
+        <span>Arsip Liputan & Berita Terkait</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="/artikel/duduk-perkara-royalti-musik-musisi-vs-promotor-konser" class="p-4 rounded-2xl bg-[#121826] border border-slate-800 hover:border-[#FF2E93] transition-all block group">
+          <div class="text-[10px] font-mono text-[#00F0FF] mb-1">INVESTIGASI UTAMA</div>
+          <div class="font-bold text-white text-sm group-hover:text-[#FF2E93] transition-colors line-clamp-2">Duduk Perkara Polemik Royalti Musik 2026: Kronologi Lengkap & Jejak Digital Gugatan LMKN</div>
+          <div class="text-xs text-slate-500 mt-2 font-mono">11 Okt 2026 • 7 min baca</div>
+        </a>
+        <a href="/artikel/kronologi-lengkap-drama-live-tiktok-creator-fuji-an" class="p-4 rounded-2xl bg-[#121826] border border-slate-800 hover:border-[#FF2E93] transition-all block group">
+          <div class="text-[10px] font-mono text-[#FF2E93] mb-1">CREATOR & TIKTOK</div>
+          <div class="font-bold text-white text-sm group-hover:text-[#FF2E93] transition-colors line-clamp-2">Kupas Tuntas dari Jejak Digital: Alur Kronologi Klarifikasi Sesi Live TikTok Rp 1,2 Miliar</div>
+          <div class="text-xs text-slate-500 mt-2 font-mono">11 Okt 2026 • 3 min baca</div>
+        </a>
       </div>
     </div>
   </main>
