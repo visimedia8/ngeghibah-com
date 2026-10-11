@@ -1,8 +1,7 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { Clock, Layers } from 'lucide-react';
 import { MOCK_ARTICLES } from '@/data/mockData';
 import { ArticleCategory } from '@/types';
@@ -23,9 +22,16 @@ interface CategoryClientProps {
   >;
 }
 
-function CategoryContent({ slug, categoryInfo, categoryMap }: CategoryClientProps) {
-  const searchParams = useSearchParams();
-  const currentPage = Number(searchParams.get('page')) || 1;
+export function CategoryClient({ slug, categoryInfo, categoryMap }: CategoryClientProps) {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const p = Number(params.get('page')) || 1;
+      setCurrentPage(p);
+    }
+  }, []);
 
   const articles = MOCK_ARTICLES.filter((a) => a.category === categoryInfo.categoryKey);
   const pageSize = 6;
@@ -159,13 +165,5 @@ function CategoryContent({ slug, categoryInfo, categoryMap }: CategoryClientProp
         <AdSlot slotId="category-bottom-banner" format="banner" />
       </div>
     </>
-  );
-}
-
-export function CategoryClient(props: CategoryClientProps) {
-  return (
-    <Suspense fallback={<div className="py-12 text-center text-slate-500 font-mono text-xs">Memuat artikel kategori...</div>}>
-      <CategoryContent {...props} />
-    </Suspense>
   );
 }

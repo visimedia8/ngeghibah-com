@@ -247,7 +247,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               </h2>
             </div>
             <Link
-              href="/seleb/rachel-vennya"
+              href="/seleb"
               className="text-xs font-mono text-neon-cyan hover:underline flex items-center gap-1"
             >
               <span>Lihat Semua Direktori</span>
