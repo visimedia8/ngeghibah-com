@@ -12,6 +12,7 @@ import { CelebrityDossierWidget } from '@/components/signature/CelebrityDossierW
 import { AdSlot } from '@/components/ads/AdSlot';
 import { ReadingProgressBar } from '@/components/article/ReadingProgressBar';
 import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { SafeImage } from '@/components/ui/SafeImage';
 import { linkifyCelebritiesInHtml } from '@/lib/linkify';
 import {
   Clock,
@@ -203,11 +204,12 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                 <div className="flex items-center justify-between gap-4 py-3 border-y border-slate-800">
                   <div className="flex items-center gap-3">
                     <div className="relative w-10 h-10 rounded-full overflow-hidden border border-neon-cyan">
-                      <Image
-                        src={getOptimizedImageUrl(article.author.avatar, 80, 75)}
+                      <SafeImage
+                        src={article.author.avatar}
                         alt={article.author.name}
+                        type="avatar"
+                        optimizedWidth={80}
                         fill
-                        sizes="40px"
                         className="object-cover"
                       />
                     </div>
@@ -244,12 +246,13 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
               {/* 3. Hero Image 1200x628 (16:9) with priority for Core Web Vitals LCP */}
               <div className="space-y-2">
                 <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-slate-900 border border-velvet-border shadow-card-glow">
-                  <Image
-                    src={getOptimizedImageUrl(article.heroImage, 800, 75)}
+                  <SafeImage
+                    src={article.heroImage}
                     alt={article.title}
+                    category={article.category}
+                    optimizedWidth={800}
                     fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 800px"
+                    loading="eager"
                     className="object-cover"
                   />
                 </div>

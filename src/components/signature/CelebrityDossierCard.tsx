@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Celebrity } from '@/types';
 import { ExternalLink, Users, ShieldAlert, Award, Sparkles } from 'lucide-react';
-import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { SafeImage } from '@/components/ui/SafeImage';
 
 interface CelebrityDossierCardProps {
   celebrity: Celebrity;
@@ -32,11 +31,12 @@ export const CelebrityDossierCard: React.FC<CelebrityDossierCardProps> = ({
       {/* Avatar & Header */}
       <div className="flex items-center gap-4 mb-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-neon-pink/80 shadow-neon-pink">
-          <Image
-            src={getOptimizedImageUrl(celebrity.avatar, 128, 75)}
+          <SafeImage
+            src={celebrity.avatar}
             alt={celebrity.stageName}
+            type="avatar"
+            optimizedWidth={128}
             fill
-            sizes="64px"
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>

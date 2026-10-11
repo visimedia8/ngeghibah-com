@@ -122,5 +122,10 @@ export async function fetchCelebrityRealPhoto(
     // Failed all public providers
   }
 
-  return null;
+  return {
+    sourceUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80',
+    source: 'fallback',
+    license: 'Editorial Default Placeholder',
+  };
 }

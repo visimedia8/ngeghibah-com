@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Celebrity } from '@/types';
 import { ExternalLink, UserCheck, HeartHandshake, Briefcase, ChevronRight } from 'lucide-react';
-import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { SafeImage } from '@/components/ui/SafeImage';
 
 interface CelebrityDossierWidgetProps {
   celebrity: Celebrity;
@@ -30,11 +29,12 @@ export const CelebrityDossierWidget: React.FC<CelebrityDossierWidgetProps> = ({
 
       <div className="flex items-center gap-3.5 mb-4">
         <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-neon-cyan shadow-neon-cyan">
-          <Image
-            src={getOptimizedImageUrl(celebrity.avatar, 128, 75)}
+          <SafeImage
+            src={celebrity.avatar}
             alt={celebrity.stageName}
+            type="avatar"
+            optimizedWidth={128}
             fill
-            sizes="56px"
             className="object-cover"
           />
         </div>

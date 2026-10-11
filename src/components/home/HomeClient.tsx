@@ -9,6 +9,7 @@ import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { CelebrityDossierCard } from '@/components/signature/CelebrityDossierCard';
 import { AdSlot } from '@/components/ads/AdSlot';
 import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { SafeImage } from '@/components/ui/SafeImage';
 import {
   Flame,
   Clock,
@@ -133,12 +134,12 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               >
                 {/* Hero Image */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
-                  <Image
-                    src={getOptimizedImageUrl(heroArticle.heroImage, 480, 70)}
+                  <SafeImage
+                    src={heroArticle.heroImage}
                     alt={heroArticle.title}
+                    category={heroArticle.category}
+                    optimizedWidth={800}
                     fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 800px"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
@@ -171,11 +172,12 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                   <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
                     <div className="flex items-center gap-3">
                       <div className="relative w-7 h-7 rounded-full overflow-hidden border border-neon-cyan">
-                        <Image
-                          src={getOptimizedImageUrl(heroArticle.author.avatar, 64, 75)}
+                        <SafeImage
+                          src={heroArticle.author.avatar}
                           alt={heroArticle.author.name}
+                          type="avatar"
+                          optimizedWidth={64}
                           fill
-                          sizes="28px"
                           className="object-cover"
                         />
                       </div>
@@ -324,11 +326,12 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                   <div>
                     {/* Thumbnail */}
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
-                      <Image
-                        src={getOptimizedImageUrl(article.heroImage, 480, 70)}
+                      <SafeImage
+                        src={article.heroImage}
                         alt={article.title}
+                        category={article.category}
+                        optimizedWidth={480}
                         fill
-                        sizes="(max-width: 768px) 100vw, 400px"
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute top-3 left-3 right-3 flex items-center justify-between">

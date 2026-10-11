@@ -8,6 +8,7 @@ import { ArticleCategory } from '@/types';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { Pagination } from '@/components/layout/Pagination';
 import { AdSlot } from '@/components/ads/AdSlot';
+import { SafeImage } from '@/components/ui/SafeImage';
 
 interface CategoryClientProps {
   slug: string;
@@ -92,9 +93,11 @@ export function CategoryClient({ slug, categoryInfo, categoryMap }: CategoryClie
               className="group rounded-3xl bg-velvet/60 border border-slate-800 hover:border-neon-pink/50 overflow-hidden transition-all duration-300 flex flex-col hover:shadow-2xl hover:shadow-neon-pink/5"
             >
               <Link href={`/artikel/${art.slug}`} className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900 block">
-                <img
+                <SafeImage
                   src={art.heroImage}
                   alt={art.title}
+                  category={art.category}
+                  optimizedWidth={600}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -127,9 +130,11 @@ export function CategoryClient({ slug, categoryInfo, categoryMap }: CategoryClie
 
                 <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-500">
                   <div className="flex items-center gap-2">
-                    <img
+                    <SafeImage
                       src={art.author.avatar}
                       alt={art.author.name}
+                      type="avatar"
+                      optimizedWidth={64}
                       className="w-5 h-5 rounded-full object-cover ring-1 ring-slate-700"
                     />
                     <span className="truncate max-w-[120px] text-slate-400">{art.author.name}</span>

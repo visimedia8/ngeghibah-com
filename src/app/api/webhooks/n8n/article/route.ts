@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
+import { getFallbackImageUrl } from '@/lib/imageUtils';
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,6 +19,11 @@ export async function POST(req: NextRequest) {
         { error: 'Payload tidak lengkap: title, slug, dan content_html wajib ada' },
         { status: 400 }
       );
+    }
+
+    // Defensive fallback: ensure heroImage is always present and valid for future articles
+    if (!payload.heroImage && !payload.hero_image) {
+      payload.heroImage = getFallbackImageUrl(payload.category, 'article');
     }
 
     // In production with DB:

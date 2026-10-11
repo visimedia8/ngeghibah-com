@@ -23,6 +23,7 @@ import { MOCK_CELEBRITIES, MOCK_ARTICLES } from '@/data/mockData';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { AdSlot } from '@/components/ads/AdSlot';
 import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { SafeImage } from '@/components/ui/SafeImage';
 
 interface CelebPageProps {
   params: {
@@ -143,9 +144,11 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
         <header className="rounded-3xl bg-velvet/80 border border-slate-800 overflow-hidden shadow-2xl relative mb-10">
           {/* Cover Banner */}
           <div className="h-44 sm:h-64 w-full relative overflow-hidden bg-slate-900">
-            <img
-              src={getOptimizedImageUrl(celeb.bannerImage, 900, 75)}
+            <SafeImage
+              src={celeb.bannerImage}
               alt={celeb.stageName}
+              type="banner"
+              optimizedWidth={1200}
               className="w-full h-full object-cover"
               loading="eager"
             />
@@ -156,9 +159,11 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
             <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6 sm:gap-8">
               {/* Avatar Circle */}
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shrink-0 border-4 border-obsidian-deep shadow-2xl ring-2 ring-neon-pink">
-                <img
-                  src={getOptimizedImageUrl(celeb.avatar, 256, 75)}
+                <SafeImage
+                  src={celeb.avatar}
                   alt={celeb.stageName}
+                  type="avatar"
+                  optimizedWidth={256}
                   className="w-full h-full object-cover"
                   loading="eager"
                 />
@@ -613,9 +618,11 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
                   href={`/artikel/${art.slug}`}
                   className="p-4 rounded-2xl bg-velvet border border-slate-800 hover:border-neon-pink transition-all flex gap-4 group"
                 >
-                  <img
+                  <SafeImage
                     src={art.heroImage}
                     alt={art.title}
+                    category={art.category}
+                    optimizedWidth={200}
                     className="w-24 h-24 rounded-xl object-cover shrink-0 group-hover:scale-105 transition-transform"
                   />
                   <div className="flex flex-col justify-between min-w-0">
