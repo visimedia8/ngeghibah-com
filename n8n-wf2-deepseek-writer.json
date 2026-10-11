@@ -1,0 +1,137 @@
+{
+  "name": "NGEGHIBAH-02-SYNTHESIS-WRITER",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ngeghibah-writer",
+        "responseMode": "onReceived",
+        "responseData": "allEntries",
+        "options": {}
+      },
+      "id": "1",
+      "name": "Webhook Ingest (From WF 1)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first().json.body || $input.first().json;\n\n// Context Expansion check\nconst isShort = (item.content || '').length < 150;\nitem.expansion_instruction = isShort \n  ? 'Sumber sangat ringkas. Wajib lakukan rekonstruksi konteks sejarah artis bersangkutan, latar belakang perselisihan masa lalu, dan uraikan spektrum sentimen warganet secara kaya minimal 1000 kata.'\n  : 'Kembangkan narasi kronologi berimbang berdasarkan fakta sumber.';\n\nreturn [{ json: item }];"
+      },
+      "id": "2",
+      "name": "Context Expansion Pre-Check",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.OPENROUTER_API_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di media independen NgeGhibah.com. Tugasmu menulis artikel komprehensif (minimal 1000 kata), berbasis fakta dan jejak digital, menggunakan bahasa Indonesia santai tapi cerdas, analitis, tanpa clickbait murahan. Wajib gunakan kata: duduk perkaranya, kronologi lengkap, jejak digital, sentimen netizen, verifikasi fakta. HINDARI: bikin melongo, syok berat, tak disangka-sangka. Kembalikan HANYA JSON valid dengan properti: title, slug, meta_description, excerpt, category (seleb-lokal | hollywood-barat | kpop-asia | creator-tiktok), ghibah_meter (FAKTA_TERVERIFIKASI | JEJAK_DIGITAL | DALAM_INVESTIGASI | RUMOR_NETIZEN), entities (array of string nama seleb), timeline (array of {time_label, event}), caricature_event_prompt (deskripsi singkat visual kartun satir 1 kalimat), content_html (artikel berstruktur h2, h3, p, ul). Sertakan klausul hak jawab di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Judul Sumber: \" + $json.title + \"\\nKonteks: \" + $json.content + \"\\nInstruksi Tambahan: \" + $json.expansion_instruction\n    }\n  ],\n  \"temperature\": 0.7\n}"
+      },
+      "id": "3",
+      "name": "OpenRouter DeepSeek v4 Flash Writer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json;\nconst contentString = raw.choices[0].message.content;\nconst articleData = JSON.parse(contentString);\n\nif (!articleData.slug) {\n  articleData.slug = articleData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');\n}\n\narticleData.published_at = new Date().toISOString();\n\n// Siapkan parameter generate karikatur Cloudflare Workers AI\nconst mainEntity = (articleData.entities && articleData.entities.length > 0) ? articleData.entities[0] : 'Indonesian celebrity';\narticleData.caricature_payload = {\n  celebrity: mainEntity,\n  event: articleData.caricature_event_prompt || articleData.title\n};\n\nreturn [{ json: articleData }];"
+      },
+      "id": "4",
+      "name": "Parse & Validate JSON Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://ngeghibah-com.pages.dev/api/ai/caricature",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.caricature_payload) }}"
+      },
+      "id": "5",
+      "name": "Generate Caricature Prompt via Cloudflare AI",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1160, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.N8N_DISPATCH_WEBHOOK_URL || 'http://localhost:5678/webhook/ngeghibah-dispatch' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($('Parse & Validate JSON Output').first().json) }}"
+      },
+      "id": "6",
+      "name": "Forward to Dispatch Workflow (WF 3)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1400, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Ingest (From WF 1)": {
+      "main": [[{ "node": "Context Expansion Pre-Check", "type": "main", "index": 0 }]]
+    },
+    "Context Expansion Pre-Check": {
+      "main": [[{ "node": "OpenRouter DeepSeek v4 Flash Writer", "type": "main", "index": 0 }]]
+    },
+    "OpenRouter DeepSeek v4 Flash Writer": {
+      "main": [[{ "node": "Parse & Validate JSON Output", "type": "main", "index": 0 }]]
+    },
+    "Parse & Validate JSON Output": {
+      "main": [
+        [{ "node": "Generate Caricature Prompt via Cloudflare AI", "type": "main", "index": 0 }],
+        [{ "node": "Forward to Dispatch Workflow (WF 3)", "type": "main", "index": 0 }]
+      ]
+    }
+  }
+}

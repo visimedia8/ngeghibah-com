@@ -1,0 +1,125 @@
+{
+  "name": "NGEGHIBAH-03-TELEGRAM-DISPATCH",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ngeghibah-dispatch",
+        "responseMode": "onReceived",
+        "responseData": "allEntries",
+        "options": {}
+      },
+      "id": "1",
+      "name": "Webhook Ingest (From WF 2)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const article = $input.first().json.body || $input.first().json;\n\n// Format Telegram Preview Card\nconst isAutoPilot = process.env.NGEGHIBAH_AUTOPILOT === 'true';\n\nconst telegramMessage = `🚨 *DRAF BARU NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${article.title}\\n` +\n  `🎯 *Kategori:* #${article.category}\\n` +\n  `⚖️ *Ghibah Meter:* ${article.ghibah_meter}\\n\\n` +\n  `📝 *Ringkasan:*\\n${article.excerpt}\\n\\n` +\n  `🔗 *Slug Target:* /artikel/${article.slug}\\n` +\n  `⚡ *Mode:* ${isAutoPilot ? 'AUTOPILOT (Langsung Tayang)' : 'HITL (Menunggu Approval)'}`;\n\nreturn [{\n  json: {\n    ...article,\n    telegramMessage,\n    isAutoPilot\n  }\n}];"
+      },
+      "id": "2",
+      "name": "Prepare Telegram & Dispatch Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.isAutoPilot }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "3",
+      "name": "Check Auto-Pilot Flag",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.telegram.org/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"chat_id\": \"{{ $env.TELEGRAM_CHAT_ID }}\",\n  \"text\": $json.telegramMessage,\n  \"parse_mode\": \"Markdown\"\n}"
+      },
+      "id": "4",
+      "name": "Send Alert to Telegram (HITL Review)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [920, 180]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NGEGHIBAH_WEBHOOK_URL || 'https://ngeghibah-com.pages.dev/api/webhooks/n8n/article' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"title\": $json.title,\n  \"slug\": $json.slug,\n  \"meta_description\": $json.meta_description,\n  \"excerpt\": $json.excerpt,\n  \"category\": $json.category,\n  \"ghibah_meter\": $json.ghibah_meter,\n  \"entities\": $json.entities || [],\n  \"timeline\": $json.timeline || [],\n  \"content_html\": $json.content_html,\n  \"status\": \"published\"\n}"
+      },
+      "id": "5",
+      "name": "Publish to NgeGhibah Edge",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [920, 420]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.CLOUDFLARE_DEPLOY_HOOK_URL || 'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/dummy' }}",
+        "options": {}
+      },
+      "id": "6",
+      "name": "Trigger Cloudflare Pages Deploy Hook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1160, 420]
+    }
+  ],
+  "connections": {
+    "Webhook Ingest (From WF 2)": {
+      "main": [[{ "node": "Prepare Telegram & Dispatch Payload", "type": "main", "index": 0 }]]
+    },
+    "Prepare Telegram & Dispatch Payload": {
+      "main": [[{ "node": "Check Auto-Pilot Flag", "type": "main", "index": 0 }]]
+    },
+    "Check Auto-Pilot Flag": {
+      "main": [
+        [{ "node": "Publish to NgeGhibah Edge", "type": "main", "index": 0 }],
+        [{ "node": "Send Alert to Telegram (HITL Review)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Publish to NgeGhibah Edge": {
+      "main": [[{ "node": "Trigger Cloudflare Pages Deploy Hook", "type": "main", "index": 0 }]]
+    }
+  }
+}
