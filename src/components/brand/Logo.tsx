@@ -16,27 +16,27 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   const iconSizes = {
     sm: 'w-7 h-7 rounded-lg',
-    md: 'w-9 h-9 rounded-xl',
-    lg: 'w-12 h-12 rounded-2xl',
+    md: 'w-8 h-8 sm:w-9 sm:h-9 rounded-xl',
+    lg: 'w-10 h-10 sm:w-12 sm:h-12 rounded-2xl',
   }[size];
 
   const textSizes = {
-    sm: 'text-lg',
-    md: 'text-xl sm:text-2xl',
+    sm: 'text-base sm:text-lg',
+    md: 'text-lg sm:text-2xl',
     lg: 'text-2xl sm:text-3xl',
   }[size];
 
   const domainSizes = {
-    sm: 'text-xs',
-    md: 'text-sm sm:text-base',
+    sm: 'text-[11px] sm:text-xs',
+    md: 'text-xs sm:text-base',
     lg: 'text-base sm:text-lg',
   }[size];
 
   return (
-    <Link href="/" className={`inline-flex items-center gap-2.5 group ${className}`}>
+    <Link href="/" className={`inline-flex items-center gap-2 sm:gap-2.5 group select-none shrink-0 ${className}`}>
       {/* Monogram Icon Mark */}
       <div
-        className={`${iconSizes} relative shrink-0 overflow-hidden bg-gradient-to-tr from-velvet to-obsidian border border-slate-700/80 group-hover:border-neon-pink/70 transition-all duration-300 shadow-neon-pink flex items-center justify-center p-1.5`}
+        className={`${iconSizes} relative shrink-0 overflow-hidden bg-gradient-to-tr from-velvet to-obsidian border border-slate-700/80 group-hover:border-neon-pink/70 transition-all duration-300 shadow-neon-pink flex items-center justify-center p-1 sm:p-1.5`}
       >
         <svg
           viewBox="0 0 512 512"
@@ -77,9 +77,9 @@ export const Logo: React.FC<LogoProps> = ({
 
       {/* Typography Part */}
       {variant !== 'icon' && (
-        <div className="flex flex-col">
+        <div className="flex flex-col shrink-0">
           <div
-            className={`font-display font-black tracking-tight leading-none ${textSizes}`}
+            className={`font-display font-black tracking-tight leading-none whitespace-nowrap ${textSizes}`}
           >
             <span className="text-white">Nge</span>
             <span className="text-neon-pink group-hover:text-[#ff4fa5] transition-colors">
@@ -89,7 +89,7 @@ export const Logo: React.FC<LogoProps> = ({
           </div>
 
           {showTagline && variant === 'full' && (
-            <span className="text-[9px] font-mono tracking-widest text-slate-400 uppercase hidden sm:block mt-0.5">
+            <span className="text-[9px] font-mono tracking-widest text-slate-400 uppercase hidden sm:block mt-0.5 whitespace-nowrap">
               KRONOLOGI &amp; VERIFIKASI
             </span>
           )}

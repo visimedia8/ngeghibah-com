@@ -1,0 +1,6 @@
+name = "ngeghibah-com"
+compatibility_date = "2026-10-11"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare Pages static output directory
+pages_build_output_dir = "out"

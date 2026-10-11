@@ -115,8 +115,11 @@ export const Navbar = () => {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-obsidian-deep/95 border-b border-velvet-border px-4 py-4 space-y-2 backdrop-blur-2xl animate-fadeIn">
-            <div className="text-xs font-mono uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-800">
-              Navigasi Pop-Kultur
+            <div className="flex items-center justify-between pb-2 mb-1 border-b border-slate-800">
+              <Logo variant="compact" size="sm" />
+              <span className="text-[10px] font-mono uppercase tracking-wider text-neon-pink bg-neon-pink/10 border border-neon-pink/30 px-2 py-0.5 rounded-full font-semibold">
+                EDISI MOBILE
+              </span>
             </div>
             {navLinks.map((link) => (
               <Link
