@@ -134,7 +134,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 {/* Hero Image */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
                   <Image
-                    src={getOptimizedImageUrl(heroArticle.heroImage, 640, 75)}
+                    src={getOptimizedImageUrl(heroArticle.heroImage, 480, 70)}
                     alt={heroArticle.title}
                     fill
                     priority
@@ -325,7 +325,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                     {/* Thumbnail */}
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
                       <Image
-                        src={getOptimizedImageUrl(article.heroImage, 600, 75)}
+                        src={getOptimizedImageUrl(article.heroImage, 480, 70)}
                         alt={article.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 400px"

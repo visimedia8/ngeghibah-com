@@ -6,8 +6,8 @@
 
 export function getOptimizedImageUrl(
   url: string,
-  width: number = 640,
-  quality: number = 75
+  width: number = 480,
+  quality: number = 70
 ): string {
   if (!url) return '';
 
