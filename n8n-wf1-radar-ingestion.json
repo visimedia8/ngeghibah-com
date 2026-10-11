@@ -1,115 +1,181 @@
-{
-  "name": "NGEGHIBAH-01-RADAR-INGESTION",
-  "nodes": [
-    {
-      "parameters": {
-        "rule": {
-          "interval": [
+[
+  {
+    "name": "NGEGHIBAH-01-RADAR-INGESTION",
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "minutes",
+                "minutesInterval": 30
+              }
+            ]
+          }
+        },
+        "id": "1",
+        "name": "Schedule Trigger (Setiap 30 Menit)",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          200,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://www.reddit.com/r/Fauxmoi/hot.json?limit=10",
+          "options": {}
+        },
+        "id": "2",
+        "name": "Fetch Reddit Fauxmoi (Pop Global)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          440,
+          180
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://www.reddit.com/r/indonesia/search.json?q=artis+OR+seleb+OR+drama&sort=new&limit=10",
+          "options": {}
+        },
+        "id": "3",
+        "name": "Fetch Reddit Indonesia (Drama Lokal)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          440,
+          340
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://koreaboo.com/feed/",
+          "options": {}
+        },
+        "id": "4",
+        "name": "Fetch K-Pop Feeds (Pann/theqoo Netizen)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          440,
+          500
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const items = [];\n\n// Process Reddit Fauxmoi\ntry {\n  const fauxmoi = $('Fetch Reddit Fauxmoi (Pop Global)').first().json;\n  if (fauxmoi?.data?.children) {\n    for (const post of fauxmoi.data.children) {\n      if (post.data.score >= 150 && !post.data.over_18) {\n        items.push({\n          source: 'reddit-fauxmoi',\n          source_id: post.data.id,\n          title: post.data.title,\n          content: post.data.selftext || post.data.title,\n          url: 'https://reddit.com' + post.data.permalink,\n          category: 'hollywood-barat',\n          score: post.data.score\n        });\n      }\n    }\n  }\n} catch (e) {}\n\n// Process Reddit Indo\ntry {\n  const indo = $('Fetch Reddit Indonesia (Drama Lokal)').first().json;\n  if (indo?.data?.children) {\n    for (const post of indo.data.children) {\n      if (post.data.score >= 50 && !post.data.over_18) {\n        items.push({\n          source: 'reddit-indonesia',\n          source_id: post.data.id,\n          title: post.data.title,\n          content: post.data.selftext || post.data.title,\n          url: 'https://reddit.com' + post.data.permalink,\n          category: 'seleb-lokal',\n          score: post.data.score\n        });\n      }\n    }\n  }\n} catch (e) {}\n\n// Safety Pre-Filter & Anti-Duplication Signature\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// Add Entity-Event Signature\nsafeItems.forEach(item => {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');\n  item.event_signature = cleanTitle.slice(0, 32);\n});\n\nreturn safeItems.slice(0, 3).map(item => ({ json: item }));"
+        },
+        "id": "5",
+        "name": "Normalize, Deduplicate & Safety Filter",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          700,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ $env.N8N_WRITER_WEBHOOK_URL || 'http://localhost:5678/webhook/ngeghibah-writer' }}",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "name": "Authorization",
+                "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify($json) }}"
+        },
+        "id": "6",
+        "name": "Dispatch to Writer Workflow (WF 2)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          960,
+          300
+        ]
+      }
+    ],
+    "connections": {
+      "Schedule Trigger (Setiap 30 Menit)": {
+        "main": [
+          [
             {
-              "field": "minutes",
-              "minutesInterval": 30
-            }
-          ]
-        }
-      },
-      "id": "1",
-      "name": "Schedule Trigger (Setiap 30 Menit)",
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1.2,
-      "position": [200, 300]
-    },
-    {
-      "parameters": {
-        "url": "https://www.reddit.com/r/Fauxmoi/hot.json?limit=10",
-        "options": {}
-      },
-      "id": "2",
-      "name": "Fetch Reddit Fauxmoi (Pop Global)",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [440, 180]
-    },
-    {
-      "parameters": {
-        "url": "https://www.reddit.com/r/indonesia/search.json?q=artis+OR+seleb+OR+drama&sort=new&limit=10",
-        "options": {}
-      },
-      "id": "3",
-      "name": "Fetch Reddit Indonesia (Drama Lokal)",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [440, 340]
-    },
-    {
-      "parameters": {
-        "url": "https://koreaboo.com/feed/",
-        "options": {}
-      },
-      "id": "4",
-      "name": "Fetch K-Pop Feeds (Pann/theqoo Netizen)",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [440, 500]
-    },
-    {
-      "parameters": {
-        "jsCode": "const items = [];\n\n// Process Reddit Fauxmoi\ntry {\n  const fauxmoi = $('Fetch Reddit Fauxmoi (Pop Global)').first().json;\n  if (fauxmoi?.data?.children) {\n    for (const post of fauxmoi.data.children) {\n      if (post.data.score >= 150 && !post.data.over_18) {\n        items.push({\n          source: 'reddit-fauxmoi',\n          source_id: post.data.id,\n          title: post.data.title,\n          content: post.data.selftext || post.data.title,\n          url: 'https://reddit.com' + post.data.permalink,\n          category: 'hollywood-barat',\n          score: post.data.score\n        });\n      }\n    }\n  }\n} catch (e) {}\n\n// Process Reddit Indo\ntry {\n  const indo = $('Fetch Reddit Indonesia (Drama Lokal)').first().json;\n  if (indo?.data?.children) {\n    for (const post of indo.data.children) {\n      if (post.data.score >= 50 && !post.data.over_18) {\n        items.push({\n          source: 'reddit-indonesia',\n          source_id: post.data.id,\n          title: post.data.title,\n          content: post.data.selftext || post.data.title,\n          url: 'https://reddit.com' + post.data.permalink,\n          category: 'seleb-lokal',\n          score: post.data.score\n        });\n      }\n    }\n  }\n} catch (e) {}\n\n// Safety Pre-Filter & Anti-Duplication Signature\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// Add Entity-Event Signature\nsafeItems.forEach(item => {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');\n  item.event_signature = cleanTitle.slice(0, 32);\n});\n\nreturn safeItems.slice(0, 3).map(item => ({ json: item }));"
-      },
-      "id": "5",
-      "name": "Normalize, Deduplicate & Safety Filter",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [700, 300]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "={{ $env.N8N_WRITER_WEBHOOK_URL || 'http://localhost:5678/webhook/ngeghibah-writer' }}",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "Content-Type",
-              "value": "application/json"
+              "node": "Fetch Reddit Fauxmoi (Pop Global)",
+              "type": "main",
+              "index": 0
             },
             {
-              "name": "Authorization",
-              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
+              "node": "Fetch Reddit Indonesia (Drama Lokal)",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Fetch K-Pop Feeds (Pann/theqoo Netizen)",
+              "type": "main",
+              "index": 0
             }
           ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify($json) }}"
-      },
-      "id": "6",
-      "name": "Dispatch to Writer Workflow (WF 2)",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [960, 300]
-    }
-  ],
-  "connections": {
-    "Schedule Trigger (Setiap 30 Menit)": {
-      "main": [
-        [
-          { "node": "Fetch Reddit Fauxmoi (Pop Global)", "type": "main", "index": 0 },
-          { "node": "Fetch Reddit Indonesia (Drama Lokal)", "type": "main", "index": 0 },
-          { "node": "Fetch K-Pop Feeds (Pann/theqoo Netizen)", "type": "main", "index": 0 }
         ]
-      ]
+      },
+      "Fetch Reddit Fauxmoi (Pop Global)": {
+        "main": [
+          [
+            {
+              "node": "Normalize, Deduplicate & Safety Filter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Fetch Reddit Indonesia (Drama Lokal)": {
+        "main": [
+          [
+            {
+              "node": "Normalize, Deduplicate & Safety Filter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Fetch K-Pop Feeds (Pann/theqoo Netizen)": {
+        "main": [
+          [
+            {
+              "node": "Normalize, Deduplicate & Safety Filter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Normalize, Deduplicate & Safety Filter": {
+        "main": [
+          [
+            {
+              "node": "Dispatch to Writer Workflow (WF 2)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
     },
-    "Fetch Reddit Fauxmoi (Pop Global)": {
-      "main": [[{ "node": "Normalize, Deduplicate & Safety Filter", "type": "main", "index": 0 }]]
-    },
-    "Fetch Reddit Indonesia (Drama Lokal)": {
-      "main": [[{ "node": "Normalize, Deduplicate & Safety Filter", "type": "main", "index": 0 }]]
-    },
-    "Fetch K-Pop Feeds (Pann/theqoo Netizen)": {
-      "main": [[{ "node": "Normalize, Deduplicate & Safety Filter", "type": "main", "index": 0 }]]
-    },
-    "Normalize, Deduplicate & Safety Filter": {
-      "main": [[{ "node": "Dispatch to Writer Workflow (WF 2)", "type": "main", "index": 0 }]]
-    }
+    "id": "NgeGhibahWF01",
+    "active": true
   }
-}
+]

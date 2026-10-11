@@ -1,105 +1,156 @@
-{
-  "name": "NGEGHIBAH-03-TELEGRAM-DISPATCH",
-  "nodes": [
-    {
-      "parameters": {
-        "httpMethod": "POST",
-        "path": "ngeghibah-dispatch",
-        "responseMode": "onReceived",
-        "responseData": "allEntries",
-        "options": {}
+[
+  {
+    "name": "NGEGHIBAH-03-TELEGRAM-DISPATCH",
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "ngeghibah-dispatch",
+          "responseMode": "onReceived",
+          "responseData": "allEntries",
+          "options": {}
+        },
+        "id": "1",
+        "name": "Webhook Ingest (From WF 2)",
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2,
+        "position": [
+          200,
+          300
+        ]
       },
-      "id": "1",
-      "name": "Webhook Ingest (From WF 2)",
-      "type": "n8n-nodes-base.webhook",
-      "typeVersion": 2,
-      "position": [200, 300]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "={{ $env.NGEGHIBAH_WEBHOOK_URL || 'https://ngeghibah-com.pages.dev/api/webhooks/n8n/article' }}",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://ngeghibah-com.pages.dev/api/webhooks/n8n/article",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Authorization",
+                "value": "Bearer ngeghibah-super-secret-key-2026"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={\n  \"title\": $json.title,\n  \"slug\": $json.slug,\n  \"meta_description\": $json.meta_description,\n  \"excerpt\": $json.excerpt,\n  \"category\": $json.category,\n  \"ghibah_meter\": $json.ghibah_meter,\n  \"entities\": $json.entities || [],\n  \"timeline\": $json.timeline || [],\n  \"content_html\": $json.content_html,\n  \"status\": \"published\"\n}"
+        },
+        "id": "2",
+        "name": "Auto-Publish to NgeGhibah Edge",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          440,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ $env.CLOUDFLARE_DEPLOY_HOOK_URL || 'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/dummy' }}",
+          "options": {}
+        },
+        "id": "3",
+        "name": "Trigger Cloudflare Pages Deploy Hook",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          680,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const article = $('Auto-Publish to NgeGhibah Edge').first().json;\nconst title = $input.first().json.title || 'Artikel Baru';\nconst slug = $input.first().json.slug || '';\nconst meter = $input.first().json.ghibah_meter || 'TERVERIFIKASI';\nconst category = $input.first().json.category || 'seleb-lokal';\n\nconst telegramMessage = `🚀 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${title}\\n` +\n  `🎯 *Kategori:* #${category}\\n` +\n  `⚖️ *Ghibah Meter:* ${meter}\\n\\n` +\n  `🔗 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `⚡ *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage } }];"
+        },
+        "id": "4",
+        "name": "Format Live Telemetry Log",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          920,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.telegram.org/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={\n  \"chat_id\": \"{{ $env.TELEGRAM_CHAT_ID }}\",\n  \"text\": $json.telegramMessage,\n  \"parse_mode\": \"Markdown\"\n}"
+        },
+        "id": "5",
+        "name": "Send Live Broadcast to Telegram",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1160,
+          300
+        ]
+      }
+    ],
+    "connections": {
+      "Webhook Ingest (From WF 2)": {
+        "main": [
+          [
             {
-              "name": "Authorization",
-              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET || 'ngeghibah_prod_secret_89f02a' }}"
-            },
-            {
-              "name": "Content-Type",
-              "value": "application/json"
+              "node": "Auto-Publish to NgeGhibah Edge",
+              "type": "main",
+              "index": 0
             }
           ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n  \"title\": $json.title,\n  \"slug\": $json.slug,\n  \"meta_description\": $json.meta_description,\n  \"excerpt\": $json.excerpt,\n  \"category\": $json.category,\n  \"ghibah_meter\": $json.ghibah_meter,\n  \"entities\": $json.entities || [],\n  \"timeline\": $json.timeline || [],\n  \"content_html\": $json.content_html,\n  \"status\": \"published\"\n}"
+        ]
       },
-      "id": "2",
-      "name": "Auto-Publish to NgeGhibah Edge",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [440, 300]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "={{ $env.CLOUDFLARE_DEPLOY_HOOK_URL || 'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/dummy' }}",
-        "options": {}
-      },
-      "id": "3",
-      "name": "Trigger Cloudflare Pages Deploy Hook",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [680, 300]
-    },
-    {
-      "parameters": {
-        "jsCode": "const article = $('Auto-Publish to NgeGhibah Edge').first().json;\nconst title = $input.first().json.title || 'Artikel Baru';\nconst slug = $input.first().json.slug || '';\nconst meter = $input.first().json.ghibah_meter || 'TERVERIFIKASI';\nconst category = $input.first().json.category || 'seleb-lokal';\n\nconst telegramMessage = `🚀 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${title}\\n` +\n  `🎯 *Kategori:* #${category}\\n` +\n  `⚖️ *Ghibah Meter:* ${meter}\\n\\n` +\n  `🔗 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `⚡ *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage } }];"
-      },
-      "id": "4",
-      "name": "Format Live Telemetry Log",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [920, 300]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "https://api.telegram.org/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
+      "Auto-Publish to NgeGhibah Edge": {
+        "main": [
+          [
             {
-              "name": "Content-Type",
-              "value": "application/json"
+              "node": "Trigger Cloudflare Pages Deploy Hook",
+              "type": "main",
+              "index": 0
             }
           ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n  \"chat_id\": \"{{ $env.TELEGRAM_CHAT_ID }}\",\n  \"text\": $json.telegramMessage,\n  \"parse_mode\": \"Markdown\"\n}"
+        ]
       },
-      "id": "5",
-      "name": "Send Live Broadcast to Telegram",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [1160, 300]
-    }
-  ],
-  "connections": {
-    "Webhook Ingest (From WF 2)": {
-      "main": [[{ "node": "Auto-Publish to NgeGhibah Edge", "type": "main", "index": 0 }]]
+      "Trigger Cloudflare Pages Deploy Hook": {
+        "main": [
+          [
+            {
+              "node": "Format Live Telemetry Log",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Format Live Telemetry Log": {
+        "main": [
+          [
+            {
+              "node": "Send Live Broadcast to Telegram",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
     },
-    "Auto-Publish to NgeGhibah Edge": {
-      "main": [[{ "node": "Trigger Cloudflare Pages Deploy Hook", "type": "main", "index": 0 }]]
-    },
-    "Trigger Cloudflare Pages Deploy Hook": {
-      "main": [[{ "node": "Format Live Telemetry Log", "type": "main", "index": 0 }]]
-    },
-    "Format Live Telemetry Log": {
-      "main": [[{ "node": "Send Live Broadcast to Telegram", "type": "main", "index": 0 }]]
-    }
+    "id": "NgeGhibahWF03",
+    "active": true
   }
-}
+]
