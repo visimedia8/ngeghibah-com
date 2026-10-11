@@ -17,7 +17,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const item = $input.first().json.body || $input.first().json;\n\n// Context Expansion check\nconst isShort = (item.content || '').length < 150;\nitem.expansion_instruction = isShort \n  ? 'Sumber sangat ringkas. Wajib lakukan rekonstruksi konteks sejarah artis bersangkutan, latar belakang perselisihan masa lalu, dan uraikan spektrum sentimen warganet secara kaya minimal 1000 kata.'\n  : 'Kembangkan narasi kronologi berimbang berdasarkan fakta sumber.';\n\nreturn [{ json: item }];"
+        "jsCode": "const item = $input.first().json.body || $input.first().json;\n\n// Context Expansion check & Koray Directive injection\nconst isShort = (item.content || '').length < 150;\nitem.expansion_instruction = isShort \n  ? 'Sumber sangat ringkas. Wajib lakukan rekonstruksi konteks sejarah selebritas, preseden kasus serupa, analisis jejak digital masa lalu, serta spektrum polarisasi netizen minimal 1000 kata.'\n  : 'Kembangkan narasi kronologi berimbang berbasis jejak digital dan verifikasi data.';\n\nreturn [{ json: item }];"
       },
       "id": "2",
       "name": "Context Expansion Pre-Check",
@@ -44,10 +44,10 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di media independen NgeGhibah.com. Tugasmu menulis artikel komprehensif (minimal 1000 kata), berbasis fakta dan jejak digital, menggunakan bahasa Indonesia santai tapi cerdas, analitis, tanpa clickbait murahan. Wajib gunakan kata: duduk perkaranya, kronologi lengkap, jejak digital, sentimen netizen, verifikasi fakta. HINDARI: bikin melongo, syok berat, tak disangka-sangka. Kembalikan HANYA JSON valid dengan properti: title, slug, meta_description, excerpt, category (seleb-lokal | hollywood-barat | kpop-asia | creator-tiktok), ghibah_meter (FAKTA_TERVERIFIKASI | JEJAK_DIGITAL | DALAM_INVESTIGASI | RUMOR_NETIZEN), entities (array of string nama seleb), timeline (array of {time_label, event}), caricature_event_prompt (deskripsi singkat visual kartun satir 1 kalimat), content_html (artikel berstruktur h2, h3, p, ul). Sertakan klausul hak jawab di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Judul Sumber: \" + $json.title + \"\\nKonteks: \" + $json.content + \"\\nInstruksi Tambahan: \" + $json.expansion_instruction\n    }\n  ],\n  \"temperature\": 0.7\n}"
+        "jsonBody": "={\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di NgeGhibah.com yang menerapkan KORAY TUG关ERK UGURLU SEMANTIC SEO FRAMEWORK secara mutlak.\\n\\nATURAN PENULISAN KORAY SEMANTIC SEO (17 RULES STRICT COMPLIANCE):\\n1. KALIMAT PERTAMA DEKLARATIF: Kalimat pertama di bawah setiap H2 WAJIB langsung menjawab duduk perkaranya (5W+1H) secara to-the-point tanpa kata pengantar kosong.\\n2. THE CHAIN RULE: Kata kunci berbobot di akhir kalimat N WAJIB menjadi kata pembuka kalimat N+1 untuk transisi semantik yang rapat.\\n3. ZERO FILLER & INFORMATION GAIN: Setiap kalimat wajib memberikan fakta/data baru. DILARANG KERAS menggunakan frasa: 'In conclusion', 'Kesimpulannya', 'Seperti yang kita ketahui', 'Di era serba digital ini', 'Bikin melongo', 'Syok berat', 'Tak disangka-sangka'.\\n4. SUB-KLASIFIKASI: Jangan gunakan istilah generik; klasifikasikan ke dalam 3 spektrum jelas (fakta resmi narasumber, indikasi jejak digital, dan spekulasi netizen).\\n5. INTEGRASI BUKTI INLINE: Pola bergantian: Klaim -> Bukti Jejak Digital (nama akun, platform, tanggal, kutipan asli) -> Klaim -> Bukti. Dilarang footnote di bawah.\\n6. MYTHS & MISCONCEPTIONS: Di akhir setiap bagian H2, sertakan 1 pelurusan salah paham umum: 'Salah paham umum yang sempat beredar di media sosial adalah [mitos]. Faktanya, [fakta terverifikasi].'\\n7. DUA SUDUT PANDANG (COVER BOTH SIDES): Sajikan perspektif kubu pendukung vs kubu pengkritik secara seimbang dan objektif.\\n\\nBRAND IDENTITY NGEGHIBAH:\\n- Tagline: 'Bukan Sekadar Gosip, Ini Kronologi & Verifikasi'\\n- Lexicon Wajib: duduk perkaranya, kronologi lengkap, jejak digital, verifikasi fakta, sentimen netizen, klarifikasi resmi.\\n- Digital Fingerprints: 'Kupas tuntas dari jejak digital pertama', 'Bukan sekadar heboh, ini duduk perkaranya', 'Radar pop-kultur berbobot: data, kronologi, verifikasi'.\\n\\nOUTPUT WAJIB JSON DENGAN PROPERTI:\\n- title: Judul berita deklaratif, spesifik nama entitas, SEO-rich, tanpa clickbait kosong.\\n- slug: Kebab-case ramah URL.\\n- meta_description: 150-160 karakter padat entitas dan nilai informasi.\\n- excerpt: Ringkasan 2 kalimat untuk preview.\\n- category: 'seleb-lokal' | 'hollywood-barat' | 'kpop-asia' | 'creator-tiktok'\\n- ghibah_meter: 'FAKTA_TERVERIFIKASI' | 'JEJAK_DIGITAL' | 'DALAM_INVESTIGASI' | 'RUMOR_NETIZEN'\\n- entities: Array nama selebritas/agensi/karya terkait.\\n- timeline: Array of { 'time_label': string, 'event': string } (minimal 3 milestone urut).\\n- caricature_event_prompt: Deskripsi visual kartun satir 1 kalimat untuk generator karikatur 16:9.\\n- content_html: Artikel lengkap minimal 1000 kata dengan tag semantic HTML <h2>, <h3>, <p>, <ul>, <blockquote>. Sertakan klausul hak jawab formal Dewan Pers di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Judul Sumber: \" + $json.title + \"\\nKonteks Peristiwa: \" + $json.content + \"\\nInstruksi Tambahan: \" + $json.expansion_instruction\n    }\n  ],\n  \"temperature\": 0.65\n}"
       },
       "id": "3",
-      "name": "OpenRouter DeepSeek v4 Flash Writer",
+      "name": "Koray Semantic SEO DeepSeek v4 Writer",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [680, 300]
@@ -84,7 +84,7 @@
         "jsonBody": "={{ JSON.stringify($json.caricature_payload) }}"
       },
       "id": "5",
-      "name": "Generate Caricature Prompt via Cloudflare AI",
+      "name": "Generate Caricature via Cloudflare AI",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [1160, 300]
@@ -122,14 +122,14 @@
       "main": [[{ "node": "Context Expansion Pre-Check", "type": "main", "index": 0 }]]
     },
     "Context Expansion Pre-Check": {
-      "main": [[{ "node": "OpenRouter DeepSeek v4 Flash Writer", "type": "main", "index": 0 }]]
+      "main": [[{ "node": "Koray Semantic SEO DeepSeek v4 Writer", "type": "main", "index": 0 }]]
     },
-    "OpenRouter DeepSeek v4 Flash Writer": {
+    "Koray Semantic SEO DeepSeek v4 Writer": {
       "main": [[{ "node": "Parse & Validate JSON Output", "type": "main", "index": 0 }]]
     },
     "Parse & Validate JSON Output": {
       "main": [
-        [{ "node": "Generate Caricature Prompt via Cloudflare AI", "type": "main", "index": 0 }],
+        [{ "node": "Generate Caricature via Cloudflare AI", "type": "main", "index": 0 }],
         [{ "node": "Forward to Dispatch Workflow (WF 3)", "type": "main", "index": 0 }]
       ]
     }

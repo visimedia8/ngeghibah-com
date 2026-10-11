@@ -32,15 +32,11 @@ Workflow n8n dibagi menjadi 6 tahap logis:
   - Resolusi wajib: 1200x628 (16:9) untuk Google Discover.
   - Sumber: Image fetcher / AI prompt generator / Wikimedia / Unsplash / embed sosmed legal.
         ↓
-[Node 6: Approval Gate (Fase Pre-AdSense)]
-  - Kirim pesan ke Telegram Bot:
-    * Judul + Ghibah Meter + Excerpt + Timeline
-    * Tombol Inline: `[Publish Sekarang]` / `[Simpan ke Draft]` / `[Tolak]`
-  - Setelah AdSense diapprove: Otomatisasi langsung ke `Publish Sekarang`.
-        ↓
-[Node 7: HTTP Request to NgeGhibah Webhook]
-  - POST ke `https://ngeghibah.com/api/webhooks/n8n/article`
-  - Header: `Authorization: Bearer {{ $env.N8N_WEBHOOK_SECRET }}`
+[Node 6: Direct Auto-Publish & Cloudflare Deploy Hook]
+  - Tanpa approval gate manual: Langsung publish otomatis seketika.
+  - POST ke `https://ngeghibah-com.pages.dev/api/webhooks/n8n/article`.
+  - POST ke Cloudflare Pages Deploy Hook untuk auto-rebuild statis instan.
+  - Kirim siaran konfirmasi real-time ke Telegram Bot (Live Telemetry Log).
 ```
 
 ---
