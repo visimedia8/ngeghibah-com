@@ -34,11 +34,6 @@ export default function HomePage() {
 
   return (
     <>
-      <link
-        rel="preload"
-        as="image"
-        href={optimizedHeroImage}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
