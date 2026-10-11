@@ -1,0 +1,255 @@
+{
+  "topical_clusters": [
+    {
+      "pillar_id": "seleb-lokal",
+      "name": "Selebriti & Figur Publik Indonesia",
+      "slug": "seleb-lokal",
+      "hubs": ["Infotainmen & Asmara", "Kontroversi & Kasus Hukum", "Karya & Prestasi", "Kehidupan Keluarga"]
+    },
+    {
+      "pillar_id": "creator-drama",
+      "name": "Kreator Konten, Selebgram & TikTok",
+      "slug": "creator-drama",
+      "hubs": ["Drama FYP & X", "Review & Endorsement", "Podcast & Klarifikasi", "Circle Pertemanan"]
+    },
+    {
+      "pillar_id": "k-pop-asia",
+      "name": "K-Pop, K-Drama & Bintang Asia",
+      "slug": "k-pop-asia",
+      "hubs": ["Dating & Rumor Asmara", "Kontrak Agensi & Hiatus", "Fanwar & Sentimen K-Netz", "Comeback & Konser Jakarta"]
+    },
+    {
+      "pillar_id": "hollywood-global",
+      "name": "Hollywood & Pop Culture Internasional",
+      "slug": "hollywood-global",
+      "hubs": ["A-List Gossip & DeuxMoi", "Red Carpet & Skandal Acara Penghargaan", "Perseteruan Musisi & Kreator", "Hubungan Asmara Populer"]
+    }
+  ],
+  "seed_celebrities": [
+    {
+      "slug": "raffi-ahmad",
+      "name": "Raffi Ahmad",
+      "category": "seleb-lokal",
+      "profession": "Presenter, Aktor, Pengusaha",
+      "circle": ["Nagita Slavina", "RANS Entertainment", "Keluarga Andara"],
+      "trending_hooks": ["Gurita bisnis RANS", "Gelar kehormatan & jabatan publik", "Koleksi kendaraan mewah"],
+      "seo_queries": ["biodata raffi ahmad", "bisnis rans entertainment", "kekayaan raffi ahmad", "kontroversi raffi ahmad"]
+    },
+    {
+      "slug": "nagita-slavina",
+      "name": "Nagita Slavina",
+      "category": "seleb-lokal",
+      "profession": "Aktris, Produser, Pebisnis",
+      "circle": ["Raffi Ahmad", "Rieta Amilia", "Caca Tengker"],
+      "trending_hooks": ["Gaya hidup & fesyen branded", "Pola asuh Rafathar & Rayyanza Cipung"],
+      "seo_queries": ["nagita slavina outfit", "bisnis nagita slavina", "profil nagita slavina"]
+    },
+    {
+      "slug": "syifa-hadju",
+      "name": "Syifa Hadju",
+      "category": "seleb-lokal",
+      "profession": "Aktris, Model",
+      "circle": ["El Rumi", "Rizky Nazar", "Margin Wieheerm"],
+      "trending_hooks": ["Hubungan asmara dengan El Rumi", "Respon keluarga Maia Estianty", "Karya serial & film terbaru"],
+      "seo_queries": ["syifa hadju el rumi", "mantan syifa hadju", "profil biodata syifa hadju"]
+    },
+    {
+      "slug": "el-rumi",
+      "name": "El Rumi",
+      "category": "seleb-lokal",
+      "profession": "Musisi, Konten Kreator, Figur Publik",
+      "circle": ["Ahmad Dhani", "Maia Estianty", "Al Ghazali", "Dul Jaelani", "Syifa Hadju"],
+      "trending_hooks": ["Gaya pacaran dengan Syifa Hadju", "Pertandingan tinju selebritas", "Lulusan London"],
+      "seo_queries": ["el rumi syifa hadju", "mantan pacar el rumi", "bisnis el rumi"]
+    },
+    {
+      "slug": "fuji-an",
+      "name": "Fujianti Utami (Fuji)",
+      "category": "creator-drama",
+      "profession": "Selebgram, Brand Ambassador, Kreator Konten",
+      "circle": ["Fadly Faisal", "Haji Faisal", "Gala Sky"],
+      "trending_hooks": ["Kehidupan asmara & perjodohan netizen", "Karier endorsement tarif fantastis", "Sentimen fans vs haters di TikTok"],
+      "seo_queries": ["fuji utami pacar baru", "tarif endorse fuji", "biodata fuji an"]
+    },
+    {
+      "slug": "rachel-vennya",
+      "name": "Rachel Vennya",
+      "category": "creator-drama",
+      "profession": "Pebisnis, Influencer, Kreator Konten",
+      "circle": ["Salim Nauderer", "Okin (Niko Al Hakim)", "Azizah Salsha", "Pratama Arhan"],
+      "trending_hooks": ["Drama jejak digital pertemanan & asmara", "Klarifikasi akun kedua (second account)", "Bisnis kuliner & fesyen"],
+      "seo_queries": ["rachel vennya salim nauderer", "kronologi kasus rachel vennya", "bisnis rachel vennya"]
+    },
+    {
+      "slug": "azizah-salsha",
+      "name": "Azizah Salsha (Zize)",
+      "category": "creator-drama",
+      "profession": "Selebgram, Istri Pesepakbola",
+      "circle": ["Pratama Arhan", "Andre Rosiade", "Rachel Vennya", "Fuji"],
+      "trending_hooks": ["Isu viral di media sosial X", "Hubungan rumah tangga dengan Pratama Arhan", "Laporan hukum ke Bareskrim"],
+      "seo_queries": ["azizah salsha pratama arhan", "klarifikasi azizah salsha", "biodata azizah salsha"]
+    },
+    {
+      "slug": "nikita-mirzani",
+      "name": "Nikita Mirzani",
+      "category": "seleb-lokal",
+      "profession": "Aktris, Presenter, Pebisnis",
+      "circle": ["Laura Meizani (Lolly)", "Vadel Badjideh", "Fahmi Bachmid"],
+      "trending_hooks": ["Konflik keluarga & penjemputan Lolly", "Laporan kepolisian & proses hukum", "Live TikTok & perseteruan publik"],
+      "seo_queries": ["kasus nikita mirzani lolly", "biodata nikita mirzani", "kronologi perseteruan nikita mirzani"]
+    },
+    {
+      "slug": "prilly-latuconsina",
+      "name": "Prilly Latuconsina",
+      "category": "seleb-lokal",
+      "profession": "Aktris, Produser Film, Dosen Praktisi",
+      "circle": ["Sinemaku Pictures", "Umar Syarief", "Reza Rahadian"],
+      "trending_hooks": ["Prestasi industri perfilman", "Kepemilikan klub bola Persikota", "Standar pasangan hidup"],
+      "seo_queries": ["film prilly latuconsina", "bisnis prilly latuconsina", "biodata prilly latuconsina"]
+    },
+    {
+      "slug": "reza-rahadian",
+      "name": "Reza Rahadian",
+      "category": "seleb-lokal",
+      "profession": "Aktor, Ketua FFI",
+      "circle": ["Christine Hakim", "Bunga Citra Lestari", "Prilly Latuconsina"],
+      "trending_hooks": ["Aksi vokal advokasi demokrasi di DPR", "Karier akting serba bisa", "Kehidupan pribadi yang tertutup"],
+      "seo_queries": ["film terbaik reza rahadian", "biodata reza rahadian", "orasi reza rahadian"]
+    },
+    {
+      "slug": "deddy-corbuzier",
+      "name": "Deddy Corbuzier",
+      "category": "creator-drama",
+      "profession": "Podcaster, Mantan Mentalis, Stafsus Menhan",
+      "circle": ["Sabrina Chairunnisa", "Azka Corbuzier", "Nada Tarina"],
+      "trending_hooks": ["Podcast Close the Door kontroversial", "Pangkat Letkol Tituler", "Investasi ke berbagai brand kreator"],
+      "seo_queries": ["podcast deddy corbuzier viral", "biodata deddy corbuzier", "istri deddy corbuzier"]
+    },
+    {
+      "slug": "windah-basudara",
+      "name": "Windah Basudara (Brando)",
+      "category": "creator-drama",
+      "profession": "Gaming Streamer, Filantropis Digital",
+      "circle": ["Jaya Esport", "Agnes", "Bocil Kematian"],
+      "trending_hooks": ["Charity streaming miliaran rupiah", "Drama tamat game & gimmick kreatif", "Pensiun sementara dan comeback"],
+      "seo_queries": ["windah basudara donasi", "profil brando windah basudara", "game windah basudara"]
+    },
+    {
+      "slug": "jennie-blackpink",
+      "name": "Jennie Kim (Jennie BLACKPINK)",
+      "category": "k-pop-asia",
+      "profession": "Idol K-Pop, Rapper, CEO OA (ODD ATELIER)",
+      "circle": ["BLACKPINK", "V BTS", "G-Dragon", "Zico"],
+      "trending_hooks": ["Lagu solo terbaru & agensi independen OA", "Rumor asmara dan jejak foto kencan", "Fesyen global ambassador Chanel"],
+      "seo_queries": ["jennie blackpink lagu baru", "agensi jennie odd atelier", "rumor pacar jennie kim"]
+    },
+    {
+      "slug": "jungkook-bts",
+      "name": "Jeon Jungkook (BTS)",
+      "category": "k-pop-asia",
+      "profession": "Penyanyi, Penari, Member BTS",
+      "circle": ["BTS", "Mingyu SEVENTEEN", "97-Liner Squad"],
+      "trending_hooks": ["Wajib militer & pembaruan aktivitas", "Rekor Billboard lagu solo Golden", "Tato & gaya hidup ikonik"],
+      "seo_queries": ["jungkook wamil kapan selesai", "lagu solo jungkook", "profil lengkap jungkook bts"]
+    },
+    {
+      "slug": "lisa-blackpink",
+      "name": "Lalisa Manobal (Lisa BLACKPINK)",
+      "category": "k-pop-asia",
+      "profession": "Rapper, Penari, CEO LLOUD, Aktris",
+      "circle": ["BLACKPINK", "Frédéric Arnault", "Rosalía"],
+      "trending_hooks": ["Hubungan dengan Frédéric Arnault konglomerat LVMH", "Debut akting serial The White Lotus Season 3", "Lagu solo Rockstar"],
+      "seo_queries": ["lisa blackpink pacar frederic arnault", "agensi lloud lisa", "lisa the white lotus"]
+    },
+    {
+      "slug": "karina-aespa",
+      "name": "Karina (Yu Ji-min aespa)",
+      "category": "k-pop-asia",
+      "profession": "Leader aespa, Vokalis, Penari",
+      "circle": ["aespa", "Lee Jae-wook", "SM Entertainment"],
+      "trending_hooks": ["Surat permintaan maaf setelah konfirmasi pacaran", "Visual AI & standar kecantikan gen-4", "Lagu viral Supernova & Armageddon"],
+      "seo_queries": ["karina lee jae wook putus", "biodata karina aespa", "kontroversi surat minta maaf karina"]
+    },
+    {
+      "slug": "wonyoung-ive",
+      "name": "Jang Won-young (IVE)",
+      "category": "k-pop-asia",
+      "profession": "Idol K-Pop, Model, MC",
+      "circle": ["IVE", "Starship Entertainment", "Sojang Youtuber"],
+      "trending_hooks": ["Kemenangan gugatan hukum terhadap YouTuber gosip Sojang", "Tren 'Lucky Vicky Mindset' yang viral di internet", "Gaya hidup it-girl Korea"],
+      "seo_queries": ["wonyoung mindset lucky vicky", "wonyoung tuntut sojang", "biodata jang won young"]
+    },
+    {
+      "slug": "byeon-woo-seok",
+      "name": "Byeon Woo-seok",
+      "category": "k-pop-asia",
+      "profession": "Aktor, Model",
+      "circle": ["Kim Hye-yoon", "Lovely Runner", "Varo Entertainment"],
+      "trending_hooks": ["Ledakan popularitas pasca drama Lovely Runner", "Kontroversi pengawalan bandara berlebihan", "Fan meeting Jakarta sold out"],
+      "seo_queries": ["drama byeon woo seok", "biodata byeon woo seok", "isu bodyguard byeon woo seok bandara"]
+    },
+    {
+      "slug": "han-so-hee",
+      "name": "Han So-hee",
+      "category": "k-pop-asia",
+      "profession": "Aktris, Model",
+      "circle": ["Ryu Jun-yeol", "Hyeri Girls Day", "Jeon Jong-seo"],
+      "trending_hooks": ["Drama asmara transit love di Hawaii", "Unggahan blog klarifikasi kontroversial", "Isu akun burner penyerang Hyeri"],
+      "seo_queries": ["kronologi han so hee ryu jun yeol hyeri", "biodata han so hee", "drama terbaru han so hee"]
+    },
+    {
+      "slug": "taylor-swift",
+      "name": "Taylor Swift",
+      "category": "hollywood-global",
+      "profession": "Musisi, Penulis Lagu, Miliarder",
+      "circle": ["Travis Kelce", "Blake Lively", "Selena Gomez", "Jack Antonoff"],
+      "trending_hooks": ["Hubungan asmara dengan atlet NFL Travis Kelce", "Dampak ekonomi The Eras Tour", "Sikap politik pemilu AS & endorsement"],
+      "seo_queries": ["taylor swift travis kelce menikah", "kekayaan taylor swift", "makna lirik lagu taylor swift"]
+    },
+    {
+      "slug": "selena-gomez",
+      "name": "Selena Gomez",
+      "category": "hollywood-global",
+      "profession": "Aktris, Musisi, Founder Rare Beauty",
+      "circle": ["Benny Blanco", "Taylor Swift", "Hailey Bieber"],
+      "trending_hooks": ["Status miliarder berkat Rare Beauty", "Pertunangan & romansa dengan Benny Blanco", "Kemenangan festival film Cannes"],
+      "seo_queries": ["selena gomez benny blanco", "bisnis rare beauty selena", "biodata selena gomez"]
+    },
+    {
+      "slug": "hailey-bieber",
+      "name": "Hailey Bieber (Baldwin)",
+      "category": "hollywood-global",
+      "profession": "Model, Pendiri Rhode Skin",
+      "circle": ["Justin Bieber", "Kylie Jenner", "Kendall Jenner"],
+      "trending_hooks": ["Kelahiran anak pertama Jack Blues Bieber", "Casing ponsel Rhode viral lip tint", "Isu keretakan rumah tangga yang ditepis"],
+      "seo_queries": ["hailey bieber anak pertama", "rhode lip tint hailey", "pernikahan justin hailey bieber"]
+    },
+    {
+      "slug": "justin-bieber",
+      "name": "Justin Bieber",
+      "category": "hollywood-global",
+      "profession": "Musisi, Ikon Pop",
+      "circle": ["Hailey Bieber", "Usher", "Sean Diddy Combs"],
+      "trending_hooks": ["Menjadi ayah baru untuk Jack Blues", "Sorotan jejak masa lalu terkait skandal P. Diddy", "Comeback musik & penampilan kejutan"],
+      "seo_queries": ["justin bieber skandal diddy", "kondisi justin bieber sekarang", "anak justin bieber"]
+    },
+    {
+      "slug": "kylie-jenner",
+      "name": "Kylie Jenner",
+      "category": "hollywood-global",
+      "profession": "Pebisnis Fesyen, Bintang Reality Show",
+      "circle": ["Timothée Chalamet", "Kendall Jenner", "Kardashian Family", "Travis Scott"],
+      "trending_hooks": ["Hubungan asmara privat dengan Timothée Chalamet", "Perubahan gaya fesyen quiet luxury", "Bisnis minuman Khy & Sprinter"],
+      "seo_queries": ["kylie jenner timothee chalamet", "anak kylie jenner", "kekayaan kylie jenner"]
+    },
+    {
+      "slug": "timothee-chalamet",
+      "name": "Timothée Chalamet",
+      "category": "hollywood-global",
+      "profession": "Aktor A-List",
+      "circle": ["Kylie Jenner", "Zendaya", "Denis Villeneuve"],
+      "trending_hooks": ["Film biopik Bob Dylan A Complete Unknown", "Kesuksesan box office Dune Part Two & Wonka", "Kemesraan di Golden Globes dengan Kylie"],
+      "seo_queries": ["film baru timothee chalamet", "timothee chalamet kylie jenner", "biodata timothee chalamet"]
+    }
+  ]
+}

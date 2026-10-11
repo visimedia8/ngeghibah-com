@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0B0F17;
+  --bg-secondary: #131B2E;
+  --text-primary: #F8FAFC;
+  --text-muted: #94A3B8;
+  --accent-pink: #FF2E93;
+  --accent-cyan: #00F0FF;
+  --accent-amber: #FFB800;
+  --accent-green: #10B981;
+}
+
+.light {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-muted: #64748B;
+  --accent-pink: #E11D74;
+  --accent-cyan: #0891B2;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for horizontal chip bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism surfaces */
+.glass-surface {
+  background: rgba(19, 27, 46, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(11, 15, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Subtle glow effects */
+.glow-pink-sm {
+  box-shadow: 0 0 15px -3px rgba(255, 46, 147, 0.35);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 15px -3px rgba(0, 240, 255, 0.35);
+}
+
+/* Clean text selection */
+::selection {
+  background-color: #FF2E93;
+  color: #FFFFFF;
+}

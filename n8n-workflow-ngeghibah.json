@@ -1,0 +1,191 @@
+{
+  "name": "NgeGhibah - AI Content Ingestion & DeepSeek Writer",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Schedule Trigger (Every 1h)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.reddit.com/r/Fauxmoi/hot.json?limit=15",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "2",
+      "name": "Fetch Reddit Drama Feed",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        420,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.first().json.data.children;\nconst results = [];\n\nconst bannedKeywords = ['suicide', 'self harm', 'gore', 'porn', 'explicit sex', 'nude', 'underage'];\n\nfor (const post of items) {\n  const p = post.data;\n  if (p.over_18 || p.is_video) continue;\n  \n  const titleLower = p.title.toLowerCase();\n  const isBanned = bannedKeywords.some(w => titleLower.includes(w));\n  if (isBanned) continue;\n  \n  if (p.score > 100) {\n    results.push({\n      json: {\n        source: 'Reddit /r/Fauxmoi',\n        source_title: p.title,\n        source_url: 'https://reddit.com' + p.permalink,\n        score: p.score,\n        author: p.author,\n        selftext: p.selftext || '',\n        timestamp: p.created_utc\n      }\n    });\n  }\n}\n\nreturn results.slice(0, 3);"
+      },
+      "id": "3",
+      "name": "Safety Filter & Ranker",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.deepseek.com/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.DEEPSEEK_API_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"deepseek-chat\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di media NgeGhibah.com. Tugasmu menulis artikel komprehensif, berbasis fakta dan jejak digital, menggunakan bahasa Indonesia santai tapi cerdas, analitis, tanpa clickbait murahan. Wajib gunakan kata: duduk perkaranya, kronologi lengkap, jejak digital, sentimen netizen. Kembalikan HANYA JSON dengan properti: title, slug, meta_description, excerpt, category (seleb-global | seleb-lokal | k-pop), ghibah_meter (TERKONFIRMASI | FAKTA_DIGITAL | RUMOR_NETIZEN), entities (array of names), timeline (array of {time_label, event}), content_html (artikel berstruktur h2, h3, p, ul). Sertakan klausul hak jawab di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Tuliskan artikel pop-kultur berbobot berdasarkan informasi berikut:\\nJudul Sumber: \" + $json.source_title + \"\\nKonteks Sumber: \" + $json.selftext\n    }\n  ],\n  \"temperature\": 0.7\n}"
+      },
+      "id": "4",
+      "name": "DeepSeek v4 Flash Writer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        860,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json;\nconst contentString = raw.choices[0].message.content;\nconst articleData = JSON.parse(contentString);\n\n// Fallback safety validations\nif (!articleData.slug) {\n  articleData.slug = articleData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');\n}\n\narticleData.published_at = new Date().toISOString();\narticleData.hero_image = 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=628&fit=crop'; // Default high-res fallback\n\nreturn [{ json: articleData }];"
+      },
+      "id": "5",
+      "name": "Parse & Validate JSON Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1080,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NGEGHIBAH_WEBHOOK_URL || 'http://localhost:3000/api/webhooks/n8n/article' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.N8N_WEBHOOK_SECRET }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}"
+      },
+      "id": "6",
+      "name": "Dispatch to NgeGhibah Webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1300,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Every 1h)": {
+      "main": [
+        [
+          {
+            "node": "Fetch Reddit Drama Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Reddit Drama Feed": {
+      "main": [
+        [
+          {
+            "node": "Safety Filter & Ranker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Safety Filter & Ranker": {
+      "main": [
+        [
+          {
+            "node": "DeepSeek v4 Flash Writer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek v4 Flash Writer": {
+      "main": [
+        [
+          {
+            "node": "Parse & Validate JSON Payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & Validate JSON Payload": {
+      "main": [
+        [
+          {
+            "node": "Dispatch to NgeGhibah Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

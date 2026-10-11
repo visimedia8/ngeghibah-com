@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#131B2E" />
+      <stop offset="100%" stop-color="#06090F" />
+    </linearGradient>
+
+    <!-- Neon Brand Gradient -->
+    <linearGradient id="ogNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="ogGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#ogBg)" />
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="120" r="280" fill="#FF2E93" opacity="0.12" filter="url(#ogGlow)" />
+  <circle cx="1050" cy="500" r="320" fill="#00F0FF" opacity="0.1" filter="url(#ogGlow)" />
+
+  <!-- Decorative Border -->
+  <rect x="24" y="24" width="1152" height="582" rx="32" fill="none" stroke="#23304E" stroke-width="2" />
+  <rect x="24" y="24" width="1152" height="582" rx="32" fill="none" stroke="url(#ogNeon)" stroke-width="2" opacity="0.3" />
+
+  <!-- Monogram Mark -->
+  <g transform="translate(100, 110)">
+    <rect width="110" height="110" rx="32" fill="#131B2E" stroke="#23304E" stroke-width="2" />
+    <g transform="translate(16, 16) scale(0.155)" filter="url(#ogGlow)">
+      <path
+        d="M365 185
+           C335 125 260 115 195 140
+           C125 170 95 245 110 320
+           C125 395 195 440 275 430
+           C345 420 395 375 405 305
+           L265 305
+           C252 305 245 295 245 282
+           L245 258
+           C245 245 252 238 265 238
+           L435 238
+           C448 238 458 248 458 262
+           C458 355 385 465 260 465
+           C145 465 55 385 45 265
+           C35 145 135 50 255 50
+           C325 50 390 85 425 140
+           C432 152 428 168 415 175
+           L382 192
+           C374 196 368 192 365 185 Z"
+        fill="url(#ogNeon)"
+      />
+      <circle cx="410" cy="115" r="24" fill="#00F0FF" />
+      <circle cx="256" cy="256" r="20" fill="#00F0FF" />
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(235, 130)">
+    <text font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" letter-spacing="-1">
+      <tspan fill="#FFFFFF">Nge</tspan>
+      <tspan fill="#FF2E93">Ghibah</tspan>
+      <tspan fill="#00F0FF" font-size="40">.com</tspan>
+    </text>
+    <text x="0" y="58" font-family="'Inter', monospace, sans-serif" font-size="14" font-weight="700" fill="#00F0FF" letter-spacing="3">
+      RADAR POP-KULTUR BERBOBOT: DATA, KRONOLOGI, VERIFIKASI
+    </text>
+  </g>
+
+  <!-- Main Headline Title in OpenGraph -->
+  <g transform="translate(100, 310)">
+    <text font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" fill="#FFFFFF" letter-spacing="-0.5">
+      Bukan Sekadar Gosip,
+    </text>
+    <text y="60" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" fill="#FF2E93" letter-spacing="-0.5">
+      Ini Duduk Perkara &amp; Kronologi Lengkapnya.
+    </text>
+
+    <!-- Value Proposition Badges -->
+    <g transform="translate(0, 130)">
+      <rect width="210" height="42" rx="12" fill="#162036" stroke="#23304E" stroke-width="1.5" />
+      <text x="24" y="26" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#10B981">
+        ✓ 100% Anti-Tribun
+      </text>
+
+      <rect x="230" width="220" height="42" rx="12" fill="#162036" stroke="#23304E" stroke-width="1.5" />
+      <text x="254" y="26" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#00F0FF">
+        ⚡ Ghibah Meter™
+      </text>
+
+      <rect x="470" width="250" height="42" rx="12" fill="#162036" stroke="#23304E" stroke-width="1.5" />
+      <text x="494" y="26" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FF2E93">
+        📁 Jejak Digital Terbuka
+      </text>
+    </g>
+  </g>
+</svg>
