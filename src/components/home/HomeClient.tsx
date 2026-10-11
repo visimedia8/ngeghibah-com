@@ -111,7 +111,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
         <section aria-label="Berita Utama & Tren Panas">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
-              <div className="w-2.5 h-2.5 rounded-full bg-neon-pink animate-ping" />
+              <div className="w-2.5 h-2.5 rounded-full bg-neon-pink animate-pulse" />
               <h2 className="text-xl sm:text-2xl font-bold font-display text-white tracking-tight flex items-center gap-2">
                 <span>SOROTAN UTAMA HARI INI</span>
                 <span className="text-xs font-mono text-neon-cyan font-normal bg-cyan-950/60 border border-cyan-800/40 px-2 py-0.5 rounded-full hidden sm:inline">

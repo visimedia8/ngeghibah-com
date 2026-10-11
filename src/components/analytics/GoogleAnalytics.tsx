@@ -7,10 +7,12 @@ interface GoogleAnalyticsProps {
 }
 
 export const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = ({
-  gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-NGEGHIBAH01',
+  gaId = process.env.NEXT_PUBLIC_GA_ID,
 }) => {
   useEffect(() => {
-    if (!gaId || typeof window === 'undefined') return;
+    // Only load if valid ID is provided
+    const targetId = gaId || process.env.NEXT_PUBLIC_GA_ID;
+    if (!targetId || typeof window === 'undefined') return;
 
     let loaded = false;
     const loadGA = () => {
@@ -19,7 +21,7 @@ export const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = ({
       (window as any).__gaLoaded = true;
 
       const script = document.createElement('script');
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${targetId}`;
       script.async = true;
       document.head.appendChild(script);
 
@@ -29,32 +31,30 @@ export const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = ({
       }
       (window as any).gtag = gtag;
       gtag('js', new Date());
-      gtag('config', gaId, {
+      gtag('config', targetId, {
         page_path: window.location.pathname,
         send_page_view: true,
       });
 
-      // Cleanup listeners
+      // Cleanup event listeners
       window.removeEventListener('scroll', loadGA);
       window.removeEventListener('click', loadGA);
       window.removeEventListener('touchstart', loadGA);
+      window.removeEventListener('mousemove', loadGA);
     };
 
-    // Listen for first interaction
+    // Load strictly on user interaction so zero TBT penalty on initial load
     window.addEventListener('scroll', loadGA, { passive: true, once: true });
     window.addEventListener('click', loadGA, { passive: true, once: true });
     window.addEventListener('touchstart', loadGA, { passive: true, once: true });
+    window.addEventListener('mousemove', loadGA, { passive: true, once: true });
 
-    // Idle fallback: only load when browser is completely idle
-    if ('requestIdleCallback' in window) {
-      const idleId = (window as any).requestIdleCallback(loadGA, { timeout: 3500 });
-      return () => {
-        if ('cancelIdleCallback' in window) (window as any).cancelIdleCallback(idleId);
-      };
-    } else {
-      const timer = setTimeout(loadGA, 3000);
-      return () => clearTimeout(timer);
-    }
+    return () => {
+      window.removeEventListener('scroll', loadGA);
+      window.removeEventListener('click', loadGA);
+      window.removeEventListener('touchstart', loadGA);
+      window.removeEventListener('mousemove', loadGA);
+    };
   }, [gaId]);
 
   return null;

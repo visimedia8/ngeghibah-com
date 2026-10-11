@@ -15,12 +15,12 @@ export const TrendingRadarBar: React.FC<TrendingRadarBarProps> = ({
   activeTag,
 }) => {
   return (
-    <div className="w-full bg-[#0E1524] border-b border-velvet-border/80 sticky top-16 z-30 shadow-sm backdrop-blur-md">
+    <div className="w-full bg-[#0E1524]/95 border-b border-velvet-border/80 sticky top-16 z-30 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center gap-3">
         {/* Radar Label Badge */}
         <div className="flex items-center gap-1.5 shrink-0 bg-neon-pink/15 text-neon-pink border border-neon-pink/30 px-2.5 py-1 rounded-full text-xs font-semibold tracking-wide">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-pink opacity-75"></span>
+            <span className="animate-pulse absolute inline-flex h-full w-full rounded-full bg-neon-pink opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-neon-pink"></span>
           </span>
           <Flame className="w-3.5 h-3.5" />
