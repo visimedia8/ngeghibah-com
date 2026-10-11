@@ -88,6 +88,66 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         answer: 'Perkara telah berkekuatan hukum tetap (inkrah) di PN Tangerang dengan masa percobaan dan denda yang telah diselesaikan penuh.',
       },
     ],
+    editorialSections: [
+      {
+        title: 'Trajektori Karier: Dari Pelopor Selebgram ke Konglomerasi Kreator Digital',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Rachel Vennya Roland menempati posisi unik dalam sejarah perkembangan ekonomi kreator digital di Indonesia. Mengawali rekam jejak digitalnya dari platform tanya-jawab Ask.fm pada medio 2013-2014, ia berhasil bertransformasi dari figur remaja populer menjadi salah satu arsitek utama monetisasi media sosial modern di tanah air. Di saat sebagian besar pesohor konvensional masih memandang Instagram sekadar etalase dokumentasi personal, Rachel merupakan salah satu pionir yang melembagakan konsep <em>paid endorsement</em> profesional dengan standar tarif terstruktur dan tim produksi visual independen.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kekuatan utama daya tarik komersial Rachel terletak pada loyalitas audiens demografi perempuan muda dan ibu modern (<em>young mothers</em>). Narasi kehidupannya—dari perjalanan kemandirian finansial usia muda, pernikahan megah bertema dongeng, dinamika perceraian, hingga pengasuhan dua anak—dikonsumsi publik secara intensif layaknya serial realitas terbuka. Tingkat keterikatan (<em>engagement rate</em>) akun media sosialnya secara konsisten melampaui rata-rata industri, menjadikannya salah satu aset periklanan digital paling bernilai tinggi di Indonesia.
+          </p>
+        `,
+      },
+      {
+        title: 'Analisis Jejaring Sosial & Lingkaran Relasi (Circle of Influence)',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dalam sosiologi internet Indonesia, lingkaran pertemanan Rachel Vennya kerap dipandang sebagai barometer tren gaya hidup urban Jakarta Selatan. Relasi eratnya dengan sesama figur digital berpengaruh seperti Keanu Agl, Fadil Jaidi, dan Erika Carlina bukan sekadar hubungan sosial personal, melainkan ekosistem kolaborasi komersial simbiosis mutualisme.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Ketika sebuah brand atau proyek komersial melibatkan salah satu anggota lingkaran ini, eksposur organik secara otomatis berlipat ganda melalui interaksi silang di Instagram Story dan siaran langsung. Namun demikian, visibilitas ekstrem ini juga menjadi pedang bermata dua: setiap gesekan personal di dalam lingkaran relasi, termasuk dinamika hubungan asmara dengan Salim Nauderer, kerap memicu perang narasi warganet dan bocornya tangkapan layar percakapan digital ke forum X (Twitter).
+          </p>
+        `,
+      },
+      {
+        title: 'Ekosistem Bisnis, Valuasi & Asesmen Brand Safety Pengiklan',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Diversifikasi finansial Rachel Vennya menunjukkan transisi matang dari sekadar penerima honor promosi (<em>endorser</em>) menjadi pemilik ekuitas usaha riil. Melalui jaringan kemitraan bisnis F&B seperti <strong>Ngikan Yuk</strong> (gerai cepat saji olahan ikan) dan <strong>Lokasaji</strong> (kuliner beku jajanan tradisional nusantara), ia membuktikan kapasitas konversi pengaruh media sosial menjadi arus kas operasional skala nasional dengan puluhan cabang kemitraan.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dari sudut pandang <em>Brand Safety Index</em> korporasi multinasional, profil Rachel Vennya dikategorikan sebagai entitas komersial bervaluasi tinggi namun memerlukan mitigasi krisis reputasi terukur. Produk-produk kecantikan (skincare) dan fesyen massal tetap mengalokasikan anggaran endorsement besar kepadanya karena metrik konversi penjualan langsung (<em>direct-to-consumer sales</em>) yang terbukti konsisten, meskipun brand biasanya menyertakan klausul moralitas ketat dalam kontrak pasca-insiden 2021.
+          </p>
+        `,
+      },
+      {
+        title: 'Forensik Rekam Jejak Krisis & Manajemen Pemulihan Reputasi (PR)',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Ujian paling berat terhadap legitimasi publik Rachel terjadi pada Oktober 2021 terkait kasus pelanggaran karantina kesehatan di Rumah Sakit Darurat COVID-19 Wisma Atlet Pademangan pasca-perjalanan dari New York, Amerika Serikat. Penyelidikan kepolisian mengungkap adanya bantuan oknum aparat pengamanan bandara untuk menghindari prosedur karantina wajib masa pandemi. Perkara ini berujung pada vonis Pengadilan Negeri Tangerang dengan hukuman 4 bulan penjara masa percobaan dan denda Rp 50 juta subsidair 1 bulan kurungan.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kendati menuai kecaman keras dan gelombang pembatalan sosial (<em>cancel culture</em>) masif, Rachel menunjukkan ketahanan reputasi yang mengejutkan para pengamat komunikasi krisis. Alih-alih melakukan pembelaan defensif berkepanjangan, ia memilih strategi hiatus sementara, menyampaikan permintaan maaf terbuka tanpa dalih di kanal YouTube Boy William, menyelesaikan seluruh sanksi hukum, serta secara bertahap kembali melalui konten keseharian keluarga dan filantropi kemanusiaan.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Catatan rekam jejak filantropinya juga menjadi faktor penyeimbang sentimen publik. Melalui platform Kitabisa, Rachel tercatat menggalang dana darurat sosial hingga menembus rekor lebih dari Rp 9 Miliar untuk bantuan penanganan pandemi dan bencana alam, menegaskan paradoks posisinya di mata warganet: sosok yang sarat kontroversi personal namun memiliki kapasitas mobilisasi sosial nyata.
+          </p>
+        `,
+      },
+      {
+        title: 'Indeks Sentimen Warganet & Prospek Jangka Panjang',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Berdasarkan analisis pemantauan sentimen media sosial tim intelijen pop-kultur NgeGhibah, persepsi publik terhadap Rachel Vennya terbelah menjadi dua kutub yang stabil: <strong>54% sentimen apresiatif/netral</strong> dan <strong>46% sentimen kritis/skeptis</strong>. Kelompok pendukung mengagumi transparansi emosional, ketegaran sebagai ibu tunggal berdaya, dan kecakapan bisnisnya. Sebaliknya, kelompok skeptis mengkritisi drama relasi personal yang kerap diumbar dan gaya hidup glamor yang dipandang berlebihan.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Prospek reputasi jangka panjang Rachel Vennya sangat bergantung pada kemampuannya menjaga pagar batas (<em>boundaries</em>) antara kehidupan asmara privat dengan citra profesional korporasinya. Selama ia mempertahankan transparansi filantropi dan kepatuhan hukum, statusnya sebagai salah satu titan ekonomi kreator Indonesia diproyeksikan tetap kokoh melintasi pergantian tren generasi warganet.
+          </p>
+        `,
+      },
+    ],
   },
   {
     id: 'celeb-2',
@@ -606,6 +666,12 @@ export const MOCK_ARTICLES: Article[] = [
       </p>
       <p class="text-sm text-slate-300 leading-relaxed mb-4">
         Ketiadaan sistem loglist otomatis (<em>electronic cue sheet</em>) membuat LMKN kerap menggunakan metode analog atau perkiraan rata-rata statistik dalam membagi dana royalti, bukan berdasarkan lagu riil yang secara aktual dinyanyikan di atas panggung.
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Respon Pelaku Seni & Ekosistem Industri Kreatif</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Polemik royalti konser ini juga memicu perhatian para pelaku industri kreatif lintas disiplin. Aktor watak Reza Rahadian yang aktif dalam advokasi regulasi serikat pekerja seni menyatakan bahwa perlindungan hak kekayaan intelektual (HAKI) dan transparansi tata kelola royalti adalah pondasi mutlak bagi keberlanjutan seniman di era digital.
+      </p>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Sementara di ranah festival dan komersial, para pegiat industri dan kreator konten digital seperti Rachel Vennya yang kerap bekerja sama dengan promotor konser musik dan jenama gaya hidup turut menyoroti bagaimana ketidakpastian hukum ini berpotensi mengganggu ekosistem sponsorship dan rantai nilai hiburan massal di tanah air.
       </p>
 
       <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Solusi & Roadmap: Jalan Tengah Digitalisasi SILM</h2>

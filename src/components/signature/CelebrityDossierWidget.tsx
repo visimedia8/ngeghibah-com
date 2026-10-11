@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Celebrity } from '@/types';
 import { ExternalLink, UserCheck, HeartHandshake, Briefcase, ChevronRight } from 'lucide-react';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 interface CelebrityDossierWidgetProps {
   celebrity: Celebrity;
@@ -30,7 +31,7 @@ export const CelebrityDossierWidget: React.FC<CelebrityDossierWidgetProps> = ({
       <div className="flex items-center gap-3.5 mb-4">
         <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-neon-cyan shadow-neon-cyan">
           <Image
-            src={celebrity.avatar}
+            src={getOptimizedImageUrl(celebrity.avatar, 128, 75)}
             alt={celebrity.stageName}
             fill
             sizes="56px"
@@ -75,7 +76,7 @@ export const CelebrityDossierWidget: React.FC<CelebrityDossierWidgetProps> = ({
 
       <Link
         href={`/seleb/${celebrity.slug}`}
-        className="group inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-4 rounded-xl text-xs font-semibold text-white bg-neon-pink hover:bg-neon-pink/90 transition-all shadow-neon-pink"
+        className="group inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-4 rounded-xl text-xs font-bold text-obsidian bg-neon-pink hover:bg-neon-pink/90 transition-all shadow-neon-pink"
       >
         <span>Lihat Semua Riwayat & Dossier</span>
         <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

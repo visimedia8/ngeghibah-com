@@ -117,6 +117,7 @@ export interface Celebrity {
   businessVentures?: BusinessVenture[];
   awards?: AwardRecord[];
   faq?: { question: string; answer: string }[];
+  editorialSections?: { title: string; contentHtml: string }[];
 }
 
 export interface TrendingTag {

@@ -135,11 +135,11 @@ export const Footer = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="email.kamu@domain.com"
-                  className="w-full min-h-[44px] bg-velvet border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-neon-pink"
+                  className="w-full min-h-[44px] bg-velvet border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-neon-pink"
                 />
                 <button
                   type="submit"
-                  className="w-full min-h-[44px] bg-neon-pink hover:bg-neon-pink/90 active:scale-95 text-white font-semibold rounded-xl py-2 px-3 text-xs transition-all flex items-center justify-center gap-1.5 shadow-neon-pink"
+                  className="w-full min-h-[44px] bg-neon-pink hover:bg-neon-pink/90 active:scale-95 text-obsidian font-bold rounded-xl py-2 px-3 text-xs transition-all flex items-center justify-center gap-1.5 shadow-neon-pink cursor-pointer"
                 >
                   <span>Langganan Gratis</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -150,7 +150,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+        <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
           <div>
             © 2026 PT Media Siber Ghibah Nusantara (NgeGhibah.com). Hak Cipta Dilindungi Undang-Undang.
           </div>
@@ -167,7 +167,7 @@ export const Footer = () => {
               Hak Jawab 24/7
             </Link>
             <span>•</span>
-            <Link href="/kode-etik" className="hover:text-slate-400">
+            <Link href="/kode-etik" className="hover:text-white transition-colors">
               Dewan Pers RI
             </Link>
           </div>

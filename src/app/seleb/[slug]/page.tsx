@@ -16,10 +16,13 @@ import {
   Scale,
   HelpCircle,
   CheckCircle2,
+  FileText,
+  BookOpen,
 } from 'lucide-react';
 import { MOCK_CELEBRITIES, MOCK_ARTICLES } from '@/data/mockData';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { AdSlot } from '@/components/ads/AdSlot';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 interface CelebPageProps {
   params: {
@@ -67,14 +70,21 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
     notFound();
   }
 
-  // Related articles mentioning this celebrity
-  const relatedArticles = MOCK_ARTICLES.filter((a) =>
+  // Direct related articles mentioning this celebrity
+  const directArticles = MOCK_ARTICLES.filter((a) =>
     a.entities?.some(
       (ent) =>
         ent.toLowerCase() === celeb.name.toLowerCase() ||
         ent.toLowerCase() === celeb.stageName.toLowerCase()
     )
   );
+
+  // Recommended investigative articles if direct count is fewer than 2
+  const fallbackArticles = MOCK_ARTICLES.filter(
+    (a) => !directArticles.some((d) => d.id === a.id)
+  ).slice(0, Math.max(0, 2 - directArticles.length));
+
+  const displayArticles = [...directArticles, ...fallbackArticles];
 
   // Person + FAQPage JSON-LD Schema
   const schemas: any[] = [
@@ -134,9 +144,10 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
           {/* Cover Banner */}
           <div className="h-44 sm:h-64 w-full relative overflow-hidden bg-slate-900">
             <img
-              src={celeb.bannerImage}
+              src={getOptimizedImageUrl(celeb.bannerImage, 900, 75)}
               alt={celeb.stageName}
               className="w-full h-full object-cover"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-velvet via-velvet/60 to-transparent" />
           </div>
@@ -146,9 +157,10 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
               {/* Avatar Circle */}
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shrink-0 border-4 border-obsidian-deep shadow-2xl ring-2 ring-neon-pink">
                 <img
-                  src={celeb.avatar}
+                  src={getOptimizedImageUrl(celeb.avatar, 256, 75)}
                   alt={celeb.stageName}
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
 
@@ -346,6 +358,46 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
             <p className="text-xs sm:text-sm text-slate-300 italic">{celeb.sentimentSummary}</p>
           </div>
         </section>
+
+        {/* SECTION 2B: LAPORAN INTELIJEN & ANALISIS FORENSIK ENTITAS (EDITORIAL DEEP DIVE) */}
+        {celeb.editorialSections && celeb.editorialSections.length > 0 && (
+          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl space-y-8">
+            <div className="border-b border-slate-800 pb-5">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/60 text-neon-cyan border border-cyan-800/40 mb-3">
+                <FileText className="w-3.5 h-3.5" />
+                <span>INTELLIGENCE DOSSIER DEEP DIVE</span>
+              </div>
+              <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
+                Analisis Forensik & Trajektori Reputasi {celeb.stageName}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1 leading-relaxed">
+                Kajian jurnalisme investigasi mendalam mengenai model monetisasi digital, lingkaran pengaruh, audit krisis reputasi, dan evaluasi brand safety bagi pengiklan.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {celeb.editorialSections.map((sec, idx) => (
+                <article
+                  key={idx}
+                  className="rounded-2xl border border-slate-800/80 bg-obsidian-deep/70 p-5 sm:p-7 space-y-3 shadow-md"
+                >
+                  <div className="flex items-center gap-2 text-xs font-mono text-neon-pink font-bold">
+                    <span>BAB 0{idx + 1}</span>
+                    <span className="text-slate-600">•</span>
+                    <span className="text-slate-400 uppercase tracking-wider">Kajian Khusus Pop-Kultur</span>
+                  </div>
+                  <h3 className="font-display font-bold text-lg sm:text-xl text-white">
+                    {sec.title}
+                  </h3>
+                  <div
+                    className="prose prose-invert max-w-none text-xs sm:text-sm text-slate-300 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: sec.contentHtml }}
+                  />
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* SECTION 3: TABEL REKAM JEJAK KONTROVERSI & KASUS TERVERIFIKASI */}
         {celeb.controversies && celeb.controversies.length > 0 && (
@@ -548,13 +600,14 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
               <span>Arsip Liputan & Kronologi Isu</span>
             </h2>
             <span className="text-xs font-mono text-slate-400">
-              {relatedArticles.length} Laporan Terekam
+              {displayArticles.length} Laporan Terekam
             </span>
           </div>
 
-          {relatedArticles.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {relatedArticles.map((art) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {displayArticles.map((art) => {
+              const isDirectMatch = directArticles.some((d) => d.id === art.id);
+              return (
                 <Link
                   key={art.id}
                   href={`/artikel/${art.slug}`}
@@ -567,8 +620,17 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
                   />
                   <div className="flex flex-col justify-between min-w-0">
                     <div>
-                      <div className="mb-1">
+                      <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
                         <GhibahMeterBadge status={art.ghibahMeter.status} size="sm" />
+                        <span
+                          className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold uppercase ${
+                            isDirectMatch
+                              ? 'bg-cyan-950/80 text-neon-cyan border border-cyan-800/40'
+                              : 'bg-slate-800 text-slate-400'
+                          }`}
+                        >
+                          {isDirectMatch ? 'Liputan Entitas' : 'Rekomendasi Pop-Kultur'}
+                        </span>
                       </div>
                       <h3 className="font-display font-semibold text-xs sm:text-sm text-white group-hover:text-neon-pink transition-colors line-clamp-2 leading-snug">
                         {art.title}
@@ -583,13 +645,9 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
                     </div>
                   </div>
                 </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="p-8 text-center rounded-2xl bg-velvet/30 border border-slate-800 text-slate-400 text-xs font-mono">
-              Belum ada arsip kontroversi aktif yang terekam untuk {celeb.stageName}.
-            </div>
-          )}
+              );
+            })}
+          </div>
         </section>
 
         {/* AdSlot */}

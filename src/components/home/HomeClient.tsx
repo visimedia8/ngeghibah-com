@@ -7,6 +7,8 @@ import { Article, Celebrity, ArticleCategory } from '@/types';
 import { TrendingRadarBar } from '@/components/signature/TrendingRadarBar';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { CelebrityDossierCard } from '@/components/signature/CelebrityDossierCard';
+import { AdSlot } from '@/components/ads/AdSlot';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
 import {
   Flame,
   Clock,
@@ -132,11 +134,11 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 {/* Hero Image */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
                   <Image
-                    src={heroArticle.heroImage}
+                    src={getOptimizedImageUrl(heroArticle.heroImage, 640, 75)}
                     alt={heroArticle.title}
                     fill
                     priority
-                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    sizes="(max-width: 1024px) 100vw, 800px"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
@@ -170,7 +172,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                     <div className="flex items-center gap-3">
                       <div className="relative w-7 h-7 rounded-full overflow-hidden border border-neon-cyan">
                         <Image
-                          src={heroArticle.author.avatar}
+                          src={getOptimizedImageUrl(heroArticle.author.avatar, 64, 75)}
                           alt={heroArticle.author.name}
                           fill
                           sizes="28px"
@@ -212,9 +214,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                       <GhibahMeterBadge status={article.ghibahMeter.status} size="sm" />
                     </div>
 
-                    <h4 className="text-base sm:text-lg font-bold text-white font-display group-hover:text-neon-cyan transition-colors line-clamp-2">
+                    <h3 className="text-base sm:text-lg font-bold text-white font-display group-hover:text-neon-cyan transition-colors line-clamp-2">
                       {article.title}
-                    </h4>
+                    </h3>
 
                     <p className="text-xs sm:text-sm text-slate-400 line-clamp-2 leading-relaxed">
                       {article.excerpt}
@@ -236,6 +238,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
             </div>
           </div>
         </section>
+
+        {/* AdSense Slot: Home Billboard (Reserved 0-CLS space) */}
+        <AdSlot slotId="home-billboard-lead" format="banner" />
 
         {/* 3. Celebrity Spotlight Carousel */}
         <section aria-label="Celebrity Dossier Spotlight">
@@ -282,7 +287,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                   onClick={() => setActiveCategory(cat.id as ArticleCategory)}
                   className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all active:scale-95 cursor-pointer ${
                     activeCategory === cat.id
-                      ? 'bg-neon-pink text-white shadow-neon-pink'
+                      ? 'bg-neon-pink text-obsidian font-bold shadow-neon-pink'
                       : 'text-slate-400 hover:text-white hover:bg-velvet'
                   }`}
                 >
@@ -303,7 +308,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                   setActiveCategory('semua');
                   setActiveTag(null);
                 }}
-                className="px-4 py-2 bg-neon-pink text-white text-xs font-semibold rounded-xl"
+                className="px-4 py-2 bg-neon-pink text-obsidian font-bold text-xs rounded-xl"
               >
                 Tampilkan Semua Artikel
               </button>
@@ -320,10 +325,10 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                     {/* Thumbnail */}
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
                       <Image
-                        src={article.heroImage}
+                        src={getOptimizedImageUrl(article.heroImage, 600, 75)}
                         alt={article.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 33vw"
+                        sizes="(max-width: 768px) 100vw, 400px"
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
@@ -336,9 +341,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
 
                     {/* Card Content */}
                     <div className="p-5 space-y-2.5">
-                      <h4 className="text-base font-bold text-white font-display group-hover:text-neon-pink transition-colors line-clamp-2">
+                      <h3 className="text-base font-bold text-white font-display group-hover:text-neon-pink transition-colors line-clamp-2">
                         {article.title}
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
                         {article.excerpt}
                       </p>
@@ -360,6 +365,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
             </div>
           )}
         </section>
+
+        {/* AdSense Slot: In-Feed Responsive */}
+        <AdSlot slotId="home-infeed-middle" format="in-feed" />
 
         {/* 5. Anti-Tribun / Anti-Jebakan Banner */}
         <section className="rounded-3xl border border-emerald-500/30 bg-gradient-to-r from-emerald-950/40 via-velvet to-obsidian p-6 sm:p-8">

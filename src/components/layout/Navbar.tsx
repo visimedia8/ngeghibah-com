@@ -6,6 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { Search, Menu, X, Sparkles, Shield, User, Flame, ArrowRight, FileText } from 'lucide-react';
 import { Logo } from '@/components/brand/Logo';
 import { MOCK_ARTICLES, MOCK_CELEBRITIES } from '@/data/mockData';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -177,9 +178,12 @@ export const Navbar = () => {
                             className="flex items-center gap-3 p-2.5 rounded-xl bg-obsidian-deep/80 hover:bg-neon-pink/15 border border-slate-800 hover:border-neon-pink/40 cursor-pointer transition-all"
                           >
                             <img
-                              src={celeb.avatar}
+                              src={getOptimizedImageUrl(celeb.avatar, 72, 75)}
                               alt={celeb.stageName}
                               className="w-9 h-9 rounded-full object-cover border border-neon-cyan shrink-0"
+                              loading="lazy"
+                              width={36}
+                              height={36}
                             />
                             <div className="min-w-0 flex-1">
                               <h5 className="text-xs font-bold text-white truncate">

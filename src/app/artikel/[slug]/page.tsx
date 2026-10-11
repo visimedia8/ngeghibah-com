@@ -11,6 +11,8 @@ import { ReactionPollMini } from '@/components/signature/ReactionPollMini';
 import { CelebrityDossierWidget } from '@/components/signature/CelebrityDossierWidget';
 import { AdSlot } from '@/components/ads/AdSlot';
 import { ReadingProgressBar } from '@/components/article/ReadingProgressBar';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
+import { linkifyCelebritiesInHtml } from '@/lib/linkify';
 import {
   Clock,
   Calendar,
@@ -94,6 +96,12 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
   const relatedArticles = MOCK_ARTICLES.filter(
     (a) => a.id !== article.id
   ).slice(0, 3);
+
+  // Linkify first occurrence of celebrity entities to their dossiers
+  const linkedContentHtml = linkifyCelebritiesInHtml(
+    article.contentHtml,
+    MOCK_CELEBRITIES
+  );
 
   const formattedDate = new Date(article.publishedAt).toLocaleDateString(
     'id-ID',
@@ -196,7 +204,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                   <div className="flex items-center gap-3">
                     <div className="relative w-10 h-10 rounded-full overflow-hidden border border-neon-cyan">
                       <Image
-                        src={article.author.avatar}
+                        src={getOptimizedImageUrl(article.author.avatar, 80, 75)}
                         alt={article.author.name}
                         fill
                         sizes="40px"
@@ -237,7 +245,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
               <div className="space-y-2">
                 <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-slate-900 border border-velvet-border shadow-card-glow">
                   <Image
-                    src={article.heroImage}
+                    src={getOptimizedImageUrl(article.heroImage, 800, 75)}
                     alt={article.title}
                     fill
                     priority
@@ -255,7 +263,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                 {/* Article Intro / Lead HTML Content */}
                 <div
                   className="prose prose-invert max-w-none prose-headings:font-display prose-headings:text-white prose-p:leading-relaxed prose-a:text-neon-cyan"
-                  dangerouslySetInnerHTML={{ __html: article.contentHtml }}
+                  dangerouslySetInnerHTML={{ __html: linkedContentHtml }}
                 />
 
                 {/* AdSense Slot 1: Below 2nd Paragraph */}
@@ -310,7 +318,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                 <div className="rounded-2xl border border-slate-800 bg-velvet p-5 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-neon-pink">
                     <Image
-                      src={article.author.avatar}
+                      src={getOptimizedImageUrl(article.author.avatar, 128, 75)}
                       alt={article.author.name}
                       fill
                       sizes="64px"

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Celebrity } from '@/types';
 import { ExternalLink, Users, ShieldAlert, Award, Sparkles } from 'lucide-react';
+import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 interface CelebrityDossierCardProps {
   celebrity: Celebrity;
@@ -32,7 +33,7 @@ export const CelebrityDossierCard: React.FC<CelebrityDossierCardProps> = ({
       <div className="flex items-center gap-4 mb-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-neon-pink/80 shadow-neon-pink">
           <Image
-            src={celebrity.avatar}
+            src={getOptimizedImageUrl(celebrity.avatar, 128, 75)}
             alt={celebrity.stageName}
             fill
             sizes="64px"
@@ -41,9 +42,9 @@ export const CelebrityDossierCard: React.FC<CelebrityDossierCardProps> = ({
         </div>
 
         <div className="min-w-0">
-          <h4 className="text-lg font-bold text-white font-display truncate group-hover:text-neon-pink transition-colors">
+          <h3 className="text-lg font-bold text-white font-display truncate group-hover:text-neon-pink transition-colors">
             {celebrity.stageName}
-          </h4>
+          </h3>
           <p className="text-xs text-slate-400 truncate">{celebrity.name}</p>
           <p className="text-xs text-neon-cyan font-mono mt-0.5 truncate">
             {celebrity.profession}
