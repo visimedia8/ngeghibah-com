@@ -57,13 +57,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.deepseek.com/chat/completions",
+        "url": "={{ $env.OPENROUTER_BASE_URL ? $env.OPENROUTER_BASE_URL + '/chat/completions' : 'https://openrouter.ai/api/v1/chat/completions' }}",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "Authorization",
-              "value": "=Bearer {{ $env.DEEPSEEK_API_KEY }}"
+              "value": "=Bearer {{ $env.OPENROUTER_API_KEY || $env.DEEPSEEK_API_KEY }}"
             },
             {
               "name": "Content-Type",
@@ -73,10 +73,10 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"deepseek-chat\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di media NgeGhibah.com. Tugasmu menulis artikel komprehensif, berbasis fakta dan jejak digital, menggunakan bahasa Indonesia santai tapi cerdas, analitis, tanpa clickbait murahan. Wajib gunakan kata: duduk perkaranya, kronologi lengkap, jejak digital, sentimen netizen. Kembalikan HANYA JSON dengan properti: title, slug, meta_description, excerpt, category (seleb-global | seleb-lokal | k-pop), ghibah_meter (TERKONFIRMASI | FAKTA_DIGITAL | RUMOR_NETIZEN), entities (array of names), timeline (array of {time_label, event}), content_html (artikel berstruktur h2, h3, p, ul). Sertakan klausul hak jawab di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Tuliskan artikel pop-kultur berbobot berdasarkan informasi berikut:\\nJudul Sumber: \" + $json.source_title + \"\\nKonteks Sumber: \" + $json.selftext\n    }\n  ],\n  \"temperature\": 0.7\n}"
+        "jsonBody": "={\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di media NgeGhibah.com. Tugasmu menulis artikel komprehensif, berbasis fakta dan jejak digital, menggunakan bahasa Indonesia santai tapi cerdas, analitis, tanpa clickbait murahan. Wajib gunakan kata: duduk perkaranya, kronologi lengkap, jejak digital, sentimen netizen. Kembalikan HANYA JSON dengan properti: title, slug, meta_description, excerpt, category (seleb-global | seleb-lokal | k-pop), ghibah_meter (TERKONFIRMASI | FAKTA_DIGITAL | RUMOR_NETIZEN), entities (array of names), timeline (array of {time_label, event}), content_html (artikel berstruktur h2, h3, p, ul). Sertakan klausul hak jawab di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Tuliskan artikel pop-kultur berbobot berdasarkan informasi berikut:\\nJudul Sumber: \" + $json.source_title + \"\\nKonteks Sumber: \" + $json.selftext\n    }\n  ],\n  \"temperature\": 0.7\n}"
       },
       "id": "4",
-      "name": "DeepSeek v4 Flash Writer",
+      "name": "OpenRouter DeepSeek v4 Flash Writer",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [

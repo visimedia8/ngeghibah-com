@@ -22,9 +22,10 @@ Workflow n8n dibagi menjadi 6 tahap logis:
   - Filter kata terlarang (SARA, pornografi, gore, bunuh diri, fitnah ekstrem).
   - Jika mengandung kata terlarang yang tidak bisa diselamatkan → DROP.
         ↓
-[Node 4: DeepSeek v4 Flash Reasoning & Writing Node]
-  - Memanggil DeepSeek Chat Completions API (`https://api.deepseek.com/chat/completions`).
-  - Model: `deepseek-chat` (atau model flash reasoning).
+[Node 4: OpenRouter DeepSeek v4 Flash Reasoning & Writing Node]
+  - Memanggil OpenRouter Chat Completions API (`https://openrouter.ai/api/v1/chat/completions`).
+  - Model: `deepseek/deepseek-v4-flash`.
+  - Header: `Authorization: Bearer {{ $env.OPENROUTER_API_KEY }}`.
   - Response format: `json_object`.
         ↓
 [Node 5: Asset & Image Matcher]
