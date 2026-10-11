@@ -11,8 +11,11 @@ export const Footer = () => {
     { label: 'Susunan Redaksi', href: '/redaksi' },
     { label: 'Pedoman Media Siber', href: '/pedoman-media-siber' },
     { label: 'Kode Etik Jurnalistik', href: '/kode-etik' },
+    { label: 'Pemeriksaan Fakta', href: '/pedoman-pemeriksaan-fakta' },
     { label: 'Permohonan Hak Jawab', href: '/hak-jawab' },
     { label: 'Kebijakan Privasi', href: '/kebijakan-privasi' },
+    { label: 'Syarat & Ketentuan', href: '/syarat-dan-ketentuan' },
+    { label: 'Pedoman Hak Cipta & DMCA', href: '/pedoman-hak-cipta' },
     { label: 'Disclaimer Hukum', href: '/disclaimer' },
     { label: 'Kontak & Hotline', href: '/kontak-kami' },
   ];
@@ -63,10 +66,10 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* 8 Trust Pages Column */}
+          {/* Trust Pages Column */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-wider text-neon-cyan font-bold">
-              8 HALAMAN KEPERCAYAAN
+              PEDOMAN & LEGALITAS (E-E-A-T)
             </h4>
             <ul className="space-y-2 text-xs">
               {trustLinks.map((link) => (
@@ -132,13 +135,21 @@ export const Footer = () => {
           <div>
             © 2026 PT Media Siber Ghibah Nusantara (NgeGhibah.com). Hak Cipta Dilindungi Undang-Undang.
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            <Link href="/kebijakan-privasi" className="hover:text-white transition-colors">
+              Privasi
+            </Link>
+            <span>•</span>
+            <Link href="/syarat-dan-ketentuan" className="hover:text-white transition-colors">
+              Ketentuan
+            </Link>
+            <span>•</span>
             <Link href="/hak-jawab" className="text-emerald-400 hover:underline">
-              Layanan Hak Jawab Cepat 24/7
+              Hak Jawab 24/7
             </Link>
             <span>•</span>
             <Link href="/kode-etik" className="hover:text-slate-400">
-              Dewan Pers RI Compliant
+              Dewan Pers RI
             </Link>
           </div>
         </div>

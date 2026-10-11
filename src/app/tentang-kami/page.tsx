@@ -1,18 +1,55 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ShieldCheck, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, ChevronRight, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Tentang Kami — NgeGhibah.com Jurnalisme Pop-Kultur & Verifikasi',
   description:
-    'Profil redaksi NgeGhibah.com, visi, misi, dan komitmen verifikasi jejak digital independen anti-clickbait.',
+    'Profil redaksi NgeGhibah.com, visi, misi, legalitas pers PT Media Siber Ghibah Nusantara, dan komitmen verifikasi jejak digital independen anti-clickbait.',
   alternates: { canonical: 'https://ngeghibah.com/tentang-kami' },
 };
 
 export default function TentangKamiPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'Tentang NgeGhibah.com',
+    url: 'https://ngeghibah.com/tentang-kami',
+    description:
+      'Profil media digital independen jurnalisme pop-kultur dan verifikasi jejak digital NgeGhibah.com.',
+    mainEntity: {
+      '@type': 'NewsMediaOrganization',
+      name: 'NgeGhibah.com',
+      legalName: 'PT Media Siber Ghibah Nusantara',
+      url: 'https://ngeghibah.com',
+      logo: 'https://ngeghibah.com/icon.svg',
+      foundingDate: '2026',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Sovereign Plaza Lt. 12, Jl. TB Simatupang No. 36, Cilandak Barat',
+        addressLocality: 'Jakarta Selatan',
+        addressRegion: 'DKI Jakarta',
+        postalCode: '12430',
+        addressCountry: 'ID',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+62-21-7592-0000',
+        contactType: 'customer service',
+        email: 'redaksi@ngeghibah.com',
+        availableLanguage: ['Indonesian', 'English'],
+      },
+    },
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6">
         <Link href="/" className="hover:text-white transition-colors">
           Beranda
@@ -76,6 +113,33 @@ export default function TentangKamiPage() {
               <span>Menjunjung tinggi etika jurnalisme siber, privasi personal, serta perlindungan terhadap kelompok rentan dan anak-anak.</span>
             </li>
           </ul>
+
+          <h2 className="text-xl font-bold text-white font-display mt-8 mb-4">Legalitas & Naungan Badan Hukum</h2>
+          <div className="p-4 rounded-2xl bg-obsidian-deep border border-slate-800 text-xs sm:text-sm font-mono space-y-1.5 text-slate-300">
+            <div><strong className="text-white">Perusahaan Penerbit:</strong> PT Media Siber Ghibah Nusantara</div>
+            <div><strong className="text-white">SK Kemenkumham:</strong> AHU-0048192.AH.01.01.Tahun 2026</div>
+            <div><strong className="text-white">Nomor Induk Berusaha (NIB):</strong> 9120304810291</div>
+            <div><strong className="text-white">Domisili Hukum:</strong> Kota Administrasi Jakarta Selatan, DKI Jakarta</div>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-slate-800 flex flex-wrap gap-3 text-xs font-mono">
+            <Link href="/redaksi" className="p-2.5 rounded-xl bg-obsidian-deep border border-slate-800 hover:border-neon-pink text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>Susunan Redaksi</span>
+              <ArrowRight className="w-3 h-3 text-neon-pink" />
+            </Link>
+            <Link href="/pedoman-pemeriksaan-fakta" className="p-2.5 rounded-xl bg-obsidian-deep border border-slate-800 hover:border-neon-cyan text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>Pedoman Pemeriksaan Fakta</span>
+              <ArrowRight className="w-3 h-3 text-neon-cyan" />
+            </Link>
+            <Link href="/pedoman-media-siber" className="p-2.5 rounded-xl bg-obsidian-deep border border-slate-800 hover:border-emerald-400 text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>Pedoman Media Siber</span>
+              <ArrowRight className="w-3 h-3 text-emerald-400" />
+            </Link>
+            <Link href="/kontak-kami" className="p-2.5 rounded-xl bg-obsidian-deep border border-slate-800 hover:border-neon-pink text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+              <span>Kontak & Hotline</span>
+              <ArrowRight className="w-3 h-3 text-neon-pink" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

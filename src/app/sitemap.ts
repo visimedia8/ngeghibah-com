@@ -13,6 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/kode-etik',
     '/hak-jawab',
     '/kebijakan-privasi',
+    '/syarat-dan-ketentuan',
+    '/pedoman-pemeriksaan-fakta',
+    '/pedoman-hak-cipta',
     '/disclaimer',
     '/kontak-kami',
   ].map((route) => ({
