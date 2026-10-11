@@ -152,7 +152,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
             </Link>
             <ChevronRight className="w-3.5 h-3.5 shrink-0" />
             <Link
-              href="/#kategori-feed"
+              href={`/kategori/${article.category}`}
               className="hover:text-neon-cyan transition-colors"
             >
               {article.categoryLabel}
@@ -169,9 +169,12 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
               {/* Header Metadata */}
               <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="bg-neon-pink/15 text-neon-pink border border-neon-pink/30 text-xs font-mono font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  <Link
+                    href={`/kategori/${article.category}`}
+                    className="bg-neon-pink/15 text-neon-pink border border-neon-pink/30 hover:bg-neon-pink/25 text-xs font-mono font-bold px-3 py-1 rounded-full uppercase tracking-wider transition-colors"
+                  >
                     {article.categoryLabel}
-                  </span>
+                  </Link>
                   <span className="text-slate-400 text-xs font-mono flex items-center gap-1">
                     <Calendar className="w-3.5 h-3.5" />
                     {formattedDate}

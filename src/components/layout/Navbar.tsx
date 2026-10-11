@@ -14,11 +14,11 @@ export const Navbar = () => {
 
   const navLinks = [
     { label: 'Beranda', href: '/' },
-    { label: 'Seleb Lokal', href: '/#kategori' },
-    { label: 'Hollywood & Barat', href: '/#kategori' },
-    { label: 'K-Pop & Asia', href: '/#kategori' },
-    { label: 'Creator & TikTok', href: '/#kategori' },
-    { label: 'Direktori Seleb', href: '/seleb/rachel-vennya' },
+    { label: 'Seleb Lokal', href: '/kategori/seleb-lokal' },
+    { label: 'Hollywood & Barat', href: '/kategori/hollywood-barat' },
+    { label: 'K-Pop & Asia', href: '/kategori/kpop-asia' },
+    { label: 'Creator & TikTok', href: '/kategori/creator-tiktok' },
+    { label: 'Direktori Seleb', href: '/seleb' },
     { label: 'Hak Jawab', href: '/hak-jawab' },
   ];
 

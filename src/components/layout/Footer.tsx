@@ -21,11 +21,11 @@ export const Footer = () => {
   ];
 
   const categoryLinks = [
-    { label: 'Selebriti Lokal', href: '/#kategori' },
-    { label: 'Hollywood & Barat', href: '/#kategori' },
-    { label: 'K-Pop & Asian Wave', href: '/#kategori' },
-    { label: 'TikTok & Digital Creators', href: '/#kategori' },
-    { label: 'Dossier Profil Artis', href: '/seleb/rachel-vennya' },
+    { label: 'Selebriti Lokal', href: '/kategori/seleb-lokal' },
+    { label: 'Hollywood & Barat', href: '/kategori/hollywood-barat' },
+    { label: 'K-Pop & Asian Wave', href: '/kategori/kpop-asia' },
+    { label: 'TikTok & Digital Creators', href: '/kategori/creator-tiktok' },
+    { label: 'Dossier Profil Artis', href: '/seleb' },
   ];
 
   return (
