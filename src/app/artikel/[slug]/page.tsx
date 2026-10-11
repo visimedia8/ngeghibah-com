@@ -140,7 +140,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <article className="min-h-screen py-6 sm:py-10 pb-24 sm:pb-10">
+      <article className="min-h-screen py-6 sm:py-10 pb-28 sm:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* 1. Breadcrumb Trail */}
           <nav
@@ -221,6 +221,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                     <QuickShareBar
                       title={article.title}
                       url={`https://ngeghibah.com/artikel/${article.slug}`}
+                      variant="inline"
                     />
                   </div>
                 </div>
@@ -328,6 +329,28 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                     </p>
                   </div>
                 </div>
+
+                {/* 8. Dedicated Bottom Article Share Box */}
+                <div className="mt-8 p-6 sm:p-7 rounded-2xl border border-slate-800 bg-velvet/50 space-y-4">
+                  <div className="space-y-1">
+                    <span className="text-[11px] font-mono text-neon-pink uppercase tracking-wider font-semibold">
+                      SEBARKAN INFORMASI TERVERIFIKASI
+                    </span>
+                    <h4 className="text-base sm:text-lg font-bold text-white font-display">
+                      Bantu Lawan Hoaks: Bagikan Duduk Perkara Ini
+                    </h4>
+                    <p className="text-xs text-slate-400 leading-relaxed max-w-xl">
+                      Bantu warganet dan lingkar terdekat kamu memahami kronologi faktual berdasarkan jejak digital tanpa bumbu fitnah.
+                    </p>
+                  </div>
+                  <div className="pt-2 border-t border-slate-800/80">
+                    <QuickShareBar
+                      title={article.title}
+                      url={`https://ngeghibah.com/artikel/${article.slug}`}
+                      variant="inline"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -371,10 +394,11 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
           </div>
         </div>
 
-        {/* 9. Signature Component: Mobile Sticky Quick Share Bar */}
+        {/* 9. Signature Component: Mobile Sticky Quick Share Bar (Strictly sm:hidden) */}
         <QuickShareBar
           title={article.title}
           url={`https://ngeghibah.com/artikel/${article.slug}`}
+          variant="floating"
         />
       </article>
     </>

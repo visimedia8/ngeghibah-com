@@ -7,12 +7,14 @@ interface QuickShareBarProps {
   title: string;
   url?: string;
   className?: string;
+  variant?: 'inline' | 'floating';
 }
 
 export const QuickShareBar: React.FC<QuickShareBarProps> = ({
   title,
   url,
   className = '',
+  variant = 'inline',
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -65,12 +67,50 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
         </div>
       )}
 
-      {/* Floating Sticky Share Bar on Mobile & Bottom bar */}
-      <div
-        className={`fixed bottom-0 left-0 right-0 z-40 bg-obsidian-deep/95 border-t border-velvet-border/80 px-4 py-2.5 backdrop-blur-lg sm:static sm:bg-transparent sm:border-0 sm:p-0 ${className}`}
-      >
-        <div className="max-w-xl mx-auto flex items-center justify-between sm:justify-start gap-2 sm:gap-3">
-          <div className="hidden sm:flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold pr-2 border-r border-slate-800">
+      {variant === 'floating' ? (
+        /* Floating Sticky Share Bar on Mobile ONLY (Strictly sm:hidden) */
+        <div
+          className={`fixed bottom-0 left-0 right-0 z-40 bg-obsidian-deep/95 border-t border-slate-800/90 px-4 py-2.5 backdrop-blur-xl sm:hidden ${className}`}
+        >
+          <div className="flex items-center justify-between gap-2 max-w-md mx-auto">
+            <button
+              onClick={handleShareWhatsApp}
+              aria-label="Bagikan ke WhatsApp"
+              className="flex-1 min-h-[44px] inline-flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba59] text-white px-3 py-2 rounded-xl text-xs font-semibold active:scale-95 shadow-sm"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp</span>
+            </button>
+            <button
+              onClick={handleShareX}
+              aria-label="Bagikan ke X"
+              className="flex-1 min-h-[44px] inline-flex items-center justify-center gap-1.5 bg-black hover:bg-slate-900 text-white border border-slate-700 px-3 py-2 rounded-xl text-xs font-semibold active:scale-95"
+            >
+              <span className="font-bold text-sm">𝕏</span>
+              <span>Bagikan</span>
+            </button>
+            <button
+              onClick={handleCopy}
+              aria-label="Salin tautan"
+              className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center px-3 py-2 rounded-xl text-xs font-semibold border active:scale-95 ${
+                copied
+                  ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500'
+                  : 'bg-velvet hover:bg-slate-800 text-slate-200 border-slate-700'
+              }`}
+            >
+              {copied ? (
+                <Check className="w-4 h-4 text-emerald-400" />
+              ) : (
+                <LinkIcon className="w-4 h-4 text-neon-cyan" />
+              )}
+            </button>
+          </div>
+        </div>
+      ) : (
+        /* Inline Share Bar (Desktop Header, Dedicated Bottom Box) */
+        <div className={`flex flex-wrap items-center gap-2 sm:gap-3 ${className}`}>
+          {/* 1-Tap Share Label */}
+          <div className="flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold pr-2 border-r border-slate-800 shrink-0">
             <Share2 className="w-4 h-4 text-neon-pink" />
             <span>1-TAP SHARE:</span>
           </div>
@@ -79,7 +119,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleShareWhatsApp}
             aria-label="Bagikan ke WhatsApp"
-            className="flex-1 sm:flex-initial min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 shadow-sm active:scale-95"
+            className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 shadow-sm active:scale-95 cursor-pointer shrink-0"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp</span>
@@ -89,7 +129,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleShareX}
             aria-label="Bagikan ke X"
-            className="flex-1 sm:flex-initial min-h-[44px] inline-flex items-center justify-center gap-2 bg-black hover:bg-slate-900 text-white border border-slate-700/80 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 active:scale-95"
+            className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-black hover:bg-slate-900 text-white border border-slate-700/80 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 active:scale-95 cursor-pointer shrink-0"
           >
             <span className="font-bold text-sm">𝕏</span>
             <span>Bagikan</span>
@@ -99,7 +139,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleCopy}
             aria-label="Salin tautan"
-            className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all duration-150 active:scale-95 ${
+            className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all duration-150 active:scale-95 cursor-pointer shrink-0 ${
               copied
                 ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500'
                 : 'bg-velvet hover:bg-velvet-card text-slate-200 border-slate-700'
@@ -108,17 +148,17 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
             {copied ? (
               <>
                 <Check className="w-4 h-4 text-emerald-400" />
-                <span className="hidden sm:inline">Tersalin</span>
+                <span>Tersalin</span>
               </>
             ) : (
               <>
                 <LinkIcon className="w-4 h-4 text-neon-cyan" />
-                <span className="hidden sm:inline">Salin Link</span>
+                <span>Salin Link</span>
               </>
             )}
           </button>
         </div>
-      </div>
+      )}
     </>
   );
 };
