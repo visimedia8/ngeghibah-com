@@ -38,7 +38,7 @@
           },
           "sendBody": true,
           "specifyBody": "json",
-          "jsonBody": "={{ JSON.stringify({ title: ($json.body?.title || $json.title), slug: ($json.body?.slug || $json.slug), meta_description: ($json.body?.meta_description || $json.meta_description || ''), excerpt: ($json.body?.excerpt || $json.excerpt || ''), category: ($json.body?.category || $json.category || 'seleb-lokal'), ghibah_meter: ($json.body?.ghibah_meter || $json.ghibah_meter || 'FAKTA_TERVERIFIKASI'), entities: ($json.body?.entities || $json.entities || []), timeline: ($json.body?.timeline || $json.timeline || []), content_html: ($json.body?.content_html || $json.content_html), status: 'published' }) }}"
+          "jsonBody": "={{ JSON.stringify({ title: ($json.body?.title || $json.title), slug: ($json.body?.slug || $json.slug), meta_description: ($json.body?.meta_description || $json.meta_description || ''), excerpt: ($json.body?.excerpt || $json.excerpt || ''), category: ($json.body?.category || $json.category || 'seleb-lokal'), ghibah_meter: ($json.body?.ghibah_meter || $json.ghibah_meter || 'FAKTA_TERVERIFIKASI'), hero_image: ($json.body?.hero_image || $json.hero_image || ''), entities: ($json.body?.entities || $json.entities || []), timeline: ($json.body?.timeline || $json.timeline || []), content_html: ($json.body?.content_html || $json.content_html), status: 'published' }) }}"
         },
         "id": "2",
         "name": "Auto-Publish to NgeGhibah Edge",

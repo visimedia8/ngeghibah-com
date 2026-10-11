@@ -18,6 +18,26 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'api.dicebear.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'imagedelivery.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ngeghibah.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.ngeghibah.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.ngeghibah.com',
+      },
     ],
   },
 };
