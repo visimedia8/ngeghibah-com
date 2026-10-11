@@ -28,22 +28,22 @@ export const TrendingRadarBar: React.FC<TrendingRadarBarProps> = ({
           <span className="sm:hidden">TREN</span>
         </div>
 
-        {/* Scrollable Chips */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth py-0.5 w-full">
+        {/* Scrollable Chips with Touch Feedback */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1 w-full touch-pan-x">
           {TRENDING_TAGS.map((item) => {
             const isActive = activeTag === item.tag;
             return (
               <button
                 key={item.id}
                 onClick={() => onTagClick && onTagClick(item.tag)}
-                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all duration-200 border cursor-pointer hover:scale-105 active:scale-95 ${
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 min-h-[40px] rounded-full text-xs font-medium whitespace-nowrap transition-all duration-200 border cursor-pointer active:scale-95 ${
                   isActive
-                    ? 'bg-neon-pink text-white border-neon-pink shadow-neon-pink'
+                    ? 'bg-neon-pink text-white border-neon-pink shadow-neon-pink font-semibold'
                     : 'bg-velvet/90 text-slate-300 hover:text-white border-slate-700/60 hover:border-neon-cyan/50 hover:bg-velvet-card'
                 }`}
               >
                 {item.isHot && (
-                  <span className="text-neon-pink text-[10px]">🔥</span>
+                  <span className="text-neon-pink text-[11px]">🔥</span>
                 )}
                 <span>{item.tag}</span>
                 <span className="text-[10px] text-slate-400 font-normal pl-1 border-l border-slate-700/70">

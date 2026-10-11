@@ -67,7 +67,7 @@ export const ReactionPollMini: React.FC<ReactionPollMiniProps> = ({
               key={option.id}
               onClick={() => handleVote(option.id)}
               disabled={selectedOption !== null}
-              className={`w-full relative overflow-hidden rounded-xl border p-3.5 text-left transition-all duration-200 group ${
+              className={`w-full min-h-[48px] relative overflow-hidden rounded-xl border p-3.5 text-left transition-all duration-200 active:scale-98 group ${
                 isSelected
                   ? 'border-neon-cyan bg-cyan-950/40 text-white'
                   : selectedOption !== null

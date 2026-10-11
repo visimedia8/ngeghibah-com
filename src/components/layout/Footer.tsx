@@ -28,6 +28,15 @@ export const Footer = () => {
     { label: 'Dossier Profil Artis', href: '/seleb' },
   ];
 
+  const [email, setEmail] = React.useState('');
+  const [subscribed, setSubscribed] = React.useState(false);
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !email.includes('@')) return;
+    setSubscribed(true);
+  };
+
   return (
     <footer className="w-full bg-[#080B12] border-t border-velvet-border/80 text-slate-300 mt-20">
       {/* Top Banner: Anti-Tribun Manifesto */}
@@ -76,7 +85,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-white hover:underline transition-colors flex items-center gap-1.5"
+                    className="text-slate-400 hover:text-white hover:underline transition-colors flex items-center gap-1.5 py-1"
                   >
                     <span>{link.label}</span>
                   </Link>
@@ -95,7 +104,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-white hover:underline transition-colors"
+                    className="text-slate-400 hover:text-white hover:underline transition-colors block py-1"
                   >
                     {link.label}
                   </Link>
@@ -113,20 +122,29 @@ export const Footer = () => {
             <p className="text-xs text-slate-400 leading-relaxed">
               Dapatkan rangkuman duduk perkara drama paling viral setiap Jumat sore langsung di inbox kamu.
             </p>
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-2">
-              <input
-                type="email"
-                placeholder="email.kamu@domain.com"
-                className="w-full bg-velvet border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-neon-pink"
-              />
-              <button
-                type="submit"
-                className="w-full bg-neon-pink hover:bg-neon-pink/90 text-white font-semibold rounded-xl py-2 px-3 text-xs transition-colors flex items-center justify-center gap-1.5 shadow-neon-pink"
-              >
-                <span>Langganan Gratis</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </form>
+            {subscribed ? (
+              <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 text-xs text-emerald-400 font-mono flex items-center gap-2">
+                <span>✓ Berhasil langganan briefing mingguan!</span>
+              </div>
+            ) : (
+              <form onSubmit={handleSubscribe} className="space-y-2">
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="email.kamu@domain.com"
+                  className="w-full min-h-[44px] bg-velvet border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-neon-pink"
+                />
+                <button
+                  type="submit"
+                  className="w-full min-h-[44px] bg-neon-pink hover:bg-neon-pink/90 active:scale-95 text-white font-semibold rounded-xl py-2 px-3 text-xs transition-all flex items-center justify-center gap-1.5 shadow-neon-pink"
+                >
+                  <span>Langganan Gratis</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </form>
+            )}
           </div>
         </div>
 

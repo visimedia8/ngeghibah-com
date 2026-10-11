@@ -206,7 +206,7 @@ export const HakJawabForm = () => {
       <button
         type="submit"
         disabled={isSubmitting || !formData.agreeTerms}
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-neon-pink hover:bg-neon-pink/90 disabled:opacity-50 text-white font-bold text-xs sm:text-sm transition-all shadow-neon-pink"
+        className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-neon-pink hover:bg-neon-pink/90 disabled:opacity-50 text-white font-bold text-xs sm:text-sm transition-all shadow-neon-pink active:scale-95"
       >
         <Send className="w-4 h-4" />
         <span>{isSubmitting ? 'Mengirim Berkas...' : 'Kirim Permohonan Hak Jawab'}</span>

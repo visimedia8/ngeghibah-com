@@ -274,13 +274,13 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               </p>
             </div>
 
-            {/* Instant Filter Tabs */}
-            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar p-1 bg-obsidian-deep/80 rounded-2xl border border-slate-800">
+            {/* Instant Filter Tabs with Enhanced Touch Target */}
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar p-1.5 bg-obsidian-deep/80 rounded-2xl border border-slate-800 touch-pan-x">
               {categories.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id as ArticleCategory)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+                  className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all active:scale-95 cursor-pointer ${
                     activeCategory === cat.id
                       ? 'bg-neon-pink text-white shadow-neon-pink'
                       : 'text-slate-400 hover:text-white hover:bg-velvet'
@@ -379,7 +379,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
 
             <Link
               href="/tentang-kami"
-              className="shrink-0 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian font-bold text-xs font-mono transition-colors shadow-sm"
+              className="shrink-0 min-h-[44px] inline-flex items-center justify-center px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian font-bold text-xs font-mono transition-colors shadow-sm"
             >
               Baca Manifesto Kami →
             </Link>

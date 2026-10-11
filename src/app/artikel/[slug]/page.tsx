@@ -140,7 +140,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <article className="min-h-screen py-6 sm:py-10">
+      <article className="min-h-screen py-6 sm:py-10 pb-24 sm:pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* 1. Breadcrumb Trail */}
           <nav
@@ -291,7 +291,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                   <div className="pt-2">
                     <Link
                       href="/hak-jawab"
-                      className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-neon-cyan hover:underline bg-velvet px-3 py-1.5 rounded-lg border border-slate-700"
+                      className="min-h-[44px] inline-flex items-center gap-1.5 text-xs font-mono font-bold text-neon-cyan hover:underline bg-velvet px-4 py-2.5 rounded-lg border border-slate-700"
                     >
                       <span>Ajukan Permohonan Hak Jawab Resmi Disini</span>
                       <ChevronRight className="w-3.5 h-3.5" />

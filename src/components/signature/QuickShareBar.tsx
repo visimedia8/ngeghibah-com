@@ -79,7 +79,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleShareWhatsApp}
             aria-label="Bagikan ke WhatsApp"
-            className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 shadow-sm active:scale-95"
+            className="flex-1 sm:flex-initial min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 shadow-sm active:scale-95"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp</span>
@@ -89,7 +89,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleShareX}
             aria-label="Bagikan ke X"
-            className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-black hover:bg-slate-900 text-white border border-slate-700/80 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 active:scale-95"
+            className="flex-1 sm:flex-initial min-h-[44px] inline-flex items-center justify-center gap-2 bg-black hover:bg-slate-900 text-white border border-slate-700/80 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-150 active:scale-95"
           >
             <span className="font-bold text-sm">𝕏</span>
             <span>Bagikan</span>
@@ -99,7 +99,7 @@ export const QuickShareBar: React.FC<QuickShareBarProps> = ({
           <button
             onClick={handleCopy}
             aria-label="Salin tautan"
-            className={`inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all duration-150 active:scale-95 ${
+            className={`min-h-[44px] min-w-[44px] inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all duration-150 active:scale-95 ${
               copied
                 ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500'
                 : 'bg-velvet hover:bg-velvet-card text-slate-200 border-slate-700'
