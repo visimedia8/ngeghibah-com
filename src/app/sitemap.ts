@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '',
     '/seleb',
+    '/kamus',
     '/tentang-kami',
     '/redaksi',
     '/pedoman-media-siber',

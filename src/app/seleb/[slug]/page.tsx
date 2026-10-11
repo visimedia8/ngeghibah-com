@@ -12,6 +12,10 @@ import {
   Flame,
   Clock,
   History,
+  Briefcase,
+  Scale,
+  HelpCircle,
+  CheckCircle2,
 } from 'lucide-react';
 import { MOCK_CELEBRITIES, MOCK_ARTICLES } from '@/data/mockData';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
@@ -38,12 +42,12 @@ export async function generateMetadata({ params }: CelebPageProps): Promise<Meta
   const canonicalUrl = `https://ngeghibah.com/seleb/${celeb.slug}`;
 
   return {
-    title: `${celeb.stageName} (${celeb.name}) — Biodata, Circle & Rekam Jejak`,
-    description: `Dossier profil ${celeb.stageName}: biodata lengkap, rekam jejak karier, lingkaran relasi, riwayat kontroversi, dan analisis sentimen warganet.`,
+    title: `${celeb.stageName} (${celeb.name}) — Biodata Lengkap, Tabel Kontroversi & Bisnis`,
+    description: `Dossier profil tebal ${celeb.stageName}: biodata lengkap, tabel rekam jejak kontroversi, portofolio bisnis, daftar penghargaan, dan analisis sentimen warganet.`,
     alternates: { canonical: canonicalUrl },
     openGraph: {
       type: 'profile',
-      title: `${celeb.stageName} — Dossier Selebritas`,
+      title: `${celeb.stageName} — Dossier Pop-Kultur Terverifikasi`,
       description: celeb.bio,
       images: [
         {
@@ -72,23 +76,43 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
     )
   );
 
-  // Person JSON-LD Schema
-  const personJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: celeb.name,
-    alternateName: celeb.stageName,
-    image: celeb.avatar,
-    description: celeb.bio,
-    jobTitle: celeb.profession,
-    sameAs: celeb.verifiedAccounts.map((acc) => acc.url),
-  };
+  // Person + FAQPage JSON-LD Schema
+  const schemas: any[] = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: celeb.name,
+      alternateName: celeb.stageName,
+      image: celeb.avatar,
+      description: celeb.bio,
+      jobTitle: celeb.profession,
+      birthDate: celeb.dossierDetail?.birthDate,
+      birthPlace: celeb.dossierDetail?.birthPlace,
+      nationality: celeb.dossierDetail?.nationality,
+      sameAs: celeb.verifiedAccounts.map((acc) => acc.url),
+    },
+  ];
+
+  if (celeb.faq && celeb.faq.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: celeb.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: f.answer,
+        },
+      })),
+    });
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -178,11 +202,139 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
           </div>
         </header>
 
-        {/* Bio Section */}
+        {/* SECTION 1: TABEL PARAMETER BIODATA & PROFIL RESMI (THICK CONTENT) */}
+        <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-display font-bold text-lg sm:text-xl text-white flex items-center gap-2">
+              <ShieldCheck className="w-5 h-5 text-neon-cyan" />
+              <span>Tabel Parameter Dossier & Biodata Lengkap</span>
+            </h2>
+            <span className="text-[11px] font-mono text-neon-pink uppercase tracking-wider font-semibold">
+              DATA TERVERIFIKASI
+            </span>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+            Rangkuman spesifikasi identitas resmi, legalitas kependudukan, latar belakang pendidikan,
+            dan lingkaran representasi hukum {celeb.stageName}.
+          </p>
+
+          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60">
+            <table className="w-full text-left text-xs sm:text-sm">
+              <tbody className="divide-y divide-slate-800/80 font-sans">
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 w-1/3 text-xs uppercase font-semibold">
+                    Nama Lengkap
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                    {celeb.name}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Nama Panggung / Moniker
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-neon-pink">
+                    {celeb.stageName}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Tanggal & Tempat Lahir
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    {celeb.dossierDetail?.birthDate || '-'}, {celeb.dossierDetail?.birthPlace || '-'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Usia & Zodiak
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    {celeb.age} Tahun • Zodiak {celeb.dossierDetail?.zodiac || '-'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Kewarganegaraan
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    {celeb.dossierDetail?.nationality || 'Indonesia'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Pendidikan Terakhir
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    {celeb.dossierDetail?.education || 'Pendidikan Seni & Komunikasi'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Tahun Aktif Berkarier
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 font-mono">
+                    {celeb.dossierDetail?.yearsActive || '2015 – Sekarang'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Agensi / Label Manajemen
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-neon-cyan font-medium">
+                    {celeb.agency}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Status Relasi / Pasangan
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    {celeb.relationshipStatus}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Estimasi Valuasi & Endorsement
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 font-semibold font-mono">
+                    {celeb.dossierDetail?.netWorthEstimate || 'Tier A Commercial'}
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-slate-400 text-xs uppercase font-semibold">
+                    Media Sosial Resmi
+                  </td>
+                  <td className="py-3.5 px-4 sm:px-6">
+                    <div className="flex flex-wrap gap-2">
+                      {celeb.verifiedAccounts.map((acc, idx) => (
+                        <a
+                          key={idx}
+                          href={acc.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-velvet border border-slate-700 text-slate-300 hover:text-white hover:border-neon-pink text-xs transition-colors"
+                        >
+                          <span className="capitalize font-mono text-[11px] text-neon-cyan">
+                            {acc.platform}:
+                          </span>
+                          <span>{acc.handle}</span>
+                          <ExternalLink className="w-3 h-3 text-slate-500" />
+                        </a>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* SECTION 2: BIOGRAFI & DINAMIKA PERSONAL */}
         <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800">
           <h2 className="font-display font-bold text-lg text-white mb-3 flex items-center gap-2">
             <Users className="w-4 h-4 text-neon-pink" />
-            <span>Biografi & Dinamika Personal</span>
+            <span>Biografi & Analisis Karakter</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">{celeb.bio}</p>
 
@@ -195,25 +347,200 @@ export default function CelebrityDetailPage({ params }: CelebPageProps) {
           </div>
         </section>
 
-        {/* Career Highlights */}
-        {celeb.careerHighlights && celeb.careerHighlights.length > 0 && (
-          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800">
-            <h2 className="font-display font-bold text-lg text-white mb-4 flex items-center gap-2">
-              <Award className="w-4 h-4 text-neon-cyan" />
-              <span>Prestasi & Rekam Jejak Karya</span>
-            </h2>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300">
-              {celeb.careerHighlights.map((hl, idx) => (
-                <li key={idx} className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-neon-pink mt-2 shrink-0" />
-                  <span>{hl}</span>
-                </li>
-              ))}
-            </ul>
+        {/* SECTION 3: TABEL REKAM JEJAK KONTROVERSI & KASUS TERVERIFIKASI */}
+        {celeb.controversies && celeb.controversies.length > 0 && (
+          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="font-display font-bold text-lg sm:text-xl text-white flex items-center gap-2">
+                <Scale className="w-5 h-5 text-neon-pink" />
+                <span>Tabel Rekam Jejak Kontroversi & Kasus Terverifikasi</span>
+              </h2>
+              <span className="text-[11px] font-mono text-slate-400">
+                {celeb.controversies.length} Kasus Terekam
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+              Arsip investigasi jejak digital terhadap isu hukum, polemik media sosial, dan dinamika
+              publik {celeb.stageName} berdasarkan bukti berkas dan klarifikasi resmi.
+            </p>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-slate-800 bg-velvet/80 text-[11px] font-mono uppercase text-slate-400">
+                    <th className="py-3 px-4 font-bold">Tahun</th>
+                    <th className="py-3 px-4 font-bold">Kasus / Isu</th>
+                    <th className="py-3 px-4 font-bold">Status Validitas</th>
+                    <th className="py-3 px-4 font-bold">Kronologi Singkat</th>
+                    <th className="py-3 px-4 font-bold">Resolusi / Status Hukum</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/80 font-sans">
+                  {celeb.controversies.map((item, idx) => (
+                    <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
+                      <td className="py-3.5 px-4 font-mono font-bold text-neon-cyan whitespace-nowrap">
+                        {item.year}
+                      </td>
+                      <td className="py-3.5 px-4 font-bold text-white min-w-[180px]">
+                        {item.title}
+                      </td>
+                      <td className="py-3.5 px-4 whitespace-nowrap">
+                        <GhibahMeterBadge status={item.status} size="sm" />
+                      </td>
+                      <td className="py-3.5 px-4 text-slate-300 min-w-[220px] leading-relaxed">
+                        {item.summary}
+                      </td>
+                      <td className="py-3.5 px-4 text-slate-400 min-w-[200px] leading-relaxed">
+                        {item.resolution}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </section>
         )}
 
-        {/* Related Articles on NgeGhibah */}
+        {/* SECTION 4: TABEL EKOSISTEM BISNIS & PORTOFOLIO KOMERSIAL */}
+        {celeb.businessVentures && celeb.businessVentures.length > 0 && (
+          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="font-display font-bold text-lg sm:text-xl text-white flex items-center gap-2">
+                <Briefcase className="w-5 h-5 text-emerald-400" />
+                <span>Tabel Ekosistem Bisnis, Endorsement & Portofolio</span>
+              </h2>
+              <span className="text-[11px] font-mono text-emerald-400">
+                {celeb.businessVentures.length} Entitas Bisnis
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+              Daftar kepemilikan saham, brand komersial independen, dan kontrak duta global
+              yang terafiliasi dengan {celeb.stageName}.
+            </p>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-slate-800 bg-velvet/80 text-[11px] font-mono uppercase text-slate-400">
+                    <th className="py-3 px-4 font-bold">Entitas / Brand</th>
+                    <th className="py-3 px-4 font-bold">Sektor Industri</th>
+                    <th className="py-3 px-4 font-bold">Peran / Kepemilikan</th>
+                    <th className="py-3 px-4 font-bold">Status Operasional</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/80 font-sans">
+                  {celeb.businessVentures.map((v, idx) => (
+                    <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
+                      <td className="py-3.5 px-4 font-bold text-white">
+                        {v.name}
+                      </td>
+                      <td className="py-3.5 px-4 text-slate-300">
+                        {v.category}
+                      </td>
+                      <td className="py-3.5 px-4 text-neon-cyan font-mono text-xs">
+                        {v.role}
+                      </td>
+                      <td className="py-3.5 px-4">
+                        <span
+                          className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold ${
+                            v.status === 'Aktif Beroperasi'
+                              ? 'bg-emerald-950/60 text-emerald-400 border border-emerald-800/40'
+                              : 'bg-slate-800 text-slate-400'
+                          }`}
+                        >
+                          <CheckCircle2 className="w-3 h-3" />
+                          <span>{v.status}</span>
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 5: TABEL PENGHARGAAN & PRESTASI KARYA */}
+        {celeb.awards && celeb.awards.length > 0 && (
+          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="font-display font-bold text-lg sm:text-xl text-white flex items-center gap-2">
+                <Award className="w-5 h-5 text-amber-400" />
+                <span>Tabel Rekam Jejak Prestasi & Penghargaan</span>
+              </h2>
+              <span className="text-[11px] font-mono text-amber-400">
+                {celeb.awards.length} Penghargaan
+              </span>
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-slate-800 bg-velvet/80 text-[11px] font-mono uppercase text-slate-400">
+                    <th className="py-3 px-4 font-bold">Tahun</th>
+                    <th className="py-3 px-4 font-bold">Ajang Penghargaan</th>
+                    <th className="py-3 px-4 font-bold">Kategori</th>
+                    <th className="py-3 px-4 font-bold">Hasil</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800/80 font-sans">
+                  {celeb.awards.map((aw, idx) => (
+                    <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
+                      <td className="py-3.5 px-4 font-mono font-bold text-amber-400">
+                        {aw.year}
+                      </td>
+                      <td className="py-3.5 px-4 font-semibold text-white">
+                        {aw.award}
+                      </td>
+                      <td className="py-3.5 px-4 text-slate-300">
+                        {aw.category}
+                      </td>
+                      <td className="py-3.5 px-4">
+                        <span
+                          className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold ${
+                            aw.result === 'Menang'
+                              ? 'bg-amber-950/60 text-amber-300 border border-amber-800/40'
+                              : 'bg-slate-800 text-slate-400'
+                          }`}
+                        >
+                          {aw.result}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 6: FAQ ACCORDION POP-KULTUR */}
+        {celeb.faq && celeb.faq.length > 0 && (
+          <section className="mb-10 p-6 sm:p-8 rounded-3xl bg-velvet/50 border border-slate-800 shadow-xl">
+            <h2 className="font-display font-bold text-lg sm:text-xl text-white mb-4 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-neon-cyan" />
+              <span>Pertanyaan Publik & FAQ Terverifikasi</span>
+            </h2>
+            <div className="space-y-3">
+              {celeb.faq.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-2xl bg-obsidian-deep/80 border border-slate-800 space-y-2"
+                >
+                  <h3 className="font-bold text-sm sm:text-base text-white flex items-center gap-2">
+                    <span className="text-neon-pink font-mono text-xs">Q:</span>
+                    <span>{item.question}</span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-5">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 7: RELATED ARTICLES ON NGEGHIBAH */}
         <section className="mb-10">
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-display font-bold text-xl text-white flex items-center gap-2">

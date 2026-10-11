@@ -26,6 +26,7 @@ export const Footer = () => {
     { label: 'K-Pop & Asian Wave', href: '/kategori/kpop-asia' },
     { label: 'TikTok & Digital Creators', href: '/kategori/creator-tiktok' },
     { label: 'Dossier Profil Artis', href: '/seleb' },
+    { label: 'Kamus Istilah Pop-Kultur', href: '/kamus' },
   ];
 
   const [email, setEmail] = React.useState('');

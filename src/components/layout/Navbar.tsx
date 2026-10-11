@@ -52,6 +52,7 @@ export const Navbar = () => {
     { label: 'K-Pop & Asia', href: '/kategori/kpop-asia' },
     { label: 'Creator & TikTok', href: '/kategori/creator-tiktok' },
     { label: 'Direktori Seleb', href: '/seleb' },
+    { label: 'Kamus Ghibah', href: '/kamus' },
     { label: 'Hak Jawab', href: '/hak-jawab' },
   ];
 

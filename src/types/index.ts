@@ -58,6 +58,39 @@ export interface Article {
   trendingScore: number;
 }
 
+export interface ControversyRecord {
+  year: string;
+  title: string;
+  status: GhibahMeterStatus;
+  summary: string;
+  resolution: string;
+}
+
+export interface BusinessVenture {
+  name: string;
+  category: string;
+  role: string;
+  status: 'Aktif Beroperasi' | 'Non-aktif / Selesai' | 'Divalidasi';
+}
+
+export interface AwardRecord {
+  year: string;
+  award: string;
+  category: string;
+  result: 'Menang' | 'Nominasi';
+}
+
+export interface CelebrityDossierDetail {
+  birthDate?: string;
+  birthPlace?: string;
+  zodiac?: string;
+  nationality?: string;
+  yearsActive?: string;
+  education?: string;
+  netWorthEstimate?: string;
+  topAffiliations?: string[];
+}
+
 export interface Celebrity {
   id: string;
   slug: string;
@@ -79,6 +112,11 @@ export interface Celebrity {
   careerHighlights: string[];
   dramaCount: number;
   sentimentSummary: string;
+  dossierDetail?: CelebrityDossierDetail;
+  controversies?: ControversyRecord[];
+  businessVentures?: BusinessVenture[];
+  awards?: AwardRecord[];
+  faq?: { question: string; answer: string }[];
 }
 
 export interface TrendingTag {
@@ -88,4 +126,16 @@ export interface TrendingTag {
   category: string;
   talkCount: string;
   isHot: boolean;
+}
+
+export interface KamusEntry {
+  id: string;
+  term: string;
+  slug: string;
+  category: 'Slang Warganet' | 'Industri Media' | 'Hukum & Verifikasi' | 'Fandom & K-Pop';
+  shortDef: string;
+  fullDef: string;
+  contextUsage: string;
+  realWorldExample: string;
+  legalRisk: 'Rendah (Aman)' | 'Sedang (Waspada Etik)' | 'Tinggi (Potensi Delik UU ITE)';
 }
