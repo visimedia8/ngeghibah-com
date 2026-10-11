@@ -7,13 +7,13 @@
           "httpMethod": "POST",
           "path": "ngeghibah-writer",
           "responseMode": "onReceived",
-          "responseData": "allEntries",
           "options": {}
         },
-        "id": "1",
-        "name": "Webhook Ingest (From WF 1)",
+        "id": "ngeghibah-writer-webhook",
+        "name": "Webhook",
         "type": "n8n-nodes-base.webhook",
-        "typeVersion": 2,
+        "typeVersion": 1,
+        "webhookId": "ngeghibah-writer-webhook",
         "position": [
           200,
           300
@@ -21,7 +21,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const item = $input.first().json.body || $input.first().json;\n\n// Context Expansion check & Koray Directive injection\nconst isShort = (item.content || '').length < 150;\nitem.expansion_instruction = isShort \n  ? 'Sumber sangat ringkas. Wajib lakukan rekonstruksi konteks sejarah selebritas, preseden kasus serupa, analisis jejak digital masa lalu, serta spektrum polarisasi netizen minimal 1000 kata.'\n  : 'Kembangkan narasi kronologi berimbang berbasis jejak digital dan verifikasi data.';\n\nreturn [{ json: item }];"
+          "jsCode": "const item = $input.first().json.body || $input.first().json;\n\nconst isShort = (item.content || '').length < 150;\nconst expansion = isShort \n  ? 'Sumber sangat ringkas. Wajib lakukan rekonstruksi konteks sejarah selebritas, preseden kasus serupa, analisis jejak digital masa lalu, serta spektrum polarisasi netizen minimal 1000 kata.'\n  : 'Kembangkan narasi kronologi berimbang berbasis jejak digital dan verifikasi data.';\n\nconst systemPrompt = `Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di NgeGhibah.com yang menerapkan KORAY TUGBERK UGURLU SEMANTIC SEO FRAMEWORK secara mutlak.\\n\\nATURAN PENULISAN KORAY SEMANTIC SEO (17 RULES STRICT COMPLIANCE):\\n1. KALIMAT PERTAMA DEKLARATIF: Kalimat pertama di bawah setiap H2 WAJIB langsung menjawab duduk perkaranya (5W+1H) secara to-the-point tanpa kata pengantar kosong.\\n2. THE CHAIN RULE: Kata kunci berbobot di akhir kalimat N WAJIB menjadi kata pembuka kalimat N+1 untuk transisi semantik yang rapat.\\n3. ZERO FILLER & INFORMATION GAIN: Setiap kalimat wajib memberikan fakta/data baru. DILARANG KERAS menggunakan frasa: 'In conclusion', 'Kesimpulannya', 'Seperti yang kita ketahui', 'Di era serba digital ini', 'Bikin melongo', 'Syok berat', 'Tak disangka-sangka'.\\n4. SUB-KLASIFIKASI: Klasifikasikan ke dalam 3 spektrum jelas: fakta resmi narasumber, indikasi jejak digital, spekulasi netizen.\\n5. INTEGRASI BUKTI INLINE: Pola bergantian: Klaim -> Bukti Jejak Digital -> Klaim -> Bukti.\\n6. MYTHS & MISCONCEPTIONS: Di akhir setiap H2, sertakan pelurusan salah paham umum: 'Salah paham umum yang sempat beredar adalah [mitos]. Faktanya, [fakta].'\\n7. DUA SUDUT PANDANG: Sajikan perspektif kedua kubu secara seimbang.\\n8. INTERNAL LINKING TOPICAL GRAPH: Sematkan tautan internal kontekstual: <a href=\\\"/kategori/[category]\\\">, <a href=\\\"/seleb\\\">, <a href=\\\"/pedoman-pemeriksaan-fakta\\\">, <a href=\\\"/hak-jawab\\\">.\\n\\nOUTPUT WAJIB JSON:\\n- title: string\\n- slug: string\\n- meta_description: string (150-160 char)\\n- excerpt: string\\n- category: 'seleb-lokal' | 'hollywood-barat' | 'kpop-asia' | 'creator-tiktok'\\n- ghibah_meter: 'FAKTA_TERVERIFIKASI' | 'JEJAK_DIGITAL' | 'DALAM_INVESTIGASI' | 'RUMOR_NETIZEN'\\n- entities: string[]\\n- timeline: Array<{ time_label: string, event: string }>\\n- caricature_event_prompt: string\\n- content_html: string (minimal 1000 kata HTML)`;\n\nconst userPrompt = `Judul Sumber: ${item.title || ''}\\nKonteks: ${item.content || ''}\\nInstruksi: ${expansion}`;\n\nitem.deepseek_payload = {\n  model: 'deepseek/deepseek-v4-flash',\n  response_format: { type: 'json_object' },\n  messages: [\n    { role: 'system', content: systemPrompt },\n    { role: 'user', content: userPrompt }\n  ],\n  temperature: 0.65\n};\n\nreturn [{ json: item }];"
         },
         "id": "2",
         "name": "Context Expansion Pre-Check",
@@ -51,7 +51,7 @@
           },
           "sendBody": true,
           "specifyBody": "json",
-          "jsonBody": "={\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Kamu adalah Redaktur Senior Jurnalisme Pop-Kultur di NgeGhibah.com yang menerapkan KORAY TUG关ERK UGURLU SEMANTIC SEO FRAMEWORK secara mutlak.\\n\\nATURAN PENULISAN KORAY SEMANTIC SEO (17 RULES STRICT COMPLIANCE):\\n1. KALIMAT PERTAMA DEKLARATIF: Kalimat pertama di bawah setiap H2 WAJIB langsung menjawab duduk perkaranya (5W+1H) secara to-the-point tanpa kata pengantar kosong.\\n2. THE CHAIN RULE: Kata kunci berbobot di akhir kalimat N WAJIB menjadi kata pembuka kalimat N+1 untuk transisi semantik yang rapat.\\n3. ZERO FILLER & INFORMATION GAIN: Setiap kalimat wajib memberikan fakta/data baru. DILARANG KERAS menggunakan frasa: 'In conclusion', 'Kesimpulannya', 'Seperti yang kita ketahui', 'Di era serba digital ini', 'Bikin melongo', 'Syok berat', 'Tak disangka-sangka'.\\n4. SUB-KLASIFIKASI: Jangan gunakan istilah generik; klasifikasikan ke dalam 3 spektrum jelas (fakta resmi narasumber, indikasi jejak digital, dan spekulasi netizen).\\n5. INTEGRASI BUKTI INLINE: Pola bergantian: Klaim -> Bukti Jejak Digital (nama akun, platform, tanggal, kutipan asli) -> Klaim -> Bukti. Dilarang footnote di bawah.\\n6. MYTHS & MISCONCEPTIONS: Di akhir setiap bagian H2, sertakan 1 pelurusan salah paham umum: 'Salah paham umum yang sempat beredar di media sosial adalah [mitos]. Faktanya, [fakta terverifikasi].'\\n7. DUA SUDUT PANDANG (COVER BOTH SIDES): Sajikan perspektif kubu pendukung vs kubu pengkritik secara seimbang dan objektif.\\n8. INTERNAL LINKING TOPICAL GRAPH (KORAY RULE): Di dalam body content_html, WAJIB menyematkan 3-5 tautan internal kontekstual dengan anchor text kaya entitas (DILARANG anchor text generik seperti 'klik disini'):\\n   - Hub Kategori: <a href=\\\"/kategori/[category]\\\">[Nama Kategori]</a>\\n   - Dossier Seleb: <a href=\\\"/seleb/[slug-seleb]\\\">[Dossier Jejak Digital Nama Seleb]</a> atau <a href=\\\"/seleb\\\">direktori selebritas</a>\\n   - Trust E-E-A-T: <a href=\\\"/pedoman-pemeriksaan-fakta\\\">pedoman pemeriksaan fakta</a> dan <a href=\\\"/hak-jawab\\\">prosedur hak jawab Dewan Pers</a>\\n\\nBRAND IDENTITY NGEGHIBAH:\\n- Tagline: 'Bukan Sekadar Gosip, Ini Kronologi & Verifikasi'\\n- Lexicon Wajib: duduk perkaranya, kronologi lengkap, jejak digital, verifikasi fakta, sentimen netizen, klarifikasi resmi.\\n- Digital Fingerprints: 'Kupas tuntas dari jejak digital pertama', 'Bukan sekadar heboh, ini duduk perkaranya', 'Radar pop-kultur berbobot: data, kronologi, verifikasi'.\\n\\nOUTPUT WAJIB JSON DENGAN PROPERTI:\\n- title: Judul berita deklaratif, spesifik nama entitas, SEO-rich, tanpa clickbait kosong.\\n- slug: Kebab-case ramah URL.\\n- meta_description: 150-160 karakter padat entitas dan nilai informasi.\\n- excerpt: Ringkasan 2 kalimat untuk preview.\\n- category: 'seleb-lokal' | 'hollywood-barat' | 'kpop-asia' | 'creator-tiktok'\\n- ghibah_meter: 'FAKTA_TERVERIFIKASI' | 'JEJAK_DIGITAL' | 'DALAM_INVESTIGASI' | 'RUMOR_NETIZEN'\\n- entities: Array nama selebritas/agensi/karya terkait.\\n- timeline: Array of { 'time_label': string, 'event': string } (minimal 3 milestone urut).\\n- caricature_event_prompt: Deskripsi visual kartun satir 1 kalimat untuk generator karikatur 16:9.\\n- content_html: Artikel lengkap minimal 1000 kata dengan tag semantic HTML <h2>, <h3>, <p>, <ul>, <blockquote>. Sertakan klausul hak jawab formal Dewan Pers di akhir artikel.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Judul Sumber: \" + $json.title + \"\\nKonteks Peristiwa: \" + $json.content + \"\\nInstruksi Tambahan: \" + $json.expansion_instruction\n    }\n  ],\n  \"temperature\": 0.65\n}"
+          "jsonBody": "={{ JSON.stringify($json.deepseek_payload) }}"
         },
         "id": "3",
         "name": "Koray Semantic SEO DeepSeek v4 Writer",
@@ -64,7 +64,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const raw = $input.first().json;\nconst contentString = raw.choices[0].message.content;\nconst articleData = JSON.parse(contentString);\n\nif (!articleData.slug) {\n  articleData.slug = articleData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');\n}\n\narticleData.published_at = new Date().toISOString();\n\n// Siapkan parameter generate karikatur Cloudflare Workers AI\nconst mainEntity = (articleData.entities && articleData.entities.length > 0) ? articleData.entities[0] : 'Indonesian celebrity';\narticleData.caricature_payload = {\n  celebrity: mainEntity,\n  event: articleData.caricature_event_prompt || articleData.title\n};\n\nreturn [{ json: articleData }];"
+          "jsCode": "const raw = $input.first().json;\nif (!raw.choices || !raw.choices[0] || !raw.choices[0].message) {\n  throw new Error('Invalid response from OpenRouter: missing choices[0].message');\n}\n\nlet contentString = raw.choices[0].message.content.trim();\nif (contentString.startsWith('```json')) {\n  contentString = contentString.replace(/^```json\\s*/, '').replace(/\\s*```$/, '');\n} else if (contentString.startsWith('```')) {\n  contentString = contentString.replace(/^```\\s*/, '').replace(/\\s*```$/, '');\n}\n\nconst articleData = JSON.parse(contentString);\n\nif (!articleData.title) {\n  throw new Error('Validation Failed: generated article missing title');\n}\n\nif (!articleData.slug) {\n  articleData.slug = articleData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');\n}\n\narticleData.published_at = new Date().toISOString();\n\nconst mainEntity = (articleData.entities && articleData.entities.length > 0) ? articleData.entities[0] : 'Indonesian celebrity';\narticleData.caricature_payload = {\n  celebrity: mainEntity,\n  event: articleData.caricature_event_prompt || articleData.title\n};\n\nreturn [{ json: articleData }];"
         },
         "id": "4",
         "name": "Parse & Validate JSON Output",
@@ -78,7 +78,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "https://ngeghibah-com.pages.dev/api/ai/caricature",
+          "url": "https://ngeghibah.com/api/ai/caricature",
           "sendHeaders": true,
           "headerParameters": {
             "parameters": [
@@ -100,6 +100,7 @@
         "name": "Generate Caricature via Cloudflare AI",
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
+        "onError": "continueRegularOutput",
         "position": [
           1160,
           300
@@ -137,7 +138,7 @@
       }
     ],
     "connections": {
-      "Webhook Ingest (From WF 1)": {
+      "Webhook": {
         "main": [
           [
             {
@@ -177,9 +178,7 @@
               "node": "Generate Caricature via Cloudflare AI",
               "type": "main",
               "index": 0
-            }
-          ],
-          [
+            },
             {
               "node": "Forward to Dispatch Workflow (WF 3)",
               "type": "main",

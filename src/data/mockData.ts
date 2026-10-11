@@ -500,6 +500,128 @@ export const MOCK_ARTICLES: Article[] = [
     isFeatured: false,
     trendingScore: 74,
   },
+  {
+    id: 'art-7',
+    slug: 'sengketa-kontrak-eksklusif-newjeans-vs-ador-duduk-perkara',
+    title: 'Kupas Tuntas Sengketa Kontrak NewJeans vs ADOR & HYBE: Rekonstruksi Hukum dan Kronologi Lengkap',
+    excerpt: 'Duduk perkara sengketa kontrak kerja eksklusif NewJeans dengan ADOR pasca pemecatan Min Hee-jin. Analisis klausul pelanggaran kepercayaan, somasi resmi, dan peta eskalasi hukum.',
+    contentHtml: `
+      <p class="lead font-medium text-lg text-slate-200">
+        Bukan sekadar friksi internal agensi, sengketa pemutusan kontrak eksklusif NewJeans terhadap ADOR dan induk perusahaan HYBE mencerminkan titik balik terbesar relasi artis dan korporasi industri K-Pop modern.
+      </p>
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-white">Duduk Perkaranya: Pelanggaran Asas Kepercayaan & Somasi 14 Hari</h2>
+      <p>
+        Perselisihan hukum ini memuncak ketika kelima anggota NewJeans secara serempak melayangkan surat sertifikasi isi (content-certified mail) yang menuntut pemulihan posisi manajemen kreatif orisinal dalam tenggat waktu 14 hari. Kegagalan pihak direksi ADOR dalam memenuhi tuntutan tersebut menjadi dasar yuridis pengajuan pembatalan kontrak sepihak.
+      </p>
+      <blockquote class="border-l-4 border-neon-cyan pl-4 py-2 my-6 bg-velvet/50 italic text-slate-300 rounded-r-lg">
+        "Kontrak eksklusif menuntut rasa saling percaya timbal balik sebagai prasyarat mutlak. Ketika rasa percaya tersebut dihancurkan secara sistematis, kewajiban pemenuhan kontrak gugur demi hukum."
+        <span class="block text-xs text-neon-pink mt-1 font-mono tracking-wider">— Kutipan pernyataan tim kuasa hukum NewJeans dalam konferensi pers resmi.</span>
+      </blockquote>
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-white">Verifikasi Jejak Digital & Polarisasi Netizen Global</h2>
+      <p>
+        Berdasarkan data penelusuran digital komunitas internet global, percakapan terpolarisasi tajam antara kubu pendukung hak otonomi seniman melawan kubu pemegang saham korporasi. Data menunjukkan lebih dari 82% warganet internasional mendesak perlindungan hak cipta musisi muda dari klausul penalti ganti rugi yang tidak proporsional.
+      </p>
+    `,
+    category: 'kpop-asia',
+    categoryLabel: 'K-Pop & Asia',
+    ghibahMeter: {
+      status: 'TERKONFIRMASI',
+      percentageFact: 94,
+      percentageRumor: 6,
+      label: 'Terkonfirmasi Resmi',
+      description: 'Berdasarkan surat somasi tersertifikasi, rilis resmi bursa efek KRX, dan konferensi pers terbuka para pihak.',
+    },
+    heroImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80',
+    imageCaption: 'Ilustrasi sorotan panggung konser megah di Seoul. (Foto: Pop Culture Archive Network)',
+    publishedAt: '2026-10-11T12:00:00Z',
+    readingTimeMinutes: 4,
+    author: {
+      name: 'Kenzo Pratama',
+      slug: 'kenzo-pratama',
+      role: 'Editor Hiburan Asia & Hallyu Culture',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    },
+    entities: ['NewJeans', 'Min Hee-jin'],
+    timeline: [
+      {
+        timeLabel: '27 Agu 2024 • 14:00 KST',
+        title: 'Pemberhentian Sepihak CEO Min Hee-jin',
+        description: 'Dewan direksi ADOR menunjuk pimpinan baru tanpa persetujuan tim kreatif utama grup.',
+        receiptType: 'document',
+        receiptQuote: 'Keputusan dewan diambil sesuai undang-undang komersial tanpa pelanggaran prosedur anggaran rumah tangga.',
+      },
+      {
+        timeLabel: '13 Nov 2024 • 18:30 KST',
+        title: 'Pengiriman Somasi Bersertifikat Isi',
+        description: 'NewJeans memberikan batas waktu 14 hari bagi ADOR untuk memulihkan kontrak kerja kreatif.',
+        receiptType: 'statement',
+      },
+      {
+        timeLabel: '28 Nov 2024 • 20:00 KST',
+        title: 'Konferensi Pers Pengumuman Pemutusan Kontrak',
+        description: 'Pernyataan resmi bahwa kontrak eksklusif berakhir per 29 November pukul 00:00 KST.',
+        receiptType: 'court',
+      },
+    ],
+    digitalReceiptsCount: 3,
+    isFeatured: true,
+    trendingScore: 95,
+  },
+  {
+    id: 'art-8',
+    slug: 'boikot-aktor-hollywood-isu-ai-hak-citra-sag-aftra',
+    title: 'Bukan Sekadar Sensasi: Mengapa Bintang Top Hollywood Bersatu Boikot Klausul Replikasi AI 2026',
+    excerpt: 'Menolak digital cloning tanpa izin seumur hidup, aliansi aktor Hollywood dan kreator suara melancarkan boikot serentak terhadap klausul kontrak studio game dan streaming besar.',
+    contentHtml: `
+      <p class="lead font-medium text-lg text-slate-200">
+        Radar pop-kultur berbobot mencatat gelombang perlawanan baru pekerja seni Hollywood terhadap klausul eksploitasi kecerdasan buatan sintetis tanpa kompensasi residual yang adil.
+      </p>
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-white">Duduk Perkaranya: Hak Kepemilikan Wajah & Suara Digital</h2>
+      <p>
+        Bukan sekadar heboh, duduk perkaranya berakar pada draf kontrak baru studio hiburan yang menyisipkan klausul perpetual digital replica. Klausul ini memungkinkan studio menciptakan figur AI seorang aktor secara terus-menerus bahkan setelah proyek selesai.
+      </p>
+      <p>
+        Serikat SAG-AFTRA secara resmi memberlakukan sanksi boikot industri terhadap rumah produksi yang menolak menyepakati perjanjian proteksi biometrik independen.
+      </p>
+    `,
+    category: 'hollywood-barat',
+    categoryLabel: 'Hollywood & Barat',
+    ghibahMeter: {
+      status: 'FAKTA_DIGITAL',
+      percentageFact: 91,
+      percentageRumor: 9,
+      label: 'Fakta Jejak Digital',
+      description: 'Dokumen panduan mogok resmi serikat pekerja SAG-AFTRA dan rilis aliansi produser AMPTP.',
+    },
+    heroImage: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80',
+    imageCaption: 'Gedung teater dan festival film di Los Angeles. (Foto: Cinema Industry Archives)',
+    publishedAt: '2026-10-10T17:15:00Z',
+    readingTimeMinutes: 3,
+    author: {
+      name: 'Raditya Dananjaya',
+      slug: 'raditya-dananjaya',
+      role: 'Redaktur Investigasi Pop-Kultur',
+      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80',
+    },
+    entities: ['Zendaya', 'Tom Holland'],
+    timeline: [
+      {
+        timeLabel: '20 Sep 2026',
+        title: 'Bocornya Draft Klausul AI Interactive',
+        description: 'Tangkapan layar perjanjian lisensi suara sintetis tanpa royalti beredar di forum pengisi suara profesional.',
+        receiptType: 'tweet',
+      },
+      {
+        timeLabel: '02 Okt 2026',
+        title: 'Deklarasi Boikot Resmi SAG-AFTRA',
+        description: 'Perintah penghentian seluruh sesi pengambilan sampel suara dan gerak biometrik untuk 10 studio besar.',
+        receiptType: 'document',
+      },
+    ],
+    digitalReceiptsCount: 2,
+    isFeatured: false,
+    trendingScore: 81,
+  },
 ];
 
 export const EDITORIAL_TEAM = [

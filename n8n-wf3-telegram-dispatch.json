@@ -7,13 +7,13 @@
           "httpMethod": "POST",
           "path": "ngeghibah-dispatch",
           "responseMode": "onReceived",
-          "responseData": "allEntries",
           "options": {}
         },
-        "id": "1",
-        "name": "Webhook Ingest (From WF 2)",
+        "id": "ngeghibah-dispatch-webhook",
+        "name": "Webhook",
         "type": "n8n-nodes-base.webhook",
-        "typeVersion": 2,
+        "typeVersion": 1,
+        "webhookId": "ngeghibah-dispatch-webhook",
         "position": [
           200,
           300
@@ -22,7 +22,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "https://ngeghibah-com.pages.dev/api/webhooks/n8n/article",
+          "url": "https://ngeghibah.com/api/webhooks/n8n/article",
           "sendHeaders": true,
           "headerParameters": {
             "parameters": [
@@ -38,7 +38,7 @@
           },
           "sendBody": true,
           "specifyBody": "json",
-          "jsonBody": "={\n  \"title\": $json.title,\n  \"slug\": $json.slug,\n  \"meta_description\": $json.meta_description,\n  \"excerpt\": $json.excerpt,\n  \"category\": $json.category,\n  \"ghibah_meter\": $json.ghibah_meter,\n  \"entities\": $json.entities || [],\n  \"timeline\": $json.timeline || [],\n  \"content_html\": $json.content_html,\n  \"status\": \"published\"\n}"
+          "jsonBody": "={{ JSON.stringify({ title: ($json.body?.title || $json.title), slug: ($json.body?.slug || $json.slug), meta_description: ($json.body?.meta_description || $json.meta_description || ''), excerpt: ($json.body?.excerpt || $json.excerpt || ''), category: ($json.body?.category || $json.category || 'seleb-lokal'), ghibah_meter: ($json.body?.ghibah_meter || $json.ghibah_meter || 'FAKTA_TERVERIFIKASI'), entities: ($json.body?.entities || $json.entities || []), timeline: ($json.body?.timeline || $json.timeline || []), content_html: ($json.body?.content_html || $json.content_html), status: 'published' }) }}"
         },
         "id": "2",
         "name": "Auto-Publish to NgeGhibah Edge",
@@ -59,6 +59,7 @@
         "name": "Trigger Cloudflare Pages Deploy Hook",
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
+        "onError": "continueRegularOutput",
         "position": [
           680,
           300
@@ -66,7 +67,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const article = $('Auto-Publish to NgeGhibah Edge').first().json;\nconst title = $input.first().json.title || 'Artikel Baru';\nconst slug = $input.first().json.slug || '';\nconst meter = $input.first().json.ghibah_meter || 'TERVERIFIKASI';\nconst category = $input.first().json.category || 'seleb-lokal';\n\nconst telegramMessage = `🚀 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${title}\\n` +\n  `🎯 *Kategori:* #${category}\\n` +\n  `⚖️ *Ghibah Meter:* ${meter}\\n\\n` +\n  `🔗 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `⚡ *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage } }];"
+          "jsCode": "const raw = $input.first().json;\nconst data = raw.body || raw;\nconst title = data.title || 'Artikel Baru';\nconst slug = data.slug || '';\nconst meter = data.ghibah_meter || 'TERVERIFIKASI';\nconst category = data.category || 'seleb-lokal';\n\nconst telegramMessage = `🚀 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${title}\\n` +\n  `🎯 *Kategori:* #${category}\\n` +\n  `⚖️ *Ghibah Meter:* ${meter}\\n\\n` +\n  `🔗 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `⚡ *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage, ...data } }];"
         },
         "id": "4",
         "name": "Format Live Telemetry Log",
@@ -92,12 +93,13 @@
           },
           "sendBody": true,
           "specifyBody": "json",
-          "jsonBody": "={\n  \"chat_id\": \"{{ $env.TELEGRAM_CHAT_ID }}\",\n  \"text\": $json.telegramMessage,\n  \"parse_mode\": \"Markdown\"\n}"
+          "jsonBody": "={{ JSON.stringify({ chat_id: $env.TELEGRAM_CHAT_ID, text: $json.telegramMessage, parse_mode: 'Markdown' }) }}"
         },
         "id": "5",
         "name": "Send Live Broadcast to Telegram",
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
+        "onError": "continueRegularOutput",
         "position": [
           1160,
           300
@@ -105,7 +107,7 @@
       }
     ],
     "connections": {
-      "Webhook Ingest (From WF 2)": {
+      "Webhook": {
         "main": [
           [
             {
