@@ -487,27 +487,165 @@ export const MOCK_ARTICLES: Article[] = [
     title: 'Duduk Perkara Polemik Royalti Musik 2026: Kronologi Lengkap & Jejak Digital Gugatan LMKN',
     excerpt: 'Bukan sekadar heboh di media sosial, ini alur kronologi perseteruan royalti hak cipta antara musisi senior, asosiasi promotor konser, dan regulasi LMKN yang memicu perdebatan sengit.',
     contentHtml: `
-      <p class="lead font-medium text-lg text-slate-200">
-        Duduk perkaranya bermula dari perdebatan penetapan tarif royalti mechanical dan performing rights yang dinilai sejumlah promotor konser lokal membebani biaya produksi acara musik pasca-pandemi.
+      <p class="lead font-medium text-lg text-slate-200 leading-relaxed mb-6">
+        Polemik royalti hak cipta musik di Indonesia memasuki babak paling krusial sepanjang sejarah industri hiburan nasional. Bukan sekadar drama perselisihan personal di panggung media sosial, perseteruan antara musisi pencipta lagu, promotor festival musik, dan Lembaga Manajemen Kolektif Nasional (LMKN) menyangkut sirkulasi ekonomi bernilai ratusan miliar rupiah serta kepastian hukum ekosistem konser pasca-pandemi.
       </p>
       
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-white">Latar Belakang: Gugatan Tertutup yang Bocor ke Forum X</h2>
-      <p>
-        Berdasarkan penelusuran jejak digital tim investigasi NgeGhibah, polemik ini pertama kali terendus ketika sepucuk surat somasi internal dari asosiasi pencipta lagu bocor ke publik pada awal pekan ini. Warganet sempat mengira isu ini sekadar perselisihan personal antar musisi, namun data membuktikan ada regulasi penarikan royalti satu pintu yang tengah diperebutkan.
+      <div class="my-8 p-5 sm:p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80">
+        <h3 class="text-sm font-mono font-bold uppercase tracking-wider text-neon-cyan mb-3 flex items-center gap-2">
+          <span>RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</span>
+        </h3>
+        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-neon-pink font-bold mt-0.5">•</span>
+            <span><strong>Akar Masalah:</strong> Ketidakpuasan pencipta lagu legendaris atas skema distribusi royalti satu pintu LMKN yang dinilai lambat, tidak transparan, dan memotong biaya operasional hingga 20-30% tanpa rincian audit lagu per pertunjukan.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-neon-pink font-bold mt-0.5">•</span>
+            <span><strong>Dilema Promotor:</strong> Asosiasi Promotor Musik Indonesia (APMI) menghadapi risiko beban ganda (<em>double taxation</em>): kewajiban membayar 2% dari total penjualan tiket ke LMKN sekaligus tuntutan <em>direct licensing</em> langsung dari musisi pemilik lagu.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-neon-pink font-bold mt-0.5">•</span>
+            <span><strong>Status Verifikasi Hukum:</strong> Berdasarkan UU Hak Cipta No. 28/2014 Pasal 87 dan PP No. 56/2021, penarikan royalti performing rights secara legal wajib melalui LMKN, namun celah regulasi memicu somasi perdata di Pengadilan Niaga.</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Tabel Forensik: Komparasi 3 Skema Royalti Musik di Indonesia</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Untuk memahami mengapa perselisihan ini memanas, tim jurnalisme investigasi NgeGhibah membedah tiga mekanisme penarikan royalti yang tengah diperdebatkan di meja negosiasi:
       </p>
 
-      <blockquote class="border-l-4 border-neon-pink pl-4 py-2 my-6 bg-velvet/50 italic text-slate-300 rounded-r-lg">
-        "Kami tidak menolak membayar hak cipta. Yang kami tuntut adalah transparansi distribusi ke pencipta asli, bukan sistem administrasi yang memotong hingga 40% tanpa laporan audit publik." 
-        <span class="block text-xs text-neon-cyan mt-1 font-mono tracking-wider">— Kutipan pernyataan resmi asosiasi promotor independen.</span>
+      <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-slate-800 bg-velvet/80 text-[11px] font-mono uppercase text-slate-400">
+              <th class="py-3 px-4 font-bold">Parameter Skema</th>
+              <th class="py-3 px-4 font-bold text-neon-cyan">Sistem Satu Pintu LMKN</th>
+              <th class="py-3 px-4 font-bold text-neon-pink">Direct Licensing (Langsung)</th>
+              <th class="py-3 px-4 font-bold text-emerald-400">Model Digital SILM (Target Reformasi)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/80 font-sans">
+            <tr class="hover:bg-white/[0.02] transition-colors">
+              <td class="py-3 px-4 font-mono text-slate-400 font-semibold">Dasar Regulasi</td>
+              <td class="py-3 px-4 text-slate-200">PP No. 56 Tahun 2021 & UU No. 28/2014</td>
+              <td class="py-3 px-4 text-slate-200">Perjanjian Keperdataan (KUHPerdata Pasal 1338)</td>
+              <td class="py-3 px-4 text-slate-200">Rancangan Revisi UU Hak Cipta & SILM DJKI</td>
+            </tr>
+            <tr class="hover:bg-white/[0.02] transition-colors">
+              <td class="py-3 px-4 font-mono text-slate-400 font-semibold">Tarif Pembayaran Konser</td>
+              <td class="py-3 px-4 text-slate-200 font-mono">2% dari Gross Hasil Penjualan Tiket</td>
+              <td class="py-3 px-4 text-slate-200 font-mono">Tarif Negosiasi (Rp 5jt – Rp 25jt / lagu)</td>
+              <td class="py-3 px-4 text-slate-200 font-mono">Automated Micro-licensing berbasis loglist</td>
+            </tr>
+            <tr class="hover:bg-white/[0.02] transition-colors">
+              <td class="py-3 px-4 font-mono text-slate-400 font-semibold">Waktu Distribusi Dana</td>
+              <td class="py-3 px-4 text-rose-400 font-mono">6 – 12 Bulan (Siklus Audit Tahunan)</td>
+              <td class="py-3 px-4 text-emerald-400 font-mono">H-1 atau Maks H+7 Pasca Konser</td>
+              <td class="py-3 px-4 text-neon-cyan font-mono">Real-time (Maks 14 Hari Kerja)</td>
+            </tr>
+            <tr class="hover:bg-white/[0.02] transition-colors">
+              <td class="py-3 px-4 font-mono text-slate-400 font-semibold">Potongan Biaya Operasional</td>
+              <td class="py-3 px-4 text-slate-200">Maksimum 20% (LMKN + LMK Pengumpul)</td>
+              <td class="py-3 px-4 text-slate-200">0% (Langsung ke Rekening Musisi/Penerbit)</td>
+              <td class="py-3 px-4 text-slate-200">Estimasi 5-8% (Biaya Pemeliharaan Server Cloud)</td>
+            </tr>
+            <tr class="hover:bg-white/[0.02] transition-colors">
+              <td class="py-3 px-4 font-mono text-slate-400 font-semibold">Tantangan Eksekusi</td>
+              <td class="py-3 px-4 text-slate-400">Database lagu belum tersinkronisasi penuh</td>
+              <td class="py-3 px-4 text-slate-400">Promotor kerepotan melacak ribuan pencipta lagu</td>
+              <td class="py-3 px-4 text-slate-400">Infrastruktur server dan integrasi loglist venue</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Latar Belakang: Surat Somasi Tertutup yang Bocor ke Forum X</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Berdasarkan penelusuran jejak digital tim investigasi NgeGhibah, polemik ini pertama kali meledak ketika lembar pertama surat somasi hukum dari kuasa hukum salah satu kelompok musisi legendaris diunggah akun insider musik di platform X pada 2 Oktober 2026. Dalam waktu kurang dari enam jam, unggahan tersebut menuai 1,2 juta tayangan dan memicu perang tagar antar-komunitas penggemar.
+      </p>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Warganet awalnya menduga insiden ini hanyalah gesekan ego personal antar musisi senior dan promotor muda. Namun, investigasi berkas membuktikan bahwa somasi tersebut merupakan puncak gunung es dari frustrasi menahun atas keterlambatan pencairan dana royalti konser berskala stadion tahun anggaran 2024 dan 2025 yang hingga kini belum sepenuhnya diterima para pencipta lagu.
+      </p>
+
+      <blockquote class="border-l-4 border-neon-pink pl-5 py-3 my-6 bg-velvet/50 text-slate-300 rounded-r-2xl italic leading-relaxed">
+        "Kami tidak menolak membayar hak cipta para maestro musik Indonesia. Kami sangat menghormati hak kekayaan intelektual mereka. Yang kami tolak adalah skema pembayaran ganda di mana kami sudah menyetor 2% ke LMKN, tetapi tetap disomasi dan diancam pidana oleh pencipta lagu karena LMKN belum mendistribusikan uangnya." 
+        <span class="block text-xs text-neon-cyan mt-2 font-mono tracking-wider font-semibold not-italic">
+          — Pernyataan resmi perwakilan Asosiasi Promotor Konser dalam Konferensi Pers di Senayan, Jakarta.
+        </span>
       </blockquote>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-white">Verifikasi Fakta & Sentimen Netizen</h2>
-      <p>
-        Analisis sentimen media sosial menunjukkan mayoritas netizen Indonesia (68%) berpihak pada transparansi langsung kepada para musisi dan pencipta lagu yang selama ini hidup di bawah standar royalti layak. Namun, kekhawatiran melambungnya harga tiket konser musik di Indonesia juga menjadi sorotan tajam.
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Anatomi Masalah: Dualisme Regulasi UU No. 28/2014 & PP No. 56/2021</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Mengapa konflik ini tidak kunjung selesai? Akar hukumnya terletak pada disharmoni penafsiran antara dua instrumen hukum utama:
       </p>
-      <p>
-        Klarifikasi resmi yang dirilis pihak regulator menegaskan bahwa proses mediasi tahap kedua akan dilaksanakan secara terbuka pekan depan dengan melibatkan perwakilan federasi musisi independen.
+      <ol class="list-decimal list-inside space-y-3 text-sm text-slate-300 leading-relaxed mb-6">
+        <li>
+          <strong class="text-white">Undang-Undang No. 28 Tahun 2014 tentang Hak Cipta:</strong> Mengakui hak eksklusif pencipta lagu untuk memberikan izin atau melarang pihak lain mengumumkan karyanya (Pasal 9). Pasal ini dijadikan rujukan musisi yang melarang karya mereka dibawakan oleh penyanyi atau promotor tanpa izin langsung (<em>direct license</em>).
+        </li>
+        <li>
+          <strong class="text-white">Peraturan Pemerintah No. 56 Tahun 2021 tentang Pengelolaan Royalti Hak Cipta Lagu dan/atau Musik:</strong> Mengatur bahwa penarikan dan penghimpunan royalti untuk penggunaan layanan publik yang bersifat komersial (termasuk konser musik) dilakukan satu pintu melalui LMKN (Pasal 3). Penyelenggara yang telah membayar ke LMKN secara hukum dianggap telah memenuhi kewajibannya.
+        </li>
+      </ol>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Benturan inilah yang menciptakan zona abu-abu hukum (<em>legal vacuum</em>). Promotor merasa telah patuh pada PP 56/2021 dengan menyetor dana ke LMKN, namun musisi bersikukuh menggunakan hak moral dan ekonomi Pasal 9 UU Hak Cipta untuk menuntut pembayaran langsung.
       </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Dilema Promotor: Ancaman Lonjakan Harga Tiket Konser 2026</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Dampak paling nyata bagi masyarakat penikmat musik adalah potensi lonjakan harga tiket konser (<em>ticket inflation</em>). Jika promotor dipaksa membayar skema ganda (2% ke LMKN plus biaya direct licensing per lagu ke musisi), biaya produksi konser di Indonesia diproyeksikan melonjak antara 18% hingga 25%.
+      </p>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Sejumlah promotor independen telah memberi sinyal bahwa festival musik dengan tiket di bawah Rp 300.000 terancam punah jika beban royalti tidak memiliki kepastian regulasi. Pihak penyelenggara terpaksa membebankan komponen royalti ke dalam harga tiket penonton akhir (<em>consumer pass-through</em>).
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Perspektif Pencipta Lagu: Kebutuhan Transparansi Audit Forensik</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Di sisi lain, tuntutan para pencipta lagu memiliki landasan keadilan ekonomi yang kuat. Banyak pencipta lagu legendaris era 80-an dan 90-an yang karyanya diputar ribuan kali di panggung festival bergengsi dengan omset miliaran rupiah, namun mereka hanya menerima royalti tahunan sebesar beberapa ratus ribu rupiah dari LMK.
+      </p>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Ketiadaan sistem loglist otomatis (<em>electronic cue sheet</em>) membuat LMKN kerap menggunakan metode analog atau perkiraan rata-rata statistik dalam membagi dana royalti, bukan berdasarkan lagu riil yang secara aktual dinyanyikan di atas panggung.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4 text-white font-display">Solusi & Roadmap: Jalan Tengah Digitalisasi SILM</h2>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        Kementerian Hukum dan HAM melalui Direktorat Jenderal Kekayaan Intelektual (DJKI) kini tengah mempercepat integrasi Sistem Informasi Lagu dan/atau Musik (SILM). Solusi permanen yang direkomendasikan para pakar meliputi:
+      </p>
+      <ul class="space-y-2 text-sm text-slate-300 leading-relaxed mb-6">
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-400 font-bold">✓</span>
+          <span><strong>Kewajiban Loglist Digital Venue:</strong> Setiap promotor wajib mengunggah daftar lagu (<em>setlist</em>) resmi H-3 sebelum konser melalui dashboard SILM terverifikasi.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-400 font-bold">✓</span>
+          <span><strong>Escrow Account Terbuka:</strong> Penampungan dana royalti 2% di rekening penampung dengan laporan mutasi yang dapat dipantau langsung oleh musisi terdaftar.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-400 font-bold">✓</span>
+          <span><strong>SLA Distribusi 14 Hari Kerja:</strong> LMKN wajib menyalurkan hak royalti ke rekening musisi maksimal 14 hari kerja pasca-konser, memangkas birokrasi audit tahunan yang selama ini menjadi sumber sengketa.</span>
+        </li>
+      </ul>
+
+      <div class="my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/90 space-y-4">
+        <h3 class="text-sm font-mono font-bold uppercase tracking-wider text-neon-pink flex items-center gap-2">
+          <span>FAQ: DUDUK PERKARA POLEMIK ROYALTI MUSIK 2026</span>
+        </h3>
+        <div class="space-y-3 text-xs sm:text-sm">
+          <div class="border-b border-slate-800/80 pb-3">
+            <h4 class="font-bold text-white mb-1">Q: Siapa yang secara hukum wajib membayar royalti konser: penyanyi atau promotor?</h4>
+            <p class="text-slate-300">Berdasarkan PP 56/2021 dan standar internasional performing rights, kewajiban pembayaran royalti dibebankan kepada pihak penyelenggara komersial (promotor acara), bukan kepada penyanyi atau penampil di atas panggung.</p>
+          </div>
+          <div class="border-b border-slate-800/80 pb-3">
+            <h4 class="font-bold text-white mb-1">Q: Berapa tarif resmi royalti konser musik di Indonesia?</h4>
+            <p class="text-slate-300">Keputusan Menteri Hukum dan HAM No. HKI.2.OT.03.01-02 Tahun 2016 menetapkan tarif royalti konser musik dengan tiket berbayar sebesar 2% dari hasil penjualan kotor tiket (<em>gross ticket sales</em>) ditambah 1% dari tiket gratis yang diedarkan.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-1">Q: Mengapa musisi menuntut skema direct licensing daripada lewat LMKN?</h4>
+            <p class="text-slate-300">Pencipta lagu merasa skema satu pintu LMKN lambat dalam pencairan (bisa memakan waktu berbulan-bulan) serta ketiadaan transparansi data lagu mana saja yang benar-benar menghasilkan uang royalti.</p>
+          </div>
+        </div>
+      </div>
     `,
     category: 'seleb-lokal',
     categoryLabel: 'Seleb Lokal',
@@ -521,7 +659,7 @@ export const MOCK_ARTICLES: Article[] = [
     heroImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80',
     imageCaption: 'Ilustrasi pertunjukan musik konser di Jakarta. (Foto: Dokumentasi Panggung Pop-Kultur / Unsplash)',
     publishedAt: '2026-10-11T09:30:00Z',
-    readingTimeMinutes: 4,
+    readingTimeMinutes: 7,
     author: {
       name: 'Raditya Dananjaya',
       slug: 'raditya-dananjaya',
