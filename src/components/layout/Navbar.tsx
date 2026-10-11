@@ -47,7 +47,6 @@ export const Navbar = () => {
     : [];
 
   const navLinks = [
-    { label: 'Beranda', href: '/' },
     { label: 'Seleb Lokal', href: '/kategori/seleb-lokal' },
     { label: 'Hollywood & Barat', href: '/kategori/hollywood-barat' },
     { label: 'K-Pop & Asia', href: '/kategori/kpop-asia' },
