@@ -38,6 +38,22 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.ngeghibah.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thumb.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'commons.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'asset.kompas.com',
+      },
     ],
   },
 };
