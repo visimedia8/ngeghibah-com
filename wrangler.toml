@@ -4,3 +4,8 @@ compatibility_flags = ["nodejs_compat"]
 
 # Cloudflare Pages static output directory
 pages_build_output_dir = "out"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ngeghibah-db"
+database_id = "e3d11908-e637-493d-8fd6-d1477e59b209"

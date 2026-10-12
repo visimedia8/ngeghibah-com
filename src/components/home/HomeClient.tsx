@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Article, Celebrity, ArticleCategory } from '@/types';
@@ -31,8 +31,33 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   initialArticles,
   celebrities,
 }) => {
+  const [articles, setArticles] = useState<Article[]>(initialArticles);
   const [activeCategory, setActiveCategory] = useState<ArticleCategory>('semua');
   const [activeTag, setActiveTag] = useState<string | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    fetch('/api/articles?limit=50')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!isMounted || !data?.articles?.length) return;
+        setArticles((prev) => {
+          const d1Articles: Article[] = data.articles;
+          const map = new Map<string, Article>();
+          d1Articles.forEach((a) => map.set(a.slug, a));
+          prev.forEach((a) => {
+            if (!map.has(a.slug)) {
+              map.set(a.slug, a);
+            }
+          });
+          return Array.from(map.values());
+        });
+      })
+      .catch(() => {});
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const categories = [
     { id: 'semua', label: 'Semua Isu' },
@@ -43,7 +68,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   ];
 
   // Filtering logic
-  const filteredArticles = initialArticles.filter((article) => {
+  const filteredArticles = articles.filter((article) => {
     if (activeCategory !== 'semua' && article.category !== activeCategory) {
       return false;
     }
@@ -63,9 +88,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   });
 
   // Hero article & secondary articles for Bento Grid
-  const heroArticle = initialArticles.find((a) => a.isHero) || initialArticles[0];
-  const sideArticles = initialArticles
-    .filter((a) => a.id !== heroArticle.id)
+  const heroArticle = articles.find((a) => a.isHero) || articles[0];
+  const sideArticles = articles
+    .filter((a) => a.id !== heroArticle?.id)
     .slice(0, 2);
 
   const handleTagClick = (tag: string) => {
