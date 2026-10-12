@@ -145,6 +145,8 @@ export const onRequestGet = async (context: {
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="google-adsense-account" content="ca-pub-4090835276472949"/>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4090835276472949" crossorigin="anonymous"></script>
   <title>${title} — NgeGhibah.com</title>
   <meta name="description" content="${excerpt}"/>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>

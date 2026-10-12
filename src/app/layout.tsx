@@ -91,6 +91,9 @@ export const metadata: Metadata = {
       { url: '/apple-icon.svg', type: 'image/svg+xml' },
     ],
   },
+  other: {
+    'google-adsense-account': 'ca-pub-4090835276472949',
+  },
 };
 
 export default function RootLayout({
@@ -101,6 +104,12 @@ export default function RootLayout({
   return (
     <html lang="id" className={`dark ${plusJakartaSans.variable} ${inter.variable}`}>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-4090835276472949" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4090835276472949"
+          crossOrigin="anonymous"
+        />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="" />

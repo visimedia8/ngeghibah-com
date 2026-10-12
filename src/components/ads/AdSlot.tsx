@@ -13,7 +13,7 @@ export const AdSlot: React.FC<AdSlotProps> = ({
   slotId,
   format = 'banner',
   className = '',
-  adClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-XXXXXXXXXXXXXXXX',
+  adClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-4090835276472949',
 }) => {
   const adRef = useRef<HTMLDivElement>(null);
   const pushedRef = useRef(false);
