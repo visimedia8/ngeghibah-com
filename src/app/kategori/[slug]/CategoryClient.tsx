@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Clock, Layers } from 'lucide-react';
 import { MOCK_ARTICLES } from '@/data/mockData';
-import { ArticleCategory } from '@/types';
+import { Article, ArticleCategory } from '@/types';
 import { GhibahMeterBadge } from '@/components/signature/GhibahMeterBadge';
 import { Pagination } from '@/components/layout/Pagination';
 import { AdSlot } from '@/components/ads/AdSlot';
@@ -25,6 +25,9 @@ interface CategoryClientProps {
 
 export function CategoryClient({ slug, categoryInfo, categoryMap }: CategoryClientProps) {
   const [currentPage, setCurrentPage] = useState(1);
+  const [articles, setArticles] = useState<Article[]>(() =>
+    MOCK_ARTICLES.filter((a) => a.category === categoryInfo.categoryKey)
+  );
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -34,7 +37,30 @@ export function CategoryClient({ slug, categoryInfo, categoryMap }: CategoryClie
     }
   }, []);
 
-  const articles = MOCK_ARTICLES.filter((a) => a.category === categoryInfo.categoryKey);
+  useEffect(() => {
+    let isMounted = true;
+    fetch(`/api/articles?category=${encodeURIComponent(categoryInfo.categoryKey)}&limit=50`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!isMounted || !data?.articles?.length) return;
+        setArticles((prev) => {
+          const d1Articles: Article[] = data.articles;
+          const map = new Map<string, Article>();
+          d1Articles.forEach((a) => map.set(a.slug, a));
+          prev.forEach((a) => {
+            if (!map.has(a.slug)) {
+              map.set(a.slug, a);
+            }
+          });
+          return Array.from(map.values());
+        });
+      })
+      .catch(() => {});
+    return () => {
+      isMounted = false;
+    };
+  }, [categoryInfo.categoryKey]);
+
   const pageSize = 6;
   const totalPages = Math.ceil(articles.length / pageSize) || 1;
   const paginatedArticles = articles.slice((currentPage - 1) * pageSize, currentPage * pageSize);
