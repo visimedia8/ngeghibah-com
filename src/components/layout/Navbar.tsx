@@ -6,14 +6,38 @@ import { usePathname, useRouter } from 'next/navigation';
 import { Search, Menu, X, Sparkles, Shield, User, Flame, ArrowRight, FileText } from 'lucide-react';
 import { Logo } from '@/components/brand/Logo';
 import { MOCK_ARTICLES, MOCK_CELEBRITIES } from '@/data/mockData';
+import { Article } from '@/types';
 import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [articlesList, setArticlesList] = useState<Article[]>(MOCK_ARTICLES);
   const pathname = usePathname();
   const router = useRouter();
+
+  // Load latest articles for live search
+  useEffect(() => {
+    let isMounted = true;
+    fetch('/api/articles?limit=50')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!isMounted || !data?.articles?.length) return;
+        setArticlesList((prev) => {
+          const map = new Map<string, Article>();
+          data.articles.forEach((a: Article) => map.set(a.slug, a));
+          prev.forEach((a) => {
+            if (!map.has(a.slug)) map.set(a.slug, a);
+          });
+          return Array.from(map.values());
+        });
+      })
+      .catch(() => {});
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Close search on Escape key
   useEffect(() => {
@@ -29,7 +53,7 @@ export const Navbar = () => {
   // Filter articles and celebrities based on search query
   const query = searchQuery.trim().toLowerCase();
   const matchingArticles = query
-    ? MOCK_ARTICLES.filter(
+    ? articlesList.filter(
         (a) =>
           a.title.toLowerCase().includes(query) ||
           a.excerpt.toLowerCase().includes(query) ||
