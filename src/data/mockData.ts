@@ -218,6 +218,45 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         question: 'Apakah Han So-hee memiliki utang perdata keluarga?',
         answer: 'Berdasarkan putusan pengadilan Ulsan, Han So-hee dinyatakan tidak memiliki keterikatan hukum atas pinjaman pribadi ibunya.',
       },
+      {
+        question: 'Apa saja jenama mewah global yang menunjuk Han So-hee sebagai brand ambassador?',
+        answer: 'Han So-hee merupakan Global Brand Ambassador untuk rumah perhiasan Prancis Boucheron, rumah mode Balenciaga, serta Charles & Keith.',
+      },
+    ],
+    editorialSections: [
+      {
+        title: 'Trajektori Karier: Dari Model Indie ke Puncak Sinema & Duta Mode Global',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Karier Han So-hee (nama asli Lee So-hee) menandai anomali menyegarkan dalam lanskap industri hiburan Korea Selatan yang kerap terstandarisasi ketat. Mengawali langkah di Seoul dengan modal mandiri terbatas pasca kepindahan dari Ulsan, ia bekerja sambilan di berbagai kafe sembari merintis karier sebagai model video musik dan pemotretan busana indie. Penampilannya yang memadukan pesona klasik dengan aura pemberontak (<em>rebellious elegance</em>) dengan cepat menarik perhatian casting director.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Titik balik monumental terjadi pada 2020 saat ia memerankan Yeo Da-kyung dalam mega-hit <em>The World of the Married</em>. Keberaniannya mengambil peran antagonis dengan kompleksitas emosional tinggi menjadikannya aktris paling dicari. Keberhasilan tersebut diperkuat oleh peran aksi fisik brutal tanpa pemeran pengganti penuh dalam serial noir <em>My Name</em> dan epik sejarah <em>Gyeongseong Creature</em> di platform streaming Netflix, membuktikan kapasitas akting serbabisa melintasi berbagai genre sinematik.
+          </p>
+        `,
+      },
+      {
+        title: 'Forensik Manajemen Krisis: Paradoks Komunikasi Tanpa Filter di Era Media Sosial',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Berbeda dengan mayoritas pesohor Hallyu yang menyerahkan 100% narasi komunikasi kepada tim humas agensi, Han So-hee mempertahankan kebiasaan menulis secara personal di blog Naver pribadinya. Gaya komunikasi langsung dan emosional ini menciptakan ikatan loyalitas luar biasa dengan penggemar perempuan muda, namun sekaligus memicu kerentanan krisis reputasi ketika terjadi gesekan di ranah publik.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dinamika hubungan asmara singkatnya di awal 2024 menjadi studi kasus menarik dalam ilmu komunikasi krisis selebritas. Respon spontan sang aktris di media sosial memicu perdebatan sengit warganet global sebelum akhirnya agensi 9Ato Entertainment mengambil alih kendali komunikasi formal. Kasus ini menegaskan tantangan berat menjaga keseimbangan antara otentisitas personal seorang seniman dengan tuntutan korporasi komersial beranggaran jutaan dolar.
+          </p>
+        `,
+      },
+      {
+        title: 'Asesmen Brand Safety: Daya Tarik High Jewelry & Prospek Crossover Barat',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dari perspektif nilai komersial korporasi internasional, Han So-hee dikategorikan sebagai aset pemasaran paling bernilai tinggi di kawasan Asia-Pasifik. Pemilihannya sebagai duta global pertama asal Korea untuk rumah perhiasan mewah tertua di Place Vendôme Paris, Boucheron, serta keterlibatannya dengan rumah mode Balenciaga membuktikan daya pikatnya di segmen ultra-luxury.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Prospek transisi kariernya ke industri perfilman internasional terbuka lebar menyusul kemampuannya membawakan karakter aksi fisik yang intens. Selama manajemen reputasinya mampu memitigasi turbulensi narasi personal di dunia maya, Han So-hee diproyeksikan tetap menjadi salah satu representasi paling dominan sinema Korea di panggung budaya pop dunia.
+          </p>
+        `,
+      },
     ],
   },
   {
@@ -277,8 +316,48 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         question: 'Berapa total Piala Citra FFI yang telah dimenangkan Reza Rahadian?',
         answer: 'Reza Rahadian telah mengoleksi 5 Piala Citra Festival Film Indonesia sepanjang kariernya, menjadikannya salah satu aktor peraih piala terbanyak dalam sejarah perfilman nasional.',
       },
+      {
+        question: 'Apa peran Reza Rahadian dalam reformasi Festival Film Indonesia?',
+        answer: 'Menjabat sebagai Ketua Komite FFI periode 2021-2023, Reza memimpin modernisasi sistem penjurian berbasis akademi independen bekerja sama dengan asosiasi profesi perfilman nasional.',
+      },
+    ],
+    editorialSections: [
+      {
+        title: 'Dominasi Perfilman Modern: Rekor 5 Piala Citra & Standar Akting Bunglon',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Reza Rahadian Matulessy memegang status tak terbantahkan sebagai pilar utama keaktoran sinema Indonesia abad ke-21. Dengan rekor lima trofi Piala Citra di berbagai kategori (Pemeran Pendukung Pria Terbaik hingga empat kali Pemeran Utama Pria Terbaik), Reza membuktikan rentang peran bunglon yang langka: dari penjiwaan akurat sosok negarawan B.J. Habibie, komedi eksentrik Bossman di <em>My Stupid Boss</em>, hingga drama psikologis kelam di <em>Berbalas Kejam</em>.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dedikasinya terhadap metode seni peran dan riset karakter mendalam menetapkan tolok ukur profesionalisme baru bagi generasi aktor penerusnya. Keberadaannya dalam sebuah judul film kerap menjadi jaminan kualitas naratif sekaligus magnet komersial terpercaya bagi para investor industri film layar lebar Indonesia.
+          </p>
+        `,
+      },
+      {
+        title: 'Garis Depan Advokasi: Standar Jam Kerja Layak 14 Jam & Hak Royalti Digital',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Di luar panggung lampu sorot, Reza memanfaatkan pengaruh institusionalnya untuk memperjuangkan keadilan struktural pekerja industri kreatif. Bersama koalisi serikat perfilman, ia memimpin audiensi terbuka di DPR RI guna menuntut regulasi batas maksimal shift kerja lapangan 14 jam dan jaminan keselamatan kerja BPJS Ketenagakerjaan bagi seluruh kru teknis freelance.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Reza juga menjadi salah satu suara paling vokal yang mendesak reformasi skema royalti residual bagi para penampil (<em>performers rights</em>) di platform digital streaming OTT. Advokasi ini menempatkannya bukan sekadar sebagai bintang panggung, melainkan negarawan budaya yang peduli pada keberlanjutan ekosistem seni peran Indonesia.
+          </p>
+        `,
+      },
+      {
+        title: 'Manajemen Privasi & Integritas Reputasi di Tengah Pusaran Gosip Hiburan',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dalam era di mana popularitas kerap dibeli melalui eksposur sensasi kehidupan pribadi di media sosial, Reza Rahadian memilih jalur eksklusif: menolak memiliki akun media sosial personal aktif dan hanya berkomunikasi melalui akun resmi komunitas penggemar @officialpilarez. Batas tegas antara wilayah kreasi publik dan privasi domestik ini menjadikannya salah satu figur publik paling dihormati di tanah air.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Indeks sentimen publik terhadapnya mencatatkan angka positif 89%, rekor tertinggi di antara aktor papan atas Indonesia. Kredibilitas moral yang tanpa cela ini menjadikannya pilihan utama korporasi multinasional dan lembaga kebudayaan negara untuk program duta merek bernilai tinggi.
+          </p>
+        `,
+      },
     ],
   },
+
   {
     id: 'celeb-4',
     slug: 'fuji-an',
@@ -341,6 +420,45 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         question: 'Bagaimana kelanjutan kasus dugaan penggelapan honor mantan manajer Fuji?',
         answer: 'Laporan resmi telah diproses di Polres Metro Jakarta Barat dan mantan manajer telah ditetapkan sebagai tersangka penipuan/penggelapan.',
       },
+      {
+        question: 'Berapa rekor omset live streaming shopping tertinggi yang dipandu Fuji An?',
+        answer: 'Sesi live streaming resmi flash sale bersama brand kecantikan lokal mencatatkan Gross Merchandise Value (GMV) menembus Rp 1,2 Miliar dalam waktu kurang dari 2 jam.',
+      },
+    ],
+    editorialSections: [
+      {
+        title: 'Fenomena Social Commerce: Rekor Konversi Live Shopping & Daya Tarik Gen Z',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Fujianti Utami Putri (Fuji An) merepresentasikan anomali paling fenomenal dalam evolusi ekonomi kreator Indonesia pasca-2021. Mengemuka di tengah tragedi keluarga yang menyentuh simpati kolektif jutaan masyarakat, Fuji berhasil membuktikan ketahanan dan kapasitas monetisasi digital mandiri yang melampaui ekspektasi para pengamat industri periklanan modern.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kekuatan intinya bertumpu pada tingkat keterikatan (<em>engagement rate</em>) organik yang luar biasa tinggi di platform TikTok dan Instagram. Dalam sesi siaran langsung komersial (<em>live commerce</em>), Fuji mampu mengonversi penonton menjadi transaksi riil bernilai miliaran rupiah dalam hitungan menit. Karakter pembawaannya yang lugas, jenaka, dan tanpa kepalsuan menciptakan tingkat kepercayaan konsumen yang sangat dicari oleh brand fesyen dan produk perawatan kulit massal.
+          </p>
+        `,
+      },
+      {
+        title: 'Anatomi Perang Fandom & Polarisasi Sentimen di Kolom Gosip Digital',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Tingginya popularitas di usia sangat muda membawa konsekuensi pengawasan publik yang intensif. Komunitas penggemar fanatik Fuji kerap terlibat dalam perang narasi siber dengan kubu penggemar figur publik lain, terutama mengenai dinamika perjodohan warganet (<em>shipper fandom</em>). Setiap gerak-gerik, tatapan mata di acara penghargaan, hingga unggahan status singkat dianalisis secara berlebihan oleh ribuan akun anonim.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kendati polarisasi ini menjaga volume percakapan namanya selalu berada di jajaran trending topic teratas, hal ini juga menuntut kedewasaan komunikasi krisis ekstra. Fuji beberapa kali secara terbuka mengimbau para pendukungnya untuk tidak melakukan perundungan siber terhadap rekan sesama kreator konten demi menjaga kesehatan mental bersama.
+          </p>
+        `,
+      },
+      {
+        title: 'Forensik Sengketa Hukum Eks-Manajer & Transformasi Manajemen Profesional',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Titik krusial pendewasaan bisnis Fuji tercatat pada 2023 ketika ia melaporkan mantan manajer pribadinya ke pihak kepolisian atas dugaan penggelapan uang honor kerja sama periklanan senilai lebih dari Rp 1,5 Miliar. Kasus ini membuka mata banyak talenta muda mengenai pentingnya pemisahan rekening bisnis, audit berkala, dan tata kelola kontrak hukum yang ketat dalam manajemen agensi talenta.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dengan restrukturisasi tim manajemen di bawah naungan agensi profesional dan pendampingan kuasa hukum tetap, Fuji memposisikan dirinya sebagai entitas bisnis mandiri yang terlindungi dari celah penipuan finansial internal. Langkah hukum tegas tersebut diapresiasi publik sebagai bukti integritas dan komitmen profesionalitas jangka panjang.
+          </p>
+        `,
+      },
     ],
   },
   {
@@ -400,8 +518,48 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         question: 'Apakah rekor termuda yang dipecahkan Zendaya di ajang Primetime Emmy?',
         answer: 'Zendaya adalah aktris termuda dalam sejarah yang memenangkan Primetime Emmy Award untuk Aktris Utama Terbaik serial drama pada usia 24 tahun.',
       },
+      {
+        question: 'Siapa arsitek di balik penampilan ikonik fashion red carpet Zendaya?',
+        answer: 'Penampilan adibusana Zendaya dikurasi secara eksklusif oleh arsitek gaya legendaris Law Roach, yang bekerja sama dengannya sejak usia 14 tahun.',
+      },
+    ],
+    editorialSections: [
+      {
+        title: 'Transformasi Bintang Anak Disney ke Pemenang Emmy Termuda Sepanjang Sejarah',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Zendaya Maree Stoermer Coleman menorehkan sejarah sebagai salah satu dari sedikit bintang cilik Disney Channel yang berhasil bertransisi mulus menjadi figur sinema paling bergengsi di dunia perfilman internasional. Puncak pengakuan kritis diraih lewat penampilannya sebagai Rue Bennett dalam serial HBO <em>Euphoria</em>, yang mengantarkannya memenangkan dua piala Primetime Emmy Awards dan mencatatkan rekor sebagai aktris termuda peraih trofi kategori aktris utama drama pada usia 24 tahun.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Keberhasilannya melintasi batas antara proyek komersial raksasa bernilai miliaran dolar (seperti trilogi <em>Spider-Man</em> dan epik fiksi ilmiah <em>Dune</em> garapan Denis Villeneuve) dengan peran produksi independen sebagai produser eksekutif di film <em>Challengers</em> membuktikan kecakapan navigasi karier kelas wahid di jantung Hollywood.
+          </p>
+        `,
+      },
+      {
+        title: 'Revolusi Adibusana Red Carpet: Sinergi Visioner Bersama Law Roach',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Di panggung mode global, setiap kemunculan Zendaya di karpet merah merupakan peristiwa budaya (<em>cultural event</em>) tersendiri. Kemitraan jangka panjangnya dengan arsitek gaya (<em>image architect</em>) Law Roach telah melahirkan momen-momen fesyen paling berkesan dalam satu dekade terakhir, mulai dari gaun robot arsip vintage Mugler 1995 hingga kreasi kustom haute couture Louis Vuitton dan perhiasan tinggi Bulgari.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Pendekatan tematik berbasis narasi film (<em>method dressing</em>) yang dipeloporinya menetapkan tren baru dalam strategi promosi film global. Kemampuannya mengombinasikan busana bersejarah dengan pernyataan modern menobatkannya sebagai Fashion Icon termuda versi Council of Fashion Designers of America (CFDA).
+          </p>
+        `,
+      },
+      {
+        title: 'Keteguhan Batas Privasi & Standar Emas Integritas Selebritas Modern',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Di tengah industri hiburan yang sering kali mengeksploitasi detail hubungan personal demi publisitas murah, Zendaya dan pasangannya aktor Tom Holland secara konsisten menjaga batas sakral kehidupan pribadi mereka. Penolakannya untuk meladeni rumor sensasional di media sosial membuat indeks Brand Safety dirinya berada di peringkat tertinggi bagi pengiklan korporat papan atas.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Dengan dukungan sentimen publik positif mencapai 94% secara global, Zendaya diposisikan sebagai panutan generasi muda yang menggabungkan keunggulan talenta murni, kesadaran sosial tinggi, dan keanggunan berkelas yang menjauhkannya dari jerat skandal murahan.
+          </p>
+        `,
+      },
     ],
   },
+
   {
     id: 'celeb-6',
     slug: 'raffi-ahmad',
@@ -472,6 +630,41 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         answer: 'Pihak manajemen RANS telah menyiapkan langkah strategis penawaran umum perdana saham (IPO) bekerja sama dengan mitra institusi keuangan nasional.',
       },
     ],
+    editorialSections: [
+      {
+        title: 'Evolusi Sultan Andara: Dari Bintang Sinetron Remaja ke Konglomerasi Media RANS Holding',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Raffi Farid Ahmad mencatatkan metamorfosis bisnis paling spektakuler dalam sejarah industri hiburan modern Indonesia. Mengawali karier keaktoran sejak usia 14 tahun melalui sinetron remaja dan panggung presenter varietas televisi harian, etos kerja tanpa henti (<em>hustle culture</em>) membawanya menjadi raja layar kaca selama dua dekade.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Bersama sang istri Nagita Slavina, Raffi mendirikan RANS Entertainment pada 2015 yang awalnya hanya saluran dokumentasi keluarga YouTube. Kanal tersebut bermutasi menjadi konglomerasi media digital terintegrasi yang mencakup studio animasi, agensi periklanan digital, dan rumah produksi konten yang berhasil menarik investasi strategis dari grup media raksasa Emtek Group dengan valuasi menembus triliunan rupiah.
+          </p>
+        `,
+      },
+      {
+        title: 'Ekosistem Bisnis Terintegrasi: Sinergi Olahraga Liga 1, Kuliner Waralaba & Valuasi Pra-IPO',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Ekspansi RANS melampaui batasan hiburan konvensional dengan merambah industri olahraga profesional melalui akuisisi klub sepak bola RANS Nusantara FC dan klub bola basket IBL RANS Simba Bogor. Strategi konvergensi antara popularitas selebritas dan daya tarik olahraga (<em>sportainment</em>) menciptakan ceruk pasar baru di Indonesia.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Di sektor riil, investasi agresif Raffi di industri makanan dan minuman (F&B) seperti jaringan restoran Rojo Sambel Nusantara menunjukkan insting tajam dalam membina pelaku UMKM lokal menuju skala waralaba nasional. Rencana penawaran umum perdana saham (IPO) RANS Entertainment terus menjadi sorotan analis pasar modal sebagai tolok ukur kesiapan industri kreator masuk ke lantai bursa efek.
+          </p>
+        `,
+      },
+      {
+        title: 'Forensik Isu Akuntabilitas Finansial & Babak Baru Kenegaraan 2024–2029',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kecepatan akumulasi aset Raffi kerap memicu spekulasi warganet dan tuduhan tak berdasar mengenai aliran dana modal. Menghadapi tudingan tersebut, tim kuasa hukum dan manajemen RANS merespons dengan transparansi audit akuntan publik bereputasi tinggi yang memverifikasi bahwa seluruh modal kerja berasal dari arus kas operasional komersial, kontrak endorsement ratusan brand, dan suntikan dana ventura formal.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Pelantikannya sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni pada Oktober 2024 menandai babak baru integrasi figur publik ke ranah pengabdian negara. Peran ini menuntut kepatuhan pelaporan Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) secara berkala, menegaskan komitmen akuntabilitas publik seorang mega-bintang di hadapan hukum dan konstitusi.
+          </p>
+        `,
+      },
+    ],
   },
   {
     id: 'celeb-7',
@@ -536,8 +729,48 @@ export const MOCK_CELEBRITIES: Celebrity[] = [
         question: 'Apa hasil putusan pengadilan dalam sengketa Min Hee-jin dan HYBE pada Mei 2024?',
         answer: 'Pengadilan Distrik Seoul memutuskan bahwa HYBE tidak memiliki alasan yang cukup kuat untuk mencopot Min Hee-jin dari kursi CEO ADOR pada RUPS Mei 2024 dan mengabulkan perintah penahanan hak suara HYBE.',
       },
+      {
+        question: 'Apa saja karya ikonik Min Hee-jin sebelum mendirikan ADOR?',
+        answer: 'Selama 16 tahun di SM Entertainment, Min Hee-jin merancang identitas visual legendaris untuk album Girls Generation (Gee), f(x) (Pink Tape), SHINee (Romeo), dan EXO.',
+      },
+    ],
+    editorialSections: [
+      {
+        title: 'Revolusi Estetika K-Pop: Dari Eksperimen SM Entertainment ke Lahirnya Fenomena NewJeans',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Min Hee-jin adalah direktur kreatif paling berpengaruh dalam dua dekade sejarah industri musik pop Korea. Memulai karier sebagai desainer grafis pemula di SM Entertainment pada 2002, ia merevolusi cara K-Pop mengemas karya seni visual: mentransformasi sampul album dari sekadar foto pajangan idola menjadi karya seni konseptual naratif terpadu, seperti album <em>Pink Tape</em> milik f(x) yang diakui museum seni internasional.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Puncak kejeniusannya terwujud saat mendirikan label ADOR di bawah HYBE dan meluncurkan girl group NewJeans pada 2022 tanpa teaser promosi awal. Pendekatan nostalgia era Y2K yang organik, aransemen R&B pop yang santai (<em>easy listening</em>), dan koreografi bebas mengubah arah kiblat industri K-Pop global yang sebelumnya didominasi konsep futuristik hiper-elektronik.
+          </p>
+        `,
+      },
+      {
+        title: 'Forensik Konflik Korporasi ADOR vs HYBE: Jumpa Pers Bersejarah & Pertarungan Hukum Seoul',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Pertarungan antara Min Hee-jin dan induk perusahaan HYBE pada 2024 menjadi drama korporasi terbesar dalam sejarah industri hiburan Asia. Konferensi pers darurat berdurasi lebih dari dua jam yang digelar Min Hee-jin—dengan mengenakan topi bisbol hijau dan kaos garis-garis sederhana—ditonton jutaan pemirsa di seluruh dunia dan memicu gelombang dukungan publik berkat kejujuran emosionalnya melawan oligarki konglomerat modal.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Kemenangan hukum diraih Min Hee-jin ketika Pengadilan Distrik Pusat Seoul mengabulkan gugatan injunksi sementaranya pada Mei 2024, menegaskan bahwa tuduhan pengkhianatan kepercayaan yang diajukan HYBE tidak memiliki dasar bukti faktual yang cukup kuat. Kasus ini mencatatkan preseden hukum penting mengenai perlindungan hak direksi kreatif minoritas di hadapan pemegang saham mayoritas bursa efek.
+          </p>
+        `,
+      },
+      {
+        title: 'Polarisasi Fandom Global & Doktrin Otonomi Seniman Melawan Kekuasaan Konglomerat',
+        contentHtml: `
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Di mata komunitas penggemar internasional dan pelaku industri kreatif, sosok Min Hee-jin membelah persepsi menjadi dua kutub yang kuat: kubu yang memujanya sebagai martir pembela hak cipta karya orisinal seniman, dan kubu yang mengkritiknya atas gaya komunikasi konfrontatif yang mengguncang harga saham perusahaan publik.
+          </p>
+          <p class="leading-relaxed text-slate-300 mb-3">
+            Solidaritas mutlak yang ditunjukkan oleh kelima anggota NewJeans terhadap kepemimpinannya membuktikan kedalaman ikatan fidusia yang jarang ditemukan di industri hiburan komersial. Min Hee-jin telah mengubah percakapan K-Pop selamanya: bahwa di balik megahnya industri bernilai miliaran dolar, jiwa karya seni tetap berada pada visi manusiawi para penciptanya.
+          </p>
+        `,
+      },
     ],
   },
+
 ];
 
 export const MOCK_ARTICLES: Article[] = [
