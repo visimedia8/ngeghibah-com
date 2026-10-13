@@ -7,14 +7,14 @@
           "rule": {
             "interval": [
               {
-                "field": "minutes",
-                "minutesInterval": 30
+                "field": "hours",
+                "hoursInterval": 8
               }
             ]
           }
         },
         "id": "1",
-        "name": "Schedule Trigger (Setiap 30 Menit)",
+        "name": "Schedule Trigger (3x Sehari - Setiap 8 Jam)",
         "type": "n8n-nodes-base.scheduleTrigger",
         "typeVersion": 1.2,
         "position": [
@@ -87,7 +87,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const items = [];\n\nfunction parseRss(xmlText, category, source) {\n  if (!xmlText || typeof xmlText !== 'string') return;\n  const itemMatches = xmlText.matchAll(/<item>([\\s\\S]*?)<\\/item>/gi);\n  for (const match of itemMatches) {\n    const itemXml = match[1];\n    const titleMatch = itemXml.match(/<title>([\\s\\S]*?)<\\/title>/i);\n    const linkMatch = itemXml.match(/<link>([\\s\\S]*?)<\\/link>/i);\n    const descMatch = itemXml.match(/<description>([\\s\\S]*?)<\\/description>/i);\n    \n    if (titleMatch && linkMatch) {\n      const rawTitle = titleMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '\"').replace(/&#39;/g, \"'\").trim();\n      const rawLink = linkMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim();\n      let rawDesc = descMatch ? descMatch[1].replace(/<[^>]*>?/gm, '').replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim() : rawTitle;\n      \n      items.push({\n        source,\n        source_id: rawLink.slice(-32),\n        title: rawTitle,\n        content: rawDesc,\n        url: rawLink,\n        category,\n        score: 100\n      });\n    }\n  }\n}\n\ntry {\n  const indo = $('Fetch Google News Indo Celeb').first().json.data;\n  parseRss(indo, 'seleb-lokal', 'google-news-indo');\n} catch (e) {}\n\ntry {\n  const soompi = $('Fetch Soompi K-Pop Feeds').first().json.data;\n  parseRss(soompi, 'kpop-asia', 'soompi');\n} catch (e) {}\n\ntry {\n  const hollywood = $('Fetch Google News Hollywood').first().json.data;\n  parseRss(hollywood, 'hollywood-barat', 'google-news-hollywood');\n} catch (e) {}\n\n// Safety Pre-Filter & Anti-Duplication Signature\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// Add Entity-Event Signature\nsafeItems.forEach(item => {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');\n  item.event_signature = cleanTitle.slice(0, 32);\n});\n\n// Ambil maksimal 2 item per run agar DeepSeek v4 tidak overload\nreturn safeItems.slice(0, 2).map(item => ({ json: item }));"
+          "jsCode": "const items = [];\n\nfunction parseRss(xmlText, category, source) {\n  if (!xmlText || typeof xmlText !== 'string') return;\n  const itemMatches = xmlText.matchAll(/<item>([\\s\\S]*?)<\\/item>/gi);\n  for (const match of itemMatches) {\n    const itemXml = match[1];\n    const titleMatch = itemXml.match(/<title>([\\s\\S]*?)<\\/title>/i);\n    const linkMatch = itemXml.match(/<link>([\\s\\S]*?)<\\/link>/i);\n    const descMatch = itemXml.match(/<description>([\\s\\S]*?)<\\/description>/i);\n    \n    if (titleMatch && linkMatch) {\n      const rawTitle = titleMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '\"').replace(/&#39;/g, \"'\").trim();\n      const rawLink = linkMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim();\n      let rawDesc = descMatch ? descMatch[1].replace(/<[^>]*>?/gm, '').replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim() : rawTitle;\n      \n      items.push({\n        source,\n        source_id: rawLink.slice(-32),\n        title: rawTitle,\n        content: rawDesc,\n        url: rawLink,\n        category,\n        score: 100\n      });\n    }\n  }\n}\n\ntry {\n  const indo = $('Fetch Google News Indo Celeb').first().json.data;\n  parseRss(indo, 'seleb-lokal', 'google-news-indo');\n} catch (e) {}\n\ntry {\n  const soompi = $('Fetch Soompi K-Pop Feeds').first().json.data;\n  parseRss(soompi, 'kpop-asia', 'soompi');\n} catch (e) {}\n\ntry {\n  const hollywood = $('Fetch Google News Hollywood').first().json.data;\n  parseRss(hollywood, 'hollywood-barat', 'google-news-hollywood');\n} catch (e) {}\n\n// Safety Pre-Filter\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// Add Entity-Event Signature\nsafeItems.forEach(item => {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');\n  item.event_signature = cleanTitle.slice(0, 32);\n});\n\n// Ambil tepat 1 item per run (3x sehari = tepat 3 artikel/hari) untuk menghemat budget\nreturn safeItems.slice(0, 1).map(item => ({ json: item }));"
         },
         "id": "5",
         "name": "Normalize, Deduplicate & Safety Filter",
