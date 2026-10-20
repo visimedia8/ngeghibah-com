@@ -129,7 +129,7 @@
     }
   ],
   "connections": {
-    "Schedule Trigger (Every 1h)": {
+    "Schedule Trigger (3x Sehari - Every 8h)": {
       "main": [
         [
           {
@@ -155,14 +155,14 @@
       "main": [
         [
           {
-            "node": "DeepSeek v4 Flash Writer",
+            "node": "Koray Semantic SEO DeepSeek v4 Writer",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "DeepSeek v4 Flash Writer": {
+    "Koray Semantic SEO DeepSeek v4 Writer": {
       "main": [
         [
           {

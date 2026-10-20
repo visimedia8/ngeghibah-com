@@ -131,7 +131,7 @@
       }
     ],
     "connections": {
-      "Schedule Trigger (Setiap 30 Menit)": {
+      "Schedule Trigger (3x Sehari - Setiap 8 Jam)": {
         "main": [
           [
             {

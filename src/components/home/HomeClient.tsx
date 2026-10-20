@@ -50,7 +50,12 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               map.set(a.slug, a);
             }
           });
-          return Array.from(map.values());
+          const merged = Array.from(map.values());
+          return merged.sort((a, b) => {
+            const timeA = new Date(a.publishedAt).getTime() || 0;
+            const timeB = new Date(b.publishedAt).getTime() || 0;
+            return timeB - timeA;
+          });
         });
       })
       .catch(() => {});
@@ -67,8 +72,17 @@ export const HomeClient: React.FC<HomeClientProps> = ({
     { id: 'creator-tiktok', label: 'Creator & TikTok' },
   ];
 
+  // Sort articles strictly by publishedAt descending
+  const sortedArticles = React.useMemo(() => {
+    return [...articles].sort((a, b) => {
+      const timeA = new Date(a.publishedAt).getTime() || 0;
+      const timeB = new Date(b.publishedAt).getTime() || 0;
+      return timeB - timeA;
+    });
+  }, [articles]);
+
   // Filtering logic
-  const filteredArticles = articles.filter((article) => {
+  const filteredArticles = sortedArticles.filter((article) => {
     if (activeCategory !== 'semua' && article.category !== activeCategory) {
       return false;
     }
@@ -88,10 +102,14 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   });
 
   // Hero article & secondary articles for Bento Grid
-  const heroArticle = articles.find((a) => a.isHero) || articles[0];
-  const sideArticles = articles
-    .filter((a) => a.id !== heroArticle?.id)
-    .slice(0, 2);
+  // Prioritize fresh article with isHero among top 3 newest, otherwise default to the newest article overall
+  const heroArticle =
+    sortedArticles.slice(0, 3).find((a) => a.isHero) ||
+    sortedArticles[0] ||
+    initialArticles[0];
+  const sideArticles = heroArticle
+    ? sortedArticles.filter((a) => a.id !== heroArticle.id).slice(0, 2)
+    : [];
 
   const handleTagClick = (tag: string) => {
     if (activeTag === tag) {
