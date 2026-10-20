@@ -15,6 +15,16 @@ export default function robots(): MetadataRoute.Robots {
         allow: ['/artikel/', '/kategori/'],
         disallow: ['/api/', '/admin/'],
       },
+      {
+        userAgent: 'Mediapartners-Google',
+        allow: '/',
+        disallow: ['/api/', '/admin/'],
+      },
+      {
+        userAgent: 'Google-adstxt',
+        allow: '/',
+        disallow: ['/api/', '/admin/'],
+      },
     ],
     sitemap: [
       `${baseUrl}/sitemap.xml`,

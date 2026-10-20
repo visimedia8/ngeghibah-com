@@ -1,0 +1,9 @@
+# Cloudflare Pages Custom Headers for ngeghibah.com
+/ads.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=14400
