@@ -116,8 +116,8 @@ export const SafeImage: React.FC<SafeImageProps> = ({
       onError={handleError}
       onLoad={() => setIsLoaded(true)}
       className={`${fillClasses} ${className} ${
-        isLoaded || priority ? 'opacity-100' : 'opacity-90'
-      } transition-opacity duration-300`}
+        priority ? 'opacity-100' : `${isLoaded ? 'opacity-100' : 'opacity-90'} transition-opacity duration-300`
+      }`}
       {...rest}
     />
   );

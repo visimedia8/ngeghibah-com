@@ -69,11 +69,16 @@ export function getOptimizedImageUrl(
 
     // Check if Kompas
     if (url.includes('asset.kompas.com/crops/')) {
-      const h = Math.round(width * 0.67);
-      return url.replace(/\/\d+x\d+\//, `/${width}x${h}/`);
+      if (url.includes('/240x160/')) {
+        return url;
+      }
+      return url.replace(/\/\d+x\d+\//, '/240x160/');
     }
 
-    // Check if raw Wikimedia Commons
+    // Check if Wikimedia Commons
+    if (url.includes('thumb.wikimedia.org')) {
+      return url;
+    }
     if (url.includes('upload.wikimedia.org/wikipedia/commons/')) {
       const filename = url.split('/').pop() || '';
       return url.replace(
