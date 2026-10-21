@@ -5,6 +5,55 @@ interface Env {
   N8N_WEBHOOK_SECRET?: string;
 }
 
+function cleanTokens(text: string): string[] {
+  const words = text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length > 2);
+  const stopwords = new Set([
+    'yang', 'untuk', 'pada', 'dari', 'dalam', 'dan', 'atau', 'ini', 'itu',
+    'juga', 'ada', 'bisa', 'akan', 'oleh', 'saat', 'para', 'ke', 'di',
+    'terkait', 'hingga', 'kupas', 'tuntas', 'fakta', 'viral', 'bukan',
+    'sekadar', 'deretan', 'deret', 'simak', 'bikin', 'potret', 'resmi',
+    'lengkap', 'kronologi', 'jejak', 'digital', 'analisis', 'spekulasi'
+  ]);
+  return words.filter((w) => !stopwords.has(w));
+}
+
+function calculateSimilarity(t1: string, t2: string, e1: string[], e2: string[]): { score: number; isDuplicate: boolean } {
+  const tok1 = new Set(cleanTokens(t1));
+  const tok2 = new Set(cleanTokens(t2));
+  let intersection = 0;
+  tok1.forEach((t) => {
+    if (tok2.has(t)) intersection++;
+  });
+  const union = new Set([...tok1, ...tok2]).size || 1;
+  const jaccardTitle = intersection / union;
+
+  // Entity Overlap
+  let entMatched = 0;
+  const e1Norm = (e1 || []).map((e) => e.toLowerCase().trim());
+  const e2Norm = (e2 || []).map((e) => e.toLowerCase().trim());
+  for (const a of e1Norm) {
+    for (const b of e2Norm) {
+      if (a === b || (a.length > 3 && b.includes(a)) || (b.length > 3 && a.includes(b))) {
+        entMatched++;
+        break;
+      }
+    }
+  }
+  const minEnt = Math.min(e1Norm.length, e2Norm.length) || 1;
+  const entityScore = e1Norm.length > 0 && e2Norm.length > 0 ? entMatched / minEnt : 0;
+
+  // Composite: 45% Title Jaccard + 55% Entity Overlap
+  const composite = (0.45 * jaccardTitle) + (0.55 * entityScore);
+  return {
+    score: Math.round(composite * 100) / 100,
+    isDuplicate: composite > 0.40,
+  };
+}
+
 export const onRequestPost = async (context: { request: Request; env: Env }) => {
   const { request, env } = context;
   try {
@@ -29,6 +78,66 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
         JSON.stringify({ error: 'Payload tidak lengkap: title, slug, dan content_html wajib ada' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
       );
+    }
+
+    // GUARD 1: Mandatory Forensic Table (<table) Check (SOP Rule 3)
+    if (!contentHtml.includes('<table')) {
+      return new Response(
+        JSON.stringify({
+          status: 'REJECTED',
+          error: 'STRUKTUR DITOLAK: Artikel wajib menyertakan minimal 1 elemen <table> rangkuman data/kronologi.',
+        }),
+        { status: 422, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // GUARD 2: Brand Lexicon & Anti-Clickbait Filter (SOP Rule 3)
+    const bannedWords = ['bikin melongo', 'syok berat', 'tak disangka-sangka', 'lihat apa yang terjadi'];
+    for (const b of bannedWords) {
+      if (title.toLowerCase().includes(b) || contentHtml.toLowerCase().includes(b)) {
+        return new Response(
+          JSON.stringify({
+            status: 'REJECTED',
+            error: `BRAND LEXICON VIOLATION: Dilarang menggunakan frasa klikbait murahan '${b}'.`,
+          }),
+          { status: 422, headers: { 'Content-Type': 'application/json' } }
+        );
+      }
+    }
+
+    // GUARD 3: Automatic Pre-Publish Similarity Check against Canonical Articles (SOP Rule 1 & 4)
+    const newEntities: string[] = Array.isArray(payload.entities) ? payload.entities : [];
+    if (env.DB) {
+      try {
+        const { results: canonArticles } = await env.DB.prepare(
+          'SELECT slug, title, entities_json FROM articles WHERE is_canonical = 1 ORDER BY published_at DESC LIMIT 50'
+        ).all();
+
+        if (canonArticles && canonArticles.length > 0) {
+          for (const ext of canonArticles as any[]) {
+            let extEntities: string[] = [];
+            try {
+              extEntities = JSON.parse(ext.entities_json || '[]');
+            } catch {}
+
+            const sim = calculateSimilarity(title, ext.title, newEntities, extEntities);
+            if (sim.isDuplicate) {
+              return new Response(
+                JSON.stringify({
+                  status: 'REJECTED',
+                  error: `DUPLICATE_CONTENT_DETECTED (${Math.round(sim.score * 100)}%)`,
+                  matched_canonical_slug: ext.slug,
+                  matched_canonical_title: ext.title,
+                  message: `Artikel ini terdeteksi sebagai duplikat dari '/artikel/${ext.slug}'. DILARANG membuat postingan baru. Update master article tersebut sebagai H2/H3 baru!`,
+                }),
+                { status: 409, headers: { 'Content-Type': 'application/json' } }
+              );
+            }
+          }
+        }
+      } catch (err) {
+        // Fallback gracefully if query fails
+      }
     }
 
     // Default 16:9 editorial featured images per category (anti-broken image guard)
@@ -61,7 +170,7 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
     const ghibahMeterDesc = payload.ghibah_meter_desc || payload.ghibahMeter?.description || 'Diverifikasi melalui berkas arsip dan dokumen resmi.';
 
     const publishedAt = payload.published_at || payload.publishedAt || new Date().toISOString();
-    const wordCount = contentHtml.replace(/<[^>]*>/g, '').split(/\s+/).filter(Boolean).length;
+    const wordCount = contentHtml.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
     const readingTimeMinutes = Number(payload.reading_time_minutes || payload.readingTimeMinutes || Math.max(3, Math.ceil(wordCount / 200)));
 
     const authorName = payload.author?.name || payload.author_name || 'Tim Investigasi NgeGhibah';
@@ -77,7 +186,7 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
     const isHero = (payload.is_hero || payload.isHero) ? 1 : 0;
     const trendingScore = Number(payload.trending_score ?? payload.trendingScore ?? 85);
 
-    // Save to Cloudflare D1 database if bound
+    // Save to Cloudflare D1 database if bound (New articles are is_canonical = 1)
     let persistedToDb = false;
     if (env.DB) {
       await env.DB.prepare(`
@@ -87,14 +196,14 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
           hero_image, image_caption, published_at, reading_time_minutes,
           author_name, author_slug, author_role, author_avatar,
           entities_json, timeline_json, digital_receipts_count,
-          is_featured, is_hero, trending_score, updated_at
+          is_featured, is_hero, trending_score, is_canonical, canonical_slug, updated_at
         ) VALUES (
           ?, ?, ?, ?, ?, ?, ?,
           ?, ?, ?, ?, ?,
           ?, ?, ?, ?,
           ?, ?, ?, ?,
           ?, ?, ?,
-          ?, ?, ?, CURRENT_TIMESTAMP
+          ?, ?, ?, 1, NULL, CURRENT_TIMESTAMP
         )
         ON CONFLICT(slug) DO UPDATE SET
           title = excluded.title,
@@ -121,6 +230,7 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
           is_featured = excluded.is_featured,
           is_hero = excluded.is_hero,
           trending_score = excluded.trending_score,
+          is_canonical = 1,
           updated_at = CURRENT_TIMESTAMP
       `).bind(
         id, slug, title, excerpt, contentHtml, category, categoryLabel,
@@ -136,18 +246,15 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
     return new Response(
       JSON.stringify({
         success: true,
-        message: 'Artikel berhasil disimpan ke Cloudflare D1 dan siap ditayangkan secara instan.',
-        slug,
-        hero_image: heroImage,
-        persistedToDb,
-        receivedAt: new Date().toISOString(),
+        message: 'Artikel berhasil disimpan ke D1 dengan guardrails kepatuhan AdSense',
+        article: { id, slug, title, is_canonical: 1, persistedToDb },
       }),
-      { status: 201, headers: { 'Content-Type': 'application/json' } }
+      { status: 200, headers: { 'Content-Type': 'application/json' } }
     );
   } catch (error: any) {
-    return new Response(JSON.stringify({ error: error.message || 'Internal server error' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({ error: error.message || 'Internal Server Error' }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } }
+    );
   }
 };
