@@ -48,6 +48,7 @@ export default function HomePage() {
         <link
           rel="preload"
           as="image"
+          type="image/avif"
           href={heroImageUrl}
           // @ts-ignore modern browser fetchPriority
           fetchPriority="high"

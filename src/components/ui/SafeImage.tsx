@@ -36,7 +36,8 @@ export const SafeImage: React.FC<SafeImageProps> = ({
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   const finalLoading = loading || (priority ? 'eager' : 'lazy');
-  const finalFetchPriority = fetchPriority || (priority ? 'high' : undefined);
+  const finalFetchPriority = fetchPriority || (priority ? 'high' : 'low');
+  const finalDecoding = priority ? 'sync' : 'async';
 
   // Compute active source URL
   const initialOptimized = optimizedWidth
@@ -111,6 +112,7 @@ export const SafeImage: React.FC<SafeImageProps> = ({
       alt={alt}
       loading={finalLoading}
       fetchPriority={finalFetchPriority}
+      decoding={finalDecoding}
       onError={handleError}
       onLoad={() => setIsLoaded(true)}
       className={`${fillClasses} ${className} ${
