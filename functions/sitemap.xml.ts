@@ -40,8 +40,9 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
 
   if (env.DB) {
     try {
+      // Only select canonical master articles (anti-duplicate guardrail)
       const { results } = await env.DB.prepare(
-        'SELECT slug, published_at FROM articles ORDER BY published_at DESC LIMIT 500'
+        'SELECT slug, published_at FROM articles WHERE is_canonical = 1 ORDER BY published_at DESC LIMIT 100'
       ).all();
       if (results && results.length > 0) {
         articleUrls = results.map((row: any) => ({
@@ -52,7 +53,20 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
         }));
       }
     } catch {
-      // Graceful fallback if query fails
+      // Fallback to legacy query if is_canonical column has not yet been migrated
+      try {
+        const { results } = await env.DB.prepare(
+          'SELECT slug, published_at FROM articles ORDER BY published_at DESC LIMIT 50'
+        ).all();
+        if (results && results.length > 0) {
+          articleUrls = results.map((row: any) => ({
+            loc: `/artikel/${row.slug}`,
+            lastmod: row.published_at ? new Date(row.published_at).toISOString() : new Date().toISOString(),
+            changefreq: 'weekly',
+            priority: '0.9',
+          }));
+        }
+      } catch {}
     }
   }
 

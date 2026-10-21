@@ -23,6 +23,11 @@ export const onRequestGet = async (context: {
       return next();
     }
 
+    // 301 Permanent Redirect Guard if article was marked as duplicate/pruned
+    if (row.is_canonical === 0 && row.canonical_slug) {
+      return Response.redirect(`https://ngeghibah.com/artikel/${row.canonical_slug}`, 301);
+    }
+
     let entities: string[] = [];
     try {
       entities = JSON.parse(row.entities_json || '[]');

@@ -27,11 +27,12 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
         author_name, author_slug, author_role, author_avatar,
         entities_json, digital_receipts_count, is_featured, is_hero, trending_score
       FROM articles
+      WHERE (is_canonical IS NULL OR is_canonical = 1)
     `;
     const params: any[] = [];
 
     if (category && category !== 'semua') {
-      query += ' WHERE category = ?';
+      query += ' AND category = ?';
       params.push(category);
     }
 

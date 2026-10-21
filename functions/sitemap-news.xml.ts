@@ -21,13 +21,20 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
 
   if (env.DB) {
     try {
-      // Google News sitemap standard focuses on recent articles
+      // Google News sitemap standard focuses on recent canonical master articles
       const { results } = await env.DB.prepare(
-        'SELECT slug, title, published_at FROM articles ORDER BY published_at DESC LIMIT 50'
+        'SELECT slug, title, published_at FROM articles WHERE is_canonical = 1 ORDER BY published_at DESC LIMIT 50'
       ).all();
       articles = results || [];
     } catch {
-      articles = [];
+      try {
+        const { results } = await env.DB.prepare(
+          'SELECT slug, title, published_at FROM articles ORDER BY published_at DESC LIMIT 30'
+        ).all();
+        articles = results || [];
+      } catch {
+        articles = [];
+      }
     }
   }
 
