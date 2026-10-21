@@ -24,7 +24,7 @@ export default function HomePage() {
   ) as typeof MOCK_CELEBRITIES;
 
   const heroArticle = homeArticles.find((a) => a.isHero) || homeArticles[0];
-  const heroImageUrl = heroArticle ? getOptimizedImageUrl(heroArticle.heroImage, 640, 75) : '';
+  const heroImageUrl = heroArticle ? getOptimizedImageUrl(heroArticle.heroImage, 480, 70) : '';
 
   const jsonLd = {
     '@context': 'https://schema.org',

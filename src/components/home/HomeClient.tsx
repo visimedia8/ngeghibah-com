@@ -34,34 +34,49 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   const [articles, setArticles] = useState<Article[]>(initialArticles);
   const [activeCategory, setActiveCategory] = useState<ArticleCategory>('semua');
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(9);
 
+  // Defer background fresh articles sync strictly to idle time to guarantee 0 TBT on page load
   useEffect(() => {
     let isMounted = true;
-    fetch('/api/articles?limit=50')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (!isMounted || !data?.articles?.length) return;
-        setArticles((prev) => {
-          const d1Articles: Article[] = data.articles;
-          const map = new Map<string, Article>();
-          d1Articles.forEach((a) => map.set(a.slug, a));
-          prev.forEach((a) => {
-            if (!map.has(a.slug)) {
-              map.set(a.slug, a);
-            }
+    const syncArticles = () => {
+      fetch('/api/articles?limit=20')
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (!isMounted || !data?.articles?.length) return;
+          setArticles((prev) => {
+            const d1Articles: Article[] = data.articles;
+            const map = new Map<string, Article>();
+            d1Articles.forEach((a) => map.set(a.slug, a));
+            prev.forEach((a) => {
+              if (!map.has(a.slug)) {
+                map.set(a.slug, a);
+              }
+            });
+            const merged = Array.from(map.values());
+            return merged.sort((a, b) => {
+              const timeA = new Date(a.publishedAt).getTime() || 0;
+              const timeB = new Date(b.publishedAt).getTime() || 0;
+              return timeB - timeA;
+            });
           });
-          const merged = Array.from(map.values());
-          return merged.sort((a, b) => {
-            const timeA = new Date(a.publishedAt).getTime() || 0;
-            const timeB = new Date(b.publishedAt).getTime() || 0;
-            return timeB - timeA;
-          });
-        });
-      })
-      .catch(() => {});
-    return () => {
-      isMounted = false;
+        })
+        .catch(() => {});
     };
+
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const id = (window as any).requestIdleCallback(syncArticles, { timeout: 3500 });
+      return () => {
+        isMounted = false;
+        if ('cancelIdleCallback' in window) (window as any).cancelIdleCallback(id);
+      };
+    } else {
+      const timer = setTimeout(syncArticles, 3000);
+      return () => {
+        isMounted = false;
+        clearTimeout(timer);
+      };
+    }
   }, []);
 
   const categories = [
@@ -107,6 +122,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   const sideArticles = initialArticles.filter((a) => a.id !== heroArticle.id).slice(0, 2);
 
   const handleTagClick = (tag: string) => {
+    setVisibleCount(9);
     if (activeTag === tag) {
       setActiveTag(null);
     } else {
@@ -177,8 +193,8 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                     src={heroArticle.heroImage}
                     alt={heroArticle.title}
                     category={heroArticle.category}
-                    optimizedWidth={640}
-                    optimizedQuality={75}
+                    optimizedWidth={480}
+                    optimizedQuality={70}
                     fill
                     priority
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -328,7 +344,10 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               {categories.map((cat) => (
                 <button
                   key={cat.id}
-                  onClick={() => setActiveCategory(cat.id as ArticleCategory)}
+                  onClick={() => {
+                    setActiveCategory(cat.id as ArticleCategory);
+                    setVisibleCount(9);
+                  }}
                   className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all active:scale-95 cursor-pointer ${
                     activeCategory === cat.id
                       ? 'bg-neon-pink text-obsidian font-bold shadow-neon-pink'
@@ -351,6 +370,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 onClick={() => {
                   setActiveCategory('semua');
                   setActiveTag(null);
+                  setVisibleCount(9);
                 }}
                 className="px-4 py-2 bg-neon-pink text-obsidian font-bold text-xs rounded-xl"
               >
@@ -358,56 +378,71 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredArticles.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/artikel/${article.slug}`}
-                  prefetch={false}
-                  className="group card-hover-fx flex flex-col justify-between overflow-hidden rounded-2xl border border-velvet-border bg-velvet shadow-card-glow"
-                >
-                  <div>
-                    {/* Thumbnail */}
-                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
-                      <SafeImage
-                        src={article.heroImage}
-                        alt={article.title}
-                        category={article.category}
-                        optimizedWidth={480}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-                        <span className="bg-obsidian/80 backdrop-blur-md text-white text-[10px] font-mono px-2 py-0.5 rounded">
-                          {article.categoryLabel}
-                        </span>
-                        <GhibahMeterBadge status={article.ghibahMeter.status} size="sm" />
+            <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredArticles.slice(0, visibleCount).map((article) => (
+                  <Link
+                    key={article.id}
+                    href={`/artikel/${article.slug}`}
+                    prefetch={false}
+                    className="group card-hover-fx flex flex-col justify-between overflow-hidden rounded-2xl border border-velvet-border bg-velvet shadow-card-glow"
+                  >
+                    <div>
+                      {/* Thumbnail */}
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
+                        <SafeImage
+                          src={article.heroImage}
+                          alt={article.title}
+                          category={article.category}
+                          optimizedWidth={480}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                          <span className="bg-obsidian/80 backdrop-blur-md text-white text-[10px] font-mono px-2 py-0.5 rounded">
+                            {article.categoryLabel}
+                          </span>
+                          <GhibahMeterBadge status={article.ghibahMeter.status} size="sm" />
+                        </div>
+                      </div>
+
+                      {/* Card Content */}
+                      <div className="p-5 space-y-2.5">
+                        <h3 className="text-base font-bold text-white font-display group-hover:text-neon-pink transition-colors line-clamp-2">
+                          {article.title}
+                        </h3>
+                        <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                          {article.excerpt}
+                        </p>
                       </div>
                     </div>
 
-                    {/* Card Content */}
-                    <div className="p-5 space-y-2.5">
-                      <h3 className="text-base font-bold text-white font-display group-hover:text-neon-pink transition-colors line-clamp-2">
-                        {article.title}
-                      </h3>
-                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
-                        {article.excerpt}
-                      </p>
+                    <div className="p-5 pt-0 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
+                      <span className="flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-neon-cyan" />
+                        {article.readingTimeMinutes} min baca
+                      </span>
+                      <span className="text-neon-cyan group-hover:underline flex items-center gap-1">
+                        <span>Kupas Kronologi</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </span>
                     </div>
-                  </div>
+                  </Link>
+                ))}
+              </div>
 
-                  <div className="p-5 pt-0 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
-                    <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-neon-cyan" />
-                      {article.readingTimeMinutes} min baca
-                    </span>
-                    <span className="text-neon-cyan group-hover:underline flex items-center gap-1">
-                      <span>Kupas Kronologi</span>
-                      <ArrowRight className="w-3 h-3" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
+              {/* Load More Button if remaining */}
+              {filteredArticles.length > visibleCount && (
+                <div className="flex justify-center pt-2">
+                  <button
+                    onClick={() => setVisibleCount((prev) => prev + 9)}
+                    className="px-6 py-3 rounded-full border border-neon-cyan/40 bg-velvet text-white hover:bg-neon-cyan/10 hover:border-neon-cyan transition-all text-xs font-mono font-semibold flex items-center gap-2 cursor-pointer shadow-card-glow active:scale-95"
+                  >
+                    <span>Muat Lebih Banyak Isu Pop-Kultur</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-neon-cyan" />
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </section>
