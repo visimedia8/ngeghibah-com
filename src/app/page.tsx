@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { HomeClient } from '@/components/home/HomeClient';
 import { MOCK_ARTICLES, MOCK_CELEBRITIES } from '@/data/mockData';
-import { getOptimizedImageUrl } from '@/lib/imageUtils';
 
 export const metadata: Metadata = {
   title: 'NgeGhibah.com — Radar Pop-Kultur: Data, Kronologi & Verifikasi Fakta',
@@ -23,9 +22,6 @@ export default function HomePage() {
     ({ controversies, businessVentures, awards, faq, dossierDetail, ...rest }) => rest
   ) as typeof MOCK_CELEBRITIES;
 
-  const heroArticle = homeArticles.find((a) => a.isHero) || homeArticles[0];
-  const heroImageUrl = heroArticle ? getOptimizedImageUrl(heroArticle.heroImage, 480, 70) : '';
-
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsMediaOrganization',
@@ -44,16 +40,6 @@ export default function HomePage() {
 
   return (
     <>
-      {heroImageUrl && (
-        <link
-          rel="preload"
-          as="image"
-          type="image/avif"
-          href={heroImageUrl}
-          // @ts-ignore modern browser fetchPriority
-          fetchPriority="high"
-        />
-      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
