@@ -4,6 +4,7 @@ import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
+import { AdSenseLoader } from '@/components/ads/AdSenseLoader';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -105,13 +106,12 @@ export default function RootLayout({
     <html lang="id" className={`dark ${plusJakartaSans.variable} ${inter.variable}`}>
       <head>
         <meta name="google-adsense-account" content="ca-pub-4090835276472949" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4090835276472949"
-          crossOrigin="anonymous"
-        />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://thumb.wikimedia.org" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://thumb.wikimedia.org" />
+        <link rel="preconnect" href="https://asset.kompas.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://asset.kompas.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
@@ -122,6 +122,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <GoogleAnalytics />
+        <AdSenseLoader />
       </body>
     </html>
   );

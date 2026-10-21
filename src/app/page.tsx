@@ -23,6 +23,9 @@ export default function HomePage() {
     ({ controversies, businessVentures, awards, faq, dossierDetail, ...rest }) => rest
   ) as typeof MOCK_CELEBRITIES;
 
+  const heroArticle = homeArticles.find((a) => a.isHero) || homeArticles[0];
+  const heroImageUrl = heroArticle ? getOptimizedImageUrl(heroArticle.heroImage, 640, 75) : '';
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsMediaOrganization',
@@ -41,6 +44,15 @@ export default function HomePage() {
 
   return (
     <>
+      {heroImageUrl && (
+        <link
+          rel="preload"
+          as="image"
+          href={heroImageUrl}
+          // @ts-ignore modern browser fetchPriority
+          fetchPriority="high"
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -62,6 +62,21 @@ export function getOptimizedImageUrl(
       return urlObj.toString();
     }
 
+    // Check if Kompas
+    if (url.includes('asset.kompas.com/crops/')) {
+      const h = Math.round(width * 0.67);
+      return url.replace(/\/\d+x\d+\//, `/${width}x${h}/`);
+    }
+
+    // Check if raw Wikimedia Commons
+    if (url.includes('upload.wikimedia.org/wikipedia/commons/')) {
+      const filename = url.split('/').pop() || '';
+      return url.replace(
+        'upload.wikimedia.org/wikipedia/commons/',
+        'thumb.wikimedia.org/wikipedia/commons/thumb/'
+      ) + `/330px-${filename}`;
+    }
+
     return url;
   } catch {
     // If URL parsing fails, fallback to original or default

@@ -81,6 +81,7 @@ export const CelebrityDossierCard: React.FC<CelebrityDossierCardProps> = ({
       {/* CTA to Dossier Page */}
       <Link
         href={`/seleb/${celebrity.slug}`}
+        prefetch={false}
         className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl text-xs font-semibold text-white bg-velvet hover:bg-neon-pink border border-slate-700 hover:border-neon-pink transition-all duration-200 shadow-sm"
       >
         <span>Buka Rekam Jejak & Profil</span>

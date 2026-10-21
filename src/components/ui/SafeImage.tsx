@@ -13,6 +13,8 @@ export interface SafeImageProps extends React.ImgHTMLAttributes<HTMLImageElement
   optimizedWidth?: number;
   optimizedQuality?: number;
   fill?: boolean;
+  priority?: boolean;
+  fetchPriority?: 'high' | 'low' | 'auto';
 }
 
 export const SafeImage: React.FC<SafeImageProps> = ({
@@ -24,12 +26,17 @@ export const SafeImage: React.FC<SafeImageProps> = ({
   optimizedWidth,
   optimizedQuality = 75,
   fill = false,
+  priority = false,
+  fetchPriority,
   className = '',
-  loading = 'lazy',
+  loading,
   ...rest
 }) => {
   const [errorStage, setErrorStage] = useState<number>(0);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
+  const finalLoading = loading || (priority ? 'eager' : 'lazy');
+  const finalFetchPriority = fetchPriority || (priority ? 'high' : undefined);
 
   // Compute active source URL
   const initialOptimized = optimizedWidth
@@ -102,11 +109,12 @@ export const SafeImage: React.FC<SafeImageProps> = ({
     <img
       src={currentSrc}
       alt={alt}
-      loading={loading}
+      loading={finalLoading}
+      fetchPriority={finalFetchPriority}
       onError={handleError}
       onLoad={() => setIsLoaded(true)}
       className={`${fillClasses} ${className} ${
-        isLoaded ? 'opacity-100' : 'opacity-90'
+        isLoaded || priority ? 'opacity-100' : 'opacity-90'
       } transition-opacity duration-300`}
       {...rest}
     />

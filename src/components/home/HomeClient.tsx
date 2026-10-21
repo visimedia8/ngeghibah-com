@@ -102,14 +102,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   });
 
   // Hero article & secondary articles for Bento Grid
-  // Prioritize fresh article with isHero among top 3 newest, otherwise default to the newest article overall
-  const heroArticle =
-    sortedArticles.slice(0, 3).find((a) => a.isHero) ||
-    sortedArticles[0] ||
-    initialArticles[0];
-  const sideArticles = heroArticle
-    ? sortedArticles.filter((a) => a.id !== heroArticle.id).slice(0, 2)
-    : [];
+  // Stable editorial spotlight: locked to initial curated articles to prevent layout shifts (CLS = 0)
+  const heroArticle = initialArticles.find((a) => a.isHero) || initialArticles[0];
+  const sideArticles = initialArticles.filter((a) => a.id !== heroArticle.id).slice(0, 2);
 
   const handleTagClick = (tag: string) => {
     if (activeTag === tag) {
@@ -173,6 +168,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
             <div className="lg:col-span-8">
               <Link
                 href={`/artikel/${heroArticle.slug}`}
+                prefetch={false}
                 className="group relative block overflow-hidden rounded-3xl border border-velvet-border bg-velvet shadow-card-glow hover:border-neon-pink/60 transition-all duration-300"
               >
                 {/* Hero Image */}
@@ -181,8 +177,10 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                     src={heroArticle.heroImage}
                     alt={heroArticle.title}
                     category={heroArticle.category}
-                    optimizedWidth={800}
+                    optimizedWidth={640}
+                    optimizedQuality={75}
                     fill
+                    priority
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
@@ -249,6 +247,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 <Link
                   key={article.id}
                   href={`/artikel/${article.slug}`}
+                  prefetch={false}
                   className="group relative flex-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-velvet-border bg-velvet p-5 sm:p-6 shadow-card-glow hover:border-neon-cyan/60 transition-all duration-300"
                 >
                   <div className="space-y-3">
@@ -364,6 +363,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
                 <Link
                   key={article.id}
                   href={`/artikel/${article.slug}`}
+                  prefetch={false}
                   className="group card-hover-fx flex flex-col justify-between overflow-hidden rounded-2xl border border-velvet-border bg-velvet shadow-card-glow"
                 >
                   <div>

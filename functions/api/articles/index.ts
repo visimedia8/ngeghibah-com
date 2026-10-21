@@ -19,7 +19,15 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
     const limit = Math.min(50, Math.max(1, Number(url.searchParams.get('limit') || 20)));
     const offset = Math.max(0, Number(url.searchParams.get('offset') || 0));
 
-    let query = 'SELECT * FROM articles';
+    let query = `
+      SELECT 
+        id, slug, title, excerpt, category, category_label,
+        ghibah_meter_status, ghibah_meter_fact, ghibah_meter_rumor, ghibah_meter_label, ghibah_meter_desc,
+        hero_image, image_caption, published_at, reading_time_minutes,
+        author_name, author_slug, author_role, author_avatar,
+        entities_json, digital_receipts_count, is_featured, is_hero, trending_score
+      FROM articles
+    `;
     const params: any[] = [];
 
     if (category && category !== 'semua') {
@@ -37,7 +45,7 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
       slug: row.slug,
       title: row.title,
       excerpt: row.excerpt,
-      contentHtml: row.content_html,
+      contentHtml: '',
       category: row.category,
       categoryLabel: row.category_label,
       ghibahMeter: {
@@ -64,13 +72,7 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
           return [];
         }
       })(),
-      timeline: (() => {
-        try {
-          return JSON.parse(row.timeline_json || '[]');
-        } catch {
-          return [];
-        }
-      })(),
+      timeline: [],
       digitalReceiptsCount: row.digital_receipts_count,
       isFeatured: Boolean(row.is_featured),
       isHero: Boolean(row.is_hero),
