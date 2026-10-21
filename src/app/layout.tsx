@@ -108,10 +108,6 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-4090835276472949" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        <link rel="preconnect" href="https://thumb.wikimedia.org" crossOrigin="" />
-        <link rel="dns-prefetch" href="https://thumb.wikimedia.org" />
-        <link rel="preconnect" href="https://asset.kompas.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="https://asset.kompas.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
