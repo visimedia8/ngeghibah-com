@@ -42,6 +42,11 @@ export function getOptimizedImageUrl(
     return DEFAULT_FALLBACK_IMAGES['default-article'];
   }
 
+  // Local assets are already pre-optimized
+  if (url.startsWith('/')) {
+    return url;
+  }
+
   try {
     // Check if Unsplash
     if (url.includes('images.unsplash.com')) {
