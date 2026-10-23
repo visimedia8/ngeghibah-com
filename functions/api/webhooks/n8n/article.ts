@@ -105,6 +105,18 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
       }
     }
 
+    // GUARD 2B: Minimum Word Count Check (AdSense Compliance Standard)
+    const plainWordCount = contentHtml.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
+    if (plainWordCount < 800) {
+      return new Response(
+        JSON.stringify({
+          status: 'REJECTED',
+          error: `THIN_CONTENT_REJECTED: Artikel hanya memiliki ${plainWordCount} kata. Standar editorial mewajibkan minimal 800–1.000 kata untuk kepatuhan AdSense.`,
+        }),
+        { status: 422, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
     // GUARD 3: Automatic Pre-Publish Similarity Check against Canonical Articles (SOP Rule 1 & 4)
     const newEntities: string[] = Array.isArray(payload.entities) ? payload.entities : [];
     if (env.DB) {
