@@ -117,9 +117,18 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   });
 
   // Hero article & secondary articles for Bento Grid
-  // Stable editorial spotlight: locked to initial curated articles to prevent layout shifts (CLS = 0)
-  const heroArticle = initialArticles.find((a) => a.isHero) || initialArticles[0];
-  const sideArticles = initialArticles.filter((a) => a.id !== heroArticle.id).slice(0, 2);
+  // Dynamic editorial spotlight: automatically highlights newest articles while preserving fallback
+  const heroArticle = sortedArticles.find((a) => a.isHero) || sortedArticles[0] || initialArticles[0];
+  const sideArticles = sortedArticles.filter((a) => a.id !== heroArticle?.id).slice(0, 2);
+
+  // Avoid repeating Bento hero & side articles in the general feed when browsing all categories
+  const gridArticles = React.useMemo(() => {
+    if (activeCategory === 'semua' && !activeTag && heroArticle) {
+      const heroAndSideIds = new Set([heroArticle.id, ...sideArticles.map((s) => s.id)]);
+      return filteredArticles.filter((a) => !heroAndSideIds.has(a.id));
+    }
+    return filteredArticles;
+  }, [filteredArticles, activeCategory, activeTag, heroArticle, sideArticles]);
 
   const handleTagClick = (tag: string) => {
     setVisibleCount(9);
@@ -361,7 +370,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
           </div>
 
           {/* Filtered Articles Grid */}
-          {filteredArticles.length === 0 ? (
+          {gridArticles.length === 0 ? (
             <div className="rounded-2xl border border-slate-800 bg-velvet p-12 text-center space-y-3">
               <p className="text-base text-slate-300 font-medium">
                 Belum ada artikel yang cocok dengan filter ini.
@@ -380,7 +389,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
           ) : (
             <div className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredArticles.slice(0, visibleCount).map((article) => (
+                {gridArticles.slice(0, visibleCount).map((article) => (
                   <Link
                     key={article.id}
                     href={`/artikel/${article.slug}`}
@@ -432,7 +441,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
               </div>
 
               {/* Load More Button if remaining */}
-              {filteredArticles.length > visibleCount && (
+              {gridArticles.length > visibleCount && (
                 <div className="flex justify-center pt-2">
                   <button
                     onClick={() => setVisibleCount((prev) => prev + 9)}
