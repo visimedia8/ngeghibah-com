@@ -55,6 +55,79 @@ export const onRequestGet = async (context: {
     const meterDesc = escapeHtml(row.ghibah_meter_desc || 'Diverifikasi melalui berkas arsip dan dokumen resmi.');
     const contentHtml = row.content_html || '';
 
+    function beautifyAndInjectAds(rawHtml: string): string {
+      if (!rawHtml) return '';
+
+      // 1. Break down massive paragraphs (>350 chars) into crisp 2-sentence micro-paragraphs
+      let formatted = rawHtml.replace(/<p>([\s\S]*?)<\/p>/gi, (match, pText) => {
+        if (pText.length > 350) {
+          const sentences = pText.split(/(?<=[.!?])\s+(?=[A-Z0-9])/);
+          if (sentences.length >= 2) {
+            const mid = Math.ceil(sentences.length / 2);
+            return `<p>${sentences.slice(0, mid).join(' ')}</p><p>${sentences.slice(mid).join(' ')}</p>`;
+          }
+        }
+        return match;
+      });
+
+      // 2. Wrap un-wrapped tables in table-responsive container
+      if (formatted.includes('<table') && !formatted.includes('overflow-x-auto')) {
+        formatted = formatted.replace(/(<table[\s\S]*?<\/table>)/gi, '<div class="overflow-x-auto my-8">$1</div>');
+      }
+
+      // 3. AdSense In-Article Slots
+      const adSlot1 = `
+<div class="my-8 rounded-2xl border border-dashed border-slate-700/60 bg-velvet/40 p-4 text-center">
+  <div class="flex items-center justify-between text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-2 px-1">
+    <span>IKLAN REKOMENDASI</span>
+    <span>SPONSORED</span>
+  </div>
+  <div class="min-h-[100px] sm:min-h-[120px] flex items-center justify-center">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4090835276472949"
+         data-ad-slot="artikel-in-content-1"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>`;
+
+      const adSlot2 = `
+<div class="my-8 rounded-2xl border border-dashed border-slate-700/60 bg-velvet/40 p-4 text-center">
+  <div class="flex items-center justify-between text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-2 px-1">
+    <span>IKLAN PILIHAN REDAKSI</span>
+    <span>SPONSORED</span>
+  </div>
+  <div class="min-h-[100px] sm:min-h-[120px] flex items-center justify-center">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4090835276472949"
+         data-ad-slot="artikel-in-content-2"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>`;
+
+      const pMatches = [...formatted.matchAll(/<\/p>/gi)];
+      if (pMatches.length >= 3) {
+        const idx1 = pMatches[1].index! + 4;
+        formatted = formatted.slice(0, idx1) + adSlot1 + formatted.slice(idx1);
+
+        const updatedMatches = [...formatted.matchAll(/<\/p>/gi)];
+        const target2 = Math.min(6, updatedMatches.length - 1);
+        if (target2 > 2) {
+          const idx2 = updatedMatches[target2].index! + 4;
+          formatted = formatted.slice(0, idx2) + adSlot2 + formatted.slice(idx2);
+        }
+      }
+
+      return formatted;
+    }
+
+    const styledContentHtml = beautifyAndInjectAds(contentHtml);
+
     const formattedDate = formatDateId(publishedAt);
     const canonicalUrl = `https://ngeghibah.com/artikel/${slug}`;
 
@@ -180,7 +253,7 @@ export const onRequestGet = async (context: {
   <link rel="apple-touch-icon" href="/apple-icon.svg"/>
   <link rel="stylesheet" href="/_next/static/css/7641e5aba04e20ab.css"/>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -195,6 +268,117 @@ export const onRequestGet = async (context: {
       }
     }
   </script>
+  <style>
+    /* Rich Editorial Typography & Anti-Wall-of-Text Formatting */
+    .prose {
+      color: #CBD5E1;
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+    .prose h2 {
+      color: #FFFFFF !important;
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.025em !important;
+      margin-top: 2.75rem !important;
+      margin-bottom: 1.25rem !important;
+      padding-bottom: 0.5rem !important;
+      border-bottom: 1px solid rgba(255, 46, 147, 0.3) !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.6rem !important;
+    }
+    .prose h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.35rem;
+      background: #FF2E93;
+      border-radius: 9999px;
+      flex-shrink: 0;
+    }
+    .prose h3 {
+      color: #00F0FF !important;
+      font-size: 1.25rem !important;
+      font-weight: 700 !important;
+      margin-top: 2rem !important;
+      margin-bottom: 0.85rem !important;
+    }
+    .prose p {
+      color: #CBD5E1 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.85 !important;
+      margin-bottom: 1.35rem !important;
+    }
+    .prose blockquote {
+      border-left: 4px solid #FF2E93 !important;
+      background: rgba(255, 46, 147, 0.06) !important;
+      padding: 1rem 1.25rem !important;
+      border-radius: 0 0.75rem 0.75rem 0 !important;
+      font-style: italic !important;
+      color: #E2E8F0 !important;
+      margin: 1.75rem 0 !important;
+    }
+    .prose table {
+      width: 100% !important;
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+      margin: 2rem 0 !important;
+      border-radius: 0.75rem !important;
+      overflow: hidden !important;
+      border: 1px solid #23304E !important;
+      background: #111724 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3) !important;
+    }
+    .prose th {
+      background: #162036 !important;
+      color: #00F0FF !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      font-size: 0.75rem !important;
+      letter-spacing: 0.05em !important;
+      padding: 0.85rem 1rem !important;
+      border-bottom: 1px solid #23304E !important;
+      text-align: left !important;
+    }
+    .prose td {
+      padding: 0.85rem 1rem !important;
+      font-size: 0.875rem !important;
+      color: #E2E8F0 !important;
+      border-bottom: 1px solid rgba(35, 48, 78, 0.5) !important;
+      line-height: 1.5 !important;
+    }
+    .prose tr:last-child td {
+      border-bottom: none !important;
+    }
+    .prose tr:hover td {
+      background: rgba(255, 46, 147, 0.04) !important;
+    }
+    .summary-box {
+      background: linear-gradient(135deg, rgba(19, 27, 46, 0.95), rgba(22, 32, 54, 0.95)) !important;
+      border: 1px solid rgba(255, 184, 0, 0.4) !important;
+      border-left: 5px solid #FFB800 !important;
+      border-radius: 1rem !important;
+      padding: 1.25rem 1.5rem !important;
+      margin: 1.75rem 0 2rem 0 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3) !important;
+    }
+    .summary-box p:first-child {
+      color: #FFB800 !important;
+      font-weight: 800 !important;
+      font-size: 0.85rem !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      margin-bottom: 0.35rem !important;
+    }
+    .summary-box p:last-child {
+      color: #F1F5F9 !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+      margin: 0 !important;
+    }
+  </style>
 
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
   <script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>
@@ -329,9 +513,9 @@ export const onRequestGet = async (context: {
               <p class="text-[11px] font-mono text-slate-400 italic text-center">${imageCaption}</p>
             </div>
 
-            <!-- Content HTML -->
+            <!-- Content HTML with In-Article AdSense & Formatting -->
             <div class="prose prose-invert max-w-none prose-headings:font-display prose-headings:text-white prose-p:leading-relaxed prose-a:text-neon-cyan text-slate-200">
-              ${contentHtml}
+              ${styledContentHtml}
             </div>
 
             <!-- Timeline -->
@@ -352,6 +536,23 @@ export const onRequestGet = async (context: {
                 NgeGhibah memisahkan antara fakta digital terverifikasi dan rumor opini. Setiap klaim diuji melalui timeline dan jejak forensik media siber.
               </p>
               <a href="/pedoman-pemeriksaan-fakta" class="text-xs font-mono text-neon-cyan hover:underline block">Pelajari Metodologi Fact-Check &rarr;</a>
+            </div>
+
+            <!-- Sidebar Sticky AdSense Slot -->
+            <div class="my-6 rounded-2xl border border-dashed border-slate-700/60 bg-velvet/40 p-4 text-center sticky top-24">
+              <div class="flex items-center justify-between text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-2 px-1">
+                <span>IKLAN SPONSOR</span>
+                <span>ADS</span>
+              </div>
+              <div class="min-h-[250px] flex items-center justify-center">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4090835276472949"
+                     data-ad-slot="artikel-sidebar-sticky"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              </div>
             </div>
           </div>
         </div>
