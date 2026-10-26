@@ -36,11 +36,11 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState<number>(9);
 
-  // Defer background fresh articles sync strictly to idle time to guarantee 0 TBT on page load
+  // Fetch fresh articles from D1 on mount
   useEffect(() => {
     let isMounted = true;
     const syncArticles = () => {
-      fetch('/api/articles?limit=20')
+      fetch('/api/articles?limit=30')
         .then((res) => (res.ok ? res.json() : null))
         .then((data) => {
           if (!isMounted || !data?.articles?.length) return;
@@ -64,19 +64,10 @@ export const HomeClient: React.FC<HomeClientProps> = ({
         .catch(() => {});
     };
 
-    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      const id = (window as any).requestIdleCallback(syncArticles, { timeout: 3500 });
-      return () => {
-        isMounted = false;
-        if ('cancelIdleCallback' in window) (window as any).cancelIdleCallback(id);
-      };
-    } else {
-      const timer = setTimeout(syncArticles, 3000);
-      return () => {
-        isMounted = false;
-        clearTimeout(timer);
-      };
-    }
+    syncArticles();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const categories = [
@@ -117,9 +108,9 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   });
 
   // Hero article & secondary articles for Bento Grid
-  // Dynamic editorial spotlight: automatically highlights newest articles while preserving fallback
-  const heroArticle = sortedArticles.find((a) => a.isHero) || sortedArticles[0] || initialArticles[0];
-  const sideArticles = sortedArticles.filter((a) => a.id !== heroArticle?.id).slice(0, 2);
+  // Dynamic editorial spotlight: newest article chronologically is ALWAYS the Hero spotlight
+  const heroArticle = sortedArticles[0] || initialArticles[0];
+  const sideArticles = sortedArticles.slice(1, 3);
 
   // Avoid repeating Bento hero & side articles in the general feed when browsing all categories
   const gridArticles = React.useMemo(() => {
