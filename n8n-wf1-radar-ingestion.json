@@ -14,11 +14,11 @@
           }
         },
         "id": "1",
-        "name": "Schedule Trigger (3x Sehari - Setiap 8 Jam)",
+        "name": "Schedule Trigger (Setiap 8 Jam)",
         "type": "n8n-nodes-base.scheduleTrigger",
         "typeVersion": 1.2,
         "position": [
-          200,
+          100,
           300
         ]
       },
@@ -39,8 +39,8 @@
         "typeVersion": 4.2,
         "onError": "continueRegularOutput",
         "position": [
-          440,
-          180
+          300,
+          300
         ]
       },
       {
@@ -60,8 +60,8 @@
         "typeVersion": 4.2,
         "onError": "continueRegularOutput",
         "position": [
-          440,
-          340
+          500,
+          300
         ]
       },
       {
@@ -81,20 +81,20 @@
         "typeVersion": 4.2,
         "onError": "continueRegularOutput",
         "position": [
-          440,
-          500
+          700,
+          300
         ]
       },
       {
         "parameters": {
-          "jsCode": "const items = [];\n\nfunction parseRss(xmlText, category, source) {\n  if (!xmlText || typeof xmlText !== 'string') return;\n  const itemMatches = xmlText.matchAll(/<item>([\\s\\S]*?)<\\/item>/gi);\n  for (const match of itemMatches) {\n    const itemXml = match[1];\n    const titleMatch = itemXml.match(/<title>([\\s\\S]*?)<\\/title>/i);\n    const linkMatch = itemXml.match(/<link>([\\s\\S]*?)<\\/link>/i);\n    const descMatch = itemXml.match(/<description>([\\s\\S]*?)<\\/description>/i);\n    \n    if (titleMatch && linkMatch) {\n      const rawTitle = titleMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '\"').replace(/&#39;/g, \"'\").trim();\n      const rawLink = linkMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim();\n      let rawDesc = descMatch ? descMatch[1].replace(/<[^>]*>?/gm, '').replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim() : rawTitle;\n      \n      items.push({\n        source,\n        source_id: rawLink.slice(-32),\n        title: rawTitle,\n        content: rawDesc,\n        url: rawLink,\n        category,\n        score: 100\n      });\n    }\n  }\n}\n\ntry {\n  const indo = $('Fetch Google News Indo Celeb').first().json.data;\n  parseRss(indo, 'seleb-lokal', 'google-news-indo');\n} catch (e) {}\n\ntry {\n  const soompi = $('Fetch Soompi K-Pop Feeds').first().json.data;\n  parseRss(soompi, 'kpop-asia', 'soompi');\n} catch (e) {}\n\ntry {\n  const hollywood = $('Fetch Google News Hollywood').first().json.data;\n  parseRss(hollywood, 'hollywood-barat', 'google-news-hollywood');\n} catch (e) {}\n\n// Safety Pre-Filter\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// Add Entity-Event Signature\nsafeItems.forEach(item => {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');\n  item.event_signature = cleanTitle.slice(0, 32);\n});\n\n// Ambil tepat 1 item per run (3x sehari = tepat 3 artikel/hari) untuk menghemat budget\nreturn safeItems.slice(0, 1).map(item => ({ json: item }));"
+          "jsCode": "const items = [];\n\nfunction parseRss(xmlText, category, source) {\n  if (!xmlText || typeof xmlText !== 'string') return;\n  const itemMatches = xmlText.matchAll(/<item>([\\s\\S]*?)<\\/item>/gi);\n  for (const match of itemMatches) {\n    const itemXml = match[1];\n    const titleMatch = itemXml.match(/<title>([\\s\\S]*?)<\\/title>/i);\n    const linkMatch = itemXml.match(/<link>([\\s\\S]*?)<\\/link>/i);\n    const descMatch = itemXml.match(/<description>([\\s\\S]*?)<\\/description>/i);\n    \n    if (titleMatch && linkMatch) {\n      const rawTitle = titleMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '\"').replace(/&#39;/g, \"'\").trim();\n      const rawLink = linkMatch[1].replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim();\n      let rawDesc = descMatch ? descMatch[1].replace(/<[^>]*>?/gm, '').replace(/<!\\[CDATA\\[(.*?)\\]\\]>/gi, '$1').trim() : rawTitle;\n      \n      items.push({\n        source,\n        source_id: rawLink.slice(-32),\n        title: rawTitle,\n        content: rawDesc,\n        url: rawLink,\n        category,\n        score: 100\n      });\n    }\n  }\n}\n\ntry {\n  const indo = $('Fetch Google News Indo Celeb').first().json.data;\n  parseRss(indo, 'seleb-lokal', 'google-news-indo');\n} catch (e) {}\n\ntry {\n  const soompi = $('Fetch Soompi K-Pop Feeds').first().json.data;\n  parseRss(soompi, 'kpop-asia', 'soompi');\n} catch (e) {}\n\ntry {\n  const hollywood = $('Fetch Google News Hollywood').first().json.data;\n  parseRss(hollywood, 'hollywood-barat', 'google-news-hollywood');\n} catch (e) {}\n\n// 1. Safety Pre-Filter\nconst forbidden = ['bunuh diri', 'porn', 'bokep', 'telanjang', 'gore', 'mutilasi', 'pedofil', 'meninggal', 'tewas', 'jenazah'];\nconst safeItems = items.filter(item => {\n  const lower = (item.title + ' ' + item.content).toLowerCase();\n  return !forbidden.some(word => lower.includes(word));\n});\n\n// 2. Persistent Workflow StaticData (prevents re-dispatching translated or rejected RSS items)\nconst staticData = $getWorkflowStaticData('global');\nif (!Array.isArray(staticData.dispatchedSignatures)) {\n  staticData.dispatchedSignatures = [];\n}\nconst dispatchedSet = new Set(staticData.dispatchedSignatures);\n\n// 3. Fetch existing published articles from ngeghibah.com\nlet existingArticles = [];\ntry {\n  const extData = $('Fetch Published Articles from NgeGhibah').first().json;\n  existingArticles = extData.articles || [];\n} catch (e) {}\n\nconst existingTitles = existingArticles.map(a => (a.title || '').toLowerCase());\n\nfunction isDuplicate(candTitle) {\n  const candWords = candTitle.toLowerCase().replace(/[^a-z0-9\\s]/g, '').split(/\\s+/).filter(w => w.length > 3);\n  if (candWords.length === 0) return true;\n  for (const ext of existingTitles) {\n    const extWords = new Set(ext.replace(/[^a-z0-9\\s]/g, '').split(/\\s+/).filter(w => w.length > 3));\n    let matchCount = 0;\n    for (const w of candWords) {\n      if (extWords.has(w)) matchCount++;\n    }\n    const ratio = matchCount / Math.max(candWords.length, 1);\n    if (ratio >= 0.35) return true;\n  }\n  return false;\n}\n\n// 4. Intra-batch & Persistent Deduplication\nconst seenSignatures = new Set();\nconst freshCandidates = [];\n\nfor (const item of safeItems) {\n  const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 36);\n  if (seenSignatures.has(cleanTitle)) continue;\n  seenSignatures.add(cleanTitle);\n\n  if (dispatchedSet.has(cleanTitle) || dispatchedSet.has(item.source_id)) {\n    continue;\n  }\n\n  if (isDuplicate(item.title)) {\n    continue;\n  }\n\n  item.event_signature = cleanTitle;\n  freshCandidates.push(item);\n}\n\nif (freshCandidates.length === 0) {\n  return [];\n}\n\nconst chosen = freshCandidates[0];\nstaticData.dispatchedSignatures.push(chosen.event_signature, chosen.source_id);\nif (staticData.dispatchedSignatures.length > 400) {\n  staticData.dispatchedSignatures = staticData.dispatchedSignatures.slice(-400);\n}\n\nreturn [{ json: chosen }];"
         },
         "id": "5",
         "name": "Normalize, Deduplicate & Safety Filter",
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          700,
+          1100,
           300
         ]
       },
@@ -125,27 +125,37 @@
         "typeVersion": 4.2,
         "onError": "continueRegularOutput",
         "position": [
-          960,
+          1300,
+          300
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://ngeghibah.com/api/articles?limit=50",
+          "options": {
+            "response": {
+              "response": {
+                "responseFormat": "json"
+              }
+            }
+          }
+        },
+        "id": "node-fetch-existing-articles",
+        "name": "Fetch Published Articles from NgeGhibah",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          900,
           300
         ]
       }
     ],
     "connections": {
-      "Schedule Trigger (3x Sehari - Setiap 8 Jam)": {
+      "Schedule Trigger (Setiap 8 Jam)": {
         "main": [
           [
             {
               "node": "Fetch Google News Indo Celeb",
-              "type": "main",
-              "index": 0
-            },
-            {
-              "node": "Fetch Soompi K-Pop Feeds",
-              "type": "main",
-              "index": 0
-            },
-            {
-              "node": "Fetch Google News Hollywood",
               "type": "main",
               "index": 0
             }
@@ -156,7 +166,7 @@
         "main": [
           [
             {
-              "node": "Normalize, Deduplicate & Safety Filter",
+              "node": "Fetch Soompi K-Pop Feeds",
               "type": "main",
               "index": 0
             }
@@ -167,7 +177,7 @@
         "main": [
           [
             {
-              "node": "Normalize, Deduplicate & Safety Filter",
+              "node": "Fetch Google News Hollywood",
               "type": "main",
               "index": 0
             }
@@ -175,6 +185,17 @@
         ]
       },
       "Fetch Google News Hollywood": {
+        "main": [
+          [
+            {
+              "node": "Fetch Published Articles from NgeGhibah",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Fetch Published Articles from NgeGhibah": {
         "main": [
           [
             {
