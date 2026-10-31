@@ -89,7 +89,6 @@ export const onRequestGet = async (context: {
          data-ad-slot="artikel-in-content-1"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 </div>`;
 
@@ -106,7 +105,6 @@ export const onRequestGet = async (context: {
          data-ad-slot="artikel-in-content-2"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 </div>`;
 
@@ -192,13 +190,16 @@ export const onRequestGet = async (context: {
           </h3>
           <div class="relative border-l-2 border-slate-700/80 ml-3 sm:ml-4 space-y-6">
             ${timeline
-              .map(
-                (node: any) => `
+              .map((node: any, idx: number) => {
+                const timeLabel = escapeHtml(node.time_label || node.timeLabel || `Tahap ${idx + 1}`);
+                const itemTitle = escapeHtml(node.title || (node.event ? `Rekam Jejak #${idx + 1}` : 'Verifikasi Kronologis'));
+                const itemDesc = escapeHtml(node.description || node.event || '');
+                return `
               <div class="relative pl-6 sm:pl-8">
                 <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-neon-pink border-2 border-obsidian"></div>
-                <div class="text-[11px] font-mono text-neon-cyan mb-0.5">${escapeHtml(node.timeLabel || '')}</div>
-                <h4 class="text-sm sm:text-base font-bold text-white mb-1">${escapeHtml(node.title || '')}</h4>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${escapeHtml(node.description || '')}</p>
+                <div class="text-[11px] font-mono text-neon-cyan mb-0.5">${timeLabel}</div>
+                <h4 class="text-sm sm:text-base font-bold text-white mb-1">${itemTitle}</h4>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${itemDesc}</p>
                 ${
                   node.receiptQuote
                     ? `<blockquote class="mt-2 text-xs italic text-slate-400 border-l-2 border-neon-cyan pl-3 py-0.5">"${escapeHtml(node.receiptQuote)}"</blockquote>`
@@ -210,8 +211,8 @@ export const onRequestGet = async (context: {
                     : ''
                 }
               </div>
-            `
-              )
+            `;
+              })
               .join('')}
           </div>
         </div>
@@ -224,7 +225,6 @@ export const onRequestGet = async (context: {
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-adsense-account" content="ca-pub-4090835276472949"/>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4090835276472949" crossorigin="anonymous"></script>
   <title>${title} — NgeGhibah.com</title>
   <meta name="description" content="${excerpt}"/>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
@@ -251,24 +251,25 @@ export const onRequestGet = async (context: {
   <link rel="icon" href="/favicon.ico"/>
   <link rel="icon" href="/icon.svg" type="image/svg+xml"/>
   <link rel="apple-touch-icon" href="/apple-icon.svg"/>
-  <link rel="stylesheet" href="/_next/static/css/7641e5aba04e20ab.css"/>
-
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            obsidian: { DEFAULT: '#0B0F17', deep: '#06090F', light: '#111724' },
-            velvet: { DEFAULT: '#131B2E', card: '#162036', border: '#23304E' },
-            neon: { pink: '#FF2E93', cyan: '#00F0FF', amber: '#FFB800', green: '#10B981' }
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="preload" as="image" href="${heroImage}" fetchPriority="high"/>
+  <link rel="stylesheet" href="/_next/static/css/6c3f4a06438f2eb0.css"/>
   <style>
+    :root {
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+    .bg-obsidian { background-color: #0B0F17; }
+    .bg-obsidian-deep { background-color: #06090F; }
+    .bg-velvet { background-color: #131B2E; }
+    .bg-velvet-card { background-color: #162036; }
+    .border-velvet-border { border-color: #23304E; }
+    .text-neon-pink { color: #FF2E93; }
+    .text-neon-cyan { color: #00F0FF; }
+    .text-neon-amber { color: #FFB800; }
+    .text-neon-green { color: #10B981; }
+    .bg-neon-pink { background-color: #FF2E93; }
+    .bg-neon-cyan { background-color: #00F0FF; }
+    .shadow-card-glow { box-shadow: 0 8px 32px 0 rgba(0, 240, 255, 0.05), 0 0 0 1px rgba(35, 48, 78, 0.4); }
     /* Rich Editorial Typography & Anti-Wall-of-Text Formatting */
     .prose {
       color: #CBD5E1;
@@ -551,7 +552,6 @@ export const onRequestGet = async (context: {
                      data-ad-slot="artikel-sidebar-sticky"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
               </div>
             </div>
           </div>
@@ -572,6 +572,43 @@ export const onRequestGet = async (context: {
       </div>
     </div>
   </footer>
+
+  <!-- Deferred AdSense Interaction Loader (Core Web Vitals Guardrail) -->
+  <script>
+    (function() {
+      var adsLoaded = false;
+      function loadAds() {
+        if (adsLoaded) return;
+        adsLoaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4090835276472949';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+        s.onload = function() {
+          var insElements = document.querySelectorAll('.adsbygoogle');
+          insElements.forEach(function() {
+            try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+          });
+        };
+        document.head.appendChild(s);
+        window.removeEventListener('scroll', loadAds);
+        window.removeEventListener('click', loadAds);
+        window.removeEventListener('touchstart', loadAds);
+        window.removeEventListener('mousemove', loadAds);
+      }
+      setTimeout(function() {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadAds);
+        } else {
+          loadAds();
+        }
+      }, 3500);
+      window.addEventListener('scroll', loadAds, { passive: true, once: true });
+      window.addEventListener('click', loadAds, { passive: true, once: true });
+      window.addEventListener('touchstart', loadAds, { passive: true, once: true });
+      window.addEventListener('mousemove', loadAds, { passive: true, once: true });
+    })();
+  </script>
 </body>
 </html>`;
 

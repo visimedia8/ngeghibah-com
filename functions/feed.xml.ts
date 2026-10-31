@@ -22,7 +22,7 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
   if (env.DB) {
     try {
       const { results } = await env.DB.prepare(
-        'SELECT slug, title, excerpt, published_at, category_label, author_name FROM articles ORDER BY published_at DESC LIMIT 30'
+        'SELECT slug, title, excerpt, published_at, category_label, author_name FROM articles WHERE is_canonical = 1 ORDER BY published_at DESC LIMIT 30'
       ).all();
       articles = results || [];
     } catch {

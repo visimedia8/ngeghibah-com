@@ -127,7 +127,10 @@
         "position": [
           1300,
           300
-        ]
+        ],
+        "retryOnFail": true,
+        "maxTries": 3,
+        "waitBetweenTries": 5000
       },
       {
         "parameters": {
@@ -147,7 +150,11 @@
         "position": [
           900,
           300
-        ]
+        ],
+        "onError": "continueRegularOutput",
+        "retryOnFail": true,
+        "maxTries": 3,
+        "waitBetweenTries": 5000
       }
     ],
     "connections": {
@@ -219,6 +226,12 @@
       }
     },
     "id": "NgeGhibahWF01",
-    "active": true
+    "active": true,
+    "settings": {
+      "saveDataSuccessExecution": "all",
+      "saveDataErrorExecution": "all",
+      "saveExecutionProgress": true,
+      "saveManualExecutions": true
+    }
   }
 ]

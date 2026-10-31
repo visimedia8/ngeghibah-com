@@ -47,7 +47,10 @@
         "position": [
           440,
           300
-        ]
+        ],
+        "retryOnFail": true,
+        "maxTries": 3,
+        "waitBetweenTries": 5000
       },
       {
         "parameters": {
@@ -67,7 +70,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const raw = $input.first().json;\nconst data = raw.body || raw;\nconst title = data.title || 'Artikel Baru';\nconst slug = data.slug || '';\nconst meter = data.ghibah_meter || 'TERVERIFIKASI';\nconst category = data.category || 'seleb-lokal';\n\nconst telegramMessage = `🚀 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `📌 *Judul:* ${title}\\n` +\n  `🎯 *Kategori:* #${category}\\n` +\n  `⚖️ *Ghibah Meter:* ${meter}\\n\\n` +\n  `🔗 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `⚡ *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage, ...data } }];"
+          "jsCode": "const raw = $('Webhook').first().json;\nconst data = raw.body || raw;\nif (!data || !data.title || !data.slug) {\n  return [];\n}\nconst title = data.title || 'Artikel Baru';\nconst slug = data.slug || '';\nconst meter = data.ghibah_meter || 'TERVERIFIKASI';\nconst category = data.category || 'seleb-lokal';\n\nconst telegramMessage = `\ud83d\ude80 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `\ud83d\udccc *Judul:* ${title}\\n` +\n  `\ud83c\udfaf *Kategori:* #${category}\\n` +\n  `\u2696\ufe0f *Ghibah Meter:* ${meter}\\n\\n` +\n  `\ud83d\udd17 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `\u26a1 *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage, ...data } }];"
         },
         "id": "4",
         "name": "Format Live Telemetry Log",
@@ -103,7 +106,10 @@
         "position": [
           1160,
           300
-        ]
+        ],
+        "retryOnFail": true,
+        "maxTries": 3,
+        "waitBetweenTries": 5000
       }
     ],
     "connections": {
@@ -153,6 +159,12 @@
       }
     },
     "id": "NgeGhibahWF03",
-    "active": true
+    "active": true,
+    "settings": {
+      "saveDataSuccessExecution": "all",
+      "saveDataErrorExecution": "all",
+      "saveExecutionProgress": true,
+      "saveManualExecutions": true
+    }
   }
 ]
