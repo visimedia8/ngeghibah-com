@@ -112,12 +112,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <GoogleAnalytics gaId="G-PWGDWHCCZE" />
       </head>
       <body className="min-h-screen bg-obsidian text-slate-100 flex flex-col font-sans selection:bg-neon-pink selection:text-white">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <GoogleAnalytics />
         <AdSenseLoader />
       </body>
     </html>
