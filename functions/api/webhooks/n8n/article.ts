@@ -16,7 +16,9 @@ function cleanTokens(text: string): string[] {
     'juga', 'ada', 'bisa', 'akan', 'oleh', 'saat', 'para', 'ke', 'di',
     'terkait', 'hingga', 'kupas', 'tuntas', 'fakta', 'viral', 'bukan',
     'sekadar', 'deretan', 'deret', 'simak', 'bikin', 'potret', 'resmi',
-    'lengkap', 'kronologi', 'jejak', 'digital', 'analisis', 'spekulasi'
+    'lengkap', 'kronologi', 'jejak', 'digital', 'analisis', 'spekulasi',
+    'verifikasi', 'duduk', 'perkara', 'isu', 'kabar', 'terbaru', 'tahun',
+    'soal', 'kembali', 'usai', 'klaim', 'tampil', 'aksi', 'seputar', 'antara'
   ]);
   return words.filter((w) => !stopwords.has(w));
 }
@@ -47,14 +49,87 @@ function calculateSimilarity(t1: string, t2: string, e1: string[], e2: string[])
   const entityScore = e1Norm.length > 0 && e2Norm.length > 0 ? entMatched / minEnt : 0;
 
   // Composite: 45% Title Jaccard + 55% Entity Overlap
-  // Require minimum title token overlap (jaccardTitle >= 0.18) when relying on entity overlap,
-  // so a brand-new event about the same celebrity is not falsely rejected as a duplicate.
   const composite = (0.45 * jaccardTitle) + (0.55 * entityScore);
-  const isDuplicate = jaccardTitle >= 0.40 || (jaccardTitle >= 0.18 && composite > 0.45);
+
+  // SSOT Rule 3.1: Duplicate detection MUST be Entity-Event Fingerprinting.
+  // 1. Extreme Title Jaccard (>= 0.70): almost exact same title word for word.
+  // 2. Clear Entity Overlap (entityScore >= 0.30) AND substantial Title Overlap (jaccardTitle >= 0.35)
+  // 3. Or strong composite (> 0.55) WITH at least 1 matched entity.
+  // An article with ZERO entity overlap (entityScore === 0) is NEVER rejected as a duplicate.
+  const isDuplicate =
+    jaccardTitle >= 0.70 ||
+    (entityScore >= 0.30 && jaccardTitle >= 0.35) ||
+    (entityScore > 0 && composite > 0.55);
+
   return {
     score: Math.round(composite * 100) / 100,
     isDuplicate,
   };
+}
+
+async function resolveRealCelebrityPhoto(
+  entities: string[],
+  title: string
+): Promise<{ url: string; caption: string } | null> {
+  const candidateNames: string[] = [];
+
+  const nonPersonKeywords = [
+    'aksi', 'demo', 'unjuk rasa', 'karhutla', 'kebakaran', 'hutan', 'kpk', 'dpr',
+    'indonesia', 'jakarta', 'polisi', 'polda', 'konser', 'podcast', 'youtube',
+    'tiktok', 'instagram', 'twitter', 'netizen', 'warganet', 'agensi', 'hukum',
+    'bencana', 'gempa', 'banjir', 'dewan pers', 'kominfo', 'bumn', 'pemerintah',
+    'greenpeace', 'aggregator', 'genpi'
+  ];
+
+  for (const ent of entities) {
+    if (!ent || typeof ent !== 'string') continue;
+    const clean = ent.trim();
+    const lower = clean.toLowerCase();
+    const isExcluded = nonPersonKeywords.some((k) => lower.includes(k));
+    if (!isExcluded && clean.length >= 3 && clean.length <= 40) {
+      candidateNames.push(clean);
+    }
+  }
+
+  for (const name of candidateNames.slice(0, 3)) {
+    try {
+      const normalized = name.replace(/\s+/g, '_');
+      const resId = await fetch(
+        `https://id.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(normalized)}`,
+        { headers: { 'User-Agent': 'NgeGhibahBot/1.0 (https://ngeghibah.com; redaksi@ngeghibah.com)' } }
+      );
+      if (resId.ok) {
+        const data: any = await resId.json();
+        const img = data.originalimage?.source || data.thumbnail?.source;
+        if (img && typeof img === 'string' && !img.endsWith('.svg')) {
+          return {
+            url: img,
+            caption: `Potret resmi ${name}. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)`,
+          };
+        }
+      }
+    } catch {}
+
+    try {
+      const normalized = name.replace(/\s+/g, '_');
+      const resEn = await fetch(
+        `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(normalized)}`,
+        { headers: { 'User-Agent': 'NgeGhibahBot/1.0 (https://ngeghibah.com; redaksi@ngeghibah.com)' } }
+      );
+      if (resEn.ok) {
+        const data: any = await resEn.json();
+        const img = data.originalimage?.source || data.thumbnail?.source;
+        if (img && typeof img === 'string' && !img.endsWith('.svg')) {
+          return {
+            url: img,
+            caption: `Potret resmi ${name}. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)`,
+          };
+        }
+      }
+    } catch {}
+  }
+
+  return null;
 }
 
 export const onRequestPost = async (context: { request: Request; env: Env }) => {
@@ -177,8 +252,23 @@ export const onRequestPost = async (context: { request: Request; env: Env }) => 
     };
     const categoryLabel = payload.category_label || payload.categoryLabel || categoryLabels[category] || 'Seleb Lokal';
 
-    const heroImage = payload.hero_image || payload.heroImage || categoryDefaults[category] || categoryDefaults['seleb-lokal'];
-    const imageCaption = payload.image_caption || payload.imageCaption || `Ilustrasi liputan eksklusif terkait ${title}. (Foto: Tim Redaksi NgeGhibah)`;
+    // Resolve hero image: prioritize verified real celebrity photo from Wikipedia/Wikimedia Commons
+    let heroImage = payload.hero_image || payload.heroImage || '';
+    let imageCaption = payload.image_caption || payload.imageCaption || '';
+
+    const isGenericStock = !heroImage || heroImage.includes('images.unsplash.com');
+    if (isGenericStock) {
+      const realPhoto = await resolveRealCelebrityPhoto(newEntities, title);
+      if (realPhoto) {
+        heroImage = realPhoto.url;
+        imageCaption = realPhoto.caption;
+      } else {
+        heroImage = categoryDefaults[category] || categoryDefaults['seleb-lokal'];
+        imageCaption = imageCaption || `Ilustrasi liputan eksklusif terkait ${title}. (Foto: Tim Redaksi NgeGhibah)`;
+      }
+    } else {
+      imageCaption = imageCaption || `Ilustrasi liputan eksklusif terkait ${title}. (Foto: Tim Redaksi NgeGhibah)`;
+    }
 
     const id = payload.id || `art-${Date.now()}`;
     const excerpt = (payload.excerpt || payload.summary || title.slice(0, 160)).trim();
