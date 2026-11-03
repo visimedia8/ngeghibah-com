@@ -33,10 +33,17 @@ function calculateSimilarity(t1: string, t2: string, e1: string[], e2: string[])
   const union = new Set([...tok1, ...tok2]).size || 1;
   const jaccardTitle = intersection / union;
 
-  // Entity Overlap
+  // Filter generic non-person entity stopwords before calculating overlap
+  const genericEntities = new Set([
+    'artis', 'selebriti', 'seleb', 'bintang', 'aksi', 'demo', 'unjuk rasa',
+    'netizen', 'warganet', 'indonesia', 'jakarta', 'genpi', 'genpi.co', 'tribun',
+    'kompas', 'detik', 'viral', 'media', 'sosial', 'berita', 'kabar', 'info'
+  ]);
+
+  const e1Norm = (e1 || []).map((e) => e.toLowerCase().trim()).filter((e) => !genericEntities.has(e));
+  const e2Norm = (e2 || []).map((e) => e.toLowerCase().trim()).filter((e) => !genericEntities.has(e));
+
   let entMatched = 0;
-  const e1Norm = (e1 || []).map((e) => e.toLowerCase().trim());
-  const e2Norm = (e2 || []).map((e) => e.toLowerCase().trim());
   for (const a of e1Norm) {
     for (const b of e2Norm) {
       if (a === b || (a.length > 3 && b.includes(a)) || (b.length > 3 && a.includes(b))) {
@@ -51,15 +58,14 @@ function calculateSimilarity(t1: string, t2: string, e1: string[], e2: string[])
   // Composite: 45% Title Jaccard + 55% Entity Overlap
   const composite = (0.45 * jaccardTitle) + (0.55 * entityScore);
 
-  // SSOT Rule 3.1: Duplicate detection MUST be Entity-Event Fingerprinting.
-  // 1. Extreme Title Jaccard (>= 0.70): almost exact same title word for word.
-  // 2. Clear Entity Overlap (entityScore >= 0.30) AND substantial Title Overlap (jaccardTitle >= 0.35)
-  // 3. Or strong composite (> 0.55) WITH at least 1 matched entity.
-  // An article with ZERO entity overlap (entityScore === 0) is NEVER rejected as a duplicate.
+  // Hardened Anti-Cannibalization Rule:
+  // 1. High Title Jaccard (>= 0.52): Catches synonym headlines and paraphrased events.
+  // 2. Substantial Title Overlap (>= 0.35) AND matched specific entity.
+  // 3. Or composite >= 0.45 with at least 1 matched named entity.
   const isDuplicate =
-    jaccardTitle >= 0.70 ||
-    (entityScore >= 0.30 && jaccardTitle >= 0.35) ||
-    (entityScore > 0 && composite > 0.55);
+    jaccardTitle >= 0.52 ||
+    (jaccardTitle >= 0.35 && (entityScore >= 0.25 || entMatched >= 1)) ||
+    (entMatched > 0 && composite >= 0.45);
 
   return {
     score: Math.round(composite * 100) / 100,

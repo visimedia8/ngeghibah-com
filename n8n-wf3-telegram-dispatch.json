@@ -49,8 +49,9 @@
           300
         ],
         "retryOnFail": true,
-        "maxTries": 3,
-        "waitBetweenTries": 5000
+        "maxTries": 2,
+        "waitBetweenTries": 3000,
+        "onError": "continueRegularOutput"
       },
       {
         "parameters": {
@@ -70,7 +71,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const raw = $('Webhook').first().json;\nconst data = raw.body || raw;\nif (!data || !data.title || !data.slug) {\n  return [];\n}\nconst title = data.title || 'Artikel Baru';\nconst slug = data.slug || '';\nconst meter = data.ghibah_meter || 'TERVERIFIKASI';\nconst category = data.category || 'seleb-lokal';\n\nconst telegramMessage = `\ud83d\ude80 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `\ud83d\udccc *Judul:* ${title}\\n` +\n  `\ud83c\udfaf *Kategori:* #${category}\\n` +\n  `\u2696\ufe0f *Ghibah Meter:* ${meter}\\n\\n` +\n  `\ud83d\udd17 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `\u26a1 *Status:* Terbit Instan & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage, ...data } }];"
+          "jsCode": "const edgeResp = $('Auto-Publish to NgeGhibah Edge').first().json;\nconst raw = $('Webhook').first().json;\nconst data = raw.body || raw;\n\nif (edgeResp.status === 'REJECTED' || edgeResp.error) {\n  const reason = edgeResp.error || edgeResp.message || 'Duplikasi terdeteksi';\n  const telegramMessage = `\u26a0\ufe0f *[NGEGHIBAH CANNIBALIZATION GUARD] ARTIKEL DITOLAK*\\n\\n` +\n    `\ud83d\udccc *Judul:* ${data.title || 'Artikel'}\\n` +\n    `\ud83c\udfaf *Alasan Penolakan:* ${reason}\\n` +\n    `\u26a1 *Status:* Berhasil dicegah dari kanibalisasi internal GSC! Pipeline tetap berjalan normal.`;\n  return [{ json: { telegramMessage, is_rejected: true, ...data } }];\n}\n\nif (!data || !data.title || !data.slug) {\n  return [];\n}\nconst title = data.title || 'Artikel Baru';\nconst slug = data.slug || '';\nconst meter = data.ghibah_meter || 'TERVERIFIKASI';\nconst category = data.category || 'seleb-lokal';\n\nconst telegramMessage = `\ud83d\ude80 *[LIVE AUTO-PUBLISHED] ARTIKEL TAYANG DI NGEGHIBAH.COM*\\n\\n` +\n  `\ud83d\udccc *Judul:* ${title}\\n` +\n  `\ud83c\udfaf *Kategori:* #${category}\\n` +\n  `\u2696\ufe0f *Ghibah Meter:* ${meter}\\n\\n` +\n  `\ud83d\udd17 *URL Live:* https://ngeghibah.com/artikel/${slug}\\n` +\n  `\u26a1 *Status:* Terbit Instan, Entity Hub Linked, & Terindeks ke Cloudflare Global CDN!`;\n\nreturn [{ json: { telegramMessage, is_rejected: false, ...data } }];"
         },
         "id": "4",
         "name": "Format Live Telemetry Log",
