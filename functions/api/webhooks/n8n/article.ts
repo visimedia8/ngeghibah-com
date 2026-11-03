@@ -78,7 +78,8 @@ async function resolveRealCelebrityPhoto(
     'indonesia', 'jakarta', 'polisi', 'polda', 'konser', 'podcast', 'youtube',
     'tiktok', 'instagram', 'twitter', 'netizen', 'warganet', 'agensi', 'hukum',
     'bencana', 'gempa', 'banjir', 'dewan pers', 'kominfo', 'bumn', 'pemerintah',
-    'greenpeace', 'aggregator', 'genpi'
+    'greenpeace', 'aggregator', 'genpi', 'artis', 'selebriti', 'bintang', 'red carpet',
+    'logo', 'festival', 'film', 'sinetron', 'musik', 'lagu', 'album', 'biografi'
   ];
 
   for (const ent of entities) {
