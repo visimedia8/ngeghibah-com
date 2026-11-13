@@ -24,8 +24,11 @@ export const onRequestGet = async (context: {
     }
 
     // 301 Permanent Redirect Guard if article was marked as duplicate/pruned
-    if (row.is_canonical === 0 && row.canonical_slug) {
-      return Response.redirect(`https://ngeghibah.com/artikel/${row.canonical_slug}`, 301);
+    if (row.is_canonical === 0) {
+      if (row.canonical_slug) {
+        return Response.redirect(`https://ngeghibah.com/artikel/${row.canonical_slug}`, 301);
+      }
+      return Response.redirect(`https://ngeghibah.com/kategori/${row.category || 'seleb-lokal'}`, 301);
     }
 
     let entities: string[] = [];
