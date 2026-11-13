@@ -35,4 +35,6 @@ yarn-error.log*
 # scratch
 /scratch/
 /graphify-out/
+__pycache__/
+*.pyc
 
