@@ -16,30 +16,6 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
     { loc: '/kategori/hollywood-barat', changefreq: 'daily', priority: '0.8' },
     { loc: '/kategori/kpop-asia', changefreq: 'daily', priority: '0.8' },
     { loc: '/kategori/creator-tiktok', changefreq: 'daily', priority: '0.8' },
-    { loc: '/seleb/rachel-vennya', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/han-so-hee', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/reza-rahadian', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/fuji-an', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/zendaya', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/raffi-ahmad', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/min-hee-jin', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/nagita-slavina', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/syifa-hadju', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/el-rumi', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/azizah-salsha', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/nikita-mirzani', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/prilly-latuconsina', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/deddy-corbuzier', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/windah-basudara', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/jennie-blackpink', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/jungkook-bts', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/lisa-blackpink', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/karina-aespa', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/wonyoung-ive', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/byeon-woo-seok', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/taylor-swift', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/selena-gomez', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/seleb/hailey-bieber', changefreq: 'weekly', priority: '0.8' },
     { loc: '/pedoman-media-siber', changefreq: 'monthly', priority: '0.7' },
     { loc: '/kode-etik', changefreq: 'monthly', priority: '0.7' },
     { loc: '/hak-jawab', changefreq: 'monthly', priority: '0.7' },
@@ -53,9 +29,25 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
     { loc: '/kontak-kami', changefreq: 'monthly', priority: '0.6' },
   ];
 
+  let celebUrls: Array<{ loc: string; lastmod: string; changefreq: string; priority: string }> = [];
   let articleUrls: Array<{ loc: string; lastmod: string; changefreq: string; priority: string }> = [];
 
   if (env.DB) {
+    try {
+      // Dynamic Celebrities Query from D1
+      const { results: celebs } = await env.DB.prepare(
+        'SELECT slug, updated_at FROM celebrities ORDER BY updated_at DESC'
+      ).all();
+      if (celebs && celebs.length > 0) {
+        celebUrls = celebs.map((c: any) => ({
+          loc: `/seleb/${c.slug}`,
+          lastmod: c.updated_at ? new Date(c.updated_at).toISOString() : new Date().toISOString(),
+          changefreq: 'weekly',
+          priority: '0.8',
+        }));
+      }
+    } catch {}
+
     try {
       // Only select canonical master articles (anti-duplicate guardrail)
       const { results } = await env.DB.prepare(
@@ -85,6 +77,23 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
         }
       } catch {}
     }
+  }
+
+  // Fallback celebrities if DB was empty or failed
+  if (celebUrls.length === 0) {
+    const fallbackCelebs = [
+      'rachel-vennya', 'han-so-hee', 'reza-rahadian', 'fuji-an', 'zendaya', 'raffi-ahmad',
+      'min-hee-jin', 'nagita-slavina', 'syifa-hadju', 'el-rumi', 'azizah-salsha', 'nikita-mirzani',
+      'prilly-latuconsina', 'deddy-corbuzier', 'windah-basudara', 'jennie-blackpink', 'jungkook-bts',
+      'lisa-blackpink', 'karina-aespa', 'wonyoung-ive', 'byeon-woo-seok', 'taylor-swift',
+      'selena-gomez', 'hailey-bieber'
+    ];
+    celebUrls = fallbackCelebs.map((slug) => ({
+      loc: `/seleb/${slug}`,
+      lastmod: new Date().toISOString(),
+      changefreq: 'weekly',
+      priority: '0.8',
+    }));
   }
 
   // Fallback seed articles if DB was empty or failed
@@ -118,6 +127,15 @@ export const onRequestGet = async (context: { request: Request; env: Env }) => {
     xml += `    <lastmod>${nowIso}</lastmod>\n`;
     xml += `    <changefreq>${s.changefreq}</changefreq>\n`;
     xml += `    <priority>${s.priority}</priority>\n`;
+    xml += `  </url>\n`;
+  }
+
+  for (const c of celebUrls) {
+    xml += `  <url>\n`;
+    xml += `    <loc>${baseUrl}${c.loc}</loc>\n`;
+    xml += `    <lastmod>${c.lastmod}</lastmod>\n`;
+    xml += `    <changefreq>${c.changefreq}</changefreq>\n`;
+    xml += `    <priority>${c.priority}</priority>\n`;
     xml += `  </url>\n`;
   }
 
