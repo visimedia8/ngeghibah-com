@@ -32,11 +32,12 @@ export const HomeClient: React.FC<HomeClientProps> = ({
   celebrities,
 }) => {
   const [articles, setArticles] = useState<Article[]>(initialArticles);
+  const [celebrityList, setCelebrityList] = useState<Celebrity[]>(celebrities);
   const [activeCategory, setActiveCategory] = useState<ArticleCategory>('semua');
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState<number>(9);
 
-  // Fetch fresh articles from D1 on mount
+  // Fetch fresh articles and celebrities from D1 on mount
   useEffect(() => {
     let isMounted = true;
     const syncArticles = () => {
@@ -64,7 +65,18 @@ export const HomeClient: React.FC<HomeClientProps> = ({
         .catch(() => {});
     };
 
+    const syncCelebrities = () => {
+      fetch('/api/celebrities?limit=6')
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (!isMounted || !data?.celebrities?.length) return;
+          setCelebrityList(data.celebrities);
+        })
+        .catch(() => {});
+    };
+
     syncArticles();
+    syncCelebrities();
     return () => {
       isMounted = false;
     };
@@ -321,7 +333,7 @@ export const HomeClient: React.FC<HomeClientProps> = ({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {celebrities.slice(0, 3).map((celeb) => (
+            {celebrityList.slice(0, 6).map((celeb) => (
               <CelebrityDossierCard key={celeb.id} celebrity={celeb} />
             ))}
           </div>

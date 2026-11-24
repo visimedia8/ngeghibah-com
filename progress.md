@@ -1,34 +1,28 @@
 # Autonomous Director Progress Tracker (/goal)
 
-## Finish Line (Done Criteria)
-1. **Article 1 (Mahalini)**: Drafted (>=800 words, forensic table, brand lexicon, ethics clause), published to D1 via Edge Webhook, verified HTTP 200 live with verified Wikimedia photo.
-2. **Article 2 (Rachel Vennya)**: Bespoke Workers AI caricature generated & deployed, drafted (>=800 words, table, brand lexicon, ethics clause), published to D1, verified HTTP 200 live.
-3. **Article 3 (Lesti Kejora)**: Drafted (>=800 words, table, brand lexicon, ethics clause), published to D1 via Edge Webhook, verified HTTP 200 live with verified Wikimedia photo.
-4. **Full Post-Deploy Verification Gate**: All 3 live pages return HTTP 200, contain required tags, and appear in the dynamic API feed (`/api/articles?limit=15`).
-5. **Git Repository Cleanliness**: Any new caricature static assets committed & pushed cleanly with no uncommitted artifacts.
+## Finish Line (Done Criteria) - AdSense Remediasi & Dinamisasi Tokoh
+1. **D1 Entity Cleanup**: 9 non-human entities (`insiden-medis`, `kreator-konten`, `pakar-umsura`, `ffi-2026`, etc.) purged from D1 `celebrities` table (exactly 50 legitimate celebrities remain).
+2. **Webhook Ingestion Lockdown**: `functions/api/webhooks/n8n/article.ts` hardened with expanded `nonPersonKeywords` and sanity guards against non-person entity creation.
+3. **Dynamic Celebrities API**: `GET /api/celebrities` endpoint live and returning real celebrities from D1.
+4. **Homepage Dynamic Sync**: `HomeClient.tsx` actively fetches and displays the latest trending celebrities from D1 on mount.
+5. **Full Verification & Zero Low-Value Pages**: All 50 legitimate `/seleb/[slug]` pages live, `/seleb/insiden-medis` returns 404, `npm run build` passes with zero errors, and git is 100% clean.
 
 ## Completed Slices & Proof
-- [x] **Slice 1: Article 1 - Mahalini di Bandara El Tari Kupang**
-  - **Slug**: `duduk-perkara-sorotan-gestur-mahalini-bandara-el-tari-kupang-bakatumu-festival`
-  - **Word Count**: 950 kata
-  - **Live URL**: `https://ngeghibah-com.pages.dev/artikel/duduk-perkara-sorotan-gestur-mahalini-bandara-el-tari-kupang-bakatumu-festival`
-  - **Proof**: HTTP 200 OK, HTML length 39.586 bytes, verified Wikimedia thumbnail loaded, forensic table present.
-- [x] **Slice 2: Article 2 - Rachel Vennya Cedera Wajah (dengan AI Caricature)**
-  - **Slug**: `kronologi-lengkap-insiden-rachel-vennya-jatuh-dari-mobil-kondisi-cedera-wajah`
-  - **Word Count**: 881 kata
-  - **Hero Image**: `/images/caricatures/rachel-vennya-cedera.jpg` (Workers AI FLUX.1 caricature)
-  - **Live URL**: `https://ngeghibah-com.pages.dev/artikel/kronologi-lengkap-insiden-rachel-vennya-jatuh-dari-mobil-kondisi-cedera-wajah`
-  - **Proof**: HTTP 200 OK, HTML length 38.418 bytes, caricature asset loaded, forensic table present.
-- [x] **Slice 3: Article 3 - Lesti Kejora Jupiter Music Awards 2026**
-  - **Slug**: `rekor-bersejarah-lesti-kejora-jupiter-music-awards-2026-vietnam-female-artist`
-  - **Word Count**: 908 kata
-  - **Live URL**: `https://ngeghibah-com.pages.dev/artikel/rekor-bersejarah-lesti-kejora-jupiter-music-awards-2026-vietnam-female-artist`
-  - **Proof**: HTTP 200 OK, HTML length 38.973 bytes, verified Wikimedia thumbnail loaded, forensic table present.
-- [x] **Slice 4: Multi-Endpoint Live Ping Audit & Dynamic Feed Check**
-  - **Proof**: All 4 recent articles appear in `/api/articles?limit=10`, all return HTTP 200, contain forensic `<table>`, ethics clause, and verified hero image.
+- [x] **Slice 1: Purge 9 junk entities from D1**
+  - **Deleted Slugs**: `driver-online`, `ekonomi-kreatif`, `transportasi-online`, `korean-business-research-institute`, `ffi-2026`, `gestur-3-jari`, `pakar-umsura`, `kreator-konten`, `insiden-medis`.
+  - **Proof**: Remote D1 row count is now exactly 50 (from 59). Endpoints `/seleb/insiden-medis`, `/seleb/ffi-2026`, `/seleb/kreator-konten`, and `/seleb/driver-online` all return **HTTP 404 Not Found** (zero low-value phantom pages).
 
 ## Next Queue
-*Semua item dalam antrean selesai.*
+- [ ] Slice 1: Purge 9 junk entities from D1
+- [ ] Slice 2: Harden webhook entity ingestion filter
+- [ ] Slice 3: Create dynamic celebrities API endpoint
+- [ ] Slice 4: Connect homepage client to dynamic celebrities
+- [ ] Slice 5: Local build test, commit, push, and live verification
+
+## Autonomous Decisions Made
+- **Entity Deletion Policy**: Non-human entities with no biodata or real person identity are safely deleted from D1 to prevent Google AdSense "Low Value Content / Programmatic Content Farm" rejections.
+- **Client Hydration Strategy**: Retain initial SSR/SSG fallback celebrities for 0ms First Contentful Paint (FCP) and zero Cumulative Layout Shift (CLS), while fetching fresh celebrities from D1 on mount.
+
 
 ## Autonomous Decisions Made
 - **Entity & Photo Resolution**: Mahalini and Lesti Kejora utilize Wikimedia Commons verified public domain photos resolved automatically by the Edge Webhook. Rachel Vennya utilizes a custom satirical caricature generated via `@cf/black-forest-labs/flux-1-schnell`.

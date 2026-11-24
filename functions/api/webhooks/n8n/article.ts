@@ -85,13 +85,18 @@ async function resolveRealCelebrityPhoto(
     'tiktok', 'instagram', 'twitter', 'netizen', 'warganet', 'agensi', 'hukum',
     'bencana', 'gempa', 'banjir', 'dewan pers', 'kominfo', 'bumn', 'pemerintah',
     'greenpeace', 'aggregator', 'genpi', 'artis', 'selebriti', 'bintang', 'red carpet',
-    'logo', 'festival', 'film', 'sinetron', 'musik', 'lagu', 'album', 'biografi'
+    'logo', 'festival', 'film', 'sinetron', 'musik', 'lagu', 'album', 'biografi',
+    'driver', 'ojol', 'transportasi', 'ekonomi', 'kreatif', 'institute', 'research',
+    'pakar', 'umsura', 'ffi', 'gestur', 'jari', 'medis', 'insiden', 'kreator',
+    'konten', 'dangdut', 'pop', 'kasus', 'sidang', 'visum', 'laporan', 'korban',
+    'pelapor', 'terlapor', 'kejaksaan', 'pengadilan', 'kementerian', 'organisasi'
   ];
 
   for (const ent of entities) {
     if (!ent || typeof ent !== 'string') continue;
     const clean = ent.trim();
     const lower = clean.toLowerCase();
+    if (/\d/.test(clean)) continue;
     const isExcluded = nonPersonKeywords.some((k) => lower.includes(k));
     if (!isExcluded && clean.length >= 3 && clean.length <= 40) {
       candidateNames.push(clean);
@@ -153,13 +158,19 @@ async function autoIngestCelebrities(
     'tiktok', 'instagram', 'twitter', 'netizen', 'warganet', 'agensi', 'hukum',
     'bencana', 'gempa', 'banjir', 'dewan pers', 'kominfo', 'bumn', 'pemerintah',
     'greenpeace', 'aggregator', 'genpi', 'artis', 'selebriti', 'bintang', 'red carpet',
-    'logo', 'festival', 'film', 'sinetron', 'musik', 'lagu', 'album', 'biografi'
+    'logo', 'festival', 'film', 'sinetron', 'musik', 'lagu', 'album', 'biografi',
+    'driver', 'ojol', 'transportasi', 'ekonomi', 'kreatif', 'institute', 'research',
+    'pakar', 'umsura', 'ffi', 'gestur', 'jari', 'medis', 'insiden', 'kreator',
+    'konten', 'dangdut', 'pop', 'kasus', 'sidang', 'visum', 'laporan', 'korban',
+    'pelapor', 'terlapor', 'kejaksaan', 'pengadilan', 'kementerian', 'organisasi'
   ];
 
   const candidateNames = entities.filter((ent) => {
     if (!ent || typeof ent !== 'string') return false;
     const clean = ent.trim();
     const lower = clean.toLowerCase();
+    // Exclude strings containing numbers or non-person keywords
+    if (/\d/.test(clean)) return false;
     return !nonPersonKeywords.some((k) => lower.includes(k)) && clean.length >= 3 && clean.length <= 40;
   });
 
