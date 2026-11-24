@@ -61,11 +61,11 @@ function calculateSimilarity(t1: string, t2: string, e1: string[], e2: string[])
   // Hardened Anti-Cannibalization Rule:
   // 1. High Title Jaccard (>= 0.52): Catches synonym headlines and paraphrased events.
   // 2. Substantial Title Overlap (>= 0.35) AND matched specific entity.
-  // 3. Or composite >= 0.45 with at least 1 matched named entity.
+  // 3. Or composite >= 0.45 with at least 1 matched named entity AND title overlap (jaccard >= 0.15).
   const isDuplicate =
     jaccardTitle >= 0.52 ||
     (jaccardTitle >= 0.35 && (entityScore >= 0.25 || entMatched >= 1)) ||
-    (entMatched > 0 && composite >= 0.45);
+    (entMatched > 0 && jaccardTitle >= 0.15 && composite >= 0.45);
 
   return {
     score: Math.round(composite * 100) / 100,
