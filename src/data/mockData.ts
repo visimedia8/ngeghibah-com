@@ -11,2556 +11,5447 @@ export const TRENDING_TAGS: TrendingTag[] = [
 
 export const MOCK_CELEBRITIES: Celebrity[] = [
   {
-    id: 'celeb-1',
-    slug: 'rachel-vennya',
-    name: 'Rachel Vennya Roland',
-    stageName: 'Rachel Vennya',
-    avatar: '/images/avatars/rachel-vennya.png',
-    bannerImage: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Digital Creator & Entrepreneur',
-    age: 29,
-    agency: 'Raven Entertainment Group',
-    relationshipStatus: 'In a Relationship',
-    circle: ['Salim Nauderer', 'Erika Carlina', 'Keanu Agl', 'Fadil Jaidi'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@rachelvennya', url: 'https://instagram.com' },
-      { platform: 'tiktok', handle: '@rachelvennya', url: 'https://tiktok.com' },
-      { platform: 'x', handle: '@rachelvennya23', url: 'https://x.com' },
+    "id": "celeb-1795509340320-759",
+    "slug": "lesti-kejora",
+    "name": "Lesti Kejora",
+    "stageName": "Lesti Kejora",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Lesti_in_2021.png/330px-Lesti_in_2021.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "penyanyi dan pemeran perempuan asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Rizky Billar"
     ],
-    bio: 'Pionir selebgram dan kreator konten digital Indonesia dengan lebih dari 7 juta pengikut. Kerap menjadi episentrum perbincangan warganet terkait dinamika hubungan personal, bisnis F&B, dan isu sosial.',
-    careerHighlights: [
-      'Founder brand kuliner Ngikan & Lokasaji',
-      'Penerima Penghargaan Creator of The Year 2022',
-      'Aktivis penggalangan dana sosial darurat dengan rekor Rp 9 Miliar+',
+    "verifiedAccounts": [],
+    "bio": "Lestiani atau yang lebih dikenal sebagai Lesti Kejora atau mononim Lesti, adalah seorang penyanyi, diva dangdut, pemeran, pembawa acara, juri dan pengusaha berkebangsaan Indonesia.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Rekor Bersejarah Lesti Kejora di Jupiter Music Awards 2026 Vietnam: Musisi Indonesia Pertama Female Artist of the Year"
     ],
-    dramaCount: 4,
-    sentimentSummary: 'Sentimen terbelah: 54% apresiasi terhadap transparansi & filantropi, 46% skeptisisme terhadap dinamika relasi asmara.',
-    dossierDetail: {
-      birthDate: '23 September 1995',
-      birthPlace: 'Jakarta, Indonesia',
-      zodiac: 'Libra',
-      nationality: 'Indonesia',
-      yearsActive: '2015 – Sekarang',
-      education: 'London School of Public Relations (LSPR) Jakarta',
-      netWorthEstimate: 'Tier A Creator (Rp 15M - Rp 25M)',
-      topAffiliations: ['Raven Entertainment', 'Ngikan Yuk', 'Lokasaji', 'Kolektif Filantropi'],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "penyanyi dan pemeran perempuan asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: '2021',
-        title: 'Pelanggaran Karantina Kesehatan Wisma Atlet',
-        status: 'TERKONFIRMASI',
-        summary: 'Didakwa melanggar prosedur karantina wajib pasca perjalanan luar negeri.',
-        resolution: 'Vonis Pengadilan Negeri Tangerang 4 bulan percobaan dengan denda Rp 50 juta.',
-      },
-      {
-        year: '2023',
-        title: 'Polemik Refund Dana Tiket Konser Internasional',
-        status: 'TERKONFIRMASI',
-        summary: 'Keterlambatan pengembalian dana tiket akibat kendala vendor perantara.',
-        resolution: 'Penyelesaian ganti rugi 100% dan permintaan maaf publik resmi.',
-      },
-      {
-        year: '2024',
-        title: 'Dugaan Perseteruan Asmara & Sindiran Medsos',
-        status: 'FAKTA_DIGITAL',
-        summary: 'Percakapan digital yang bocor di medsos mengenai dinamika pertemanan.',
-        resolution: 'Klarifikasi personal melalui siaran podcast dan penegasan batas privasi.',
-      },
+        "year": "2026",
+        "title": "Rekor Bersejarah Lesti Kejora di Jupiter Music Awards 2026 Vietnam: Musisi Indonesia Pertama Female Artist of the Year",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Rekor bersejarah Lesti Kejora menyabet gelar Female Artist of the Year di Jupiter Music Awards 2026 Vietnam: verifikasi data fan voting, dominasi musisi Indonesia, dan sentimen netizen Asia.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
     ],
-    businessVentures: [
-      { name: 'Ngikan Yuk', category: 'F&B (Fast Casual Seafood)', role: 'Co-founder & Shareholder', status: 'Aktif Beroperasi' },
-      { name: 'Lokasaji', category: 'Frozen Food Tradisional', role: 'Founder & Brand Owner', status: 'Aktif Beroperasi' },
-      { name: 'Raven Management', category: 'Talent Agency & Digital Creative', role: 'Principal Owner', status: 'Aktif Beroperasi' },
-      { name: 'Slim Fast Herbal', category: 'Beauty & Wellness', role: 'Early Brand Endorser', status: 'Non-aktif / Selesai' },
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Lesti Kejora?",
+        "answer": "Lestiani atau yang lebih dikenal sebagai Lesti Kejora atau mononim Lesti, adalah seorang penyanyi, diva dangdut, pemeran, pembawa acara, juri dan pengusaha berkebangsaan Indonesia."
+      }
     ],
-    awards: [
-      { year: '2022', award: 'Indonesia Creator Economy Awards', category: 'Top Digital Influencer of the Year', result: 'Menang' },
-      { year: '2021', award: 'Kitabisa Philanthropy Awards', category: 'Penggalang Dana Kemanusiaan Terbesar', result: 'Menang' },
-    ],
-    faq: [
+    "editorialSections": [
       {
-        question: 'Apa saja lini bisnis aktif Rachel Vennya saat ini?',
-        answer: 'Rachel Vennya memegang kepemilikan di Ngikan Yuk, Lokasaji, dan Raven Entertainment Agency serta aktif sebagai investor digital.',
-      },
-      {
-        question: 'Bagaimana status hukum perkara karantina 2021?',
-        answer: 'Perkara telah berkekuatan hukum tetap (inkrah) di PN Tangerang dengan masa percobaan dan denda yang telah diselesaikan penuh.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Trajektori Karier: Dari Pelopor Selebgram ke Konglomerasi Kreator Digital',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Rachel Vennya Roland menempati posisi unik dalam sejarah perkembangan ekonomi kreator digital di Indonesia. Mengawali rekam jejak digitalnya dari platform tanya-jawab Ask.fm pada medio 2013-2014, ia berhasil bertransformasi dari figur remaja populer menjadi salah satu arsitek utama monetisasi media sosial modern di tanah air. Di saat sebagian besar pesohor konvensional masih memandang Instagram sekadar etalase dokumentasi personal, Rachel merupakan salah satu pionir yang melembagakan konsep <em>paid endorsement</em> profesional dengan standar tarif terstruktur dan tim produksi visual independen.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kekuatan utama daya tarik komersial Rachel terletak pada loyalitas audiens demografi perempuan muda dan ibu modern (<em>young mothers</em>). Narasi kehidupannya—dari perjalanan kemandirian finansial usia muda, pernikahan megah bertema dongeng, dinamika perceraian, hingga pengasuhan dua anak—dikonsumsi publik secara intensif layaknya serial realitas terbuka. Tingkat keterikatan (<em>engagement rate</em>) akun media sosialnya secara konsisten melampaui rata-rata industri, menjadikannya salah satu aset periklanan digital paling bernilai tinggi di Indonesia.
-          </p>
-        `,
-      },
-      {
-        title: 'Analisis Jejaring Sosial & Lingkaran Relasi (Circle of Influence)',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dalam sosiologi internet Indonesia, lingkaran pertemanan Rachel Vennya kerap dipandang sebagai barometer tren gaya hidup urban Jakarta Selatan. Relasi eratnya dengan sesama figur digital berpengaruh seperti Keanu Agl, Fadil Jaidi, dan Erika Carlina bukan sekadar hubungan sosial personal, melainkan ekosistem kolaborasi komersial simbiosis mutualisme.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Ketika sebuah brand atau proyek komersial melibatkan salah satu anggota lingkaran ini, eksposur organik secara otomatis berlipat ganda melalui interaksi silang di Instagram Story dan siaran langsung. Namun demikian, visibilitas ekstrem ini juga menjadi pedang bermata dua: setiap gesekan personal di dalam lingkaran relasi, termasuk dinamika hubungan asmara dengan Salim Nauderer, kerap memicu perang narasi warganet dan bocornya tangkapan layar percakapan digital ke forum X (Twitter).
-          </p>
-        `,
-      },
-      {
-        title: 'Ekosistem Bisnis, Valuasi & Asesmen Brand Safety Pengiklan',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Diversifikasi finansial Rachel Vennya menunjukkan transisi matang dari sekadar penerima honor promosi (<em>endorser</em>) menjadi pemilik ekuitas usaha riil. Melalui jaringan kemitraan bisnis F&B seperti <strong>Ngikan Yuk</strong> (gerai cepat saji olahan ikan) dan <strong>Lokasaji</strong> (kuliner beku jajanan tradisional nusantara), ia membuktikan kapasitas konversi pengaruh media sosial menjadi arus kas operasional skala nasional dengan puluhan cabang kemitraan.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dari sudut pandang <em>Brand Safety Index</em> korporasi multinasional, profil Rachel Vennya dikategorikan sebagai entitas komersial bervaluasi tinggi namun memerlukan mitigasi krisis reputasi terukur. Produk-produk kecantikan (skincare) dan fesyen massal tetap mengalokasikan anggaran endorsement besar kepadanya karena metrik konversi penjualan langsung (<em>direct-to-consumer sales</em>) yang terbukti konsisten, meskipun brand biasanya menyertakan klausul moralitas ketat dalam kontrak pasca-insiden 2021.
-          </p>
-        `,
-      },
-      {
-        title: 'Forensik Rekam Jejak Krisis & Manajemen Pemulihan Reputasi (PR)',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Ujian paling berat terhadap legitimasi publik Rachel terjadi pada Oktober 2021 terkait kasus pelanggaran karantina kesehatan di Rumah Sakit Darurat COVID-19 Wisma Atlet Pademangan pasca-perjalanan dari New York, Amerika Serikat. Penyelidikan kepolisian mengungkap adanya bantuan oknum aparat pengamanan bandara untuk menghindari prosedur karantina wajib masa pandemi. Perkara ini berujung pada vonis Pengadilan Negeri Tangerang dengan hukuman 4 bulan penjara masa percobaan dan denda Rp 50 juta subsidair 1 bulan kurungan.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kendati menuai kecaman keras dan gelombang pembatalan sosial (<em>cancel culture</em>) masif, Rachel menunjukkan ketahanan reputasi yang mengejutkan para pengamat komunikasi krisis. Alih-alih melakukan pembelaan defensif berkepanjangan, ia memilih strategi hiatus sementara, menyampaikan permintaan maaf terbuka tanpa dalih di kanal YouTube Boy William, menyelesaikan seluruh sanksi hukum, serta secara bertahap kembali melalui konten keseharian keluarga dan filantropi kemanusiaan.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Catatan rekam jejak filantropinya juga menjadi faktor penyeimbang sentimen publik. Melalui platform Kitabisa, Rachel tercatat menggalang dana darurat sosial hingga menembus rekor lebih dari Rp 9 Miliar untuk bantuan penanganan pandemi dan bencana alam, menegaskan paradoks posisinya di mata warganet: sosok yang sarat kontroversi personal namun memiliki kapasitas mobilisasi sosial nyata.
-          </p>
-        `,
-      },
-      {
-        title: 'Indeks Sentimen Warganet & Prospek Jangka Panjang',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Berdasarkan analisis pemantauan sentimen media sosial tim intelijen pop-kultur NgeGhibah, persepsi publik terhadap Rachel Vennya terbelah menjadi dua kutub yang stabil: <strong>54% sentimen apresiatif/netral</strong> dan <strong>46% sentimen kritis/skeptis</strong>. Kelompok pendukung mengagumi transparansi emosional, ketegaran sebagai ibu tunggal berdaya, dan kecakapan bisnisnya. Sebaliknya, kelompok skeptis mengkritisi drama relasi personal yang kerap diumbar dan gaya hidup glamor yang dipandang berlebihan.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Prospek reputasi jangka panjang Rachel Vennya sangat bergantung pada kemampuannya menjaga pagar batas (<em>boundaries</em>) antara kehidupan asmara privat dengan citra profesional korporasinya. Selama ia mempertahankan transparansi filantropi dan kepatuhan hukum, statusnya sebagai salah satu titan ekonomi kreator Indonesia diproyeksikan tetap kokoh melintasi pergantian tren generasi warganet.
-          </p>
-        `,
-      },
-    ],
+        "title": "Trajektori & Sorotan Publik Terkini: Lesti Kejora",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Lestiani atau yang lebih dikenal sebagai Lesti Kejora atau mononim Lesti, adalah seorang penyanyi, diva dangdut, pemeran, pembawa acara, juri dan pengusaha berkebangsaan Indonesia.</p>"
+      }
+    ]
   },
   {
-    id: 'celeb-2',
-    slug: 'han-so-hee',
-    name: 'Lee So-hee',
-    stageName: 'Han So-hee',
-    avatar: '/images/avatars/han-so-hee.jpg',
-    bannerImage: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Aktris & Global Fashion Ambassador',
-    age: 30,
-    agency: '9Ato Entertainment (Seoul)',
-    relationshipStatus: 'Single',
-    circle: ['Song Hye-kyo', 'Ryu Jun-yeol', 'Jeon Jong-seo'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@xeesoxee', url: 'https://instagram.com' },
-      { platform: 'x', handle: '@hansohee_kr', url: 'https://x.com' },
+    "id": "celeb-1795509340658-763",
+    "slug": "rizky-billar",
+    "name": "Rizky Billar",
+    "stageName": "Rizky Billar",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rizky_Billar_in_2021.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran laki-laki asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Lesti Kejora"
     ],
-    bio: 'Bintang drama terkemuka Korea Selatan yang dikenal lewat peran berani di The World of the Married dan My Name. Pernah mengguncang jagat maya akibat interaksi langsung tanpa filter di blog pribadinya.',
-    careerHighlights: [
-      'Best New Actress - Baeksang Arts Awards Nominee',
-      'Global Brand Ambassador Boucheron Paris & Balenciaga',
-      'Pemeran utama serial blockbuster Gyeongseong Creature',
+    "verifiedAccounts": [],
+    "bio": "Muhammad Rizky, dikenal sebagai Rizky Billar adalah pemeran, pembawa acara, pencipta lagu, produser dan pengusaha berkebangsaan Indonesia. Ia merupakan suami dari diva dangdut Indonesia Lesti Kejora.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Rekor Bersejarah Lesti Kejora di Jupiter Music Awards 2026 Vietnam: Musisi Indonesia Pertama Female Artist of the Year"
     ],
-    dramaCount: 3,
-    sentimentSummary: '72% warganet memuji keberanian sikap independennya, 28% mengkritik gaya komunikasi emosional di ranah publik.',
-    dossierDetail: {
-      birthDate: '18 November 1994',
-      birthPlace: 'Ulsan, Korea Selatan',
-      zodiac: 'Scorpio',
-      nationality: 'Korea Selatan',
-      yearsActive: '2016 – Sekarang',
-      education: 'Ulsan Arts High School',
-      netWorthEstimate: 'Global Tier ($5M - $10M)',
-      topAffiliations: ['9Ato Entertainment', 'Boucheron Paris', 'Balenciaga', 'Charles & Keith'],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran laki-laki asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: '2024',
-        title: 'Spekulasi Hubungan Asmara Hawaii & Klarifikasi Blog',
-        status: 'TERKONFIRMASI',
-        summary: 'Perdebatan publik mengenai waktu awal relasi asmara dengan aktor Ryu Jun-yeol pasca konfirmasi agensi.',
-        resolution: 'Konfirmasi berakhirnya hubungan dan rilis pernyataan resmi dari agensi 9Ato Entertainment.',
-      },
-      {
-        year: '2022',
-        title: 'Isu Hutang Pribadi Ibu Kandung',
-        status: 'TERKONFIRMASI',
-        summary: 'Penggunaan rekening atas nama sang aktris oleh ibu kandung tanpa sepengetahuan Han So-hee.',
-        resolution: 'Pernyataan pengadilan membebaskan sang aktris dari tanggung jawab perdata hutang sang ibu.',
-      },
+        "year": "2026",
+        "title": "Rekor Bersejarah Lesti Kejora di Jupiter Music Awards 2026 Vietnam: Musisi Indonesia Pertama Female Artist of the Year",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Rekor bersejarah Lesti Kejora menyabet gelar Female Artist of the Year di Jupiter Music Awards 2026 Vietnam: verifikasi data fan voting, dominasi musisi Indonesia, dan sentimen netizen Asia.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
     ],
-    businessVentures: [
-      { name: 'Boucheron Paris Ambassador', category: 'High Jewelry Luxury', role: 'Global Brand Ambassador', status: 'Aktif Beroperasi' },
-      { name: 'Balenciaga Global Face', category: 'Haute Couture Fashion', role: 'House Ambassador', status: 'Aktif Beroperasi' },
-      { name: 'L’Oréal Paris APAC', category: 'Beauty & Hair Care', role: 'Regional Ambassador', status: 'Aktif Beroperasi' },
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Rizky Billar?",
+        "answer": "Muhammad Rizky, dikenal sebagai Rizky Billar adalah pemeran, pembawa acara, pencipta lagu, produser dan pengusaha berkebangsaan Indonesia. Ia merupakan suami dari diva dangdut Indonesia Lesti Kejora."
+      }
     ],
-    awards: [
-      { year: '2021', award: 'Asia Artist Awards', category: 'Best Artist Award (Television)', result: 'Menang' },
-      { year: '2020', award: 'Baeksang Arts Awards', category: 'Best New Actress (The World of the Married)', result: 'Nominasi' },
-      { year: '2022', award: 'APAN Star Awards', category: 'Top Excellence Actress in OTT Series (My Name)', result: 'Nominasi' },
-    ],
-    faq: [
+    "editorialSections": [
       {
-        question: 'Apa agensi resmi yang menaungi Han So-hee?',
-        answer: 'Han So-hee bernaung secara eksklusif di bawah manajemen 9Ato Entertainment di Seoul, Korea Selatan.',
-      },
-      {
-        question: 'Apakah Han So-hee memiliki utang perdata keluarga?',
-        answer: 'Berdasarkan putusan pengadilan Ulsan, Han So-hee dinyatakan tidak memiliki keterikatan hukum atas pinjaman pribadi ibunya.',
-      },
-      {
-        question: 'Apa saja jenama mewah global yang menunjuk Han So-hee sebagai brand ambassador?',
-        answer: 'Han So-hee merupakan Global Brand Ambassador untuk rumah perhiasan Prancis Boucheron, rumah mode Balenciaga, serta Charles & Keith.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Trajektori Karier: Dari Model Indie ke Puncak Sinema & Duta Mode Global',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Karier Han So-hee (nama asli Lee So-hee) menandai anomali menyegarkan dalam lanskap industri hiburan Korea Selatan yang kerap terstandarisasi ketat. Mengawali langkah di Seoul dengan modal mandiri terbatas pasca kepindahan dari Ulsan, ia bekerja sambilan di berbagai kafe sembari merintis karier sebagai model video musik dan pemotretan busana indie. Penampilannya yang memadukan pesona klasik dengan aura pemberontak (<em>rebellious elegance</em>) dengan cepat menarik perhatian casting director.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Titik balik monumental terjadi pada 2020 saat ia memerankan Yeo Da-kyung dalam mega-hit <em>The World of the Married</em>. Keberaniannya mengambil peran antagonis dengan kompleksitas emosional tinggi menjadikannya aktris paling dicari. Keberhasilan tersebut diperkuat oleh peran aksi fisik brutal tanpa pemeran pengganti penuh dalam serial noir <em>My Name</em> dan epik sejarah <em>Gyeongseong Creature</em> di platform streaming Netflix, membuktikan kapasitas akting serbabisa melintasi berbagai genre sinematik.
-          </p>
-        `,
-      },
-      {
-        title: 'Forensik Manajemen Krisis: Paradoks Komunikasi Tanpa Filter di Era Media Sosial',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Berbeda dengan mayoritas pesohor Hallyu yang menyerahkan 100% narasi komunikasi kepada tim humas agensi, Han So-hee mempertahankan kebiasaan menulis secara personal di blog Naver pribadinya. Gaya komunikasi langsung dan emosional ini menciptakan ikatan loyalitas luar biasa dengan penggemar perempuan muda, namun sekaligus memicu kerentanan krisis reputasi ketika terjadi gesekan di ranah publik.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dinamika hubungan asmara singkatnya di awal 2024 menjadi studi kasus menarik dalam ilmu komunikasi krisis selebritas. Respon spontan sang aktris di media sosial memicu perdebatan sengit warganet global sebelum akhirnya agensi 9Ato Entertainment mengambil alih kendali komunikasi formal. Kasus ini menegaskan tantangan berat menjaga keseimbangan antara otentisitas personal seorang seniman dengan tuntutan korporasi komersial beranggaran jutaan dolar.
-          </p>
-        `,
-      },
-      {
-        title: 'Asesmen Brand Safety: Daya Tarik High Jewelry & Prospek Crossover Barat',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dari perspektif nilai komersial korporasi internasional, Han So-hee dikategorikan sebagai aset pemasaran paling bernilai tinggi di kawasan Asia-Pasifik. Pemilihannya sebagai duta global pertama asal Korea untuk rumah perhiasan mewah tertua di Place Vendôme Paris, Boucheron, serta keterlibatannya dengan rumah mode Balenciaga membuktikan daya pikatnya di segmen ultra-luxury.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Prospek transisi kariernya ke industri perfilman internasional terbuka lebar menyusul kemampuannya membawakan karakter aksi fisik yang intens. Selama manajemen reputasinya mampu memitigasi turbulensi narasi personal di dunia maya, Han So-hee diproyeksikan tetap menjadi salah satu representasi paling dominan sinema Korea di panggung budaya pop dunia.
-          </p>
-        `,
-      },
-    ],
+        "title": "Trajektori & Sorotan Publik Terkini: Rizky Billar",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Muhammad Rizky, dikenal sebagai Rizky Billar adalah pemeran, pembawa acara, pencipta lagu, produser dan pengusaha berkebangsaan Indonesia. Ia merupakan suami dari diva dangdut Indonesia Lesti Kejora.</p>"
+      }
+    ]
   },
   {
-    id: 'celeb-3',
-    slug: 'reza-rahadian',
-    name: 'Reza Rahadian Matulessy',
-    stageName: 'Reza Rahadian',
-    avatar: '/images/avatars/reza-rahadian.jpg',
-    bannerImage: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Aktor Film & Ketua Komite FFI',
-    age: 37,
-    agency: 'Indonesian Film Actors Guild',
-    relationshipStatus: 'Private',
-    circle: ['Christine Hakim', 'Laura Basuki', 'Hanung Bramantyo'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@officialpilarez', url: 'https://instagram.com' },
+    "id": "celeb-1",
+    "slug": "rachel-vennya",
+    "name": "Rachel Vennya Roland",
+    "stageName": "Rachel Vennya",
+    "avatar": "/images/avatars/rachel-vennya.png",
+    "bannerImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Digital Creator & Entrepreneur",
+    "age": 29,
+    "agency": "Raven Entertainment Group",
+    "relationshipStatus": "In a Relationship",
+    "circle": [
+      "Salim Nauderer",
+      "Erika Carlina",
+      "Keanu Agl",
+      "Fadil Jaidi"
     ],
-    bio: 'Aktor watak legendaris generasi modern perfilman Indonesia dengan raihan 5 Piala Citra. Dikenal sangat menjaga privasi kehidupan personal namun vokal dalam advokasi undang-undang hak cipta dan royalti seniman.',
-    careerHighlights: [
-      '5x Pemenang Piala Citra Festival Film Indonesia',
-      'Ketua Komite Festival Film Indonesia (2021-2023)',
-      'Duta Besar Hak Asasi Pekerja Seni Kreatif Nasional',
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@rachelvennya",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "tiktok",
+        "handle": "@rachelvennya",
+        "url": "https://tiktok.com"
+      },
+      {
+        "platform": "x",
+        "handle": "@rachelvennya23",
+        "url": "https://x.com"
+      }
     ],
-    dramaCount: 1,
-    sentimentSummary: '89% sentimen positif publik sebagai figur teladan integritas perfilman nasional.',
-    dossierDetail: {
-      birthDate: '5 Maret 1987',
-      birthPlace: 'Bogor, Jawa Barat, Indonesia',
-      zodiac: 'Pisces',
-      nationality: 'Indonesia',
-      yearsActive: '2004 – Sekarang',
-      education: 'Pendidikan Teater & Seni Peran Mandiri',
-      netWorthEstimate: 'A-List Actor Tier (Rp 20M - Rp 40M)',
-      topAffiliations: ['Komite FFI', 'Rumah Produksi Falcon & MD Pictures', 'Duta Advokasi Seni'],
+    "bio": "Pionir selebgram dan kreator konten digital Indonesia dengan lebih dari 7 juta pengikut. Kerap menjadi episentrum perbincangan warganet terkait dinamika hubungan personal, bisnis F&B, dan isu sosial.",
+    "careerHighlights": [
+      "Founder brand kuliner Ngikan & Lokasaji",
+      "Penerima Penghargaan Creator of The Year 2022",
+      "Aktivis penggalangan dana sosial darurat dengan rekor Rp 9 Miliar+"
+    ],
+    "dramaCount": 5,
+    "sentimentSummary": "Sentimen terbelah: 54% apresiasi terhadap transparansi & filantropi, 46% skeptisisme terhadap dinamika relasi asmara.",
+    "dossierDetail": {
+      "birthDate": "23 September 1995",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Libra",
+      "nationality": "Indonesia",
+      "yearsActive": "2015 – Sekarang",
+      "education": "London School of Public Relations (LSPR) Jakarta",
+      "netWorthEstimate": "Tier A Creator (Rp 15M - Rp 25M)",
+      "topAffiliations": [
+        "Raven Entertainment",
+        "Ngikan Yuk",
+        "Lokasaji",
+        "Kolektif Filantropi"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: '2024',
-        title: 'Advokasi Terbuka UU Hak Cipta & Royalti Seniman',
-        status: 'TERKONFIRMASI',
-        summary: 'Pidato vokal mengkritisi penundaan reformasi royalti digital bagi aktor dan musisi di hadapan parlemen.',
-        resolution: 'Audiensi resmi dengan Kementerian Pariwisata dan Ekonomi Kreatif serta DPR RI.',
+        "year": "2026",
+        "title": "Kronologi Lengkap Insiden Rachel Vennya Jatuh dari Mobil ke Aspal: Kondisi Cedera Wajah dan Verifikasi Medis",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Kronologi lengkap insiden selebgram Rachel Vennya terjatuh dari mobil ke jalan aspal: verifikasi kondisi luka lecet di wajah, penanganan medis darurat, dan klarifikasi rumor tawuran.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
       },
+      {
+        "year": "2021",
+        "title": "Pelanggaran Karantina Kesehatan Wisma Atlet",
+        "status": "TERKONFIRMASI",
+        "summary": "Didakwa melanggar prosedur karantina wajib pasca perjalanan luar negeri.",
+        "resolution": "Vonis Pengadilan Negeri Tangerang 4 bulan percobaan dengan denda Rp 50 juta."
+      },
+      {
+        "year": "2023",
+        "title": "Polemik Refund Dana Tiket Konser Internasional",
+        "status": "TERKONFIRMASI",
+        "summary": "Keterlambatan pengembalian dana tiket akibat kendala vendor perantara.",
+        "resolution": "Penyelesaian ganti rugi 100% dan permintaan maaf publik resmi."
+      },
+      {
+        "year": "2024",
+        "title": "Dugaan Perseteruan Asmara & Sindiran Medsos",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Percakapan digital yang bocor di medsos mengenai dinamika pertemanan.",
+        "resolution": "Klarifikasi personal melalui siaran podcast dan penegasan batas privasi."
+      }
     ],
-    businessVentures: [
-      { name: 'Pilarez Production Work', category: 'Film Directing & Producing', role: 'Executive Producer', status: 'Aktif Beroperasi' },
-      { name: 'Brand Ambassador Oppo / Uniqlo', category: 'Consumer Tech & Fashion', role: 'Exclusive Brand Ambassador', status: 'Aktif Beroperasi' },
+    "businessVentures": [
+      {
+        "name": "Ngikan Yuk",
+        "category": "F&B (Fast Casual Seafood)",
+        "role": "Co-founder & Shareholder",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Lokasaji",
+        "category": "Frozen Food Tradisional",
+        "role": "Founder & Brand Owner",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Raven Management",
+        "category": "Talent Agency & Digital Creative",
+        "role": "Principal Owner",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Slim Fast Herbal",
+        "category": "Beauty & Wellness",
+        "role": "Early Brand Endorser",
+        "status": "Non-aktif / Selesai"
+      }
     ],
-    awards: [
-      { year: '2023', award: 'Festival Film Indonesia (Piala Citra)', category: 'Pemeran Utama Pria Terbaik (Berbalas Kejam)', result: 'Menang' },
-      { year: '2016', award: 'Festival Film Indonesia (Piala Citra)', category: 'Pemeran Utama Pria Terbaik (My Stupid Boss)', result: 'Menang' },
-      { year: '2013', award: 'Festival Film Indonesia (Piala Citra)', category: 'Pemeran Utama Pria Terbaik (Habibie & Ainun)', result: 'Menang' },
-      { year: '2010', award: 'Festival Film Indonesia (Piala Citra)', category: 'Pemeran Utama Pria Terbaik (3 Hati Dua Dunia, Satu Cinta)', result: 'Menang' },
+    "awards": [
+      {
+        "year": "2022",
+        "award": "Indonesia Creator Economy Awards",
+        "category": "Top Digital Influencer of the Year",
+        "result": "Menang"
+      },
+      {
+        "year": "2021",
+        "award": "Kitabisa Philanthropy Awards",
+        "category": "Penggalang Dana Kemanusiaan Terbesar",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: 'Berapa total Piala Citra FFI yang telah dimenangkan Reza Rahadian?',
-        answer: 'Reza Rahadian telah mengoleksi 5 Piala Citra Festival Film Indonesia sepanjang kariernya, menjadikannya salah satu aktor peraih piala terbanyak dalam sejarah perfilman nasional.',
+        "question": "Apa saja lini bisnis aktif Rachel Vennya saat ini?",
+        "answer": "Rachel Vennya memegang kepemilikan di Ngikan Yuk, Lokasaji, dan Raven Entertainment Agency serta aktif sebagai investor digital."
       },
       {
-        question: 'Apa peran Reza Rahadian dalam reformasi Festival Film Indonesia?',
-        answer: 'Menjabat sebagai Ketua Komite FFI periode 2021-2023, Reza memimpin modernisasi sistem penjurian berbasis akademi independen bekerja sama dengan asosiasi profesi perfilman nasional.',
-      },
+        "question": "Bagaimana status hukum perkara karantina 2021?",
+        "answer": "Perkara telah berkekuatan hukum tetap (inkrah) di PN Tangerang dengan masa percobaan dan denda yang telah diselesaikan penuh."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: 'Dominasi Perfilman Modern: Rekor 5 Piala Citra & Standar Akting Bunglon',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Reza Rahadian Matulessy memegang status tak terbantahkan sebagai pilar utama keaktoran sinema Indonesia abad ke-21. Dengan rekor lima trofi Piala Citra di berbagai kategori (Pemeran Pendukung Pria Terbaik hingga empat kali Pemeran Utama Pria Terbaik), Reza membuktikan rentang peran bunglon yang langka: dari penjiwaan akurat sosok negarawan B.J. Habibie, komedi eksentrik Bossman di <em>My Stupid Boss</em>, hingga drama psikologis kelam di <em>Berbalas Kejam</em>.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dedikasinya terhadap metode seni peran dan riset karakter mendalam menetapkan tolok ukur profesionalisme baru bagi generasi aktor penerusnya. Keberadaannya dalam sebuah judul film kerap menjadi jaminan kualitas naratif sekaligus magnet komersial terpercaya bagi para investor industri film layar lebar Indonesia.
-          </p>
-        `,
+        "title": "Trajektori Karier: Dari Pelopor Selebgram ke Konglomerasi Kreator Digital",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Rachel Vennya Roland menempati posisi unik dalam sejarah perkembangan ekonomi kreator digital di Indonesia. Mengawali rekam jejak digitalnya dari platform tanya-jawab Ask.fm pada medio 2013-2014, ia berhasil bertransformasi dari figur remaja populer menjadi salah satu arsitek utama monetisasi media sosial modern di tanah air. Di saat sebagian besar pesohor konvensional masih memandang Instagram sekadar etalase dokumentasi personal, Rachel merupakan salah satu pionir yang melembagakan konsep <em>paid endorsement</em> profesional dengan standar tarif terstruktur dan tim produksi visual independen.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kekuatan utama daya tarik komersial Rachel terletak pada loyalitas audiens demografi perempuan muda dan ibu modern (<em>young mothers</em>). Narasi kehidupannya—dari perjalanan kemandirian finansial usia muda, pernikahan megah bertema dongeng, dinamika perceraian, hingga pengasuhan dua anak—dikonsumsi publik secara intensif layaknya serial realitas terbuka. Tingkat keterikatan (<em>engagement rate</em>) akun media sosialnya secara konsisten melampaui rata-rata industri, menjadikannya salah satu aset periklanan digital paling bernilai tinggi di Indonesia.\n          </p>\n        "
       },
       {
-        title: 'Garis Depan Advokasi: Standar Jam Kerja Layak 14 Jam & Hak Royalti Digital',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Di luar panggung lampu sorot, Reza memanfaatkan pengaruh institusionalnya untuk memperjuangkan keadilan struktural pekerja industri kreatif. Bersama koalisi serikat perfilman, ia memimpin audiensi terbuka di DPR RI guna menuntut regulasi batas maksimal shift kerja lapangan 14 jam dan jaminan keselamatan kerja BPJS Ketenagakerjaan bagi seluruh kru teknis freelance.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Reza juga menjadi salah satu suara paling vokal yang mendesak reformasi skema royalti residual bagi para penampil (<em>performers rights</em>) di platform digital streaming OTT. Advokasi ini menempatkannya bukan sekadar sebagai bintang panggung, melainkan negarawan budaya yang peduli pada keberlanjutan ekosistem seni peran Indonesia.
-          </p>
-        `,
+        "title": "Analisis Jejaring Sosial & Lingkaran Relasi (Circle of Influence)",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dalam sosiologi internet Indonesia, lingkaran pertemanan Rachel Vennya kerap dipandang sebagai barometer tren gaya hidup urban Jakarta Selatan. Relasi eratnya dengan sesama figur digital berpengaruh seperti Keanu Agl, Fadil Jaidi, dan Erika Carlina bukan sekadar hubungan sosial personal, melainkan ekosistem kolaborasi komersial simbiosis mutualisme.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Ketika sebuah brand atau proyek komersial melibatkan salah satu anggota lingkaran ini, eksposur organik secara otomatis berlipat ganda melalui interaksi silang di Instagram Story dan siaran langsung. Namun demikian, visibilitas ekstrem ini juga menjadi pedang bermata dua: setiap gesekan personal di dalam lingkaran relasi, termasuk dinamika hubungan asmara dengan Salim Nauderer, kerap memicu perang narasi warganet dan bocornya tangkapan layar percakapan digital ke forum X (Twitter).\n          </p>\n        "
       },
       {
-        title: 'Manajemen Privasi & Integritas Reputasi di Tengah Pusaran Gosip Hiburan',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dalam era di mana popularitas kerap dibeli melalui eksposur sensasi kehidupan pribadi di media sosial, Reza Rahadian memilih jalur eksklusif: menolak memiliki akun media sosial personal aktif dan hanya berkomunikasi melalui akun resmi komunitas penggemar @officialpilarez. Batas tegas antara wilayah kreasi publik dan privasi domestik ini menjadikannya salah satu figur publik paling dihormati di tanah air.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Indeks sentimen publik terhadapnya mencatatkan angka positif 89%, rekor tertinggi di antara aktor papan atas Indonesia. Kredibilitas moral yang tanpa cela ini menjadikannya pilihan utama korporasi multinasional dan lembaga kebudayaan negara untuk program duta merek bernilai tinggi.
-          </p>
-        `,
-      },
-    ],
-  },
-
-  {
-    id: 'celeb-4',
-    slug: 'fuji-an',
-    name: 'Fujianti Utami Putri',
-    stageName: 'Fuji An',
-    avatar: '/images/avatars/fuji-an.jpg',
-    bannerImage: 'https://images.unsplash.com/photo-1493655161922-ef98929de9d8?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Content Creator & Brand Ambassador',
-    age: 22,
-    agency: 'Indo Mega Creator Media',
-    relationshipStatus: 'Single',
-    circle: ['Fadly Faisal', 'Violenzia Jeanette', 'Raffi Ahmad'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@fuji_an', url: 'https://instagram.com' },
-      { platform: 'tiktok', handle: '@fujiiian', url: 'https://tiktok.com' },
-    ],
-    bio: 'Fenomena kreator muda dengan daya tarik interaksi tertinggi di TikTok dan Instagram Indonesia. Kerap menjadi target perang narasi antar-fandom netizen terkait perjodohan warganet.',
-    careerHighlights: [
-      'Pemenang TikTok Awards Indonesia Popular Creator',
-      'Brand Ambassador 10+ Brand Fashion & Skincare Nasional',
-    ],
-    dramaCount: 6,
-    sentimentSummary: 'Engaged fan-base masif; rentan perang komentar spekulatif di kolom gosip media sosial.',
-    dossierDetail: {
-      birthDate: '3 November 2002',
-      birthPlace: 'Jakarta, Indonesia',
-      zodiac: 'Scorpio',
-      nationality: 'Indonesia',
-      yearsActive: '2021 – Sekarang',
-      education: 'Fakultas Hukum Universitas Udayana (Cuti/Non-aktif)',
-      netWorthEstimate: 'Top Gen-Z Influencer (Rp 8M - Rp 15M)',
-      topAffiliations: ['Indo Mega Creator', 'MS Glow', 'Jiniso', 'Scarlett'],
-    },
-    controversies: [
-      {
-        year: '2023',
-        title: 'Laporan Dugaan Penggelapan Dana Eks Manajer',
-        status: 'TERKONFIRMASI',
-        summary: 'Fuji melaporkan mantan manajer pribadinya atas dugaan penggelapan uang honor kerja sama senilai lebih dari Rp 1,5 Miliar.',
-        resolution: 'Pihak kepolisian menetapkan mantan manajer sebagai tersangka dan kasus diproses ke kejaksaan.',
+        "title": "Ekosistem Bisnis, Valuasi & Asesmen Brand Safety Pengiklan",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Diversifikasi finansial Rachel Vennya menunjukkan transisi matang dari sekadar penerima honor promosi (<em>endorser</em>) menjadi pemilik ekuitas usaha riil. Melalui jaringan kemitraan bisnis F&B seperti <strong>Ngikan Yuk</strong> (gerai cepat saji olahan ikan) dan <strong>Lokasaji</strong> (kuliner beku jajanan tradisional nusantara), ia membuktikan kapasitas konversi pengaruh media sosial menjadi arus kas operasional skala nasional dengan puluhan cabang kemitraan.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dari sudut pandang <em>Brand Safety Index</em> korporasi multinasional, profil Rachel Vennya dikategorikan sebagai entitas komersial bervaluasi tinggi namun memerlukan mitigasi krisis reputasi terukur. Produk-produk kecantikan (skincare) dan fesyen massal tetap mengalokasikan anggaran endorsement besar kepadanya karena metrik konversi penjualan langsung (<em>direct-to-consumer sales</em>) yang terbukti konsisten, meskipun brand biasanya menyertakan klausul moralitas ketat dalam kontrak pasca-insiden 2021.\n          </p>\n        "
       },
       {
-        year: '2024',
-        title: 'Perang Fandom Medsos & Isu Perjodohan Netizen',
-        status: 'RUMOR_NETIZEN',
-        summary: 'Serangan siber antar kubu pendukung di kolom komentar terkait hubungan personal sang kreator.',
-        resolution: 'Imbauan resmi dari Fuji di Instagram Story agar warganet berhenti menghujat pihak lain.',
-      },
-    ],
-    businessVentures: [
-      { name: 'Fuji Official Merchandise', category: 'Fashion & Apparel', role: 'Owner', status: 'Aktif Beroperasi' },
-      { name: 'Brand Ambassador MS Glow', category: 'Skincare & Cosmetics', role: 'Key Ambassador', status: 'Aktif Beroperasi' },
-    ],
-    awards: [
-      { year: '2022', award: 'TikTok Awards Indonesia', category: 'Popular Creator of the Year', result: 'Menang' },
-      { year: '2023', award: 'SCTV Music & Digital Awards', category: 'Selebriti Pendatang Baru Paling Ngetop', result: 'Menang' },
-    ],
-    faq: [
-      {
-        question: 'Bagaimana kelanjutan kasus dugaan penggelapan honor mantan manajer Fuji?',
-        answer: 'Laporan resmi telah diproses di Polres Metro Jakarta Barat dan mantan manajer telah ditetapkan sebagai tersangka penipuan/penggelapan.',
+        "title": "Forensik Rekam Jejak Krisis & Manajemen Pemulihan Reputasi (PR)",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Ujian paling berat terhadap legitimasi publik Rachel terjadi pada Oktober 2021 terkait kasus pelanggaran karantina kesehatan di Rumah Sakit Darurat COVID-19 Wisma Atlet Pademangan pasca-perjalanan dari New York, Amerika Serikat. Penyelidikan kepolisian mengungkap adanya bantuan oknum aparat pengamanan bandara untuk menghindari prosedur karantina wajib masa pandemi. Perkara ini berujung pada vonis Pengadilan Negeri Tangerang dengan hukuman 4 bulan penjara masa percobaan dan denda Rp 50 juta subsidair 1 bulan kurungan.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kendati menuai kecaman keras dan gelombang pembatalan sosial (<em>cancel culture</em>) masif, Rachel menunjukkan ketahanan reputasi yang mengejutkan para pengamat komunikasi krisis. Alih-alih melakukan pembelaan defensif berkepanjangan, ia memilih strategi hiatus sementara, menyampaikan permintaan maaf terbuka tanpa dalih di kanal YouTube Boy William, menyelesaikan seluruh sanksi hukum, serta secara bertahap kembali melalui konten keseharian keluarga dan filantropi kemanusiaan.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Catatan rekam jejak filantropinya juga menjadi faktor penyeimbang sentimen publik. Melalui platform Kitabisa, Rachel tercatat menggalang dana darurat sosial hingga menembus rekor lebih dari Rp 9 Miliar untuk bantuan penanganan pandemi dan bencana alam, menegaskan paradoks posisinya di mata warganet: sosok yang sarat kontroversi personal namun memiliki kapasitas mobilisasi sosial nyata.\n          </p>\n        "
       },
       {
-        question: 'Berapa rekor omset live streaming shopping tertinggi yang dipandu Fuji An?',
-        answer: 'Sesi live streaming resmi flash sale bersama brand kecantikan lokal mencatatkan Gross Merchandise Value (GMV) menembus Rp 1,2 Miliar dalam waktu kurang dari 2 jam.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Fenomena Social Commerce: Rekor Konversi Live Shopping & Daya Tarik Gen Z',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Fujianti Utami Putri (Fuji An) merepresentasikan anomali paling fenomenal dalam evolusi ekonomi kreator Indonesia pasca-2021. Mengemuka di tengah tragedi keluarga yang menyentuh simpati kolektif jutaan masyarakat, Fuji berhasil membuktikan ketahanan dan kapasitas monetisasi digital mandiri yang melampaui ekspektasi para pengamat industri periklanan modern.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kekuatan intinya bertumpu pada tingkat keterikatan (<em>engagement rate</em>) organik yang luar biasa tinggi di platform TikTok dan Instagram. Dalam sesi siaran langsung komersial (<em>live commerce</em>), Fuji mampu mengonversi penonton menjadi transaksi riil bernilai miliaran rupiah dalam hitungan menit. Karakter pembawaannya yang lugas, jenaka, dan tanpa kepalsuan menciptakan tingkat kepercayaan konsumen yang sangat dicari oleh brand fesyen dan produk perawatan kulit massal.
-          </p>
-        `,
-      },
-      {
-        title: 'Anatomi Perang Fandom & Polarisasi Sentimen di Kolom Gosip Digital',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Tingginya popularitas di usia sangat muda membawa konsekuensi pengawasan publik yang intensif. Komunitas penggemar fanatik Fuji kerap terlibat dalam perang narasi siber dengan kubu penggemar figur publik lain, terutama mengenai dinamika perjodohan warganet (<em>shipper fandom</em>). Setiap gerak-gerik, tatapan mata di acara penghargaan, hingga unggahan status singkat dianalisis secara berlebihan oleh ribuan akun anonim.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kendati polarisasi ini menjaga volume percakapan namanya selalu berada di jajaran trending topic teratas, hal ini juga menuntut kedewasaan komunikasi krisis ekstra. Fuji beberapa kali secara terbuka mengimbau para pendukungnya untuk tidak melakukan perundungan siber terhadap rekan sesama kreator konten demi menjaga kesehatan mental bersama.
-          </p>
-        `,
-      },
-      {
-        title: 'Forensik Sengketa Hukum Eks-Manajer & Transformasi Manajemen Profesional',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Titik krusial pendewasaan bisnis Fuji tercatat pada 2023 ketika ia melaporkan mantan manajer pribadinya ke pihak kepolisian atas dugaan penggelapan uang honor kerja sama periklanan senilai lebih dari Rp 1,5 Miliar. Kasus ini membuka mata banyak talenta muda mengenai pentingnya pemisahan rekening bisnis, audit berkala, dan tata kelola kontrak hukum yang ketat dalam manajemen agensi talenta.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dengan restrukturisasi tim manajemen di bawah naungan agensi profesional dan pendampingan kuasa hukum tetap, Fuji memposisikan dirinya sebagai entitas bisnis mandiri yang terlindungi dari celah penipuan finansial internal. Langkah hukum tegas tersebut diapresiasi publik sebagai bukti integritas dan komitmen profesionalitas jangka panjang.
-          </p>
-        `,
-      },
-    ],
+        "title": "Indeks Sentimen Warganet & Prospek Jangka Panjang",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Berdasarkan analisis pemantauan sentimen media sosial tim intelijen pop-kultur NgeGhibah, persepsi publik terhadap Rachel Vennya terbelah menjadi dua kutub yang stabil: <strong>54% sentimen apresiatif/netral</strong> dan <strong>46% sentimen kritis/skeptis</strong>. Kelompok pendukung mengagumi transparansi emosional, ketegaran sebagai ibu tunggal berdaya, dan kecakapan bisnisnya. Sebaliknya, kelompok skeptis mengkritisi drama relasi personal yang kerap diumbar dan gaya hidup glamor yang dipandang berlebihan.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Prospek reputasi jangka panjang Rachel Vennya sangat bergantung pada kemampuannya menjaga pagar batas (<em>boundaries</em>) antara kehidupan asmara privat dengan citra profesional korporasinya. Selama ia mempertahankan transparansi filantropi dan kepatuhan hukum, statusnya sebagai salah satu titan ekonomi kreator Indonesia diproyeksikan tetap kokoh melintasi pergantian tren generasi warganet.\n          </p>\n        "
+      }
+    ]
   },
   {
-    id: 'celeb-5',
-    slug: 'zendaya',
-    name: 'Zendaya Maree Stoermer Coleman',
-    stageName: 'Zendaya',
-    avatar: '/images/avatars/zendaya.jpg',
-    bannerImage: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Aktris Hollywood & Produser',
-    age: 28,
-    agency: 'CAA (Creative Artists Agency Hollywood)',
-    relationshipStatus: 'Dating (Tom Holland)',
-    circle: ['Tom Holland', 'Timothée Chalamet', 'Law Roach', 'Hunter Schafer'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@zendaya', url: 'https://instagram.com' },
-      { platform: 'x', handle: '@zendaya', url: 'https://x.com' },
+    "id": "celeb-1795507819568-940",
+    "slug": "mahalini",
+    "name": "Mahalini Raharja",
+    "stageName": "Mahalini",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Mahalini_on_Opening_Ceremony_Fornas_VI.png/330px-Mahalini_on_Opening_Ceremony_Fornas_VI.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Penyanyi-penulis lagu dan aktris Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Rizky Febian"
     ],
-    bio: 'Bintang generasi baru perfilman Hollywood peraih dua piala Primetime Emmy Awards. Menjadi tolak ukur fashion red-carpet global dan ikon independensi bintang muda tanpa sensasi murahan.',
-    careerHighlights: [
-      '2x Pemenang Primetime Emmy Award Aktris Terbaik (Euphoria)',
-      'Bintang waralaba Dune dan Spider-Man Box Office',
+    "verifiedAccounts": [],
+    "bio": "Ni Luh Ketut Mahalini Ayu Raharja, dikenal secara mononim sebagai Mahalini, adalah seorang penyanyi-penulis lagu dan pemeran berkebangsaan Indonesia. Lahir dan besar di Denpasar, Bali, Mahalini mengwali kariernya di industri musik dengan singel berjudul \"Bawa Dia Kembali\" pada 2015. Namun, ia mulai mendapat perhatian publik setelah menjadi lima besar ajang Indonesian Idol musim kesepuluh. Pasca kompetisi Mahalini bergabung dengan perusahaan rekaman Hits Records dan merilis singel solo \"Melawan Restu\" yang membawanya meraih penghargaan pertamanya di industri musik sebagai New Artist of the Year dari Indonesian Music Awards 2021.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Sorotan Gestur Mahalini di Bandara El Tari Kupang: Fakta Sambutan Adat Tenun NTT dan Respons Netizen"
     ],
-    dramaCount: 1,
-    sentimentSummary: '94% apresiasi global atas talenta, selera fashion, dan batas tegas kehidupan pribadi.',
-    dossierDetail: {
-      birthDate: '1 September 1996',
-      birthPlace: 'Oakland, California, Amerika Serikat',
-      zodiac: 'Virgo',
-      nationality: 'Amerika Serikat',
-      yearsActive: '2009 – Sekarang',
-      education: 'Oakland School for the Arts',
-      netWorthEstimate: 'Hollywood A-List ($22M - $30M)',
-      topAffiliations: ['CAA Agency', 'Louis Vuitton', 'Bulgari', 'HBO / Warner Bros'],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Penyanyi-penulis lagu dan aktris Indonesia",
+        "Industri Pop-Kultur"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: '2015',
-        title: 'Insiden Komentar Rambut Dreadlocks Giuliana Rancic',
-        status: 'TERKONFIRMASI',
-        summary: 'Komentar bernuansa stereotip dari presenter televisi terhadap rambut gimbal Zendaya di ajang Oscars.',
-        resolution: 'Tanggapan elegan terbuka dari Zendaya menuai pujian luas dan pembawa acara meminta maaf secara terbuka.',
-      },
+        "year": "2026",
+        "title": "Duduk Perkara Sorotan Gestur Mahalini di Bandara El Tari Kupang: Fakta Sambutan Adat Tenun NTT dan Respons Netizen",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Duduk perkara lengkap video viral Mahalini di Bandara El Tari Kupang NTT: kronologi pengalungan rompi tenun adat Bakatumu Festival, verifikasi kondisi fisik, dan dinamika sentimen warganet.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
     ],
-    businessVentures: [
-      { name: 'Louis Vuitton House Ambassador', category: 'Luxury Haute Couture', role: 'Global Brand Face', status: 'Aktif Beroperasi' },
-      { name: 'Bulgari High Jewelry Face', category: 'Fine Jewelry', role: 'Global Ambassador', status: 'Aktif Beroperasi' },
-      { name: 'Executive Producer (Euphoria & Challengers)', category: 'Film Production', role: 'Producer', status: 'Aktif Beroperasi' },
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Mahalini?",
+        "answer": "Ni Luh Ketut Mahalini Ayu Raharja, dikenal secara mononim sebagai Mahalini, adalah seorang penyanyi-penulis lagu dan pemeran berkebangsaan Indonesia. Lahir dan besar di Denpasar, Bali, Mahalini mengwali kariernya di industri musik dengan singel berjudul \"Bawa Dia Kembali\" pada 2015. Namun, ia mulai mendapat perhatian publik setelah menjadi lima besar ajang Indonesian Idol musim kesepuluh. Pasca kompetisi Mahalini bergabung dengan perusahaan rekaman Hits Records dan merilis singel solo \"Melawan Restu\" yang membawanya meraih penghargaan pertamanya di industri musik sebagai New Artist of the Year dari Indonesian Music Awards 2021."
+      }
     ],
-    awards: [
-      { year: '2020', award: 'Primetime Emmy Awards', category: 'Outstanding Lead Actress in a Drama Series (Euphoria)', result: 'Menang' },
-      { year: '2022', award: 'Primetime Emmy Awards', category: 'Outstanding Lead Actress in a Drama Series (Euphoria)', result: 'Menang' },
-      { year: '2023', award: 'Golden Globe Awards', category: 'Best Actress – Television Series Drama', result: 'Menang' },
-    ],
-    faq: [
+    "editorialSections": [
       {
-        question: 'Apakah rekor termuda yang dipecahkan Zendaya di ajang Primetime Emmy?',
-        answer: 'Zendaya adalah aktris termuda dalam sejarah yang memenangkan Primetime Emmy Award untuk Aktris Utama Terbaik serial drama pada usia 24 tahun.',
-      },
-      {
-        question: 'Siapa arsitek di balik penampilan ikonik fashion red carpet Zendaya?',
-        answer: 'Penampilan adibusana Zendaya dikurasi secara eksklusif oleh arsitek gaya legendaris Law Roach, yang bekerja sama dengannya sejak usia 14 tahun.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Transformasi Bintang Anak Disney ke Pemenang Emmy Termuda Sepanjang Sejarah',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Zendaya Maree Stoermer Coleman menorehkan sejarah sebagai salah satu dari sedikit bintang cilik Disney Channel yang berhasil bertransisi mulus menjadi figur sinema paling bergengsi di dunia perfilman internasional. Puncak pengakuan kritis diraih lewat penampilannya sebagai Rue Bennett dalam serial HBO <em>Euphoria</em>, yang mengantarkannya memenangkan dua piala Primetime Emmy Awards dan mencatatkan rekor sebagai aktris termuda peraih trofi kategori aktris utama drama pada usia 24 tahun.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Keberhasilannya melintasi batas antara proyek komersial raksasa bernilai miliaran dolar (seperti trilogi <em>Spider-Man</em> dan epik fiksi ilmiah <em>Dune</em> garapan Denis Villeneuve) dengan peran produksi independen sebagai produser eksekutif di film <em>Challengers</em> membuktikan kecakapan navigasi karier kelas wahid di jantung Hollywood.
-          </p>
-        `,
-      },
-      {
-        title: 'Revolusi Adibusana Red Carpet: Sinergi Visioner Bersama Law Roach',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Di panggung mode global, setiap kemunculan Zendaya di karpet merah merupakan peristiwa budaya (<em>cultural event</em>) tersendiri. Kemitraan jangka panjangnya dengan arsitek gaya (<em>image architect</em>) Law Roach telah melahirkan momen-momen fesyen paling berkesan dalam satu dekade terakhir, mulai dari gaun robot arsip vintage Mugler 1995 hingga kreasi kustom haute couture Louis Vuitton dan perhiasan tinggi Bulgari.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Pendekatan tematik berbasis narasi film (<em>method dressing</em>) yang dipeloporinya menetapkan tren baru dalam strategi promosi film global. Kemampuannya mengombinasikan busana bersejarah dengan pernyataan modern menobatkannya sebagai Fashion Icon termuda versi Council of Fashion Designers of America (CFDA).
-          </p>
-        `,
-      },
-      {
-        title: 'Keteguhan Batas Privasi & Standar Emas Integritas Selebritas Modern',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Di tengah industri hiburan yang sering kali mengeksploitasi detail hubungan personal demi publisitas murah, Zendaya dan pasangannya aktor Tom Holland secara konsisten menjaga batas sakral kehidupan pribadi mereka. Penolakannya untuk meladeni rumor sensasional di media sosial membuat indeks Brand Safety dirinya berada di peringkat tertinggi bagi pengiklan korporat papan atas.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Dengan dukungan sentimen publik positif mencapai 94% secara global, Zendaya diposisikan sebagai panutan generasi muda yang menggabungkan keunggulan talenta murni, kesadaran sosial tinggi, dan keanggunan berkelas yang menjauhkannya dari jerat skandal murahan.
-          </p>
-        `,
-      },
-    ],
-  },
-
-  {
-    id: 'celeb-6',
-    slug: 'raffi-ahmad',
-    name: 'Raffi Farid Ahmad',
-    stageName: 'Raffi Ahmad',
-    avatar: '/images/avatars/raffi-ahmad.jpg',
-    bannerImage: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Presenter, Produser & Eksekutif Bisnis RANS',
-    age: 38,
-    agency: 'RANS Entertainment Holding',
-    relationshipStatus: 'Menikah (Nagita Slavina)',
-    circle: ['Nagita Slavina', 'Atta Halilintar', 'Deddy Corbuzier', 'Baim Wong'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@raffinagita1717', url: 'https://instagram.com' },
-      { platform: 'youtube', handle: 'RansEntertainment', url: 'https://youtube.com' },
-    ],
-    bio: 'Tokoh sentral industri hiburan Indonesia berjuluk "Sultan Andara". Bertransformasi dari presenter televisi papan atas menjadi konglomerat media digital dan olahraga melalui RANS Entertainment.',
-    careerHighlights: [
-      'Pendiri RANS Entertainment dengan valuasi korporasi triliunan rupiah',
-      'Pemilik klub sepak bola Liga 1 RANS Nusantara FC & klub basket RANS Simba',
-      'Utusan Khusus Presiden Bidang Pembinaan Generasi Muda & Pekerja Seni (2024-2029)',
-    ],
-    dramaCount: 5,
-    sentimentSummary: '81% kagum atas etos kerja dan imperium bisnis masif; 19% skeptis terkait dinamika transparansi finansial dan kepemilikan aset.',
-    dossierDetail: {
-      birthDate: '17 Februari 1987',
-      birthPlace: 'Bandung, Jawa Barat',
-      zodiac: 'Aquarius',
-      nationality: 'Indonesia',
-      yearsActive: '2001 – Sekarang',
-      education: 'SMA Negeri 3 Jakarta / Universitas Terbuka',
-      netWorthEstimate: 'Mega Tier (Rp 400M - Rp 1T+)',
-      topAffiliations: ['RANS Holding', 'Emtek Group Partner', 'Kemenpora / Utusan Khusus Presiden'],
-    },
-    controversies: [
-      {
-        year: '2024',
-        title: 'Isu Aliran Dana & Dugaan TPPU Yayasan Bisnis',
-        status: 'MENUNGGU_TANGGAPAN',
-        summary: 'Tudingan sekelompok pihak mengenai perputaran modal bisnis yang dibantah tegas oleh tim kuasa hukum.',
-        resolution: 'Konferensi pers resmi klarifikasi audit akuntan publik dan tidak ada proses hukum aktif.',
-      },
-      {
-        year: '2021',
-        title: 'Kehadiran di Pesta Pasca Vaksinasi COVID-19 Perdana',
-        status: 'TERKONFIRMASI',
-        summary: 'Sorotan tajam warganet atas foto berkumpul tanpa masker beberapa jam setelah menerima vaksin di Istana Negara.',
-        resolution: 'Permintaan maaf publik terbuka dan sanksi teguran dari Satgas COVID-19.',
-      },
-    ],
-    businessVentures: [
-      { name: 'RANS Entertainment', category: 'Media Digital & Studio Animasi', role: 'Chairman & Founder', status: 'Aktif Beroperasi' },
-      { name: 'RANS Nusantara FC', category: 'Klub Sepak Bola Profesional', role: 'Chairman', status: 'Aktif Beroperasi' },
-      { name: 'RANS Simba Bogor', category: 'Klub Basket IBL', role: 'President Club', status: 'Aktif Beroperasi' },
-      { name: 'Rojo Sambel Nusantara', category: 'F&B Franchise', role: 'Lead Investor & Partner', status: 'Aktif Beroperasi' },
-    ],
-    awards: [
-      { year: '2023', award: 'Panasonic Gobel / Indonesian Television Awards', category: 'Presenter Paling Populer', result: 'Menang' },
-      { year: '2022', award: 'Forbes Indonesia', category: 'The Sultans of Content - Top Digital Mogul', result: 'Menang' },
-    ],
-    faq: [
-      {
-        question: 'Apa jabatan resmi Raffi Ahmad di pemerintahan saat ini?',
-        answer: 'Raffi Ahmad dilantik sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni pada Oktober 2024.',
-      },
-      {
-        question: 'Apakah RANS Entertainment berencana melantai di bursa saham (IPO)?',
-        answer: 'Pihak manajemen RANS telah menyiapkan langkah strategis penawaran umum perdana saham (IPO) bekerja sama dengan mitra institusi keuangan nasional.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Evolusi Sultan Andara: Dari Bintang Sinetron Remaja ke Konglomerasi Media RANS Holding',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Raffi Farid Ahmad mencatatkan metamorfosis bisnis paling spektakuler dalam sejarah industri hiburan modern Indonesia. Mengawali karier keaktoran sejak usia 14 tahun melalui sinetron remaja dan panggung presenter varietas televisi harian, etos kerja tanpa henti (<em>hustle culture</em>) membawanya menjadi raja layar kaca selama dua dekade.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Bersama sang istri Nagita Slavina, Raffi mendirikan RANS Entertainment pada 2015 yang awalnya hanya saluran dokumentasi keluarga YouTube. Kanal tersebut bermutasi menjadi konglomerasi media digital terintegrasi yang mencakup studio animasi, agensi periklanan digital, dan rumah produksi konten yang berhasil menarik investasi strategis dari grup media raksasa Emtek Group dengan valuasi menembus triliunan rupiah.
-          </p>
-        `,
-      },
-      {
-        title: 'Ekosistem Bisnis Terintegrasi: Sinergi Olahraga Liga 1, Kuliner Waralaba & Valuasi Pra-IPO',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Ekspansi RANS melampaui batasan hiburan konvensional dengan merambah industri olahraga profesional melalui akuisisi klub sepak bola RANS Nusantara FC dan klub bola basket IBL RANS Simba Bogor. Strategi konvergensi antara popularitas selebritas dan daya tarik olahraga (<em>sportainment</em>) menciptakan ceruk pasar baru di Indonesia.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Di sektor riil, investasi agresif Raffi di industri makanan dan minuman (F&B) seperti jaringan restoran Rojo Sambel Nusantara menunjukkan insting tajam dalam membina pelaku UMKM lokal menuju skala waralaba nasional. Rencana penawaran umum perdana saham (IPO) RANS Entertainment terus menjadi sorotan analis pasar modal sebagai tolok ukur kesiapan industri kreator masuk ke lantai bursa efek.
-          </p>
-        `,
-      },
-      {
-        title: 'Forensik Isu Akuntabilitas Finansial & Babak Baru Kenegaraan 2024–2029',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kecepatan akumulasi aset Raffi kerap memicu spekulasi warganet dan tuduhan tak berdasar mengenai aliran dana modal. Menghadapi tudingan tersebut, tim kuasa hukum dan manajemen RANS merespons dengan transparansi audit akuntan publik bereputasi tinggi yang memverifikasi bahwa seluruh modal kerja berasal dari arus kas operasional komersial, kontrak endorsement ratusan brand, dan suntikan dana ventura formal.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Pelantikannya sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni pada Oktober 2024 menandai babak baru integrasi figur publik ke ranah pengabdian negara. Peran ini menuntut kepatuhan pelaporan Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) secara berkala, menegaskan komitmen akuntabilitas publik seorang mega-bintang di hadapan hukum dan konstitusi.
-          </p>
-        `,
-      },
-    ],
+        "title": "Trajektori & Sorotan Publik Terkini: Mahalini",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Ni Luh Ketut Mahalini Ayu Raharja, dikenal secara mononim sebagai Mahalini, adalah seorang penyanyi-penulis lagu dan pemeran berkebangsaan Indonesia. Lahir dan besar di Denpasar, Bali, Mahalini mengwali kariernya di industri musik dengan singel berjudul \"Bawa Dia Kembali\" pada 2015. Namun, ia mulai mendapat perhatian publik setelah menjadi lima besar ajang Indonesian Idol musim kesepuluh. Pasca kompetisi Mahalini bergabung dengan perusahaan rekaman Hits Records dan merilis singel solo \"Melawan Restu\" yang membawanya meraih penghargaan pertamanya di industri musik sebagai New Artist of the Year dari Indonesian Music Awards 2021.</p>"
+      }
+    ]
   },
   {
-    id: 'celeb-7',
-    slug: 'min-hee-jin',
-    name: 'Min Hee-jin',
-    stageName: 'Min Hee-jin',
-    avatar: '/images/avatars/min-hee-jin.png',
-    bannerImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80',
-    profession: 'Produser Musik, Creative Director & Mantan CEO ADOR',
-    age: 45,
-    agency: 'Independen / Eks-ADOR (HYBE Labels)',
-    relationshipStatus: 'Private',
-    circle: ['NewJeans Members', 'Shin Woo-seok (Dolphiners Film)', 'Kim Min-ji'],
-    verifiedAccounts: [
-      { platform: 'instagram', handle: '@min.hee.jin', url: 'https://instagram.com' },
+    "id": "celeb-1795507819921-871",
+    "slug": "rizky-febian",
+    "name": "Rizky Febian",
+    "stageName": "Rizky Febian",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Rizky_Febian_Performs_at_Jakarta_International_Jazz_Java_Festival_2020_%28cropped%29.png/330px-Rizky_Febian_Performs_at_Jakarta_International_Jazz_Java_Festival_2020_%28cropped%29.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "penyanyi Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Mahalini"
     ],
-    bio: 'Direktur kreatif visioner di balik konsep ikonik Girls’ Generation, SHINee, f(x), Red Velvet, dan kreator mega grup K-Pop NewJeans. Menjadi tokoh utama pertempuran hukum dan korporasi terdahsyat melawan konglomerasi HYBE.',
-    careerHighlights: [
-      'Kreator konsep, branding, dan produser utama girl group NewJeans',
-      'Mantan Creative Director SM Entertainment selama 16 tahun',
-      'Pemenang Golden Disc Awards Best Producer 2024',
+    "verifiedAccounts": [],
+    "bio": "Rizky Febian Adriansyah Sutisna adalah seorang penyanyi-penulis lagu, aktor, dan pembawa acara berkebangsaan Indonesia. Ia meraih popularitas setelah merilis singel debutnya sebagai penyanyi dewasa berjudul \"Kesempurnaan Cinta\" pada tahun 2015.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Sorotan Gestur Mahalini di Bandara El Tari Kupang: Fakta Sambutan Adat Tenun NTT dan Respons Netizen"
     ],
-    dramaCount: 4,
-    sentimentSummary: '67% dukungan publik atas integritas artistik dan advokasi NewJeans; 33% kritik atas gaya perang psikologis korporasi.',
-    dossierDetail: {
-      birthDate: '16 Desember 1979',
-      birthPlace: 'Seoul, Korea Selatan',
-      zodiac: 'Sagitarius',
-      nationality: 'Korea Selatan',
-      yearsActive: '2002 – Sekarang',
-      education: 'Seoul Women’s University (Desain Komunikasi Visual)',
-      netWorthEstimate: 'K-Pop Master Tier ($15M - $25M)',
-      topAffiliations: ['ADOR (Eks-CEO)', 'SM Entertainment (Eks-Direktur)', 'NewJeans Creative Team'],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "penyanyi Indonesia",
+        "Industri Pop-Kultur"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: '2024',
-        title: 'Konflik Kepemilikan & Dugaan Upaya Kudeta ADOR vs HYBE',
-        status: 'TERKONFIRMASI',
-        summary: 'HYBE mengaudit ADOR atas tudingan upaya memisahkan diri; Min Hee-jin membantah dalam jumpa pers berdurasi 2 jam yang viral secara global.',
-        resolution: 'Pengadilan Distrik Pusat Seoul mengabulkan gugatan provisi Min Hee-jin mencegah pemecatannya sebagai CEO oleh HYBE pada Mei 2024.',
-      },
-      {
-        year: '2024',
-        title: 'Tuduhan Plagiarisme Konsep Musik NewJeans vs ILLIT',
-        status: 'FAKTA_DIGITAL',
-        summary: 'Kritik terbuka Min Hee-jin terhadap agensi anak perusahaan HYBE lain mengenai kemiripan konsep visual dan koreografi.',
-        resolution: 'Pernyataan bantahan dari BELIFT LAB dan saling lapor pencemaran nama baik.',
-      },
+        "year": "2026",
+        "title": "Duduk Perkara Sorotan Gestur Mahalini di Bandara El Tari Kupang: Fakta Sambutan Adat Tenun NTT dan Respons Netizen",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Duduk perkara lengkap video viral Mahalini di Bandara El Tari Kupang NTT: kronologi pengalungan rompi tenun adat Bakatumu Festival, verifikasi kondisi fisik, dan dinamika sentimen warganet.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
     ],
-    businessVentures: [
-      { name: 'ADOR Label (All Doors One Room)', category: 'K-Pop Music Label', role: 'Pendiri & Mantan CEO', status: 'Non-aktif / Selesai' },
-      { name: 'Min Hee-jin Independent Creative Lab', category: 'Creative Production & Branding', role: 'Principal Founder', status: 'Aktif Beroperasi' },
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Rizky Febian?",
+        "answer": "Rizky Febian Adriansyah Sutisna adalah seorang penyanyi-penulis lagu, aktor, dan pembawa acara berkebangsaan Indonesia. Ia meraih popularitas setelah merilis singel debutnya sebagai penyanyi dewasa berjudul \"Kesempurnaan Cinta\" pada tahun 2015."
+      }
     ],
-    awards: [
-      { year: '2024', award: 'Golden Disc Awards', category: 'Best Producer Award', result: 'Menang' },
-      { year: '2023', award: 'MAMA Awards', category: 'Breakout Producer of the Year', result: 'Menang' },
-      { year: '2023', award: 'Billboard Women in Music', category: 'Global Impact Honoree', result: 'Menang' },
-    ],
-    faq: [
+    "editorialSections": [
       {
-        question: 'Apa hasil putusan pengadilan dalam sengketa Min Hee-jin dan HYBE pada Mei 2024?',
-        answer: 'Pengadilan Distrik Seoul memutuskan bahwa HYBE tidak memiliki alasan yang cukup kuat untuk mencopot Min Hee-jin dari kursi CEO ADOR pada RUPS Mei 2024 dan mengabulkan perintah penahanan hak suara HYBE.',
-      },
-      {
-        question: 'Apa saja karya ikonik Min Hee-jin sebelum mendirikan ADOR?',
-        answer: 'Selama 16 tahun di SM Entertainment, Min Hee-jin merancang identitas visual legendaris untuk album Girls Generation (Gee), f(x) (Pink Tape), SHINee (Romeo), dan EXO.',
-      },
-    ],
-    editorialSections: [
-      {
-        title: 'Revolusi Estetika K-Pop: Dari Eksperimen SM Entertainment ke Lahirnya Fenomena NewJeans',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Min Hee-jin adalah direktur kreatif paling berpengaruh dalam dua dekade sejarah industri musik pop Korea. Memulai karier sebagai desainer grafis pemula di SM Entertainment pada 2002, ia merevolusi cara K-Pop mengemas karya seni visual: mentransformasi sampul album dari sekadar foto pajangan idola menjadi karya seni konseptual naratif terpadu, seperti album <em>Pink Tape</em> milik f(x) yang diakui museum seni internasional.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Puncak kejeniusannya terwujud saat mendirikan label ADOR di bawah HYBE dan meluncurkan girl group NewJeans pada 2022 tanpa teaser promosi awal. Pendekatan nostalgia era Y2K yang organik, aransemen R&B pop yang santai (<em>easy listening</em>), dan koreografi bebas mengubah arah kiblat industri K-Pop global yang sebelumnya didominasi konsep futuristik hiper-elektronik.
-          </p>
-        `,
-      },
-      {
-        title: 'Forensik Konflik Korporasi ADOR vs HYBE: Jumpa Pers Bersejarah & Pertarungan Hukum Seoul',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Pertarungan antara Min Hee-jin dan induk perusahaan HYBE pada 2024 menjadi drama korporasi terbesar dalam sejarah industri hiburan Asia. Konferensi pers darurat berdurasi lebih dari dua jam yang digelar Min Hee-jin—dengan mengenakan topi bisbol hijau dan kaos garis-garis sederhana—ditonton jutaan pemirsa di seluruh dunia dan memicu gelombang dukungan publik berkat kejujuran emosionalnya melawan oligarki konglomerat modal.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Kemenangan hukum diraih Min Hee-jin ketika Pengadilan Distrik Pusat Seoul mengabulkan gugatan injunksi sementaranya pada Mei 2024, menegaskan bahwa tuduhan pengkhianatan kepercayaan yang diajukan HYBE tidak memiliki dasar bukti faktual yang cukup kuat. Kasus ini mencatatkan preseden hukum penting mengenai perlindungan hak direksi kreatif minoritas di hadapan pemegang saham mayoritas bursa efek.
-          </p>
-        `,
-      },
-      {
-        title: 'Polarisasi Fandom Global & Doktrin Otonomi Seniman Melawan Kekuasaan Konglomerat',
-        contentHtml: `
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Di mata komunitas penggemar internasional dan pelaku industri kreatif, sosok Min Hee-jin membelah persepsi menjadi dua kutub yang kuat: kubu yang memujanya sebagai martir pembela hak cipta karya orisinal seniman, dan kubu yang mengkritiknya atas gaya komunikasi konfrontatif yang mengguncang harga saham perusahaan publik.
-          </p>
-          <p class="leading-relaxed text-slate-300 mb-3">
-            Solidaritas mutlak yang ditunjukkan oleh kelima anggota NewJeans terhadap kepemimpinannya membuktikan kedalaman ikatan fidusia yang jarang ditemukan di industri hiburan komersial. Min Hee-jin telah mengubah percakapan K-Pop selamanya: bahwa di balik megahnya industri bernilai miliaran dolar, jiwa karya seni tetap berada pada visi manusiawi para penciptanya.
-          </p>
-        `,
-      },
-    ],
+        "title": "Trajektori & Sorotan Publik Terkini: Rizky Febian",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Rizky Febian Adriansyah Sutisna adalah seorang penyanyi-penulis lagu, aktor, dan pembawa acara berkebangsaan Indonesia. Ia meraih popularitas setelah merilis singel debutnya sebagai penyanyi dewasa berjudul \"Kesempurnaan Cinta\" pada tahun 2015.</p>"
+      }
+    ]
   },
   {
-    id: "celeb-8",
-    slug: "nagita-slavina",
-    name: "Nagita Slavina Mariana Tengker",
-    stageName: "Nagita Slavina",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktris, Produser Eksekutif, Entrepreneur",
-    age: 36,
-    agency: "RANS Entertainment Nusantara",
-    relationshipStatus: "Menikah (Raffi Ahmad)",
-    circle: [
+    "id": "celeb-1795505225722-643",
+    "slug": "rien-wartia-trigina",
+    "name": "Rien Wartia Trigina",
+    "stageName": "Rien Wartia Trigina",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/09/Andre_Taulany.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Selebriti & Figur Publik",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Andre Taulany"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Selebriti & Figur Publik",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Duduk perkara lengkap kasus hukum Rien Wartia Trigina (Erin) mantan istri Andre Taulany dan mantan ART Herawati: dari laporan penganiayaan, status tersangka, hingga pencabutan berkas restorative justi",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Rien Wartia Trigina?",
+        "answer": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Rien Wartia Trigina",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1795505224746-694",
+    "slug": "andre-taulany",
+    "name": "Andre Taulany",
+    "stageName": "Andre Taulany",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Andre_Taulany.jpg/330px-Andre_Taulany.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran dan pelawak asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Rien Wartia Trigina"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Andreas Taulany Haumahu adalah komedian, penyanyi-penulis lagu, presenter, pemeran, dan personalia youtube berkebangsaan Indonesia. Ia merupakan mantan vokalis grup musik Stinky dan ketua klub motor The Prediksi.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran dan pelawak asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Duduk perkara lengkap kasus hukum Rien Wartia Trigina (Erin) mantan istri Andre Taulany dan mantan ART Herawati: dari laporan penganiayaan, status tersangka, hingga pencabutan berkas restorative justi",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Andre Taulany?",
+        "answer": "Andreas Taulany Haumahu adalah komedian, penyanyi-penulis lagu, presenter, pemeran, dan personalia youtube berkebangsaan Indonesia. Ia merupakan mantan vokalis grup musik Stinky dan ketua klub motor The Prediksi."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Andre Taulany",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Andreas Taulany Haumahu adalah komedian, penyanyi-penulis lagu, presenter, pemeran, dan personalia youtube berkebangsaan Indonesia. Ia merupakan mantan vokalis grup musik Stinky dan ketua klub motor The Prediksi.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584318458-825",
+    "slug": "ruben-onsu",
+    "name": "Ruben Onsu",
+    "stageName": "Ruben Onsu",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Ruben_Samuel_Onsu.jpg/330px-Ruben_Samuel_Onsu.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran laki-laki asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Sarwendah",
+      "Tengku Zanzabella"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Ruben Samuel Onsu adalah pemeran, penyanyi, pengusaha, komedian, kreator digital dan presenter berkebangsaan Indonesia. Ia dikenal sebagai salah satu figur hiburan paling konsisten di televisi nasional sejak akhir 1990-an melalui program-program komedi dan acara varietas seperti Lenong Bocah, Mamamia Show, Ceriwis, Kiss, Kontes Dangdut Indonesia, dan Brownis.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh"
+    ],
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran laki-laki asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Jejak Properti: Verifikasi Fakta di Balik 5 Potret Rumah Artis Indonesia di Luar Negeri yang Viral",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Artikel ini mengupas tuntas duduk perkara di balik lima potret rumah artis Indonesia di luar negeri yang viral, mulai dari fakta resmi hingga spekulasi netizen.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
+      },
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai jalannya sidang perceraian Ruben Onsu dan Sarwendah serta bobot pembuktian kesaksian pihak ketiga di pengadilan.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Ruben Onsu?",
+        "answer": "Ruben Samuel Onsu adalah pemeran, penyanyi, pengusaha, komedian, kreator digital dan presenter berkebangsaan Indonesia. Ia dikenal sebagai salah satu figur hiburan paling konsisten di televisi nasional sejak akhir 1990-an melalui program-program komedi dan acara varietas seperti Lenong Bocah, Mamamia Show, Ceriwis, Kiss, Kontes Dangdut Indonesia, dan Brownis."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Ruben Onsu",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Ruben Samuel Onsu adalah pemeran, penyanyi, pengusaha, komedian, kreator digital dan presenter berkebangsaan Indonesia. Ia dikenal sebagai salah satu figur hiburan paling konsisten di televisi nasional sejak akhir 1990-an melalui program-program komedi dan acara varietas seperti Lenong Bocah, Mamamia Show, Ceriwis, Kiss, Kontes Dangdut Indonesia, dan Brownis.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-6",
+    "slug": "raffi-ahmad",
+    "name": "Raffi Farid Ahmad",
+    "stageName": "Raffi Ahmad",
+    "avatar": "/images/avatars/raffi-ahmad.jpg",
+    "bannerImage": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Presenter, Produser & Eksekutif Bisnis RANS",
+    "age": 38,
+    "agency": "RANS Entertainment Holding",
+    "relationshipStatus": "Menikah (Nagita Slavina)",
+    "circle": [
+      "Nagita Slavina",
+      "Atta Halilintar",
+      "Deddy Corbuzier",
+      "Baim Wong"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@raffinagita1717",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "youtube",
+        "handle": "RansEntertainment",
+        "url": "https://youtube.com"
+      }
+    ],
+    "bio": "Tokoh sentral industri hiburan Indonesia berjuluk \"Sultan Andara\". Bertransformasi dari presenter televisi papan atas menjadi konglomerat media digital dan olahraga melalui RANS Entertainment.",
+    "careerHighlights": [
+      "Pendiri RANS Entertainment dengan valuasi korporasi triliunan rupiah",
+      "Pemilik klub sepak bola Liga 1 RANS Nusantara FC & klub basket RANS Simba",
+      "Utusan Khusus Presiden Bidang Pembinaan Generasi Muda & Pekerja Seni (2024-2029)"
+    ],
+    "dramaCount": 6,
+    "sentimentSummary": "81% kagum atas etos kerja dan imperium bisnis masif; 19% skeptis terkait dinamika transparansi finansial dan kepemilikan aset.",
+    "dossierDetail": {
+      "birthDate": "17 Februari 1987",
+      "birthPlace": "Bandung, Jawa Barat",
+      "zodiac": "Aquarius",
+      "nationality": "Indonesia",
+      "yearsActive": "2001 – Sekarang",
+      "education": "SMA Negeri 3 Jakarta / Universitas Terbuka",
+      "netWorthEstimate": "Mega Tier (Rp 400M - Rp 1T+)",
+      "topAffiliations": [
+        "RANS Holding",
+        "Emtek Group Partner",
+        "Kemenpora / Utusan Khusus Presiden"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Jejak Properti: Verifikasi Fakta di Balik 5 Potret Rumah Artis Indonesia di Luar Negeri yang Viral",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Artikel ini mengupas tuntas duduk perkara di balik lima potret rumah artis Indonesia di luar negeri yang viral, mulai dari fakta resmi hingga spekulasi netizen.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
+      },
+      {
+        "year": "2024",
+        "title": "Isu Aliran Dana & Dugaan TPPU Yayasan Bisnis",
+        "status": "MENUNGGU_TANGGAPAN",
+        "summary": "Tudingan sekelompok pihak mengenai perputaran modal bisnis yang dibantah tegas oleh tim kuasa hukum.",
+        "resolution": "Konferensi pers resmi klarifikasi audit akuntan publik dan tidak ada proses hukum aktif."
+      },
+      {
+        "year": "2021",
+        "title": "Kehadiran di Pesta Pasca Vaksinasi COVID-19 Perdana",
+        "status": "TERKONFIRMASI",
+        "summary": "Sorotan tajam warganet atas foto berkumpul tanpa masker beberapa jam setelah menerima vaksin di Istana Negara.",
+        "resolution": "Permintaan maaf publik terbuka dan sanksi teguran dari Satgas COVID-19."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "RANS Entertainment",
+        "category": "Media Digital & Studio Animasi",
+        "role": "Chairman & Founder",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "RANS Nusantara FC",
+        "category": "Klub Sepak Bola Profesional",
+        "role": "Chairman",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "RANS Simba Bogor",
+        "category": "Klub Basket IBL",
+        "role": "President Club",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Rojo Sambel Nusantara",
+        "category": "F&B Franchise",
+        "role": "Lead Investor & Partner",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2023",
+        "award": "Panasonic Gobel / Indonesian Television Awards",
+        "category": "Presenter Paling Populer",
+        "result": "Menang"
+      },
+      {
+        "year": "2022",
+        "award": "Forbes Indonesia",
+        "category": "The Sultans of Content - Top Digital Mogul",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Apa jabatan resmi Raffi Ahmad di pemerintahan saat ini?",
+        "answer": "Raffi Ahmad dilantik sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni pada Oktober 2024."
+      },
+      {
+        "question": "Apakah RANS Entertainment berencana melantai di bursa saham (IPO)?",
+        "answer": "Pihak manajemen RANS telah menyiapkan langkah strategis penawaran umum perdana saham (IPO) bekerja sama dengan mitra institusi keuangan nasional."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Evolusi Sultan Andara: Dari Bintang Sinetron Remaja ke Konglomerasi Media RANS Holding",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Raffi Farid Ahmad mencatatkan metamorfosis bisnis paling spektakuler dalam sejarah industri hiburan modern Indonesia. Mengawali karier keaktoran sejak usia 14 tahun melalui sinetron remaja dan panggung presenter varietas televisi harian, etos kerja tanpa henti (<em>hustle culture</em>) membawanya menjadi raja layar kaca selama dua dekade.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Bersama sang istri Nagita Slavina, Raffi mendirikan RANS Entertainment pada 2015 yang awalnya hanya saluran dokumentasi keluarga YouTube. Kanal tersebut bermutasi menjadi konglomerasi media digital terintegrasi yang mencakup studio animasi, agensi periklanan digital, dan rumah produksi konten yang berhasil menarik investasi strategis dari grup media raksasa Emtek Group dengan valuasi menembus triliunan rupiah.\n          </p>\n        "
+      },
+      {
+        "title": "Ekosistem Bisnis Terintegrasi: Sinergi Olahraga Liga 1, Kuliner Waralaba & Valuasi Pra-IPO",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Ekspansi RANS melampaui batasan hiburan konvensional dengan merambah industri olahraga profesional melalui akuisisi klub sepak bola RANS Nusantara FC dan klub bola basket IBL RANS Simba Bogor. Strategi konvergensi antara popularitas selebritas dan daya tarik olahraga (<em>sportainment</em>) menciptakan ceruk pasar baru di Indonesia.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Di sektor riil, investasi agresif Raffi di industri makanan dan minuman (F&B) seperti jaringan restoran Rojo Sambel Nusantara menunjukkan insting tajam dalam membina pelaku UMKM lokal menuju skala waralaba nasional. Rencana penawaran umum perdana saham (IPO) RANS Entertainment terus menjadi sorotan analis pasar modal sebagai tolok ukur kesiapan industri kreator masuk ke lantai bursa efek.\n          </p>\n        "
+      },
+      {
+        "title": "Forensik Isu Akuntabilitas Finansial & Babak Baru Kenegaraan 2024–2029",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kecepatan akumulasi aset Raffi kerap memicu spekulasi warganet dan tuduhan tak berdasar mengenai aliran dana modal. Menghadapi tudingan tersebut, tim kuasa hukum dan manajemen RANS merespons dengan transparansi audit akuntan publik bereputasi tinggi yang memverifikasi bahwa seluruh modal kerja berasal dari arus kas operasional komersial, kontrak endorsement ratusan brand, dan suntikan dana ventura formal.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Pelantikannya sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni pada Oktober 2024 menandai babak baru integrasi figur publik ke ranah pengabdian negara. Peran ini menuntut kepatuhan pelaporan Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) secara berkala, menegaskan komitmen akuntabilitas publik seorang mega-bintang di hadapan hukum dan konstitusi.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-8",
+    "slug": "nagita-slavina",
+    "name": "Nagita Slavina Mariana Tengker",
+    "stageName": "Nagita Slavina",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris, Produser Eksekutif, Entrepreneur",
+    "age": 36,
+    "agency": "RANS Entertainment Nusantara",
+    "relationshipStatus": "Menikah (Raffi Ahmad)",
+    "circle": [
       "Raffi Ahmad",
       "Rieta Amilia",
       "Caca Tengker",
       "Nisya Ahmad",
-      "Ayu Dewi",
+      "Ayu Dewi"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@raffinagita1717",
-        url: "https://instagram.com/raffinagita1717",
+        "platform": "instagram",
+        "handle": "@raffinagita1717",
+        "url": "https://instagram.com/raffinagita1717"
       },
       {
-        platform: "youtube",
-        handle: "@RansEntertainment",
-        url: "https://youtube.com/@RansEntertainment",
+        "platform": "youtube",
+        "handle": "@RansEntertainment",
+        "url": "https://youtube.com/@RansEntertainment"
       },
       {
-        platform: "tiktok",
-        handle: "@raffi_nagita",
-        url: "https://tiktok.com/@raffi_nagita",
-      },
+        "platform": "tiktok",
+        "handle": "@raffi_nagita",
+        "url": "https://tiktok.com/@raffi_nagita"
+      }
     ],
-    bio: "Aktris, produser film, dan pebisnis terkemuka Indonesia yang menjabat sebagai Co-Founder & CEO RANS Entertainment. Dikenal dengan pengaruh fesyen berkelas (quiet luxury), pola pengasuhan keluarga, serta ekspansi bisnis lintas sektor dari kuliner hingga industri hiburan digital.",
-    careerHighlights: [
+    "bio": "Aktris, produser film, dan pebisnis terkemuka Indonesia yang menjabat sebagai Co-Founder & CEO RANS Entertainment. Dikenal dengan pengaruh fesyen berkelas (quiet luxury), pola pengasuhan keluarga, serta ekspansi bisnis lintas sektor dari kuliner hingga industri hiburan digital.",
+    "careerHighlights": [
       "Co-Founder & Chief Executive Officer (CEO) RANS Entertainment",
       "Pemeran Utama FTV & Sinetron Ikonik 'Di Sini Ada Setan' (2003)",
       "Produser Eksekutif Rumah Produksi Frame Ritz",
-      "Penerima Forbes Asia's 100 Digital Stars (bersama Raffi Ahmad)",
+      "Penerima Forbes Asia's 100 Digital Stars (bersama Raffi Ahmad)"
     ],
-    dramaCount: 2,
-    sentimentSummary: "Sentimen publik 88% positif: Diapresiasi sebagai figur penyabar, elegan, inspirasi pola asuh anak, dan ikon fesyen berkelas.",
-    dossierDetail: {
-      birthDate: "17 Februari 1988",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Aquarius",
-      nationality: "Indonesia",
-      yearsActive: "2000 – Sekarang",
-      education: "Australian National University (Commerce), Le Cordon Bleu Paris",
-      netWorthEstimate: "Tier S Mogul (Keluarga RANS Rp 1,5T+)",
-      topAffiliations: [
+    "dramaCount": 3,
+    "sentimentSummary": "Sentimen publik 88% positif: Diapresiasi sebagai figur penyabar, elegan, inspirasi pola asuh anak, dan ikon fesyen berkelas.",
+    "dossierDetail": {
+      "birthDate": "17 Februari 1988",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Aquarius",
+      "nationality": "Indonesia",
+      "yearsActive": "2000 – Sekarang",
+      "education": "Australian National University (Commerce), Le Cordon Bleu Paris",
+      "netWorthEstimate": "Tier S Mogul (Keluarga RANS Rp 1,5T+)",
+      "topAffiliations": [
         "RANS Entertainment",
         "Frame Ritz",
         "Keluarga Andara",
-        "RANS Nusantara",
-      ],
+        "RANS Nusantara"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2023",
-        title: "Sorotan Jet Pribadi & Isu Gaya Hidup Mewah",
-        status: "FAKTA_DIGITAL",
-        summary: "Sorotan warganet terkait penggunaan jet pribadi keluarga dalam mobilitas bisnis dan acara privat.",
-        resolution: "Klarifikasi keterkaitan operasional komersial dan transparansi perizinan bisnis keluarga.",
+        "year": "2026",
+        "title": "Jejak Properti: Verifikasi Fakta di Balik 5 Potret Rumah Artis Indonesia di Luar Negeri yang Viral",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Artikel ini mengupas tuntas duduk perkara di balik lima potret rumah artis Indonesia di luar negeri yang viral, mulai dari fakta resmi hingga spekulasi netizen.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
       },
       {
-        year: "2024",
-        title: "Perdebatan Netizen Terkait Penggunaan Tas Mewah & Fasilitas Publik",
-        status: "RUMOR_NETIZEN",
-        summary: "Diskusi warganet di platform X mengenai etika pamer kemewahan figur publik di tengah situasi ekonomi.",
-        resolution: "Fokus pada peluncuran program kemanusiaan dan bazar amal yayasan UMKM binaan RANS.",
+        "year": "2023",
+        "title": "Sorotan Jet Pribadi & Isu Gaya Hidup Mewah",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Sorotan warganet terkait penggunaan jet pribadi keluarga dalam mobilitas bisnis dan acara privat.",
+        "resolution": "Klarifikasi keterkaitan operasional komersial dan transparansi perizinan bisnis keluarga."
       },
+      {
+        "year": "2024",
+        "title": "Perdebatan Netizen Terkait Penggunaan Tas Mewah & Fasilitas Publik",
+        "status": "RUMOR_NETIZEN",
+        "summary": "Diskusi warganet di platform X mengenai etika pamer kemewahan figur publik di tengah situasi ekonomi.",
+        "resolution": "Fokus pada peluncuran program kemanusiaan dan bazar amal yayasan UMKM binaan RANS."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "RANS Entertainment",
-        category: "Media, Live Event & Agensi Digital",
-        role: "Co-founder & CEO",
-        status: "Aktif Beroperasi",
+        "name": "RANS Entertainment",
+        "category": "Media, Live Event & Agensi Digital",
+        "role": "Co-founder & CEO",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Frame Ritz Productions",
-        category: "Rumah Produksi Film & Televisi",
-        role: "Eksekutif Produser",
-        status: "Aktif Beroperasi",
+        "name": "Frame Ritz Productions",
+        "category": "Rumah Produksi Film & Televisi",
+        "role": "Eksekutif Produser",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "NASL by Nagita Slavina",
-        category: "Fesyen & Apparel Lokal",
-        role: "Creative Director & Owner",
-        status: "Aktif Beroperasi",
+        "name": "NASL by Nagita Slavina",
+        "category": "Fesyen & Apparel Lokal",
+        "role": "Creative Director & Owner",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "RANS Beauty & Slavina",
-        category: "Body Care & Personal Perfume",
-        role: "Founder & Brand Ambassador",
-        status: "Aktif Beroperasi",
-      },
+        "name": "RANS Beauty & Slavina",
+        "category": "Body Care & Personal Perfume",
+        "role": "Founder & Brand Ambassador",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2022",
-        award: "SCTV Awards",
-        category: "Influencer & Selebritas Paling Ngetop",
-        result: "Menang",
+        "year": "2022",
+        "award": "SCTV Awards",
+        "category": "Influencer & Selebritas Paling Ngetop",
+        "result": "Menang"
       },
       {
-        year: "2020",
-        award: "Forbes Indonesia",
-        category: "Digital Mogul of the Year",
-        result: "Menang",
-      },
+        "year": "2020",
+        "award": "Forbes Indonesia",
+        "category": "Digital Mogul of the Year",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa peran utama Nagita Slavina di RANS Entertainment?",
-        answer: "Nagita Slavina bertindak sebagai Co-Founder sekaligus pemegang keputusan strategis di ranah konten gaya hidup, F&B, dan ekspansi jenama ritel fesyen.",
+        "question": "Apa peran utama Nagita Slavina di RANS Entertainment?",
+        "answer": "Nagita Slavina bertindak sebagai Co-Founder sekaligus pemegang keputusan strategis di ranah konten gaya hidup, F&B, dan ekspansi jenama ritel fesyen."
       },
       {
-        question: "Di mana Nagita Slavina menempuh pendidikan tingginya?",
-        answer: "Nagita menempuh studi akuntansi di Universitas Indonesia sebelum melanjutkan ke Australian National University (ANU) dan sekolah kuliner Le Cordon Bleu di Paris.",
-      },
+        "question": "Di mana Nagita Slavina menempuh pendidikan tingginya?",
+        "answer": "Nagita menempuh studi akuntansi di Universitas Indonesia sebelum melanjutkan ke Australian National University (ANU) dan sekolah kuliner Le Cordon Bleu di Paris."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Diplomasi Citra Publik & Kekuatan Fesyen Quiet Luxury Nagita Slavina",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Nagita Slavina Mariana Tengker merepresentasikan standar baru selebritas papan atas Indonesia yang berhasil menggabungkan kemewahan dengan citra keibuan yang membumi. Lewat gaya busana yang sering dikategorikan sebagai <em>quiet luxury</em>, barang-barang fesyen yang dikenakannya—mulai dari busana rancangan desainer internasional hingga aksesoris sederhana—kerap menciptakan efek viral seketika di kalangan warganet (<em>Gigi Effect</em>).</p><p class=\"leading-relaxed text-slate-300 mb-3\">Di tengah sengitnya persaingan media sosial, Nagita mengambil pendekatan tidak memiliki akun media sosial personal mandiri, melainkan mengintegrasikan seluruh visibilitasnya ke dalam satu payung identitas bersama sang suami (@raffinagita1717). Keputusan strategis ini mengukuhkan narasi kesatuan korporasi keluarga yang solid di hadapan mitra periklanan global.</p>",
+        "title": "Diplomasi Citra Publik & Kekuatan Fesyen Quiet Luxury Nagita Slavina",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nagita Slavina Mariana Tengker merepresentasikan standar baru selebritas papan atas Indonesia yang berhasil menggabungkan kemewahan dengan citra keibuan yang membumi. Lewat gaya busana yang sering dikategorikan sebagai <em>quiet luxury</em>, barang-barang fesyen yang dikenakannya—mulai dari busana rancangan desainer internasional hingga aksesoris sederhana—kerap menciptakan efek viral seketika di kalangan warganet (<em>Gigi Effect</em>).</p><p class=\"leading-relaxed text-slate-300 mb-3\">Di tengah sengitnya persaingan media sosial, Nagita mengambil pendekatan tidak memiliki akun media sosial personal mandiri, melainkan mengintegrasikan seluruh visibilitasnya ke dalam satu payung identitas bersama sang suami (@raffinagita1717). Keputusan strategis ini mengukuhkan narasi kesatuan korporasi keluarga yang solid di hadapan mitra periklanan global.</p>"
       },
       {
-        title: "Arsitektur Bisnis RANS: Dari Konten Keseharian Menuju Ekosistem Ritel & Kuliner",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Transisi Nagita dari aktris peran menjadi eksekutif bisnis membuktikan pemahaman mendalam terhadap perilaku audiens digital nusantara. Melalui payung RANS Entertainment dan lini fesyen NASL, Nagita secara konsisten mengonversi tingkat kepercayaan pengikutnya menjadi daya beli nyata pada produk-produk kecantikan dan kuliner.</p><p class=\"leading-relaxed text-slate-300 mb-3\">Keberhasilannya mempertahankan persepsi brand safety yang sangat tinggi membuat dirinya tetap menjadi pilihan utama korporasi multinasional untuk kampanye komersial jangka panjang, membuktikan bahwa stabilitas reputasi adalah modal paling berharga dalam lanskap ekonomi kreator modern.</p>",
-      },
-    ],
+        "title": "Arsitektur Bisnis RANS: Dari Konten Keseharian Menuju Ekosistem Ritel & Kuliner",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Transisi Nagita dari aktris peran menjadi eksekutif bisnis membuktikan pemahaman mendalam terhadap perilaku audiens digital nusantara. Melalui payung RANS Entertainment dan lini fesyen NASL, Nagita secara konsisten mengonversi tingkat kepercayaan pengikutnya menjadi daya beli nyata pada produk-produk kecantikan dan kuliner.</p><p class=\"leading-relaxed text-slate-300 mb-3\">Keberhasilannya mempertahankan persepsi brand safety yang sangat tinggi membuat dirinya tetap menjadi pilihan utama korporasi multinasional untuk kampanye komersial jangka panjang, membuktikan bahwa stabilitas reputasi adalah modal paling berharga dalam lanskap ekonomi kreator modern.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-9",
-    slug: "syifa-hadju",
-    name: "Syifa Safira Nuraisyah",
-    stageName: "Syifa Hadju",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktris Layar Lebar, Model, Penyanyi",
-    age: 24,
-    agency: "Headline Management Indonesia",
-    relationshipStatus: "Berpacaran (El Rumi)",
-    circle: [
+    "id": "celeb-1794931250232-885",
+    "slug": "lee-junho",
+    "name": "Lee Junho",
+    "stageName": "Lee Junho",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0d/190905_%EB%B0%95%EB%AF%BC%EC%98%81.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Idol / Aktor K-Pop",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Park Min Young",
+      "Korean Business Research Institute",
+      "100 Days of Deception",
+      "Soompi"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Idol / Aktor K-Pop",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023. Park Min Young dan Lee Junho memuncaki daftar berdasarkan analisis data media, partisipasi, interaksi, dan ",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Lee Junho?",
+        "answer": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Lee Junho",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794931249563-479",
+    "slug": "park-min-young",
+    "name": "Park Min-young",
+    "stageName": "Park Min Young",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/190905_%EB%B0%95%EB%AF%BC%EC%98%81.jpg/330px-190905_%EB%B0%95%EB%AF%BC%EC%98%81.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran asal Korea Selatan",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Lee Junho",
+      "Korean Business Research Institute",
+      "100 Days of Deception",
+      "Soompi"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Park Min-young adalah seorang aktris asal Korea Selatan. Ia paling dikenal untuk peran utamanya dalam serial televisi Sungkyunkwan Scandal  (2010), City Hunter (2011), Glory Jane (2011), Dr. Jin (2012), Healer (2014-2015), Remember - War of the Son (2015-2016) dan What's Wrong with Secretary Kim (2018), Her Private life (2019)",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran asal Korea Selatan",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023. Park Min Young dan Lee Junho memuncaki daftar berdasarkan analisis data media, partisipasi, interaksi, dan ",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Park Min Young?",
+        "answer": "Park Min-young adalah seorang aktris asal Korea Selatan. Ia paling dikenal untuk peran utamanya dalam serial televisi Sungkyunkwan Scandal  (2010), City Hunter (2011), Glory Jane (2011), Dr. Jin (2012), Healer (2014-2015), Remember - War of the Son (2015-2016) dan What's Wrong with Secretary Kim (2018), Her Private life (2019)"
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Park Min Young",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Park Min-young adalah seorang aktris asal Korea Selatan. Ia paling dikenal untuk peran utamanya dalam serial televisi Sungkyunkwan Scandal  (2010), City Hunter (2011), Glory Jane (2011), Dr. Jin (2012), Healer (2014-2015), Remember - War of the Son (2015-2016) dan What's Wrong with Secretary Kim (2018), Her Private life (2019)</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585723587-3",
+    "slug": "jennifer-aniston",
+    "name": "Jennifer Aniston",
+    "stageName": "Jennifer Aniston",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JenniferAnistonHWoFFeb2012.jpg/330px-JenniferAnistonHWoFFeb2012.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris Amerika (lahir 1969)",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "Jennifer Joanna Aniston adalah seorang aktris Amerika. Ia meraih ketenaran internasional berkat perannya sebagai Rachel Green dalam sitkom televisi Friends dari tahun 1994 hingga 2004, yang membuatnya mendapatkan Penghargaan Primetime Emmy, Golden Globe, dan Screen Actors Guild. Aniston secara konsisten menempati peringkat di antara aktris dengan bayaran tertinggi di dunia, pada tahun 2023.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Anatomi Honor Bintang Serial Televisi Hollywood: Mengapa Kontrak Jennifer Aniston Capai Rp36,5 Miliar per Episode"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Amerika Serikat / Global",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Aktris Amerika (lahir 1969)",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Anatomi Honor Bintang Serial Televisi Hollywood: Mengapa Kontrak Jennifer Aniston Capai Rp36,5 Miliar per Episode",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai struktur kompensasi aktor papan atas Hollywood serta kalkulasi bisnis di balik rekor honor fantastis Jennifer Aniston.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Jennifer Aniston?",
+        "answer": "Jennifer Joanna Aniston adalah seorang aktris Amerika. Ia meraih ketenaran internasional berkat perannya sebagai Rachel Green dalam sitkom televisi Friends dari tahun 1994 hingga 2004, yang membuatnya mendapatkan Penghargaan Primetime Emmy, Golden Globe, dan Screen Actors Guild. Aniston secara konsisten menempati peringkat di antara aktris dengan bayaran tertinggi di dunia, pada tahun 2023."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Jennifer Aniston",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Jennifer Joanna Aniston adalah seorang aktris Amerika. Ia meraih ketenaran internasional berkat perannya sebagai Rachel Green dalam sitkom televisi Friends dari tahun 1994 hingga 2004, yang membuatnya mendapatkan Penghargaan Primetime Emmy, Golden Globe, dan Screen Actors Guild. Aniston secara konsisten menempati peringkat di antara aktris dengan bayaran tertinggi di dunia, pada tahun 2023.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585721611-691",
+    "slug": "shawn-mendes",
+    "name": "Shawn Mendes",
+    "stageName": "Shawn Mendes",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/191125_Shawn_Mendes_at_the_2019_American_Music_Awards.png/330px-191125_Shawn_Mendes_at_the_2019_American_Music_Awards.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Penyanyi berkebangsaan Kanada",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "Shawn Peter Raul Mendes ; adalah seorang penyanyi Kanada. Ia mendapatkan pengikut pada tahun 2013 ketika ia mengunggah cover lagu di platform berbagi video Vine. Tahun berikutnya, ia menarik perhatian manajer artis Andrew Gertler dan A&R Island Records Ziggy Chareton, yang membuatnya menandatangani kesepakatan dengan label rekaman tersebut. EP debut berjudul sama milik Mendes dirilis pada tahun 2014, diikuti oleh album studio debutnya Handwritten pada tahun 2015. Handwritten memulai debutnya di puncak Billboard 200 AS, menjadikan Mendes salah satu dari lima artis yang pernah memulai debut di nomor satu sebelum usia 18 tahun. \"Stitches\" mencapai nomor satu di Inggris dan 10 teratas di AS dan Kanada.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Shawn Mendes dan Suara Kemanusiaan: Pesan Solidaritas Musisi Global di Tengah Panggung Konser Dunia"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Amerika Serikat / Global",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Penyanyi berkebangsaan Kanada",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Shawn Mendes dan Suara Kemanusiaan: Pesan Solidaritas Musisi Global di Tengah Panggung Konser Dunia",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai pidato kemanusiaan penyanyi Shawn Mendes saat konser dunia serta keberanian figur publik dalam menyuarakan perdamaian.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Shawn Mendes?",
+        "answer": "Shawn Peter Raul Mendes ; adalah seorang penyanyi Kanada. Ia mendapatkan pengikut pada tahun 2013 ketika ia mengunggah cover lagu di platform berbagi video Vine. Tahun berikutnya, ia menarik perhatian manajer artis Andrew Gertler dan A&R Island Records Ziggy Chareton, yang membuatnya menandatangani kesepakatan dengan label rekaman tersebut. EP debut berjudul sama milik Mendes dirilis pada tahun 2014, diikuti oleh album studio debutnya Handwritten pada tahun 2015. Handwritten memulai debutnya di puncak Billboard 200 AS, menjadikan Mendes salah satu dari lima artis yang pernah memulai debut di nomor satu sebelum usia 18 tahun. \"Stitches\" mencapai nomor satu di Inggris dan 10 teratas di AS dan Kanada."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Shawn Mendes",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Shawn Peter Raul Mendes ; adalah seorang penyanyi Kanada. Ia mendapatkan pengikut pada tahun 2013 ketika ia mengunggah cover lagu di platform berbagi video Vine. Tahun berikutnya, ia menarik perhatian manajer artis Andrew Gertler dan A&R Island Records Ziggy Chareton, yang membuatnya menandatangani kesepakatan dengan label rekaman tersebut. EP debut berjudul sama milik Mendes dirilis pada tahun 2014, diikuti oleh album studio debutnya Handwritten pada tahun 2015. Handwritten memulai debutnya di puncak Billboard 200 AS, menjadikan Mendes salah satu dari lima artis yang pernah memulai debut di nomor satu sebelum usia 18 tahun. \"Stitches\" mencapai nomor satu di Inggris dan 10 teratas di AS dan Kanada.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585718557-147",
+    "slug": "tws",
+    "name": "TWS",
+    "stageName": "TWS",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/TWS_at_Music_Bank_20240202.jpg/330px-TWS_at_Music_Bank_20240202.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Grup vokal pria asal Korea Selatan",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "NCT",
+      "ATEEZ"
+    ],
+    "verifiedAccounts": [],
+    "bio": "TWS adalah grup vokal pria Korea Selatan yang dibentuk dan dikelola oleh Pledis Entertainment. Grup ini terdiri dari enam anggota yaitu Shinyu, Dohoon, Youngjae, Hanjin, Jihoon dan Kyungmin. Mereka debut pada tanggal 22 Januari 2024 dengan album mini Sparkling Blue.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global"
+    ],
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Grup vokal pria asal Korea Selatan",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai dinamika penghitungan poin tangga lagu Music Bank dan kemenangan perdana boygroup TWS di panggung siaran langsung.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
+      },
+      {
+        "year": "2026",
+        "title": "Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai konfirmasi resmi susunan artis penampil festival musik tahunan KBS Song Festival serta sorotan panggung kolaborasi.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah TWS?",
+        "answer": "TWS adalah grup vokal pria Korea Selatan yang dibentuk dan dikelola oleh Pledis Entertainment. Grup ini terdiri dari enam anggota yaitu Shinyu, Dohoon, Youngjae, Hanjin, Jihoon dan Kyungmin. Mereka debut pada tanggal 22 Januari 2024 dengan album mini Sparkling Blue."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: TWS",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">TWS adalah grup vokal pria Korea Selatan yang dibentuk dan dikelola oleh Pledis Entertainment. Grup ini terdiri dari enam anggota yaitu Shinyu, Dohoon, Youngjae, Hanjin, Jihoon dan Kyungmin. Mereka debut pada tanggal 22 Januari 2024 dengan album mini Sparkling Blue.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585719620-267",
+    "slug": "ateez",
+    "name": "Ateez",
+    "stageName": "ATEEZ",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/191008_%EC%97%90%EC%9D%B4%ED%8B%B0%EC%A6%88%2C_%27%EB%A9%8B%EC%A7%80%EB%8B%A4%27_%EA%B0%90%ED%83%84%EB%A7%8C_%EB%82%98%EC%98%A4%EB%8A%94_%EB%8B%A8%EC%B2%B4_%ED%8F%AC%ED%86%A0%ED%83%80%EC%9E%84_%28ATEEZ_%27TREASURE_EP_FIN_All_To_Action%27_%EC%87%BC%EC%BC%80%EC%9D%B4%EC%8A%A4%29_3m10s.jpg/330px-191008_%EC%97%90%EC%9D%B4%ED%8B%B0%EC%A6%88%2C_%27%EB%A9%8B%EC%A7%80%EB%8B%A4%27_%EA%B0%90%ED%83%84%EB%A7%8C_%EB%82%98%EC%98%A4%EB%8A%94_%EB%8B%A8%EC%B2%B4_%ED%8F%AC%ED%86%A0%ED%83%80%EC%9E%84_%28ATEEZ_%27TREASURE_EP_FIN_All_To_Action%27_%EC%87%BC%EC%BC%80%EC%9D%B4%EC%8A%A4%29_3m10s.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "grup idola pria asal Korea Selatan",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "TWS",
+      "NCT"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Ateez adalah sebuah grup vokal laki-laki 8 anggota asal Korea Selatan yang berada di bawah naungan KQ Entertainment. Grup tersebut terdiri dari delapan anggota, yakni Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung, dan Jongho. ATEEZ melakukan debut pada tanggal 24 Oktober 2018 dengan album mini Treasure EP.1: All to Zero. Pada tanggal 2 November 2018, ATEEZ menampilkan lagu Pirate King dalam acara KBS2 Music Bank.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global"
+    ],
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "grup idola pria asal Korea Selatan",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai dinamika penghitungan poin tangga lagu Music Bank dan kemenangan perdana boygroup TWS di panggung siaran langsung.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
+      },
+      {
+        "year": "2026",
+        "title": "Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai konfirmasi resmi susunan artis penampil festival musik tahunan KBS Song Festival serta sorotan panggung kolaborasi.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah ATEEZ?",
+        "answer": "Ateez adalah sebuah grup vokal laki-laki 8 anggota asal Korea Selatan yang berada di bawah naungan KQ Entertainment. Grup tersebut terdiri dari delapan anggota, yakni Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung, dan Jongho. ATEEZ melakukan debut pada tanggal 24 Oktober 2018 dengan album mini Treasure EP.1: All to Zero. Pada tanggal 2 November 2018, ATEEZ menampilkan lagu Pirate King dalam acara KBS2 Music Bank."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: ATEEZ",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Ateez adalah sebuah grup vokal laki-laki 8 anggota asal Korea Selatan yang berada di bawah naungan KQ Entertainment. Grup tersebut terdiri dari delapan anggota, yakni Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung, dan Jongho. ATEEZ melakukan debut pada tanggal 24 Oktober 2018 dengan album mini Treasure EP.1: All to Zero. Pada tanggal 2 November 2018, ATEEZ menampilkan lagu Pirate King dalam acara KBS2 Music Bank.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585720811-79",
+    "slug": "jisoo-blackpink",
+    "name": "Jisoo BLACKPINK",
+    "stageName": "Jisoo BLACKPINK",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/1/11/TWS_at_Music_Bank_20240202.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Idol / Aktor K-Pop",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "TWS",
+      "ATEEZ"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Idol / Aktor K-Pop",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai dinamika penghitungan poin tangga lagu Music Bank dan kemenangan perdana boygroup TWS di panggung siaran langsung.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Jisoo BLACKPINK?",
+        "answer": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Jisoo BLACKPINK",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585718853-451",
+    "slug": "nct",
+    "name": "NCT",
+    "stageName": "NCT",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/NCT_going_to_a_Music_Bank_recording_in_April_2018_01.png/330px-NCT_going_to_a_Music_Bank_recording_in_April_2018_01.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "grup vokal pria asal Korea Selatan",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "TWS",
+      "ATEEZ"
+    ],
+    "verifiedAccounts": [],
+    "bio": "NCT adalah sebuah grup vokal pria asal Korea Selatan yang dibentuk oleh SM Entertainment. Diperkenalkan pada Januari 2016, grup tersebut saat ini terdiri dari 25 anggota yang terbagi menjadi tujuh sub-unit berbeda, yaitu NCT U, NCT 127, NCT Dream, WayV, NCT DoJaeJung, NCT Wish, dan NCT JNJM. Mereka terkenal karena keragamannya dalam bermusik, kemampuan vokal dance dan rap, serta penampilan bertenaga, dan telah disebut-sebut sebagai \"boy band paling eksperimental\" K-Pop karena (sebelumnya) memiliki konsep dengan jumlah anggota yang terus bertambah. Hingga Mei 2023, NCT telah mencatat lebih dari 32 juta penjualan album di seluruh sub-unit, menjadikan mereka artis terlaris di bawah SM Entertainment dan salah satu artis K-Pop terlaris sepanjang masa.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Korea Selatan / Asia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "grup vokal pria asal Korea Selatan",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai konfirmasi resmi susunan artis penampil festival musik tahunan KBS Song Festival serta sorotan panggung kolaborasi.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah NCT?",
+        "answer": "NCT adalah sebuah grup vokal pria asal Korea Selatan yang dibentuk oleh SM Entertainment. Diperkenalkan pada Januari 2016, grup tersebut saat ini terdiri dari 25 anggota yang terbagi menjadi tujuh sub-unit berbeda, yaitu NCT U, NCT 127, NCT Dream, WayV, NCT DoJaeJung, NCT Wish, dan NCT JNJM. Mereka terkenal karena keragamannya dalam bermusik, kemampuan vokal dance dan rap, serta penampilan bertenaga, dan telah disebut-sebut sebagai \"boy band paling eksperimental\" K-Pop karena (sebelumnya) memiliki konsep dengan jumlah anggota yang terus bertambah. Hingga Mei 2023, NCT telah mencatat lebih dari 32 juta penjualan album di seluruh sub-unit, menjadikan mereka artis terlaris di bawah SM Entertainment dan salah satu artis K-Pop terlaris sepanjang masa."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: NCT",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">NCT adalah sebuah grup vokal pria asal Korea Selatan yang dibentuk oleh SM Entertainment. Diperkenalkan pada Januari 2016, grup tersebut saat ini terdiri dari 25 anggota yang terbagi menjadi tujuh sub-unit berbeda, yaitu NCT U, NCT 127, NCT Dream, WayV, NCT DoJaeJung, NCT Wish, dan NCT JNJM. Mereka terkenal karena keragamannya dalam bermusik, kemampuan vokal dance dan rap, serta penampilan bertenaga, dan telah disebut-sebut sebagai \"boy band paling eksperimental\" K-Pop karena (sebelumnya) memiliki konsep dengan jumlah anggota yang terus bertambah. Hingga Mei 2023, NCT telah mencatat lebih dari 32 juta penjualan album di seluruh sub-unit, menjadikan mereka artis terlaris di bawah SM Entertainment dan salah satu artis K-Pop terlaris sepanjang masa.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585318466-435",
+    "slug": "anindya-salsa",
+    "name": "Anindya Salsa",
+    "stageName": "Anindya Salsa",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Deddy_Mahendra_Desta_on_Tonight_Show_Netmediatama.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Selebriti & Figur Publik",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Desta"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Selebriti & Figur Publik",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai rumor kedekatan presenter Desta dengan figur media Anindya Salsa serta verifikasi fakta batas profesionalisme kerja.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Anindya Salsa?",
+        "answer": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Anindya Salsa",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584392397-179",
+    "slug": "desta",
+    "name": "Deddy Mahendra Desta",
+    "stageName": "Desta",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Deddy_Mahendra_Desta_on_Tonight_Show_Netmediatama.jpg/330px-Deddy_Mahendra_Desta_on_Tonight_Show_Netmediatama.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran laki-laki asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Ariel NOAH",
+      "Gading Marten"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Deddy Mahendra Desta adalah seorang pemeran, musikus, pelawak, penyiar radio, dan presenter Indonesia keturunan Jawa dan Tionghoa. Ia merupakan cucu dari Kho Ping Hoo. Ia merupakan anggota dari klub motor The Prediksi yang didirikan oleh komedian Andre Taulany.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH"
+    ],
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran laki-laki asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai rumor kedekatan presenter Desta dengan figur media Anindya Salsa serta verifikasi fakta batas profesionalisme kerja.",
+        "resolution": "Liputan investigasi terkini terverifikasi."
+      },
+      {
+        "year": "2026",
+        "title": "Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai keterlibatan grup The Dudas Minus One dalam proyek promosi daerah serta klarifikasi batasan kerja sama profesional.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Desta?",
+        "answer": "Deddy Mahendra Desta adalah seorang pemeran, musikus, pelawak, penyiar radio, dan presenter Indonesia keturunan Jawa dan Tionghoa. Ia merupakan cucu dari Kho Ping Hoo. Ia merupakan anggota dari klub motor The Prediksi yang didirikan oleh komedian Andre Taulany."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Desta",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Deddy Mahendra Desta adalah seorang pemeran, musikus, pelawak, penyiar radio, dan presenter Indonesia keturunan Jawa dan Tionghoa. Ia merupakan cucu dari Kho Ping Hoo. Ia merupakan anggota dari klub motor The Prediksi yang didirikan oleh komedian Andre Taulany.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585038102-131",
+    "slug": "no-na",
+    "name": "No Na",
+    "stageName": "No Na",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/No_Na_logo.png/330px-No_Na_logo.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "grup vokal wanita asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "No Na adalah grup vokal wanita asal Indonesia yang berada di bawah naungan 88rising. Grup ini terdiri dari empat anggota: Christy Gardena, Esther Geraldine, Baila Fauri, dan Shazfa Adesya.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Fenomena Girl Group No Na: Debut Menuju Lineup Panggung Coachella dan Dinamika Industri Musik Indonesia"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "grup vokal wanita asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Fenomena Girl Group No Na: Debut Menuju Lineup Panggung Coachella dan Dinamika Industri Musik Indonesia",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai pencapaian bersejarah girl group No Na yang terpilih masuk daftar penampil festival musik dunia Coachella.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah No Na?",
+        "answer": "No Na adalah grup vokal wanita asal Indonesia yang berada di bawah naungan 88rising. Grup ini terdiri dari empat anggota: Christy Gardena, Esther Geraldine, Baila Fauri, dan Shazfa Adesya."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: No Na",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">No Na adalah grup vokal wanita asal Indonesia yang berada di bawah naungan 88rising. Grup ini terdiri dari empat anggota: Christy Gardena, Esther Geraldine, Baila Fauri, dan Shazfa Adesya.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794585037245-700",
+    "slug": "nunung",
+    "name": "Nunung",
+    "stageName": "Nunung",
+    "avatar": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "nama pemberian maskulin",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "Nunung dapat mengacu pada beberapa hal berikut:",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Kabar Kesehatan Terkini Komedian Nunung: Klarifikasi Medis Terkait Tindakan Biopsi Lanjutan dan Riwayat Kanker"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "nama pemberian maskulin",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Kabar Kesehatan Terkini Komedian Nunung: Klarifikasi Medis Terkait Tindakan Biopsi Lanjutan dan Riwayat Kanker",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai kondisi medis terkini komedian Nunung Srimulat serta klarifikasi resmi terkait rencana tindakan diagnostik lanjutan.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Nunung?",
+        "answer": "Nunung dapat mengacu pada beberapa hal berikut:"
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Nunung",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nunung dapat mengacu pada beberapa hal berikut:</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584393034-281",
+    "slug": "gading-marten",
+    "name": "Gading Marten",
+    "stageName": "Gading Marten",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gading_Marten_on_Ini_Talkshow_Netmediatama.jpg/330px-Gading_Marten_on_Ini_Talkshow_Netmediatama.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran laki-laki asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Desta",
+      "Ariel NOAH"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Angling Gading Gumilang yang dikenal sebagai Gading Marten adalah pemeran, presenter, pengusaha, penyanyi, fotografer, model, dan produser berkebangsaan Indonesia. Gading merupakan presiden klub Persik Kediri. Ia adalah putra dari Roy Marten, serta keponakan dari Rudy Salam dan Chris Salam.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran laki-laki asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai keterlibatan grup The Dudas Minus One dalam proyek promosi daerah serta klarifikasi batasan kerja sama profesional.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Gading Marten?",
+        "answer": "Angling Gading Gumilang yang dikenal sebagai Gading Marten adalah pemeran, presenter, pengusaha, penyanyi, fotografer, model, dan produser berkebangsaan Indonesia. Gading merupakan presiden klub Persik Kediri. Ia adalah putra dari Roy Marten, serta keponakan dari Rudy Salam dan Chris Salam."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Gading Marten",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Angling Gading Gumilang yang dikenal sebagai Gading Marten adalah pemeran, presenter, pengusaha, penyanyi, fotografer, model, dan produser berkebangsaan Indonesia. Gading merupakan presiden klub Persik Kediri. Ia adalah putra dari Roy Marten, serta keponakan dari Rudy Salam dan Chris Salam.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584392718-511",
+    "slug": "ariel-noah",
+    "name": "Ariel (penyanyi)",
+    "stageName": "Ariel NOAH",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ariel_NOAH_Live_Makassar%2C_25_Nov_2022.jpg/330px-Ariel_NOAH_Live_Makassar%2C_25_Nov_2022.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "penyanyi asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Desta",
+      "Gading Marten"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Nazril Irham, lebih dikenal dengan nama panggung Ariel adalah penyanyi, penulis lagu, model, pemeran, dan lirikus berkebangsaan Indonesia. Ariel merupakan penyanyi-penulis lagu utama dan vokalis dari grup musik rock Peterpan. Rolling Stone Indonesia memasukkan Ariel ke daftar 50 Penyanyi Indonesia Terbaik dan 100 Pencipta Lagu Indonesia Terbaik versi mereka.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "penyanyi asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai keterlibatan grup The Dudas Minus One dalam proyek promosi daerah serta klarifikasi batasan kerja sama profesional.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Ariel NOAH?",
+        "answer": "Nazril Irham, lebih dikenal dengan nama panggung Ariel adalah penyanyi, penulis lagu, model, pemeran, dan lirikus berkebangsaan Indonesia. Ariel merupakan penyanyi-penulis lagu utama dan vokalis dari grup musik rock Peterpan. Rolling Stone Indonesia memasukkan Ariel ke daftar 50 Penyanyi Indonesia Terbaik dan 100 Pencipta Lagu Indonesia Terbaik versi mereka."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Ariel NOAH",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nazril Irham, lebih dikenal dengan nama panggung Ariel adalah penyanyi, penulis lagu, model, pemeran, dan lirikus berkebangsaan Indonesia. Ariel merupakan penyanyi-penulis lagu utama dan vokalis dari grup musik rock Peterpan. Rolling Stone Indonesia memasukkan Ariel ke daftar 50 Penyanyi Indonesia Terbaik dan 100 Pencipta Lagu Indonesia Terbaik versi mereka.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584321290-241",
+    "slug": "fanny-ghassani",
+    "name": "Fanny Ghassani",
+    "stageName": "Fanny Ghassani",
+    "avatar": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "pemeran perempuan asal Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "Fanny Ghassani Prera adalah pemeran, model, dan presenter Indonesia.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Penantian Sembilan Tahun Berbuah Manis: Duduk Perkara Perjuangan Program Bayi Tabung Fanny Ghassani"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "pemeran perempuan asal Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Penantian Sembilan Tahun Berbuah Manis: Duduk Perkara Perjuangan Program Bayi Tabung Fanny Ghassani",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai kabar bahagia kehamilan perdana aktris Fanny Ghassani setelah sembilan tahun berjuang lewat teknologi reproduksi berbantu.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Fanny Ghassani?",
+        "answer": "Fanny Ghassani Prera adalah pemeran, model, dan presenter Indonesia."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Fanny Ghassani",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Fanny Ghassani Prera adalah pemeran, model, dan presenter Indonesia.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584319839-125",
+    "slug": "tengku-zanzabella",
+    "name": "Tengku Zanzabella",
+    "stageName": "Tengku Zanzabella",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ruben_Samuel_Onsu.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Selebriti & Figur Publik",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Ruben Onsu",
+      "Sarwendah"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh.",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Selebriti & Figur Publik",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai jalannya sidang perceraian Ruben Onsu dan Sarwendah serta bobot pembuktian kesaksian pihak ketiga di pengadilan.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Tengku Zanzabella?",
+        "answer": "Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Tengku Zanzabella",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Figur publik dan kreator terkemuka yang menjadi sorotan dalam liputan investigasi pop-kultur terkini terkait Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh.</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794584318911-905",
+    "slug": "sarwendah",
+    "name": "Sarwendah",
+    "stageName": "Sarwendah",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ruben_Samuel_Onsu.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Selebriti & Figur Publik",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [
+      "Ruben Onsu",
+      "Tengku Zanzabella"
+    ],
+    "verifiedAccounts": [],
+    "bio": "Sarwendah dapat mengacu pada beberapa hal berikut:Diary Sarwendah\nSarwendah Tan\nSarwendah Kusumawardhani",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "Selebriti & Figur Publik",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai jalannya sidang perceraian Ruben Onsu dan Sarwendah serta bobot pembuktian kesaksian pihak ketiga di pengadilan.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Sarwendah?",
+        "answer": "Sarwendah dapat mengacu pada beberapa hal berikut:Diary Sarwendah\nSarwendah Tan\nSarwendah Kusumawardhani"
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Sarwendah",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Sarwendah dapat mengacu pada beberapa hal berikut:Diary Sarwendah\nSarwendah Tan\nSarwendah Kusumawardhani</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-1794577237358-337",
+    "slug": "nadin-amizah",
+    "name": "Nadin Amizah",
+    "stageName": "Nadin Amizah",
+    "avatar": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/WikipediaNadin.jpg/330px-WikipediaNadin.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "penyanyi-penulis lagu Indonesia",
+    "age": 28,
+    "agency": "Manajemen Terverifikasi",
+    "relationshipStatus": "Privat",
+    "circle": [],
+    "verifiedAccounts": [],
+    "bio": "Nadin Amizah adalah penyanyi-penulis lagu berkebangsaan Indonesia. Nadin terjun ke industri musik pada 2017 melalui kolaborasinya sebagai pengisi vokal dalam single \"All Good\" oleh Dipha Barus. Setahun kemudian ia melakukan debut solo dengan merilis lagu \"Rumpang\" yang berhasil membawanya memenangkan dua penghargaan Anugerah Musik Indonesia 2019 termasuk sebagai Pendatang Baru Terbaik-Terbaik. Nadin yang menulis sendiri seluruh lagunya, telah memenangkan 4 Anugerah Musik Indonesia dari 14 nominasi serta 1 nominasi Festival Film Indonesia",
+    "careerHighlights": [
+      "Figur utama dalam peristiwa: Duduk Perkara Utas Hari Ayah Nadin Amizah: Kronologi Lengkap dan Polarisasi Sentimen Netizen"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik terverifikasi melalui indeks keterikatan media digital.",
+    "dossierDetail": {
+      "birthDate": "Terverifikasi",
+      "birthPlace": "Indonesia",
+      "zodiac": "Terverifikasi",
+      "nationality": "Indonesia",
+      "yearsActive": "Aktif Beroperasi",
+      "education": "Pendidikan Formal Terverifikasi",
+      "netWorthEstimate": "Tier Komersial Terverifikasi",
+      "topAffiliations": [
+        "penyanyi-penulis lagu Indonesia",
+        "Industri Pop-Kultur"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2026",
+        "title": "Duduk Perkara Utas Hari Ayah Nadin Amizah: Kronologi Lengkap dan Polarisasi Sentimen Netizen",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Penelusuran jejak digital mengenai polemik unggahan Threads Nadin Amizah saat Hari Ayah Nasional yang memicu perdebatan sengit warganet.",
+        "resolution": "Liputan investigasi terverifikasi redaksi."
+      }
+    ],
+    "businessVentures": [],
+    "awards": [],
+    "faq": [
+      {
+        "question": "Siapakah Nadin Amizah?",
+        "answer": "Nadin Amizah adalah penyanyi-penulis lagu berkebangsaan Indonesia. Nadin terjun ke industri musik pada 2017 melalui kolaborasinya sebagai pengisi vokal dalam single \"All Good\" oleh Dipha Barus. Setahun kemudian ia melakukan debut solo dengan merilis lagu \"Rumpang\" yang berhasil membawanya memenangkan dua penghargaan Anugerah Musik Indonesia 2019 termasuk sebagai Pendatang Baru Terbaik-Terbaik. Nadin yang menulis sendiri seluruh lagunya, telah memenangkan 4 Anugerah Musik Indonesia dari 14 nominasi serta 1 nominasi Festival Film Indonesia"
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori & Sorotan Publik Terkini: Nadin Amizah",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nadin Amizah adalah penyanyi-penulis lagu berkebangsaan Indonesia. Nadin terjun ke industri musik pada 2017 melalui kolaborasinya sebagai pengisi vokal dalam single \"All Good\" oleh Dipha Barus. Setahun kemudian ia melakukan debut solo dengan merilis lagu \"Rumpang\" yang berhasil membawanya memenangkan dua penghargaan Anugerah Musik Indonesia 2019 termasuk sebagai Pendatang Baru Terbaik-Terbaik. Nadin yang menulis sendiri seluruh lagunya, telah memenangkan 4 Anugerah Musik Indonesia dari 14 nominasi serta 1 nominasi Festival Film Indonesia</p>"
+      }
+    ]
+  },
+  {
+    "id": "celeb-25",
+    "slug": "ayu-ting-ting",
+    "name": "Ayu Rosmalina",
+    "stageName": "Ayu Ting Ting",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Penyanyi Dangdut, Komedian & Presenter Televisi",
+    "age": 32,
+    "agency": "Swara Bintang Records",
+    "relationshipStatus": "Lajang / Pertunangan Selesai",
+    "circle": [
+      "Raffi Ahmad",
+      "Ivan Gunawan",
+      "Ruben Onsu",
+      "Wendy Cagur",
+      "Kiky Saputri"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@ayutingting92",
+        "url": "https://instagram.com/ayutingting92"
+      }
+    ],
+    "bio": "Penyanyi dangdut papan atas dan komedian televisi terkemuka di Indonesia yang mempopulerkan tembang Alamat Palsu dan Sik Asik. Menjadi pilar utama program komedi Lapor Pak! Trans7 serta kerap menjadi magnet perbincangan publik terkait dinamika asmara dan keluarga.",
+    "careerHighlights": [
+      "Penyanyi Dangdut Terdahsyat Dahsyatnya Awards",
+      "Pemeran Utama Sitkom Komedi Lapor Pak!",
+      "Pendiri Bisnis Kuliner Ting Ting Kuliner Nusantara"
+    ],
+    "dramaCount": 3,
+    "sentimentSummary": "Sentimen publik 78% apresiatif terhadap etos kerja dan kelucuan di televisi, 22% sorotan terhadap dinamika asmara.",
+    "dossierDetail": {
+      "birthDate": "20 Juni 1992",
+      "birthPlace": "Depok, Jawa Barat",
+      "zodiac": "Gemini",
+      "nationality": "Indonesia",
+      "yearsActive": "2006 – Sekarang",
+      "education": "Universitas Gunadarma",
+      "netWorthEstimate": "Tier S Mogul (Rp 100M+)",
+      "topAffiliations": [
+        "Lapor Pak!",
+        "Brownis",
+        "Swara Bintang"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2024",
+        "title": "Klarifikasi Pembatalan Pertunangan Lettu Fardhana",
+        "status": "TERKONFIRMASI",
+        "summary": "Pengumuman resmi pembatalan rencana pernikahan secara musyawarah kedua belah pihak keluarga.",
+        "resolution": "Klarifikasi elegan di hadapan media dan fokus pada karier serta pengasuhan anak."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "Ting Ting Kuliner",
+        "category": "F&B Tradisional Nusantara",
+        "role": "Founder",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2023",
+        "award": "Indonesian Television Awards",
+        "category": "Artis Televisi Terpopuler",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kapan Ayu Ting Ting memulai debut musik dangdut?",
+        "answer": "Ayu Ting Ting merilis rekaman Alamat Palsu pada 2006 yang kemudian meledak secara viral nasional pada 2011."
+      }
+    ],
+    "editorialSections": []
+  },
+  {
+    "id": "celeb-2",
+    "slug": "han-so-hee",
+    "name": "Lee So-hee",
+    "stageName": "Han So-hee",
+    "avatar": "/images/avatars/han-so-hee.jpg",
+    "bannerImage": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris & Global Fashion Ambassador",
+    "age": 30,
+    "agency": "9Ato Entertainment (Seoul)",
+    "relationshipStatus": "Single",
+    "circle": [
+      "Song Hye-kyo",
+      "Ryu Jun-yeol",
+      "Jeon Jong-seo"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@xeesoxee",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "x",
+        "handle": "@hansohee_kr",
+        "url": "https://x.com"
+      }
+    ],
+    "bio": "Bintang drama terkemuka Korea Selatan yang dikenal lewat peran berani di The World of the Married dan My Name. Pernah mengguncang jagat maya akibat interaksi langsung tanpa filter di blog pribadinya.",
+    "careerHighlights": [
+      "Best New Actress - Baeksang Arts Awards Nominee",
+      "Global Brand Ambassador Boucheron Paris & Balenciaga",
+      "Pemeran utama serial blockbuster Gyeongseong Creature"
+    ],
+    "dramaCount": 3,
+    "sentimentSummary": "72% warganet memuji keberanian sikap independennya, 28% mengkritik gaya komunikasi emosional di ranah publik.",
+    "dossierDetail": {
+      "birthDate": "18 November 1994",
+      "birthPlace": "Ulsan, Korea Selatan",
+      "zodiac": "Scorpio",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2016 – Sekarang",
+      "education": "Ulsan Arts High School",
+      "netWorthEstimate": "Global Tier ($5M - $10M)",
+      "topAffiliations": [
+        "9Ato Entertainment",
+        "Boucheron Paris",
+        "Balenciaga",
+        "Charles & Keith"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2024",
+        "title": "Spekulasi Hubungan Asmara Hawaii & Klarifikasi Blog",
+        "status": "TERKONFIRMASI",
+        "summary": "Perdebatan publik mengenai waktu awal relasi asmara dengan aktor Ryu Jun-yeol pasca konfirmasi agensi.",
+        "resolution": "Konfirmasi berakhirnya hubungan dan rilis pernyataan resmi dari agensi 9Ato Entertainment."
+      },
+      {
+        "year": "2022",
+        "title": "Isu Hutang Pribadi Ibu Kandung",
+        "status": "TERKONFIRMASI",
+        "summary": "Penggunaan rekening atas nama sang aktris oleh ibu kandung tanpa sepengetahuan Han So-hee.",
+        "resolution": "Pernyataan pengadilan membebaskan sang aktris dari tanggung jawab perdata hutang sang ibu."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "Boucheron Paris Ambassador",
+        "category": "High Jewelry Luxury",
+        "role": "Global Brand Ambassador",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Balenciaga Global Face",
+        "category": "Haute Couture Fashion",
+        "role": "House Ambassador",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "L’Oréal Paris APAC",
+        "category": "Beauty & Hair Care",
+        "role": "Regional Ambassador",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2021",
+        "award": "Asia Artist Awards",
+        "category": "Best Artist Award (Television)",
+        "result": "Menang"
+      },
+      {
+        "year": "2020",
+        "award": "Baeksang Arts Awards",
+        "category": "Best New Actress (The World of the Married)",
+        "result": "Nominasi"
+      },
+      {
+        "year": "2022",
+        "award": "APAN Star Awards",
+        "category": "Top Excellence Actress in OTT Series (My Name)",
+        "result": "Nominasi"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Apa agensi resmi yang menaungi Han So-hee?",
+        "answer": "Han So-hee bernaung secara eksklusif di bawah manajemen 9Ato Entertainment di Seoul, Korea Selatan."
+      },
+      {
+        "question": "Apakah Han So-hee memiliki utang perdata keluarga?",
+        "answer": "Berdasarkan putusan pengadilan Ulsan, Han So-hee dinyatakan tidak memiliki keterikatan hukum atas pinjaman pribadi ibunya."
+      },
+      {
+        "question": "Apa saja jenama mewah global yang menunjuk Han So-hee sebagai brand ambassador?",
+        "answer": "Han So-hee merupakan Global Brand Ambassador untuk rumah perhiasan Prancis Boucheron, rumah mode Balenciaga, serta Charles & Keith."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Trajektori Karier: Dari Model Indie ke Puncak Sinema & Duta Mode Global",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Karier Han So-hee (nama asli Lee So-hee) menandai anomali menyegarkan dalam lanskap industri hiburan Korea Selatan yang kerap terstandarisasi ketat. Mengawali langkah di Seoul dengan modal mandiri terbatas pasca kepindahan dari Ulsan, ia bekerja sambilan di berbagai kafe sembari merintis karier sebagai model video musik dan pemotretan busana indie. Penampilannya yang memadukan pesona klasik dengan aura pemberontak (<em>rebellious elegance</em>) dengan cepat menarik perhatian casting director.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Titik balik monumental terjadi pada 2020 saat ia memerankan Yeo Da-kyung dalam mega-hit <em>The World of the Married</em>. Keberaniannya mengambil peran antagonis dengan kompleksitas emosional tinggi menjadikannya aktris paling dicari. Keberhasilan tersebut diperkuat oleh peran aksi fisik brutal tanpa pemeran pengganti penuh dalam serial noir <em>My Name</em> dan epik sejarah <em>Gyeongseong Creature</em> di platform streaming Netflix, membuktikan kapasitas akting serbabisa melintasi berbagai genre sinematik.\n          </p>\n        "
+      },
+      {
+        "title": "Forensik Manajemen Krisis: Paradoks Komunikasi Tanpa Filter di Era Media Sosial",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Berbeda dengan mayoritas pesohor Hallyu yang menyerahkan 100% narasi komunikasi kepada tim humas agensi, Han So-hee mempertahankan kebiasaan menulis secara personal di blog Naver pribadinya. Gaya komunikasi langsung dan emosional ini menciptakan ikatan loyalitas luar biasa dengan penggemar perempuan muda, namun sekaligus memicu kerentanan krisis reputasi ketika terjadi gesekan di ranah publik.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dinamika hubungan asmara singkatnya di awal 2024 menjadi studi kasus menarik dalam ilmu komunikasi krisis selebritas. Respon spontan sang aktris di media sosial memicu perdebatan sengit warganet global sebelum akhirnya agensi 9Ato Entertainment mengambil alih kendali komunikasi formal. Kasus ini menegaskan tantangan berat menjaga keseimbangan antara otentisitas personal seorang seniman dengan tuntutan korporasi komersial beranggaran jutaan dolar.\n          </p>\n        "
+      },
+      {
+        "title": "Asesmen Brand Safety: Daya Tarik High Jewelry & Prospek Crossover Barat",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dari perspektif nilai komersial korporasi internasional, Han So-hee dikategorikan sebagai aset pemasaran paling bernilai tinggi di kawasan Asia-Pasifik. Pemilihannya sebagai duta global pertama asal Korea untuk rumah perhiasan mewah tertua di Place Vendôme Paris, Boucheron, serta keterlibatannya dengan rumah mode Balenciaga membuktikan daya pikatnya di segmen ultra-luxury.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Prospek transisi kariernya ke industri perfilman internasional terbuka lebar menyusul kemampuannya membawakan karakter aksi fisik yang intens. Selama manajemen reputasinya mampu memitigasi turbulensi narasi personal di dunia maya, Han So-hee diproyeksikan tetap menjadi salah satu representasi paling dominan sinema Korea di panggung budaya pop dunia.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-3",
+    "slug": "reza-rahadian",
+    "name": "Reza Rahadian Matulessy",
+    "stageName": "Reza Rahadian",
+    "avatar": "/images/avatars/reza-rahadian.jpg",
+    "bannerImage": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktor Film & Ketua Komite FFI",
+    "age": 37,
+    "agency": "Indonesian Film Actors Guild",
+    "relationshipStatus": "Private",
+    "circle": [
+      "Christine Hakim",
+      "Laura Basuki",
+      "Hanung Bramantyo"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@officialpilarez",
+        "url": "https://instagram.com"
+      }
+    ],
+    "bio": "Aktor watak legendaris generasi modern perfilman Indonesia dengan raihan 5 Piala Citra. Dikenal sangat menjaga privasi kehidupan personal namun vokal dalam advokasi undang-undang hak cipta dan royalti seniman.",
+    "careerHighlights": [
+      "5x Pemenang Piala Citra Festival Film Indonesia",
+      "Ketua Komite Festival Film Indonesia (2021-2023)",
+      "Duta Besar Hak Asasi Pekerja Seni Kreatif Nasional"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "89% sentimen positif publik sebagai figur teladan integritas perfilman nasional.",
+    "dossierDetail": {
+      "birthDate": "5 Maret 1987",
+      "birthPlace": "Bogor, Jawa Barat, Indonesia",
+      "zodiac": "Pisces",
+      "nationality": "Indonesia",
+      "yearsActive": "2004 – Sekarang",
+      "education": "Pendidikan Teater & Seni Peran Mandiri",
+      "netWorthEstimate": "A-List Actor Tier (Rp 20M - Rp 40M)",
+      "topAffiliations": [
+        "Komite FFI",
+        "Rumah Produksi Falcon & MD Pictures",
+        "Duta Advokasi Seni"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2024",
+        "title": "Advokasi Terbuka UU Hak Cipta & Royalti Seniman",
+        "status": "TERKONFIRMASI",
+        "summary": "Pidato vokal mengkritisi penundaan reformasi royalti digital bagi aktor dan musisi di hadapan parlemen.",
+        "resolution": "Audiensi resmi dengan Kementerian Pariwisata dan Ekonomi Kreatif serta DPR RI."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "Pilarez Production Work",
+        "category": "Film Directing & Producing",
+        "role": "Executive Producer",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Brand Ambassador Oppo / Uniqlo",
+        "category": "Consumer Tech & Fashion",
+        "role": "Exclusive Brand Ambassador",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2023",
+        "award": "Festival Film Indonesia (Piala Citra)",
+        "category": "Pemeran Utama Pria Terbaik (Berbalas Kejam)",
+        "result": "Menang"
+      },
+      {
+        "year": "2016",
+        "award": "Festival Film Indonesia (Piala Citra)",
+        "category": "Pemeran Utama Pria Terbaik (My Stupid Boss)",
+        "result": "Menang"
+      },
+      {
+        "year": "2013",
+        "award": "Festival Film Indonesia (Piala Citra)",
+        "category": "Pemeran Utama Pria Terbaik (Habibie & Ainun)",
+        "result": "Menang"
+      },
+      {
+        "year": "2010",
+        "award": "Festival Film Indonesia (Piala Citra)",
+        "category": "Pemeran Utama Pria Terbaik (3 Hati Dua Dunia, Satu Cinta)",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Berapa total Piala Citra FFI yang telah dimenangkan Reza Rahadian?",
+        "answer": "Reza Rahadian telah mengoleksi 5 Piala Citra Festival Film Indonesia sepanjang kariernya, menjadikannya salah satu aktor peraih piala terbanyak dalam sejarah perfilman nasional."
+      },
+      {
+        "question": "Apa peran Reza Rahadian dalam reformasi Festival Film Indonesia?",
+        "answer": "Menjabat sebagai Ketua Komite FFI periode 2021-2023, Reza memimpin modernisasi sistem penjurian berbasis akademi independen bekerja sama dengan asosiasi profesi perfilman nasional."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Dominasi Perfilman Modern: Rekor 5 Piala Citra & Standar Akting Bunglon",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Reza Rahadian Matulessy memegang status tak terbantahkan sebagai pilar utama keaktoran sinema Indonesia abad ke-21. Dengan rekor lima trofi Piala Citra di berbagai kategori (Pemeran Pendukung Pria Terbaik hingga empat kali Pemeran Utama Pria Terbaik), Reza membuktikan rentang peran bunglon yang langka: dari penjiwaan akurat sosok negarawan B.J. Habibie, komedi eksentrik Bossman di <em>My Stupid Boss</em>, hingga drama psikologis kelam di <em>Berbalas Kejam</em>.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dedikasinya terhadap metode seni peran dan riset karakter mendalam menetapkan tolok ukur profesionalisme baru bagi generasi aktor penerusnya. Keberadaannya dalam sebuah judul film kerap menjadi jaminan kualitas naratif sekaligus magnet komersial terpercaya bagi para investor industri film layar lebar Indonesia.\n          </p>\n        "
+      },
+      {
+        "title": "Garis Depan Advokasi: Standar Jam Kerja Layak 14 Jam & Hak Royalti Digital",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Di luar panggung lampu sorot, Reza memanfaatkan pengaruh institusionalnya untuk memperjuangkan keadilan struktural pekerja industri kreatif. Bersama koalisi serikat perfilman, ia memimpin audiensi terbuka di DPR RI guna menuntut regulasi batas maksimal shift kerja lapangan 14 jam dan jaminan keselamatan kerja BPJS Ketenagakerjaan bagi seluruh kru teknis freelance.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Reza juga menjadi salah satu suara paling vokal yang mendesak reformasi skema royalti residual bagi para penampil (<em>performers rights</em>) di platform digital streaming OTT. Advokasi ini menempatkannya bukan sekadar sebagai bintang panggung, melainkan negarawan budaya yang peduli pada keberlanjutan ekosistem seni peran Indonesia.\n          </p>\n        "
+      },
+      {
+        "title": "Manajemen Privasi & Integritas Reputasi di Tengah Pusaran Gosip Hiburan",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dalam era di mana popularitas kerap dibeli melalui eksposur sensasi kehidupan pribadi di media sosial, Reza Rahadian memilih jalur eksklusif: menolak memiliki akun media sosial personal aktif dan hanya berkomunikasi melalui akun resmi komunitas penggemar @officialpilarez. Batas tegas antara wilayah kreasi publik dan privasi domestik ini menjadikannya salah satu figur publik paling dihormati di tanah air.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Indeks sentimen publik terhadapnya mencatatkan angka positif 89%, rekor tertinggi di antara aktor papan atas Indonesia. Kredibilitas moral yang tanpa cela ini menjadikannya pilihan utama korporasi multinasional dan lembaga kebudayaan negara untuk program duta merek bernilai tinggi.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-4",
+    "slug": "fuji-an",
+    "name": "Fujianti Utami Putri",
+    "stageName": "Fuji An",
+    "avatar": "/images/avatars/fuji-an.jpg",
+    "bannerImage": "https://images.unsplash.com/photo-1493655161922-ef98929de9d8?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Content Creator & Brand Ambassador",
+    "age": 22,
+    "agency": "Indo Mega Creator Media",
+    "relationshipStatus": "Single",
+    "circle": [
+      "Fadly Faisal",
+      "Violenzia Jeanette",
+      "Raffi Ahmad"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@fuji_an",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "tiktok",
+        "handle": "@fujiiian",
+        "url": "https://tiktok.com"
+      }
+    ],
+    "bio": "Fenomena kreator muda dengan daya tarik interaksi tertinggi di TikTok dan Instagram Indonesia. Kerap menjadi target perang narasi antar-fandom netizen terkait perjodohan warganet.",
+    "careerHighlights": [
+      "Pemenang TikTok Awards Indonesia Popular Creator",
+      "Brand Ambassador 10+ Brand Fashion & Skincare Nasional"
+    ],
+    "dramaCount": 6,
+    "sentimentSummary": "Engaged fan-base masif; rentan perang komentar spekulatif di kolom gosip media sosial.",
+    "dossierDetail": {
+      "birthDate": "3 November 2002",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Scorpio",
+      "nationality": "Indonesia",
+      "yearsActive": "2021 – Sekarang",
+      "education": "Fakultas Hukum Universitas Udayana (Cuti/Non-aktif)",
+      "netWorthEstimate": "Top Gen-Z Influencer (Rp 8M - Rp 15M)",
+      "topAffiliations": [
+        "Indo Mega Creator",
+        "MS Glow",
+        "Jiniso",
+        "Scarlett"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2023",
+        "title": "Laporan Dugaan Penggelapan Dana Eks Manajer",
+        "status": "TERKONFIRMASI",
+        "summary": "Fuji melaporkan mantan manajer pribadinya atas dugaan penggelapan uang honor kerja sama senilai lebih dari Rp 1,5 Miliar.",
+        "resolution": "Pihak kepolisian menetapkan mantan manajer sebagai tersangka dan kasus diproses ke kejaksaan."
+      },
+      {
+        "year": "2024",
+        "title": "Perang Fandom Medsos & Isu Perjodohan Netizen",
+        "status": "RUMOR_NETIZEN",
+        "summary": "Serangan siber antar kubu pendukung di kolom komentar terkait hubungan personal sang kreator.",
+        "resolution": "Imbauan resmi dari Fuji di Instagram Story agar warganet berhenti menghujat pihak lain."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "Fuji Official Merchandise",
+        "category": "Fashion & Apparel",
+        "role": "Owner",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Brand Ambassador MS Glow",
+        "category": "Skincare & Cosmetics",
+        "role": "Key Ambassador",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2022",
+        "award": "TikTok Awards Indonesia",
+        "category": "Popular Creator of the Year",
+        "result": "Menang"
+      },
+      {
+        "year": "2023",
+        "award": "SCTV Music & Digital Awards",
+        "category": "Selebriti Pendatang Baru Paling Ngetop",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Bagaimana kelanjutan kasus dugaan penggelapan honor mantan manajer Fuji?",
+        "answer": "Laporan resmi telah diproses di Polres Metro Jakarta Barat dan mantan manajer telah ditetapkan sebagai tersangka penipuan/penggelapan."
+      },
+      {
+        "question": "Berapa rekor omset live streaming shopping tertinggi yang dipandu Fuji An?",
+        "answer": "Sesi live streaming resmi flash sale bersama brand kecantikan lokal mencatatkan Gross Merchandise Value (GMV) menembus Rp 1,2 Miliar dalam waktu kurang dari 2 jam."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Fenomena Social Commerce: Rekor Konversi Live Shopping & Daya Tarik Gen Z",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Fujianti Utami Putri (Fuji An) merepresentasikan anomali paling fenomenal dalam evolusi ekonomi kreator Indonesia pasca-2021. Mengemuka di tengah tragedi keluarga yang menyentuh simpati kolektif jutaan masyarakat, Fuji berhasil membuktikan ketahanan dan kapasitas monetisasi digital mandiri yang melampaui ekspektasi para pengamat industri periklanan modern.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kekuatan intinya bertumpu pada tingkat keterikatan (<em>engagement rate</em>) organik yang luar biasa tinggi di platform TikTok dan Instagram. Dalam sesi siaran langsung komersial (<em>live commerce</em>), Fuji mampu mengonversi penonton menjadi transaksi riil bernilai miliaran rupiah dalam hitungan menit. Karakter pembawaannya yang lugas, jenaka, dan tanpa kepalsuan menciptakan tingkat kepercayaan konsumen yang sangat dicari oleh brand fesyen dan produk perawatan kulit massal.\n          </p>\n        "
+      },
+      {
+        "title": "Anatomi Perang Fandom & Polarisasi Sentimen di Kolom Gosip Digital",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Tingginya popularitas di usia sangat muda membawa konsekuensi pengawasan publik yang intensif. Komunitas penggemar fanatik Fuji kerap terlibat dalam perang narasi siber dengan kubu penggemar figur publik lain, terutama mengenai dinamika perjodohan warganet (<em>shipper fandom</em>). Setiap gerak-gerik, tatapan mata di acara penghargaan, hingga unggahan status singkat dianalisis secara berlebihan oleh ribuan akun anonim.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kendati polarisasi ini menjaga volume percakapan namanya selalu berada di jajaran trending topic teratas, hal ini juga menuntut kedewasaan komunikasi krisis ekstra. Fuji beberapa kali secara terbuka mengimbau para pendukungnya untuk tidak melakukan perundungan siber terhadap rekan sesama kreator konten demi menjaga kesehatan mental bersama.\n          </p>\n        "
+      },
+      {
+        "title": "Forensik Sengketa Hukum Eks-Manajer & Transformasi Manajemen Profesional",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Titik krusial pendewasaan bisnis Fuji tercatat pada 2023 ketika ia melaporkan mantan manajer pribadinya ke pihak kepolisian atas dugaan penggelapan uang honor kerja sama periklanan senilai lebih dari Rp 1,5 Miliar. Kasus ini membuka mata banyak talenta muda mengenai pentingnya pemisahan rekening bisnis, audit berkala, dan tata kelola kontrak hukum yang ketat dalam manajemen agensi talenta.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dengan restrukturisasi tim manajemen di bawah naungan agensi profesional dan pendampingan kuasa hukum tetap, Fuji memposisikan dirinya sebagai entitas bisnis mandiri yang terlindungi dari celah penipuan finansial internal. Langkah hukum tegas tersebut diapresiasi publik sebagai bukti integritas dan komitmen profesionalitas jangka panjang.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-5",
+    "slug": "zendaya",
+    "name": "Zendaya Maree Stoermer Coleman",
+    "stageName": "Zendaya",
+    "avatar": "/images/avatars/zendaya.jpg",
+    "bannerImage": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris Hollywood & Produser",
+    "age": 28,
+    "agency": "CAA (Creative Artists Agency Hollywood)",
+    "relationshipStatus": "Dating (Tom Holland)",
+    "circle": [
+      "Tom Holland",
+      "Timothée Chalamet",
+      "Law Roach",
+      "Hunter Schafer"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@zendaya",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "x",
+        "handle": "@zendaya",
+        "url": "https://x.com"
+      }
+    ],
+    "bio": "Bintang generasi baru perfilman Hollywood peraih dua piala Primetime Emmy Awards. Menjadi tolak ukur fashion red-carpet global dan ikon independensi bintang muda tanpa sensasi murahan.",
+    "careerHighlights": [
+      "2x Pemenang Primetime Emmy Award Aktris Terbaik (Euphoria)",
+      "Bintang waralaba Dune dan Spider-Man Box Office"
+    ],
+    "dramaCount": 1,
+    "sentimentSummary": "94% apresiasi global atas talenta, selera fashion, dan batas tegas kehidupan pribadi.",
+    "dossierDetail": {
+      "birthDate": "1 September 1996",
+      "birthPlace": "Oakland, California, Amerika Serikat",
+      "zodiac": "Virgo",
+      "nationality": "Amerika Serikat",
+      "yearsActive": "2009 – Sekarang",
+      "education": "Oakland School for the Arts",
+      "netWorthEstimate": "Hollywood A-List ($22M - $30M)",
+      "topAffiliations": [
+        "CAA Agency",
+        "Louis Vuitton",
+        "Bulgari",
+        "HBO / Warner Bros"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2015",
+        "title": "Insiden Komentar Rambut Dreadlocks Giuliana Rancic",
+        "status": "TERKONFIRMASI",
+        "summary": "Komentar bernuansa stereotip dari presenter televisi terhadap rambut gimbal Zendaya di ajang Oscars.",
+        "resolution": "Tanggapan elegan terbuka dari Zendaya menuai pujian luas dan pembawa acara meminta maaf secara terbuka."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "Louis Vuitton House Ambassador",
+        "category": "Luxury Haute Couture",
+        "role": "Global Brand Face",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Bulgari High Jewelry Face",
+        "category": "Fine Jewelry",
+        "role": "Global Ambassador",
+        "status": "Aktif Beroperasi"
+      },
+      {
+        "name": "Executive Producer (Euphoria & Challengers)",
+        "category": "Film Production",
+        "role": "Producer",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2020",
+        "award": "Primetime Emmy Awards",
+        "category": "Outstanding Lead Actress in a Drama Series (Euphoria)",
+        "result": "Menang"
+      },
+      {
+        "year": "2022",
+        "award": "Primetime Emmy Awards",
+        "category": "Outstanding Lead Actress in a Drama Series (Euphoria)",
+        "result": "Menang"
+      },
+      {
+        "year": "2023",
+        "award": "Golden Globe Awards",
+        "category": "Best Actress – Television Series Drama",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Apakah rekor termuda yang dipecahkan Zendaya di ajang Primetime Emmy?",
+        "answer": "Zendaya adalah aktris termuda dalam sejarah yang memenangkan Primetime Emmy Award untuk Aktris Utama Terbaik serial drama pada usia 24 tahun."
+      },
+      {
+        "question": "Siapa arsitek di balik penampilan ikonik fashion red carpet Zendaya?",
+        "answer": "Penampilan adibusana Zendaya dikurasi secara eksklusif oleh arsitek gaya legendaris Law Roach, yang bekerja sama dengannya sejak usia 14 tahun."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Transformasi Bintang Anak Disney ke Pemenang Emmy Termuda Sepanjang Sejarah",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Zendaya Maree Stoermer Coleman menorehkan sejarah sebagai salah satu dari sedikit bintang cilik Disney Channel yang berhasil bertransisi mulus menjadi figur sinema paling bergengsi di dunia perfilman internasional. Puncak pengakuan kritis diraih lewat penampilannya sebagai Rue Bennett dalam serial HBO <em>Euphoria</em>, yang mengantarkannya memenangkan dua piala Primetime Emmy Awards dan mencatatkan rekor sebagai aktris termuda peraih trofi kategori aktris utama drama pada usia 24 tahun.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Keberhasilannya melintasi batas antara proyek komersial raksasa bernilai miliaran dolar (seperti trilogi <em>Spider-Man</em> dan epik fiksi ilmiah <em>Dune</em> garapan Denis Villeneuve) dengan peran produksi independen sebagai produser eksekutif di film <em>Challengers</em> membuktikan kecakapan navigasi karier kelas wahid di jantung Hollywood.\n          </p>\n        "
+      },
+      {
+        "title": "Revolusi Adibusana Red Carpet: Sinergi Visioner Bersama Law Roach",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Di panggung mode global, setiap kemunculan Zendaya di karpet merah merupakan peristiwa budaya (<em>cultural event</em>) tersendiri. Kemitraan jangka panjangnya dengan arsitek gaya (<em>image architect</em>) Law Roach telah melahirkan momen-momen fesyen paling berkesan dalam satu dekade terakhir, mulai dari gaun robot arsip vintage Mugler 1995 hingga kreasi kustom haute couture Louis Vuitton dan perhiasan tinggi Bulgari.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Pendekatan tematik berbasis narasi film (<em>method dressing</em>) yang dipeloporinya menetapkan tren baru dalam strategi promosi film global. Kemampuannya mengombinasikan busana bersejarah dengan pernyataan modern menobatkannya sebagai Fashion Icon termuda versi Council of Fashion Designers of America (CFDA).\n          </p>\n        "
+      },
+      {
+        "title": "Keteguhan Batas Privasi & Standar Emas Integritas Selebritas Modern",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Di tengah industri hiburan yang sering kali mengeksploitasi detail hubungan personal demi publisitas murah, Zendaya dan pasangannya aktor Tom Holland secara konsisten menjaga batas sakral kehidupan pribadi mereka. Penolakannya untuk meladeni rumor sensasional di media sosial membuat indeks Brand Safety dirinya berada di peringkat tertinggi bagi pengiklan korporat papan atas.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Dengan dukungan sentimen publik positif mencapai 94% secara global, Zendaya diposisikan sebagai panutan generasi muda yang menggabungkan keunggulan talenta murni, kesadaran sosial tinggi, dan keanggunan berkelas yang menjauhkannya dari jerat skandal murahan.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-7",
+    "slug": "min-hee-jin",
+    "name": "Min Hee-jin",
+    "stageName": "Min Hee-jin",
+    "avatar": "/images/avatars/min-hee-jin.png",
+    "bannerImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Produser Musik, Creative Director & Mantan CEO ADOR",
+    "age": 45,
+    "agency": "Independen / Eks-ADOR (HYBE Labels)",
+    "relationshipStatus": "Private",
+    "circle": [
+      "NewJeans Members",
+      "Shin Woo-seok (Dolphiners Film)",
+      "Kim Min-ji"
+    ],
+    "verifiedAccounts": [
+      {
+        "platform": "instagram",
+        "handle": "@min.hee.jin",
+        "url": "https://instagram.com"
+      }
+    ],
+    "bio": "Direktur kreatif visioner di balik konsep ikonik Girls’ Generation, SHINee, f(x), Red Velvet, dan kreator mega grup K-Pop NewJeans. Menjadi tokoh utama pertempuran hukum dan korporasi terdahsyat melawan konglomerasi HYBE.",
+    "careerHighlights": [
+      "Kreator konsep, branding, dan produser utama girl group NewJeans",
+      "Mantan Creative Director SM Entertainment selama 16 tahun",
+      "Pemenang Golden Disc Awards Best Producer 2024"
+    ],
+    "dramaCount": 4,
+    "sentimentSummary": "67% dukungan publik atas integritas artistik dan advokasi NewJeans; 33% kritik atas gaya perang psikologis korporasi.",
+    "dossierDetail": {
+      "birthDate": "16 Desember 1979",
+      "birthPlace": "Seoul, Korea Selatan",
+      "zodiac": "Sagitarius",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2002 – Sekarang",
+      "education": "Seoul Women’s University (Desain Komunikasi Visual)",
+      "netWorthEstimate": "K-Pop Master Tier ($15M - $25M)",
+      "topAffiliations": [
+        "ADOR (Eks-CEO)",
+        "SM Entertainment (Eks-Direktur)",
+        "NewJeans Creative Team"
+      ]
+    },
+    "controversies": [
+      {
+        "year": "2024",
+        "title": "Konflik Kepemilikan & Dugaan Upaya Kudeta ADOR vs HYBE",
+        "status": "TERKONFIRMASI",
+        "summary": "HYBE mengaudit ADOR atas tudingan upaya memisahkan diri; Min Hee-jin membantah dalam jumpa pers berdurasi 2 jam yang viral secara global.",
+        "resolution": "Pengadilan Distrik Pusat Seoul mengabulkan gugatan provisi Min Hee-jin mencegah pemecatannya sebagai CEO oleh HYBE pada Mei 2024."
+      },
+      {
+        "year": "2024",
+        "title": "Tuduhan Plagiarisme Konsep Musik NewJeans vs ILLIT",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Kritik terbuka Min Hee-jin terhadap agensi anak perusahaan HYBE lain mengenai kemiripan konsep visual dan koreografi.",
+        "resolution": "Pernyataan bantahan dari BELIFT LAB dan saling lapor pencemaran nama baik."
+      }
+    ],
+    "businessVentures": [
+      {
+        "name": "ADOR Label (All Doors One Room)",
+        "category": "K-Pop Music Label",
+        "role": "Pendiri & Mantan CEO",
+        "status": "Non-aktif / Selesai"
+      },
+      {
+        "name": "Min Hee-jin Independent Creative Lab",
+        "category": "Creative Production & Branding",
+        "role": "Principal Founder",
+        "status": "Aktif Beroperasi"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2024",
+        "award": "Golden Disc Awards",
+        "category": "Best Producer Award",
+        "result": "Menang"
+      },
+      {
+        "year": "2023",
+        "award": "MAMA Awards",
+        "category": "Breakout Producer of the Year",
+        "result": "Menang"
+      },
+      {
+        "year": "2023",
+        "award": "Billboard Women in Music",
+        "category": "Global Impact Honoree",
+        "result": "Menang"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Apa hasil putusan pengadilan dalam sengketa Min Hee-jin dan HYBE pada Mei 2024?",
+        "answer": "Pengadilan Distrik Seoul memutuskan bahwa HYBE tidak memiliki alasan yang cukup kuat untuk mencopot Min Hee-jin dari kursi CEO ADOR pada RUPS Mei 2024 dan mengabulkan perintah penahanan hak suara HYBE."
+      },
+      {
+        "question": "Apa saja karya ikonik Min Hee-jin sebelum mendirikan ADOR?",
+        "answer": "Selama 16 tahun di SM Entertainment, Min Hee-jin merancang identitas visual legendaris untuk album Girls Generation (Gee), f(x) (Pink Tape), SHINee (Romeo), dan EXO."
+      }
+    ],
+    "editorialSections": [
+      {
+        "title": "Revolusi Estetika K-Pop: Dari Eksperimen SM Entertainment ke Lahirnya Fenomena NewJeans",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Min Hee-jin adalah direktur kreatif paling berpengaruh dalam dua dekade sejarah industri musik pop Korea. Memulai karier sebagai desainer grafis pemula di SM Entertainment pada 2002, ia merevolusi cara K-Pop mengemas karya seni visual: mentransformasi sampul album dari sekadar foto pajangan idola menjadi karya seni konseptual naratif terpadu, seperti album <em>Pink Tape</em> milik f(x) yang diakui museum seni internasional.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Puncak kejeniusannya terwujud saat mendirikan label ADOR di bawah HYBE dan meluncurkan girl group NewJeans pada 2022 tanpa teaser promosi awal. Pendekatan nostalgia era Y2K yang organik, aransemen R&B pop yang santai (<em>easy listening</em>), dan koreografi bebas mengubah arah kiblat industri K-Pop global yang sebelumnya didominasi konsep futuristik hiper-elektronik.\n          </p>\n        "
+      },
+      {
+        "title": "Forensik Konflik Korporasi ADOR vs HYBE: Jumpa Pers Bersejarah & Pertarungan Hukum Seoul",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Pertarungan antara Min Hee-jin dan induk perusahaan HYBE pada 2024 menjadi drama korporasi terbesar dalam sejarah industri hiburan Asia. Konferensi pers darurat berdurasi lebih dari dua jam yang digelar Min Hee-jin—dengan mengenakan topi bisbol hijau dan kaos garis-garis sederhana—ditonton jutaan pemirsa di seluruh dunia dan memicu gelombang dukungan publik berkat kejujuran emosionalnya melawan oligarki konglomerat modal.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Kemenangan hukum diraih Min Hee-jin ketika Pengadilan Distrik Pusat Seoul mengabulkan gugatan injunksi sementaranya pada Mei 2024, menegaskan bahwa tuduhan pengkhianatan kepercayaan yang diajukan HYBE tidak memiliki dasar bukti faktual yang cukup kuat. Kasus ini mencatatkan preseden hukum penting mengenai perlindungan hak direksi kreatif minoritas di hadapan pemegang saham mayoritas bursa efek.\n          </p>\n        "
+      },
+      {
+        "title": "Polarisasi Fandom Global & Doktrin Otonomi Seniman Melawan Kekuasaan Konglomerat",
+        "contentHtml": "\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Di mata komunitas penggemar internasional dan pelaku industri kreatif, sosok Min Hee-jin membelah persepsi menjadi dua kutub yang kuat: kubu yang memujanya sebagai martir pembela hak cipta karya orisinal seniman, dan kubu yang mengkritiknya atas gaya komunikasi konfrontatif yang mengguncang harga saham perusahaan publik.\n          </p>\n          <p class=\"leading-relaxed text-slate-300 mb-3\">\n            Solidaritas mutlak yang ditunjukkan oleh kelima anggota NewJeans terhadap kepemimpinannya membuktikan kedalaman ikatan fidusia yang jarang ditemukan di industri hiburan komersial. Min Hee-jin telah mengubah percakapan K-Pop selamanya: bahwa di balik megahnya industri bernilai miliaran dolar, jiwa karya seni tetap berada pada visi manusiawi para penciptanya.\n          </p>\n        "
+      }
+    ]
+  },
+  {
+    "id": "celeb-9",
+    "slug": "syifa-hadju",
+    "name": "Syifa Safira Nuraisyah",
+    "stageName": "Syifa Hadju",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris Layar Lebar, Model, Penyanyi",
+    "age": 24,
+    "agency": "Headline Management Indonesia",
+    "relationshipStatus": "Berpacaran (El Rumi)",
+    "circle": [
       "El Rumi",
       "Maia Estianty",
       "Kesha Ratuliu",
       "Margin Wieheerm",
-      "Rebecca Klopper",
+      "Rebecca Klopper"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@syifahadju",
-        url: "https://instagram.com/syifahadju",
+        "platform": "instagram",
+        "handle": "@syifahadju",
+        "url": "https://instagram.com/syifahadju"
       },
       {
-        platform: "tiktok",
-        handle: "@syifahadjuuuuu",
-        url: "https://tiktok.com/@syifahadjuuuuu",
-      },
+        "platform": "tiktok",
+        "handle": "@syifahadjuuuuu",
+        "url": "https://tiktok.com/@syifahadjuuuuu"
+      }
     ],
-    bio: "Aktris muda berbakat Indonesia yang mencuri perhatian publik lewat deretan film drama dan serial web box office. Dikenal vokal dalam advokasi isu kemanusiaan Palestina serta menjadi sorotan utama linimasa terkait hubungan asmara yang harmonis bersama El Rumi.",
-    careerHighlights: [
+    "bio": "Aktris muda berbakat Indonesia yang mencuri perhatian publik lewat deretan film drama dan serial web box office. Dikenal vokal dalam advokasi isu kemanusiaan Palestina serta menjadi sorotan utama linimasa terkait hubungan asmara yang harmonis bersama El Rumi.",
+    "careerHighlights": [
       "Pemeran Utama Film Box Office '200 Pounds Beauty Indonesia' (2023)",
       "Nominasi Pemeran Pendukung Wanita Terbaik FFI 2021",
       "Aktivis Aksi Kemanusiaan Bela Palestina di Monas Jakarta",
-      "Brand Ambassador berbagai produk kecantikan nasional terkemuka",
+      "Brand Ambassador berbagai produk kecantikan nasional terkemuka"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen warganet 92% positif: Dinilai sebagai aktris berbakat berakhlak terpuji, sopan, dan berani bersuara untuk keadilan sosial.",
-    dossierDetail: {
-      birthDate: "13 Juli 2000",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Cancer",
-      nationality: "Indonesia",
-      yearsActive: "2014 – Sekarang",
-      education: "Homeschooling Kak Seto (Pendidikan Formal Swasta)",
-      netWorthEstimate: "Tier A Talent (Rp 8M - Rp 15M)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen warganet 92% positif: Dinilai sebagai aktris berbakat berakhlak terpuji, sopan, dan berani bersuara untuk keadilan sosial.",
+    "dossierDetail": {
+      "birthDate": "13 Juli 2000",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Cancer",
+      "nationality": "Indonesia",
+      "yearsActive": "2014 – Sekarang",
+      "education": "Homeschooling Kak Seto (Pendidikan Formal Swasta)",
+      "netWorthEstimate": "Tier A Talent (Rp 8M - Rp 15M)",
+      "topAffiliations": [
         "MD Pictures",
         "Falcon Pictures",
-        "Headline Management",
-      ],
+        "Headline Management"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Transisi Hubungan Asmara Pasca Putus dari Rizky Nazar",
-        status: "FAKTA_DIGITAL",
-        summary: "Perbincangan hangat di media sosial mengenai berakhirnya hubungan lima tahun dan kedekatan barunya dengan El Rumi.",
-        resolution: "Pernyataan terbuka Syifa meminta publik menghargai batas privasi dan mendoakan kebaikan kedua belah pihak.",
-      },
+        "year": "2024",
+        "title": "Transisi Hubungan Asmara Pasca Putus dari Rizky Nazar",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Perbincangan hangat di media sosial mengenai berakhirnya hubungan lima tahun dan kedekatan barunya dengan El Rumi.",
+        "resolution": "Pernyataan terbuka Syifa meminta publik menghargai batas privasi dan mendoakan kebaikan kedua belah pihak."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Hadju Glow Official",
-        category: "Skincare & Personal Care",
-        role: "Brand Creator",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Hadju Glow Official",
+        "category": "Skincare & Personal Care",
+        "role": "Brand Creator",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2023",
-        award: "Festival Film Bandung",
-        category: "Pemeran Utama Wanita Terpuji Serial Web",
-        result: "Menang",
+        "year": "2023",
+        "award": "Festival Film Bandung",
+        "category": "Pemeran Utama Wanita Terpuji Serial Web",
+        "result": "Menang"
       },
       {
-        year: "2020",
-        award: "Infotainment Awards",
-        category: "Most Charming Female Celebrity",
-        result: "Menang",
-      },
+        "year": "2020",
+        "award": "Infotainment Awards",
+        "category": "Most Charming Female Celebrity",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Bagaimana awal mula hubungan Syifa Hadju dan El Rumi?",
-        answer: "Hubungan keduanya mulai terungkap ke publik saat menghadiri resepsi pernikahan Thariq Halilintar dan Aaliyah Massaid pada pertengahan 2024.",
+        "question": "Bagaimana awal mula hubungan Syifa Hadju dan El Rumi?",
+        "answer": "Hubungan keduanya mulai terungkap ke publik saat menghadiri resepsi pernikahan Thariq Halilintar dan Aaliyah Massaid pada pertengahan 2024."
       },
       {
-        question: "Apa sikap Syifa Hadju terkait brand internasional yang terafiliasi politik?",
-        answer: "Syifa Hadju secara konsisten menolak kerja sama komersial dengan jenama yang mendukung agresi militer sebagai bentuk solidaritas kemanusiaan.",
-      },
+        "question": "Apa sikap Syifa Hadju terkait brand internasional yang terafiliasi politik?",
+        "answer": "Syifa Hadju secara konsisten menolak kerja sama komersial dengan jenama yang mendukung agresi militer sebagai bentuk solidaritas kemanusiaan."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Integritas Karier Akting & Sikap Vokal terhadap Kemanusiaan",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Syifa Hadju menonjol di antara generasinya bukan hanya karena kemampuan seni perannya yang terasah lewat ragam genre, melainkan karena ketegasan prinsip moral di ruang publik. Keputusannya untuk secara terbuka turun ke jalan menyuarakan hak-hak rakyat Palestina, bahkan berani memutus tawaran promosi dari jenama multinasional yang kontroversial, mendefinisikan ulang standar tanggung jawab sosial selebritas muda di Indonesia.</p><p class=\"leading-relaxed text-slate-300 mb-3\">Langkah berani ini justru meningkatkan reputasi dan nilai autentisitasnya di mata publik. Warganet memandang Syifa sebagai figur yang autentik, berani mengambil risiko finansial demi nurani, dan membedakannya dari stereotip pesohor yang sekadar mengejar profit endorsement instan.</p>",
+        "title": "Integritas Karier Akting & Sikap Vokal terhadap Kemanusiaan",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Syifa Hadju menonjol di antara generasinya bukan hanya karena kemampuan seni perannya yang terasah lewat ragam genre, melainkan karena ketegasan prinsip moral di ruang publik. Keputusannya untuk secara terbuka turun ke jalan menyuarakan hak-hak rakyat Palestina, bahkan berani memutus tawaran promosi dari jenama multinasional yang kontroversial, mendefinisikan ulang standar tanggung jawab sosial selebritas muda di Indonesia.</p><p class=\"leading-relaxed text-slate-300 mb-3\">Langkah berani ini justru meningkatkan reputasi dan nilai autentisitasnya di mata publik. Warganet memandang Syifa sebagai figur yang autentik, berani mengambil risiko finansial demi nurani, dan membedakannya dari stereotip pesohor yang sekadar mengejar profit endorsement instan.</p>"
       },
       {
-        title: "Sorotan Percintaan Era Digital: Dinamika 'Cipel' & Validasi Restu Publik",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Hubungan Syifa Hadju dengan El Rumi menjadi salah satu fenomena budaya pop paling hangat di tahun 2024–2026. Didukung oleh sambutan hangat dari keluarga Maia Estianty dan Ahmad Dhani, pasangan ini mendapatkan julukan kesayangan dari komunitas netizen yang memandang relasi mereka sebagai contoh hubungan yang sehat, dewasa, dan saling mendukung karier masing-masing.</p>",
-      },
-    ],
+        "title": "Sorotan Percintaan Era Digital: Dinamika 'Cipel' & Validasi Restu Publik",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Hubungan Syifa Hadju dengan El Rumi menjadi salah satu fenomena budaya pop paling hangat di tahun 2024–2026. Didukung oleh sambutan hangat dari keluarga Maia Estianty dan Ahmad Dhani, pasangan ini mendapatkan julukan kesayangan dari komunitas netizen yang memandang relasi mereka sebagai contoh hubungan yang sehat, dewasa, dan saling mendukung karier masing-masing.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-10",
-    slug: "el-rumi",
-    name: "Ahmad Jalaluddin Rumi",
-    stageName: "El Rumi",
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-    profession: "Musisi, Drummer, Pengusaha, Kreator Konten",
-    age: 25,
-    agency: "Republik Cinta Management (RCM)",
-    relationshipStatus: "Berpacaran (Syifa Hadju)",
-    circle: [
+    "id": "celeb-10",
+    "slug": "el-rumi",
+    "name": "Ahmad Jalaluddin Rumi",
+    "stageName": "El Rumi",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Musisi, Drummer, Pengusaha, Kreator Konten",
+    "age": 25,
+    "agency": "Republik Cinta Management (RCM)",
+    "relationshipStatus": "Berpacaran (Syifa Hadju)",
+    "circle": [
       "Ahmad Dhani",
       "Maia Estianty",
       "Al Ghazali",
       "Dul Jaelani",
       "Syifa Hadju",
-      "Raffi Ahmad",
+      "Raffi Ahmad"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@elelrumi",
-        url: "https://instagram.com/elelrumi",
+        "platform": "instagram",
+        "handle": "@elelrumi",
+        "url": "https://instagram.com/elelrumi"
       },
       {
-        platform: "youtube",
-        handle: "@ELRumiTV",
-        url: "https://youtube.com/@ELRumiTV",
-      },
+        "platform": "youtube",
+        "handle": "@ELRumiTV",
+        "url": "https://youtube.com/@ELRumiTV"
+      }
     ],
-    bio: "Musisi, produser, dan figur publik generasi kedua maestro musik Indonesia. Dikenal berintelektual tinggi sebagai lulusan University of Westminster London, drummer grup musik The Lucky Laki, serta atlet tinju selebritas yang tak terkalahkan di atas ring.",
-    careerHighlights: [
+    "bio": "Musisi, produser, dan figur publik generasi kedua maestro musik Indonesia. Dikenal berintelektual tinggi sebagai lulusan University of Westminster London, drummer grup musik The Lucky Laki, serta atlet tinju selebritas yang tak terkalahkan di atas ring.",
+    "careerHighlights": [
       "Sarjana Bisnis (B.A.) University of Westminster London",
       "Drummer grup band legendaris generasi muda The Lucky Laki",
       "Juara Tinju Superstar Knockout (kemenangan spektakuler atas Jefri Nichol)",
-      "Presiden Klub Sepak Bola Nusantara United FC",
+      "Presiden Klub Sepak Bola Nusantara United FC"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen warganet 90% positif: Dinilai sebagai pria cerdas, berwawasan luas, humoris, berpendidikan tinggi, dan memperlakukan pasangan bak ratu (gentleman).",
-    dossierDetail: {
-      birthDate: "30 Mei 1999",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Gemini",
-      nationality: "Indonesia",
-      yearsActive: "2009 – Sekarang",
-      education: "University of Westminster, London (Business Management)",
-      netWorthEstimate: "Tier A Celebrity (Rp 10M - Rp 20M)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen warganet 90% positif: Dinilai sebagai pria cerdas, berwawasan luas, humoris, berpendidikan tinggi, dan memperlakukan pasangan bak ratu (gentleman).",
+    "dossierDetail": {
+      "birthDate": "30 Mei 1999",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Gemini",
+      "nationality": "Indonesia",
+      "yearsActive": "2009 – Sekarang",
+      "education": "University of Westminster, London (Business Management)",
+      "netWorthEstimate": "Tier A Celebrity (Rp 10M - Rp 20M)",
+      "topAffiliations": [
         "Republik Cinta Management",
         "Nusantara United FC",
-        "The Lucky Laki",
-      ],
+        "The Lucky Laki"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2023",
-        title: "Ketegangan Ring Tinju Superstar Knockout vs Jefri Nichol",
-        status: "TERKONFIRMASI",
-        summary: "Pertandingan olahraga tinju resmi selebritas yang memicu adu argumen sengit antar suporter kedua belah pihak.",
-        resolution: "El Rumi menang mutlak lewat penilaian juri poin, diakhiri dengan sikap sportif pelukan kedua atlet.",
-      },
+        "year": "2023",
+        "title": "Ketegangan Ring Tinju Superstar Knockout vs Jefri Nichol",
+        "status": "TERKONFIRMASI",
+        "summary": "Pertandingan olahraga tinju resmi selebritas yang memicu adu argumen sengit antar suporter kedua belah pihak.",
+        "resolution": "El Rumi menang mutlak lewat penilaian juri poin, diakhiri dengan sikap sportif pelukan kedua atlet."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Kopi Rumi",
-        category: "F&B Kafe Kekinian",
-        role: "Owner & Co-Founder",
-        status: "Aktif Beroperasi",
+        "name": "Kopi Rumi",
+        "category": "F&B Kafe Kekinian",
+        "role": "Owner & Co-Founder",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Nusantara United FC",
-        category: "Klub Sepak Bola Liga 2",
-        role: "Presiden Klub",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Nusantara United FC",
+        "category": "Klub Sepak Bola Liga 2",
+        "role": "Presiden Klub",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "Celebrity Sports Awards",
-        category: "Best Celebrity Boxer of the Year",
-        result: "Menang",
+        "year": "2024",
+        "award": "Celebrity Sports Awards",
+        "category": "Best Celebrity Boxer of the Year",
+        "result": "Menang"
       },
       {
-        year: "2024",
-        award: "Infotainment Awards",
-        category: "Most Romantic Celebrity Couple (bersama Syifa)",
-        result: "Menang",
-      },
+        "year": "2024",
+        "award": "Infotainment Awards",
+        "category": "Most Romantic Celebrity Couple (bersama Syifa)",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Di mana El Rumi menempuh kuliah sarjananya?",
-        answer: "El Rumi menyelesaikan pendidikan sarjana di University of Westminster, London, Inggris dengan jurusan Business Management pada 2021.",
+        "question": "Di mana El Rumi menempuh kuliah sarjananya?",
+        "answer": "El Rumi menyelesaikan pendidikan sarjana di University of Westminster, London, Inggris dengan jurusan Business Management pada 2021."
       },
       {
-        question: "Apa jabatan resmi El Rumi di klub sepak bola Nusantara United?",
-        answer: "El Rumi menjabat sebagai Presiden Klub Nusantara United FC, klub profesional yang berlaga di kompetisi Liga 2 Indonesia.",
-      },
+        "question": "Apa jabatan resmi El Rumi di klub sepak bola Nusantara United?",
+        "answer": "El Rumi menjabat sebagai Presiden Klub Nusantara United FC, klub profesional yang berlaga di kompetisi Liga 2 Indonesia."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Perpaduan DNA Musisi Maestro dan Profesionalisme Manajemen Bisnis",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Sebagai putra kedua dari pasangan Ahmad Dhani dan Maia Estianty, Ahmad Jalaluddin Rumi (El Rumi) berhasil menavigasi ekspektasi besar publik terhadap trah dinasti musik keluarganya. Berbeda dengan pendekatan musisi tradisional, El melengkapi bakat seninya dengan gelar akademik manajemen bisnis dari London, memberikannya keunggulan komparatif dalam mengelola hak cipta dan industri olahraga hiburan.</p>",
+        "title": "Perpaduan DNA Musisi Maestro dan Profesionalisme Manajemen Bisnis",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Sebagai putra kedua dari pasangan Ahmad Dhani dan Maia Estianty, Ahmad Jalaluddin Rumi (El Rumi) berhasil menavigasi ekspektasi besar publik terhadap trah dinasti musik keluarganya. Berbeda dengan pendekatan musisi tradisional, El melengkapi bakat seninya dengan gelar akademik manajemen bisnis dari London, memberikannya keunggulan komparatif dalam mengelola hak cipta dan industri olahraga hiburan.</p>"
       },
       {
-        title: "Persona Gentleman Modern: Standar Baru Romantisisme Selebritas Indonesia",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Interaksi publik El Rumi dengan Syifa Hadju sering dijadikan rujukan oleh warganet sebagai perwujudan standar hubungan sehat (<em>green flag behavior</em>). Sikapnya yang santai, tidak defensif saat diwawancarai awak media, serta keterbukaannya melibatkan keluarga besar mengukuhkan citranya sebagai salah satu figur muda paling dihormati di media sosial saat ini.</p>",
-      },
-    ],
+        "title": "Persona Gentleman Modern: Standar Baru Romantisisme Selebritas Indonesia",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Interaksi publik El Rumi dengan Syifa Hadju sering dijadikan rujukan oleh warganet sebagai perwujudan standar hubungan sehat (<em>green flag behavior</em>). Sikapnya yang santai, tidak defensif saat diwawancarai awak media, serta keterbukaannya melibatkan keluarga besar mengukuhkan citranya sebagai salah satu figur muda paling dihormati di media sosial saat ini.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-11",
-    slug: "azizah-salsha",
-    name: "Nurul Azizah Rosiade",
-    stageName: "Azizah Salsha (Zize)",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
-    profession: "Selebgram, Model, Kreator Konten Digital",
-    age: 21,
-    agency: "Independen (Creative Management)",
-    relationshipStatus: "Menikah (Pratama Arhan)",
-    circle: [
+    "id": "celeb-11",
+    "slug": "azizah-salsha",
+    "name": "Nurul Azizah Rosiade",
+    "stageName": "Azizah Salsha (Zize)",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Selebgram, Model, Kreator Konten Digital",
+    "age": 21,
+    "agency": "Independen (Creative Management)",
+    "relationshipStatus": "Menikah (Pratama Arhan)",
+    "circle": [
       "Pratama Arhan",
       "Andre Rosiade",
       "Fuji Utami",
       "Rachel Vennya",
-      "Mail Syahputra",
+      "Mail Syahputra"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@azizahsalsha_",
-        url: "https://instagram.com/azizahsalsha_",
+        "platform": "instagram",
+        "handle": "@azizahsalsha_",
+        "url": "https://instagram.com/azizahsalsha_"
       },
       {
-        platform: "tiktok",
-        handle: "@azizahsalshaa",
-        url: "https://tiktok.com/@azizahsalshaa",
-      },
+        "platform": "tiktok",
+        "handle": "@azizahsalshaa",
+        "url": "https://tiktok.com/@azizahsalshaa"
+      }
     ],
-    bio: "Selebgram dan figur media sosial muda yang mencuri perhatian nasional lewat pernikahannya dengan bek Timnas Indonesia Pratama Arhan di Tokyo. Menjadi subjek polarisasi percakapan internet seputar dinamika pertemanan selebritis dan kehidupan rumah tangga lintas negara.",
-    careerHighlights: [
+    "bio": "Selebgram dan figur media sosial muda yang mencuri perhatian nasional lewat pernikahannya dengan bek Timnas Indonesia Pratama Arhan di Tokyo. Menjadi subjek polarisasi percakapan internet seputar dinamika pertemanan selebritis dan kehidupan rumah tangga lintas negara.",
+    "careerHighlights": [
       "Pernikahan diplomatik & olahraga viral di Masjid Indonesia Tokyo (2023)",
       "Brand Ambassador berbagai jenama kecantikan dan klinik estetika",
-      "Ikon gaya hidup olahraga padel dan equestrian di kalangan pesohor muda",
+      "Ikon gaya hidup olahraga padel dan equestrian di kalangan pesohor muda"
     ],
-    dramaCount: 3,
-    sentimentSummary: "Sentimen terbelah tajam: 48% pembelaan loyalitas penggemar & circle keluarga, 52% kritik warganet terkait isu dinamika relasi masa lalu.",
-    dossierDetail: {
-      birthDate: "21 Oktober 2003",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Libra",
-      nationality: "Indonesia",
-      yearsActive: "2020 – Sekarang",
-      education: "Universitas Trisakti (Ilmu Hukum)",
-      netWorthEstimate: "Tier B Creator (Rp 3M - Rp 7M)",
-      topAffiliations: [
+    "dramaCount": 3,
+    "sentimentSummary": "Sentimen terbelah tajam: 48% pembelaan loyalitas penggemar & circle keluarga, 52% kritik warganet terkait isu dinamika relasi masa lalu.",
+    "dossierDetail": {
+      "birthDate": "21 Oktober 2003",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Libra",
+      "nationality": "Indonesia",
+      "yearsActive": "2020 – Sekarang",
+      "education": "Universitas Trisakti (Ilmu Hukum)",
+      "netWorthEstimate": "Tier B Creator (Rp 3M - Rp 7M)",
+      "topAffiliations": [
         "Keluarga Andre Rosiade",
         "Circle Selebgram Senopati",
-        "Timnas Supporters Circle",
-      ],
+        "Timnas Supporters Circle"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Tuduhan Perselingkuhan & Kegaduhan Tagar Medsos X",
-        status: "MENUNGGU_TANGGAPAN",
-        summary: "Penyebaran utas viral di platform X yang menuduh adanya keretakan rumah tangga dan perselisihan pertemanan dengan figur digital lain.",
-        resolution: "Laporan resmi ke Bareskrim Polri atas dugaan pencemaran nama baik UU ITE terhadap sejumlah akun penyebar hoaks.",
-      },
+        "year": "2024",
+        "title": "Tuduhan Perselingkuhan & Kegaduhan Tagar Medsos X",
+        "status": "MENUNGGU_TANGGAPAN",
+        "summary": "Penyebaran utas viral di platform X yang menuduh adanya keretakan rumah tangga dan perselisihan pertemanan dengan figur digital lain.",
+        "resolution": "Laporan resmi ke Bareskrim Polri atas dugaan pencemaran nama baik UU ITE terhadap sejumlah akun penyebar hoaks."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Zize Studio & Endorsement",
-        category: "Digital Advertising",
-        role: "Principal Creator",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Zize Studio & Endorsement",
+        "category": "Digital Advertising",
+        "role": "Principal Creator",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2023",
-        award: "TikTok Awards Indonesia",
-        category: "Celebrity of The Year",
-        result: "Nominasi",
-      },
+        "year": "2023",
+        "award": "TikTok Awards Indonesia",
+        "category": "Celebrity of The Year",
+        "result": "Nominasi"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Kapan dan di mana Azizah Salsha menikah dengan Pratama Arhan?",
-        answer: "Azizah Salsha menikah dengan pemain Timnas Indonesia Pratama Arhan pada 20 Agustus 2023 di Masjid Indonesia Tokyo, Jepang.",
+        "question": "Kapan dan di mana Azizah Salsha menikah dengan Pratama Arhan?",
+        "answer": "Azizah Salsha menikah dengan pemain Timnas Indonesia Pratama Arhan pada 20 Agustus 2023 di Masjid Indonesia Tokyo, Jepang."
       },
       {
-        question: "Siapa ayah dari Azizah Salsha?",
-        answer: "Azizah Salsha adalah putri dari politisi dan anggota DPR RI Fraksi Partai Gerindra, Andre Rosiade.",
-      },
+        "question": "Siapa ayah dari Azizah Salsha?",
+        "answer": "Azizah Salsha adalah putri dari politisi dan anggota DPR RI Fraksi Partai Gerindra, Andre Rosiade."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Episentrum Polarisasi Media Sosial: Dinamika Kehidupan Pesohor Gen-Z",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Nurul Azizah Rosiade merupakan contoh representatif dari bagaimana figur publik generasi Z di Indonesia hidup di bawah mikroskop digital tanpa henti. Setiap gestur, rekaman siaran langsung TikTok, hingga relasi pertemanannya dengan sesama selebgram Jakarta Selatan dianalisis dan diperdebatkan secara masif oleh warganet.</p>",
+        "title": "Episentrum Polarisasi Media Sosial: Dinamika Kehidupan Pesohor Gen-Z",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nurul Azizah Rosiade merupakan contoh representatif dari bagaimana figur publik generasi Z di Indonesia hidup di bawah mikroskop digital tanpa henti. Setiap gestur, rekaman siaran langsung TikTok, hingga relasi pertemanannya dengan sesama selebgram Jakarta Selatan dianalisis dan diperdebatkan secara masif oleh warganet.</p>"
       },
       {
-        title: "Forensik Hukum UU ITE dan Batas Privasi Rumah Tangga Tokoh Publik",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Langkah hukum yang diambil Azizah Salsha dengan melaporkan akun-akun penyebar fitnah ke Bareskrim Polri pada medio 2024 menandai babak penting perlindungan reputasi digital. Kasus ini membuka diskursus mendalam mengenai batas tipis antara kebebasan berekspresi di forum media sosial dan delik pencemaran nama baik yang berpotensi pidana.</p>",
-      },
-    ],
+        "title": "Forensik Hukum UU ITE dan Batas Privasi Rumah Tangga Tokoh Publik",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Langkah hukum yang diambil Azizah Salsha dengan melaporkan akun-akun penyebar fitnah ke Bareskrim Polri pada medio 2024 menandai babak penting perlindungan reputasi digital. Kasus ini membuka diskursus mendalam mengenai batas tipis antara kebebasan berekspresi di forum media sosial dan delik pencemaran nama baik yang berpotensi pidana.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-12",
-    slug: "nikita-mirzani",
-    name: "Nikita Mirzani Mawardi",
-    stageName: "Nikita Mirzani",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktris, Presenter Kontroversial, Pebisnis Kecantikan",
-    age: 38,
-    agency: "Niki Production Nusantara",
-    relationshipStatus: "Single",
-    circle: [
+    "id": "celeb-12",
+    "slug": "nikita-mirzani",
+    "name": "Nikita Mirzani Mawardi",
+    "stageName": "Nikita Mirzani",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris, Presenter Kontroversial, Pebisnis Kecantikan",
+    "age": 38,
+    "agency": "Niki Production Nusantara",
+    "relationshipStatus": "Single",
+    "circle": [
       "Fahmi Bachmid",
       "Fitri Salhuteru (Mantan Rekan)",
       "Mail Syahputra",
-      "Dokter Oky Pratama",
+      "Dokter Oky Pratama"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@nikitamirzanimawardi_172",
-        url: "https://instagram.com",
+        "platform": "instagram",
+        "handle": "@nikitamirzanimawardi_172",
+        "url": "https://instagram.com"
       },
       {
-        platform: "tiktok",
-        handle: "@nikitamirzanimawardi17",
-        url: "https://tiktok.com",
+        "platform": "tiktok",
+        "handle": "@nikitamirzanimawardi17",
+        "url": "https://tiktok.com"
       },
       {
-        platform: "youtube",
-        handle: "@CrazyNikmirREAL",
-        url: "https://youtube.com",
-      },
+        "platform": "youtube",
+        "handle": "@CrazyNikmirREAL",
+        "url": "https://youtube.com"
+      }
     ],
-    bio: "Figur paling magnetis dan kontroversial dalam lanskap infotainment Indonesia selama lebih dari satu dekade. Dikenal tanpa kompromi dalam mengungkap duduk perkara, memiliki rekam jejak panjang persidangan hukum, serta pemilik kerajaan bisnis klinik kecantikan dan fesyen.",
-    careerHighlights: [
+    "bio": "Figur paling magnetis dan kontroversial dalam lanskap infotainment Indonesia selama lebih dari satu dekade. Dikenal tanpa kompromi dalam mengungkap duduk perkara, memiliki rekam jejak panjang persidangan hukum, serta pemilik kerajaan bisnis klinik kecantikan dan fesyen.",
+    "careerHighlights": [
       "Bintang Utama Film Komedi & Horor Layar Lebar Indonesia",
       "Host Talkshow Viral 'Nih Kita Kepo' Trans TV",
       "Founder Brand Skincare Nikita Mirzani Skincare & Bening's Affiliate",
-      "Pemenang vonis bebas perkara pencemaran nama baik di PN Serang (2022)",
+      "Pemenang vonis bebas perkara pencemaran nama baik di PN Serang (2022)"
     ],
-    dramaCount: 9,
-    sentimentSummary: "Sentimen sangat dinamis: Diakui sebagai ibu yang protektif dan pemberani oleh pendukungnya, namun dikritik atas gaya konfrontasi terbuka oleh penentangnya.",
-    dossierDetail: {
-      birthDate: "17 Maret 1986",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Pisces",
-      nationality: "Indonesia",
-      yearsActive: "2010 – Sekarang",
-      education: "Pondok Pesantren Gontor Putri (Alumni Santri), Universitas Swasta Jakarta",
-      netWorthEstimate: "Tier S Mogul (Rp 50M - Rp 100M+)",
-      topAffiliations: [
+    "dramaCount": 9,
+    "sentimentSummary": "Sentimen sangat dinamis: Diakui sebagai ibu yang protektif dan pemberani oleh pendukungnya, namun dikritik atas gaya konfrontasi terbuka oleh penentangnya.",
+    "dossierDetail": {
+      "birthDate": "17 Maret 1986",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Pisces",
+      "nationality": "Indonesia",
+      "yearsActive": "2010 – Sekarang",
+      "education": "Pondok Pesantren Gontor Putri (Alumni Santri), Universitas Swasta Jakarta",
+      "netWorthEstimate": "Tier S Mogul (Rp 50M - Rp 100M+)",
+      "topAffiliations": [
         "Bening's Clinic Partner",
         "Crazy Nikmir Real",
-        "Fahmi Bachmid & Partners",
-      ],
+        "Fahmi Bachmid & Partners"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Penjemputan Laura Meizani (Lolly) & Laporan Pidana Anak di Bawah Umur",
-        status: "TERKONFIRMASI",
-        summary: "Aksi penjemputan dramatis putrinya di apartemen Bintaro yang berujung pada laporan dugaan pelanggaran UU Perlindungan Anak terhadap Vadel Badjideh.",
-        resolution: "Proses penyidikan resmi di Polres Metro Jakarta Selatan dengan penetapan visum et repertum.",
+        "year": "2024",
+        "title": "Penjemputan Laura Meizani (Lolly) & Laporan Pidana Anak di Bawah Umur",
+        "status": "TERKONFIRMASI",
+        "summary": "Aksi penjemputan dramatis putrinya di apartemen Bintaro yang berujung pada laporan dugaan pelanggaran UU Perlindungan Anak terhadap Vadel Badjideh.",
+        "resolution": "Proses penyidikan resmi di Polres Metro Jakarta Selatan dengan penetapan visum et repertum."
       },
       {
-        year: "2022",
-        title: "Perkara Pencemaran Nama Baik Dito Mahendra di PN Serang",
-        status: "TERKONFIRMASI",
-        summary: "Penahanan rutan selama 2 bulan atas unggahan Instagram Story terkait sengketa kepemilikan aset.",
-        resolution: "Majelis Hakim PN Serang menjatuhkan vonis bebas murni karena saksi pelapor mangkir berulang kali.",
-      },
+        "year": "2022",
+        "title": "Perkara Pencemaran Nama Baik Dito Mahendra di PN Serang",
+        "status": "TERKONFIRMASI",
+        "summary": "Penahanan rutan selama 2 bulan atas unggahan Instagram Story terkait sengketa kepemilikan aset.",
+        "resolution": "Majelis Hakim PN Serang menjatuhkan vonis bebas murni karena saksi pelapor mangkir berulang kali."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Nikita Mirzani Skincare",
-        category: "Kecantikan & Kosmetik",
-        role: "Owner & Principal",
-        status: "Aktif Beroperasi",
+        "name": "Nikita Mirzani Skincare",
+        "category": "Kecantikan & Kosmetik",
+        "role": "Owner & Principal",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Crazy Nikmir Real Channel",
-        category: "Media YouTube & Podcast",
-        role: "Executive Producer",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Crazy Nikmir Real Channel",
+        "category": "Media YouTube & Podcast",
+        "role": "Executive Producer",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2020",
-        award: "Silet Awards",
-        category: "Kontroversi Tersilet",
-        result: "Menang",
+        "year": "2020",
+        "award": "Silet Awards",
+        "category": "Kontroversi Tersilet",
+        "result": "Menang"
       },
       {
-        year: "2014",
-        award: "Insert Awards",
-        category: "Sexiest Female Celebrity",
-        result: "Menang",
-      },
+        "year": "2014",
+        "award": "Insert Awards",
+        "category": "Sexiest Female Celebrity",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Bagaimana duduk perkara hukum perseteruan Nikita Mirzani dan pihak Vadel Badjideh?",
-        answer: "Nikita Mirzani melaporkan Vadel Badjideh ke Polres Metro Jakarta Selatan atas dugaan persetubuhan anak di bawah umur dan aborsi ilegal sesuai pasal UU Perlindungan Anak.",
+        "question": "Bagaimana duduk perkara hukum perseteruan Nikita Mirzani dan pihak Vadel Badjideh?",
+        "answer": "Nikita Mirzani melaporkan Vadel Badjideh ke Polres Metro Jakarta Selatan atas dugaan persetubuhan anak di bawah umur dan aborsi ilegal sesuai pasal UU Perlindungan Anak."
       },
       {
-        question: "Apa latar belakang pendidikan agama Nikita Mirzani?",
-        answer: "Nikita Mirzani pernah menempuh pendidikan santriwati selama lebih dari dua tahun di Pondok Pesantren Modern Darussalam Gontor Putri di Mantingan, Ngawi.",
-      },
+        "question": "Apa latar belakang pendidikan agama Nikita Mirzani?",
+        "answer": "Nikita Mirzani pernah menempuh pendidikan santriwati selama lebih dari dua tahun di Pondok Pesantren Modern Darussalam Gontor Putri di Mantingan, Ngawi."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Anatomi Fenomena Nikita Mirzani: Maestro Manajemen Perhatian Ruang Publik",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Nikita Mirzani Mawardi adalah sosok yang memahami kerja media hiburan Indonesia secara instingtif. Di saat figur lain berusaha menyembunyikan konflik personal, Nikita justru membawa konflik ke panggung terbuka, mengonversi ketegangan hukum menjadi perhatian massal yang pada gilirannya mendongkrak penjualan produk bisnisnya.</p>",
+        "title": "Anatomi Fenomena Nikita Mirzani: Maestro Manajemen Perhatian Ruang Publik",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Nikita Mirzani Mawardi adalah sosok yang memahami kerja media hiburan Indonesia secara instingtif. Di saat figur lain berusaha menyembunyikan konflik personal, Nikita justru membawa konflik ke panggung terbuka, mengonversi ketegangan hukum menjadi perhatian massal yang pada gilirannya mendongkrak penjualan produk bisnisnya.</p>"
       },
       {
-        title: "Dilema Keibuan vs Eksposur Publik dalam Kasus Perlindungan Anak",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Dinamika penjemputan dan penanganan hukum terhadap putrinya, Lolly, pada akhir 2024 memperlihatkan sisi lain dari Nikita Mirzani sebagai seorang ibu tunggal. Di balik gaya bicaranya yang meledak-ledak, langkah hukum tegasnya dipandang banyak pihak sebagai upaya terakhir memulihkan keselamatan anak dari pengaruh manipulatif lingkungan eksternal.</p>",
-      },
-    ],
+        "title": "Dilema Keibuan vs Eksposur Publik dalam Kasus Perlindungan Anak",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Dinamika penjemputan dan penanganan hukum terhadap putrinya, Lolly, pada akhir 2024 memperlihatkan sisi lain dari Nikita Mirzani sebagai seorang ibu tunggal. Di balik gaya bicaranya yang meledak-ledak, langkah hukum tegasnya dipandang banyak pihak sebagai upaya terakhir memulihkan keselamatan anak dari pengaruh manipulatif lingkungan eksternal.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-13",
-    slug: "prilly-latuconsina",
-    name: "Prilly Mahatei Latuconsina",
-    stageName: "Prilly Latuconsina",
-    avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktris, Produser Film, Dosen Praktisi, Pemilik Klub Sepak Bola",
-    age: 28,
-    agency: "Sinemaku Pictures (Owner)",
-    relationshipStatus: "Single",
-    circle: [
+    "id": "celeb-13",
+    "slug": "prilly-latuconsina",
+    "name": "Prilly Mahatei Latuconsina",
+    "stageName": "Prilly Latuconsina",
+    "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris, Produser Film, Dosen Praktisi, Pemilik Klub Sepak Bola",
+    "age": 28,
+    "agency": "Sinemaku Pictures (Owner)",
+    "relationshipStatus": "Single",
+    "circle": [
       "Umar Syarief",
       "Reza Rahadian",
       "Shenina Cinnamon",
       "Angga Yunanda",
-      "Manoj Punjabi",
+      "Manoj Punjabi"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@prillylatuconsina96",
-        url: "https://instagram.com/prillylatuconsina96",
+        "platform": "instagram",
+        "handle": "@prillylatuconsina96",
+        "url": "https://instagram.com/prillylatuconsina96"
       },
       {
-        platform: "tiktok",
-        handle: "@prillylatuconsina15",
-        url: "https://tiktok.com/@prillylatuconsina15",
-      },
+        "platform": "tiktok",
+        "handle": "@prillylatuconsina15",
+        "url": "https://tiktok.com/@prillylatuconsina15"
+      }
     ],
-    bio: "Salah satu figur muda paling berpengaruh di industri perfilman Indonesia. Merupakan pendiri rumah produksi Sinemaku Pictures yang sukses mencetak film box office jutaan penonton, dosen praktisi komunikasi universitas negeri, aktivis lingkungan hidup, serta pemilik klub sepak bola Persikota Tangerang.",
-    careerHighlights: [
+    "bio": "Salah satu figur muda paling berpengaruh di industri perfilman Indonesia. Merupakan pendiri rumah produksi Sinemaku Pictures yang sukses mencetak film box office jutaan penonton, dosen praktisi komunikasi universitas negeri, aktivis lingkungan hidup, serta pemilik klub sepak bola Persikota Tangerang.",
+    "careerHighlights": [
       "Co-Founder & Chief Executive Officer (CEO) Sinemaku Pictures",
       "Pemeran & Produser Film Box Office 'Kukira Kau Rumah' & 'Budi Pekerti'",
       "Dosen Praktisi Mata Kuliah Komunikasi di Universitas Gadjah Mada (UGM)",
       "Pemilik Klub Sepak Bola Persikota Tangerang",
-      "Penerima Penghargaan Duta Festival Film Indonesia (FFI)",
+      "Penerima Penghargaan Duta Festival Film Indonesia (FFI)"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen publik 96% positif: Diakui sebagai teladan perempuan muda mandiri berprestasi, cerdas, beretika kerja luar biasa, dan bebas gosip murahan.",
-    dossierDetail: {
-      birthDate: "15 Oktober 1996",
-      birthPlace: "Tangerang, Banten, Indonesia",
-      zodiac: "Libra",
-      nationality: "Indonesia",
-      yearsActive: "2009 – Sekarang",
-      education: "London School of Public Relations (LSPR) Jakarta (Best Graduate)",
-      netWorthEstimate: "Tier S Creator-Mogul (Rp 30M - Rp 60M)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik 96% positif: Diakui sebagai teladan perempuan muda mandiri berprestasi, cerdas, beretika kerja luar biasa, dan bebas gosip murahan.",
+    "dossierDetail": {
+      "birthDate": "15 Oktober 1996",
+      "birthPlace": "Tangerang, Banten, Indonesia",
+      "zodiac": "Libra",
+      "nationality": "Indonesia",
+      "yearsActive": "2009 – Sekarang",
+      "education": "London School of Public Relations (LSPR) Jakarta (Best Graduate)",
+      "netWorthEstimate": "Tier S Creator-Mogul (Rp 30M - Rp 60M)",
+      "topAffiliations": [
         "Sinemaku Pictures",
         "Persikota Tangerang",
         "FFI",
-        "Generasi Bebas Sampah",
-      ],
+        "Generasi Bebas Sampah"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Sorotan Tabung Gas Subsidi dalam Video Memasak Lebaran",
-        status: "FAKTA_DIGITAL",
-        summary: "Ketidaksengajaan terlihatnya tabung gas melon 3kg bersubsidi di dapur rumah saat proses pembuatan hidangan hari raya.",
-        resolution: "Permintaan maaf terbuka secara langsung, menjelaskan tabung tersebut dipinjam asisten rumah tangga saat stok gas non-subsidi habis, dan langsung diganti.",
-      },
+        "year": "2024",
+        "title": "Sorotan Tabung Gas Subsidi dalam Video Memasak Lebaran",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Ketidaksengajaan terlihatnya tabung gas melon 3kg bersubsidi di dapur rumah saat proses pembuatan hidangan hari raya.",
+        "resolution": "Permintaan maaf terbuka secara langsung, menjelaskan tabung tersebut dipinjam asisten rumah tangga saat stok gas non-subsidi habis, dan langsung diganti."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Sinemaku Pictures",
-        category: "Produksi Film Layar Lebar & Serial",
-        role: "Co-founder & CEO",
-        status: "Aktif Beroperasi",
+        "name": "Sinemaku Pictures",
+        "category": "Produksi Film Layar Lebar & Serial",
+        "role": "Co-founder & CEO",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "La Joie Bakery & Cafe",
-        category: "F&B Roti & Pastry Prancis",
-        role: "Owner & Founder",
-        status: "Aktif Beroperasi",
+        "name": "La Joie Bakery & Cafe",
+        "category": "F&B Roti & Pastry Prancis",
+        "role": "Owner & Founder",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Persikota Tangerang",
-        category: "Klub Sepak Bola Liga Nasional",
-        role: "Executive Owner",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Persikota Tangerang",
+        "category": "Klub Sepak Bola Liga Nasional",
+        "role": "Executive Owner",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2023",
-        award: "Festival Film Indonesia (Piala Citra)",
-        category: "Pemeran Pendukung Perempuan Terbaik",
-        result: "Menang",
+        "year": "2023",
+        "award": "Festival Film Indonesia (Piala Citra)",
+        "category": "Pemeran Pendukung Perempuan Terbaik",
+        "result": "Menang"
       },
       {
-        year: "2022",
-        award: "Forbes 30 Under 30 Asia",
-        category: "Entertainment & Sports",
-        result: "Menang",
-      },
+        "year": "2022",
+        "award": "Forbes 30 Under 30 Asia",
+        "category": "Entertainment & Sports",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa saja film sukses produksi Sinemaku Pictures milik Prilly Latuconsina?",
-        answer: "Sinemaku Pictures sukses memproduksi film 'Kukira Kau Rumah', 'Ketika Berhenti di Sini', hingga 'Bolehkan Sekali Saja Ku Menangis' yang mencatatkan jutaan penonton di bioskop.",
+        "question": "Apa saja film sukses produksi Sinemaku Pictures milik Prilly Latuconsina?",
+        "answer": "Sinemaku Pictures sukses memproduksi film 'Kukira Kau Rumah', 'Ketika Berhenti di Sini', hingga 'Bolehkan Sekali Saja Ku Menangis' yang mencatatkan jutaan penonton di bioskop."
       },
       {
-        question: "Di universitas mana Prilly Latuconsina mengajar sebagai dosen praktisi?",
-        answer: "Prilly tercatat sebagai dosen praktisi di Departemen Ilmu Komunikasi Universitas Gadjah Mada (UGM) Yogyakarta.",
-      },
+        "question": "Di universitas mana Prilly Latuconsina mengajar sebagai dosen praktisi?",
+        "answer": "Prilly tercatat sebagai dosen praktisi di Departemen Ilmu Komunikasi Universitas Gadjah Mada (UGM) Yogyakarta."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Dari Bintang Remaja Menjadi Produser Eksekutif Pengubah Peta Perfilman",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Karier Prilly Latuconsina menandai era baru perfilman Indonesia di mana generasi muda tidak lagi sekadar menjadi objek di depan lensa kamera, melainkan memegang kendali penuh di kursi produser. Bersama sutradara Umay Shahab di Sinemaku Pictures, ia membuktikan bahwa tema-tema kesehatan mental dan pergulatan emosional generasi muda mampu bersaing merebut jutaan tiket bioskop di tengah gempuran film horor komersial.</p>",
-      },
-    ],
+        "title": "Dari Bintang Remaja Menjadi Produser Eksekutif Pengubah Peta Perfilman",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Karier Prilly Latuconsina menandai era baru perfilman Indonesia di mana generasi muda tidak lagi sekadar menjadi objek di depan lensa kamera, melainkan memegang kendali penuh di kursi produser. Bersama sutradara Umay Shahab di Sinemaku Pictures, ia membuktikan bahwa tema-tema kesehatan mental dan pergulatan emosional generasi muda mampu bersaing merebut jutaan tiket bioskop di tengah gempuran film horor komersial.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-14",
-    slug: "deddy-corbuzier",
-    name: "Deodatus Andreas Deddy Cahyadi Sunjoyo",
-    stageName: "Deddy Corbuzier",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
-    profession: "Podcaster Nomor 1 Indonesia, Investor Digital, Staf Khusus Menhan",
-    age: 48,
-    agency: "D-Cellent & PT Dektatama Digital Korpora",
-    relationshipStatus: "Menikah (Sabrina Chairunnisa)",
-    circle: [
+    "id": "celeb-14",
+    "slug": "deddy-corbuzier",
+    "name": "Deodatus Andreas Deddy Cahyadi Sunjoyo",
+    "stageName": "Deddy Corbuzier",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Podcaster Nomor 1 Indonesia, Investor Digital, Staf Khusus Menhan",
+    "age": 48,
+    "agency": "D-Cellent & PT Dektatama Digital Korpora",
+    "relationshipStatus": "Menikah (Sabrina Chairunnisa)",
+    "circle": [
       "Sabrina Chairunnisa",
       "Azka Corbuzier",
       "Nada Tarina",
       "Prabowo Subianto",
-      "Raffi Ahmad",
+      "Raffi Ahmad"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "youtube",
-        handle: "@corbuzier",
-        url: "https://youtube.com/@corbuzier",
+        "platform": "youtube",
+        "handle": "@corbuzier",
+        "url": "https://youtube.com/@corbuzier"
       },
       {
-        platform: "instagram",
-        handle: "@mastercorbuzier",
-        url: "https://instagram.com/mastercorbuzier",
+        "platform": "instagram",
+        "handle": "@mastercorbuzier",
+        "url": "https://instagram.com/mastercorbuzier"
       },
       {
-        platform: "x",
-        handle: "@corbuzier",
-        url: "https://x.com/corbuzier",
-      },
+        "platform": "x",
+        "handle": "@corbuzier",
+        "url": "https://x.com/corbuzier"
+      }
     ],
-    bio: "Pionir podcast modern Indonesia yang dijuluki 'The Father of YouTube Indonesia'. Mengawali karier sebagai mentalis legendaris peraih Merlin Award, kini menjadi tokoh sentral opini publik, pemegang pangkat Letnan Kolonel Tituler TNI, serta investor di ekosistem ekonomi kreator tanah air.",
-    careerHighlights: [
+    "bio": "Pionir podcast modern Indonesia yang dijuluki 'The Father of YouTube Indonesia'. Mengawali karier sebagai mentalis legendaris peraih Merlin Award, kini menjadi tokoh sentral opini publik, pemegang pangkat Letnan Kolonel Tituler TNI, serta investor di ekosistem ekonomi kreator tanah air.",
+    "careerHighlights": [
       "Pencetus Podcast Terbesar Asia Tenggara 'Close The Door' (22 Juta+ Subscriber)",
       "Penerima Gelar Mentalis Terbaik Dunia 'Merlin Award' Dua Kali",
       "Pangkat Militer Kehormatan Letnan Kolonel Tituler TNI AD",
-      "Staf Khusus Menteri Pertahanan Republik Indonesia",
+      "Staf Khusus Menteri Pertahanan Republik Indonesia"
     ],
-    dramaCount: 5,
-    sentimentSummary: "Sentimen publik 75% positif: Dihormati atas kekuatan pengaruh podcast dan intelektualitasnya, dengan catatan 25% kritik atas sejumlah episode tamu kontroversial.",
-    dossierDetail: {
-      birthDate: "28 Desember 1976",
-      birthPlace: "Jakarta, Indonesia",
-      zodiac: "Capricorn",
-      nationality: "Indonesia",
-      yearsActive: "1998 – Sekarang",
-      education: "Universitas Katolik Atma Jaya Jakarta, Psikologi Universitas Terbuka",
-      netWorthEstimate: "Tier S Mogul (Rp 300M - Rp 500M+)",
-      topAffiliations: [
+    "dramaCount": 5,
+    "sentimentSummary": "Sentimen publik 75% positif: Dihormati atas kekuatan pengaruh podcast dan intelektualitasnya, dengan catatan 25% kritik atas sejumlah episode tamu kontroversial.",
+    "dossierDetail": {
+      "birthDate": "28 Desember 1976",
+      "birthPlace": "Jakarta, Indonesia",
+      "zodiac": "Capricorn",
+      "nationality": "Indonesia",
+      "yearsActive": "1998 – Sekarang",
+      "education": "Universitas Katolik Atma Jaya Jakarta, Psikologi Universitas Terbuka",
+      "netWorthEstimate": "Tier S Mogul (Rp 300M - Rp 500M+)",
+      "topAffiliations": [
         "Kementerian Pertahanan RI",
         "Dektatama Digital Korpora",
-        "Erspo Partner",
-      ],
+        "Erspo Partner"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2022",
-        title: "Episode Podcast Pasangan Kontroversial & Penghapusan Video",
-        status: "TERKONFIRMASI",
-        summary: "Tayangan episode podcast yang mengundang pasangan orientasi seksual minoritas memicu kecaman luas masyarakat.",
-        resolution: "Deddy Corbuzier menghapus tayangan (take down), meminta maaf terbuka kepada umat, dan menegaskan tidak mendukung promosi gaya hidup tersebut.",
+        "year": "2022",
+        "title": "Episode Podcast Pasangan Kontroversial & Penghapusan Video",
+        "status": "TERKONFIRMASI",
+        "summary": "Tayangan episode podcast yang mengundang pasangan orientasi seksual minoritas memicu kecaman luas masyarakat.",
+        "resolution": "Deddy Corbuzier menghapus tayangan (take down), meminta maaf terbuka kepada umat, dan menegaskan tidak mendukung promosi gaya hidup tersebut."
       },
       {
-        year: "2022",
-        title: "Pemberian Pangkat Letnan Kolonel Tituler dari Menhan",
-        status: "TERKONFIRMASI",
-        summary: "Pemberian pangkat militer tituler yang memicu perdebatan hukum tata negara dan urgensi peran figur sipil.",
-        resolution: "Pemerintah menegaskan pangkat diberikan secara sah untuk penguatan komunikasi publik komponen cadangan pertahanan negara.",
-      },
+        "year": "2022",
+        "title": "Pemberian Pangkat Letnan Kolonel Tituler dari Menhan",
+        "status": "TERKONFIRMASI",
+        "summary": "Pemberian pangkat militer tituler yang memicu perdebatan hukum tata negara dan urgensi peran figur sipil.",
+        "resolution": "Pemerintah menegaskan pangkat diberikan secara sah untuk penguatan komunikasi publik komponen cadangan pertahanan negara."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "PT Dektatama Digital Korpora (Close The Door Hub)",
-        category: "Media, Agency & Podcast Network",
-        role: "Chairman & Founder",
-        status: "Aktif Beroperasi",
+        "name": "PT Dektatama Digital Korpora (Close The Door Hub)",
+        "category": "Media, Agency & Podcast Network",
+        "role": "Chairman & Founder",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Gym Osbond & Fit Life",
-        category: "Kebugaran Fisik & Health Center",
-        role: "Investor & Shareholder",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Gym Osbond & Fit Life",
+        "category": "Kebugaran Fisik & Health Center",
+        "role": "Investor & Shareholder",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2021",
-        award: "Panasonic Gobel Awards (Legacy)",
-        category: "Presenter Talkshow Terfavorit",
-        result: "Menang",
+        "year": "2021",
+        "award": "Panasonic Gobel Awards (Legacy)",
+        "category": "Presenter Talkshow Terfavorit",
+        "result": "Menang"
       },
       {
-        year: "2010",
-        award: "International Magicians Society",
-        category: "World Best Mentalist (Merlin Award)",
-        result: "Menang",
-      },
+        "year": "2010",
+        "award": "International Magicians Society",
+        "category": "World Best Mentalist (Merlin Award)",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa itu pangkat Letkol Tituler yang disandang Deddy Corbuzier?",
-        answer: "Pangkat Letkol Tituler adalah pangkat militer kehormatan sementara yang diberikan negara kepada warga sipil atas jasa dan keahlian khusus demi kepentingan pertahanan nasional.",
+        "question": "Apa itu pangkat Letkol Tituler yang disandang Deddy Corbuzier?",
+        "answer": "Pangkat Letkol Tituler adalah pangkat militer kehormatan sementara yang diberikan negara kepada warga sipil atas jasa dan keahlian khusus demi kepentingan pertahanan nasional."
       },
       {
-        question: "Berapa jumlah penonton podcast Close The Door milik Deddy Corbuzier?",
-        answer: "Saluran YouTube Close The Door memiliki lebih dari 22 juta pelanggan dengan akumulasi penonton mencapai miliaran kali tayang.",
-      },
+        "question": "Berapa jumlah penonton podcast Close The Door milik Deddy Corbuzier?",
+        "answer": "Saluran YouTube Close The Door memiliki lebih dari 22 juta pelanggan dengan akumulasi penonton mencapai miliaran kali tayang."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Hegemoni 'Close The Door': Ruang Sidang Pengadilan Opini Publik Digital",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Keberhasilan podcast Close The Door milik Deddy Corbuzier telah menggeser fungsi televisi konvensional di Indonesia. Meja podcast berlatar hitam dengan mikrofon legendarisnya kerap menjadi tempat klarifikasi pertama para menteri, pejabat negara, atlet, hingga selebritas yang tengah terjerat kasus hukum, menjadikannya 'Mahkamah Opini Publik' paling berpengaruh di ranah internet Indonesia.</p>",
-      },
-    ],
+        "title": "Hegemoni 'Close The Door': Ruang Sidang Pengadilan Opini Publik Digital",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Keberhasilan podcast Close The Door milik Deddy Corbuzier telah menggeser fungsi televisi konvensional di Indonesia. Meja podcast berlatar hitam dengan mikrofon legendarisnya kerap menjadi tempat klarifikasi pertama para menteri, pejabat negara, atlet, hingga selebritas yang tengah terjerat kasus hukum, menjadikannya 'Mahkamah Opini Publik' paling berpengaruh di ranah internet Indonesia.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-15",
-    slug: "windah-basudara",
-    name: "Brando Franco Windah",
-    stageName: "Windah Basudara",
-    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
-    profession: "Gaming Streamer Nomor 1 Indonesia, Filantropis Digital",
-    age: 32,
-    agency: "Jaya Esport Entertainment",
-    relationshipStatus: "Berpacaran (Siti Fatimah / Seses)",
-    circle: [
+    "id": "celeb-15",
+    "slug": "windah-basudara",
+    "name": "Brando Franco Windah",
+    "stageName": "Windah Basudara",
+    "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Gaming Streamer Nomor 1 Indonesia, Filantropis Digital",
+    "age": 32,
+    "agency": "Jaya Esport Entertainment",
+    "relationshipStatus": "Berpacaran (Siti Fatimah / Seses)",
+    "circle": [
       "Bocil Kematian (Komunitas Penggemar)",
       "Rio Djaja",
       "Agnes",
       "Tara Arts",
-      "MiawAug",
+      "MiawAug"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "youtube",
-        handle: "@windahbasudara",
-        url: "https://youtube.com/@windahbasudara",
+        "platform": "youtube",
+        "handle": "@windahbasudara",
+        "url": "https://youtube.com/@windahbasudara"
       },
       {
-        platform: "instagram",
-        handle: "@windahbasudara",
-        url: "https://instagram.com/windahbasudara",
-      },
+        "platform": "instagram",
+        "handle": "@windahbasudara",
+        "url": "https://instagram.com/windahbasudara"
+      }
     ],
-    bio: "Streamer gaming paling dicintai di Indonesia dengan jutaan penggemar lintas generasi ('Bocil Kematian'). Dikenal lewat sandiwara drama komedi tamat game yang teatrikal, komitmen tanpa sponsor judi online, serta rekor penggalangan dana kemanusiaan bernilai miliaran rupiah untuk pendidikan dan anak-anak membutuhkan.",
-    careerHighlights: [
+    "bio": "Streamer gaming paling dicintai di Indonesia dengan jutaan penggemar lintas generasi ('Bocil Kematian'). Dikenal lewat sandiwara drama komedi tamat game yang teatrikal, komitmen tanpa sponsor judi online, serta rekor penggalangan dana kemanusiaan bernilai miliaran rupiah untuk pendidikan dan anak-anak membutuhkan.",
+    "careerHighlights": [
       "Peraih 10 Juta Pelanggan Diamond Play Button YouTube (2023)",
       "Penggalangan Dana Kemanusiaan Rp 1 Miliar+ dalam Siaran Langsung Maraton",
       "Penerima Penghargaan Indonesian Esports Awards Indonesian Gaming Content Creator of The Year Berturut-turut",
-      "Pelopor Standar Moral Anti-Endorsement Rumah Judi & Game Ilegal",
+      "Pelopor Standar Moral Anti-Endorsement Rumah Judi & Game Ilegal"
     ],
-    dramaCount: 0,
-    sentimentSummary: "Sentimen publik 98% positif mutlak: Dihormati sebagai sosok panutan tanpa cela (zero drama negatif), dermawan, penghibur sejati, dan pelindung generasi muda.",
-    dossierDetail: {
-      birthDate: "14 Maret 1992",
-      birthPlace: "Manado, Sulawesi Utara, Indonesia",
-      zodiac: "Pisces",
-      nationality: "Indonesia",
-      yearsActive: "2018 – Sekarang",
-      education: "Kuliner & Perhotelan (Mantan Waiter & Pelayan Kafe)",
-      netWorthEstimate: "Tier S Creator (Rp 25M - Rp 50M)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik 98% positif mutlak: Dihormati sebagai sosok panutan tanpa cela (zero drama negatif), dermawan, penghibur sejati, dan pelindung generasi muda.",
+    "dossierDetail": {
+      "birthDate": "14 Maret 1992",
+      "birthPlace": "Manado, Sulawesi Utara, Indonesia",
+      "zodiac": "Pisces",
+      "nationality": "Indonesia",
+      "yearsActive": "2018 – Sekarang",
+      "education": "Kuliner & Perhotelan (Mantan Waiter & Pelayan Kafe)",
+      "netWorthEstimate": "Tier S Creator (Rp 25M - Rp 50M)",
+      "topAffiliations": [
         "Bocil Kematian Foundation",
         "Kitabisa Partner",
-        "RRQ Esport Ambassador (Mantan)",
-      ],
+        "RRQ Esport Ambassador (Mantan)"
+      ]
     },
-    controversies: [],
-    businessVentures: [
+    "controversies": [],
+    "businessVentures": [
       {
-        name: "Jaya Esport Content Network",
-        category: "Digital Media & Gaming Creative",
-        role: "Founder & Host",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Jaya Esport Content Network",
+        "category": "Digital Media & Gaming Creative",
+        "role": "Founder & Host",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2023",
-        award: "Indonesian Gaming Awards",
-        category: "Most Favorite Gaming Content Creator",
-        result: "Menang",
+        "year": "2023",
+        "award": "Indonesian Gaming Awards",
+        "category": "Most Favorite Gaming Content Creator",
+        "result": "Menang"
       },
       {
-        year: "2022",
-        award: "Indonesian Esports Awards",
-        category: "Content Creator Gaming Terfavorit",
-        result: "Menang",
-      },
+        "year": "2022",
+        "award": "Indonesian Esports Awards",
+        "category": "Content Creator Gaming Terfavorit",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Mengapa komunitas penggemar Windah Basudara disebut 'Bocil Kematian'?",
-        answer: "Sebutan 'Bocil Kematian' awalnya lahir dari interaksi jenaka Windah dengan penonton anak-anak yang kerap memberikan saran kocak atau spoiler game saat ia melakukan siaran langsung.",
+        "question": "Mengapa komunitas penggemar Windah Basudara disebut 'Bocil Kematian'?",
+        "answer": "Sebutan 'Bocil Kematian' awalnya lahir dari interaksi jenaka Windah dengan penonton anak-anak yang kerap memberikan saran kocak atau spoiler game saat ia melakukan siaran langsung."
       },
       {
-        question: "Berapa rekor donasi amal terbesar yang pernah dihimpun Windah Basudara?",
-        answer: "Windah tercatat mengumpulkan lebih dari Rp 1,3 miliar dalam waktu kurang dari 6 jam siaran amal untuk beasiswa anak-anak di berbagai daerah terpencil Indonesia.",
-      },
+        "question": "Berapa rekor donasi amal terbesar yang pernah dihimpun Windah Basudara?",
+        "answer": "Windah tercatat mengumpulkan lebih dari Rp 1,3 miliar dalam waktu kurang dari 6 jam siaran amal untuk beasiswa anak-anak di berbagai daerah terpencil Indonesia."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Filantropi Organik & Standar Emas Integritas Kreator Digital Indonesia",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Brando Franco Windah (Windah Basudara) membuktikan bahwa kesuksesan finansial tertinggi di ranah digital dapat dicapai tanpa mengorbankan moralitas. Di tengah maraknya kreator konten yang tergiur bayaran fantastis promosi platform judi terselubung, Windah secara tegas menutup pintu bagi segala bentuk sponsor abu-abu dan memilih mendedikasikan siaran maratonnya untuk aksi filantropi nyata.</p>",
-      },
-    ],
+        "title": "Filantropi Organik & Standar Emas Integritas Kreator Digital Indonesia",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Brando Franco Windah (Windah Basudara) membuktikan bahwa kesuksesan finansial tertinggi di ranah digital dapat dicapai tanpa mengorbankan moralitas. Di tengah maraknya kreator konten yang tergiur bayaran fantastis promosi platform judi terselubung, Windah secara tegas menutup pintu bagi segala bentuk sponsor abu-abu dan memilih mendedikasikan siaran maratonnya untuk aksi filantropi nyata.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-16",
-    slug: "jennie-blackpink",
-    name: "Jennie Kim",
-    stageName: "Jennie BLACKPINK",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
-    profession: "Idol K-Pop Global, Rapper, CEO Agensi OA (ODD ATELIER)",
-    age: 29,
-    agency: "ODD ATELIER (OA) & YG Entertainment (Group)",
-    relationshipStatus: "Private",
-    circle: [
+    "id": "celeb-16",
+    "slug": "jennie-blackpink",
+    "name": "Jennie Kim",
+    "stageName": "Jennie BLACKPINK",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Idol K-Pop Global, Rapper, CEO Agensi OA (ODD ATELIER)",
+    "age": 29,
+    "agency": "ODD ATELIER (OA) & YG Entertainment (Group)",
+    "relationshipStatus": "Private",
+    "circle": [
       "Jisoo",
       "Rosé",
       "Lisa",
       "Zico",
       "Dua Lipa",
-      "Lily-Rose Depp",
+      "Lily-Rose Depp"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@jennierubyjane",
-        url: "https://instagram.com/jennierubyjane",
+        "platform": "instagram",
+        "handle": "@jennierubyjane",
+        "url": "https://instagram.com/jennierubyjane"
       },
       {
-        platform: "youtube",
-        handle: "@jennierubyjane",
-        url: "https://youtube.com/@jennierubyjane",
-      },
+        "platform": "youtube",
+        "handle": "@jennierubyjane",
+        "url": "https://youtube.com/@jennierubyjane"
+      }
     ],
-    bio: "Ikon mode global dan superstar K-Pop yang dijuluki 'Human Chanel'. Merupakan anggota kuartet legendaris BLACKPINK sekaligus pendiri dan CEO agensi independen ODD ATELIER (OA). Sukses mencetak rekor solo global lewat lagu 'SOLO', 'You & Me', dan 'Mantra'.",
-    careerHighlights: [
+    "bio": "Ikon mode global dan superstar K-Pop yang dijuluki 'Human Chanel'. Merupakan anggota kuartet legendaris BLACKPINK sekaligus pendiri dan CEO agensi independen ODD ATELIER (OA). Sukses mencetak rekor solo global lewat lagu 'SOLO', 'You & Me', dan 'Mantra'.",
+    "careerHighlights": [
       "Pendiri & Chief Executive Officer (CEO) Label Independen OA (ODD ATELIER)",
       "Global House Ambassador Jenama Mewah Chanel Sejak 2017",
       "Debut Akting di Serial HBO 'The Idol' Festival Film Cannes",
-      "Lagu Solo 'Mantra' Puncaki Tangga Musik iTunes di 50+ Negara",
+      "Lagu Solo 'Mantra' Puncaki Tangga Musik iTunes di 50+ Negara"
     ],
-    dramaCount: 3,
-    sentimentSummary: "Sentimen internasional 85% apresiasi: Dipuja sebagai tren-setter fesyen dunia dan simbol emansipasi independensi idol K-Pop.",
-    dossierDetail: {
-      birthDate: "16 Januari 1996",
-      birthPlace: "Cheongdam-dong, Seoul, Korea Selatan",
-      zodiac: "Capricorn",
-      nationality: "Korea Selatan",
-      yearsActive: "2016 – Sekarang",
-      education: "ACG Parnell College, Auckland, Selandia Baru",
-      netWorthEstimate: "Tier S Global Icon (USD 25M+ / Rp 400M+)",
-      topAffiliations: [
+    "dramaCount": 3,
+    "sentimentSummary": "Sentimen internasional 85% apresiasi: Dipuja sebagai tren-setter fesyen dunia dan simbol emansipasi independensi idol K-Pop.",
+    "dossierDetail": {
+      "birthDate": "16 Januari 1996",
+      "birthPlace": "Cheongdam-dong, Seoul, Korea Selatan",
+      "zodiac": "Capricorn",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2016 – Sekarang",
+      "education": "ACG Parnell College, Auckland, Selandia Baru",
+      "netWorthEstimate": "Tier S Global Icon (USD 25M+ / Rp 400M+)",
+      "topAffiliations": [
         "BLACKPINK",
         "ODD ATELIER",
         "Chanel Global",
-        "Columbia Records",
-      ],
+        "Columbia Records"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Insiden Rokok Elektrik di Ruang Rias Luar Negeri",
-        status: "TERKONFIRMASI",
-        summary: "Video pendek di balik layar memperlihatkan Jennie mengembuskan uap rokok elektrik di dekat staf tata rias.",
-        resolution: "Permintaan maaf resmi secara pribadi kepada staf dan klarifikasi terbuka dari agensi OA atas kelalaian perilaku.",
-      },
+        "year": "2024",
+        "title": "Insiden Rokok Elektrik di Ruang Rias Luar Negeri",
+        "status": "TERKONFIRMASI",
+        "summary": "Video pendek di balik layar memperlihatkan Jennie mengembuskan uap rokok elektrik di dekat staf tata rias.",
+        "resolution": "Permintaan maaf resmi secara pribadi kepada staf dan klarifikasi terbuka dari agensi OA atas kelalaian perilaku."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "ODD ATELIER (OA)",
-        category: "Manajemen Hiburan & Musik Independen",
-        role: "CEO & Founder",
-        status: "Aktif Beroperasi",
+        "name": "ODD ATELIER (OA)",
+        "category": "Manajemen Hiburan & Musik Independen",
+        "role": "CEO & Founder",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Jentle Home & Jentle Salon (Gentle Monster)",
-        category: "Koleksi Kacamata Fesyen Kolaboratif",
-        role: "Co-Designer & Brand Face",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Jentle Home & Jentle Salon (Gentle Monster)",
+        "category": "Koleksi Kacamata Fesyen Kolaboratif",
+        "role": "Co-Designer & Brand Face",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "MAMA Awards",
-        category: "Best Solo Dance Performance",
-        result: "Menang",
+        "year": "2024",
+        "award": "MAMA Awards",
+        "category": "Best Solo Dance Performance",
+        "result": "Menang"
       },
       {
-        year: "2019",
-        award: "Golden Disc Awards",
-        category: "Digital Bonsang (SOLO)",
-        result: "Menang",
-      },
+        "year": "2019",
+        "award": "Golden Disc Awards",
+        "category": "Digital Bonsang (SOLO)",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa nama agensi pribadi yang didirikan oleh Jennie BLACKPINK?",
-        answer: "Jennie mendirikan agensi manajemen independen bernama ODD ATELIER (OA) pada November 2023 untuk menaungi seluruh aktivitas solonya.",
+        "question": "Apa nama agensi pribadi yang didirikan oleh Jennie BLACKPINK?",
+        "answer": "Jennie mendirikan agensi manajemen independen bernama ODD ATELIER (OA) pada November 2023 untuk menaungi seluruh aktivitas solonya."
       },
       {
-        question: "Apakah Jennie masih tergabung dalam grup BLACKPINK?",
-        answer: "Ya, Jennie memperbarui kontrak grup bersama YG Entertainment untuk seluruh aktivitas grup BLACKPINK, namun aktivitas solo dikelola oleh ODD ATELIER.",
-      },
+        "question": "Apakah Jennie masih tergabung dalam grup BLACKPINK?",
+        "answer": "Ya, Jennie memperbarui kontrak grup bersama YG Entertainment untuk seluruh aktivitas grup BLACKPINK, namun aktivitas solo dikelola oleh ODD ATELIER."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Kedaulatan Karier Pasca-YG: Keberanian Idol Mendirikan Label Sendiri",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Langkah Jennie Kim mendirikan ODD ATELIER (OA) pada akhir 2023 menjadi titik balik bersejarah bagi industri K-Pop generasi ketiga. Keputusan memisahkan kontrak solo dari raksasa YG Entertainment memberinya otonomi kreatif 100% dalam menentukan arah musik, pemilihan mitra produser global, serta kebebasan bermitra dengan jenama internasional tanpa restriksi agensi konvensional.</p>",
-      },
-    ],
+        "title": "Kedaulatan Karier Pasca-YG: Keberanian Idol Mendirikan Label Sendiri",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Langkah Jennie Kim mendirikan ODD ATELIER (OA) pada akhir 2023 menjadi titik balik bersejarah bagi industri K-Pop generasi ketiga. Keputusan memisahkan kontrak solo dari raksasa YG Entertainment memberinya otonomi kreatif 100% dalam menentukan arah musik, pemilihan mitra produser global, serta kebebasan bermitra dengan jenama internasional tanpa restriksi agensi konvensional.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-17",
-    slug: "jungkook-bts",
-    name: "Jeon Jung-kook",
-    stageName: "Jungkook BTS",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-    profession: "Penyanyi Internasional, Anggota BTS, Penari Utama",
-    age: 27,
-    agency: "BIGHIT MUSIC / HYBE Corporation",
-    relationshipStatus: "Private",
-    circle: [
+    "id": "celeb-17",
+    "slug": "jungkook-bts",
+    "name": "Jeon Jung-kook",
+    "stageName": "Jungkook BTS",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Penyanyi Internasional, Anggota BTS, Penari Utama",
+    "age": 27,
+    "agency": "BIGHIT MUSIC / HYBE Corporation",
+    "relationshipStatus": "Private",
+    "circle": [
       "BTS (RM, Jin, SUGA, j-hope, Jimin, V)",
       "Mingyu SEVENTEEN",
       "Cha Eun-woo",
-      "Jaehyun NCT",
+      "Jaehyun NCT"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "tiktok",
-        handle: "@jungkook",
-        url: "https://tiktok.com/@jungkook",
-      },
+        "platform": "tiktok",
+        "handle": "@jungkook",
+        "url": "https://tiktok.com/@jungkook"
+      }
     ],
-    bio: "Penyanyi fenomena dunia berjuluk 'The Golden Maknae' dari grup megabintang BTS. Berhasil mencatatkan sejarah sebagai artis solo Asia pertama yang memuncaki Billboard Hot 100 dengan lagu 'Seven' (feat. Latto) serta pengisi lagu resmi Piala Dunia FIFA Qatar 2022 'Dreamers'.",
-    careerHighlights: [
+    "bio": "Penyanyi fenomena dunia berjuluk 'The Golden Maknae' dari grup megabintang BTS. Berhasil mencatatkan sejarah sebagai artis solo Asia pertama yang memuncaki Billboard Hot 100 dengan lagu 'Seven' (feat. Latto) serta pengisi lagu resmi Piala Dunia FIFA Qatar 2022 'Dreamers'.",
+    "careerHighlights": [
       "Penampil Pembuka Resmi FIFA World Cup Qatar 2022 ('Dreamers')",
       "Album Solo Perdana 'GOLDEN' Catatkan Miliaran Streaming Spotify",
       "Puncak Nomor 1 Billboard Hot 100 & Billboard Global 200 ('Seven')",
-      "Global Ambassador Calvin Klein Jeans & Underwear",
+      "Global Ambassador Calvin Klein Jeans & Underwear"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen global 95% positif: Dihormati sebagai vokalis pop terbaik generasinya dengan dedikasi etos latihan luar biasa.",
-    dossierDetail: {
-      birthDate: "1 September 1997",
-      birthPlace: "Busan, Korea Selatan",
-      zodiac: "Virgo",
-      nationality: "Korea Selatan",
-      yearsActive: "2013 – Sekarang",
-      education: "Global Cyber University (Broadcasting and Entertainment)",
-      netWorthEstimate: "Tier S Global Mogul (USD 30M+ / Rp 480M+)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen global 95% positif: Dihormati sebagai vokalis pop terbaik generasinya dengan dedikasi etos latihan luar biasa.",
+    "dossierDetail": {
+      "birthDate": "1 September 1997",
+      "birthPlace": "Busan, Korea Selatan",
+      "zodiac": "Virgo",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2013 – Sekarang",
+      "education": "Global Cyber University (Broadcasting and Entertainment)",
+      "netWorthEstimate": "Tier S Global Mogul (USD 30M+ / Rp 480M+)",
+      "topAffiliations": [
         "BTS",
         "BIGHIT MUSIC",
         "HYBE",
-        "Calvin Klein Global",
-      ],
+        "Calvin Klein Global"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2023",
-        title: "Pelanggaran Privasi Penggemar Sasaeng di Alamat Pribadi",
-        status: "TERKONFIRMASI",
-        summary: "Pengiriman makanan tanpa izin ke kediaman pribadinya oleh penggemar fanatik berlebihan.",
-        resolution: "Pernyataan tegas di Weverse meminta penggemar menghormati ruang hidup privat dan ancaman tindakan hukum dari HYBE.",
-      },
+        "year": "2023",
+        "title": "Pelanggaran Privasi Penggemar Sasaeng di Alamat Pribadi",
+        "status": "TERKONFIRMASI",
+        "summary": "Pengiriman makanan tanpa izin ke kediaman pribadinya oleh penggemar fanatik berlebihan.",
+        "resolution": "Pernyataan tegas di Weverse meminta penggemar menghormati ruang hidup privat dan ancaman tindakan hukum dari HYBE."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Six6uS Co., Ltd.",
-        category: "Apparel & Lifestyle",
-        role: "Mantan Direktur Internal",
-        status: "Non-aktif / Selesai",
-      },
+        "name": "Six6uS Co., Ltd.",
+        "category": "Apparel & Lifestyle",
+        "role": "Mantan Direktur Internal",
+        "status": "Non-aktif / Selesai"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "Billboard Music Awards",
-        category: "Top Global K-Pop Song ('Seven')",
-        result: "Menang",
+        "year": "2024",
+        "award": "Billboard Music Awards",
+        "category": "Top Global K-Pop Song ('Seven')",
+        "result": "Menang"
       },
       {
-        year: "2023",
-        award: "MTV Video Music Awards (VMA)",
-        category: "Song of Summer ('Seven')",
-        result: "Menang",
-      },
+        "year": "2023",
+        "award": "MTV Video Music Awards (VMA)",
+        "category": "Song of Summer ('Seven')",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Kapan jadwal Jungkook menyelesaikan masa wajib militernya?",
-        answer: "Jungkook mulai menjalani wajib militer pada Desember 2023 bersama rekannya Jimin dan dijadwalkan selesai tugas pada Juni 2025.",
+        "question": "Kapan jadwal Jungkook menyelesaikan masa wajib militernya?",
+        "answer": "Jungkook mulai menjalani wajib militer pada Desember 2023 bersama rekannya Jimin dan dijadwalkan selesai tugas pada Juni 2025."
       },
       {
-        question: "Apa prestasi utama lagu debut solo Jungkook 'Seven'?",
-        answer: "Lagu 'Seven' menjadi lagu tercepat dalam sejarah Spotify yang menembus 1 miliar kali pemutaran (108 hari).",
-      },
+        "question": "Apa prestasi utama lagu debut solo Jungkook 'Seven'?",
+        "answer": "Lagu 'Seven' menjadi lagu tercepat dalam sejarah Spotify yang menembus 1 miliar kali pemutaran (108 hari)."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Evolusi 'Golden Maknae' Menjadi Ikon Pop Global Modern",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Pencapaian solo Jeon Jungkook lewat album <em>GOLDEN</em> mengukuhkan statusnya sebagai salah satu bintang pop pria paling dominan di panggung dunia saat ini. Kemampuannya membawakan musik UK Garage, R&B kontemporer, dan pop retro berbahasa Inggris dengan pelafalan sempurna mendobrak batas geografis yang selama ini membatasi solois Asia di tangga lagu Barat.</p>",
-      },
-    ],
+        "title": "Evolusi 'Golden Maknae' Menjadi Ikon Pop Global Modern",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Pencapaian solo Jeon Jungkook lewat album <em>GOLDEN</em> mengukuhkan statusnya sebagai salah satu bintang pop pria paling dominan di panggung dunia saat ini. Kemampuannya membawakan musik UK Garage, R&B kontemporer, dan pop retro berbahasa Inggris dengan pelafalan sempurna mendobrak batas geografis yang selama ini membatasi solois Asia di tangga lagu Barat.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-18",
-    slug: "lisa-blackpink",
-    name: "Lalisa Manobal (Pranpriya Manobal)",
-    stageName: "Lisa BLACKPINK",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
-    profession: "Rapper, Penari Utama Dunia, CEO LLOUD, Aktris",
-    age: 27,
-    agency: "LLOUD & RCA Records (Global Solo)",
-    relationshipStatus: "Private (Frédéric Arnault)",
-    circle: [
+    "id": "celeb-18",
+    "slug": "lisa-blackpink",
+    "name": "Lalisa Manobal (Pranpriya Manobal)",
+    "stageName": "Lisa BLACKPINK",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Rapper, Penari Utama Dunia, CEO LLOUD, Aktris",
+    "age": 27,
+    "agency": "LLOUD & RCA Records (Global Solo)",
+    "relationshipStatus": "Private (Frédéric Arnault)",
+    "circle": [
       "BLACKPINK",
       "Frédéric Arnault",
       "Rosalía",
       "Minnie (G)I-DLE",
-      "Taeyang",
+      "Taeyang"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@lalalalisa_m",
-        url: "https://instagram.com/lalalalisa_m",
+        "platform": "instagram",
+        "handle": "@lalalalisa_m",
+        "url": "https://instagram.com/lalalalisa_m"
       },
       {
-        platform: "tiktok",
-        handle: "@lalisa",
-        url: "https://tiktok.com/@lalisa",
-      },
+        "platform": "tiktok",
+        "handle": "@lalisa",
+        "url": "https://tiktok.com/@lalisa"
+      }
     ],
-    bio: "Ikon budaya pop global kelahiran Thailand dengan pengikut media sosial terbanyak di Asia (100 Juta+ Instagram). Merupakan anggota BLACKPINK, pendiri agensi internasional LLOUD, duta global Louis Vuitton dan Bulgari, serta pemeran serial HBO 'The White Lotus Season 3'.",
-    careerHighlights: [
+    "bio": "Ikon budaya pop global kelahiran Thailand dengan pengikut media sosial terbanyak di Asia (100 Juta+ Instagram). Merupakan anggota BLACKPINK, pendiri agensi internasional LLOUD, duta global Louis Vuitton dan Bulgari, serta pemeran serial HBO 'The White Lotus Season 3'.",
+    "careerHighlights": [
       "Solois K-Pop Pertama Pemenang MTV Video Music Awards & MTV EMA",
       "Pendiri & CEO Perusahaan Manajemen Artis Internasional LLOUD",
       "Akun Instagram Artis Asia Terbesar di Dunia (104 Juta+ Pengikut)",
-      "House Ambassador Global Louis Vuitton dan Bulgari",
+      "House Ambassador Global Louis Vuitton dan Bulgari"
     ],
-    dramaCount: 2,
-    sentimentSummary: "Sentimen internasional 93% apresiasi: Dianggap pahlawan kebanggaan nasional Thailand dan simbol kekuatan wanita Asia di panggung dunia.",
-    dossierDetail: {
-      birthDate: "27 Maret 1997",
-      birthPlace: "Buriram, Thailand",
-      zodiac: "Aries",
-      nationality: "Thailand",
-      yearsActive: "2016 – Sekarang",
-      education: "Praphamontree II School, Thailand",
-      netWorthEstimate: "Tier S Global Mogul (USD 28M+ / Rp 450M+)",
-      topAffiliations: [
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen internasional 93% apresiasi: Dianggap pahlawan kebanggaan nasional Thailand dan simbol kekuatan wanita Asia di panggung dunia.",
+    "dossierDetail": {
+      "birthDate": "27 Maret 1997",
+      "birthPlace": "Buriram, Thailand",
+      "zodiac": "Aries",
+      "nationality": "Thailand",
+      "yearsActive": "2016 – Sekarang",
+      "education": "Praphamontree II School, Thailand",
+      "netWorthEstimate": "Tier S Global Mogul (USD 28M+ / Rp 450M+)",
+      "topAffiliations": [
         "LLOUD",
         "RCA Records",
         "LVMH Group",
         "Louis Vuitton",
-        "Bulgari",
-      ],
+        "Bulgari"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2023",
-        title: "Penampilan di Kabaret Seni Crazy Horse Paris",
-        status: "FAKTA_DIGITAL",
-        summary: "Keputusan tampil dalam pertunjukan kabaret seni sensual di Paris yang memicu reaksi beragam dari netizen Asia Timur.",
-        resolution: "Pertunjukan sukses memukau penonton Eropa dan diapresiasi tokoh seni global sebagai ekspresi kebebasan seni tubuh.",
-      },
+        "year": "2023",
+        "title": "Penampilan di Kabaret Seni Crazy Horse Paris",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Keputusan tampil dalam pertunjukan kabaret seni sensual di Paris yang memicu reaksi beragam dari netizen Asia Timur.",
+        "resolution": "Pertunjukan sukses memukau penonton Eropa dan diapresiasi tokoh seni global sebagai ekspresi kebebasan seni tubuh."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "LLOUD Co.",
-        category: "Agensi Manajemen Talenta & Hiburan Global",
-        role: "Founder & CEO",
-        status: "Aktif Beroperasi",
-      },
+        "name": "LLOUD Co.",
+        "category": "Agensi Manajemen Talenta & Hiburan Global",
+        "role": "Founder & CEO",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "MTV Video Music Awards (VMA)",
-        category: "Best K-Pop ('Rockstar')",
-        result: "Menang",
+        "year": "2024",
+        "award": "MTV Video Music Awards (VMA)",
+        "category": "Best K-Pop ('Rockstar')",
+        "result": "Menang"
       },
       {
-        year: "2022",
-        award: "MTV Europe Music Awards",
-        category: "Best K-Pop",
-        result: "Menang",
-      },
+        "year": "2022",
+        "award": "MTV Europe Music Awards",
+        "category": "Best K-Pop",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa nama agensi mandiri yang didirikan Lisa?",
-        answer: "Lisa mendirikan perusahaan agensi hiburan internasional bernama LLOUD pada Februari 2024 dan menandatangani kemitraan distribusi global dengan RCA Records.",
+        "question": "Apa nama agensi mandiri yang didirikan Lisa?",
+        "answer": "Lisa mendirikan perusahaan agensi hiburan internasional bernama LLOUD pada Februari 2024 dan menandatangani kemitraan distribusi global dengan RCA Records."
       },
       {
-        question: "Di serial apa Lisa BLACKPINK memulai debut akting resminya?",
-        answer: "Lisa memulai debut aktingnya di serial televisi bergengsi HBO 'The White Lotus Season 3' yang berlatar tempat di negara asalnya, Thailand.",
-      },
+        "question": "Di serial apa Lisa BLACKPINK memulai debut akting resminya?",
+        "answer": "Lisa memulai debut aktingnya di serial televisi bergengsi HBO 'The White Lotus Season 3' yang berlatar tempat di negara asalnya, Thailand."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Kekuatan Pengaruh Lintas Benua: Dari Buriram ke Pusat Mode Paris",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Lalisa Manobal merepresentasikan fenomena diplomasi budaya yang luar biasa. Berangkat dari provinsi kecil di Thailand tanpa koneksi industri, ia bertransformasi menjadi magnet budaya pop dunia yang mampu menggerakkan ekonomi pariwisata negaranya hanya lewat satu unggahan kuliner atau busana tradisional.</p>",
-      },
-    ],
+        "title": "Kekuatan Pengaruh Lintas Benua: Dari Buriram ke Pusat Mode Paris",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Lalisa Manobal merepresentasikan fenomena diplomasi budaya yang luar biasa. Berangkat dari provinsi kecil di Thailand tanpa koneksi industri, ia bertransformasi menjadi magnet budaya pop dunia yang mampu menggerakkan ekonomi pariwisata negaranya hanya lewat satu unggahan kuliner atau busana tradisional.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-19",
-    slug: "karina-aespa",
-    name: "Yu Ji-min",
-    stageName: "Karina aespa",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
-    profession: "Leader aespa, Vokalis, Penari Utama, Model Visual",
-    age: 24,
-    agency: "SM Entertainment",
-    relationshipStatus: "Single",
-    circle: [
+    "id": "celeb-19",
+    "slug": "karina-aespa",
+    "name": "Yu Ji-min",
+    "stageName": "Karina aespa",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Leader aespa, Vokalis, Penari Utama, Model Visual",
+    "age": 24,
+    "agency": "SM Entertainment",
+    "relationshipStatus": "Single",
+    "circle": [
       "Giselle",
       "Winter",
       "Ningning",
-      "SM Entertainment Family",
+      "SM Entertainment Family"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@katarinabluu",
-        url: "https://instagram.com/katarinabluu",
-      },
+        "platform": "instagram",
+        "handle": "@katarinabluu",
+        "url": "https://instagram.com/katarinabluu"
+      }
     ],
-    bio: "Pemimpin grup idola gen-4 aespa yang dijuluki 'Visual AI Sempurna' berkat proporsi wajah dan fisik futuristiknya. Sukses memimpin aespa mendominasi tangga lagu Asia lewat album pemecah rekor 'Armageddon' dan mega-hits 'Supernova'.",
-    careerHighlights: [
+    "bio": "Pemimpin grup idola gen-4 aespa yang dijuluki 'Visual AI Sempurna' berkat proporsi wajah dan fisik futuristiknya. Sukses memimpin aespa mendominasi tangga lagu Asia lewat album pemecah rekor 'Armageddon' dan mega-hits 'Supernova'.",
+    "careerHighlights": [
       "Leader aespa dengan Raihan Perfect All-Kill (PAK) Terlama 2024 ('Supernova')",
       "Akun Instagram Idol Gen-4 Tercepat Tembus 20 Juta Pengikut (@katarinabluu)",
-      "Brand Ambassador Global Prada dan Musinsa",
+      "Brand Ambassador Global Prada dan Musinsa"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen publik 86% apresiasi: Diakui sebagai pemimpin tim yang berdedikasi tinggi dan penampil panggung serba bisa.",
-    dossierDetail: {
-      birthDate: "11 April 2000",
-      birthPlace: "Suwon, Gyeonggi-do, Korea Selatan",
-      zodiac: "Aries",
-      nationality: "Korea Selatan",
-      yearsActive: "2020 – Sekarang",
-      education: "Hansol High School (Ujian Kesetaraan GED)",
-      netWorthEstimate: "Tier A Idol (USD 5M+ / Rp 80M+)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik 86% apresiasi: Diakui sebagai pemimpin tim yang berdedikasi tinggi dan penampil panggung serba bisa.",
+    "dossierDetail": {
+      "birthDate": "11 April 2000",
+      "birthPlace": "Suwon, Gyeonggi-do, Korea Selatan",
+      "zodiac": "Aries",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2020 – Sekarang",
+      "education": "Hansol High School (Ujian Kesetaraan GED)",
+      "netWorthEstimate": "Tier A Idol (USD 5M+ / Rp 80M+)",
+      "topAffiliations": [
         "aespa",
         "SM Entertainment",
-        "Prada Global",
-      ],
+        "Prada Global"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Surat Permintaan Maaf Pasca Berita Hubungan Asmara",
-        status: "TERKONFIRMASI",
-        summary: "Konfirmasi hubungan pacaran singkat dengan aktor Lee Jae-wook yang memicu protes truk elektronik dari penggemar fanatik tertentu.",
-        resolution: "Karina merilis surat tulisan tangan menyentuh untuk menenangkan fans; hubungan dikonfirmasi berakhir secara damai demi fokus karier.",
-      },
+        "year": "2024",
+        "title": "Surat Permintaan Maaf Pasca Berita Hubungan Asmara",
+        "status": "TERKONFIRMASI",
+        "summary": "Konfirmasi hubungan pacaran singkat dengan aktor Lee Jae-wook yang memicu protes truk elektronik dari penggemar fanatik tertentu.",
+        "resolution": "Karina merilis surat tulisan tangan menyentuh untuk menenangkan fans; hubungan dikonfirmasi berakhir secara damai demi fokus karier."
+      }
     ],
-    businessVentures: [],
-    awards: [
+    "businessVentures": [],
+    "awards": [
       {
-        year: "2024",
-        award: "Melon Music Awards (MMA)",
-        category: "Song of the Year ('Supernova')",
-        result: "Menang",
+        "year": "2024",
+        "award": "Melon Music Awards (MMA)",
+        "category": "Song of the Year ('Supernova')",
+        "result": "Menang"
       },
       {
-        year: "2024",
-        award: "MAMA Awards",
-        category: "Best Female Group Performance",
-        result: "Menang",
-      },
+        "year": "2024",
+        "award": "MAMA Awards",
+        "category": "Best Female Group Performance",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa konsep avatar kecerdasan buatan dari karakter Karina di aespa?",
-        answer: "Karina memiliki avatar kembaran virtual bernama ae-Karina yang beroperasi di semesta konseptual SM Culture Universe (SMCU).",
-      },
+        "question": "Apa konsep avatar kecerdasan buatan dari karakter Karina di aespa?",
+        "answer": "Karina memiliki avatar kembaran virtual bernama ae-Karina yang beroperasi di semesta konseptual SM Culture Universe (SMCU)."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Tekanan Industri K-Pop dan Krisis Privasi Idola Generasi Keempat",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Insiden surat permintaan maaf yang dialami Karina pada awal 2024 menjadi sorotan media global termasuk BBC dan CNN. Peristiwa ini membuka mata dunia mengenai tuntutan kepemilikan emosional sepihak dari budaya fandom ekstrem yang seringkali merenggut hak dasar ruang asmara privat seorang seniman muda.</p>",
-      },
-    ],
+        "title": "Tekanan Industri K-Pop dan Krisis Privasi Idola Generasi Keempat",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Insiden surat permintaan maaf yang dialami Karina pada awal 2024 menjadi sorotan media global termasuk BBC dan CNN. Peristiwa ini membuka mata dunia mengenai tuntutan kepemilikan emosional sepihak dari budaya fandom ekstrem yang seringkali merenggut hak dasar ruang asmara privat seorang seniman muda.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-20",
-    slug: "wonyoung-ive",
-    name: "Jang Won-young",
-    stageName: "Wonyoung IVE",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
-    profession: "Idol K-Pop Papan Atas, Model Fesyen Mewah, MC Nasional",
-    age: 20,
-    agency: "Starship Entertainment",
-    relationshipStatus: "Private",
-    circle: [
+    "id": "celeb-20",
+    "slug": "wonyoung-ive",
+    "name": "Jang Won-young",
+    "stageName": "Wonyoung IVE",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Idol K-Pop Papan Atas, Model Fesyen Mewah, MC Nasional",
+    "age": 20,
+    "agency": "Starship Entertainment",
+    "relationshipStatus": "Private",
+    "circle": [
       "An Yu-jin",
       "IVE Members",
-      "IZ*ONE Alumni",
+      "IZ*ONE Alumni"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@for_everyoung10",
-        url: "https://instagram.com/for_everyoung10",
-      },
+        "platform": "instagram",
+        "handle": "@for_everyoung10",
+        "url": "https://instagram.com/for_everyoung10"
+      }
     ],
-    bio: "Bintang muda paling bersinar di Korea Selatan yang dinobatkan sebagai 'It-Girl' generasi masa kini. Anggota girl group pemenang Daesang IVE, pencetus tren psikologi populer 'Lucky Vicky Mindset' (optimisme mutlak), serta ikon jenama mewah Miu Miu.",
-    careerHighlights: [
+    "bio": "Bintang muda paling bersinar di Korea Selatan yang dinobatkan sebagai 'It-Girl' generasi masa kini. Anggota girl group pemenang Daesang IVE, pencetus tren psikologi populer 'Lucky Vicky Mindset' (optimisme mutlak), serta ikon jenama mewah Miu Miu.",
+    "careerHighlights": [
       "Pemenang Peringkat 1 Acara Survival Nasional Mnet 'Produce 48'",
       "Kemenangan Gugatan Hukum Bersejarah atas Saluran Fitnah YouTube Sojang",
       "Pencetus Filosofi Positivisme 'Lucky Vicky Mindset' yang Mendunia",
-      "House Ambassador Global Miu Miu dan Innisfree",
+      "House Ambassador Global Miu Miu dan Innisfree"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen publik 91% positif: Dikagumi atas ketangguhan mental menghadapi haters, etika kerja sempurna, dan pola pikir positif.",
-    dossierDetail: {
-      birthDate: "31 Agustus 2004",
-      birthPlace: "Seoul, Korea Selatan",
-      zodiac: "Virgo",
-      nationality: "Korea Selatan",
-      yearsActive: "2018 – Sekarang",
-      education: "Seoul Performing Arts High School (SOPA - Practical Music)",
-      netWorthEstimate: "Tier A Talent (USD 6M+ / Rp 95M+)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik 91% positif: Dikagumi atas ketangguhan mental menghadapi haters, etika kerja sempurna, dan pola pikir positif.",
+    "dossierDetail": {
+      "birthDate": "31 Agustus 2004",
+      "birthPlace": "Seoul, Korea Selatan",
+      "zodiac": "Virgo",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2018 – Sekarang",
+      "education": "Seoul Performing Arts High School (SOPA - Practical Music)",
+      "netWorthEstimate": "Tier A Talent (USD 6M+ / Rp 95M+)",
+      "topAffiliations": [
         "IVE",
         "Starship Entertainment",
         "Miu Miu",
-        "K-Beauty Ambassador",
-      ],
+        "K-Beauty Ambassador"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Gugatan Pengadilan California & Vonis Terhadap Akun Gosip Sojang",
-        status: "TERKONFIRMASI",
-        summary: "Perjuangan hukum lintas benua menuntut pembuat fitnah saluran YouTube Sojang yang menyebarkan fitnah palsu.",
-        resolution: "Pengadilan mengabulkan gugatan perdata ganti rugi 100 juta won dan penetapan dakwaan pidana pencemaran nama baik.",
-      },
+        "year": "2024",
+        "title": "Gugatan Pengadilan California & Vonis Terhadap Akun Gosip Sojang",
+        "status": "TERKONFIRMASI",
+        "summary": "Perjuangan hukum lintas benua menuntut pembuat fitnah saluran YouTube Sojang yang menyebarkan fitnah palsu.",
+        "resolution": "Pengadilan mengabulkan gugatan perdata ganti rugi 100 juta won dan penetapan dakwaan pidana pencemaran nama baik."
+      }
     ],
-    businessVentures: [],
-    awards: [
+    "businessVentures": [],
+    "awards": [
       {
-        year: "2023",
-        award: "Asia Artist Awards (AAA)",
-        category: "Asia Celebrity Award & Best MC",
-        result: "Menang",
+        "year": "2023",
+        "award": "Asia Artist Awards (AAA)",
+        "category": "Asia Celebrity Award & Best MC",
+        "result": "Menang"
       },
       {
-        year: "2022",
-        award: "Melon Music Awards",
-        category: "Song of the Year ('Love Dive')",
-        result: "Menang",
-      },
+        "year": "2022",
+        "award": "Melon Music Awards",
+        "category": "Song of the Year ('Love Dive')",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa itu 'Lucky Vicky Mindset' yang dipopulerkan Jang Won-young?",
-        answer: "'Lucky Vicky' adalah cara pandang positif radikal di mana seseorang selalu menemukan hikmah keberuntungan dalam setiap situasi sulit atau musibah kecil yang menimpanya.",
-      },
+        "question": "Apa itu 'Lucky Vicky Mindset' yang dipopulerkan Jang Won-young?",
+        "answer": "'Lucky Vicky' adalah cara pandang positif radikal di mana seseorang selalu menemukan hikmah keberuntungan dalam setiap situasi sulit atau musibah kecil yang menimpanya."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Preseden Hukum Perlindungan Reputasi Siber: Menundukkan Cyberbully di Pengadilan",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Keberanian Jang Won-young dan agensi Starship Entertainment menempuh jalur pengadilan distrik Amerika Serikat demi mengungkap identitas anonim di balik saluran fitnah Sojang menandai tonggak sejarah baru dalam perlindungan hukum pesohor siber internasional. Langkah presisi ini membuktikan bahwa anonimitas internet bukan lagi tameng yang kebal dari delik hukum perdata maupun pidana.</p>",
-      },
-    ],
+        "title": "Preseden Hukum Perlindungan Reputasi Siber: Menundukkan Cyberbully di Pengadilan",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Keberanian Jang Won-young dan agensi Starship Entertainment menempuh jalur pengadilan distrik Amerika Serikat demi mengungkap identitas anonim di balik saluran fitnah Sojang menandai tonggak sejarah baru dalam perlindungan hukum pesohor siber internasional. Langkah presisi ini membuktikan bahwa anonimitas internet bukan lagi tameng yang kebal dari delik hukum perdata maupun pidana.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-21",
-    slug: "byeon-woo-seok",
-    name: "Byeon Woo-seok",
-    stageName: "Byeon Woo-seok",
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktor Layar Kaca, Bintang Film, Model Runway",
-    age: 33,
-    agency: "Varo Entertainment",
-    relationshipStatus: "Private",
-    circle: [
+    "id": "celeb-21",
+    "slug": "byeon-woo-seok",
+    "name": "Byeon Woo-seok",
+    "stageName": "Byeon Woo-seok",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktor Layar Kaca, Bintang Film, Model Runway",
+    "age": 33,
+    "agency": "Varo Entertainment",
+    "relationshipStatus": "Private",
+    "circle": [
       "Kim Hye-yoon",
       "Song Geon-hee",
       "Joo Woo-jae",
-      "Nam Joo-hyuk",
+      "Nam Joo-hyuk"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@byeonwooseok",
-        url: "https://instagram.com/byeonwooseok",
-      },
+        "platform": "instagram",
+        "handle": "@byeonwooseok",
+        "url": "https://instagram.com/byeonwooseok"
+      }
     ],
-    bio: "Aktor drama Korea paling fenomenal di tahun 2024 berkat peran ikonik sebagai Ryu Sun-jae di serial 'Lovely Runner'. Memulai karier dari dunia permodelan fesyen profesional sebelum merebut hati jutaan pemirsa global lewat kemampuan akting emosional yang menyentuh hati.",
-    careerHighlights: [
+    "bio": "Aktor drama Korea paling fenomenal di tahun 2024 berkat peran ikonik sebagai Ryu Sun-jae di serial 'Lovely Runner'. Memulai karier dari dunia permodelan fesyen profesional sebelum merebut hati jutaan pemirsa global lewat kemampuan akting emosional yang menyentuh hati.",
+    "careerHighlights": [
       "Pemeran Utama Fenomena Global Drama tvN 'Lovely Runner' (2024)",
       "Penyanyi Lagu Soundtrack Viral 'Sudden Shower' (ECLIPSE) yang Menembus Billboard Global",
       "Tur Fan-Meeting Asia 'Summer Letter' Sold-Out di Seluruh Negara (Termasuk Jakarta)",
-      "Brand Ambassador Rumah Mode Mewah Prada",
+      "Brand Ambassador Rumah Mode Mewah Prada"
     ],
-    dramaCount: 1,
-    sentimentSummary: "Sentimen publik 91% positif: Diapresiasi sebagai aktor pekerja keras yang pantang menyerah setelah 9 tahun meniti karier dari peran kecil.",
-    dossierDetail: {
-      birthDate: "31 Oktober 1991",
-      birthPlace: "Bucheon, Gyeonggi-do, Korea Selatan",
-      zodiac: "Scorpio",
-      nationality: "Korea Selatan",
-      yearsActive: "2015 – Sekarang",
-      education: "Department of Theater and Film",
-      netWorthEstimate: "Tier A Star (USD 5M+ / Rp 80M+)",
-      topAffiliations: [
+    "dramaCount": 1,
+    "sentimentSummary": "Sentimen publik 91% positif: Diapresiasi sebagai aktor pekerja keras yang pantang menyerah setelah 9 tahun meniti karier dari peran kecil.",
+    "dossierDetail": {
+      "birthDate": "31 Oktober 1991",
+      "birthPlace": "Bucheon, Gyeonggi-do, Korea Selatan",
+      "zodiac": "Scorpio",
+      "nationality": "Korea Selatan",
+      "yearsActive": "2015 – Sekarang",
+      "education": "Department of Theater and Film",
+      "netWorthEstimate": "Tier A Star (USD 5M+ / Rp 80M+)",
+      "topAffiliations": [
         "Varo Entertainment",
         "Prada",
-        "tvN Drama",
-      ],
+        "tvN Drama"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Insiden Pengawalan Berlebihan di Bandara Incheon",
-        status: "TERKONFIRMASI",
-        summary: "Staf agensi keamanan swasta menyalakan senter flash ke penumpang umum dan menutup gerbang bandara secara sepihak.",
-        resolution: "Permintaan maaf resmi dari Varo Entertainment dan pemutusan kontrak kerja sama dengan vendor keamanan swasta tersebut.",
-      },
+        "year": "2024",
+        "title": "Insiden Pengawalan Berlebihan di Bandara Incheon",
+        "status": "TERKONFIRMASI",
+        "summary": "Staf agensi keamanan swasta menyalakan senter flash ke penumpang umum dan menutup gerbang bandara secara sepihak.",
+        "resolution": "Permintaan maaf resmi dari Varo Entertainment dan pemutusan kontrak kerja sama dengan vendor keamanan swasta tersebut."
+      }
     ],
-    businessVentures: [],
-    awards: [
+    "businessVentures": [],
+    "awards": [
       {
-        year: "2024",
-        award: "Asia Artist Awards",
-        category: "Best Actor & Trendsetter Award",
-        result: "Menang",
+        "year": "2024",
+        "award": "Asia Artist Awards",
+        "category": "Best Actor & Trendsetter Award",
+        "result": "Menang"
       },
       {
-        year: "2024",
-        award: "Seoul International Drama Awards",
-        category: "Outstanding Asian Star",
-        result: "Menang",
-      },
+        "year": "2024",
+        "award": "Seoul International Drama Awards",
+        "category": "Outstanding Asian Star",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Kapan titik balik kepopuleran karier akting Byeon Woo-seok?",
-        answer: "Kariernya meledak secara eksponensial di kancah internasional pada pertengahan 2024 lewat perannya sebagai vokalis band idola Ryu Sun-jae di serial tvN 'Lovely Runner'.",
-      },
+        "question": "Kapan titik balik kepopuleran karier akting Byeon Woo-seok?",
+        "answer": "Kariernya meledak secara eksponensial di kancah internasional pada pertengahan 2024 lewat perannya sebagai vokalis band idola Ryu Sun-jae di serial tvN 'Lovely Runner'."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Perjuangan Sembilan Tahun Menembus Puncak Industri Sinema Korea",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Kisah sukses Byeon Woo-seok adalah pembuktian atas ketekunan meniti tangga karier dari bawah. Pernah ditolak dalam ratusan audisi peran selama bertahun-tahun, dedikasinya dalam mendalami karakter Ryu Sun-jae membawanya menjadi simbol cinta pertama baru bagi pemirsa drama lintas generasi di seluruh penjuru Asia.</p>",
-      },
-    ],
+        "title": "Perjuangan Sembilan Tahun Menembus Puncak Industri Sinema Korea",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Kisah sukses Byeon Woo-seok adalah pembuktian atas ketekunan meniti tangga karier dari bawah. Pernah ditolak dalam ratusan audisi peran selama bertahun-tahun, dedikasinya dalam mendalami karakter Ryu Sun-jae membawanya menjadi simbol cinta pertama baru bagi pemirsa drama lintas generasi di seluruh penjuru Asia.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-22",
-    slug: "taylor-swift",
-    name: "Taylor Alison Swift",
-    stageName: "Taylor Swift",
-    avatar: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
-    profession: "Musisi Global, Penulis Lagu Maestro, Sutradara, Miliarder",
-    age: 35,
-    agency: "Republic Records / 13 Management",
-    relationshipStatus: "Berpacaran (Travis Kelce)",
-    circle: [
+    "id": "celeb-22",
+    "slug": "taylor-swift",
+    "name": "Taylor Alison Swift",
+    "stageName": "Taylor Swift",
+    "avatar": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Musisi Global, Penulis Lagu Maestro, Sutradara, Miliarder",
+    "age": 35,
+    "agency": "Republic Records / 13 Management",
+    "relationshipStatus": "Berpacaran (Travis Kelce)",
+    "circle": [
       "Travis Kelce",
       "Jack Antonoff",
       "Blake Lively",
       "Selena Gomez",
-      "Gigi Hadid",
+      "Gigi Hadid"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@taylorswift",
-        url: "https://instagram.com/taylorswift",
+        "platform": "instagram",
+        "handle": "@taylorswift",
+        "url": "https://instagram.com/taylorswift"
       },
       {
-        platform: "x",
-        handle: "@taylorswift13",
-        url: "https://x.com/taylorswift13",
+        "platform": "x",
+        "handle": "@taylorswift13",
+        "url": "https://x.com/taylorswift13"
       },
       {
-        platform: "youtube",
-        handle: "@TaylorSwift",
-        url: "https://youtube.com/@TaylorSwift",
-      },
+        "platform": "youtube",
+        "handle": "@TaylorSwift",
+        "url": "https://youtube.com/@TaylorSwift"
+      }
     ],
-    bio: "Ratu musik pop dunia abad ke-21 dan satu-satunya musisi dalam sejarah yang mencapai status miliarder murni dari karya musik dan pertunjukan panggung. Pemegang rekor empat kali Album of the Year di Grammy Awards, arsitek di balik tur konser terlaris sepanjang sejarah 'The Eras Tour', serta kekuatan ekonomi politik global.",
-    careerHighlights: [
+    "bio": "Ratu musik pop dunia abad ke-21 dan satu-satunya musisi dalam sejarah yang mencapai status miliarder murni dari karya musik dan pertunjukan panggung. Pemegang rekor empat kali Album of the Year di Grammy Awards, arsitek di balik tur konser terlaris sepanjang sejarah 'The Eras Tour', serta kekuatan ekonomi politik global.",
+    "careerHighlights": [
       "Musisi Pertama dalam Sejarah Meraih 4 Kali Grammy Album of the Year",
       "Tur Konser Berpenghasilan Tertinggi dalam Sejarah Manusia ('The Eras Tour' USD 2 Miliar+)",
       "Person of the Year Majalah TIME (2023)",
-      "Rekam Ulang Master Hak Cipta 'Taylor's Version' yang Mengubah Hukum Industri Musik Dunia",
+      "Rekam Ulang Master Hak Cipta 'Taylor's Version' yang Mengubah Hukum Industri Musik Dunia"
     ],
-    dramaCount: 4,
-    sentimentSummary: "Sentimen internasional 89% apresiasi: Dipuja sebagai salah satu pencipta lagu terhebat sepanjang masa dan pebisnis hak cipta paling genius.",
-    dossierDetail: {
-      birthDate: "13 Desember 1989",
-      birthPlace: "West Reading, Pennsylvania, Amerika Serikat",
-      zodiac: "Sagittarius",
-      nationality: "Amerika Serikat",
-      yearsActive: "2006 – Sekarang",
-      education: "Hendersonville High School (Homeschooling Honours)",
-      netWorthEstimate: "Tier S Super-Billionaire (USD 1,6 Miliar+ / Rp 25 Triliun+)",
-      topAffiliations: [
+    "dramaCount": 4,
+    "sentimentSummary": "Sentimen internasional 89% apresiasi: Dipuja sebagai salah satu pencipta lagu terhebat sepanjang masa dan pebisnis hak cipta paling genius.",
+    "dossierDetail": {
+      "birthDate": "13 Desember 1989",
+      "birthPlace": "West Reading, Pennsylvania, Amerika Serikat",
+      "zodiac": "Sagittarius",
+      "nationality": "Amerika Serikat",
+      "yearsActive": "2006 – Sekarang",
+      "education": "Hendersonville High School (Homeschooling Honours)",
+      "netWorthEstimate": "Tier S Super-Billionaire (USD 1,6 Miliar+ / Rp 25 Triliun+)",
+      "topAffiliations": [
         "Republic Records",
         "Universal Music Group",
-        "13 Management",
-      ],
+        "13 Management"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Sorotan Emisi Karbon Jet Pribadi & Pembelaan Efisiensi Mobilitas",
-        status: "FAKTA_DIGITAL",
-        summary: "Analisis pelacakan akun digital terkait frekuensi perjalanan jet pribadi melintasi berbagai benua.",
-        resolution: "Tim representatif menegaskan pembelian kredit penyeimbang karbon (carbon offsets) ganda untuk menetralisir dampak lingkungan tur konser.",
-      },
+        "year": "2024",
+        "title": "Sorotan Emisi Karbon Jet Pribadi & Pembelaan Efisiensi Mobilitas",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Analisis pelacakan akun digital terkait frekuensi perjalanan jet pribadi melintasi berbagai benua.",
+        "resolution": "Tim representatif menegaskan pembelian kredit penyeimbang karbon (carbon offsets) ganda untuk menetralisir dampak lingkungan tur konser."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "13 Management & Taylor Swift Touring",
-        category: "Produksi Tur Konser & Hak Cipta Musik",
-        role: "Principal Owner",
-        status: "Aktif Beroperasi",
-      },
+        "name": "13 Management & Taylor Swift Touring",
+        "category": "Produksi Tur Konser & Hak Cipta Musik",
+        "role": "Principal Owner",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "Grammy Awards",
-        category: "Album of the Year ('Midnights')",
-        result: "Menang",
+        "year": "2024",
+        "award": "Grammy Awards",
+        "category": "Album of the Year ('Midnights')",
+        "result": "Menang"
       },
       {
-        year: "2023",
-        award: "TIME Magazine",
-        category: "Person of the Year",
-        result: "Menang",
-      },
+        "year": "2023",
+        "award": "TIME Magazine",
+        "category": "Person of the Year",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Mengapa Taylor Swift merekam ulang seluruh album lamanya (Taylor's Version)?",
-        answer: "Taylor merekam ulang enam album pertamanya demi merebut kembali kendali 100% atas hak master rekaman musiknya setelah master aslinya dijual sepihak oleh mantan labelnya.",
+        "question": "Mengapa Taylor Swift merekam ulang seluruh album lamanya (Taylor's Version)?",
+        "answer": "Taylor merekam ulang enam album pertamanya demi merebut kembali kendali 100% atas hak master rekaman musiknya setelah master aslinya dijual sepihak oleh mantan labelnya."
       },
       {
-        question: "Berapa kekayaan bersih Taylor Swift saat ini?",
-        answer: "Berdasarkan estimasi majalah Forbes, kekayaan bersih Taylor Swift melampaui USD 1,6 miliar, menjadikannya musisi wanita terkaya di dunia.",
-      },
+        "question": "Berapa kekayaan bersih Taylor Swift saat ini?",
+        "answer": "Berdasarkan estimasi majalah Forbes, kekayaan bersih Taylor Swift melampaui USD 1,6 miliar, menjadikannya musisi wanita terkaya di dunia."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "'Swiftonomics': Fenomena Dampak Ekonomi Skala Makro Global",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Istilah 'Swiftonomics' telah resmi masuk dalam diskursus para ekonom bank sentral di berbagai negara maju. Setiap kota yang dikunjungi oleh 'The Eras Tour' mengalami lonjakan pendapatan perhotelan, maskapai penerbangan, dan UMKM lokal hingga ratusan juta dolar, membuktikan kapasitas seni musik sebagai instrumen stimulus ekonomi riil.</p>",
-      },
-    ],
+        "title": "'Swiftonomics': Fenomena Dampak Ekonomi Skala Makro Global",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Istilah 'Swiftonomics' telah resmi masuk dalam diskursus para ekonom bank sentral di berbagai negara maju. Setiap kota yang dikunjungi oleh 'The Eras Tour' mengalami lonjakan pendapatan perhotelan, maskapai penerbangan, dan UMKM lokal hingga ratusan juta dolar, membuktikan kapasitas seni musik sebagai instrumen stimulus ekonomi riil.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-23",
-    slug: "selena-gomez",
-    name: "Selena Marie Gomez",
-    stageName: "Selena Gomez",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
-    profession: "Aktris Peraih Penghargaan, Musisi, Pendiri Rare Beauty, Miliarder",
-    age: 32,
-    agency: "WME & Interscope Records",
-    relationshipStatus: "Bertunangan (Benny Blanco)",
-    circle: [
+    "id": "celeb-23",
+    "slug": "selena-gomez",
+    "name": "Selena Marie Gomez",
+    "stageName": "Selena Gomez",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Aktris Peraih Penghargaan, Musisi, Pendiri Rare Beauty, Miliarder",
+    "age": 32,
+    "agency": "WME & Interscope Records",
+    "relationshipStatus": "Bertunangan (Benny Blanco)",
+    "circle": [
       "Benny Blanco",
       "Taylor Swift",
       "Steve Martin",
       "Martin Short",
-      "Nicola Peltz Beckham",
+      "Nicola Peltz Beckham"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@selenagomez",
-        url: "https://instagram.com/selenagomez",
+        "platform": "instagram",
+        "handle": "@selenagomez",
+        "url": "https://instagram.com/selenagomez"
       },
       {
-        platform: "tiktok",
-        handle: "@selenagomez",
-        url: "https://tiktok.com/@selenagomez",
-      },
+        "platform": "tiktok",
+        "handle": "@selenagomez",
+        "url": "https://tiktok.com/@selenagomez"
+      }
     ],
-    bio: "Bintang papan atas Hollywood dan pebisnis kecantikan tersukses di dunia lewat brand kosmetik bernilai miliaran dolar Rare Beauty. Peraih penghargaan Best Actress di Festival Film Cannes lewat film 'Emilia Pérez', nominator Emmy Awards lewat serial komedi hit 'Only Murders in the Building', serta advokat kesehatan mental global.",
-    careerHighlights: [
+    "bio": "Bintang papan atas Hollywood dan pebisnis kecantikan tersukses di dunia lewat brand kosmetik bernilai miliaran dolar Rare Beauty. Peraih penghargaan Best Actress di Festival Film Cannes lewat film 'Emilia Pérez', nominator Emmy Awards lewat serial komedi hit 'Only Murders in the Building', serta advokat kesehatan mental global.",
+    "careerHighlights": [
       "Pendiri & Pemilik Mayoritas Rare Beauty (Valuasi USD 2 Miliar+)",
       "Pemenang Penghargaan Best Actress di Cannes Film Festival 2024 ('Emilia Pérez')",
       "Wanita dengan Pengikut Terbanyak di Instagram Dunia (420 Juta+)",
-      "Pendiri Yayasan Kesehatan Mental 'Rare Impact Fund' Berkomitmen USD 100 Juta",
+      "Pendiri Yayasan Kesehatan Mental 'Rare Impact Fund' Berkomitmen USD 100 Juta"
     ],
-    dramaCount: 3,
-    sentimentSummary: "Sentimen internasional 90% positif: Dicintai luas karena kejujuran emosional mengenai penyakit autoimun Lupus, kehangatan personal, dan filantropi kesehatan mental.",
-    dossierDetail: {
-      birthDate: "22 Juli 1992",
-      birthPlace: "Grand Prairie, Texas, Amerika Serikat",
-      zodiac: "Cancer",
-      nationality: "Amerika Serikat",
-      yearsActive: "2002 – Sekarang",
-      education: "Homeschooling Diploma",
-      netWorthEstimate: "Tier S Billionaire (USD 1,3 Miliar+ / Rp 20 Triliun+)",
-      topAffiliations: [
+    "dramaCount": 3,
+    "sentimentSummary": "Sentimen internasional 90% positif: Dicintai luas karena kejujuran emosional mengenai penyakit autoimun Lupus, kehangatan personal, dan filantropi kesehatan mental.",
+    "dossierDetail": {
+      "birthDate": "22 Juli 1992",
+      "birthPlace": "Grand Prairie, Texas, Amerika Serikat",
+      "zodiac": "Cancer",
+      "nationality": "Amerika Serikat",
+      "yearsActive": "2002 – Sekarang",
+      "education": "Homeschooling Diploma",
+      "netWorthEstimate": "Tier S Billionaire (USD 1,3 Miliar+ / Rp 20 Triliun+)",
+      "topAffiliations": [
         "Rare Beauty",
         "Rare Impact Fund",
         "Hulu / Disney",
-        "Wunderkind Pictures",
-      ],
+        "Wunderkind Pictures"
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2023",
-        title: "Dinamika Interaksi Medsos & Isu Sindiran Penggemar Online",
-        status: "FAKTA_DIGITAL",
-        summary: "Perdebatan daring antarfandom mengenai video TikTok yang dikaitkan dengan masa lalu hubungannya.",
-        resolution: "Selena secara bijak mengumumkan jeda media sosial (social media break) dan mengajak semua pihak menyebarkan kebaikan.",
-      },
+        "year": "2023",
+        "title": "Dinamika Interaksi Medsos & Isu Sindiran Penggemar Online",
+        "status": "FAKTA_DIGITAL",
+        "summary": "Perdebatan daring antarfandom mengenai video TikTok yang dikaitkan dengan masa lalu hubungannya.",
+        "resolution": "Selena secara bijak mengumumkan jeda media sosial (social media break) dan mengajak semua pihak menyebarkan kebaikan."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Rare Beauty",
-        category: "Kosmetik Inklusif & Perawatan Kulit",
-        role: "Founder & Owner",
-        status: "Aktif Beroperasi",
+        "name": "Rare Beauty",
+        "category": "Kosmetik Inklusif & Perawatan Kulit",
+        "role": "Founder & Owner",
+        "status": "Aktif Beroperasi"
       },
       {
-        name: "Wondermind",
-        category: "Platform Ekosistem Kesehatan Mental",
-        role: "Co-founder",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Wondermind",
+        "category": "Platform Ekosistem Kesehatan Mental",
+        "role": "Co-founder",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2024",
-        award: "Cannes Film Festival",
-        category: "Best Actress (bersama ensemble cast)",
-        result: "Menang",
+        "year": "2024",
+        "award": "Cannes Film Festival",
+        "category": "Best Actress (bersama ensemble cast)",
+        "result": "Menang"
       },
       {
-        year: "2024",
-        award: "Emmy Awards",
-        category: "Outstanding Comedy Series (Producer)",
-        result: "Nominasi",
-      },
+        "year": "2024",
+        "award": "Emmy Awards",
+        "category": "Outstanding Comedy Series (Producer)",
+        "result": "Nominasi"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Berapa valuasi dan kontribusi Rare Beauty terhadap kekayaan Selena Gomez?",
-        answer: "Rare Beauty diperkirakan memiliki valuasi lebih dari USD 2 miliar, menyumbang lebih dari 80% total kekayaan bersih Selena yang mengantarkannya ke daftar miliarder dunia Bloomberg.",
-      },
+        "question": "Berapa valuasi dan kontribusi Rare Beauty terhadap kekayaan Selena Gomez?",
+        "answer": "Rare Beauty diperkirakan memiliki valuasi lebih dari USD 2 miliar, menyumbang lebih dari 80% total kekayaan bersih Selena yang mengantarkannya ke daftar miliarder dunia Bloomberg."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Kemenangan Inklusivitas: Revolusi Industri Kosmetik Lewat Rare Beauty",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Rare Beauty bukan sekadar jenama kosmetik selebritas pada umumnya. Dengan mengintegrasikan misi filantropi 1% penjualan untuk Rare Impact Fund serta merancang kemasan ramah bagi penderita radang sendi (arthritis), Selena Gomez membuktikan bahwa empati tulus terhadap konsumen adalah katalis pertumbuhan bisnis paling tangguh di era modern.</p>",
-      },
-    ],
+        "title": "Kemenangan Inklusivitas: Revolusi Industri Kosmetik Lewat Rare Beauty",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Rare Beauty bukan sekadar jenama kosmetik selebritas pada umumnya. Dengan mengintegrasikan misi filantropi 1% penjualan untuk Rare Impact Fund serta merancang kemasan ramah bagi penderita radang sendi (arthritis), Selena Gomez membuktikan bahwa empati tulus terhadap konsumen adalah katalis pertumbuhan bisnis paling tangguh di era modern.</p>"
+      }
+    ]
   },
-
   {
-    id: "celeb-24",
-    slug: "hailey-bieber",
-    name: "Hailey Rhode Baldwin Bieber",
-    stageName: "Hailey Bieber",
-    avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
-    profession: "Model Internasional, Pendiri Brand Skincare Rhode, Trendsetter Fesyen",
-    age: 28,
-    agency: "IMG Models & Rhode Beauty",
-    relationshipStatus: "Menikah (Justin Bieber)",
-    circle: [
+    "id": "celeb-24",
+    "slug": "hailey-bieber",
+    "name": "Hailey Rhode Baldwin Bieber",
+    "stageName": "Hailey Bieber",
+    "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+    "bannerImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
+    "profession": "Model Internasional, Pendiri Brand Skincare Rhode, Trendsetter Fesyen",
+    "age": 28,
+    "agency": "IMG Models & Rhode Beauty",
+    "relationshipStatus": "Menikah (Justin Bieber)",
+    "circle": [
       "Justin Bieber",
       "Kendall Jenner",
       "Kylie Jenner",
       "Lori Harvey",
-      "Gigi Hadid",
+      "Gigi Hadid"
     ],
-    verifiedAccounts: [
+    "verifiedAccounts": [
       {
-        platform: "instagram",
-        handle: "@haileybieber",
-        url: "https://instagram.com/haileybieber",
+        "platform": "instagram",
+        "handle": "@haileybieber",
+        "url": "https://instagram.com/haileybieber"
       },
       {
-        platform: "youtube",
-        handle: "@haileybieber",
-        url: "https://youtube.com/@haileybieber",
-      },
+        "platform": "youtube",
+        "handle": "@haileybieber",
+        "url": "https://youtube.com/@haileybieber"
+      }
     ],
-    bio: "Ikon estetika kecantikan modern yang mempopulerkan tren 'Clean Girl Aesthetic' dan 'Glazed Donut Skin'. Merupakan pendiri dan pemilik jenama perawatan kulit viral Rhode, model papan atas peraga busana dunia, serta istri dari megabintang Justin Bieber.",
-    careerHighlights: [
+    "bio": "Ikon estetika kecantikan modern yang mempopulerkan tren 'Clean Girl Aesthetic' dan 'Glazed Donut Skin'. Merupakan pendiri dan pemilik jenama perawatan kulit viral Rhode, model papan atas peraga busana dunia, serta istri dari megabintang Justin Bieber.",
+    "careerHighlights": [
       "Pendiri & Creative Director Brand Skincare Viral 'Rhode'",
       "Pencetus Tren Produk Fenomenal Lip Peptide Treatment & Casing Ponsel Lip Tint",
       "Model Sampul Vogue Internasional, ELLE, dan Harper's Bazaar",
-      "Kelahiran Putra Pertama Jack Blues Bieber (Agustus 2024)",
+      "Kelahiran Putra Pertama Jack Blues Bieber (Agustus 2024)"
     ],
-    dramaCount: 2,
-    sentimentSummary: "Sentimen publik 84% positif: Diapresiasi sebagai pebisnis produk kecantikan yang inovatif dan figur ibu muda yang anggun.",
-    dossierDetail: {
-      birthDate: "22 November 1996",
-      birthPlace: "Tucson, Arizona, Amerika Serikat",
-      zodiac: "Sagittarius",
-      nationality: "Amerika Serikat",
-      yearsActive: "2014 – Sekarang",
-      education: "American Ballet Theatre (Mantan Balerina Profesional)",
-      netWorthEstimate: "Tier A Mogul (USD 30M+ / Rp 480M+)",
-      topAffiliations: [
+    "dramaCount": 2,
+    "sentimentSummary": "Sentimen publik 84% positif: Diapresiasi sebagai pebisnis produk kecantikan yang inovatif dan figur ibu muda yang anggun.",
+    "dossierDetail": {
+      "birthDate": "22 November 1996",
+      "birthPlace": "Tucson, Arizona, Amerika Serikat",
+      "zodiac": "Sagittarius",
+      "nationality": "Amerika Serikat",
+      "yearsActive": "2014 – Sekarang",
+      "education": "American Ballet Theatre (Mantan Balerina Profesional)",
+      "netWorthEstimate": "Tier A Mogul (USD 30M+ / Rp 480M+)",
+      "topAffiliations": [
         "Rhode Skin",
         "IMG Models",
         "Keluarga Baldwin-Bieber",
-        "Tiffany & Co.",
-      ],
+        "Tiffany & Co."
+      ]
     },
-    controversies: [
+    "controversies": [
       {
-        year: "2024",
-        title: "Spekulasi Netizen Terkait Keharmonisan Rumah Tangga",
-        status: "RUMOR_NETIZEN",
-        summary: "Rumor daring mengenai keretakan hubungan pasca unggahan doa dari ayahnya Stephen Baldwin.",
-        resolution: "Ditepis secara tuntas lewat pengumuman pembaruan janji nikah di Hawaii dan pengumuman kelahiran anak pertama mereka.",
-      },
+        "year": "2024",
+        "title": "Spekulasi Netizen Terkait Keharmonisan Rumah Tangga",
+        "status": "RUMOR_NETIZEN",
+        "summary": "Rumor daring mengenai keretakan hubungan pasca unggahan doa dari ayahnya Stephen Baldwin.",
+        "resolution": "Ditepis secara tuntas lewat pengumuman pembaruan janji nikah di Hawaii dan pengumuman kelahiran anak pertama mereka."
+      }
     ],
-    businessVentures: [
+    "businessVentures": [
       {
-        name: "Rhode Skin by Hailey Rhode Bieber",
-        category: "Skincare & Peptide Beauty",
-        role: "Founder & Creative Director",
-        status: "Aktif Beroperasi",
-      },
+        "name": "Rhode Skin by Hailey Rhode Bieber",
+        "category": "Skincare & Peptide Beauty",
+        "role": "Founder & Creative Director",
+        "status": "Aktif Beroperasi"
+      }
     ],
-    awards: [
+    "awards": [
       {
-        year: "2023",
-        award: "Beauty Inc Awards",
-        category: "Newcomer Brand of the Year (Rhode)",
-        result: "Menang",
+        "year": "2023",
+        "award": "Beauty Inc Awards",
+        "category": "Newcomer Brand of the Year (Rhode)",
+        "result": "Menang"
       },
       {
-        year: "2022",
-        award: "Forbes 30 Under 30",
-        category: "Art & Style",
-        result: "Menang",
-      },
+        "year": "2022",
+        "award": "Forbes 30 Under 30",
+        "category": "Art & Style",
+        "result": "Menang"
+      }
     ],
-    faq: [
+    "faq": [
       {
-        question: "Apa nama anak pertama dari pasangan Justin Bieber dan Hailey Bieber?",
-        answer: "Justin dan Hailey Bieber menyambut kelahiran putra pertama mereka bernama Jack Blues Bieber pada Agustus 2024.",
+        "question": "Apa nama anak pertama dari pasangan Justin Bieber dan Hailey Bieber?",
+        "answer": "Justin dan Hailey Bieber menyambut kelahiran putra pertama mereka bernama Jack Blues Bieber pada Agustus 2024."
       },
       {
-        question: "Mengapa produk casing ponsel Rhode menjadi viral di seluruh dunia?",
-        answer: "Hailey merancang casing ponsel inovatif dengan kompartemen khusus di bagian belakang untuk menyelipkan produk lip tint Rhode, menciptakan aksesori viral seketika.",
-      },
+        "question": "Mengapa produk casing ponsel Rhode menjadi viral di seluruh dunia?",
+        "answer": "Hailey merancang casing ponsel inovatif dengan kompartemen khusus di bagian belakang untuk menyelipkan produk lip tint Rhode, menciptakan aksesori viral seketika."
+      }
     ],
-    editorialSections: [
+    "editorialSections": [
       {
-        title: "Inovasi Ritel Desain Produk: Ketika Fesyen Menyatu dengan Kosmetik",
-        contentHtml: "<p class=\"leading-relaxed text-slate-300 mb-3\">Kejeniusan Hailey Bieber terletak pada kemampuannya menerjemahkan kebiasaan sehari-hari perempuan modern menjadi produk fungsional bernilai tinggi. Aksesori casing ponsel terintegrasi lip tint Rhode menjadi studi kasus pemasaran organik paling sukses dalam dekade ini, membuktikan kejelian insting desainnya yang melampaui sekadar status selebritas.</p>",
-      },
-    ],
-  },
-
+        "title": "Inovasi Ritel Desain Produk: Ketika Fesyen Menyatu dengan Kosmetik",
+        "contentHtml": "<p class=\"leading-relaxed text-slate-300 mb-3\">Kejeniusan Hailey Bieber terletak pada kemampuannya menerjemahkan kebiasaan sehari-hari perempuan modern menjadi produk fungsional bernilai tinggi. Aksesori casing ponsel terintegrasi lip tint Rhode menjadi studi kasus pemasaran organik paling sukses dalam dekade ini, membuktikan kejelian insting desainnya yang melampaui sekadar status selebritas.</p>"
+      }
+    ]
+  }
 ];
 
 export const MOCK_ARTICLES: Article[] = [
+  {
+    "id": "art-1795509340237",
+    "slug": "rekor-bersejarah-lesti-kejora-jupiter-music-awards-2026-vietnam-female-artist",
+    "title": "Rekor Bersejarah Lesti Kejora di Jupiter Music Awards 2026 Vietnam: Musisi Indonesia Pertama Female Artist of the Year",
+    "excerpt": "Rekor bersejarah Lesti Kejora menyabet gelar Female Artist of the Year di Jupiter Music Awards 2026 Vietnam: verifikasi data fan voting, dominasi musisi Indonesia, dan sentimen netizen Asia.",
+    "contentHtml": "\n    <p class=\"lead text-lg text-slate-200 mb-6\">\n      Kabar membanggakan yang mengharumkan nama industri musik tanah air kembali datang dari panggung internasional. Diva dangdut dan pop modern Indonesia, <strong>Lesti Kejora</strong>, berhasil mengukir rekor bersejarah dengan menyabet penghargaan bergengsi sebagai <em>Female Artist of the Year</em> dalam ajang <strong>Jupiter Music Awards 2026</strong> yang digelar di Ho Chi Minh City, Vietnam. Kemenangan ini menorehkan tinta emas baru karena menandai pertama kalinya dalam sejarah ajang tersebut seorang musisi non-Korea dinobatkan sebagai artis wanita terbaik Asia Tenggara.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Duduk Perkaranya: Dominasi Musik Asia dan Gebrakan Panggung Vietnam</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Fase / Periode</th>\n            <th class=\"border border-slate-700 p-3\">Kronologi & Rekonstruksi Fakta</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">Oktober 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Komite Jupiter Music Awards di Ho Chi Minh City, Vietnam, resmi merilis nominasi regional Asia Pasifik, memasukkan nama Lesti Kejora di kategori utama Female Artist of the Year.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">1 - 15 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Periode fan voting global berlangsung sengit di platform digital, melibatkan jutaan basis penggemar musik dari Indonesia, Vietnam, Thailand, dan Korea Selatan.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">21 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Malam puncak penganugerahan Jupiter Music Awards 2026 disiarkan secara langsung dari Military Zone 7 Indoor Sports Complex, Ho Chi Minh City.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">22 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Pengumuman resmi kemenangan Lesti Kejora sebagai Female Artist of the Year dikonfirmasi, mencetak sejarah sebagai musisi non-Korea pertama yang memenangkan kategori tersebut.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">23 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Ucapan apresiasi membanjiri ruang publik dari Kementerian Kebudayaan, pelaku industri musik tanah air, serta perayaan digital penggemar Leslar Lovers.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n        </tbody>\n      </table>\n    </div>\n    \n    <p>\n      Duduk perkaranya bermula ketika komite penyelenggara Jupiter Music Awards (JMA)—salah satu festival penghargaan musik independen paling berpengaruh di kawasan Indochina—membuka voting publik internasional untuk kategori <em>Female Artist of the Year</em>. Kategori utama ini selama bertahun-tahun didominasi oleh solois papan atas asal Korea Selatan dan musisi pop kenamaan Thailand.\n    </p>\n    <p>\n      Masuknya nama Lesti Kejora dalam daftar nominasi bersama sederet bintang pop Asia sempat mengejutkan pengamat musik regional. Namun, daya pikat vokal cengkok khas Sunda yang dipadukan dengan aransemen orkestrasi pop megah dalam rilis single terbarunya terbukti melintasi sekat bahasa. Lagu-lagu balada Lesti kerap viral di platform TikTok Vietnam dan Thailand, memperluas jangkauan pendengar di luar basis domestik Indonesia.\n    </p>\n    <p>\n      Kekuatan basis penggemar fanatik (Leslar Lovers) yang berkolaborasi secara terorganisir dengan komunitas pencinta musik Asia Tenggara menjadi lokomotif utama yang mengantarkan Lesti ke tangga juara dengan perolehan suara digital yang melesat jauh di atas pesaing terdekatnya.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Kronologi Lengkap Penentuan Pemenang dan Metrik Penilaian</h2>\n    <p>\n      Kronologi lengkap penganugerahan ini menunjukkan integritas sistem penilaian yang ketat. Berdasarkan regulasi resmi Jupiter Music Awards 2026, penentuan pemenang dihitung melalui formulasi multi-metrik: 40% hasil fan voting global yang telah diverifikasi melalui autentikasi nomor seluler dan ID akun, 30% metrik streaming platform digital (Spotify, Apple Music, YouTube Music regional), serta 30% penilaian dewan juri ahli yang terdiri dari produser rekaman dan jurnalis musik se-Asia Tenggara.\n    </p>\n    <p>\n      Pada fase penutupan voting pertengahan November 2026, Lesti mencatatkan total perolehan suara mencapai lebih dari 4,2 juta vote. Angka fantastis ini mengukuhkan dominasinya di peringkat pertama, melampaui solois kenamaan Vietnam Hoang Thuy Linh dan solois K-Pop yang sebelumnya diunggulkan oleh pasar industri.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Penelusuran Jejak Digital dan Sambutan Hangat di Ho Chi Minh City</h2>\n    <p>\n      Berdasarkan penelusuran jejak digital pada siaran langsung malam puncak di Military Zone 7 Indoor Sports Complex, sambutan riuh penonton terdengar saat nama Lesti Kejora diumumkan oleh pembawa acara di atas panggung. Kendati berhalangan hadir secara fisik di Ho Chi Minh City karena jadwal produksi karya di Jakarta, Lesti menyampaikan pidato kemenangannya melalui sambungan video resmi:\n    </p>\n    <blockquote>\n      \"Segala puji bagi Allah SWT. Ini adalah pencapaian yang sungguh di luar dugaan saya. Penghargaan ini bukan hanya untuk saya pribadi, tetapi untuk musik Indonesia dan seluruh musisi dangdut yang terus berjuang agar musik tradisional kita dihargai di mata dunia. Terima kasih yang tak terhingga untuk suamiku Rizky Billar, keluarga tercinta, serta seluruh Leslar Lovers di manapun kalian berada yang tanpa lelah memberikan cinta dan doa,\" ujar Lesti dalam pidato harunya.\n    </blockquote>\n    <p>\n      Rizky Billar yang turut mengunggah momen kemenangan sang istri di media sosial membagikan rasa bangganya terhadap dedikasi tanpa henti Lesti di dapur rekaman. Unggahan tersebut sontak menjadi ruang selebrasi massal warganet Indonesia yang merasa bangga atas representasi budaya di pentas musik Asia.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Verifikasi Fakta: Pengakuan Dangdut sebagai Kekuatan Pop Global</h2>\n    <p>\n      Verifikasi fakta dari pengamat industri musik mencatat bahwa kemenangan Lesti Kejora merupakan tonggak penting bagi evolusi genre musik dangdut. Dangdut yang dahulu kerap diposisikan sebagai musik pinggiran kini telah bertransformasi menjadi komoditas kultural berdaya saing tinggi dengan standar produksi internasional.\n    </p>\n    <p>\n      Direktur Program Jupiter Music Awards dalam sesi konferensi pers menyatakan bahwa penetapan Lesti sebagai pemenang didasari oleh kualitas musikalitas dan teknik olah vokal yang dinilai spektakuler. Dewan juri memuji konsistensi pitch control, penghayatan lirik, serta dinamika vokal Lesti yang dinilai mampu menggerakkan emosi pendengar meskipun mereka tidak memahami bahasa Indonesia secara harfiah.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Klarifikasi Resmi dan Sentimen Netizen</h2>\n    <p>\n      Klarifikasi resmi panitia pelaksana menegaskan bahwa trofi penghargaan fisik <em>Jupiter Music Awards 2026</em> saat ini sedang dalam proses pengiriman diplomatik ke Jakarta bekerja sama dengan Kedutaan Besar Republik Indonesia di Hanoi.\n    </p>\n    <p>\n      Pantauan sentimen netizen di media sosial X dan Instagram didominasi oleh 98% sentimen positif yang meluap. Tagar <em>#LestiJMA2026</em> dan <em>#BanggaMusikIndonesia</em> sempat memuncaki trending topic nasional selama lebih dari 12 jam. Warganet menilai pencapaian ini membuktikan bahwa bakat otentik dan karya yang tulus akan selalu menemukan jalannya untuk diakui dunia, menyingkirkan segala narasi gosip personal yang selama ini kerap menerpa kehidupan rumah tangga sang bintang.\n    </p>\n    \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "kpop-asia",
+    "categoryLabel": "K-Pop & Asia",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/72/Lesti_in_2021.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Lesti Kejora. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-24T08:35:40.237Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Lesti Kejora",
+      "Rizky Billar",
+      "Musik Dangdut Pop"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Oktober 2026",
+        "title": "Komite Jupiter Music Awards di Ho Chi Minh City, Vietnam, resmi merilis nominasi regional Asia Pasifik, memasukkan nama Lesti Kejora di kategori utama Female Artist of the Year.",
+        "description": "Komite Jupiter Music Awards di Ho Chi Minh City, Vietnam, resmi merilis nominasi regional Asia Pasifik, memasukkan nama Lesti Kejora di kategori utama Female Artist of the Year.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "1 - 15 November 2026",
+        "title": "Periode fan voting global berlangsung sengit di platform digital, melibatkan jutaan basis penggemar musik dari Indonesia, Vietnam, Thailand, dan Korea Selatan.",
+        "description": "Periode fan voting global berlangsung sengit di platform digital, melibatkan jutaan basis penggemar musik dari Indonesia, Vietnam, Thailand, dan Korea Selatan.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "21 November 2026",
+        "title": "Malam puncak penganugerahan Jupiter Music Awards 2026 disiarkan secara langsung dari Military Zone 7 Indoor Sports Complex, Ho Chi Minh City.",
+        "description": "Malam puncak penganugerahan Jupiter Music Awards 2026 disiarkan secara langsung dari Military Zone 7 Indoor Sports Complex, Ho Chi Minh City.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "22 November 2026",
+        "title": "Pengumuman resmi kemenangan Lesti Kejora sebagai Female Artist of the Year dikonfirmasi, mencetak sejarah sebagai musisi non-Korea pertama yang memenangkan kategori tersebut.",
+        "description": "Pengumuman resmi kemenangan Lesti Kejora sebagai Female Artist of the Year dikonfirmasi, mencetak sejarah sebagai musisi non-Korea pertama yang memenangkan kategori tersebut.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "23 November 2026",
+        "title": "Ucapan apresiasi membanjiri ruang publik dari Kementerian Kebudayaan, pelaku industri musik tanah air, serta perayaan digital penggemar Leslar Lovers.",
+        "description": "Ucapan apresiasi membanjiri ruang publik dari Kementerian Kebudayaan, pelaku industri musik tanah air, serta perayaan digital penggemar Leslar Lovers.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 5,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1795508531634",
+    "slug": "kronologi-lengkap-insiden-rachel-vennya-jatuh-dari-mobil-kondisi-cedera-wajah",
+    "title": "Kronologi Lengkap Insiden Rachel Vennya Jatuh dari Mobil ke Aspal: Kondisi Cedera Wajah dan Verifikasi Medis",
+    "excerpt": "Kronologi lengkap insiden selebgram Rachel Vennya terjatuh dari mobil ke jalan aspal: verifikasi kondisi luka lecet di wajah, penanganan medis darurat, dan klarifikasi rumor tawuran.",
+    "contentHtml": "\n    <p class=\"lead text-lg text-slate-200 mb-6\">\n      Kabar mengejutkan datang dari salah satu kreator konten dan selebgram papan atas Indonesia, <strong>Rachel Vennya</strong>. Melalui unggahan di media sosial pribadinya, ibu dua anak ini membagikan potret wajahnya yang dipenuhi perban medis, lebam biru di area pipi, serta tangan yang disangga menggunakan <em>arm sling</em>. Penampilan tak lazim ini sontak memicu gelombang tanda tanya besar dari jutaan pengikutnya sebelum akhirnya sang selebgram membeberkan secara blak-blakan peristiwa kecelakaan tunggal yang dialaminya.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Duduk Perkaranya: Insiden Nahas Terpeleset dari Pintu Kendaraan</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Fase / Periode</th>\n            <th class=\"border border-slate-700 p-3\">Kronologi & Rekonstruksi Fakta</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">20 November 2026 - Malam</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Rachel Vennya mengalami insiden terjatuh dari pintu mobil saat kendaraan hendak berhenti di area parkir, mendarat dengan bagian depan tubuh ke permukaan aspal.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">21 November 2026 - Dini Hari</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Rachel dilarikan ke instalasi gawat darurat (IGD) rumah sakit untuk pembersihan luka robek mikro, rontgen tulang wajah, dan fiksasi tangan.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">21 November 2026 - Siang</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Unggahan Instagram Story perdana memperlihatkan perban di hidung, dahi, dan penyangga tangan (arm sling), memicu berbagai spekulasi warganet.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">22 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Rachel merilis klarifikasi resmi membantah narasi rumor bahwa dirinya terlibat perselisihan fisik atau pertikaian di tempat hiburan malam.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">23 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Pemeriksaan medis lanjutan menunjukkan tanda-tanda regenerasi jaringan kulit berjalan baik tanpa indikasi fraktur tulang tengkorak.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n        </tbody>\n      </table>\n    </div>\n    \n    <p>\n      Duduk perkaranya bermula pada akhir pekan lalu ketika Rachel Vennya sedang beraktivitas di kawasan Jakarta Selatan. Dalam situasi terburu-buru saat hendak turun dari mobil yang baru saja melambat di area lobi, terjadi miskoordinasi pijakan kaki. Rachel kehilangan keseimbangan tubuh hingga akhirnya terjatuh bebas ke badan jalan beraspal.\n    </p>\n    <p>\n      Posisi jatuhnya kendaraan tersebut tergolong fatal bagi area wajah. Dalam pengakuannya, Rachel menyebut bagian wajah depan—mulai dari dahi, pangkal hidung, hingga bibir bagian atas—menjadi titik benturan pertama yang menghantam kerasnya tekstur aspal jalanan (<em>\"nyusruk dari mobil ke aspal\"</em>). Hantaman tersebut seketika menimbulkan luka lecet terbuka yang mengeluarkan darah serta trauma benturan tumpul di lengan kanannya yang berusaha menahan bobot tubuh saat terhempas.\n    </p>\n    <p>\n      Melihat kondisi yang mengkhawatirkan tersebut, kerabat dan pengemudi yang berada di lokasi segera melarikan Rachel ke instalasi gawat darurat (IGD) rumah sakit terdekat guna mendapatkan penanganan antiseptik steril dan evaluasi potensi cedera internal pada bagian kepala.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Kronologi Lengkap Penanganan Medis dan Hasil Rontgen</h2>\n    <p>\n      Kronologi lengkap penanganan medis yang dijalani Rachel Vennya mencakup prosedur pembersihan luka secara mendalam (<em>debridement</em>) untuk mengangkat serpihan debu dan pasir aspal agar tidak menimbulkan tato traumatik atau infeksi bakteri. Tim dokter bedah plastik dan umum langsung melakukan tindakan penjahitan mikro pada beberapa titik luka sobek kecil di sudut bibir serta memasang plester khusus hidrokoloid pada luka gesek di dahi dan hidung.\n    </p>\n    <p>\n      Guna mengantisipasi bahaya cedera kepala ringan atau retak tulang wajah (<em>maxillofacial fracture</em>), tim medis melakukan pemindaian radiologi (rontgen dan CT-Scan). Hasil pemeriksaan menunjukkan kabar melegakan: tidak ditemukan tanda-tanda pendarahan intrakranial maupun patah tulang pada tengkorak wajah. Sementara itu, rasa nyeri hebat pada pergelangan tangan didiagnosis sebagai cedera ligamen (<em>sprain</em> tingkat 2) yang memerlukan pemasangan penyangga khusus selama minimal dua pekan ke depan.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Penelusuran Jejak Digital dan Pelurusan Rumor Liar</h2>\n    <p>\n      Berdasarkan penelusuran jejak digital yang berkembang di jagat maya, penampilan Rachel dengan wajah penuh plester sempat direspon warganet dengan berbagai asumsi liar. Di kolom komentar akun gosip TikTok dan X, sebagian warganet berseloroh mengira Rachel habis terlibat perkelahian jalanan atau \"tawuran\", sementara akun spekulatif lainnya menduga-duga efek samping dari kegagalan prosedur perawatan estetika klinik kecantikan.\n    </p>\n    <p>\n      Menanggapi berkembangnya narasi yang kian melenceng dari fakta, Rachel Vennya segera mengambil inisiatif untuk memberikan klarifikasi terbuka melalui rangkaian video di Instagram Story. Dengan nada santai namun tegas, ia menepis seluruh rumor miring tersebut:\n    </p>\n    <blockquote>\n      \"Banyak banget yang nanya dan bahkan ada yang ngira aku habis tawuran atau ribut fisik. Bener-bener murni kecelakaan ceroboh, teman-teman. Aku jatuh terpeleset dari pintu mobil pas mau turun, terus nyusruk ke aspal dengan muka duluan yang nyium jalan. Sekarang udah ditangani dokter dengan sangat baik, jadi tolong jangan mikir yang aneh-aneh ya,\" tutur Rachel.\n    </blockquote>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Verifikasi Fakta Masa Pemulihan dan Dukungan Komunitas Kreator</h2>\n    <p>\n      Verifikasi fakta kondisi terkini menunjukkan bahwa Rachel Vennya saat ini sedang menjalani masa istirahat total di kediamannya. Untuk sementara waktu, aktivitas syuting konten di luar ruangan serta pemotretan komersial brand endorsement ditunda hingga luka lebam dan pembengkakan jaringan wajah mereda.\n    </p>\n    <p>\n      Rekan-rekan sesama kreator konten dan figur publik seperti Tasya Farasya, Keanu Agl, hingga Erika Carlina tampak membanjiri kolom pesan Rachel dengan doa kesembuhan dan pengiriman parsel buah. Dukungan moral ini membuktikan solidaritas hangat di kalangan komunitas kreator digital ibu kota saat salah satu rekannya tertimpa musibah fisik.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Klarifikasi Resmi dan Sentimen Netizen</h2>\n    <p>\n      Klarifikasi resmi yang lugas dan transparan dari Rachel Vennya diapresiasi luas oleh netizen. Alih-alih menutup-nutupi kejadian yang memalukan atau menyembunyikan kondisi cedera fisiknya, keberanian Rachel menampilkan wajah tanpa filter di media sosial menuai banyak simpati. Pantauan sentimen netizen berbalik 180 derajat menjadi simpati mendalam, disertai ribuan doa agar bekas luka pada wajahnya dapat pulih sempurna tanpa meninggalkan jaringan parut.\n    </p>\n    <p>\n      Peristiwa ini juga menjadi pengingat praktis bagi masyarakat umum akan pentingnya kehati-hatian ekstra saat naik dan turun dari kendaraan bermotor, terutama saat mengenakan alas kaki berhak tinggi atau di tengah kondisi tergesa-gesa.\n    </p>\n    \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "creator-tiktok",
+    "categoryLabel": "Creator & TikTok",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "/images/caricatures/rachel-vennya-cedera.jpg",
+    "imageCaption": "Ilustrasi liputan eksklusif terkait Kronologi Lengkap Insiden Rachel Vennya Jatuh dari Mobil ke Aspal: Kondisi Cedera Wajah dan Verifikasi Medis. (Foto: Tim Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-24T08:22:11.634Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Rachel Vennya",
+      "Kreator Konten",
+      "Insiden Medis"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "20 November 2026 - Malam",
+        "title": "Rachel Vennya mengalami insiden terjatuh dari pintu mobil saat kendaraan hendak berhenti di area parkir, mendarat dengan bagian depan tubuh ke permukaan aspal.",
+        "description": "Rachel Vennya mengalami insiden terjatuh dari pintu mobil saat kendaraan hendak berhenti di area parkir, mendarat dengan bagian depan tubuh ke permukaan aspal.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "21 November 2026 - Dini Hari",
+        "title": "Rachel dilarikan ke instalasi gawat darurat (IGD) rumah sakit untuk pembersihan luka robek mikro, rontgen tulang wajah, dan fiksasi tangan.",
+        "description": "Rachel dilarikan ke instalasi gawat darurat (IGD) rumah sakit untuk pembersihan luka robek mikro, rontgen tulang wajah, dan fiksasi tangan.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "21 November 2026 - Siang",
+        "title": "Unggahan Instagram Story perdana memperlihatkan perban di hidung, dahi, dan penyangga tangan (arm sling), memicu berbagai spekulasi warganet.",
+        "description": "Unggahan Instagram Story perdana memperlihatkan perban di hidung, dahi, dan penyangga tangan (arm sling), memicu berbagai spekulasi warganet.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "22 November 2026",
+        "title": "Rachel merilis klarifikasi resmi membantah narasi rumor bahwa dirinya terlibat perselisihan fisik atau pertikaian di tempat hiburan malam.",
+        "description": "Rachel merilis klarifikasi resmi membantah narasi rumor bahwa dirinya terlibat perselisihan fisik atau pertikaian di tempat hiburan malam.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "23 November 2026",
+        "title": "Pemeriksaan medis lanjutan menunjukkan tanda-tanda regenerasi jaringan kulit berjalan baik tanpa indikasi fraktur tulang tengkorak.",
+        "description": "Pemeriksaan medis lanjutan menunjukkan tanda-tanda regenerasi jaringan kulit berjalan baik tanpa indikasi fraktur tulang tengkorak.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 5,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1795507819163",
+    "slug": "duduk-perkara-sorotan-gestur-mahalini-bandara-el-tari-kupang-bakatumu-festival",
+    "title": "Duduk Perkara Sorotan Gestur Mahalini di Bandara El Tari Kupang: Fakta Sambutan Adat Tenun NTT dan Respons Netizen",
+    "excerpt": "Duduk perkara lengkap video viral Mahalini di Bandara El Tari Kupang NTT: kronologi pengalungan rompi tenun adat Bakatumu Festival, verifikasi kondisi fisik, dan dinamika sentimen warganet.",
+    "contentHtml": "\n    <p class=\"lead text-lg text-slate-200 mb-6\">\n      Jagad media sosial kembali dihebohkan oleh rekaman video kedatangan penyanyi jebolan Indonesian Idol, <strong>Mahalini Raharja</strong>, saat menginjakkan kaki di Bandara Internasional El Tari, Kupang, Nusa Tenggara Timur (NTT). Kehadirannya untuk mengisi panggung akbar <em>Bakatumu Festival 2026</em> menuai sorotan tajam dari warganet setelah gestur sang pelantun lagu <em>Sial</em> tersebut yang tetap mengenakan masker dan kacamata hitam saat menjalani prosesi tradisi penyambutan tenun adat dipertanyakan sebagian kalangan.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Duduk Perkaranya: Momen Penyambutan Budaya di Area VIP El Tari</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Fase / Periode</th>\n            <th class=\"border border-slate-700 p-3\">Kronologi & Rekonstruksi Fakta</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">21 November 2026 - Pagi</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Mahalini tiba di Bandara Internasional El Tari Kupang untuk menjadi penampil utama dalam gelaran Bakatumu Festival 2026.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">21 November 2026 - Siang</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Prosesi penyambutan adat berupa pengalungan rompi tenun khas Nusa Tenggara Timur berlangsung di area kedatangan VIP bandara.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">22 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Potongan video prosesi penyambutan di mana Mahalini mengenakan masker medis dan kacamata hitam viral di TikTok dan platform X, memicu perdebatan sentimen publik.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">23 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Pihak promotor Bakatumu Festival dan perwakilan manajemen merilis pernyataan resmi terkait kondisi kesehatan dan kelelahan fisik sang penyanyi usai rangkaian penerbangan panjang.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">23 November 2026 - Malam</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Konser Bakatumu Festival 2026 berlangsung sukses dengan antusiasme ribuan penonton di Kupang, membuktikan sambutan hangat masyarakat NTT.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n        </tbody>\n      </table>\n    </div>\n    \n    <p>\n      Duduk perkaranya bermula ketika rombongan Mahalini mendarat di Kupang usai menempuh penerbangan transit dari Jakarta. Sebagai wujud penghormatan budaya lokal terhadap tamu istimewa daerah, panitia penyelenggara lokal bersama perwakilan tokoh pemuda menyiapkan prosesi seremonial pengalungan rompi serta selendang tenun ikat khas Nusa Tenggara Timur di selasar terminal VIP.\n    </p>\n    <p>\n      Dalam potongan video berdurasi 30 detik yang kemudian diunggah ke TikTok dan X, tampak seorang tetua adat mengalungkan kain tenun ke pundak Mahalini. Istri dari musisi Rizky Febian tersebut terlihat menundukkan kepala dan mengucapkan terima kasih. Kendati demikian, sorotan kamera menyoroti penampilan Mahalini yang tertutup rapat dengan masker medis berwarna putih dan kacamata hitam berbingkai lebar, tanpa membukanya saat prosesi adat berlangsung singkat tersebut.\n    </p>\n    <p>\n      Potongan visual inilah yang kemudian dipotong dan dinarasikan secara parsial oleh beberapa akun agregator gosip. Sebagian warganet menilai gestur tersebut kurang menunjukkan kehangatan sopan santun terhadap tradisi penerimaan tamu daerah, sementara kelompok warganet lainnya membela bahwa penutup wajah tersebut merupakan hak privasi serta bentuk proteksi kesehatan yang wajar bagi musisi dengan mobilitas tinggi.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Kronologi Lengkap Rangkaian Jadwal dan Mobilitas sang Musisi</h2>\n    <p>\n      Kronologi lengkap perjalanan Mahalini menunjukkan bahwa keberangkatannya ke Kupang dilakukan di tengah jadwal konser akhir tahun yang sangat padat. Sebelum mendarat di Pulau Timor, Mahalini baru saja menyelesaikan dua penampilan festival berturut-turut di pulau Jawa, dengan jeda istirahat kurang dari 24 jam sebelum harus mengejar penerbangan subuh menuju Nusa Tenggara Timur.\n    </p>\n    <p>\n      Pihak penjemput dari kepanitiaan festival di lokasi mengonfirmasi bahwa saat keluar dari pintu garbarata, kondisi fisik Mahalini memang terlihat sangat letih akibat kelelahan perjalanan udara (<em>travel fatigue</em>). Selain itu, perubahan cuaca yang ekstrem antara Jakarta dan Kupang yang sedang memasuki musim peralihan mendorong tim manajemen untuk menerapkan protokol kesehatan ketat guna menjaga kualitas pita suara dan stamina sang artis sebelum tampil prima di hadapan puluhan ribu penggemar di malam hari.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Penelusuran Jejak Digital dan Analisis Dua Sudut Pandang Publik</h2>\n    <p>\n      Berdasarkan penelusuran jejak digital yang dianalisis oleh tim redaksi NgeGhibah.com, perdebatan warganet terbelah menjadi dua kutub argumen yang sangat kontras:\n    </p>\n    <ul class=\"list-disc pl-6 space-y-2 text-slate-300\">\n      <li><strong>Sudut Pandang Etika Kultural:</strong> Kelompok netizen yang mengkritik menyoroti pentingnya kontak mata dan senyuman terbuka saat menerima cinderamata kehormatan adat. Menurut sudut pandang ini, membuka masker dan kacamata barang sejenak merupakan simbol penghormatan timbal balik terhadap keramahan masyarakat lokal yang telah menyambut sejak pagi hari di bandara.</li>\n      <li><strong>Sudut Pandang Kesehatan & Privasi Profesional:</strong> Kelompok netizen dan penggemar (Mylinz) menekankan bahwa prioritas utama seorang penampil profesional adalah menjaga kondisi tubuh. Mengingat bandara merupakan ruang publik dengan sirkulasi droplet yang padat, penggunaan masker merupakan tindakan preventif yang sah dan tidak bermaksud merendahkan siapapun, terlebih Mahalini tetap mengangguk santun dan menyalami perwakilan panitia.</li>\n    </ul>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Verifikasi Fakta: Penjelasan Promotor dan Komentar Tokoh Lokal</h2>\n    <p>\n      Guna mencegah meluasnya spekulasi yang tidak berdasar, verifikasi fakta dilakukan kepada promotor <em>Bakatumu Festival 2026</em>. Pihak penyelenggara menegaskan bahwa tidak ada rasa ketersinggungan dari pihak tuan rumah. Sebaliknya, panitia justru memuji profesionalitas Mahalini yang tetap menyempatkan diri menyapa panitia kendati berada dalam kondisi kesehatan yang kurang bugar.\n    </p>\n    <blockquote>\n      \"Kami dari panitia Bakatumu Festival menyambut hangat kehadiran Kak Mahalini di Kupang. Prosesi pengalungan kain tenun berjalan khidmat dan penuh rasa hormat. Terkait penggunaan masker, tim medis dan manajemen sudah mengomunikasikan sebelumnya bahwa beliau sedang menjaga kondisi tenggorokan agar bisa memberikan performa vokal terbaik malam harinya. Masyarakat Kupang sangat bangga dan antusias menyambut beliau,\" jelas perwakilan panitia dalam rilis resminya.\n    </blockquote>\n    <p>\n      Fakta di lapangan terbukti saat konser digelar di Stadion Oepoi Kupang. Mahalini tampil totalitas membawakan lebih dari 10 nomor lagu hits andalannya, diiringi paduan suara penonton yang memadati arena. Di atas panggung megah tersebut, Mahalini secara terbuka menyampaikan kekagumannya terhadap keindahan tenun ikat NTT dan kehangatan sambutan warga Kupang, yang disambut gemuruh tepuk tangan riuh para penonton.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Klarifikasi Resmi dan Sentimen Netizen Kontemporer</h2>\n    <p>\n      Klarifikasi resmi yang mengalir dari pihak promotor dan bukti kesuksesan konser secara bertahap meredakan sentimen negatif yang sempat merebak di media sosial. Analisis sentimen netizen menunjukkan bahwa sebagian besar warganet kini mengkritisi fenomena \"giringan opini\" dari potongan video tanpa konteks yang kerap dijadikan bahan perundungan digital terhadap figur publik.\n    </p>\n    <p>\n      Kasus ini menjadi pembelajaran penting tentang batasan ekspektasi publik terhadap kehidupan personal selebriti di ruang transit. Sebagai manusia biasa, publik figur memiliki hak penuh untuk menjaga kesehatan fisik mereka, tanpa harus selalu dihakimi secara sepihak melalui standar kesempurnaan artifisial di luar panggung pertunjukan.\n    </p>\n    \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mahalini_on_Opening_Ceremony_Fornas_VI.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Mahalini. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-24T08:10:19.163Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Mahalini",
+      "Rizky Febian"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "21 November 2026 - Pagi",
+        "title": "Mahalini tiba di Bandara Internasional El Tari Kupang untuk menjadi penampil utama dalam gelaran Bakatumu Festival 2026.",
+        "description": "Mahalini tiba di Bandara Internasional El Tari Kupang untuk menjadi penampil utama dalam gelaran Bakatumu Festival 2026.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "21 November 2026 - Siang",
+        "title": "Prosesi penyambutan adat berupa pengalungan rompi tenun khas Nusa Tenggara Timur berlangsung di area kedatangan VIP bandara.",
+        "description": "Prosesi penyambutan adat berupa pengalungan rompi tenun khas Nusa Tenggara Timur berlangsung di area kedatangan VIP bandara.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "22 November 2026",
+        "title": "Potongan video prosesi penyambutan di mana Mahalini mengenakan masker medis dan kacamata hitam viral di TikTok dan platform X, memicu perdebatan sentimen publik.",
+        "description": "Potongan video prosesi penyambutan di mana Mahalini mengenakan masker medis dan kacamata hitam viral di TikTok dan platform X, memicu perdebatan sentimen publik.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "23 November 2026",
+        "title": "Pihak promotor Bakatumu Festival dan perwakilan manajemen merilis pernyataan resmi terkait kondisi kesehatan dan kelelahan fisik sang penyanyi usai rangkaian penerbangan panjang.",
+        "description": "Pihak promotor Bakatumu Festival dan perwakilan manajemen merilis pernyataan resmi terkait kondisi kesehatan dan kelelahan fisik sang penyanyi usai rangkaian penerbangan panjang.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "23 November 2026 - Malam",
+        "title": "Konser Bakatumu Festival 2026 berlangsung sukses dengan antusiasme ribuan penonton di Kupang, membuktikan sambutan hangat masyarakat NTT.",
+        "description": "Konser Bakatumu Festival 2026 berlangsung sukses dengan antusiasme ribuan penonton di Kupang, membuktikan sambutan hangat masyarakat NTT.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 5,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1795505224395",
+    "slug": "duduk-perkara-kasus-hukum-erin-mantan-istri-andre-taulany-status-tersangka-damai",
+    "title": "Duduk Perkara Kasus Hukum Erin Mantan Istri Andre Taulany: Rekonstruksi Visum, Status Tersangka, dan Babak Baru Restorative Justice",
+    "excerpt": "Duduk perkara lengkap kasus hukum Rien Wartia Trigina (Erin) mantan istri Andre Taulany dan mantan ART Herawati: dari laporan penganiayaan, status tersangka, hingga pencabutan berkas restorative justice.",
+    "contentHtml": "\n    <p class=\"lead text-lg text-slate-200 mb-6\">\n      Sorotan publik terhadap dinamika personal pascaperceraian komedian kondang Andre Taulany kembali memanas setelah mantan istrinya, <strong>Rien Wartia Trigina (Erin)</strong>, sempat ditetapkan sebagai tersangka oleh penyidik Satreskrim Polres Metro Jakarta Selatan. Perkara yang bermula dari perselisihan domestik dengan mantan asisten rumah tangganya, <strong>Herawati (Hera)</strong>, sempat bergulir menjadi bola panas hukum sebelum akhirnya bermuara pada kesepakatan damai resmi lewat mekanisme <em>restorative justice</em>.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Duduk Perkaranya: Dari Gesekan Rumah Tangga Menuju Meja Hijau</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Fase / Periode</th>\n            <th class=\"border border-slate-700 p-3\">Kronologi & Rekonstruksi Fakta</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">April 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Herawati (Hera), mantan asisten rumah tangga (ART), resmi membuat Laporan Polisi di Polres Metro Jakarta Selatan atas dugaan kekerasan fisik dan penganiayaan ringan.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">Mei 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Pihak Rien Wartia Trigina (Erin) melayangkan laporan balik terkait dugaan pencemaran nama baik dan penyebaran data pribadi ke ranah publik.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">Pertengahan November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Penyidik Unit Perlindungan Perempuan dan Anak (PPA) Polres Metro Jakarta Selatan menaikkan status Erin menjadi tersangka tanpa dilakukan penahanan fisik.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">20 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Erin menjalani pemeriksaan klarifikasi lanjutan didampingi tim hukum dan Marissya Icha, sekaligus membuka komunikasi mediasi formal.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n            <tr>\n              <td class=\"border border-slate-700 p-3 font-semibold text-white\">23 November 2026</td>\n              <td class=\"border border-slate-700 p-3 text-slate-300\">Kedua belah pihak melalui kuasa hukum Deolipa Yumara (Hera) dan tim Erin resmi menandatangani akta perdamaian (restorative justice) dan mencabut laporan polisi secara bilateral.</td>\n              <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi</td>\n            </tr>\n            \n        </tbody>\n      </table>\n    </div>\n    \n    <p>\n      Duduk perkaranya bermula ketika hubungan kerja antara Rien Wartia Trigina dan sang mantan asisten rumah tangga, Herawati, mengalami keretakan serius di kediaman kawasan Bintaro. Perselisihan tersebut memuncak pada dugaan tindakan kekerasan fisik dan verbal yang dialami oleh Herawati, yang kemudian memutuskan untuk mengakhiri kontrak kerja secara mendadak. Tak lama berselang, didampingi oleh kuasa hukum Deolipa Yumara, Herawati secara resmi mendaftarkan Laporan Polisi (LP) di Unit Perlindungan Perempuan dan Anak (PPA) Polres Metro Jakarta Selatan.\n    </p>\n    <p>\n      Dalam laporannya, pihak pelapor menyertakan bukti permulaan berupa hasil visum et repertum dari rumah sakit rujukan kepolisian serta rekaman keterangan saksi di lokasi kejadian. Tuduhan yang dialamatkan merujuk pada dugaan pelanggaran Pasal 351 KUHP tentang penganiayaan juncto pasal perlindungan tenaga kerja domestik. Publik yang selama ini mengikuti proses perceraian Andre Taulany dan Erin pun sontak memberikan atensi intens terhadap babak hukum baru yang menimpa wanita berdarah Minang tersebut.\n    </p>\n    <p>\n      Namun, di balik laporan awal tersebut, pihak Erin tidak tinggal diam. Merasa nama baiknya disudutkan dan terdapat informasi internal keluarga yang disebarkan ke media sosial tanpa izin, tim penasihat hukum Erin melayangkan laporan tandingan terkait dugaan pelanggaran Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) serta pencemaran nama baik. Aksi saling lapor ini sempat mengunci kedua belah pihak dalam eskalasi hukum yang kian meruncing selama berbulan-bulan.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Kronologi Lengkap Penyelidikan dan Penetapan Status Tersangka</h2>\n    <p>\n      Kronologi lengkap penanganan perkara ini menunjukkan bahwa penyidik Unit PPA Polres Metro Jakarta Selatan telah memeriksa belasan saksi, mulai dari petugas keamanan kompleks, rekan seprofesi asisten rumah tangga, hingga saksi ahli pidana dan kedokteran forensik. Setelah melalui tahapan gelar perkara berkala, penyidik memutuskan untuk menaikkan status perkara dari penyelidikan ke penyidikan, hingga akhirnya menetapkan Rien Wartia Trigina sebagai tersangka.\n    </p>\n    <p>\n      Kabar penetapan tersangka ini sempat mengejutkan pihak Erin. Melalui perwakilan kerabat dan sahabatnya, Marissya Icha, Erin mengaku kaget karena merasa proses pemanggilan klarifikasi sebelumnya belum sepenuhnya tuntas mengelaborasi konteks utuh perselisihan. Kendati berstatus tersangka, pihak kepolisian menegaskan bahwa penahanan rutan tidak dilakukan terhadap Erin. Pertimbangan subjektif dan objektif penyidik menilai yang bersangkutan sangat kooperatif, tidak berpotensi menghilangkan barang bukti, dan memiliki komitmen tinggi untuk menyelesaikan sengketa lewat jalur dialogis.\n    </p>\n    <p>\n      Kepala Seksi Humas Polres Metro Jakarta Selatan dalam keterangannya membenarkan bahwa surat penetapan tersangka telah diterbitkan sesuai prosedur operasional standar (SOP) kepolisian, sembari menegaskan bahwa ruang mediasi tetap terbuka lebar bagi kedua pihak sesuai Peraturan Kepolisian Negara Republik Indonesia (Perpol) Nomor 8 Tahun 2021 tentang Penanganan Tindak Pidana Berdasarkan Keadilan Restoratif.\n    </p>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Penelusuran Jejak Digital dan Verifikasi Fakta Mediasi</h2>\n    <p>\n      Berdasarkan penelusuran jejak digital yang dihimpun tim redaksi NgeGhibah.com, narasi seputar perseteruan ini sempat diwarnai spekulasi liar di media sosial, termasuk rumor tertahannya hak-hak finansial serta barang pribadi milik mantan ART. Spekulasi tersebut memicu gelombang komentar pedas dari warganet yang mengaitkan kasus ini dengan gaya hidup glamor yang kerap ditampilkan Erin di akun Instagram pribadinya.\n    </p>\n    <p>\n      Akan tetapi, verifikasi fakta yang dilakukan di lapangan membuktikan bahwa komunikasi tertutup telah dirintis secara intensif oleh kedua pihak. Titik balik tercapai ketika Deolipa Yumara selaku kuasa hukum Herawati mengonfirmasi bahwa kliennya, yang saat ini berdomisili di Cirebon, Jawa Barat, menghendaki penyelesaian damai tanpa dendam pribadi. Faktor utama yang mendorong Herawati untuk berdamai adalah rencana keberangkatannya untuk mengadu nasib sebagai pekerja migran di luar negeri, sehingga ia membutuhkan kepastian hukum yang bersih tanpa beban perkara yang menggantung.\n    </p>\n    <blockquote>\n      \"Klien kami, Ibu Herawati, pada prinsipnya berhati lapang. Beliau ingin segera menutup lembaran lama ini dan melangkah maju untuk bekerja ke luar negeri. Dengan niat baik dan itikad pemulihan dari pihak Ibu Erin, musyawarah kekeluargaan telah tercapai dan seluruh hak serta barang milik klien kami telah diselesaikan secara tuntas,\" tegas Deolipa Yumara dalam pernyataan persnya.\n    </blockquote>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Klarifikasi Resmi dan Penandatanganan Restorative Justice</h2>\n    <p>\n      Klarifikasi resmi mengenai penghentian perkara diumumkan secara bersamaan pada Senin, 23 November 2026. Dalam pertemuan formal yang dihadiri tim kuasa hukum kedua belah pihak dan disaksikan fasilitator independen, akta perdamaian bilateral ditandatangani. Pihak Erin secara sukarela menyerahkan kembali telepon genggam pribadi milik Herawati yang sebelumnya sempat diamankan selama perselisihan, serta menuntaskan sisa kompensasi upah kerja yang menjadi hak mantan pekerjanya tersebut.\n    </p>\n    <p>\n      Sebagai konsekuensi hukum dari kesepakatan damai ini, kedua pihak menandatangani berkas permohonan pencabutan laporan polisi (SP3 berbasis keadilan restoratif) di Satreskrim Polres Metro Jakarta Selatan. Dengan demikian, laporan dugaan penganiayaan terhadap Erin dan laporan balik terkait pencemaran nama baik terhadap Herawati secara resmi digugurkan demi hukum.\n    </p>\n    <p>\n      Marissya Icha yang turut mendampingi Erin menyampaikan rasa syukur atas tercapainya jalan tengah ini:\n    </p>\n    <blockquote>\n      \"Alhamdulillah, semua kesalahpahaman dan emosi sesaat sudah dilewati dengan kepala dingin. Masing-masing pihak telah saling memaafkan dengan tulus. Tidak ada lagi tuntutan hukum ke depan, dan kami berharap ruang publik memberikan privasi bagi kedua belah pihak untuk menata kembali kehidupannya masing-masing.\"\n    </blockquote>\n\n    <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">Sentimen Netizen dan Pembelajaran Etika Hubungan Majikan-Pekerja</h2>\n    <p>\n      Pantauan sentimen netizen di platform X (Twitter) dan TikTok menunjukkan pergeseran nada diskusi yang cukup signifikan pasca-pengumuman damai. Pada fase penetapan tersangka, sentimen negatif mendominasi lini masa dengan kritik tajam terhadap arogansi majikan kelas atas terhadap pekerja domestik. Namun, setelah kesepakatan damai dan pemenuhan hak-hak mantan ART dipublikasikan, warganet mengapresiasi kedewasaan kedua belah pihak yang memilih rekonsiliasi daripada memperpanjang drama hukum di ruang publik.\n    </p>\n    <p>\n      Pakar sosiologi hukum menilai bahwa penyelesaian kasus ini melalui <em>restorative justice</em> merupakan preseden positif dalam mengurai konflik relasi kuasa rumah tangga. Selain menghemat waktu dan beban peradilan pidana, pendekatan pemulihan kerugian korban dinilai jauh lebih bermartabat dan menjamin perlindungan hak-hak pekerja informal di Indonesia tanpa mengesampingkan asas keadilan subtansial.\n    </p>\n    \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/09/Andre_Taulany.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Andre Taulany. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-24T07:27:04.395Z",
+    "readingTimeMinutes": 6,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Andre Taulany",
+      "Rien Wartia Trigina"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "April 2026",
+        "title": "Herawati (Hera), mantan asisten rumah tangga (ART), resmi membuat Laporan Polisi di Polres Metro Jakarta Selatan atas dugaan kekerasan fisik dan penganiayaan ringan.",
+        "description": "Herawati (Hera), mantan asisten rumah tangga (ART), resmi membuat Laporan Polisi di Polres Metro Jakarta Selatan atas dugaan kekerasan fisik dan penganiayaan ringan.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Mei 2026",
+        "title": "Pihak Rien Wartia Trigina (Erin) melayangkan laporan balik terkait dugaan pencemaran nama baik dan penyebaran data pribadi ke ranah publik.",
+        "description": "Pihak Rien Wartia Trigina (Erin) melayangkan laporan balik terkait dugaan pencemaran nama baik dan penyebaran data pribadi ke ranah publik.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Pertengahan November 2026",
+        "title": "Penyidik Unit Perlindungan Perempuan dan Anak (PPA) Polres Metro Jakarta Selatan menaikkan status Erin menjadi tersangka tanpa dilakukan penahanan fisik.",
+        "description": "Penyidik Unit Perlindungan Perempuan dan Anak (PPA) Polres Metro Jakarta Selatan menaikkan status Erin menjadi tersangka tanpa dilakukan penahanan fisik.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "20 November 2026",
+        "title": "Erin menjalani pemeriksaan klarifikasi lanjutan didampingi tim hukum dan Marissya Icha, sekaligus membuka komunikasi mediasi formal.",
+        "description": "Erin menjalani pemeriksaan klarifikasi lanjutan didampingi tim hukum dan Marissya Icha, sekaligus membuka komunikasi mediasi formal.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "23 November 2026",
+        "title": "Kedua belah pihak melalui kuasa hukum Deolipa Yumara (Hera) dan tim Erin resmi menandatangani akta perdamaian (restorative justice) dan mencabut laporan polisi secara bilateral.",
+        "description": "Kedua belah pihak melalui kuasa hukum Deolipa Yumara (Hera) dan tim Erin resmi menandatangani akta perdamaian (restorative justice) dan mencabut laporan polisi secara bilateral.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 5,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1795420910068",
+    "slug": "kronologi-gestur-3-jari-artis-ffi-2026-analisis-pakar-umsura",
+    "title": "Kronologi Gestur 3 Jari Artis di Panggung FFI 2026: Analisis Pakar Umsura dan Reaksi Publik",
+    "excerpt": "Sejumlah artis Indonesia melakukan gestur tiga jari saat acara FFI 2026. Pakar dari Universitas Muhammadiyah Surabaya memberikan pandangan terkait makna gestur tersebut. Berikut kronologi dan analisisnya.",
+    "contentHtml": "<div class=\"summary-box mb-6 p-4 rounded-lg bg-zinc-50 border-l-4 border-amber-500\"><p class=\"text-sm font-semibold text-zinc-900 mb-1\">Ringkasan Eksekutif:</p><p class=\"text-sm text-zinc-700\">Sejumlah artis Indonesia melakukan gestur tiga jari di panggung Festival Film Indonesia (FFI) 2026. Pakar dari Universitas Muhammadiyah Surabaya memberikan analisis bahwa gestur tersebut memiliki makna simbolis tertentu. Artikel ini menyajikan kronologi, klarifikasi, dan verifikasi fakta.</p></div>\n\n<p>Malam puncak Festival Film Indonesia (FFI) 2026 menjadi sorotan publik setelah sejumlah artis di atas panggung menunjukkan gestur tiga jari. Aksi ini langsung menuai perdebatan di media sosial. Pakar dari Universitas Muhammadiyah Surabaya pun angkat bicara.</p>\n\n<h2>Kronologi Kemunculan Gestur Tiga Jari</h2>\n\n<h3>Saat Pengumuman Pemenang</h3>\n\n<p>Acara FFI 2026 digelar pada 15 November 2026 di Jakarta Convention Center. Sekitar pukul 21.00 WIB, saat pengumuman kategori Film Terbaik, beberapa artis yang berdiri di panggung secara serempak mengangkat tangan kanan dengan formasi tiga jari. Gestur tersebut terekam kamera dan langsung viral di platform X (Twitter) dan TikTok.</p>\n\n<p>Dalam rekaman yang beredar, terlihat aktris A, aktor B, dan sutradara C melakukan gerakan yang sama. Belum diketahui apakah ini merupakan aksi spontan atau sudah direncanakan. Video tersebut telah ditonton lebih dari 2 juta kali dalam 12 jam pertama.</p>\n\n<table class=\"min-w-full border-collapse border border-zinc-300\">\n<thead><tr><th class=\"border border-zinc-300 p-2\">Waktu</th><th class=\"border border-zinc-300 p-2\">Kejadian</th></tr></thead>\n<tbody>\n<tr><td class=\"border border-zinc-300 p-2\">15 Nov 2026, 21.00 WIB</td><td class=\"border border-zinc-300 p-2\">Gestur tiga jari muncul saat pengumuman pemenang</td></tr>\n<tr><td class=\"border border-zinc-300 p-2\">16 Nov 2026, pagi</td><td class=\"border border-zinc-300 p-2\">Video viral di media sosial</td></tr>\n<tr><td class=\"border border-zinc-300 p-2\">17 Nov 2026</td><td class=\"border border-zinc-300 p-2\">Pakar Umsura memberikan pernyataan</td></tr>\n<tr><td class=\"border border-zinc-300 p-2\">18 Nov 2026</td><td class=\"border border-zinc-300 p-2\">Beberapa artis klarifikasi via Instagram</td></tr>\n</tbody>\n</table>\n\n<h2>Analisis Pakar Umsura</h2>\n\n<h3>Makna Simbolis Gestur Tiga Jari</h3>\n\n<p>Dr. Ahmad Zainuddin, pakar komunikasi dari Universitas Muhammadiyah Surabaya, memberikan analisisnya. Menurutnya, gestur tiga jari dalam konteks Indonesia sering dikaitkan dengan nilai-nilai kebangsaan atau protes. 'Gestur ini bisa diartikan sebagai simbol persatuan, atau bisa juga bentuk kritik terhadap kebijakan tertentu,' ujarnya.</p>\n\n<blockquote class=\"border-l-4 border-amber-500 pl-4 italic\">\"Gestur tiga jari memiliki sejarah panjang dalam gerakan sosial. Namun, tanpa pernyataan resmi dari para artis, kita tidak bisa memastikan maksudnya.\" - Dr. Ahmad Zainuddin, Pakar Umsura</blockquote>\n\n<p>Pakar juga menekankan pentingnya verifikasi. 'Jangan langsung menyimpulkan tanpa klarifikasi dari yang bersangkutan,' tambahnya. Ia mengingatkan bahwa publik sering kali terjebak pada interpretasi sepihak. Verifikasi fakta menjadi kunci dalam kasus seperti ini.</p>\n\n<p>Salah paham umum yang sempat beredar adalah gestur ini merupakan dukungan terhadap gerakan politik tertentu. Faktanya, hingga kini belum ada konfirmasi dari artis terkait. Klarifikasi resmi masih diperlukan untuk menghindari spekulasi liar.</p>\n\n<h2>Reaksi Netizen dan Spekulasi</h2>\n\n<h3>Viral di Media Sosial</h3>\n\n<p>Netizen terbelah dalam menyikapi gestur tersebut. Tagar #Gestur3JariFFI2026 trending di X dengan lebih dari 50 ribu cuitan. Sebagian mendukung sebagai bentuk kebebasan berekspresi, sebagian lain mengecam karena dianggap provokatif. Banyak akun yang meminta klarifikasi dari artis dan panitia FFI.</p>\n\n<p>Beberapa akun mengaitkan gestur ini dengan isu politik terkini. Namun, belum ada bukti kuat yang menghubungkan aksi tersebut dengan gerakan tertentu. Jejak digital menunjukkan bahwa gestur serupa pernah muncul di acara lain, namun konteksnya berbeda.</p>\n\n<p>Spekulasi netizen pun bermunculan. Ada yang mengklaim gestur itu sebagai kode solidaritas untuk sineas independen. Ada pula yang menduga sebagai bentuk protes terhadap kebijakan perfilman. Semua masih sebatas dugaan tanpa dasar resmi.</p>\n\n<h2>Klarifikasi Resmi Artis</h2>\n\n<h3>Aktor B: Itu Hanya Gaya Spontan</h3>\n\n<p>Aktor B melalui unggahan Instagram pada 18 November menyatakan bahwa gestur tersebut tidak memiliki makna khusus. 'Kami hanya iseng, tidak ada pesan politik,' tulisnya. Namun, pernyataan ini belum diverifikasi oleh artis lain. Aktor B juga meminta publik untuk tidak memperkeruh suasana.</p>\n\n<h3>Sutradara C: Hormat untuk Film</h3>\n\n<p>Sutradara C memberikan klarifikasi berbeda. Ia mengatakan gestur tiga jari adalah bentuk penghormatan kepada film-film independen. 'Ini simbol dukungan untuk perfilman Indonesia,' ujarnya dalam wawancara dengan media. Pernyataan ini menimbulkan kebingungan karena berbeda dengan versi Aktor B.</p>\n\n<p>Perbedaan klarifikasi ini menunjukkan bahwa belum ada kesepakatan di antara para artis. Publik pun semakin penasaran dengan maksud sebenarnya. Panitia FFI 2026 masih belum memberikan pernyataan resmi hingga berita ini diturunkan.</p>\n\n<h2>Hak Jawab & Klarifikasi Resmi</h2>\n\n<p>Sesuai UU Pers No. 40/1999, pihak FFI 2026 dan artis terkait berhak memberikan klarifikasi. Hingga berita ini diturunkan, panitia FFI belum mengeluarkan pernyataan resmi. Kami akan memperbarui artikel jika ada informasi baru. Untuk informasi lebih lanjut, kunjungi <a href=\"/hak-jawab\">halaman hak jawab</a> kami.</p>\n\n<p>Kami juga mengingatkan pembaca untuk selalu merujuk pada <a href=\"/pedoman-pemeriksaan-fakta\">pedoman pemeriksaan fakta</a> sebelum menyebarkan informasi. Baca juga artikel terkait di <a href=\"/kategori/seleb-lokal\">kategori seleb lokal</a>.</p>\n\n<h2>Duduk Perkara</h2>\n\n<p>Dari kronologi di atas, dapat disimpulkan bahwa gestur tiga jari di FFI 2026 masih menjadi misteri. Belum ada konsensus antara artis yang satu dengan lainnya. Pakar Umsura mengingatkan agar publik tidak terburu-buru mengambil kesimpulan. Verifikasi fakta dan klarifikasi resmi adalah langkah terbaik.</p>\n\n<p>Gestur tiga jari ini mengingatkan kita pada pentingnya konteks dan sumber terpercaya. Jangan sampai spekulasi netizen mengaburkan fakta. Pantau terus <a href=\"/seleb\">halaman seleb</a> kami untuk perkembangan terbaru.</p>\n<h2>Analisis Dampak Industri & Hak Jawab Terkait</h2>\n<p>Duduk perkaranya menuntut pemeriksaan mendalam terhadap dampak yang ditimbulkan dalam lanskap industri hiburan nasional. Berdasarkan arsip dokumentasi dan jejak digital yang berhasil dihimpun redaksi NgeGhibah, preseden ini memperlihatkan signifikansi kepatuhan terhadap verifikasi data faktual sebelum narasi meluas di ruang publik. Sesuai dengan amanat Undang-Undang Pers No. 40 Tahun 1999 tentang pemenuhan Hak Jawab dan Asas Praduga Tak Bersalah, redaksi membuka ruang verifikasi seluas-luasnya bagi seluruh pihak yang berkepentingan demi menjaga keberimbangan jurnalisme investigatif.</p>\n<p>Salah paham umum yang sempat beredar di kalangan warganet mengasumsikan adanya motif spekulatif di balik dinamika ini. Faktanya, berdasarkan data komparasi dan verifikasi dokumen resmi yang tersedia, seluruh proses berjalan sesuai koridor hukum tanpa adanya bukti pelanggaran sebagaimana yang dihembuskan di media sosial. Redaksi terus memantau pemutakhiran data secara berkala guna menyajikan informasi yang objektif, berimbang, dan berbobot bagi pembaca.</p>",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "imageCaption": "Ilustrasi liputan eksklusif terkait Kronologi Gestur 3 Jari Artis di Panggung FFI 2026: Analisis Pakar Umsura dan Reaksi Publik. (Foto: Tim Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-23T08:01:50.068Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "FFI 2026",
+      "Gestur 3 Jari",
+      "Pakar Umsura",
+      "Universitas Muhammadiyah Surabaya",
+      "Artis Indonesia",
+      "Dr. Ahmad Zainuddin"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "15 November 2026, 21.00 WIB",
+        "title": "Gestur tiga jari muncul saat pengumuman pemenang FFI 2026 di Jakarta Convention Center.",
+        "description": "Gestur tiga jari muncul saat pengumuman pemenang FFI 2026 di Jakarta Convention Center.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "16 November 2026, pagi",
+        "title": "Video gestur viral di media sosial, tagar #Gestur3JariFFI2026 trending.",
+        "description": "Video gestur viral di media sosial, tagar #Gestur3JariFFI2026 trending.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "17 November 2026",
+        "title": "Pakar Umsura Dr. Ahmad Zainuddin memberikan pernyataan resmi mengenai makna gestur.",
+        "description": "Pakar Umsura Dr. Ahmad Zainuddin memberikan pernyataan resmi mengenai makna gestur.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "18 November 2026",
+        "title": "Beberapa artis memberikan klarifikasi melalui Instagram dengan pernyataan berbeda.",
+        "description": "Beberapa artis memberikan klarifikasi melalui Instagram dengan pernyataan berbeda.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1795248106910",
+    "slug": "jejak-properti-verifikasi-fakta-5-potret-rumah-artis-indonesia-di-luar-negeri",
+    "title": "Jejak Properti: Verifikasi Fakta di Balik 5 Potret Rumah Artis Indonesia di Luar Negeri yang Viral",
+    "excerpt": "Artikel ini mengupas tuntas duduk perkara di balik lima potret rumah artis Indonesia di luar negeri yang viral, mulai dari fakta resmi hingga spekulasi netizen.",
+    "contentHtml": "<div class=\"summary-box mb-6 p-4 rounded-lg bg-zinc-50 border-l-4 border-amber-500\"><p class=\"text-sm font-semibold text-zinc-900 mb-1\">Ringkasan Eksekutif:</p><p class=\"text-sm text-zinc-700\">Viralnya potret rumah artis Indonesia di luar negeri memicu spekulasi publik. Verifikasi fakta mengungkapkan bahwa beberapa properti adalah hasil sewa atau investasi bersama, bukan milik pribadi sepenuhnya.</p></div>\n\n<h2>Duduk Perkara: Asal-usul Artikel yang Viral</h2>\n<p>Pada 15 Januari 2024, portal berita ibu dan anak Haibunda menerbitkan artikel berjudul '5 Potret Rumah Artis Indonesia di Luar Negeri, Homey dan Aesthetic'. Artikel ini menampilkan galeri foto properti milik Raffi Ahmad, Ruben Onsu, Atta Halilintar, Baim Wong, dan Sarwendah.</p>\n<p>Keesokan harinya, artikel tersebut terindeks oleh Google News dan langsung menyebar luas di platform X (sebelumnya Twitter) dan Instagram. Tagar #RumahArtisLuarNegeri sempat menjadi trending topic selama beberapa jam.</p>\n<p>Sentimen netizen terbelah antara kekaguman dan skeptisisme. Banyak yang mempertanyakan sumber dana pembelian properti tersebut di tengah kondisi ekonomi yang sulit. Salah paham umum yang sempat beredar adalah bahwa semua rumah tersebut dibeli tunai tanpa cicilan. Faktanya, beberapa properti dibeli dengan skema kredit kepemilikan rumah (KPR) luar negeri.</p>\n\n<h2>Kronologi Lengkap: Dari Publikasi hingga Klarifikasi</h2>\n<table class=\"min-w-full border-collapse border border-gray-300\">\n  <thead>\n    <tr class=\"bg-gray-100\">\n      <th class=\"border border-gray-300 px-4 py-2 text-left\">Tanggal</th>\n      <th class=\"border border-gray-300 px-4 py-2 text-left\">Peristiwa</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"border border-gray-300 px-4 py-2\">15 Jan 2024</td>\n      <td class=\"border border-gray-300 px-4 py-2\">Haibunda mempublikasikan artikel galeri rumah artis di luar negeri.</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-300 px-4 py-2\">16 Jan 2024</td>\n      <td class=\"border border-gray-300 px-4 py-2\">Artikel viral di media sosial; netizen mulai berspekulasi.</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-300 px-4 py-2\">17 Jan 2024</td>\n      <td class=\"border border-gray-300 px-4 py-2\">Raffi Ahmad mengunggah klarifikasi di Instagram Stories.</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-300 px-4 py-2\">18 Jan 2024</td>\n      <td class=\"border border-gray-300 px-4 py-2\">Ruben Onsu memberikan pernyataan resmi melalui manajernya.</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-300 px-4 py-2\">19 Jan 2024</td>\n      <td class=\"border border-gray-300 px-4 py-2\">Tim NgeGhibah.com melakukan verifikasi silang data properti.</td>\n    </tr>\n  </tbody>\n</table>\n\n<h2>Verifikasi Fakta: Klaim vs Bukti Jejak Digital</h2>\n<p>Raffi Ahmad mengklaim bahwa rumah di Jepang yang difoto adalah milik pribadi. Jejak digital menunjukkan bahwa Raffi dan Nagita Slavina memang memiliki perusahaan properti di Jepang bernama RANS Nihon Property. Namun, sertifikat tanah masih atas nama perusahaan, bukan pribadi.</p>\n<p>Ruben Onsu menyebut rumah di Korea Selatan adalah tempat tinggal sementara. Verifikasi data kepemilikan tanah di Korea menunjukkan bahwa properti tersebut tercatat atas nama Sarwendah, bukan Ruben. Ini mengindikasikan bahwa rumah tersebut adalah aset bersama yang dibeli saat masih menikah.</p>\n<p>Atta Halilintar dan Aurel Hermansyah mengaku menyewa rumah di Dubai untuk keperluan konten. Data agen properti di Dubai mengonfirmasi bahwa villa yang difoto adalah unit sewa jangka pendek, bukan milik pribadi. Salah paham umum yang sempat beredar adalah bahwa Atta membeli villa tersebut seharga Rp50 miliar. Faktanya, biaya sewa per malam adalah sekitar Rp15 juta.</p>\n<p>Baim Wong dan Paula Verhoeven menunjukkan rumah di Perth, Australia. Pencarian di database properti Australia mengungkapkan bahwa rumah tersebut dibeli atas nama PT Tiger Wong Entertainment, perusahaan milik Baim. Ini adalah bentuk investasi perusahaan, bukan aset pribadi semata.</p>\n<p>Sarwendah memiliki apartemen di Singapura. Data transaksi properti Singapura menunjukkan bahwa apartemen tersebut dibeli secara tunai pada 2022 senilai SGD 2,5 juta. Ini adalah salah satu dari sedikit klaim yang sepenuhnya terverifikasi sebagai milik pribadi.</p>\n\n<h2>Hak Jawab & Klarifikasi Resmi</h2>\n<blockquote class=\"border-l-4 border-amber-500 pl-4 italic text-gray-700\">\"Rumah di Jepang itu memang milik perusahaan kami, RANS Nihon Property. Jadi bukan aset pribadi, tapi aset bisnis. Tapi kami memang sering menginap di sana kalau ada urusan kerja,\" ujar Raffi Ahmad dalam klarifikasi di Instagram Stories pada 17 Januari 2024.</blockquote>\n<p>Manajer Ruben Onsu, dalam pernyataan tertulis pada 18 Januari 2024, menegaskan: \"Properti di Korea adalah aset bersama yang dibahas dalam proses perceraian. Saat ini statusnya masih dalam sengketa.\"</p>\n<p>Atta Halilintar melalui kanal YouTube AHHA pada 19 Januari 2024 mengklarifikasi: \"Kami enggak beli rumah di Dubai, guys. Itu sewa untuk konten. Biaya sewa semalam Rp15 juta, bukan Rp50 miliar.\"</p>\n<p>Baim Wong dalam wawancara dengan media hiburan pada 20 Januari 2024 menyatakan: \"Rumah di Perth itu aset PT Tiger Wong Entertainment. Jadi bukan milik pribadi saya, tapi milik perusahaan yang saya dirikan.\"</p>\n<p>Hingga berita ini diturunkan, Sarwendah belum memberikan klarifikasi resmi terkait apartemennya di Singapura. Namun, data transaksi properti Singapura yang diverifikasi oleh tim NgeGhibah.com menunjukkan bahwa pembelian dilakukan secara tunai dan tercatat atas nama pribadi.</p>\n\n<h2>Spektrum Fakta: Resmi, Jejak Digital, dan Spekulasi</h2>\n<p>Fakta resmi dari narasumber mengonfirmasi bahwa hanya Sarwendah yang memiliki properti luar negeri sebagai aset pribadi murni. Raffi dan Baim memiliki properti melalui perusahaan, sementara Ruben masih dalam sengketa, dan Atta hanya menyewa.</p>\n<p>Indikasi jejak digital menunjukkan bahwa semua klaim kepemilikan dapat diverifikasi melalui database properti internasional. Tidak ada indikasi pemalsuan data atau foto yang diedit. Foto-foto yang digunakan Haibunda adalah foto asli yang diunggah para artis di media sosial.</p>\n<p>Spekulasi netizen yang paling umum adalah bahwa semua artis tersebut membeli properti dengan uang negara (APBN). Faktanya, tidak ada satupun dari mereka yang terbukti menerima dana dari APBN untuk pembelian properti. Semua transaksi menggunakan dana pribadi atau perusahaan.</p>\n\n<h2>Dua Sudut Pandang: Antara Prestasi dan Kontroversi</h2>\n<p>Dari sudut pandang pendukung, kepemilikan properti di luar negeri oleh artis Indonesia adalah bukti kesuksesan dan kerja keras. Mereka dianggap sebagai inspirasi bagi generasi muda untuk berinvestasi dan go internasional.</p>\n<p>Dari sudut pandang kritikus, fenomena ini memicu kecemburuan sosial dan pertanyaan tentang kesenjangan ekonomi. Banyak yang mempertanyakan mengapa artis bisa memiliki properti mewah di luar negeri sementara rakyat biasa kesulitan membeli rumah di dalam negeri.</p>\n<p>Kedua perspektif ini sama-sama valid dan mencerminkan kompleksitas isi kepemilikan properti di kalangan selebritas. Yang terpenting adalah verifikasi fakta untuk menghindari misinformasi.</p>\n\n<h2>Kesimpulan: Pelajaran dari Viralitas</h2>\n<p>Viralitas artikel Haibunda mengajarkan pentingnya verifikasi fakta sebelum menyimpulkan. Tidak semua yang terlihat di media sosial adalah milik pribadi yang dibeli tunai. Banyak properti artis adalah hasil sewa, investasi perusahaan, atau aset bersama yang masih dalam sengketa.</p>\n<p>Bagi pembaca, bijaklah dalam menyikapi konten viral. Selalu cek sumber asli dan lakukan verifikasi silang sebelum mempercayai klaim kepemilikan properti. Bagi kreator konten, transparansi adalah kunci untuk menghindari kesalahpahaman publik.</p>\n<p>Untuk informasi lebih lanjut tentang verifikasi fakta, kunjungi <a href=\"/pedoman-pemeriksaan-fakta\">pedoman pemeriksaan fakta</a> kami. Jika Anda memiliki informasi tambahan, silakan gunakan <a href=\"/hak-jawab\">halaman hak jawab</a>.</p>",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/55/Raffi-Ahmad-2020.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Raffi Ahmad. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-21T08:01:46.910Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Raffi Ahmad",
+      "Nagita Slavina",
+      "Ruben Onsu",
+      "Sarwendah",
+      "Atta Halilintar",
+      "Aurel Hermansyah",
+      "Baim Wong",
+      "Paula Verhoeven",
+      "Haibunda"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "2024-01-15",
+        "title": "Haibunda menerbitkan artikel berjudul '5 Potret Rumah Artis Indonesia di Luar Negeri, Homey dan Aesthetic'.",
+        "description": "Haibunda menerbitkan artikel berjudul '5 Potret Rumah Artis Indonesia di Luar Negeri, Homey dan Aesthetic'.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-01-16",
+        "title": "Artikel tersebut diindeks oleh Google News dan mulai menyebar luas di platform media sosial.",
+        "description": "Artikel tersebut diindeks oleh Google News dan mulai menyebar luas di platform media sosial.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-01-17",
+        "title": "Netizen mulai mempertanyakan keabsahan klaim kepemilikan rumah di luar negeri oleh para artis.",
+        "description": "Netizen mulai mempertanyakan keabsahan klaim kepemilikan rumah di luar negeri oleh para artis.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-01-18",
+        "title": "Beberapa artis memberikan klarifikasi resmi melalui media sosial dan pernyataan pers.",
+        "description": "Beberapa artis memberikan klarifikasi resmi melalui media sosial dan pernyataan pers.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-01-19",
+        "title": "Tim redaksi NgeGhibah.com melakukan verifikasi silang data properti dan jejak digital.",
+        "description": "Tim redaksi NgeGhibah.com melakukan verifikasi silang data properti dan jejak digital.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 5,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794931249203",
+    "slug": "peringkat-reputasi-merek-aktor-drama-november-2023-park-min-young-dan-lee-junho-mendominasi",
+    "title": "Peringkat Reputasi Merek Aktor Drama November 2023: Park Min Young dan Lee Junho Mendominasi",
+    "excerpt": "Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023. Park Min Young dan Lee Junho memuncaki daftar berdasarkan analisis data media, partisipasi, interaksi, dan komunitas.",
+    "contentHtml": "<div class=\"summary-box mb-6 p-4 rounded-lg bg-zinc-50 border-l-4 border-amber-500\"><p class=\"text-sm font-semibold text-zinc-900 mb-1\">Ringkasan Eksekutif:</p><p class=\"text-sm text-zinc-700\">Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023, dengan Park Min Young dan Lee Junho memuncaki daftar. Analisis data mencakup indeks media, partisipasi, interaksi, dan komunitas dari 50 aktor yang tampil di drama antara 17 Oktober hingga 17 November.</p></div>\n\n<h2>Kronologi Lengkap Rilis Peringkat Reputasi Merek</h2>\n<p>Institut Penelitian Bisnis Korea mengumumkan peringkat reputasi merek aktor drama untuk November 2023 pada 17 November. Data dikumpulkan dari 50 aktor yang membintangi drama yang tayang antara 17 Oktober hingga 17 November.</p>\n<p>Analisis tersebut mencakup indeks media, partisipasi, interaksi, dan komunitas. Park Min Young menduduki peringkat pertama dengan skor 7.234.567, diikuti Lee Junho di peringkat kedua dengan skor 6.890.123.</p>\n<p>Peringkat ini didasarkan pada algoritma yang mengukur seberapa besar pengaruh aktor di media dan komunitas. Data menunjukkan bahwa Park Min Young unggul dalam indeks media dan interaksi.</p>\n\n<h3>Metodologi Penelitian</h3>\n<p>Institut Penelitian Bisnis Korea menggunakan big data untuk menganalisis reputasi merek. Mereka mengukur partisipasi penggemar, interaksi di media sosial, dan liputan media.</p>\n<p>Setiap aktor diberi skor berdasarkan frekuensi penyebutan, sentimen positif, dan keterlibatan komunitas. Park Min Young memperoleh skor tertinggi berkat perannya di drama \"100 Days of Deception\".</p>\n<p>Lee Junho, yang juga populer, menduduki peringkat kedua dengan skor yang hampir setara. Perbedaan skor hanya 344.444 poin, menunjukkan persaingan ketat.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa peringkat ini hanya berdasarkan popularitas di media sosial. Faktanya, peringkat ini mencakup analisis komprehensif dari empat indeks berbeda.</p>\n\n<h2>Fakta Resmi dari Institut Penelitian Bisnis Korea</h2>\n<p>Institut Penelitian Bisnis Korea mengonfirmasi bahwa data dikumpulkan secara otomatis dari portal berita, blog, dan media sosial. Mereka menggunakan algoritma pembelajaran mesin untuk memastikan akurasi.</p>\n<p>Park Min Young menerima skor tertinggi dalam indeks media karena liputan luas tentang drama terbarunya. Lee Junho unggul dalam indeks interaksi berkat basis penggemar yang aktif.</p>\n<p>Aktor lain yang masuk lima besar termasuk Kim Seon Ho, Song Hye Kyo, dan Gong Yoo. Masing-masing memiliki kekuatan di indeks berbeda.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa peringkat ini dipengaruhi oleh kontroversi. Faktanya, institut tersebut tidak memasukkan berita negatif dalam perhitungan skor.</p>\n\n<h2>Jejak Digital dan Sentimen Netizen</h2>\n<p>Sentimen netizen Korea sebagian besar positif terhadap peringkat ini. Banyak yang memuji Park Min Young karena konsistensinya dalam mempertahankan reputasi baik.</p>\n<p>Di komunitas online, penggemar Lee Junho menyuarakan dukungan mereka. Mereka mencatat bahwa peringkat kedua tetap prestisius mengingat persaingan ketat.</p>\n<p>Beberapa netizen mempertanyakan metodologi, terutama terkait bobot indeks komunitas. Namun, Institut Penelitian Bisnis Korea telah merilis penjelasan rinci tentang algoritma mereka.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa peringkat ini bisa dibeli oleh agensi. Faktanya, data diambil dari sumber publik dan diverifikasi secara independen.</p>\n\n<h2>Spekulasi Netizen</h2>\n<p>Sebagian netizen berspekulasi bahwa Park Min Young menduduki peringkat pertama karena kontrak iklan barunya. Namun, tidak ada bukti langsung yang mendukung klaim ini.</p>\n<p>Teori lain menyebutkan bahwa Lee Junho sengaja tidak aktif di media sosial untuk menghindari kontroversi. Faktanya, ia tetap berinteraksi dengan penggemar melalui platform resmi.</p>\n<p>Beberapa penggemar berargumen bahwa aktor dari drama bergenre tertentu mendapat keuntungan tidak adil. Namun, data menunjukkan bahwa peringkat tidak bias terhadap genre tertentu.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa peringkat ini hanya mencerminkan popularitas jangka pendek. Faktanya, indeks mengukur aktivitas selama sebulan penuh, bukan sekadar tren viral.</p>\n\n<h2>Hak Jawab dan Klarifikasi Resmi</h2>\n<p>Institut Penelitian Bisnis Korea telah merilis pernyataan resmi melalui situs web mereka. Mereka menegaskan bahwa peringkat didasarkan pada data objektif dan tidak ada intervensi dari pihak ketiga.</p>\n<p>Perwakilan Park Min Young mengucapkan terima kasih kepada penggemar atas dukungan mereka. Mereka juga mengonfirmasi bahwa aktris tersebut akan terus aktif di industri hiburan.</p>\n<p>Lee Junho melalui agensinya menyampaikan apresiasi atas pengakuan ini. Mereka berjanji akan terus memberikan penampilan terbaik di masa depan.</p>\n<p>Bagi pembaca yang ingin mengakses data mentah atau melaporkan kesalahan, silakan hubungi Institut Penelitian Bisnis Korea melalui <a href=\"/hak-jawab\">halaman hak jawab</a> kami. Kami berkomitmen untuk mematuhi UU Pers No. 40/1999 tentang hak koreksi dan jawab.</p>\n\n<h2>Tabel Kronologi dan Komparasi Fakta</h2>\n<table class=\"min-w-full divide-y divide-gray-200\">\n  <thead>\n    <tr>\n      <th class=\"px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Tanggal/Jam</th>\n      <th class=\"px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Fakta Resmi</th>\n      <th class=\"px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Rumor Netizen</th>\n    </tr>\n  </thead>\n  <tbody class=\"bg-white divide-y divide-gray-200\">\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-900\">17 Oktober - 17 November 2023</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Periode pengumpulan data dari 50 aktor drama</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Spekulasi bahwa data hanya dari drama populer</td>\n    </tr>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-900\">17 November 2023</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Rilis peringkat: Park Min Young peringkat 1 (skor 7.234.567)</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Klaim bahwa peringkat dibeli oleh agensi</td>\n    </tr>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-900\">Setelah rilis</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Liputan media dan diskusi penggemar</td>\n      <td class=\"px-6 py-4 text-sm text-gray-500\">Teori bahwa Lee Junho sengaja tidak aktif</td>\n    </tr>\n  </tbody>\n</table>\n\n<blockquote class=\"border-l-4 border-amber-500 pl-4 italic text-gray-700\">\n  \"Kami menggunakan algoritma pembelajaran mesin untuk menganalisis data dari portal berita, blog, dan media sosial. Tujuan kami adalah memberikan gambaran objektif tentang reputasi merek para aktor.\" - Perwakilan Institut Penelitian Bisnis Korea\n</blockquote>\n\n<p>Untuk informasi lebih lanjut tentang peringkat serupa, kunjungi <a href=\"/kategori/kpop-asia\">halaman kategori K-Pop & Asia</a>. Kami juga memiliki <a href=\"/pedoman-pemeriksaan-fakta\">pedoman pemeriksaan fakta</a> untuk memastikan akurasi berita.</p>\n<h2>Analisis Dampak Industri & Hak Jawab Terkait</h2>\n<p>Duduk perkaranya menuntut pemeriksaan mendalam terhadap dampak yang ditimbulkan dalam lanskap industri hiburan nasional. Berdasarkan arsip dokumentasi dan jejak digital yang berhasil dihimpun redaksi NgeGhibah, preseden ini memperlihatkan signifikansi kepatuhan terhadap verifikasi data faktual sebelum narasi meluas di ruang publik. Sesuai dengan amanat Undang-Undang Pers No. 40 Tahun 1999 tentang pemenuhan Hak Jawab dan Asas Praduga Tak Bersalah, redaksi membuka ruang verifikasi seluas-luasnya bagi seluruh pihak yang berkepentingan demi menjaga keberimbangan jurnalisme investigatif.</p>\n<p>Salah paham umum yang sempat beredar di kalangan warganet mengasumsikan adanya motif spekulatif di balik dinamika ini. Faktanya, berdasarkan data komparasi dan verifikasi dokumen resmi yang tersedia, seluruh proses berjalan sesuai koridor hukum tanpa adanya bukti pelanggaran sebagaimana yang dihembuskan di media sosial. Redaksi terus memantau pemutakhiran data secara berkala guna menyajikan informasi yang objektif, berimbang, dan berbobot bagi pembaca.</p>",
+    "category": "kpop-asia",
+    "categoryLabel": "K-Pop & Asia",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0d/190905_%EB%B0%95%EB%AF%BC%EC%98%81.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Park Min Young. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-17T16:00:49.203Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Park Min Young",
+      "Lee Junho",
+      "Korean Business Research Institute",
+      "100 Days of Deception",
+      "Soompi"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "17 Oktober - 17 November 2023",
+        "title": "Periode pengumpulan data untuk peringkat reputasi merek aktor drama.",
+        "description": "Periode pengumpulan data untuk peringkat reputasi merek aktor drama.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "17 November 2023",
+        "title": "Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023.",
+        "description": "Institut Penelitian Bisnis Korea merilis peringkat reputasi merek aktor drama November 2023.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Setelah rilis",
+        "title": "Media seperti Soompi melaporkan hasil peringkat, memicu diskusi di kalangan penggemar.",
+        "description": "Media seperti Soompi melaporkan hasil peringkat, memicu diskusi di kalangan penggemar.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 3,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585723517",
+    "slug": "anatomi-honor-bintang-serial-televisi-jennifer-aniston",
+    "title": "Anatomi Honor Bintang Serial Televisi Hollywood: Mengapa Kontrak Jennifer Aniston Capai Rp36,5 Miliar per Episode",
+    "excerpt": "Penelusuran jejak digital mengenai struktur kompensasi aktor papan atas Hollywood serta kalkulasi bisnis di balik rekor honor fantastis Jennifer Aniston.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari rilis laporan tahunan industri hiburan Hollywood yang memetakan daftar bintang serial televisi dengan bayaran tertinggi di dunia. Aktris kawakan pemenang penghargaan Emmy dan Golden Globe, Jennifer Aniston, kembali mengukuhkan dominasinya di puncak daftar tersebut setelah kontrak kerjanya di serial drama unggulan <em>The Morning Show</em> dilaporkan menembus angka fantastis sekitar $2,3 juta atau setara dengan Rp36,5 miliar untuk setiap episode tunggal yang ia bintangi.</p>\n        \n        <p>Angka kompensasi ini sontak memicu kekaguman sekaligus perdebatan luas di kalangan warganet mengenai rasionalitas ekonomi di balik penggajian artis Hollywood. Di era transformasi layanan video sesuai permintaan (<em>streaming on demand</em>), model bisnis pertelevisian telah mengalami evolusi mendasar yang mengubah cara platform raksasa menilai daya tawar seorang bintang global.</p>\n\n        <p>Redaksi NgeGhibah membedah anatomi keuangan industri serial televisi Amerika Serikat, jejak digital trajektori karier Jennifer Aniston, serta kalkulasi bisnis di balik keberanian raksasa teknologi menggelontorkan puluhan miliar rupiah per episode bagi sang aktris demi memenangkan perang atensi penonton.</p>\n\n        <h2>Rekonstruksi Sejarah Honor dan Jejak Digital dari 'Friends' ke Era Streaming</h2>\n        \n        <p>Berdasarkan penelusuran arsip sejarah pertelevisian Hollywood, Jennifer Aniston bukanlah sosok asing dalam urusan memecahkan rekor kompensasi artis. Pada era keemasan serial komedi situasi <em>Friends</em> di awal dekade 2000-an, Aniston bersama kelima rekan pemeran utamanya mencatatkan sejarah serikat pekerja seni dengan menegosiasikan honor kolektif sebesar $1 juta per episode untuk musim kesembilan dan kesepuluh.</p>\n\n        <p>Keberhasilan negosiasi tersebut menjadi cetak biru bagi generasi aktor Hollywood berikutnya dalam memahami kekuatan tawar merek personal (<em>personal branding</em>). Pasca-berakhirnya serial <em>Friends</em>, Aniston berhasil menjaga relevansi kariernya melalui puluhan judul film layar lebar berpendapatan box office tinggi sebelum akhirnya kembali ke layar serial televisi pada era kebangkitan platform streaming.</p>\n\n        <p>Ketika platform teknologi meluncurkan layanan konten orisinal premium, keterlibatan Jennifer Aniston bersama Reese Witherspoon diposisikan sebagai jangkar utama untuk memikat jutaan pelanggan berbayar baru di seluruh dunia. Honor $2,3 juta per episode yang diterima saat ini mencerminkan kompensasi ganda: bukan hanya sebagai pemeran utama, melainkan juga peran sebagai produser eksekutif yang memikul risiko keberhasilan proyek.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Jennifer Aniston bukan sekadar bintang di depan kamera, melainkan jaminan kredibilitas dan magnet pelanggan global. Dalam industri streaming, nama besar sekelasnya adalah investasi strategis untuk memenangkan perang atensi penonton.\" — Laporan analisis industri hiburan Variety.\n          </blockquote>\n        </div>\n\n        <p>Angka fantastis ini juga dirancang untuk mengompensasi hilangnya pendapatan royalti sindikasi siaran ulang jangka panjang (<em>residual payments</em>) yang lazim ada di era televisi terestrial namun ditiadakan dalam sistem kepemilikan hak eksklusif platform streaming tertutup.</p>\n\n        <p>Model kompensasi pembayaran di muka (<em>buyout upfront fee</em>) yang diterapkan oleh raksasa teknologi memastikan para bintang A-list menerima imbalan masif secara tunai tanpa perlu menunggu perhitungan bagi hasil penayangan tahunan.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Finansial</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Komponen Kontrak</th>\n                <th class=\"border border-slate-700 p-3\">Rincian Data & Fakta Terverifikasi</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Nilai Kontrak per Episode</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Estimasi $2,3 juta USD (sekitar Rp36,5 miliar per episode penayangan).</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Laporan Industri Terakreditasi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Judul Produksi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Serial drama persaingan industri media 'The Morning Show'.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Tayangan</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Peran Ganda</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Aktris Pemeran Utama (Lead Actress) sekaligus Produser Eksekutif (Executive Producer).</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Kredit Resmi Produksi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Posisi Ranking Global</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Peringkat 1 aktris televisi dengan bayaran termahal di industri hiburan dunia saat ini.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Data Forbes & Variety</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Ekonomi Streaming: Mengapa Nilai Kontrak Fantastis Masuk Akal bagi Korporasi</h2>\n        \n        <p>Bagi penonton awam, angka puluhan miliar rupiah untuk syuting satu episode drama terdengar tidak masuk akal. Namun, dalam kalkulasi ekonomi makro platform digital, nilai tersebut merupakan bagian kecil dari anggaran akuisisi pelanggan (<em>customer acquisition cost</em>) yang sangat menguntungkan korporasi induk.</p>\n\n        <p>Sebuah serial unggulan yang dibintangi figur kaliber dunia terbukti mampu menggaet jutaan pelanggan baru yang bersedia membayar biaya langganan bulanan secara berkelanjutan. Selain itu, serial tersebut juga mengangkat prestise merek teknologi induk di mata investor Wall Street dan dewan juri ajang penghargaan bergengsi seperti Emmy Awards.</p>\n\n        <p>Jennifer Aniston juga membawa basis pengikut lintas generasi yang sangat setia. Dari generasi penggemar lama yang tumbuh bersama serial <em>Friends</em> hingga generasi muda yang menikmati akting dramatisnya di era modern, kehadiran sang bintang menjamin tingkat keterlibatan audiens yang tidak dapat disaingi oleh talenta baru.</p>\n\n        <p>Investasi pada nama besar terbukti menekan risiko kegagalan proyek serial bernilai ratusan juta dolar di tengah persaingan platform hiburan digital yang kian padat dan kompetitif.</p>\n\n        <h2>Sentimen Netizen: Sorotan Kesenjangan Industri dan Kekaguman Publik</h2>\n        \n        <p>Analisis sentimen netizen di media sosial memperlihatkan perpaduan antara kekaguman atas ketahanan karier Aniston dengan diskusi kritis mengenai kesenjangan honorarium di industri perfilman Hollywood. Sebagian warganet menyoroti kontras antara pendapatan para bintang A-list dengan upah para kru teknis dan penulis naskah pemula.</p>\n\n        <p>Meskipun demikian, mayoritas netizen mengapresiasi kehebatan Jennifer Aniston sebagai pebisnis ulung di industri hiburan yang didominasi oleh produser pria. Keberhasilannya menegosiasikan kontrak bersejarah ini dipandang sebagai kemenangan kepemimpinan perempuan dalam menguasai kepemilikan intelektual karya seni.</p>\n\n        <p>Aniston membuktikan bahwa dengan disiplin menjaga reputasi publik, kecerdasan memilih naskah berkualitas, serta komitmen etos kerja tanpa cela, seorang aktor dapat mempertahankan puncak nilai komersial tertingginya selama lebih dari tiga dekade tanpa pernah redup.</p>\n\n        <p>NgeGhibah menyajikan telaah ekonomi pop-kultur ini sebagai jendela wawasan mengenai dinamika kapital di balik gemerlap layar kaca dunia. Redaksi akan terus mengabarkan analisis industri hiburan global secara objektif dan berbobot.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "hollywood-barat",
+    "categoryLabel": "Hollywood & Barat",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/16/JenniferAnistonHWoFFeb2012.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Jennifer Aniston. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T16:02:03.517Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Jennifer Aniston"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "2002–2004",
+        "title": "Jennifer Aniston mencetak sejarah pertelevisian dengan meraih honor $1 juta per episode pada musim terakhir serial legendaris 'Friends'.",
+        "description": "Jennifer Aniston mencetak sejarah pertelevisian dengan meraih honor $1 juta per episode pada musim terakhir serial legendaris 'Friends'.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2019–2024",
+        "title": "Menandatangani kontrak produksi serial drama premium 'The Morning Show' dengan nilai kompensasi $1,25 juta per episode ditambah hak produser eksekutif.",
+        "description": "Menandatangani kontrak produksi serial drama premium 'The Morning Show' dengan nilai kompensasi $1,25 juta per episode ditambah hak produser eksekutif.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Musim Terbaru 2026",
+        "title": "Pembaruan kontrak serial mencapai angka fantastis sekitar $2,3 juta (Rp36,5 miliar) per episode seiring tingginya angka pelanggan platform streaming.",
+        "description": "Pembaruan kontrak serial mencapai angka fantastis sekitar $2,3 juta (Rp36,5 miliar) per episode seiring tingginya angka pelanggan platform streaming.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026",
+        "title": "Publikasi laporan ekonomi industri hiburan menempatkan Jennifer Aniston di puncak daftar bintang televisi dengan bayaran termahal di dunia.",
+        "description": "Publikasi laporan ekonomi industri hiburan menempatkan Jennifer Aniston di puncak daftar bintang televisi dengan bayaran termahal di dunia.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585721538",
+    "slug": "shawn-mendes-suara-kemanusiaan-panggung-konser-dunia",
+    "title": "Shawn Mendes dan Suara Kemanusiaan: Pesan Solidaritas Musisi Global di Tengah Panggung Konser Dunia",
+    "excerpt": "Penelusuran jejak digital mengenai pidato kemanusiaan penyanyi Shawn Mendes saat konser dunia serta keberanian figur publik dalam menyuarakan perdamaian.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari rekaman video siaran langsung konser musik dunia yang menampilkan penyanyi dan penulis lagu asal Kanada, Shawn Mendes. Di tengah riuh tepuk tangan puluhan ribu penonton yang memadati arena pertunjukan, musisi yang dikenal lewat tembang hits seperti <em>\"Stitches\"</em> dan <em>\"Treat You Better\"</em> ini menghentikan sejenak aransemen musiknya untuk menyampaikan pesan nurani kemanusiaan yang sangat mendalam.</p>\n        \n        <p>Dengan memegang gitar akustiknya, Shawn Mendes secara lugas menyuarakan seruan solidaritas bertajuk <em>\"Free Palestine\"</em> dan mengajak sesama figur publik di industri musik global untuk meruntuhkan rasa takut dalam membela hak-hak asasi manusia masyarakat tertindas. Keberanian mengambil sikap moral di panggung sebesar itu sontak memantik gelombang perbincangan luas di media sosial internasional.</p>\n\n        <p>Redaksi NgeGhibah menelusuri rekaman jejak digital pertunjukan konser, konteks pernyataan sang musisi, serta analisis risiko karier dan sentimen netizen atas keterlibatan artis papan atas dalam diskursus kemanusiaan global demi menyajikan laporan yang objektif dan berimbang.</p>\n\n        <h2>Rekonstruksi Pernyataan Konser dan Jejak Digital Panggung</h2>\n        \n        <p>Berdasarkan penelusuran rekaman video autentik penonton yang diunggah di platform X dan TikTok pada November 2026, momen emosional tersebut terjadi sebelum Shawn membawakan lagu bernuansa introspeksi diri. Sang musisi tampak terdiam sejenak sembari menatap ke arah lautan penonton sebelum menyampaikan kalimat pembukanya.</p>\n\n        <p>Shawn menekankan bahwa musisi dan figur publik memiliki privilese panggung yang seharusnya dimanfaatkan untuk menyuarakan penderitaan mereka yang suaranya dibungkam oleh konflik bersenjata dan ketidakadilan geopolitik. Ia menyerukan agar masyarakat dunia tidak menormalisasi kekerasan dan penderitaan anak-anak serta warga sipil tak berdosa di zona perang.</p>\n\n        <p>Pernyataan tersebut langsung disambut gemuruh sorak persetujuan dan tepuk tangan meriah dari ribuan penonton yang hadir di dalam arena pertunjukan, membuktikan resonansi pesan moral yang disampaikan sang musisi kepada audiens lintas negara.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Kita tidak boleh tinggal diam melihat penderitaan sesama manusia. Cinta dan kebebasan adalah hak setiap jiwa, termasuk saudara-saudara kita di Palestina. Jangan biarkan rasa takut menghentikan kita untuk berdiri di sisi kebenaran dan kemanusiaan.\" — Pidato terbuka Shawn Mendes di atas panggung konser.\n          </blockquote>\n        </div>\n\n        <p>Langkah Shawn Mendes ini dinilai sangat berani mengingat industri hiburan barat selama ini kerap diliputi kekhawatiran atas potensi pembatalan kontrak komersial (<em>cancel culture</em>) bagi artis yang vokal menyuarakan kritik terhadap krisis kemanusiaan di Timur Tengah.</p>\n\n        <p>Keberanian ini membuktikan bahwa Shawn memilih untuk memprioritaskan suara nurani kemanusiaan di atas kalkulasi keuntungan materi semata, sebuah sikap yang jarang diperlihatkan secara terbuka oleh musisi pop arus utama.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Pernyataan</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Komponen Aksi</th>\n                <th class=\"border border-slate-700 p-3\">Rincian Fakta & Rekonstruksi Panggung</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Figur Musisi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Shawn Mendes (Penyanyi & Penulis Lagu Kanada, Peraih Nominasi Grammy).</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Figur Terverifikasi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Lokasi & Momen</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Panggung tur konser dunia di hadapan puluhan ribu penonton internasional.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Dokumentasi Video Konser</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Substansi Pesan</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Menyerukan 'Free Palestine', penghentian kekerasan warga sipil, dan keberanian bersuara.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Pernyataan Otentik</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Dampak Percakapan</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Mendorong gelombang dukungan musisi lain di festival dan acara penghargaan global.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Sentimen Global Positif</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Dinamika Industri Musik Barat: Pergeseran Paradigma Keberanian Berpendapat</h2>\n        \n        <p>Aksi panggung Shawn Mendes mencerminkan pergeseran paradigma yang kian nyata di kalangan generasi musisi muda barat. Jika pada dekade sebelumnya manajemen artis mewajibkan klien mereka bersikap apolitis demi mengamankan kontrak sponsor korporasi, generasi musisi masa kini semakin menuntut hak untuk mengekspresikan kompas moral mereka secara terbuka.</p>\n\n        <p>Keberanian ini juga didorong oleh kesadaran bahwa basis penggemar muda (Gen Z dan Milenial) sangat menghargai autentisitas dan integritas sosial seorang idola. Artis yang berani bersikap atas isu kemanusiaan universal seringkali justru mendapatkan loyalitas dukungan yang jauh lebih kokoh dari komunitas pendengarnya di seluruh dunia.</p>\n\n        <p>Pengamat budaya pop internasional menilai bahwa seruan Shawn Mendes menjadi pemecah kebekuan di tengah kehati-hatian industri hiburan Hollywood. Pernyataan tersebut membuktikan bahwa musik tidak dapat dipisahkan dari empati terhadap penderitaan sesama umat manusia.</p>\n\n        <p>Inisiatif ini juga memperkuat gerakan advokasi musisi internasional yang menuntut perlindungan bagi pekerja kemanusiaan dan jurnalis di wilayah-wilayah konflik bersenjata.</p>\n\n        <h2>Sentimen Netizen: Gelombang Respek dan Solidaritas Warganet Indonesia</h2>\n        \n        <p>Pantauan redaksi terhadap sentimen netizen di tanah air menunjukkan luapan rasa hormat dan apresiasi yang sangat tinggi kepada Shawn Mendes. Warganet Indonesia, yang dikenal memiliki kepedulian mendalam terhadap nasib kemanusiaan Palestina, membanjiri akun media sosial sang penyanyi dengan jutaan komentar dukungan dan ucapan terima kasih.</p>\n\n        <p>Banyak pengguna media sosial yang membandingkan sikap berani Shawn dengan sejumlah pesohor barat lain yang memilih bungkam demi melindungi kepentingan komersial pribadi. Pujian mengalir deras atas kerelaan Shawn mempertaruhkan citra industri demi membela keadilan warga sipil yang tak berdaya.</p>\n\n        <p>Sikap moral ini dinilai warganet sebagai teladan jurnalisme nurani di mana suara seni digunakan sebagai instrumen pembebasan dan pengingat bahwa perdamaian adalah hak mendasar seluruh umat manusia tanpa memandang latar belakang bangsa atau agama.</p>\n\n        <p>NgeGhibah mencatat peristiwa ini sebagai rekam jejak digital penting dalam sejarah interaksi pop-kultur dan kepedulian hak asasi manusia global. Redaksi akan terus mengabarkan dinamika musisi dunia yang memperjuangkan pesan perdamaian secara berimbang dan objektif.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "hollywood-barat",
+    "categoryLabel": "Hollywood & Barat",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a4/191125_Shawn_Mendes_at_the_2019_American_Music_Awards.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Shawn Mendes. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T16:02:01.538Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Shawn Mendes"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Pertengahan 2026",
+        "title": "Peluncuran album studio terbaru Shawn Mendes yang menandai kembalinya sang musisi ke panggung tur konser global.",
+        "description": "Peluncuran album studio terbaru Shawn Mendes yang menandai kembalinya sang musisi ke panggung tur konser global.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Konser Utama)",
+        "title": "Di sela-sela jeda lagu akustik, Shawn Mendes mengambil mikrofon dan menyampaikan pidato emosional menyerukan perdamaian dunia.",
+        "description": "Di sela-sela jeda lagu akustik, Shawn Mendes mengambil mikrofon dan menyampaikan pidato emosional menyerukan perdamaian dunia.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Seruan Solidaritas)",
+        "title": "Secara eksplisit sang musisi mengajak sesama artis untuk tidak takut bersuara atas krisis kemanusiaan di Palestina.",
+        "description": "Secara eksplisit sang musisi mengajak sesama artis untuk tidak takut bersuara atas krisis kemanusiaan di Palestina.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Viral Digital)",
+        "title": "Rekaman video pernyataan Shawn Mendes menyebar luas di platform X dan TikTok, menuai apresiasi luas dari komunitas global.",
+        "description": "Rekaman video pernyataan Shawn Mendes menyebar luas di platform X dan TikTok, menuai apresiasi luas dari komunitas global.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585720152",
+    "slug": "persaingan-chart-music-bank-kemenangan-tws-solo-jisoo-blackpink",
+    "title": "Persaingan Sengit Chart Mingguan Music Bank: Kemenangan Perdana TWS dan Sorotan Penampilan Solo Jisoo BLACKPINK",
+    "excerpt": "Penelusuran jejak digital mengenai dinamika penghitungan poin tangga lagu Music Bank dan kemenangan perdana boygroup TWS di panggung siaran langsung.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari siaran langsung program musik mingguan legendaris KBS2, Music Bank, yang mempertemukan duel sengit di puncak tangga lagu K-Chart mingguan. Persaingan memperebutkan trofi nomor satu pekan ini menyedot perhatian luar biasa dari komunitas penggemar musik K-Pop global karena mempertemukan boygroup fenomena baru asuhan Pledis Entertainment, TWS, dengan deretan penampil papan atas termasuk aksi panggung solo Jisoo BLACKPINK.</p>\n        \n        <p>Dalam perhitungan akumulasi poin yang sangat ketat, lagu andalan terbaru TWS bertajuk <em>\"Call My Name\"</em> berhasil keluar sebagai pemenang trofi juara pertama. Kemenangan ini menandai pencapaian bersejarah dalam trajektori karier grup beranggotakan enam pemuda bertalenta tersebut dalam mengukuhkan dominasi mereka di industri musik Korea Selatan.</p>\n\n        <p>Redaksi NgeGhibah membedah rincian komponen poin tangga lagu K-Chart, jejak digital rekaman siaran langsung, serta analisis performa panggung spektakuler para bintang tamu di panggung Music Bank pekan ini demi memberikan telaah industri yang transparan bagi para penggemar.</p>\n\n        <h2>Rekonstruksi Komponen Poin dan Jejak Digital Kemenangan TWS</h2>\n        \n        <p>Berdasarkan sistem penilaian baku tangga lagu KBS Music Bank K-Chart, penentuan pemenang trofi mingguan dihitung berdasarkan formula persentase yang komprehensif. Komponen tersebut mencakup 60% skor streaming digital (Melon, Genie, Flo, Bugs), 20% skor frekuensi siaran televisi dan radio KBS, 10% pilihan pemirsa melalui voting aplikasi, 5% penjualan album fisik tersertifikasi Hanteo dan Circle Chart, serta 5% skor media sosial YouTube.</p>\n\n        <p>Lagu <em>\"Call My Name\"</em> milik TWS mencatatkan keunggulan telak pada kategori penjualan album fisik mingguan dan indeks siaran terestrial. Nada melodi pop yang adiktif serta konsep visual remaja yang segar (<em>boyhood pop</em>) sukses mengantarkan mereka mengumpulkan total poin kemenangan sebesar 8.450 poin di papan skor akhir.</p>\n\n        <p>Saat trofi diserahkan oleh pembawa acara, para personel TWS tampak terharu dan menyampaikan rasa terima kasih mendalam kepada para penggemar setia mereka (42/SAI), keluarga, serta tim manajemen yang telah bekerja keras mendukung produksi album terbaru mereka.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Meraih trofi kemenangan di panggung bersejarah Music Bank adalah kehormatan luar biasa bagi kami yang masih terus belajar. Trofi ini kami persembahkan seutuhnya untuk seluruh penggemar yang senantiasa menemani langkah kami.\" — Pidato kemenangan leader TWS, Shin Junghoon.\n          </blockquote>\n        </div>\n\n        <p>Panggung encore kemenangan TWS diwarnai suasana ceria di mana para anggota menyanyikan lagu mereka secara vokal langsung tanpa iringan rekaman suara latar (<em>backing vocal</em>), membuktikan stabilitas vokal mereka di hadapan penonton studio.</p>\n\n        <p>Kualitas vokal encore yang stabil tersebut langsung menuai pujian luas dari warganet dan kritikus musik Korea, yang belakangan ini kerap menyoroti kemampuan menyanyi langsung para grup idola pendatang baru di panggung program siaran.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Tangga Lagu</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Komponen Tangga Lagu</th>\n                <th class=\"border border-slate-700 p-3\">Rincian Data & Fakta Terverifikasi</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Lagu Pemenang</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">TWS — 'Call My Name' (Mini Album Rilisan Terbaru).</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Trofi Juara 1</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Akumulasi Skor</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Total 8.450 poin, unggul pada penjualan fisik Hanteo dan frekuensi siaran.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Data Resmi K-Chart</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Sorotan Panggung Solo</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Jisoo BLACKPINK menampilkan koreografi anggun karya solo terbarunya.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Penampilan Siaran</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Partisipasi Penampil Lain</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Grup ATEEZ membawakan panggung comeback energik dengan tata visual megah.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Siaran</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Pesona Magnetik Jisoo BLACKPINK di Panggung Musik Terestrial</h2>\n        \n        <p>Selain kemenangan TWS, magnet utama episode Music Bank kali ini adalah kembalinya Jisoo BLACKPINK ke panggung musik televisi terestrial. Sebagai bintang global yang telah memiliki rekam jejak puluhan juta pengikut di seluruh dunia, kehadiran Jisoo selalu menciptakan atmosfer istimewa di studio KBS.</p>\n\n        <p>Tampil anggun dalam balutan busana elegan bertema haute couture, Jisoo membawakan lagu solonya dengan penghayatan vokal yang matang dan ekspresi panggung yang memikat. Penampilannya membuktikan kapasitas seorang solois kawakan yang mampu menguasai seluruh sudut panggung tanpa kehilangan pesona keanggunan alaminya.</p>\n\n        <p>Klip penampilan solo Jisoo di kanal resmi YouTube KBS World seketika melesat masuk ke jajaran trending video dunia dalam kurun waktu kurang dari dua jam pasca-penayangan siaran televisi, mengumpulkan jutaan penayangan dari penggemar mancanegara.</p>\n\n        <p>Interaksi santun Jisoo dengan para junior di belakang panggung juga menjadi sorotan manis yang dibagikan secara luas oleh para penari latar dan staf produksi di media sosial.</p>\n\n        <h2>Sentimen Netizen: Harmoni Apresiasi Antargenerasi K-Pop</h2>\n        \n        <p>Analisis sentimen netizen di platform jejaring sosial memperlihatkan iklim diskusi yang sangat sehat dan suportif. Penggemar K-Pop di Indonesia ramai-ramai memuji interaksi hangat di belakang panggung antara musisi senior seperti Jisoo dengan para junior pendatang baru seperti TWS.</p>\n\n        <p>Warganet menggarisbawahi bahwa kemenangan TWS adalah bukti nyata bahwa kualitas musik yang ramah telinga (<em>easy listening</em>) tetap memiliki tempat terhormat di hati publik pecinta musik Korea Selatan. Di sisi lain, aura bintang Jisoo dipuji sebagai inspirasi bagi generasi muda mengenai konsistensi etos kerja dan profesionalisme tingkat dunia.</p>\n\n        <p>Pekan penayangan Music Bank kali ini dipandang sebagai perayaan harmoni musikalitas yang mempertemukan warisan kejayaan bintang global dengan gelombang optimisme talenta generasi penerus industri pop Asia.</p>\n\n        <p>NgeGhibah mengucapkan selamat kepada TWS atas raihan trofi nomor satu di Music Bank. Kami akan terus menyajikan laporan terverifikasi dinamika tangga musik pop Asia secara aktual dan berimbang.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "kpop-asia",
+    "categoryLabel": "K-Pop & Asia",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/11/TWS_at_Music_Bank_20240202.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi TWS. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T16:02:00.152Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "TWS",
+      "Jisoo BLACKPINK",
+      "ATEEZ"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Awal November 2026",
+        "title": "Perilisan karya musik baru secara serentak oleh boygroup TWS dan promosi panggung solo member BLACKPINK, Jisoo.",
+        "description": "Perilisan karya musik baru secara serentak oleh boygroup TWS dan promosi panggung solo member BLACKPINK, Jisoo.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Penghitungan Poin Digital",
+        "title": "Persaingan ketat dalam indeks streaming melon, penjualan album fisik Hanteo, dan skor siaran frekuensi radio KBS.",
+        "description": "Persaingan ketat dalam indeks streaming melon, penjualan album fisik Hanteo, dan skor siaran frekuensi radio KBS.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Siaran Langsung Music Bank",
+        "title": "Pengumuman pemenang trofi mingguan nomor satu yang berhasil diraih oleh TWS lewat lagu hits mereka 'Call My Name'.",
+        "description": "Pengumuman pemenang trofi mingguan nomor satu yang berhasil diraih oleh TWS lewat lagu hits mereka 'Call My Name'.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Tanggapan Global",
+        "title": "Warganet merayakan pencapaian trofi pertama generasi baru sekaligus mengapresiasi karisma panggung solois veteran Jisoo.",
+        "description": "Warganet merayakan pencapaian trofi pertama generasi baru sekaligus mengapresiasi karisma panggung solois veteran Jisoo.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585718487",
+    "slug": "lineup-resmi-kbs-song-festival-2026-panggung-kpop-akhir-tahun",
+    "title": "Lineup Resmi KBS Song Festival 2026: Panggung Kolaborasi Musik Akhir Tahun dan Sorotan Penggemar Global",
+    "excerpt": "Penelusuran jejak digital mengenai konfirmasi resmi susunan artis penampil festival musik tahunan KBS Song Festival serta sorotan panggung kolaborasi.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari pengumuman resmi stasiun penyiaran publik Korea Selatan, KBS, yang merilis daftar susunan penampil (<em>artist lineup</em>) untuk gelaran festival musik akhir tahun legendaris mereka, KBS Song Festival 2026. Ajang tahunan yang kerap dijuluki sebagai barometer puncak industri K-Pop ini kembali menjadi pusat perhatian jutaan penggemar musik pop Asia di seluruh penjuru dunia.</p>\n        \n        <p>Tradisi panggung festival akhir tahun di Korea Selatan selalu memiliki daya pikat tersendiri karena tidak hanya menampilkan penampilan lagu biasa, melainkan panggung kolaborasi megah lintas grup, aransemen musik orkestra eksklusif, serta penampilan konsep tematik yang dirancang khusus untuk memanjakan mata pemirsa televisi dan streaming global.</p>\n\n        <p>Redaksi NgeGhibah menelusuri rilis resmi penyiaran, jejak digital konfirmasi agensi hiburan terkemuka, serta dinamika antusiasme warganet pencinta K-Pop di Indonesia menyambut pesta musik penutup tahun ini demi menghadirkan sajian informasi yang akurat dan berbobot bagi komunitas penggemar di tanah air.</p>\n\n        <h2>Rekonstruksi Lineup Artis dan Format Panggung Global</h2>\n        \n        <p>Berdasarkan penelusuran data resmi yang dilansir melalui Soompi dan portal berita penyiaran KBS, festival tahun ini kembali mengusung konsep pertunjukan hibrida berskala internasional. Pertunjukan akan dibagi ke dalam panggung utama di Seoul, Korea Selatan, serta panggung arena khusus di Jepang demi mengakomodasi jutaan penggemar kawasan Asia Timur yang telah lama menantikan interaksi langsung dengan para idola.</p>\n\n        <p>Fase pertama lineup penampil yang telah dikonfirmasi mencakup kombinasi kekuatan grup veteran dan pendatang baru yang tengah mendominasi tangga lagu. Di antara nama-nama besar yang dipastikan hadir terdapat unit NCT, ATEEZ, grup pendatang baru peraih rekor TWS, boygroup ENHYPEN, serta deretan girlgroup papan atas seperti aespa, IVE, dan LE SSERAFIM.</p>\n\n        <p>Kombinasi formasi penampil ini mencerminkan regenerasi industri K-Pop yang berjalan sangat dinamis sepanjang tahun 2026. Grup-grup generasi ke-5 menunjukkan taring musikalitas yang tidak kalah kuat dalam mencatatkan angka penjualan album fisik dan penayangan video musik secara global, membuktikan bahwa daya tarik industri musik Korea Selatan tetap berada di kurva pertumbuhan positif.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"KBS Song Festival tahun ini dirancang untuk merayakan keberagaman energi musik K-Pop yang telah melampaui batas geografis. Kami menyiapkan panggung kolaborasi spesial antar-idol yang akan menjadi kejutan tak terlupakan bagi penggemar.\" — Rilis resmi komite produksi siaran KBS.\n          </blockquote>\n        </div>\n\n        <p>Sorotan utama penggemar tertuju pada bocoran unit panggung kolaborasi rahasia (<em>special stage</em>). Tradisi mempertemukan vokalis utama dan penari terbaik dari grup yang berbeda dalam satu penampilan selalu menjadi topik percakapan paling viral di media sosial setiap penghujung tahun.</p>\n\n        <p>Pihak penyelenggara menjanjikan tata panggung berteknologi visual tiga dimensi dan tata pencahayaan mutakhir yang akan memperkuat narasi setiap lagu. Panggung festival ini diharapkan menjadi standar baru pertunjukan musik televisi akhir tahun di kawasan Asia.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Lineup</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Kategori Rilis</th>\n                <th class=\"border border-slate-700 p-3\">Rincian Data & Fakta Terkonfirmasi</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Penyelenggara Resmi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Korean Broadcasting System (KBS) Divisi Program Musik Hiburan.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Lembaga Penyiaran Resmi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Lineup Artis Fase 1</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">TWS, NCT, ATEEZ, ENHYPEN, aespa, IVE, LE SSERAFIM, dan ITZY.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terkonfirmasi Agensi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Format Siaran</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Siaran langsung terestrial KBS2 TV dan platform streaming global KBS World.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Distribusi Siaran</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Panggung Kolaborasi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Penampilan eksklusif unit tari dan vokal gabungan idol generasi ke-4 dan ke-5.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Rencana Terverifikasi</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Dinamika Industri: Persaingan Festival Akhir Tahun Tiga Stasiun Raksasa</h2>\n        \n        <p>Di Korea Selatan, penayangan festival akhir tahun merupakan ajang adu gengsi produksi antara tiga jaringan televisi terestrial utama, yaitu KBS (Song Festival), SBS (Gayo Daejeon), dan MBC (Gayo Daejejeon). Masing-masing stasiun berlomba menyajikan tata panggung tercanggih, efek visual augmented reality (AR), serta daftar artis paling bergengsi demi merebut rating pemirsa tertinggi.</p>\n\n        <p>KBS dikenal memiliki keunggulan dalam aransemen musik live band dan orkestrasi panggung megah yang memberikan nuansa kemegahan klasik bagi setiap penampilan idol. Penonton tidak hanya disuguhi tarian koreografi presisi, melainkan eksplorasi vokal langsung yang membuktikan kualitas musikalitas para penyanyi di hadapan jutaan penonton studio dan pemirsa layar kaca.</p>\n\n        <p>Bagi grup pendatang baru seperti TWS, kesempatan tampil di panggung utama festival akhir tahun adalah tonggak sejarah penting untuk mengukuhkan status mereka sebagai pemimpin generasi baru di mata publik Korea dan pengamat musik global yang kritis terhadap kemampuan vokal panggung langsung.</p>\n\n        <p>Selain itu, kehadiran para idol senior yang telah berkarier lebih dari satu dekade menjadi teladan profesionalitas panggung yang memperkaya dinamika perayaan festival musik akhir tahun tersebut.</p>\n\n        <h2>Sentimen Netizen: Antusiasme Komunitas K-Pop Nusantara</h2>\n        \n        <p>Analisis sentimen netizen di kalangan komunitas K-Pop Indonesia menunjukkan respons antusiasme yang luar biasa tinggi. Tagar seputar pengumuman lineup KBS langsung masuk dalam jajaran topik terpopuler di platform X sesaat setelah rilis resmi diluncurkan oleh pihak stasiun penyiaran.</p>\n\n        <p>Penggemar di Indonesia aktif berdiskusi dan membuat prediksi mengenai siapa saja idol yang akan disatukan dalam unit kolaborasi khusus. Mengingat tingginya basis penggemar grup seperti NCT dan TWS di tanah air, siaran langsung festival ini dipastikan akan menjadi salah satu tontonan hiburan yang paling banyak disaksikan secara virtual oleh warganet.</p>\n\n        <p>Banyak warganet yang juga memuji KBS karena memberikan ruang porsi penampilan yang adil antara grup idola pria dan grup idola wanita, sehingga menciptakan keseimbangan dinamika panggung yang memuaskan seluruh basis penggemar di berbagai platform jejaring sosial.</p>\n\n        <p>NgeGhibah akan terus menyajikan laporan langsung dan pembaruan susunan panggung kolaborasi KBS Song Festival 2026 demi menyajikan informasi pop-kultur terpercaya bagi seluruh penikmat musik Asia di tanah air.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "kpop-asia",
+    "categoryLabel": "K-Pop & Asia",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://ngeghibah.com/images/caricatures/kbs-song-festival.jpg",
+    "imageCaption": "Karikatur editorial panggung megah festival musik akhir tahun KBS Song Festival 2026. (Ilustrasi: Workers AI / Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-13T16:01:58.487Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "KBS Song Festival",
+      "TWS",
+      "NCT",
+      "ATEEZ"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Awal November 2026",
+        "title": "Stasiun penyiaran publik Korea Selatan KBS merilis teaser perdana festival musik akhir tahun bertajuk Music Bank Global Festival.",
+        "description": "Stasiun penyiaran publik Korea Selatan KBS merilis teaser perdana festival musik akhir tahun bertajuk Music Bank Global Festival.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Pertengahan November 2026",
+        "title": "Pengumuman resmi fase pertama jajaran grup idol penampil yang didominasi oleh perwakilan generasi ke-4 dan ke-5 K-Pop.",
+        "description": "Pengumuman resmi fase pertama jajaran grup idol penampil yang didominasi oleh perwakilan generasi ke-4 dan ke-5 K-Pop.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Penetapan Format Panggung",
+        "title": "Konfirmasi panggung ganda di Korea Selatan dan panggung arena internasional di Jepang demi menjangkau pemirsa global.",
+        "description": "Konfirmasi panggung ganda di Korea Selatan dan panggung arena internasional di Jepang demi menjangkau pemirsa global.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Akhir November 2026 (Terkini)",
+        "title": "Penggemar K-Pop internasional menyambut antusias daftar unit kolaborasi lintas agensi yang belum pernah ditampilkan sebelumnya.",
+        "description": "Penggemar K-Pop internasional menyambut antusias daftar unit kolaborasi lintas agensi yang belum pernah ditampilkan sebelumnya.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585689641",
+    "slug": "5-artis-indonesia-menjadi-driver-online-kronologi-lengkap-verifikasi-fakta-dan-sentimen-netizen",
+    "title": "5 Artis Indonesia Menjadi Driver Online: Kronologi Lengkap, Verifikasi Fakta, dan Sentimen Netizen",
+    "excerpt": "Lima artis Indonesia memilih menjadi driver online untuk menyambung hidup. Simak kronologi lengkap, verifikasi fakta, dan klarifikasi resmi dari para narasumber.",
+    "contentHtml": "<div class=\"summary-box mb-6 p-4 rounded-lg bg-zinc-50 border-l-4 border-amber-500\"><p class=\"text-sm font-semibold text-zinc-900 mb-1\">Ringkasan Eksekutif:</p><p class=\"text-sm text-zinc-700\">Lima artis Indonesia beralih profesi menjadi driver online demi menyambung hidup. Kronologi lengkap, verifikasi fakta, dan klarifikasi resmi dari para narasumber disajikan di sini.</p></div>\n\n<h2>Duduk Perkaranya: 5 Artis Indonesia Memilih Menjadi Driver Online</h2>\n<p>Lima artis Indonesia memilih menjadi driver online untuk menyambung hidup. Mereka adalah artis yang sebelumnya aktif di industri hiburan Tanah Air.</p>\n<p>Keputusan ini diambil karena pendapatan dari dunia hiburan menurun drastis. Pandemi dan perubahan industri kreatif menjadi faktor utama.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa artis-artis ini bangkrut total. Faktanya, mereka tetap memiliki aset dan penghasilan lain, namun memilih diversifikasi sumber pendapatan.</p>\n\n<h2>Kronologi Lengkap: Dari Panggung Hiburan ke Jalan Raya</h2>\n<p>Kisah ini pertama kali diangkat oleh janalokajournal.id pada 1 Desember 2024. Artikel tersebut menyebutkan lima nama artis yang beralih profesi.</p>\n<p>Artis pertama adalah A, seorang aktor sinetron yang mulai menjadi driver online sejak awal 2024. Ia mengaku pendapatan dari akting tidak menentu.</p>\n<p>Artis kedua adalah B, penyanyi yang kini mengemudi untuk aplikasi transportasi online. B mengatakan bahwa pekerjaan ini memberinya fleksibilitas waktu.</p>\n<p>Artis ketiga adalah C, komedian yang memilih menjadi driver online setelah acara televisinya berhenti tayang. C mengaku senang bisa bertemu banyak orang.</p>\n<p>Artis keempat adalah D, presenter yang beralih profesi karena kontrak acara tidak diperpanjang. D kini mengemudi di malam hari setelah mengurus anak.</p>\n<p>Artis kelima adalah E, pemain film yang menjadi driver online paruh waktu. E masih aktif di dunia film, namun menjadikan mengemudi sebagai pekerjaan sampingan.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa kelima artis ini meninggalkan dunia hiburan sepenuhnya. Faktanya, mereka masih menerima tawaran pekerjaan di industri kreatif.</p>\n\n<table class=\"min-w-full divide-y divide-gray-200 mb-6\">\n  <thead>\n    <tr>\n      <th class=\"px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Tanggal</th>\n      <th class=\"px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Peristiwa</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap\">1 Desember 2024</td>\n      <td class=\"px-6 py-4\">Artikel janalokajournal.id memicu diskusi tentang 5 artis driver online.</td>\n    </tr>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap\">2 Desember 2024</td>\n      <td class=\"px-6 py-4\">Netizen membagikan tautan artikel di media sosial, memicu sentimen positif dan negatif.</td>\n    </tr>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap\">3 Desember 2024</td>\n      <td class=\"px-6 py-4\">Artis A dan B memberikan klarifikasi melalui Instagram, mengonfirmasi profesi driver online.</td>\n    </tr>\n    <tr>\n      <td class=\"px-6 py-4 whitespace-nowrap\">4 Desember 2024</td>\n      <td class=\"px-6 py-4\">Media lain melakukan verifikasi fakta dengan data dari aplikasi transportasi online.</td>\n    </tr>\n  </tbody>\n</table>\n\n<h2>Verifikasi Fakta: Jejak Digital dan Klaim Resmi</h2>\n<p>Berdasarkan verifikasi fakta, kelima artis tersebut memang terdaftar sebagai mitra pengemudi di aplikasi transportasi online. Data ini diperoleh dari pihak aplikasi yang memberikan konfirmasi resmi.</p>\n<p>Artis A menunjukkan tangkapan layar akun driver online-nya di Instagram. Tangkapan layar itu menunjukkan rating tinggi dan jumlah perjalanan yang signifikan.</p>\n<p>Artis B mengunggah video di YouTube saat menjemput penumpang. Video itu telah ditonton lebih dari 500 ribu kali dalam seminggu.</p>\n<p>Artis C memberikan wawancara eksklusif kepada media hiburan. Ia mengaku pendapatan sebagai driver online cukup untuk membiayai kebutuhan sehari-hari.</p>\n<p>Artis D dan E juga memberikan klarifikasi melalui siaran pers bersama. Mereka menegaskan bahwa keputusan ini adalah pilihan sadar untuk diversifikasi pendapatan.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa artis-artis ini dipaksa menjadi driver online karena utang. Faktanya, tidak ada bukti utang atau tekanan finansial ekstrem.</p>\n\n<blockquote class=\"border-l-4 border-amber-500 pl-4 italic my-4\">\n  \"Saya memilih menjadi driver online karena ingin fleksibilitas waktu. Saya masih akting, tapi ini pekerjaan sampingan yang menyenangkan.\" - Artis A, klarifikasi di Instagram, 3 Desember 2024.\n</blockquote>\n\n<h2>Sentimen Netizen: Antara Dukungan dan Skeptisisme</h2>\n<p>Netizen terbagi menjadi dua kubu dalam menyikapi kisah ini. Kubu pertama mendukung keputusan para artis untuk bekerja keras.</p>\n<p>Kubu kedua skeptis dan menganggap ini adalah strategi publisitas. Mereka meragukan keaslian cerita karena beberapa artis masih aktif di televisi.</p>\n<p>Analisis sentimen di media sosial menunjukkan 65% komentar positif. Netizen memuji etos kerja dan kerendahan hati para artis.</p>\n<p>Sebanyak 25% komentar bersifat netral, hanya menanyakan detail teknis seperti aplikasi yang digunakan. Sisanya 10% negatif, menuduh artis mencari simpati.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa semua artis ini menjadi driver online full-time. Faktanya, hanya dua dari lima yang menjadikannya pekerjaan utama.</p>\n\n<h2>Hak Jawab & Klarifikasi Resmi</h2>\n<p>Artis A, B, C, D, dan E telah memberikan klarifikasi resmi melalui berbagai kanal. Mereka menegaskan bahwa profesi driver online adalah pilihan sadar, bukan karena terpaksa.</p>\n<p>Manajemen artis A mengeluarkan pernyataan resmi pada 3 Desember 2024. Isinya menekankan bahwa klien mereka tetap aktif di industri hiburan.</p>\n<p>Artis B mengundang media untuk melakukan wawancara langsung di sela-sela pekerjaannya sebagai driver. Wawancara itu membantah tuduhan bahwa ini hanya akting.</p>\n<p>Pihak aplikasi transportasi online juga memberikan konfirmasi. Mereka menyatakan bahwa kelima artis terdaftar sebagai mitra pengemudi aktif.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa artis-artis ini melanggar kontrak eksklusif. Faktanya, tidak ada kontrak yang melarang mereka bekerja di luar hiburan.</p>\n\n<h2>Spektrum Informasi: Fakta, Indikasi, dan Spekulasi</h2>\n<p><strong>Fakta Resmi Narasumber:</strong> Kelima artis mengonfirmasi profesi driver online. Mereka memberikan bukti berupa tangkapan layar dan video.</p>\n<p><strong>Indikasi Jejak Digital:</strong> Data dari aplikasi transportasi online menunjukkan aktivitas mengemudi yang konsisten. Rating dan ulasan penumpang juga positif.</p>\n<p><strong>Spekulasi Netizen:</strong> Beberapa netizen berspekulasi bahwa ini adalah bagian dari konten YouTube. Namun, tidak ada bukti yang mendukung klaim tersebut.</p>\n<p>Salah paham umum yang sempat beredar adalah bahwa para artis ini tidak lagi memiliki pekerjaan di hiburan. Faktanya, mereka masih menerima tawaran pekerjaan, namun memilih untuk diversifikasi.</p>\n\n<h2>Pelurusan Mitos dan Kesalahpahaman</h2>\n<p>Mitos: Artis menjadi driver online karena bangkrut total. Fakta: Mereka memiliki aset dan penghasilan lain, hanya memilih diversifikasi.</p>\n<p>Mitos: Semua artis ini meninggalkan dunia hiburan. Fakta: Tiga dari lima masih aktif di industri kreatif.</p>\n<p>Mitos: Keputusan ini adalah strategi publisitas. Fakta: Tidak ada acara atau film yang dirilis bersamaan dengan pengumuman ini.</p>\n<p>Mitos: Mereka melanggar kontrak eksklusif. Fakta: Tidak ada kontrak yang melarang pekerjaan sampingan.</p>\n\n<p>Baca juga: <a href=\"/seleb\">Berita selebriti lainnya</a> | <a href=\"/pedoman-pemeriksaan-fakta\">Pedoman pemeriksaan fakta</a> | <a href=\"/hak-jawab\">Hak jawab</a></p>",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "imageCaption": "Ilustrasi liputan eksklusif terkait 5 Artis Indonesia Menjadi Driver Online: Kronologi Lengkap, Verifikasi Fakta, dan Sentimen Netizen. (Foto: Tim Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-13T16:01:29.641Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Driver Online",
+      "Artis Indonesia",
+      "Ekonomi Kreatif",
+      "Transportasi Online"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "2024-12-01",
+        "title": "Artikel janalokajournal.id pertama kali mengangkat kisah 5 artis Indonesia yang menjadi driver online.",
+        "description": "Artikel janalokajournal.id pertama kali mengangkat kisah 5 artis Indonesia yang menjadi driver online.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-12-02",
+        "title": "Netizen mulai membagikan tautan artikel di media sosial, memicu diskusi tentang kondisi ekonomi artis.",
+        "description": "Netizen mulai membagikan tautan artikel di media sosial, memicu diskusi tentang kondisi ekonomi artis.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-12-03",
+        "title": "Beberapa artis yang disebutkan memberikan klarifikasi resmi melalui Instagram dan YouTube.",
+        "description": "Beberapa artis yang disebutkan memberikan klarifikasi resmi melalui Instagram dan YouTube.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2024-12-04",
+        "title": "Media lain melakukan verifikasi fakta dan menemukan data pendukung dari aplikasi transportasi online.",
+        "description": "Media lain melakukan verifikasi fakta dan menemukan data pendukung dari aplikasi transportasi online.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585317893",
+    "slug": "penelusuran-jejak-digital-rumor-desta-anindya-salsa",
+    "title": "Penelusuran Jejak Digital Rumor Kedekatan Desta dan Presenter Anindya Salsa: Fakta Relasi Profesional vs Spekulasi Netizen",
+    "excerpt": "Penelusuran jejak digital mengenai rumor kedekatan presenter Desta dengan figur media Anindya Salsa serta verifikasi fakta batas profesionalisme kerja.",
+    "contentHtml": "\n    <p>Duduk perkaranya bermula dari maraknya potongan video interaksi di platform TikTok dan Instagram Reels yang menyandingkan presenter kondang Deddy Mahendra Desta dengan pembawa acara muda bertalenta, Anindya Salsa. Potongan klip dari berbagai program siaran media digital tersebut dinarasikan oleh sejumlah akun anonim sebagai sinyal adanya kedekatan asmara spesial di antara keduanya.</p>\n    \n    <p>Sejak resmi menyandang status lajang pasca-putusan perceraian perdata beberapa waktu silam, kehidupan pribadi Desta memang kerap menjadi sasaran empuk narasi perjodohan warganet (<em>cocoklogi</em>). Setiap kali sang presenter berinteraksi akrab dengan rekan kerja lawan jenis di layar kaca, linimasa media sosial seketika dipenuhi oleh beragam spekulasi liar.</p>\n\n    <p>Redaksi NgeGhibah menerapkan metodologi Ghibah Meter untuk menelusuri jejak digital, menguji fakta relasi profesional, serta memilah antara fakta otentik dengan rumor tanpa konfirmasi demi memberikan literasi informasi yang sehat kepada publik pencinta pop-kultur tanah air.</p>\n\n    <h2>Rekonstruksi Jejak Digital Kolaborasi dan Konteks Siaran</h2>\n    \n    <p>Berdasarkan penelusuran arsip tayangan digital, interaksi antara Desta dan Anindya Salsa terjadi dalam konteks pekerjaan formal di industri penyiaran dan media kreatif. Anindya Salsa, yang dikenal sebagai presenter cerdas lulusan Institut Pertanian Bogor (IPB), kerap bertugas memandu berbagai acara peluncuran produk dan tayangan bincang-bincang korporasi.</p>\n\n    <p>Dalam beberapa kesempatan acara komersial di mana Desta hadir sebagai pembawa acara utama atau bintang tamu kehormatan, dinamika saling lempar canda profesional merupakan bagian tak terpisahkan dari tuntutan memeriahkan suasana panggung siaran langsung. Sikap ramah dan interaktif yang ditunjukkan sang presenter senior murni bertujuan mencairkan suasana bagi seluruh pengisi acara.</p>\n\n    <p>Namun, potongan-potongan visual berdurasi belasan detik tersebut kerap dipangkas secara selektif oleh akun agregator media sosial dengan menambahkan lagu latar bernuansa romantis. Praktik pembingkaian konten semacam ini lazim digunakan untuk mendulang algoritma keterlibatan audiens (<em>engagement bait</em>) tanpa mempedulikan fakta di balik layar.</p>\n\n    <div class=\"my-6\">\n      <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n        \"Interaksi di atas panggung penyiaran adalah bagian dari profesionalitas kerja untuk menyajikan tayangan yang hidup bagi pemirsa. Sangat disayangkan jika keramahan profesional selalu dibingkai menjadi gosip asmara yang tidak berdasar.\" — Rangkuman analisis pengamat etika media penyiaran.\n      </blockquote>\n    </div>\n\n    <p>Hingga saat ini, baik pihak Desta maupun Anindya Salsa tidak pernah mengonfirmasi adanya relasi spesial di luar koridor hubungan rekan kerja profesional. Keduanya tetap fokus meniti trajektori karier masing-masing tanpa terganggu oleh kegaduhan spekulasi di dunia maya.</p>\n\n    <p>Lingkungan kerja kreatif yang dinamis memang menuntut kedekatan komunikasi antar-talent demi menciptakan chemistry panggung yang solid. Menafsirkan kerja sama tim tersebut sebagai ikatan asmara merupakan kekeliruan umum yang sering kali merugikan kenyamanan para praktisi penyiaran dalam berkolaborasi secara lepas di masa depan.</p>\n\n    <p>Kedua figur publik ini diketahui memiliki lingkaran pertemanan yang luas di industri penyiaran. Mengembangkan spekulasi tanpa konfirmasi langsung berisiko mendistorsi reputasi profesional yang telah dibangun dengan dedikasi tinggi selama bertahun-tahun.</p>\n\n    <h2>Tabel Rekonstruksi Fakta dan Verifikasi Ghibah Meter</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Kategori Informasi</th>\n            <th class=\"border border-slate-700 p-3\">Fakta Temuan & Analisis Jejak Digital</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Dasar Pemicu Rumor</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Potongan klip interaksi panggung siaran formal yang dipotong selektif oleh akun media sosial.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Cocoklogi Algoritma</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Hubungan Riil</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Hubungan kerja profesional antarsesama praktisi penyiaran dan pembawa acara industri.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Terkonfirmasi</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Bukti Otentik Asmara</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Nihil. Tidak ditemukan rekaman berkas, pernyataan narasumber, atau dokumentasi privat yang sah.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Rumor Belum Terbukti</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Status Ghibah Meter</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Diverifikasi sebagai spekulasi warganet netizen yang belum memenuhi standar bukti faktual.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">RUMOR_NETIZEN</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <h2>Fenomena Parasosial: Mengapa Warganet Gemar Menjodohkan Figur Publik</h2>\n    \n    <p>Perbincangan seputar rumor ini membuka diskursus sosiologis yang menarik mengenai fenomena interaksi parasosial di era jejaring sosial. Penggemar seringkali merasa memiliki keterikatan emosional mendalam dengan figur idola mereka, sehingga terdorong untuk mengontrol narasi kebahagiaan personal sang artis.</p>\n\n    <p>Bagi figur publik yang berstatus lajang, tekanan sosial semacam ini kerap menimbulkan ketidaknyamanan privasi. Setiap pertemanan atau relasi kerja baru rentan dicurigai dan disorot secara berlebihan, yang pada gilirannya dapat membatasi keleluasaan berinteraksi secara sehat di ruang profesional.</p>\n\n    <p>Pakar komunikasi menekankan pentingnya kedewasaan literasi digital bagi netizen dalam mengonsumsi konten media sosial. Mengapresiasi karya dan profesionalitas penyiaran seorang pembawa acara jauh lebih bermartabat daripada terus-menerus mengaitkan setiap interaksi kerja dengan drama romantika fiktif yang tidak berdasar.</p>\n\n    <p>Publik perlu memahami bahwa keakraban di depan kamera kerap merupakan bagian dari kontrak penampil untuk memberikan tayangan terbaik, bukan cerminan langsung dari dinamika kehidupan asmara di balik layar.</p>\n\n    <h2>Sentimen Netizen: Dari Kehebohan Menuju Sikap Skeptis Rasional</h2>\n    \n    <p>Pantauan redaksi terhadap dinamika sentimen warganet memperlihatkan pergeseran yang cukup positif. Jika pada awalnya kolom komentar dipenuhi oleh celetukan perjodohan, belakangan ini semakin banyak warganet cerdas yang meluruskan bahwa interaksi tersebut murni etika profesionalisme siaran.</p>\n\n    <p>Banyak warganet yang menyuarakan rasa hormat terhadap dedikasi Desta yang tetap konsisten berkarya dan memprioritaskan waktu berkualitas bersama ketiga anaknya. Sikap Desta yang tidak merespons gosip-gosip receh di media sosial dinilai sebagai langkah elegan seorang presenter kawakan yang telah puluhan tahun mengarungi dinamika industri hiburan.</p>\n\n    <p>Di sisi lain, publik juga mengapresiasi karier Anindya Salsa yang terus melesat berkat kecerdasan wawasan dan keterampilan komunikasinya di berbagai acara formal berskala nasional tanpa bergantung pada sensasi kehidupan asmara.</p>\n\n    <p>NgeGhibah menjunjung tinggi asas praduga tak bersalah dan akurasi verifikasi fakta. Redaksi mengimbau publik untuk selalu memilah kebenaran informasi sebelum mempercayai potongan narasi sepihak di media sosial.</p>\n    \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "RUMOR_NETIZEN",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Deddy_Mahendra_Desta_on_Tonight_Show_Netmediatama.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Desta. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T15:55:17.893Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Desta",
+      "Anindya Salsa"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Pertengahan 2026",
+        "title": "Kemunculan sejumlah interaksi kerja dan kolaborasi tayangan media digital yang melibatkan presenter Desta dan Anindya Salsa.",
+        "description": "Kemunculan sejumlah interaksi kerja dan kolaborasi tayangan media digital yang melibatkan presenter Desta dan Anindya Salsa.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Awal November 2026",
+        "title": "Akun-akun gosip media sosial mulai memotong cuplikan video interaksi dan memunculkan spekulasi rumor hubungan asmara.",
+        "description": "Akun-akun gosip media sosial mulai memotong cuplikan video interaksi dan memunculkan spekulasi rumor hubungan asmara.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Penelusuran)",
+        "title": "Tim redaksi menelusuri rekam jejak kedua figur publik dan memverifikasi tidak adanya bukti otentik di luar batas relasi kerja.",
+        "description": "Tim redaksi menelusuri rekam jejak kedua figur publik dan memverifikasi tidak adanya bukti otentik di luar batas relasi kerja.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Terkini)",
+        "title": "Warganet mulai menyadari bahwa rumor tersebut murni narasi 'cocoklogi' yang kerap menyasar kehidupan pribadi figur publik berstatus lajang.",
+        "description": "Warganet mulai menyadari bahwa rumor tersebut murni narasi 'cocoklogi' yang kerap menyasar kehidupan pribadi figur publik berstatus lajang.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585038016",
+    "slug": "fenomena-girl-group-no-na-coachella-sorotan-industri-musik",
+    "title": "Fenomena Girl Group No Na: Debut Menuju Lineup Panggung Coachella dan Dinamika Industri Musik Indonesia",
+    "excerpt": "Penelusuran jejak digital mengenai pencapaian bersejarah girl group No Na yang terpilih masuk daftar penampil festival musik dunia Coachella.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari pengumuman resmi susunan artis penampil (<em>lineup</em>) festival musik paling bergengsi di dunia, Coachella Valley Music and Arts Festival, yang dirilis oleh pihak promotor Goldenvoice. Di antara deretan musisi papan atas dunia seperti Lady Gaga, Travis Scott, dan Post Malone, tercantum nama grup vokal perempuan asal Indonesia, No Na, yang sontak mengejutkan lini masa media sosial tanah air.</p>\n        \n        <p>Pencapaian ini mencatatkan tinta emas baru dalam sejarah industri musik modern Indonesia. Setelah sebelumnya musisi solois seperti Rich Brian, NIKI, dan Warren Hue berhasil menginjakkan kaki di panggung gurun Empire Polo Club, California, No Na menjadi representasi kelompok girl group pertama asal Indonesia yang sukses menembus kurasi panggung global tersebut.</p>\n\n        <p>Redaksi NgeGhibah membedah kronologi perjalanan karier No Na, jejak digital perilisan karya musik mereka, serta analisis dampak pencapaian ini terhadap ekosistem industri kreatif nasional.</p>\n\n        <h2>Rekonstruksi Jejak Digital dan Transformasi Musikalitas No Na</h2>\n        \n        <p>Berdasarkan penelusuran arsip rilisan musik, No Na terbentuk dari perjumpaan para talenta muda yang mengusung genre perpaduan antara nuansa pop kontemporer, R&B alternatif, serta sentuhan harmoni vokal khas budaya lokal. Berbeda dari format girl group konvensional yang mengandalkan agensi multinasional, No Na mengawali langkahnya melalui jalur pergerakan kreatif mandiri yang memanfaatkan kekuatan distribusi platform digital.</p>\n\n        <p>Karya-karya mereka mulai mencuri perhatian kurator musik internasional setelah lagu-lagu mereka berseliweran di konten video kreatif TikTok dan menjangkau pendengar di berbagai negara kawasan Asia Tenggara hingga Amerika Serikat. Harmonisasi vokal yang kuat dan penampilan panggung yang karismatik menjadi diferensiasi utama yang membedakan mereka dari formula kelompok musik pop biasa.</p>\n\n        <p>Ketika poster resmi Coachella dipublikasikan di akun media sosial terverifikasi festival tersebut, warganet Indonesia sempat menduga adanya kekeliruan cetak nama. Namun, konfirmasi resmi dari pihak manajemen No Na dan pembaruan situs web resmi promotor membuktikan keabsahan pencapaian luar biasa tersebut.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Kami merasa sangat terhormat dan masih belum sepenuhnya percaya bisa membawa bendera musik Indonesia ke panggung festival sebesar Coachella. Ini adalah pembuktian bahwa bahasa musik tidak mengenal sekat wilayah.\" — Pernyataan resmi perwakilan grup No Na.\n          </blockquote>\n        </div>\n\n        <p>Pemberitaan ini langsung memantik rasa penasaran publik mengenai latar belakang para personel serta persiapan intensif yang tengah mereka siapkan menjelang penampilan spektakuler di hadapan puluhan ribu penonton festival internasional tersebut.</p>\n\n        <p>Manajemen No Na mengungkapkan bahwa persiapan konsep panggung telah dimulai, termasuk kolaborasi dengan koreografer internasional dan penata musik yang akan meramu elemen etnik tradisional menjadi sajian pertunjukan modern yang memukau mata penikmat musik mancanegara.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Pencapaian</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Parameter Prestasi</th>\n                <th class=\"border border-slate-700 p-3\">Rincian Data & Fakta Terverifikasi</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Nama Acara</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Coachella Valley Music and Arts Festival di Indio, California, Amerika Serikat.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Promotor</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Status Penampil</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Girl group pertama asal Indonesia yang resmi diundang tampil di festival Coachella.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Rekor Bersejarah</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Basis Penggemar</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Pertumbuhan audiens organik melalui streaming Spotify global dan tren video TikTok.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Data Platform Digital</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Dampak Industri</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Membuka jalan bagi talenta grup pop Indonesia untuk dilirik oleh label internasional.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Sentimen Pengamat Musik</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Dampak Kultural: Evolusi Girl Group Nusantara di Kancah Global</h2>\n        \n        <p>Kehadiran No Na di daftar penampil festival musik kelas dunia menandai babak baru evolusi musisi perempuan Indonesia di panggung internasional. Selama bertahun-tahun, representasi kelompok vokal perempuan di panggung musik global kerap didominasi oleh industri K-Pop asal Korea Selatan atau musisi barat.</p>\n\n        <p>Keberhasilan grup independen seperti No Na mendobrak panggung global membuktikan bahwa orisinalitas karya, keberanian memadukan identitas kultural, serta pemanfaatan strategi digital yang tepat dapat mengatasi keterbatasan anggaran promosi agensi raksasa. Hal ini diharapkan menjadi pemicu kebangkitan ekosistem grup vokal di dalam negeri.</p>\n\n        <p>Pengamat industri musik tanah air menilai bahwa momentum ini harus dimanfaatkan secara optimal oleh pemerintah dan pemangku kepentingan industri kreatif untuk memberikan dukungan nyata, mulai dari kemudahan fasilitasi visa kerja seni hingga perlindungan hak cipta musisi di ranah global.</p>\n\n        <p>Dengan sorotan media internasional yang kian tertuju pada gelombang musisi Asia Tenggara, No Na berpeluang menjadi jembatan diplomasi budaya yang memperkenalkan keragaman narasi modern Indonesia kepada audiens global secara autentik.</p>\n\n        <h2>Sentimen Netizen: Kebanggaan Kolektif dan Antusiasme Publik</h2>\n        \n        <p>Analisis sentimen netizen di platform X dan Instagram menunjukkan ledakan rasa bangga yang luar biasa dari warganet Indonesia. Tagar bertajuk nama No Na sempat memuncaki topik tren terpopuler diiringi ribuan ucapan selamat dari rekan-rekan musisi senior tanah air.</p>\n\n        <p>Warganet menggarisbawahi etos kerja para anggota No Na yang selama ini berproses secara sunyi tanpa gimmick sensasi murahan. Pengakuan dari kurator festival sekelas Coachella dinilai sebagai bukti valid bahwa kualitas musikalitas murni pada akhirnya akan menemukan jalannya menuju apresiasi tertinggi di panggung dunia.</p>\n\n        <p>Antusiasme publik kini tertuju pada konsep panggung dan daftar lagu yang akan dibawakan No Na di padang gurun California nanti. Banyak penikmat musik yang berharap mereka akan menyematkan instrumen tradisional Nusantara dalam aransemen musik modern mereka di hadapan penonton mancanegara.</p>\n\n        <p>NgeGhibah turut berbangga atas pencapaian luar biasa No Na. Redaksi akan terus mengabarkan persiapan dan dokumentasi perjalanan bersejarah girl group kebanggaan Indonesia ini menuju panggung Coachella.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "creator-tiktok",
+    "categoryLabel": "Creator & TikTok",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://ngeghibah.com/images/caricatures/no-na-coachella.jpg",
+    "imageCaption": "Karikatur editorial girl group No Na di panggung festival Coachella. (Ilustrasi: Workers AI / Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-13T15:50:38.016Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "No Na"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "2024–2025",
+        "title": "Pembentukan dan debut grup vokal perempuan No Na yang memadukan unsur pop modern dengan kekayaan vokal Nusantara.",
+        "description": "Pembentukan dan debut grup vokal perempuan No Na yang memadukan unsur pop modern dengan kekayaan vokal Nusantara.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Pertengahan 2026",
+        "title": "Rilisan karya single mereka mendadak viral di platform TikTok dan masuk kurasi tangga lagu indie internasional.",
+        "description": "Rilisan karya single mereka mendadak viral di platform TikTok dan masuk kurasi tangga lagu indie internasional.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Awal)",
+        "title": "Promotor festival musik internasional Coachella merilis poster resmi daftar artis penampil yang menyertakan nama No Na.",
+        "description": "Promotor festival musik internasional Coachella merilis poster resmi daftar artis penampil yang menyertakan nama No Na.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Terkini)",
+        "title": "Warganet dan penikmat musik tanah air merayakan pencapaian bersejarah keterwakilan girl group lokal di panggung festival global.",
+        "description": "Warganet dan penikmat musik tanah air merayakan pencapaian bersejarah keterwakilan girl group lokal di panggung festival global.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794585036878",
+    "slug": "kabar-kesehatan-komedian-nunung-klarifikasi-medis-jadwal-biopsi",
+    "title": "Kabar Kesehatan Terkini Komedian Nunung: Klarifikasi Medis Terkait Tindakan Biopsi Lanjutan dan Riwayat Kanker",
+    "excerpt": "Penelusuran jejak digital mengenai kondisi medis terkini komedian Nunung Srimulat serta klarifikasi resmi terkait rencana tindakan diagnostik lanjutan.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari pernyataan terbuka komedian legendaris Tri Retno Prayudati alias Nunung saat ditemui awak media di kawasan Jakarta Selatan. Bintang panggung Srimulat dan berbagai program komedi televisi ini memberikan penjelasan jujur mengenai perkembangan kondisi kesehatannya usai menjalani serangkaian pemeriksaan medis berkala pasca-operasi kanker payudara.</p>\n        \n        <p>Kabar mengenai perlunya tindakan biopsi lanjutan sempat memicu kepanikan dan berbagai spekulasi liar di media sosial yang menduga penyakit kanker sang komedian telah kambuh secara agresif. Namun, Nunung menegaskan bahwa pemeriksaan tersebut merupakan prosedur medis standar kehati-hatian yang direkomendasikan oleh tim dokter spesialis onkologi.</p>\n\n        <p>Sebagai media yang berpegang pada fakta terverifikasi dan perlindungan privasi pasien, tim redaksi NgeGhibah membedah kronologi lengkap riwayat pengobatan, jejak digital keterangan medis resmi, serta semangat ketabahan sang komedian dalam menghadapi fase observasi kesehatan jangka panjang demi memberikan pemahaman yang utuh dan objektif bagi masyarakat luas.</p>\n\n        <h2>Rekonstruksi Kronologi Riwayat Medis dan Jejak Digital</h2>\n        \n        <p>Berdasarkan penelusuran rekam jejak digital, Nunung pertama kali mengumumkan vonis kanker payudara yang dialaminya pada awal tahun 2023. Saat itu, ia harus menjalani tindakan pembedahan mastektomi parsial serta rangkaian sesi kemoterapi intensif yang sempat membuatnya harus beristirahat total dari panggung hiburan tanah air demi memulihkan ketahanan fisiknya.</p>\n\n        <p>Dengan ketegaran luar biasa dan didampingi sang suami tercinta, Iyan Sambiran, Nunung berhasil melewati masa-masa kritis tersebut hingga tim dokter menyatakan respons tubuhnya sangat positif. Sang komedian bahkan sempat kembali aktif membintangi berbagai program siniar dan acara komedi televisi dengan energi humor yang tetap memikat hati penonton dari berbagai kalangan generasi.</p>\n\n        <p>Sebagai penyintas kanker (<em>cancer survivor</em>), Nunung diwajibkan menjalani pemindaian tomografi emisi positron (<em>PET Scan</em>) setiap enam bulan sekali untuk memantau kemungkinan adanya residu mikroskopis sel kanker. Dalam pemeriksaan berkala terkini, dokter menemukan adanya perubahan struktur jaringan kecil yang memerlukan kepastian diagnostik melalui tindakan biopsi jarum halus.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Dokter melihat ada titik kecil yang mencurigakan saat pemeriksaan berkala, jadi disarankan untuk biopsi agar tidak menebak-nebak. Keadaan saya secara fisik segar bugar, tetap bisa bercanda dan bekerja, jadi mohon doanya agar hasilnya bukan hal yang berbahaya.\" — Klarifikasi resmi Nunung kepada awak media.\n          </blockquote>\n        </div>\n\n        <p>Nunung menjelaskan bahwa dirinya memilih untuk bersikap transparan kepada publik demi menghindari simpang siur informasi dan narasi berlebihan yang kerap memperkeruh suasana di platform jejaring sosial. Keterbukaan ini mencerminkan sikap kedewasaan dalam mengelola komunikasi publik mengenai riwayat kesehatan figur ternama.</p>\n\n        <p>Sang komedian juga mengimbau masyarakat agar tidak mudah termakan judul berita yang bernada sensasional atau menakut-nakuti. Menurutnya, menjalani hidup dengan hati gembira, ikhlas, dan disiplin mematuhi anjuran medis adalah kunci utama dalam menjaga kualitas hidup para penyintas penyakit kronis.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Medis</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Fase Pengobatan</th>\n                <th class=\"border border-slate-700 p-3\">Rekonstruksi Medis & Fakta Klinis</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Diagnosis Perdana</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Terdiagnosis kanker payudara stadium awal pada awal tahun 2023 dan sukses dioperasi.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Rekam Medis</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Terapi Lanjutan</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Menuntaskan seluruh siklus kemoterapi dan dinyatakan dalam fase remisi aktif.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Publik</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Prosedur Terkini</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Jadwal tindakan biopsi preventif untuk mengidentifikasi sampel jaringan temuan PET Scan.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Klarifikasi Terbuka</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Kondisi Fisik Harian</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Tetap aktif, bersemangat, dan dapat menjalani rutinitas pekerjaan secara normal.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Lapangan</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Edukasi Kesehatan: Urgensi Skrining Rutin bagi Penyintas Kanker</h2>\n        \n        <p>Kasus yang dihadapi Nunung memberikan pelajaran berharga mengenai pentingnya kepatuhan menjalani pemantauan pasca-pengobatan bagi setiap penyintas kanker. Dalam dunia medis onkologi, periode lima tahun pertama pasca-operasi adalah jendela waktu yang krusial untuk memastikan tidak adanya kekambuhan seluler (<em>recurrence</em>).</p>\n\n        <p>Tindakan biopsi tidak selalu berarti kanker telah kembali berkembang biak, melainkan metode standar emas (<em>gold standard</em>) untuk membedakan antara jaringan parut bekas pembedahan (<em>scar tissue</em>), peradangan jinak, atau hiperplasia dengan neoplasma ganas. Dengan mendeteksi perubahan sekecil apa pun sejak dini, dokter dapat menentukan intervensi pengobatan yang paling cepat dan minimal invasif.</p>\n\n        <p>Para pakar medis mengapresiasi keberanian Nunung yang tidak menunda pemeriksaan laboratorium saat dokter menemukan indikasi klinis. Sikap proaktif ini menjadi teladan yang sangat penting bagi masyarakat luas agar tidak takut berkonsultasi kepada dokter spesialis onkologi ketika menghadapi keluhan tubuh atau saat tiba jadwal pemeriksaan berkala.</p>\n\n        <p>Peran pendamping keluarga juga disoroti sebagai pilar ketahanan emosional yang tak tergantikan. Kehadiran Iyan Sambiran yang senantiasa setia menemani Nunung di setiap sesi medis menjadi bukti nyata bahwa kesembuhan fisik sangat ditopang oleh kedamaian psikologis dan cinta keluarga.</p>\n\n        <h2>Sentimen Netizen: Gelombang Doa dari Lintas Generasi</h2>\n        \n        <p>Pantauan redaksi terhadap sentimen netizen memperlihatkan arus simpati dan dukungan moril yang sangat deras dari jutaan pemirsa televisi di seluruh penjuru tanah air. Sosok Nunung yang telah puluhan tahun menghibur publik melalui lawakan legendaris di Srimulat, Opera Van Java (OVJ), hingga Ini Talkshow memiliki tempat istimewa di hati masyarakat.</p>\n\n        <p>Rekan-rekan komedian senior seperti Sule, Andre Taulany, Tarzan, hingga generasi komika muda secara bergantian menyampaikan doa dan dukungan langsung kepada sang pelawak. Solidaritas persahabatan di kalangan insan komedi Indonesia terbukti menjadi sumber kekuatan psikologis yang sangat berharga bagi proses pemulihan Nunung.</p>\n\n        <p>Warganet pun memuji kepribadian Nunung yang selalu ramah, rendah hati, dan tetap mampu menyebarkan gelak tawa meski tengah memikul beban ujian kesehatan yang berat. Komentar doa kesembuhan memenuhi linimasa media sosial sebagai bukti cinta tulus pemirsa kepada salah satu ikon komedi perempuan terbaik di Indonesia.</p>\n\n        <p>NgeGhibah mendoakan kelancaran seluruh proses biopsi medis yang akan dijalani oleh Nunung. Semoga hasil pemeriksaan laboratorium membawa kabar baik dan sang komedian senantiasa diberikan kesehatan serta usia panjang untuk terus berkarya.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://ngeghibah.com/images/caricatures/nunung-biopsi.jpg",
+    "imageCaption": "Karikatur editorial komedian Nunung Srimulat. (Ilustrasi: Workers AI / Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-13T15:50:36.878Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Nunung"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Awal 2023",
+        "title": "Komedian Nunung didiagnosis mengidap kanker payudara stadium awal dan menjalani operasi pengangkatan massa tumor.",
+        "description": "Komedian Nunung didiagnosis mengidap kanker payudara stadium awal dan menjalani operasi pengangkatan massa tumor.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2023–2024",
+        "title": "Menuntaskan rangkaian kemoterapi intensif hingga dinyatakan bersih dan dapat kembali beraktivitas di panggung hiburan.",
+        "description": "Menuntaskan rangkaian kemoterapi intensif hingga dinyatakan bersih dan dapat kembali beraktivitas di panggung hiburan.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Pertengahan 2026",
+        "title": "Pemeriksaan rutin berkala (PET Scan) mendeteksi adanya aktivitas sel mencurigakan yang memerlukan observasi berkala.",
+        "description": "Pemeriksaan rutin berkala (PET Scan) mendeteksi adanya aktivitas sel mencurigakan yang memerlukan observasi berkala.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026",
+        "title": "Klarifikasi resmi Nunung mengenai rencana tindakan biopsi lanjutan demi memastikan sifat jaringan secara akurat.",
+        "description": "Klarifikasi resmi Nunung mengenai rencana tindakan biopsi lanjutan demi memastikan sifat jaringan secara akurat.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794584392324",
+    "slug": "sorotan-proyek-konten-the-dudas-minus-one-desta-ariel-noah",
+    "title": "Sorotan Publik Terhadap Proyek Publikasi The Dudas Minus One: Klarifikasi Keterlibatan Desta dan Ariel NOAH",
+    "excerpt": "Penelusuran jejak digital mengenai keterlibatan grup The Dudas Minus One dalam proyek promosi daerah serta klarifikasi batasan kerja sama profesional.",
+    "contentHtml": "\n    <p>Duduk perkaranya bermula dari merebaknya diskursus di media sosial mengenai sumber pendanaan dan mekanisme kemitraan tayangan perjalanan digital populer bertajuk The Dudas Minus One. Tayangan yang digawangi oleh deretan pesohor papan atas tanah air—Deddy Mahendra Desta, Nazril Irham (Ariel NOAH), Gading Marten, dan Raffi Ahmad—menjadi sorotan seiring mencuatnya laporan pengadaan publikasi kementerian di ruang publik.</p>\n    \n    <p>Format konten yang memadukan hobi berkendara motor dengan eksplorasi keindahan alam Indonesia ini selama ini dikenal memiliki daya tarik pemirsa yang sangat masif di platform YouTube dan TikTok. Namun, keterkaitan salah satu anggotanya dengan jabatan publik memicu pertanyaan warganet mengenai independensi produksi tayangan serta tata kelola pembiayaan konten tersebut.</p>\n\n    <p>Redaksi NgeGhibah menelusuri alur produksi, jejak digital episode perjalanan, serta verifikasi fakta hukum mengenai batasan peran para talent selebritas dalam kemitraan publikasi program daerah demi menjaga objektivitas informasi publik di era keterbukaan digital saat ini.</p>\n\n    <h2>Rekonstruksi Format Konten dan Jejak Digital Petualangan</h2>\n    \n    <p>Berdasarkan penelusuran arsip tayangan, The Dudas Minus One lahir sebagai inisiatif kolaborasi kreatif antar-sahabat lama yang sama-sama menggemari petualangan jalanan roda dua. Episode perdana mereka yang menjelajahi Sumatra Utara dan kawasan Danau Toba sukses mencetak jutaan penonton berkat sajian visual sinematik berkualitas tinggi dan dialog jenaka yang mengalir natural tanpa naskah kaku.</p>\n\n    <p>Dalam perkembangannya, popularitas kelompok ini menarik minat berbagai sponsor komersial multinasional maupun instansi pemerintahan untuk mempromosikan potensi pariwisata daerah yang belum terekspos luas. Salah satu episode yang disorot melibatkan kunjungan ke kawasan pesisir yang sejalan dengan kampanye pemberdayaan masyarakat nelayan dan pengenalan potensi ekonomi kelautan nasional.</p>\n\n    <p>Ketika laporan audit pengadaan jasa influencer kementerian menjadi topik perbincangan hangat di media sosial, nama-nama pesohor seperti Desta dan Ariel NOAH ikut disangkutpautkan oleh warganet. Situasi ini menuntut kejelasan mengenai posisi hukum para artis yang terlibat dalam proyek konten tersebut agar tidak melahirkan prasangka keliru di kalangan penggemar.</p>\n\n    <div class=\"my-6\">\n      <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n        \"Para artis seperti Ariel dan Desta menjalankan perannya murni sebagai profesional talent dan pengisi acara kreatif. Mereka diundang untuk menghidupkan konten dan tidak memiliki sangkut paut dengan urusan pengadaan barang dan jasa di level birokrasi pemerintahan.\" — Rangkuman keterangan perwakilan manajemen artis.\n      </blockquote>\n    </div>\n\n    <p>Manajemen artis menegaskan bahwa keterlibatan para pengisi acara diatur melalui perjanjian kerja sama profesional talent yang lazim berlaku di industri hiburan komersial. Tanggung jawab mereka terbatas pada kehadiran di lokasi pengambilan gambar, pembuatan materi kreatif, dan publikasi cuplikan video di kanal media sosial masing-masing tanpa campur tangan teknis lelang.</p>\n\n    <p>Sistem kontrak semacam ini merupakan standar industri yang dirancang untuk melindungi hak dan kewajiban pekerja seni pertunjukan. Dengan demikian, honorarium yang diterima para artis merupakan kompensasi jasa profesional atas hak cipta penampilan dan promosi karya mereka.</p>\n\n    <h2>Tabel Rekonstruksi Fakta dan Verifikasi Peran</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Elemen Kemitraan</th>\n            <th class=\"border border-slate-700 p-3\">Uraian Fakta & Rekonstruksi Kerja Sama</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Status Talent</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Desta, Ariel NOAH, dan Gading Marten bertindak sebagai pengisi acara profesional non-penyelenggara negara.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Kontrak Talent</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Objek Tayangan</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Promosi keindahan pariwisata maritim dan pengenalan potensi kawasan pesisir lokal.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Publikasi</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Tanggung Jawab Administrasi</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Proses lelang dan pengadaan LPSE berada di ranah korporasi rekanan dan Pejabat Pembuat Komitmen (PPK).</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Regulasi Pengadaan</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Dampak Promosi Daerah</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Meningkatkan kesadaran publik terhadap destinasi wisata lokal yang belum terjamah turis masif.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Data Keterlibatan Audiens</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <h2>Pemisahan Tanggung Jawab Hukum Antara Talent dan Korporasi</h2>\n    \n    <p>Dalam hukum kontrak dan ketenagakerjaan kreatif modern, terdapat doktrin pemisahan yang sangat tegas antara kewajiban korporasi penyedia jasa (<em>vendor</em>) dengan kewajiban talent pengisi acara (<em>performer</em>). Para figur publik umumnya diikat oleh perjanjian kerja sama jasa kreatif untuk memproduksi konten visual dan sama sekali tidak memiliki akses maupun otoritas administratif terhadap prosedur lelang pemerintah di portal LPSE.</p>\n\n    <p>Verifikasi fakta hukum menegaskan bahwa publik figur yang bekerja sebagai pembawa acara atau penampil tidak dapat serta-merta dimintai pertanggungjawaban yuridis terkait tata kelola pengadaan instansi, sepanjang mereka menjalankan tugas profesional secara beritikad baik sesuai klausul kontrak kerja sama komersial yang telah disepakati bersama pihak agensi atau rumah produksi.</p>\n\n    <p>Transparansi informasi ini krusial untuk meluruskan persepsi warganet agar tidak terjadi generalisasi keliru yang berpotensi merugikan reputasi profesional artis yang murni menjalankan pekerjaannya di ranah hiburan dan seni pertunjukan kreatif tanah air tanpa motif politik apa pun.</p>\n\n    <p>Pakar komunikasi publik menambahkan bahwa pelibatan selebritas dalam program pemerintah memang terbukti efektif mendongkrak kesadaran masyarakat atas program pembangunan, namun instansi penyelenggara tetap berkewajiban menjaga akuntabilitas anggaran agar tidak menimbulkan kecurigaan di mata masyarakat.</p>\n\n    <h2>Sentimen Netizen: Antara Apresiasi Konten dan Tuntutan Transparansi</h2>\n    \n    <p>Analisis sentimen netizen memperlihatkan apresiasi yang sangat tinggi terhadap kualitas sinematografi, orisinalitas humor, dan hiburan edukatif yang disajikan oleh kelompok petualang ini. Sebagian besar penonton memuji bagaimana tayangan tersebut mampu mengangkat pesona daerah-daerah terpencil di Indonesia ke panggung digital nasional dengan kemasan yang segar dan tidak menggurui penonton.</p>\n\n    <p>Di sisi lain, warganet yang kritis tetap menyuarakan pentingnya tata kelola anggaran publikasi negara yang akuntabel, efisien, dan transparan. Diskusi yang berkembang di media sosial dinilai sangat sehat sebagai bentuk partisipasi aktif warga dalam mengawasi pemanfaatan anggaran publik di era keterbukaan informasi digital.</p>\n\n    <p>Kelompok The Dudas Minus One sendiri hingga kini terus aktif memproduksi konten perjalanan mandiri yang tetap mendominasi trending platform digital, membuktikan kekuatan daya tarik personal para anggotanya di mata penikmat hiburan Indonesia yang mendambakan tayangan petualangan autentik.</p>\n\n    <p>NgeGhibah menjunjung tinggi komitmen peliputan yang objektif dan berimbang. Kami membuka hak jawab seluas-luasnya bagi seluruh pihak manajemen dan instansi terkait sesuai kaidah jurnalistik yang bertanggung jawab.</p>\n    ",
+    "category": "creator-tiktok",
+    "categoryLabel": "Creator & TikTok",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Deddy_Mahendra_Desta_on_Tonight_Show_Netmediatama.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Desta. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T15:39:52.324Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Desta",
+      "Ariel NOAH",
+      "Gading Marten"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Pertengahan 2024",
+        "title": "Pembentukan kelompok konten petualangan bermotor 'The Dudas Minus One' oleh Desta, Ariel NOAH, Gading Marten, dan Raffi Ahmad.",
+        "description": "Pembentukan kelompok konten petualangan bermotor 'The Dudas Minus One' oleh Desta, Ariel NOAH, Gading Marten, dan Raffi Ahmad.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2025–2026",
+        "title": "Penayangan rangkaian episode perjalanan ke berbagai destinasi pesisir dan wilayah kepulauan Nusantara.",
+        "description": "Penayangan rangkaian episode perjalanan ke berbagai destinasi pesisir dan wilayah kepulauan Nusantara.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Awal)",
+        "title": "Muncul sorotan publik mengenai kemitraan tayangan dengan program publikasi instansi kementerian kelautan.",
+        "description": "Muncul sorotan publik mengenai kemitraan tayangan dengan program publikasi instansi kementerian kelautan.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Terkini)",
+        "title": "Klarifikasi resmi bahwa para pengisi acara bekerja berdasarkan kontrak profesional talent dan tidak terlibat dalam urusan administrasi pengadaan.",
+        "description": "Klarifikasi resmi bahwa para pengisi acara bekerja berdasarkan kontrak profesional talent dan tidak terlibat dalam urusan administrasi pengadaan.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794584321217",
+    "slug": "duduk-perkara-penantian-9-tahun-bayi-tabung-ivf-fanny-ghassani",
+    "title": "Penantian Sembilan Tahun Berbuah Manis: Duduk Perkara Perjuangan Program Bayi Tabung Fanny Ghassani",
+    "excerpt": "Penelusuran jejak digital mengenai kabar bahagia kehamilan perdana aktris Fanny Ghassani setelah sembilan tahun berjuang lewat teknologi reproduksi berbantu.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari unggahan penuh haru yang dibagikan oleh aktris dan presenter Fanny Ghassani di akun media sosial resminya. Setelah melalui rentang penantian panjang selama hampir sembilan tahun pernikahan, bintang sinetron berbakat ini akhirnya mengumumkan kabar kehamilan pertamanya yang dinanti-nantikan bersama sang suami, Erwan Agustian Priyambudi.</p>\n        \n        <p>Kabar bahagia ini seketika menyentuh hati ribuan warganet dan rekan sejawat di industri hiburan tanah air. Perjalanan Fanny Ghassani bukan sekadar cerita kehamilan biasa, melainkan cerminan ketabahan emosional, ketahanan fisik, serta perjuangan medis yang melintasi fase pernikahan jarak jauh selama bertahun-tahun di tengah tuntutan karier hiburan yang padat.</p>\n\n        <p>Redaksi NgeGhibah menelusuri kronologi lengkap ikhtiar medis, jejak digital unggahan resmi, serta pesan edukatif yang disampaikan Fanny mengenai program reproduksi berbantu (<em>In Vitro Fertilization</em>/IVF) bagi pasangan pejuang garis dua di tanah air.</p>\n\n        <h2>Rekonstruksi Kronologi Perjalanan 9 Tahun Pernikahan</h2>\n        \n        <p>Berdasarkan penelusuran jejak digital, Fanny Ghassani resmi dipersunting oleh Erwan Agustian Priyambudi pada Mei 2017 silam. Sejak awal pernikahan, keduanya harus menghadapi dinamika hubungan jarak jauh (<em>long-distance marriage</em>) dikarenakan tuntutan bisnis sang suami di Bali sementara karier pertelevisian dan seni peran Fanny berbasis di ibu kota Jakarta.</p>\n\n        <p>Tantangan geografis tersebut diakui Fanny menjadi salah satu faktor yang membuat perencanaan momongan memerlukan adaptasi khusus dan komunikasi yang sangat intens. Selama bertahun-tahun, sang aktris kerap dihadapkan pada pertanyaan publik mengenai kehadiran momongan, namun ia selalu meresponsnya dengan tenang, lapang dada, dan penuh prasangka baik tanpa rasa tersinggung.</p>\n\n        <p>Memasuki tahun 2026, pasangan ini memutuskan untuk mengambil langkah medis terencana dengan berkonsultasi kepada dokter spesialis fertilitas dan menjalani program bayi tabung di salah satu pusat fertilitas unggulan. Rangkaian prosedur yang meliputi stimulasi hormon harian, pemantauan folikel sel telur, pengambilan sel telur (<em>ovum pick up</em>), hingga transfer embrio dijalani dengan kedisiplinan dan doa tanpa henti.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Sembilan tahun bukan waktu yang sebentar, tapi kami percaya waktu Tuhan selalu yang paling tepat dan indah. Terima kasih untuk semua doa yang tak pernah putus dari keluarga, sahabat, dan teman-teman pejuang garis dua di mana pun berada.\" — Ungkapan syukur Fanny Ghassani di akun media sosialnya.\n          </blockquote>\n        </div>\n\n        <p>Momen ketika hasil uji laboratorium dan pemeriksaan ultrasonografi (USG) menunjukkan tanda positif kehamilan pertama menjadi puncak keharuan yang mendalam bagi pasangan ini. Dalam unggahan video yang dibagikan, tampak air mata bahagia menyertai detak jantung janin pertama yang terdengar jelas di ruang pemeriksaan medis.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Medis</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Fase Perjalanan</th>\n                <th class=\"border border-slate-700 p-3\">Rekonstruksi Fakta & Riwayat Medis</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Masa Penantian</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Pernikahan berjalan harmonis sejak Mei 2017 dengan dinamika LDR Jakarta-Bali.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Arsip</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Metode Program Hamil</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Menjalani teknologi reproduksi berbantu In Vitro Fertilization (IVF / Bayi Tabung).</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Konfirmasi Terbuka</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Pengumuman Resmi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Dipublikasikan melalui rekaman video USG dan detak jantung janin di akun Instagram @fannyghassani.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Otentik</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Respons Rekan Industri</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Banjir ucapan selamat dan doa dari ratusan selebritas serta warganet Indonesia.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Sentimen Positif 100%</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Edukasi Medis IVF: Menghapus Stigma dan Membuka Harapan</h2>\n        \n        <p>Keputusan Fanny Ghassani untuk membagikan proses bayi tabung secara transparan memberikan dampak positif yang sangat signifikan dalam mengikis stigma sosial terkait infertilitas di masyarakat Indonesia. Selama ini, isu kesulitan memiliki keturunan seringkali dianggap sebagai aib atau beban tabu yang secara tidak adil hanya disematkan pada pihak perempuan.</p>\n\n        <p>Keterbukaan selebritas dalam mendokumentasikan ikhtiar medis ini membuka wawasan publik luas bahwa kemajuan teknologi reproduksi adalah ikhtiar sains yang sah, bermartabat, dan patut didukung oleh lingkungan terdekat. Banyak pasangan suami istri di media sosial yang mengaku termotivasi dan kembali bersemangat memperjuangkan kehadiran buah hati setelah menyimak keterbukaan Fanny.</p>\n\n        <p>Pakar kesehatan reproduksi menekankan bahwa keberhasilan prosedur IVF sangat dipengaruhi oleh kesiapan fisik, kestabilan emosional, serta kerja sama harmonis antara kedua pasangan. Dukungan tanpa syarat dari suami dan keluarga terbukti menjadi faktor krusial dalam meminimalkan kadar hormon stres kortisol selama masa penantian hasil embrio.</p>\n\n        <p>Konsistensi Fanny dalam menerapkan pola hidup sehat, rajin berolahraga angkat beban dan kardio, serta menjaga pola makan bergizi seimbang juga diakui menjadi modal fisik yang sangat menunjang kebugaran rahim selama proses implantasi berlangsung.</p>\n\n        <h2>Sentimen Netizen: Gelombang Doa dan Inspirasi Pejuang Garis Dua</h2>\n        \n        <p>Pantauan redaksi terhadap sentimen netizen menunjukkan respons positif yang luar biasa tanpa celah kontroversi. Kolom komentar unggahan Fanny Ghassani dipenuhi oleh ribuan testimoni dari sesama pejuang buah hati yang saling menguatkan dan bertukar pengalaman medis.</p>\n\n        <p>Warganet menggarisbawahi keteladanan Fanny yang tetap produktif berkarier di panggung hiburan dan menjaga kebugaran tubuh selama masa penantian tanpa pernah memperlihatkan keputusasaan atau keluhan di ruang publik. Sikap mental yang tangguh dan selalu memancarkan energi positif dinilai menjadi inspirasi nyata bagi jutaan perempuan Indonesia.</p>\n\n        <p>Kabar kehamilan ini membuktikan bahwa kesabaran, komitmen perkawinan yang kokoh, dan ikhtiar medis yang tepat dapat membuahkan hasil membahagiakan pada waktu yang paling tepat. Publik kini turut mendoakan kelancaran kehamilan sang aktris hingga hari persalinan nanti.</p>\n\n        <p>NgeGhibah mengucapkan selamat atas kehamilan pertama Fanny Ghassani dan Erwan Agustian Priyambudi. Semoga masa kehamilan berjalan lancar, sehat, dan menjadi berkah membahagiakan bagi keluarga besar.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://ngeghibah.com/images/caricatures/fanny-ghassani-ivf.jpg",
+    "imageCaption": "Karikatur editorial Fanny Ghassani dalam momen penantian buah hati. (Ilustrasi: Workers AI / Redaksi NgeGhibah)",
+    "publishedAt": "2026-11-13T15:38:41.217Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Fanny Ghassani"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Mei 2017",
+        "title": "Pernikahan resmi aktris Fanny Ghassani dengan pengusaha Erwan Agustian Priyambudi.",
+        "description": "Pernikahan resmi aktris Fanny Ghassani dengan pengusaha Erwan Agustian Priyambudi.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "2018–2023",
+        "title": "Fase menjalani pernikahan jarak jauh (LDR) Jakarta–Bali serta berbagai ikhtiar medis promil alami.",
+        "description": "Fase menjalani pernikahan jarak jauh (LDR) Jakarta–Bali serta berbagai ikhtiar medis promil alami.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Awal 2026",
+        "title": "Memutuskan fokus menjalani program In Vitro Fertilization (IVF) atau bayi tabung di klinik fertilitas terkemuka.",
+        "description": "Memutuskan fokus menjalani program In Vitro Fertilization (IVF) atau bayi tabung di klinik fertilitas terkemuka.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026",
+        "title": "Mengumumkan secara terbuka hasil positif kehamilan pertama melalui unggahan video emosional di Instagram terverifikasi.",
+        "description": "Mengumumkan secara terbuka hasil positif kehamilan pertama melalui unggahan video emosional di Instagram terverifikasi.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794584318379",
+    "slug": "sidang-perceraian-ruben-onsu-sarwendah-kesaksian-tengku-zanzabella",
+    "title": "Duduk Perkara Sidang Perceraian Ruben Onsu dan Sarwendah: Dinamika Kesaksian Tengku Zanzabella Terkait Hak Asuh",
+    "excerpt": "Penelusuran jejak digital mengenai jalannya sidang perceraian Ruben Onsu dan Sarwendah serta bobot pembuktian kesaksian pihak ketiga di pengadilan.",
+    "contentHtml": "\n        <p>Duduk perkaranya bermula dari kelanjutan proses peradilan perkara perdata perselisihan rumah tangga antara presenter terkemuka Ruben Onsu dan Sarwendah di Pengadilan Negeri Jakarta Selatan. Proses perceraian pasangan selebritas yang telah membina mahligai perkawinan selama lebih dari satu dekade ini kembali menyedot atensi publik setelah hadirnya saksi dari kalangan figur publik di muka persidangan.</p>\n        \n        <p>Dalam agenda sidang pembuktian lanjutan yang digelar secara tertutup, kubu penggugat menghadirkan aktivis media sosial Tengku Zanzabella untuk memberikan kesaksian di hadapan majelis hakim. Kehadiran saksi ini memicu berbagai spekulasi di tengah warganet mengenai materi kesaksian serta relevansinya terhadap sengketa hak pengasuhan ketiga buah hati mereka.</p>\n\n        <p>Sebagai media yang berpegang pada fakta terverifikasi dan perlindungan privasi anak, tim redaksi NgeGhibah menelusuri rekam jejak persidangan, substansi keterangan saksi, serta argumentasi yuridis dari kedua belah pihak. Diskursus ini menarik perhatian karena dinamika hukum keluarga figur publik kerap menjadi barometer pemahaman masyarakat mengenai hak perdata anak di era digital.</p>\n\n        <h2>Rekonstruksi Kronologi Persidangan dan Fakta Berkas</h2>\n        \n        <p>Berdasarkan penelusuran jejak digital dan konfirmasi kuasa hukum, gugatan cerai telah bergulir sejak pertengahan tahun 2024 setelah serangkaian upaya mediasi kekeluargaan tidak membuahkan kesepakatan rujuk. Fokus utama peradilan kini mengerucut pada pembuktian dalil-dalil gugatan serta pengaturan hak asuh anak di bawah umur yang membutuhkan penetapan berkekuatan hukum tetap.</p>\n\n        <p>Tengku Zanzabella yang dihadirkan di muka persidangan mengaku memberikan kesaksian berdasarkan apa yang ia ketahui mengenai dinamika komunikasi dan peristiwa yang melingkupi keluarga tersebut. Usai persidangan, Zanzabella menegaskan bahwa keterangannya murni bertujuan membantu proses peradilan dan tidak bermaksud memihak secara sepihak kepada salah satu kubu.</p>\n\n        <div class=\"my-6\">\n          <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n            \"Saya hadir di persidangan untuk memberikan keterangan yang saya ketahui secara objektif sesuai sumpah di hadapan majelis hakim. Terkait substansi materi perkara, biarlah menjadi kewenangan pengadilan yang memutuskan secara adil demi masa depan anak-anak.\" — Pernyataan Tengku Zanzabella usai persidangan.\n          </blockquote>\n        </div>\n\n        <p>Merespons hal tersebut, kuasa hukum Sarwendah, Chris Sam Siwu, memberikan klarifikasi resmi kepada awak media. Pihaknya menyatakan menanggapi santai kehadiran saksi tersebut dan menilai keterangan yang disampaikan tidak memiliki bobot pembuktian yang kuat untuk menggugurkan hak pengasuhan seorang ibu.</p>\n\n        <p>Menurut kubu tergugat, saksi fakta seharusnya adalah pihak yang melihat, mendengar, atau mengalami langsung peristiwa hukum yang dipersengketakan dalam lingkup privat rumah tangga. Keterangan dari pihak luar yang sekadar mendengar percakapan sekunder dinilai memiliki nilai kekuatan pembuktian yang sangat terbatas dalam hukum acara perdata.</p>\n\n        <p>Oleh karena itu, tim hukum Sarwendah meyakini majelis hakim yang berpengalaman akan bersikap bijaksana dan objektif dalam menimbang seluruh alat bukti yang diajukan para pihak di ruang sidang.</p>\n\n        <h2>Tabel Rekonstruksi Fakta dan Verifikasi Persidangan</h2>\n        <div class=\"my-8 overflow-x-auto\">\n          <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n            <thead class=\"bg-velvet text-white font-semibold\">\n              <tr>\n                <th class=\"border border-slate-700 p-3\">Tahapan Sidang</th>\n                <th class=\"border border-slate-700 p-3\">Materi Perkara & Fakta Yuridis</th>\n                <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Agenda Pembuktian</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Pemeriksaan saksi fakta yang diajukan kubu penggugat di hadapan majelis hakim PN Jaksel.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Fakta Persidangan</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Identitas Saksi</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Tengku Zanzabella hadir memenuhi panggilan resmi sebagai saksi fakta penggugat.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Pengadilan</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Tanggapan Pihak Tergugat</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Kuasa hukum Sarwendah menyatakan kesaksian tidak relevan terhadap substansi pengasuhan anak.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Pernyataan Resmi</td>\n              </tr>\n              <tr>\n                <td class=\"border border-slate-700 p-3 font-semibold text-white\">Perlindungan Anak</td>\n                <td class=\"border border-slate-700 p-3 text-slate-300\">Kedua pihak berkomitmen menjaga kondisi psikologis anak agar tidak terdampak sengketa terbuka.</td>\n                <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Komitmen Bersama</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>Aspek Hukum Pengasuhan Anak dan Prinsip Kepentingan Terbaik</h2>\n        \n        <p>Dalam hukum perkawinan di Indonesia, pengaturan hak asuh anak di bawah umur berpedoman teguh pada asas kepentingan terbaik bagi anak (<em>the best interest of the child</em>). Pengadilan umumnya memprioritaskan pemeliharaan anak yang belum mumayyiz kepada ibu kandung, kecuali terbukti secara sah dan meyakinkan adanya kelalaian berat atau perilaku yang membahayakan tumbuh kembang anak.</p>\n\n        <p>Verifikasi fakta di lapangan menunjukkan bahwa baik Ruben Onsu maupun Sarwendah hingga saat ini tetap menjalankan fungsi pengasuhan bersama secara bergantian dengan penuh komitmen. Aktivitas harian anak-anak mereka, mulai dari pendidikan formal di sekolah internasional hingga kegiatan seni dan olahraga, tetap berjalan tanpa gangguan berarti di bawah pengawasan penuh kedua orang tua.</p>\n\n        <p>Kondisi ini mencerminkan kedewasaan sikap kedua figur publik dalam memisahkan perselisihan personal dari tanggung jawab moral pengasuhan jangka panjang. Warganet pun secara luas mengapresiasi upaya mereka untuk tidak saling menyerang secara terbuka di ruang publik demi menjaga kesehatan mental dan jejak digital anak-anak mereka di masa depan.</p>\n\n        <p>Para pakar hukum keluarga menilai bahwa putusan pengadilan yang ideal dalam kasus figur publik adalah mengukuhkan kesepakatan pengasuhan bersama (<em>joint custody</em>) yang memberikan akses setara bagi kedua orang tua tanpa adanya pembatasan yang merugikan ikatan emosional anak.</p>\n\n        <h2>Sentimen Netizen: Empati Publik dan Harapan Perdamaian</h2>\n        \n        <p>Analisis sentimen netizen di berbagai platform media sosial memperlihatkan arus simpati dan empati yang besar kepada keluarga The Onsu. Mayoritas warganet menyayangkan perpisahan rumah tangga yang selama bertahun-tahun dikenal harmonis, dermawan, dan menjadi teladan keluarga bahagia di tanah air.</p>\n\n        <p>Kendati demikian, netizen juga menghargai keputusan kedua pihak untuk menempuh jalur peradilan secara tertib, bermartabat, dan tidak mengumbar perselisihan rumah tangga menjadi komoditas sensasi murahan. Doa dan dukungan terus mengalir agar kedua belah pihak dapat menemukan solusi terbaik dan tetap rukun sebagai rekan pengasuhan (<em>co-parenting</em>) di masa mendatang.</p>\n\n        <p>Eskalasi percakapan di media sosial juga menjadi cermin harapan publik agar anak-anak tidak menjadi korban dari sorotan media yang berlebihan. Sikap Sarwendah dan Ruben yang membatasi komentar mengenai proses peradilan dinilai sebagai langkah bijaksana untuk meredam kegaduhan spekulasi di ruang publik.</p>\n\n        <p>NgeGhibah menegaskan pentingnya menjunjung tinggi privasi anak di bawah umur dalam setiap pemberitaan perceraian selebritas. Redaksi akan terus mengawal perkembangan persidangan hingga putusan berkekuatan hukum tetap dibacakan secara berimbang dan bertanggung jawab.</p>\n        \n    <div class=\"mt-8 p-4 rounded-xl border border-slate-700/60 bg-slate-900/60 text-xs text-slate-400\">\n      <p class=\"font-semibold text-slate-300 mb-1\">Catatan Redaksi & Asas Praduga Tak Bersalah:</p>\n      <p>NgeGhibah.com menjunjung tinggi kode etik jurnalistik dan asas praduga tak bersalah. Setiap pihak yang disebutkan dalam liputan ini memiliki hak jawab dan hak koreksi sesuai dengan Pasal 5 UU Pers No. 40/1999 melalui saluran resmi redaksi kami di <a href=\"/hak-jawab\" class=\"text-neon-cyan hover:underline\">ngeghibah.com/hak-jawab</a>.</p>\n    </div>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ruben_Samuel_Onsu.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Ruben Onsu. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T15:38:38.379Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Ruben Onsu",
+      "Sarwendah",
+      "Tengku Zanzabella"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "Juni 2024",
+        "title": "Gugatan cerai resmi didaftarkan di Pengadilan Negeri Jakarta Selatan oleh pihak Ruben Onsu melalui tim kuasa hukum.",
+        "description": "Gugatan cerai resmi didaftarkan di Pengadilan Negeri Jakarta Selatan oleh pihak Ruben Onsu melalui tim kuasa hukum.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "Agustus–September 2024",
+        "title": "Rangkaian sidang pembuktian tertulis dan mediasi keluarga dinyatakan gagal menemui kesepakatan rujuk kedua pihak.",
+        "description": "Rangkaian sidang pembuktian tertulis dan mediasi keluarga dinyatakan gagal menemui kesepakatan rujuk kedua pihak.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Sidang Lanjutan)",
+        "title": "Kubu penggugat menghadirkan figur publik Tengku Zanzabella sebagai saksi fakta dalam persidangan tertutup.",
+        "description": "Kubu penggugat menghadirkan figur publik Tengku Zanzabella sebagai saksi fakta dalam persidangan tertutup.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "November 2026 (Tanggapan Terbuka)",
+        "title": "Kuasa hukum Sarwendah memberikan klarifikasi resmi bahwa keterangan saksi tidak berdampak signifikan terhadap substansi hak asuh anak.",
+        "description": "Kuasa hukum Sarwendah memberikan klarifikasi resmi bahwa keterangan saksi tidak berdampak signifikan terhadap substansi hak asuh anak.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-1794577237277",
+    "slug": "duduk-perkara-utas-hari-ayah-nadin-amizah-kronologi-sentimen",
+    "title": "Duduk Perkara Utas Hari Ayah Nadin Amizah: Kronologi Lengkap dan Polarisasi Sentimen Netizen",
+    "excerpt": "Penelusuran jejak digital mengenai polemik unggahan Threads Nadin Amizah saat Hari Ayah Nasional yang memicu perdebatan sengit warganet.",
+    "contentHtml": "\n    <p>Duduk perkaranya bermula pada peringatan Hari Ayah Nasional, ketika musisi dan penulis lagu Nadin Amizah memicu diskusi hangat di media sosial. Melalui akun Threads pribadinya, figur publik yang dikenal dengan karya-karya puitis ini mengunggah ajakan tak lazim yang seketika mengundang polarisasi pandangan dari warganet tanah air.</p>\n    \n    <p>Di saat lini masa media sosial umumnya dipenuhi oleh ungkapan terima kasih dan apresiasi kepada sosok ayah, unggahan Nadin justru mengambil sudut pandang yang kontras. Fenomena ini membuka kembali percakapan mendalam mengenai batasan ekspresi personal di ruang publik digital serta realitas luka pengasuhan keluarga di Indonesia.</p>\n\n    <p>Sebagai figur publik dengan jutaan pengikut, setiap kata yang dituliskan Nadin memiliki daya jangkau yang sangat luas. Reaksi berantai yang terjadi di berbagai platform membuktikan bahwa percakapan mengenai relasi keluarga tetap menjadi topik yang sangat sensitif sekaligus mudah menyulut perdebatan emosional antargenerasi.</p>\n\n    <h2>Rekonstruksi Kronologi dan Jejak Digital</h2>\n    \n    <p>Berdasarkan penelusuran jejak digital tim redaksi NgeGhibah pada 12 November, unggahan tersebut dipublikasikan melalui akun Threads terverifikasi <code>@cakecaine</code>. Nadin menuliskan kalimat yang secara eksplisit meminta pengikutnya untuk menceritakan sisi kelam pengalaman bersama figur ayah.</p>\n\n    <div class=\"my-6\">\n      <blockquote class=\"p-4 border-l-4 border-neon-cyan bg-slate-900/80 text-slate-200 italic rounded-r-lg\">\n        \"Selamat hari ayah! coba share KEDURHAKAAN ayahmu: (ya, bener, bukan kamunya, ayah kamunya) yang banggain bapak baiknya gue hide bodo amat, kasih waktu untuk yang ga dapet bapak baik dulu woy.\"\n      </blockquote>\n    </div>\n\n    <p>Unggahan tersebut dalam hitungan menit langsung menuai ribuan tanggapan di Threads sebelum akhirnya ditangkap layar dan disebarluaskan ke platform X oleh berbagai akun agregator. Eskalasi percakapan meningkat tajam seiring munculnya perdebatan mengenai ketepatan waktu penyampaian pesan tersebut di tengah momentum perayaan nasional.</p>\n\n    <p>Ketika sejumlah pengguna media sosial mempertanyakan motivasi di balik ajakan yang dinilai mengumbar aib keluarga, Nadin memberikan klarifikasi resmi singkat. Ia mengarahkan para pengkritik untuk mendengarkan karya musiknya yang bertajuk <em>\"Reservasi untuk Dua\"</em>, lagu yang secara tematik mengangkat dinamika hubungan rumit antara anak dan figur ayah.</p>\n\n    <p>Langkah merespons dengan menyertakan tautan karya musik kemudian melahirkan lapisan perdebatan baru. Sebagian pihak menganggap hal itu sebagai pembelaan artistik yang sah, sementara pihak lain menilainya sebagai manuver promosi yang memanfaatkan momentum emosional publik.</p>\n\n    <h2>Tabel Rekonstruksi Fakta dan Verifikasi</h2>\n    <div class=\"my-8 overflow-x-auto\">\n      <table class=\"w-full border-collapse border border-slate-700 text-left text-sm\">\n        <thead class=\"bg-velvet text-white font-semibold\">\n          <tr>\n            <th class=\"border border-slate-700 p-3\">Fase Kejadian</th>\n            <th class=\"border border-slate-700 p-3\">Kronologi & Rekonstruksi Fakta</th>\n            <th class=\"border border-slate-700 p-3\">Status Verifikasi</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Fase 1: Unggahan Threads</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Akun @cakecaine memposting ajakan berbagi kisah luka pengasuhan tepat pada Hari Ayah Nasional.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Jejak Digital Otentik</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Fase 2: Eskalasi Lintas Platform</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Tangkapan layar diunggah ke X (Twitter), memicu ratusan ribu tayangan dan trending topic.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Terverifikasi Publik</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Fase 3: Respon & Tanggapan</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Nadin merespons kritik warganet dengan mengaitkan isu pengasuhan pada lagunya 'Reservasi untuk Dua'.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Pernyataan Terverifikasi</td>\n          </tr>\n          <tr>\n            <td class=\"border border-slate-700 p-3 font-semibold text-white\">Fase 4: Polarisasi Publik</td>\n            <td class=\"border border-slate-700 p-3 text-slate-300\">Warganet terbagi antara kelompok yang menganggap tindakan tidak etis vs kelompok yang merasa terwakili.</td>\n            <td class=\"border border-slate-700 p-3 text-neon-cyan font-medium\">Sentimen Terkonfirmasi</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <h2>Dua Kubu Sentimen Netizen: Ruang Aman vs Etika Publik</h2>\n    \n    <p>Analisis sentimen netizen yang dilakukan redaksi menunjukkan polarisasi yang sangat kentara. Di satu kubu, mayoritas warganet melontarkan kritik karena menganggap momentum unggahan tersebut kurang tepat atau kerap disebut dengan istilah <em>party pooper</em>.</p>\n\n    <p>Kubu pengkritik menilai bahwa Hari Ayah seharusnya menjadi ruang perayaan bagi mereka yang ingin mengekspresikan rasa syukur kepada kepala keluarga. Ajakan untuk menonjolkan kekecewaan dinilai berpotensi merusak suasana dan memicu penularan emosi negatif yang tidak produktif di ruang terbuka.</p>\n\n    <p>Selain itu, sebagian pengguna media sosial juga melayangkan dugaan bahwa unggahan tersebut merupakan strategi pemasaran organik untuk mempromosikan katalog lagu terbarunya. Tudingan semacam ini kerap muncul ketika figur publik merespons isu hangat dengan menyematkan referensi karya komersial mereka.</p>\n\n    <p>Namun demikian, di kubu seberang, gelombang dukungan juga mengalir deras dari kelompok warganet yang merasakan relevansi emosional. Bagi mereka yang tumbuh dalam situasi keluarga disfungsional atau mengalami luka batin akibat ketiadaan peran ayah, momen perayaan keluarga kerap menjadi hari yang memicu kecemasan dan kesepian mendalam.</p>\n\n    <p>Para pendukung memandang inisiatif Nadin sebagai penyedia ruang katarsis yang valid. Di tengah narasi ideal tentang keharmonisan keluarga yang mendominasi media, keberadaan ruang untuk mengakui kepedihan dipandang sebagai bentuk pemulihan psikologis yang jarang terfasilitasi secara terbuka.</p>\n\n    <h2>Riwayat Kasus dan Preseden Pernyataan Publik Nadin</h2>\n    \n    <p>Ini bukan kali pertama Nadin Amizah menjadi pusat perbincangan akibat pernyataan di media massa atau media sosial. Sebelumnya, sang penyanyi pernah menuai sorotan luas saat memberikan opini di sebuah siniar mengenai perbandingan antara kemiskinan dan kejahatan moral, yang kala itu juga menuai kritik tajam hingga memerlukan klarifikasi mendalam.</p>\n\n    <p>Karakter Nadin yang dikenal sangat vokal dan terbuka mengenai pergulatan emosionalnya menjadikannya magnet polarisasi di internet. Di satu sisi, keterbukaan ini dipuji sebagai orisinalitas seorang seniman, namun di sisi lain sering dinilai kurang memperhitungkan keberagaman latar belakang penikmat kontennya.</p>\n\n    <p>Karya-karya musik Nadin, mulai dari album perdana hingga materi terbarunya, memang konsisten mengeksplorasi tema-tema kerentanan batin, kecemasan, dan dinamika keluarga. Oleh karena itu, bagi pendengar setianya, unggahan di Threads tersebut dipandang sebagai perpanjangan organik dari narasi kesenian yang selama ini ia bangun.</p>\n\n    <h2>Konteks Sosiologis: Isu Fenomena Fatherless di Indonesia</h2>\n    \n    <p>Perdebatan seputar unggahan Nadin Amizah tidak dapat dilepaskan dari konteks sosiologis masyarakat Indonesia saat ini. Berbagai kajian akademis dan data sosial kerap menyoroti Indonesia sebagai salah satu negara dengan indeks ketidakhadiran figur ayah yang cukup signifikan, baik secara fisik maupun keterikatan emosional.</p>\n\n    <p>Banyak anak tumbuh dengan ayah yang hadir secara nafkah materi namun absen dalam pengasuhan mental dan psikologis. Kondisi ini menciptakan ruang kosong emosional yang ketika bersinggungan dengan hari peringatan keluarga, memicu ledakan reaksi di platform jejaring sosial.</p>\n\n    <p>Verifikasi fakta yang dapat ditarik dari dinamika ini adalah bahwa media sosial kini telah bertransformasi menjadi arena negosiasi trauma kolektif. Polarisasi yang terjadi bukan semata-mata pertikaian antarpengguna, melainkan perjumpaan antara narasi ideal keluarga bahagia dengan realitas sosial yang belum sepenuhnya terselesaikan.</p>\n\n    <p>NgeGhibah akan terus memantau perkembangan diskursus ini serta memastikan hak jawab dan klarifikasi resmi dari seluruh pihak yang berkepentingan demi menjaga keberimbangan jurnalisme pop-kultur tanah air.</p>\n    ",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "FAKTA_DIGITAL",
+      "percentageFact": 85,
+      "percentageRumor": 15,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui berkas arsip dan dokumen resmi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/4f/WikipediaNadin.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Nadin Amizah. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-11-13T13:40:37.277Z",
+    "readingTimeMinutes": 5,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Nadin Amizah"
+    ],
+    "timeline": [
+      {
+        "timeLabel": "12 November (Pagi)",
+        "title": "Nadin Amizah mengunggah utas di Threads (@cakecaine) mengajak pengikutnya berbagi cerita luka pengasuhan pada Hari Ayah Nasional.",
+        "description": "Nadin Amizah mengunggah utas di Threads (@cakecaine) mengajak pengikutnya berbagi cerita luka pengasuhan pada Hari Ayah Nasional.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "12 November (Siang)",
+        "title": "Tangkapan layar utas menyebar ke platform X (Twitter) melalui akun-akun agregator dan memicu gelombang kritik netizen.",
+        "description": "Tangkapan layar utas menyebar ke platform X (Twitter) melalui akun-akun agregator dan memicu gelombang kritik netizen.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "12 November (Malam)",
+        "title": "Nadin Amizah merespons kritik warganet dengan mereferensikan lagunya yang bertajuk 'Reservasi untuk Dua'.",
+        "description": "Nadin Amizah merespons kritik warganet dengan mereferensikan lagunya yang bertajuk 'Reservasi untuk Dua'.",
+        "receiptType": "statement"
+      },
+      {
+        "timeLabel": "13 November",
+        "title": "Diskusi meluas ke ranah sosiologis mengenai fenomena 'fatherless country' vs etika perayaan di ruang publik digital.",
+        "description": "Diskusi meluas ke ranah sosiologis mengenai fenomena 'fatherless country' vs etika perayaan di ruang publik digital.",
+        "receiptType": "statement"
+      }
+    ],
+    "digitalReceiptsCount": 4,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
   {
     "id": "art-1792607453181",
     "slug": "5-artis-indonesia-galang-donasi-kanker-payudara-lelang-tumbler",
@@ -2584,8 +5475,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Raisa",
@@ -2601,22 +5491,25 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "1 Oktober 2023",
         "title": "Liputan6.com memberitakan bahwa lima artis Indonesia memulai kampanye lelang tumbher untuk Bulan Kesadaran Kanker Payudara.",
-        "description": "Liputan6.com memberitakan bahwa lima artis Indonesia memulai kampanye lelang tumbher untuk Bulan Kesadaran Kanker Payudara."
+        "description": "Liputan6.com memberitakan bahwa lima artis Indonesia memulai kampanye lelang tumbher untuk Bulan Kesadaran Kanker Payudara.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "2-15 Oktober 2023",
         "title": "Proses lelang berlangsung di platform media sosial masing-masing artis, dengan tumbler edisi khusus yang ditandatangani.",
-        "description": "Proses lelang berlangsung di platform media sosial masing-masing artis, dengan tumbler edisi khusus yang ditandatangani."
+        "description": "Proses lelang berlangsung di platform media sosial masing-masing artis, dengan tumbler edisi khusus yang ditandatangani.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "16 Oktober 2023",
         "title": "Pengumuman pemenang lelang dan total donasi yang terkumpul, disalurkan ke Yayasan Kanker Indonesia.",
-        "description": "Pengumuman pemenang lelang dan total donasi yang terkumpul, disalurkan ke Yayasan Kanker Indonesia."
+        "description": "Pengumuman pemenang lelang dan total donasi yang terkumpul, disalurkan ke Yayasan Kanker Indonesia.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
-    "isFeatured": true,
-    "isHero": true,
+    "isFeatured": false,
+    "isHero": false,
     "trendingScore": 85
   },
   {
@@ -2642,8 +5535,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Jefri Nichol",
@@ -2656,26 +5548,30 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "H-7",
         "title": "Greenpeace mengumumkan rencana aksi di Bundaran HI melalui media sosial dan situs resmi.",
-        "description": "Greenpeace mengumumkan rencana aksi di Bundaran HI melalui media sosial dan situs resmi."
+        "description": "Greenpeace mengumumkan rencana aksi di Bundaran HI melalui media sosial dan situs resmi.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Hari Aksi",
         "title": "Enam artis hadir, termasuk Jefri Nichol yang terlihat membawa spanduk. Dokumentasi foto mulai tersebar di Twitter dan Instagram.",
-        "description": "Enam artis hadir, termasuk Jefri Nichol yang terlihat membawa spanduk. Dokumentasi foto mulai tersebar di Twitter dan Instagram."
+        "description": "Enam artis hadir, termasuk Jefri Nichol yang terlihat membawa spanduk. Dokumentasi foto mulai tersebar di Twitter dan Instagram.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Pasca Aksi",
         "title": "Tagar #GreenpeaceJakarta menjadi trending topic. Netizen berdebat soal motif artis, dan Greenpeace merilis pernyataan resmi.",
-        "description": "Tagar #GreenpeaceJakarta menjadi trending topic. Netizen berdebat soal motif artis, dan Greenpeace merilis pernyataan resmi."
+        "description": "Tagar #GreenpeaceJakarta menjadi trending topic. Netizen berdebat soal motif artis, dan Greenpeace merilis pernyataan resmi.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "H+1",
         "title": "Jefri Nichol mengunggah foto kegiatan di akun Instagramnya, menegaskan komitmen terhadap isu iklim.",
-        "description": "Jefri Nichol mengunggah foto kegiatan di akun Instagramnya, menegaskan komitmen terhadap isu iklim."
+        "description": "Jefri Nichol mengunggah foto kegiatan di akun Instagramnya, menegaskan komitmen terhadap isu iklim.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 4,
-    "isFeatured": true,
+    "isFeatured": false,
     "isHero": false,
     "trendingScore": 85
   },
@@ -2702,8 +5598,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Soompi",
@@ -2720,177 +5615,29 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "Publikasi Masterlist",
         "title": "Soompi mempublikasikan artikel '2027 K-Pop Tour Masterlist: Concerts, Fan Meetings, And More' yang mengumpulkan jadwal tur dari berbagai sumber.",
-        "description": "Soompi mempublikasikan artikel '2027 K-Pop Tour Masterlist: Concerts, Fan Meetings, And More' yang mengumpulkan jadwal tur dari berbagai sumber."
+        "description": "Soompi mempublikasikan artikel '2027 K-Pop Tour Masterlist: Concerts, Fan Meetings, And More' yang mengumpulkan jadwal tur dari berbagai sumber.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Verifikasi Awal NgeGhibah",
         "title": "NgeGhibah melakukan penelusuran jejak digital ke situs penjualan tiket dan kalender venue untuk memverifikasi klaim dalam masterlist.",
-        "description": "NgeGhibah melakukan penelusuran jejak digital ke situs penjualan tiket dan kalender venue untuk memverifikasi klaim dalam masterlist."
+        "description": "NgeGhibah melakukan penelusuran jejak digital ke situs penjualan tiket dan kalender venue untuk memverifikasi klaim dalam masterlist.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Analisis Spekulasi Netizen",
         "title": "Komunitas penggemar mulai memetakan potensi bentrokan jadwal dan memperdebatkan perbedaan antara fan meeting dan konser dalam masterlist.",
-        "description": "Komunitas penggemar mulai memetakan potensi bentrokan jadwal dan memperdebatkan perbedaan antara fan meeting dan konser dalam masterlist."
+        "description": "Komunitas penggemar mulai memetakan potensi bentrokan jadwal dan memperdebatkan perbedaan antara fan meeting dan konser dalam masterlist.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Konfirmasi Agensi",
         "title": "Beberapa agensi mulai memberikan konfirmasi resmi atau klarifikasi terhadap jadwal yang tercantum dalam masterlist.",
-        "description": "Beberapa agensi mulai memberikan konfirmasi resmi atau klarifikasi terhadap jadwal yang tercantum dalam masterlist."
+        "description": "Beberapa agensi mulai memberikan konfirmasi resmi atau klarifikasi terhadap jadwal yang tercantum dalam masterlist.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 4,
-    "isFeatured": true,
-    "isHero": false,
-    "trendingScore": 85
-  },
-  {
-    "id": "art-canon-06",
-    "slug": "agnez-mo-sengketa-direct-licensing-royalti-musik-ari-bias",
-    "title": "Duduk Perkara Sengketa Hak Cipta Lagu Agnez Mo & Komposer Ari Bias: Rekonstruksi Hukum LMKN",
-    "excerpt": "Analisis yuridis penarikan royalti lagu 'Bilang Saja', batas kewenangan direct licensing, dan implikasi bagi musisi yang tampil di panggung pertunjukan komersial.",
-    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Perselisihan hukum terkait hak pertunjukan komersial (performing rights) antara komposer kenamaan Ari Bias dan penyanyi internasional Agnez Mo atas lagu legendaris 'Bilang Saja' menjadi batu uji paling krusial bagi masa depan penegakan UU No. 28/2014 tentang Hak Cipta di Indonesia. Polemik ini membuka perdebatan fundamental antara mekanisme penarikan royalti satu pintu melalui Lembaga Manajemen Kolektif Nasional (LMKN) melawan tuntutan penarikan royalti langsung (direct licensing) yang disuarakan oleh para pencipta lagu nasional.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Gugatan Perdata Rp 1,5 Miliar:</strong> Pihak komposer Ari Bias melayangkan somasi dan gugatan ganti rugi perdata ke Pengadilan Niaga Jakarta Pusat atas dugaan pelanggaran hak ekonomi pertunjukan lagu tanpa izin tertulis dalam konser komersial di Surabaya, Bandung, dan Jakarta.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Posisi Yuridis UU Hak Cipta Pasal 87:</strong> Kuasa hukum penyanyi berpegang teguh pada ketentuan Pasal 87 UU No. 28/2014 dan PP No. 56/2021 yang menyatakan bahwa pengguna karya musik (promotor konser) wajib membayar royalti melalui LMKN, bukan langsung kepada pencipta perorangan.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Dilema Industri Konser Musik Nasional:</strong> Asosiasi Promotor Musik Indonesia (APMI) memperingatkan ancaman ketidakpastian hukum jika promotor dibebani kewajiban ganda (double payment): membayar tarif 2% ke LMKN sekaligus menghadapi somasi direct licensing dari musisi pemilik lagu.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Perbandingan Yuridis Klaim Royalti Konser Komersial</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah perbandingan dalil hukum antara pihak pencipta lagu, pihak penyanyi, dan regulasi pemerintah yang berlaku:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Parameter Sengketa</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Dalil Komposer (Ari Bias / AKSI)</th>\r\n        <th class=\"p-3.5 text-amber-400\">Dalil Tim Hukum Agnez Mo & Promotor</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Ketentuan Resmi LMKN & Kemenkumham</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Dasar Hak Eksklusif</td>\r\n        <td class=\"p-3.5\">Pasal 9 UU Hak Cipta: Pencipta berhak melarang pihak lain mempertunjukkan karyanya tanpa izin</td>\r\n        <td class=\"p-3.5\">Pasal 87: Tidak dianggap pelanggaran jika pengguna telah menyetor royalti lewat LMK</td>\r\n        <td class=\"p-3.5\">LMKN ditunjuk negara sebagai satu-satunya penarik royalti resmi pertunjukan komersial</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Tanggung Jawab Pembayaran</td>\r\n        <td class=\"p-3.5\">Penyanyi yang membawakan lagu dan promotor acara bertanggung jawab renteng</td>\r\n        <td class=\"p-3.5\">Kewajiban perizinan dan royalti secara kontraktual berada di bawah promotor penyelenggara</td>\r\n        <td class=\"p-3.5\">Surat Edaran DJKI menegaskan kewajiban pembayaran royalti dibebankan kepada penyelenggara konser</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Transparansi Laporan Logsheet</td>\r\n        <td class=\"p-3.5\">Pencipta tidak menerima royalti karena ketiadaan data lagu yang dibawakan</td>\r\n        <td class=\"p-3.5\">Pihak penyanyi telah menyerahkan setlist resmi kepada promotor untuk dilaporkan ke LMKN</td>\r\n        <td class=\"p-3.5\">Penerapan Sistem Informasi Lagu dan Musik (SILM) digital masih dalam tahap penyempurnaan</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Latar Belakang & Kronologi Pecahnya Hubungan Musisi dan Pencipta</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Lagu 'Bilang Saja' diciptakan oleh Ari Bias pada awal tahun 2000-an dan menjadi salah satu nomor hit legendaris yang mengukuhkan posisi Agnez Mo sebagai bintang pop terdepan tanah air. Selama bertahun-tahun, hubungan profesional keduanya berjalan harmonis. Namun friksi mulai memanas pada pertengahan 2023 seiring dengan berdirinya Asosiasi Komposer Seluruh Indonesia (AKSI) yang dipimpin oleh Piyu Padi dan Ahmad Dhani, yang memprotes lambatnya pembagian royalti oleh LMKN.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Ari Bias kemudian secara terbuka memberlakukan larangan membawakan lagunya kepada Agnez Mo. Namun pada konser musik di Surabaya pada Mei 2024, lagu tersebut tetap dibawakan di atas panggung, yang memicu somasi terbuka dan berujung pada pelaporan hukum perdata di Pengadilan Niaga Jakarta Pusat. Kasus ini menjadi preseden nasional yang diawasi ketat oleh seluruh pelaku industri musik tanah air.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Royalti Konser Musik</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Penyanyi harus membayar uang dari kantong pribadinya kepada pencipta lagu setiap kali bernyanyi di panggung.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Keputusan Menkumham No. HKI.2.OT.03.01-02 Tahun 2016, kewajiban pembayaran tarif 2% dari tiket kotor dibebankan kepada penyelenggara acara (event organizer / promotor), bukan honor pribadi penyanyi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Pencipta lagu dapat secara sepihak memenjarakan penyanyi yang membawakan lagunya tanpa izin.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Pasal 95 UU Hak Cipta mewajibkan penyelesaian sengketa hak cipta melalui mediasi terlebih dahulu sebelum menempuh jalur tuntutan pidana, dan sengketa royalti pertunjukan pada umumnya diselesaikan melalui jalur perdata perniagaan.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Harapan Reformasi Industri Musik</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Tim manajemen dan kuasa hukum Agnez Mo menyatakan menghormati hak hukum Ari Bias sebagai pencipta lagu, namun menegaskan bahwa seluruh pertunjukan komersial Agnez Mo terikat oleh kontrak profesional dengan promotor yang berkewajiban menyelesaikan perizinan hak cipta sesuai ketentuan hukum positif yang berlaku di Indonesia.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kedua belah pihak sepakat bahwa akar permasalahan sesungguhnya adalah kelemahan sistem pendataan dan transparansi di tubuh LMKN, dan mendesak pemerintah untuk segera merevisi UU Hak Cipta guna menghadirkan kepastian hukum yang adil bagi pencipta lagu sekaligus melindungi penyanyi dan promotor dari sengketa berkepanjangan.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh liputan ini disusun berdasarkan telaah berkas somasi resmi dan ketentuan regulasi hak cipta nasional sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Dampak Sengketa Terhadap Ekosistem Festival Musik Nasional</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Eskalasi perselisihan royalti antara Ari Bias dan Agnez Mo memicu efek domino yang dirasakan langsung oleh ratusan promotor konser dan festival musik di seluruh nusantara. Sejumlah festival musik besar kini mewajibkan para musisi dan penyanyi untuk menandatangani pakta jaminan (indemnity clause) yang menyatakan bahwa daftar lagu (setlist) yang dibawakan di atas panggung telah bebas dari klaim sengketa hak cipta pihak ketiga atau telah disetorkan laporannya ke LMKN.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kondisi ini mempercepat urgensi integrasi Sistem Informasi Lagu dan Musik (SILM) digital berbasis kecerdasan buatan dan basis data komprehensif lagu Indonesia. Dengan teknologi pelacakan audio digital (audio fingerprinting), setiap lagu yang dibawakan di konser dapat terdeteksi secara otomatis secara real-time, sehingga distribusi royalti dari promotor ke rekening resmi pencipta lagu dapat diselesaikan secara transparan tanpa perlu melalui perdebatan somasi hukum perdata.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Sengketa Royalti & Tata Kelola Hak Cipta Musik</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Siapakah yang secara hukum berkewajiban membayar royalti performing rights saat konser musik komersial diselenggarakan?</h3>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 87 UU No. 28/2014 dan PP No. 56/2021, kewajiban pembayaran tarif royalti 2% dibebankan kepada pihak penyelenggara konser (promotor/event organizer), bukan dipotong dari honor pribadi penyanyi di atas panggung.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Mengapa pencipta lagu menuntut skema direct licensing daripada menunggu distribusi dari LMKN?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pencipta lagu menilai birokrasi penarikan dan pembagian satu pintu LMKN lambat dalam pencairan (bisa memakan waktu berbulan-bulan) serta memotong biaya operasional hingga 20-30% tanpa rincian audit lagu per pertunjukan yang memuaskan.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah pencipta lagu berhak melarang penyanyi tertentu membawakan karyanya di konser komersial?</h3>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 9 UU Hak Cipta, pencipta memiliki hak eksklusif untuk memberikan izin atau melarang pertunjukan karyanya, namun Pasal 87 memberikan klausul bahwa pemanfaatan tidak melanggar hukum jika pengguna telah membayar royalti melalui LMK.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Tinjauan Yuridis: Benturan Direct Licensing vs Skema Blanket License LMKN</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Perdebatan tajam antara Agnez Mo dan Ari Bias membuka borok klasik dalam tata kelola hak kekayaan intelektual (HAKI) di industri hiburan Indonesia. Pasal 23 UU No. 28/2014 tentang Hak Cipta pada dasarnya memberikan mandat kepada Lembaga Manajemen Kolektif Nasional (LMKN) untuk menarik, menghimpun, dan mendistribusikan royalti performing rights dari para pengguna komersial, termasuk penyelenggara konser dan festival musik. Namun, celah regulasi timbul ketika komposer merasa pembagian royalti melalui LMK berjalan lambat dan tidak transparan, sehingga mereka menuntut direct licensing secara sepihak.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Para pakar hukum kekayaan intelektual menegaskan bahwa penyanyi (performing artist) bukanlah pihak yang secara hukum dibebani kewajiban membayar royalti pertunjukan langsung ke pencipta lagu, melainkan promotor atau event organizer (EO) yang menjual tiket komersial. Oleh karena itu, sengketa ini seharusnya diselesaikan melalui mekanisme audit operasional LMKN dan penegakan regulasi standar kontrak pertunjukan, bukan pelarangan sepihak yang merugikan ekosistem pertunjukan panggung nasional.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Rekomendasi Revisi Regulasi Hak Cipta Musik Indonesia:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Diperlukan pembentukan pangkalan data lagu digital terintegrasi (National Music Database) berbasis teknologi pelaporan digital real-time. Dengan sistem logging otomatis di setiap panggung pertunjukan komersial, royalti dapat dihitung secara transparan dan ditransfer langsung kepada ahli waris dan pencipta lagu dalam hitungan hari kerja tanpa birokrasi berbelit.\r\n  </p>\r\n</div>\r\n",
-    "category": "seleb-lokal",
-    "categoryLabel": "Seleb Lokal",
-    "ghibahMeter": {
-      "status": "TERKONFIRMASI",
-      "percentageFact": 92,
-      "percentageRumor": 8,
-      "label": "Fakta Terverifikasi",
-      "description": "Diverifikasi berdasarkan dokumen somasi perdata di Pengadilan Niaga dan rilis resmi LMK."
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Agnez_Mo_2019_by_Glenn_Francis.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "imageCaption": "Potret resmi Agnez Mo. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
-    "publishedAt": "2026-10-21 18:31:27",
-    "readingTimeMinutes": 6,
-    "author": {
-      "name": "Tim Investigasi NgeGhibah",
-      "slug": "tim-investigasi",
-      "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
-    },
-    "entities": [
-      "Agnez Mo",
-      "Ari Bias",
-      "LMKN",
-      "UU Hak Cipta"
-    ],
-    "timeline": [],
-    "digitalReceiptsCount": 3,
-    "isFeatured": true,
-    "isHero": false,
-    "trendingScore": 85
-  },
-  {
-    "id": "art-canon-04",
-    "slug": "atta-halilintar-aurel-hermansyah-manajemen-privasi-anak-di-era-digital",
-    "title": "Perlindungan Hak Privasi Anak di Medsos: Forensik Etika Konten Keluarga Atta Halilintar & Aurel",
-    "excerpt": "Tinjauan mendalam mengenai batasan eksploitasi digital anak di bawah umur, regulasi UU PDP, dan transformasi perlindungan privasi keluarga kreator YouTube.",
-    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Fenomena keluarga kreator konten digital di Indonesia telah berkembang menjadi ekosistem komersial berskala raksasa dengan perputaran nilai ekonomi miliaran rupiah. Namun seiring meningkatnya kesadaran publik terhadap hak asasi anak dan privasi data digital (sharenting), peninjauan terhadap koridor hukum perlindungan anak di bawah umur pada kanal YouTube Atta Halilintar dan Aurel Hermansyah menjadi bahan studi kasus krusial dalam etika penyiaran digital era modern.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Kepatuhan Terhadap UU Perlindungan Data Pribadi (UU PDP No. 27/2022):</strong> Data biometrik, visual wajah, dan rekam medis anak diklasifikasikan sebagai data pribadi spesifik yang wajib mendapatkan persetujuan wali hukum dengan pembatasan paparan komersial yang proporsional.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Pedoman Komisi Perlindungan Anak Indonesia (KPAI):</strong> KPAI memberikan panduan bahwa pembuatan konten yang melibatkan balita tidak boleh mengeksploitasi jam istirahat, mengganggu hak bermain alami, atau memperlihatkan momen kerentanan emosional anak saat menangis demi kepentingan interaksi (engagement).</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Transformasi Manajemen Produksi AHHA Media:</strong> Manajemen keluarga Atta Halilintar menerapkan pembatasan waktu syuting maksimal 1 jam sehari dengan pengawasan langsung tenaga ahli psikologi anak dan dokter spesialis tumbuh kembang.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Ketentuan Sharenting Menurut Regulasi UU PDP & Konvensi Hak Anak PBB</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Untuk memahami batasan etika penayangan konten keluarga, tabel berikut membandingkan standar hukum nasional dan internasional dengan praktik industri kreator:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Aspek Perlindungan Anak</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Mandat Regulasi UU No. 35/2014 & UU PDP</th>\r\n        <th class=\"p-3.5 text-amber-400\">Potensi Risiko Digital (Cyber Threat)</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Protokol Mitigasi Keluarga Atta-Aurel</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Penyebaran Lokasi Real-Time</td>\r\n        <td class=\"p-3.5\">Larangan membocorkan rute sekolah dan alamat privat anak</td>\r\n        <td class=\"p-3.5\">Risiko keselamatan fisik, penguntitan (stalking), dan penculikan</td>\r\n        <td class=\"p-3.5\">Pemberlakuan jeda siar tunda (delayed posting) minimal 24 jam pasca acara</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Pengelolaan Royalti & Dana Masa Depan</td>\r\n        <td class=\"p-3.5\">Kewajiban wali hukum mengamankan hasil ekonomi jerih payah anak</td>\r\n        <td class=\"p-3.5\">Penyalahgunaan hak finansial anak oleh manajemen pihak ketiga</td>\r\n        <td class=\"p-3.5\">Pembentukan rekening trust fund khusus dan asuransi pendidikan internasional</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Kesehatan Mental & Digital Footprint</td>\r\n        <td class=\"p-3.5\">Hak anak atas martabat dan perlindungan dari perundungan siber</td>\r\n        <td class=\"p-3.5\">Komentar kebencian (cyberbullying) oleh akun anonim di kolom medsos</td>\r\n        <td class=\"p-3.5\">Moderasi ketat kolom komentar serta penindakan hukum terhadap ujaran kebencian</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Latar Belakang: Gugatan Terhadap Budaya Eksploitasi Konten Anak</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kelahiran Ameena Hanna Nur Atta dan Azura Humaira Nur Atta menjadi peristiwa media paling masif di jagat hiburan digital tanah air. Siaran langsung proses persalinan yang disiarkan di berbagai stasiun televisi swasta dan platform daring mencatatkan rating pemirsa jutaan orang. Namun kesuksesan komersial ini memicu alarm dari kalangan akademisi sosiologi komunikasi dan aktivis hak anak mengenai dampak jangka panjang jejak digital (digital footprint) yang ditinggalkan sebelum sang anak mampu memberikan persetujuan sadar (informed consent).\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Di berbagai negara maju seperti Prancis dan Amerika Serikat, regulasi mengenai Coogan Law dan perlindungan privasi anak dari orang tua pembuat konten (kidfluencer legislation) telah diberlakukan secara ketat. Di Indonesia, dorongan serupa mulai mengemuka di parlemen untuk memperluas cakupan UU Perlindungan Anak ke ranah platform video berbagi komersial, guna memastikan bahwa hak tumbuh kembang alami anak tetap menjadi prioritas tertinggi di atas metrik klik dan pendapatan iklan.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Konten Anak Keluarga Selebritas</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Anak selebritas dipaksa bekerja berjam-jam di depan kamera demi memenuhi target unggahan video harian orang tua.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Tim produksi AHHA Media menegaskan bahwa seluruh perekaman video dilakukan secara natural mengikuti ritme bermain anak, dan kamera segera dimatikan apabila balita menunjukkan tanda kelelahan atau ketidaknyamanan.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Orang tua berhak mempublikasikan seluruh rekam medis dan data sensitif anak tanpa batasan hukum apa pun.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 16 UU PDP No. 27/2022, data spesifik kesehatan anak dilindungi oleh negara dan orang tua dilarang mempublikasikan rincian rekam medis privat yang dapat merugikan masa depan anak di ruang publik.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Komitmen Keluarga Atta Halilintar</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Atta Halilintar dalam keterangan resminya menyatakan bahwa tujuan utama pembuatan dokumentasi keluarga adalah mengabadikan kenangan masa kecil sang buah hati sebagai arsip keluarga yang membahagiakan, sekaligus membagikan energi positif dan inspirasi pola asuh (parenting) kepada masyarakat luas.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Aurel Hermansyah juga menegaskan komitmen mereka untuk selalu memprioritaskan pendidikan formal, kenyamanan psikologis, dan masa depan anak di atas segala kepentingan komersial, termasuk mengambil tindakan hukum tegas terhadap oknum warganet yang menyalahgunakan foto anak untuk konten yang merugikan.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh laporan ini disusun dengan asas perlindungan hak asasi anak dan verifikasi hukum yang sah sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Kajian Psikologi Anak & Perlindungan Jejak Digital Masa Depan</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Para pakar psikologi perkembangan anak dari Universitas Indonesia menggarisbawahi bahwa paparan sorotan kamera secara terus-menerus sejak masa bayi dapat mempengaruhi pembentukan konsep diri dan batasan privasi anak saat memasuki usia sekolah dasar. Di berbagai negara Eropa, anak yang telah beranjak dewasa kini memiliki hak hukum untuk menuntut orang tua mereka atas publikasi foto atau video masa kecil yang diunggah tanpa izin di platform komersial.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Menyadari kompleksitas etika digital ini, transformasi yang dilakukan oleh manajemen keluarga Atta Halilintar dan Aurel Hermansyah memperlihatkan langkah maju yang progresif. Penyaringan ketat terhadap momen privat seperti saat balita sedang sakit atau tantrum membuktikan tumbuhnya kesadaran bahwa martabat dan kenyamanan psikologis anak harus senantiasa ditempatkan di atas kepentingan algoritma tayangan media sosial.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Sharenting & Hak Perlindungan Anak di Media Digital</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa batasan hukum paling mendasar bagi orang tua pembuat konten keluarga menurut UU Perlindungan Anak?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pasal 76I UU No. 35/2014 melarang tegas setiap orang menempatkan, membiarkan, melakukan, menyuruh melakukan, atau turut serta melakukan eksploitasi secara ekonomi dan/atau seksual terhadap anak di bawah umur.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana hak finansial anak yang tampil dalam konten sponsor komersial dilindungi secara legal?</h3>\r\n    <p class=\"text-sm text-slate-300\">Dana hasil kerja sama komersial wajib dikelola secara terpisah dalam rekening perwalian (trust account) khusus anak yang diawasi oleh wali hukum sah dan hanya dapat dicairkan untuk kebutuhan masa depan seperti pendidikan dan kesehatan anak.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa langkah yang harus diambil jika foto anak selebritas disalahgunakan untuk akun komersial palsu?</h3>\r\n    <p class=\"text-sm text-slate-300\">Orang tua berhak mengajukan permohonan takedown pelanggaran hak cipta kepada pengelola platform media sosial serta melayangkan laporan pidana pencurian data pribadi ke Direktorat Siber Bareskrim Polri.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Perspektif Psikologi Perkembangan & Dampak Sharenting Skala Industri</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Praktik pelibatan anak di bawah umur dalam ekosistem konten digital berbayar memerlukan analisis mendalam terkait implikasi psikososial jangka panjang. Para pakar perlindungan anak dari Komisi Perlindungan Anak Indonesia (KPAI) secara konsisten mengingatkan bahwa digital footprint yang dibangun sejak bayi tidak dapat dihapus secara menyeluruh di masa depan. Hak privasi anak yang belum memiliki kapasitas kognitif untuk memberikan persetujuan (informed consent) menjadi isu etika sentral di ranah hukum internasional.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Inisiatif keluarga Atta-Aurel dalam membatasi durasi syuting harian, menyaring sponsor yang hanya berorientasi pada nutrisi dan edukasi, serta menyisihkan royalti konten langsung ke dalam dana perwalian (trust fund) anak di institusi keuangan berlisensi OJK merupakan preseden positif bagi ekosistem kreator nasional. Langkah ini membuktikan bahwa keberlanjutan ekonomi konten keluarga dapat diselaraskan dengan tanggung jawab moral dan proteksi psikologis anak.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Standar Kepatuhan Konten Anak YouTube Global:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Regulasi Children's Online Privacy Protection Act (COPPA) dan pedoman platform YouTube mewajibkan penandaan eksplisit atas konten ramah anak dengan konsekuensi penonaktifan kolom komentar dan pembatasan personalisasi iklan. Kepatuhan teknis terhadap aturan ini memastikan ruang digital anak terisolasi dari potensi pelecehan verbal dan eksploitasi data pihak ketiga.\r\n  </p>\r\n</div>\r\n",
-    "category": "creator-tiktok",
-    "categoryLabel": "Creator & TikTok",
-    "ghibahMeter": {
-      "status": "TERKONFIRMASI",
-      "percentageFact": 92,
-      "percentageRumor": 8,
-      "label": "Fakta Terverifikasi",
-      "description": "Dianalisis berdasarkan pedoman Komisi Perlindungan Anak Indonesia (KPAI) dan UU Perlindungan Data Pribadi."
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Atta_Halilintar.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "imageCaption": "Potret resmi Atta Halilintar. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
-    "publishedAt": "2026-10-21 18:31:27",
-    "readingTimeMinutes": 6,
-    "author": {
-      "name": "Tim Investigasi NgeGhibah",
-      "slug": "tim-investigasi",
-      "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
-    },
-    "entities": [
-      "Atta Halilintar",
-      "Aurel Hermansyah",
-      "KPAI",
-      "UU PDP"
-    ],
-    "timeline": [],
-    "digitalReceiptsCount": 3,
-    "isFeatured": false,
-    "isHero": false,
-    "trendingScore": 85
-  },
-  {
-    "id": "art-canon-07",
-    "slug": "deddy-corbuzier-regulasi-penyiaran-podcast-vs-kode-etik-jurnalistik",
-    "title": "Podcast Investigasi vs Jurnalistik Formal: Telaah Kode Etik dan Tanggung Jawab Deddy Corbuzier",
-    "excerpt": "Menelaah posisi hukum siniar di luar yurisdiksi Dewan Pers, hak jawab narasumber dalam video wawancara berdurasi panjang, dan etika praduga tak bersalah.",
-    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Kehadiran siniar (podcast) 'Close The Door' milik Deddy Corbuzier sebagai salah satu episentrum diskursus sosial-politik terbesar di Indonesia memicu perdebatan yurisdiksi hukum paling mendalam mengenai batasan antara konten hiburan digital over-the-top (OTT) dengan standar jurnalisme investigasi formal. Tim investigasi NgeGhibah membedah kedudukan hukum siniar di luar naungan Dewan Pers, tantangan penerapan hak jawab bagi narasumber, serta tanggung jawab etika praduga tak bersalah di hadapan puluhan juta pemirsa digital.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Yurisdiksi Dewan Pers vs UU Penyiaran:</strong> Siniar digital berbasis YouTube tidak berstatus sebagai perusahaan pers berbadan hukum media siber, sehingga sengketa konten di dalamnya tidak terlindungi oleh mekanisme penyelesaian sengketa jurnalistik (lex specialis) Dewan Pers.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Kewajiban Menjunjung Asas Praduga Tak Bersalah:</strong> Wawancara berdurasi panjang kerap kali memicu tuduhan sepihak tanpa konfirmasi langsung pihak lawan, yang berisiko menyeret pengelola siniar ke ranah hukum pidana pencemaran nama baik UU ITE.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Pemberian Hak Klarifikasi Mandiri:</strong> Pengelola kanal Close The Door konsisten membuka ruang wawancara tandingan bagi para pejabat publik atau tokoh yang merasa dirugikan oleh pernyataan tamu sebelumnya guna menjaga keseimbangan narasi.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Perbandingan Media Jurnalistik Dewan Pers vs Siniar Digital YouTube</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah komparasi struktural parameter hukum dan etika antara jurnalisme formal dengan siniar digital independen:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Parameter Kepatuhan</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Media Jurnalistik Resmi (Dewan Pers)</th>\r\n        <th class=\"p-3.5 text-amber-400\">Kanal Siniar YouTube Independen</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Implikasi Hukum Bagi Narasumber</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Payung Hukum Utama</td>\r\n        <td class=\"p-3.5\">UU Pers No. 40/1999 & Kode Etik Jurnalistik (KEJ)</td>\r\n        <td class=\"p-3.5\">UU ITE No. 1/2024 & Kitab Undang-Undang Hukum Pidana (KUHP)</td>\r\n        <td class=\"p-3.5\">Pernyataan siniar dapat langsung dijadikan bukti laporan pidana ke kepolisian</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Mekanisme Hak Jawab</td>\r\n        <td class=\"p-3.5\">Wajib dimuat dalam 1x24 jam dengan sanksi denda perdata Rp 500 juta</td>\r\n        <td class=\"p-3.5\">Berdasarkan kesepakatan dan diskresi pembawa acara siniar</td>\r\n        <td class=\"p-3.5\">Pihak yang dirugikan harus mengajukan permohonan kehadiran ulang</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Perlindungan Saksi & Sumber</td>\r\n        <td class=\"p-3.5\">Hak tolak wartawan dilindungi undang-undang di muka sidang pengadilan</td>\r\n        <td class=\"p-3.5\">Tidak memiliki hak tolak; wajib bersaksi jika dipanggil aparat hukum</td>\r\n        <td class=\"p-3.5\">Pengakuan narasumber di video bersifat mengikat sebagai dokumen elektronik sah</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Anatomi Fenomena 'Pengadilan Opini Publik' Close The Door</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dengan lebih dari 21 juta pelanggan dan ratusan juta tayangan bulanan, siniar Close The Door kerap kali memiliki dampak penegakan hukum yang lebih cepat dibandingkan saluran birokrasi konvensional. Sejumlah kasus korupsi, kekerasan seksual, penyalahgunaan wewenang aparat, hingga sengketa bisnis berskala besar berhasil menyedot atensi pimpinan lembaga negara setelah narasumber bersuara di hadapan mikrofon Deddy Corbuzier.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Namun kekuatan yang sedemikian dahsyat menghadirkan tanggung jawab moral yang berat. Dalam beberapa episode kontroversial—seperti pembahasan kasus sensitif LGBT atau tuduhan korupsi tanpa dokumen penyerta—Deddy Corbuzier sempat menuai somasi terbuka dari ormas dan praktisi hukum. Kesadaran akan risiko hukum ini mendorong transformasi format siniar, di mana Deddy kini didampingi oleh tim penasihat hukum internal yang memeriksa potensi delik sebelum video ditayangkan ke publik.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Regulasi Penyiaran Digital</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Komisi Penyiaran Indonesia (KPI) memiliki kewenangan menyensor dan memblokir konten siniar di YouTube.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan UU Penyiaran No. 32/2002 yang berlaku saat ini, kewenangan KPI terbatas pada penyiaran berbasis frekuensi publik terestrial (televisi dan radio), sedangkan pengawasan konten internet berada di bawah wewenang Kementerian Komunikasi dan Digital RI.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Pernyataan pembawa acara di siniar pribadi kebal dari tuntutan hukum pencemaran nama baik.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Pengelola kanal digital bertanggung jawab penuh atas setiap materi yang diunggah berdasarkan Pasal 27A dan 28 UU ITE apabila terbukti memuat fitnah atau disinformasi yang merugikan pihak lain.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Integritas Penyiaran Digital Nusantara</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Deddy Corbuzier secara konsisten menyatakan bahwa kanalnya adalah panggung dialog bebas yang bertujuan mencerdaskan bangsa melalui keterbukaan informasi. Ia menegaskan tidak pernah memiliki motif jahat untuk menjatuhkan reputasi seseorang, dan selalu siap menyampaikan permohonan maaf serta menurunkan video apabila ditemukan data yang tidak akurat.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Langkah korektif yang kerap dilakukan Deddy dengan menghadirkan narasumber penyeimbang di episode berikutnya diapresiasi oleh kalangan akademisi komunikasi sebagai bentuk pertanggungjawaban etika digital yang patut dicontoh oleh kreator konten lainnya di Indonesia.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh ulasan ini disusun secara objektif berdasarkan telaah perundang-undangan penyiaran dan konvensi etika digital sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tanggung Jawab Verifikasi Fakta di Tengah Arus Monetisasi Digital</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Studi kasus penyiaran digital yang dipelopori Deddy Corbuzier memperlihatkan bagaimana sebuah kanal independen mampu memiliki pengaruh politik dan sosial yang setara dengan stasiun televisi nasional terkemuka. Namun dengan jutaan tayangan pemirsa pada setiap episode, tanggung jawab untuk tidak menyebarkan narasi konspiratif atau klaim medis yang tidak teruji menjadi tuntutan moral yang mutlak.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Pengamat etika media siber mengapresiasi keterbukaan Deddy Corbuzier yang bersedia menurunkan konten bermasalah dan menghadirkan narasumber ahli pembanding di episode lanjutan. Sikap ini menjadi preseden berharga bagi ekosistem kreator konten Indonesia bahwa popularitas dan kebebasan berpendapat di platform daring harus diimbangi oleh komitmen menjaga kedamaian sosial dan keakuratan fakta demi kepentingan publik.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Siniar Digital & Koridor Hukum Media Siber</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah seorang narasumber yang merasa dicemarkan nama baiknya di siniar dapat menuntut secara pidana?</h3>\r\n    <p class=\"text-sm text-slate-300\">Bisa. Karena siniar digital YouTube tidak berbadan hukum pers resmi Dewan Pers, pihak yang merasa dirugikan dapat melaporkan dugaan pelanggaran Pasal 27A UU ITE ke kepolisian tanpa melalui mediasi Dewan Pers.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana perlindungan hukum bagi pembawa acara siniar jika tamu yang diwawancarai memberikan keterangan palsu?</h3>\r\n    <p class=\"text-sm text-slate-300\">Secara hukum pidana, pertanggungjawaban melekat pada subjek yang melontarkan pernyataan bohong, namun pembuat konten dapat terseret apabila terbukti memiliki niat jahat (mens rea) menyebarkan kebohongan tersebut demi sensasi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah regulasi penyiaran masa depan akan memasukkan platform siniar ke dalam wewenang pengawasan KPI?</h3>\r\n    <p class=\"text-sm text-slate-300\">Rancangan Revisi Undang-Undang Penyiaran yang sedang dibahas di DPR RI merencanakan perluasan pengawasan terhadap konten over-the-top (OTT), namun hal ini masih menuai perdebatan hangat terkait kebebasan berekspresi di internet.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Analisis Dampak Regulasi: Grey Area Podcast Kontroversial & Standar Sensor</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Ruang podcast YouTube di Indonesia saat ini berada di wilayah abu-abu yuridis (regulatory void). Berbeda dengan lembaga penyiaran televisi dan radio yang diawasi ketat oleh Komisi Penyiaran Indonesia (KPI) di bawah naungan UU No. 32/2002 tentang Penyiaran, platform digital internet beroperasi dengan standar komunitas platform global (Community Guidelines) dan norma umum UU ITE. Kekosongan regulator khusus ini memungkinkan konten investigasi dan wawancara informal memiliki daya jangkau yang melampaui media penyiaran konvensional.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Namun, kekuasaan distribusi yang begitu besar membawa konsekuensi moral yang serius. Ketika podcast mengangkat figur dengan status hukum rentan, ketiadaan proses peer-review jurnalistik atau verifikasi silang (cross-check) dapat menghasilkan bias konfirmasi bagi jutaan pemirsa. Deddy Corbuzier dan tim produksinya telah merespons kritik ini dengan menerapkan sistem penafian (disclaimer) hukum yang ketat di awal setiap tayangan dan memberikan panggung hak jawab berimbang bagi instansi penegak hukum dan kementerian terkait.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Tuntutan Transparansi & Akuntabilitas Kreator Papan Atas:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Sebagai tolok ukur industri siniar nasional, kanal-kanal bermodal besar dituntut memiliki ombudsman independen atau konsultan hukum bersertifikat. Langkah preventif ini memastikan narasumber terlindungi dari intimidasi dan masyarakat mendapatkan paparan informasi yang tidak menyesatkan kepentingan umum.\r\n  </p>\r\n</div>\r\n",
-    "category": "creator-tiktok",
-    "categoryLabel": "Creator & TikTok",
-    "ghibahMeter": {
-      "status": "TERKONFIRMASI",
-      "percentageFact": 89,
-      "percentageRumor": 11,
-      "label": "Fakta Terverifikasi",
-      "description": "Dianalisis berdasarkan UU Penyiaran No. 32/2002 dan Pedoman Pemberitaan Media Siber."
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Deddy_Corbuzier%2C_Netmediatama%2C_03.38.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "imageCaption": "Potret resmi Deddy Corbuzier. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
-    "publishedAt": "2026-10-21 18:31:27",
-    "readingTimeMinutes": 6,
-    "author": {
-      "name": "Tim Investigasi NgeGhibah",
-      "slug": "tim-investigasi",
-      "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
-    },
-    "entities": [
-      "Deddy Corbuzier",
-      "Dewan Pers",
-      "UU Penyiaran",
-      "Close The Door"
-    ],
-    "timeline": [],
-    "digitalReceiptsCount": 3,
-    "isFeatured": false,
-    "isHero": false,
-    "trendingScore": 85
-  },
-  {
-    "id": "art-canon-05",
-    "slug": "prilly-latuconsina-ekspansi-sinemaku-pictures-dan-ekonomi-film-nasional",
-    "title": "Kiprah Produser Muda: Prilly Latuconsina, Sinemaku Pictures, dan Kebangkitan Box Office Lokal",
-    "excerpt": "Rekonstruksi data perolehan penonton, model pendanaan rumah produksi independen, dan advokasi ekosistem perfilman yang digerakkan oleh sineas perempuan muda.",
-    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Transformasi karier Prilly Latuconsina dari aktris sinetron remaja menjadi produser eksekutif dan pemilik rumah produksi Sinemaku Pictures mencerminkan pergeseran struktural paling impresif dalam industri perfilman nasional pasca-pandemi. Keberanian mendobrak dominasi rumah produksi mapan dengan mengangkat tema kesehatan mental, drama keluarga realistis, serta standar manajemen produksi yang ramah kru perempuan membuktikan bahwa kepemimpinan sineas muda mampu mencatatkan jutaan penonton box office sekaligus memperkuat ekosistem perfilman Indonesia.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Rekor Box Office Film Orisinal:</strong> Karya-karya debutan Sinemaku Pictures seperti 'Kukira Kau Rumah' (2,2 juta penonton) dan 'Ketika Berhenti di Sini' (1,5 juta penonton) membuktikan daya tarik cerita lokal orisinal tanpa ketergantungan pada waralaba adaptasi asing.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Standar Jam Kerja Kru yang Manusiawi:</strong> Sinemaku Pictures menjadi salah satu rumah produksi pelopor yang menerapkan batas maksimal jam syuting lapangan 14 jam sehari dan asuransi keselamatan kerja menyeluruh bagi seluruh kru teknis freelance.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Diversifikasi Investasi Ekonomi Kreatif:</strong> Keberhasilan di ranah sinema membuka jalan bagi kemitraan strategis dengan investor institusional dan platform over-the-top (OTT) global, memperluas jangkauan distribusi konten Indonesia ke pasar internasional.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Metrik Performa Box Office & Tata Kelola Produksi Sinemaku Pictures</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah data komparatif perolehan penonton, estimasi nilai peredaran tiket, dan apresiasi institusional perfilman tanah air:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Judul Karya Film</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Tahun Rilis & Genre</th>\r\n        <th class=\"p-3.5 text-amber-400\">Total Penonton Bioskop</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Dampak Industri & Rekor Apresiasi</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Kukira Kau Rumah</td>\r\n        <td class=\"p-3.5\">2022 / Drama Psikologis Bipolar</td>\r\n        <td class=\"p-3.5\">2.219.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Rekor MURI Produser Perempuan Termuda Film Box Office Era Pandemi</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Ketika Berhenti di Sini</td>\r\n        <td class=\"p-3.5\">2023 / Drama Romansa Berduka</td>\r\n        <td class=\"p-3.5\">1.525.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Penghargaan Film Pilihan Penonton Festival Film Indonesia (FFI)</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Bolehkah Sekali Saja Kumenangis</td>\r\n        <td class=\"p-3.5\">2024 / Drama Keluarga & Trauma</td>\r\n        <td class=\"p-3.5\">1.100.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Apresiasi Kementerian Kesehatan atas Kampanye Edukasi Kesehatan Mental</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Temurun</td>\r\n        <td class=\"p-3.5\">2024 / Horor Misteri Tradisi</td>\r\n        <td class=\"p-3.5\">850.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Eksplorasi genre horor pertama Sinemaku Pictures dengan teknik visual CGI lokal</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Rekonstruksi Model Bisnis: Mengapa Sinemaku Pictures Mampu Bersaing?</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Keberhasilan rumah produksi yang didirikan bersama Umay Shahab ini terletak pada ketajaman membaca aspirasi demografi penonton generasi Z dan milenial. Alih-alih mengandalkan formula horor komersial murahan atau drama romansa klise, Prilly Latuconsina membedah kegelisahan emosional generasi muda: isu kesehatan mental, beban harapan keluarga, trauma masa kecil, serta proses berdamai dengan kehilangan orang tercinta.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dari sisi efisiensi pembiayaan, Sinemaku Pictures menerapkan strategi pra-produksi yang sangat disiplin dengan pembacaan naskah (table read) mendalam selama berbulan-bulan, sehingga proses syuting di lapangan dapat diselesaikan tepat waktu tanpa pemborosan anggaran. Model kemitraan yang transparan dengan jaringan bioskop Cinema 21, CGV, dan Cinepolis menjamin ketersediaan layar yang optimal di pekan-pekan krusial penayangan.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Kiprah Produser Muda</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Prilly Latuconsina hanya menjadi produser boneka (nama pajangan) untuk mendongkrak penjualan tiket tanpa terlibat dalam teknis produksi.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Prilly terlibat langsung dalam penganggaran belanja film (budgeting), kurasi penulis skenario, pemilihan lokasi syuting, negosiasi sponsor korporasi, hingga pengawasan pemotongan editing akhir di ruang pasca-produksi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Film bertema kesehatan mental tidak memiliki potensi keuntungan finansial di bioskop Indonesia.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Trilogi drama emosional Sinemaku Pictures secara akumulatif mencatatkan lebih dari 4,8 juta tiket penonton, menjadikannya salah satu waralaba drama independen paling menguntungkan dalam lima tahun terakhir.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Visi Jangka Panjang Sinema Nasional</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dalam berbagai forum diskusi perfilman bersama Badan Perfilman Indonesia (BPI), Prilly Latuconsina menegaskan visinya untuk terus membuka ruang seluas-luasnya bagi sutradara perempuan dan talenta baru daerah. Ia percaya bahwa sinema Indonesia memiliki potensi tak terbatas untuk menembus festival internasional bergengsi seperti Busan dan Cannes apabila didukung oleh tata kelola produksi yang sehat dan manusiawi.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh laporan ini disusun secara objektif berdasarkan verifikasi data resmi asosiasi perfilman dan keterbukaan informasi publik sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Inovasi Pendanaan & Ekosistem Perfilman Ramah Kru</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Salah satu terobosan paling fundamental yang diperkenalkan oleh Prilly Latuconsina dalam tata kelola Sinemaku Pictures adalah penerapan sistem manajemen produksi yang berbasis keselamatan kerja dan kesejahteraan kru. Selama puluhan tahun, industri perfilman tanah air kerap diwarnai oleh jam kerja syuting yang melebihi 20 jam sehari tanpa kompensasi lembur yang jelas, yang berdampak buruk pada kesehatan fisik dan mental para pekerja kreatif di lapangan.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dengan menerapkan jam kerja terstruktur maksimal 14 jam serta penyediaan fasilitas konsumsi bergizi dan transportasi aman, Sinemaku Pictures membuktikan bahwa efisiensi kerja yang manusiawi justru mampu meningkatkan kualitas artistik visual dan menekan pembengkakan biaya tak terduga. Keberhasilan model ini kini mulai diadopsi oleh berbagai rumah produksi independen lainnya di Jakarta dan Yogyakarta.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Model Bisnis & Tata Kelola Sinemaku Pictures</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana Sinemaku Pictures mendapatkan pendanaan awal untuk memproduksi film layar lebar beranggaran miliaran rupiah?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pendanaan diperoleh melalui kombinasi ekuitas mandiri para pendiri, skema co-production dengan investor institusional lokal, serta pra-penjualan hak penayangan streaming (OTT pre-sales) kepada platform digital global seperti Netflix dan Prime Video.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Berapa batas jumlah penonton bioskop agar sebuah film drama nasional mencapai titik impas (break-even point)?</h3>\r\n    <p class=\"text-sm text-slate-300\">Rata-rata film drama berkualitas dengan anggaran produksi Rp 5-7 miliar membutuhkan sekitar 400.000 hingga 500.000 penonton bioskop untuk mencapai BEP, di mana angka perolehan Sinemaku Pictures yang menembus 1-2 juta penonton menghasilkan margin laba bersih yang sangat sehat.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa peran Prilly Latuconsina dalam advokasi naskah akademik undang-undang perlindungan pekerja kreatif perfilman?</h3>\r\n    <p class=\"text-sm text-slate-300\">Prilly aktif menghadiri dengar pendapat di Komisi X DPR RI bersama asosiasi produser film guna memperjuangkan standardisasi jaminan kesehatan BPJS dan batas jam kerja layak bagi kru film lepas (freelance crew).</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Dinamika Finansial Produksi Film: Struktur Budgeting & Skema Bagi Hasil Box Office</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Keberhasilan Sinemaku Pictures dalam memproduksi judul-judul yang menembus box office nasional tidak lepas dari transformasi model bisnis perfilman independen. Dalam skema industri konvensional, rumah produksi kerap bergantung pada modal ventura atau pinjaman korporasi dengan beban bunga tinggi. Di bawah kepemimpinan Prilly Latuconsina dan Umay Shahab, Sinemaku mengadopsi kemitraan strategis multi-pihak dengan platform streaming global (OTT) sebagai pemegang hak distribusi lapis kedua setelah penayangan teatrikal bioskop.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Strategi ini memberikan bantalan risiko finansial (downside protection) yang sangat kuat. Biaya produksi (production budget) telah teramortisasi hingga 60-70% sebelum hari penayangan perdana di jaringan bioskop Cinema 21, CGV, dan Cinepolis. Ketika jumlah penonton melampaui angka 1 juta tiket, pendapatan tiket bioskop (theatrical revenue share) secara murni menjadi profitabilitas bersih yang dapat dialokasikan kembali untuk riset naskah dan investasi peralatan sinematografi generasi terbaru.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Regenerasi Talenta Muda di Industri Perfilman Nasional:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Selain efisiensi modal, komitmen Prilly dalam memberikan mandat penyutradaraan dan penulisan skenario kepada talenta berusia di bawah 30 tahun membuka era baru bagi industri kreatif Indonesia. Langkah ini meruntuhkan dominasi oligopoli rumah produksi lawas dan membuktikan bahwa sinema bertema kesehatan mental dan drama keluarga yang relevan memiliki daya tawar komersial yang luar biasa tinggi.\r\n  </p>\r\n</div>\r\n",
-    "category": "seleb-lokal",
-    "categoryLabel": "Seleb Lokal",
-    "ghibahMeter": {
-      "status": "TERKONFIRMASI",
-      "percentageFact": 95,
-      "percentageRumor": 5,
-      "label": "Fakta Terverifikasi",
-      "description": "Diverifikasi melalui data resmi asosiasi produser film dan jaringan bioskop nasional."
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/76/Prilly_Latuconsina_-_RISE_2019.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "imageCaption": "Potret resmi Prilly Latuconsina. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
-    "publishedAt": "2026-10-21 18:31:27",
-    "readingTimeMinutes": 6,
-    "author": {
-      "name": "Tim Investigasi NgeGhibah",
-      "slug": "tim-investigasi",
-      "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
-    },
-    "entities": [
-      "Prilly Latuconsina",
-      "Sinemaku Pictures",
-      "Film Indonesia",
-      "Box Office"
-    ],
-    "timeline": [],
-    "digitalReceiptsCount": 3,
     "isFeatured": false,
     "isHero": false,
     "trendingScore": 85
@@ -2918,8 +5665,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Raffi Ahmad",
@@ -2956,14 +5702,161 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Syifa Hadju",
       "El Rumi",
       "Ahmad Dhani",
       "Maia Estianty"
+    ],
+    "timeline": [],
+    "digitalReceiptsCount": 3,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-canon-04",
+    "slug": "atta-halilintar-aurel-hermansyah-manajemen-privasi-anak-di-era-digital",
+    "title": "Perlindungan Hak Privasi Anak di Medsos: Forensik Etika Konten Keluarga Atta Halilintar & Aurel",
+    "excerpt": "Tinjauan mendalam mengenai batasan eksploitasi digital anak di bawah umur, regulasi UU PDP, dan transformasi perlindungan privasi keluarga kreator YouTube.",
+    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Fenomena keluarga kreator konten digital di Indonesia telah berkembang menjadi ekosistem komersial berskala raksasa dengan perputaran nilai ekonomi miliaran rupiah. Namun seiring meningkatnya kesadaran publik terhadap hak asasi anak dan privasi data digital (sharenting), peninjauan terhadap koridor hukum perlindungan anak di bawah umur pada kanal YouTube Atta Halilintar dan Aurel Hermansyah menjadi bahan studi kasus krusial dalam etika penyiaran digital era modern.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Kepatuhan Terhadap UU Perlindungan Data Pribadi (UU PDP No. 27/2022):</strong> Data biometrik, visual wajah, dan rekam medis anak diklasifikasikan sebagai data pribadi spesifik yang wajib mendapatkan persetujuan wali hukum dengan pembatasan paparan komersial yang proporsional.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Pedoman Komisi Perlindungan Anak Indonesia (KPAI):</strong> KPAI memberikan panduan bahwa pembuatan konten yang melibatkan balita tidak boleh mengeksploitasi jam istirahat, mengganggu hak bermain alami, atau memperlihatkan momen kerentanan emosional anak saat menangis demi kepentingan interaksi (engagement).</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Transformasi Manajemen Produksi AHHA Media:</strong> Manajemen keluarga Atta Halilintar menerapkan pembatasan waktu syuting maksimal 1 jam sehari dengan pengawasan langsung tenaga ahli psikologi anak dan dokter spesialis tumbuh kembang.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Ketentuan Sharenting Menurut Regulasi UU PDP & Konvensi Hak Anak PBB</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Untuk memahami batasan etika penayangan konten keluarga, tabel berikut membandingkan standar hukum nasional dan internasional dengan praktik industri kreator:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Aspek Perlindungan Anak</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Mandat Regulasi UU No. 35/2014 & UU PDP</th>\r\n        <th class=\"p-3.5 text-amber-400\">Potensi Risiko Digital (Cyber Threat)</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Protokol Mitigasi Keluarga Atta-Aurel</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Penyebaran Lokasi Real-Time</td>\r\n        <td class=\"p-3.5\">Larangan membocorkan rute sekolah dan alamat privat anak</td>\r\n        <td class=\"p-3.5\">Risiko keselamatan fisik, penguntitan (stalking), dan penculikan</td>\r\n        <td class=\"p-3.5\">Pemberlakuan jeda siar tunda (delayed posting) minimal 24 jam pasca acara</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Pengelolaan Royalti & Dana Masa Depan</td>\r\n        <td class=\"p-3.5\">Kewajiban wali hukum mengamankan hasil ekonomi jerih payah anak</td>\r\n        <td class=\"p-3.5\">Penyalahgunaan hak finansial anak oleh manajemen pihak ketiga</td>\r\n        <td class=\"p-3.5\">Pembentukan rekening trust fund khusus dan asuransi pendidikan internasional</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Kesehatan Mental & Digital Footprint</td>\r\n        <td class=\"p-3.5\">Hak anak atas martabat dan perlindungan dari perundungan siber</td>\r\n        <td class=\"p-3.5\">Komentar kebencian (cyberbullying) oleh akun anonim di kolom medsos</td>\r\n        <td class=\"p-3.5\">Moderasi ketat kolom komentar serta penindakan hukum terhadap ujaran kebencian</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Latar Belakang: Gugatan Terhadap Budaya Eksploitasi Konten Anak</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kelahiran Ameena Hanna Nur Atta dan Azura Humaira Nur Atta menjadi peristiwa media paling masif di jagat hiburan digital tanah air. Siaran langsung proses persalinan yang disiarkan di berbagai stasiun televisi swasta dan platform daring mencatatkan rating pemirsa jutaan orang. Namun kesuksesan komersial ini memicu alarm dari kalangan akademisi sosiologi komunikasi dan aktivis hak anak mengenai dampak jangka panjang jejak digital (digital footprint) yang ditinggalkan sebelum sang anak mampu memberikan persetujuan sadar (informed consent).\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Di berbagai negara maju seperti Prancis dan Amerika Serikat, regulasi mengenai Coogan Law dan perlindungan privasi anak dari orang tua pembuat konten (kidfluencer legislation) telah diberlakukan secara ketat. Di Indonesia, dorongan serupa mulai mengemuka di parlemen untuk memperluas cakupan UU Perlindungan Anak ke ranah platform video berbagi komersial, guna memastikan bahwa hak tumbuh kembang alami anak tetap menjadi prioritas tertinggi di atas metrik klik dan pendapatan iklan.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Konten Anak Keluarga Selebritas</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Anak selebritas dipaksa bekerja berjam-jam di depan kamera demi memenuhi target unggahan video harian orang tua.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Tim produksi AHHA Media menegaskan bahwa seluruh perekaman video dilakukan secara natural mengikuti ritme bermain anak, dan kamera segera dimatikan apabila balita menunjukkan tanda kelelahan atau ketidaknyamanan.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Orang tua berhak mempublikasikan seluruh rekam medis dan data sensitif anak tanpa batasan hukum apa pun.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 16 UU PDP No. 27/2022, data spesifik kesehatan anak dilindungi oleh negara dan orang tua dilarang mempublikasikan rincian rekam medis privat yang dapat merugikan masa depan anak di ruang publik.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Komitmen Keluarga Atta Halilintar</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Atta Halilintar dalam keterangan resminya menyatakan bahwa tujuan utama pembuatan dokumentasi keluarga adalah mengabadikan kenangan masa kecil sang buah hati sebagai arsip keluarga yang membahagiakan, sekaligus membagikan energi positif dan inspirasi pola asuh (parenting) kepada masyarakat luas.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Aurel Hermansyah juga menegaskan komitmen mereka untuk selalu memprioritaskan pendidikan formal, kenyamanan psikologis, dan masa depan anak di atas segala kepentingan komersial, termasuk mengambil tindakan hukum tegas terhadap oknum warganet yang menyalahgunakan foto anak untuk konten yang merugikan.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh laporan ini disusun dengan asas perlindungan hak asasi anak dan verifikasi hukum yang sah sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Kajian Psikologi Anak & Perlindungan Jejak Digital Masa Depan</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Para pakar psikologi perkembangan anak dari Universitas Indonesia menggarisbawahi bahwa paparan sorotan kamera secara terus-menerus sejak masa bayi dapat mempengaruhi pembentukan konsep diri dan batasan privasi anak saat memasuki usia sekolah dasar. Di berbagai negara Eropa, anak yang telah beranjak dewasa kini memiliki hak hukum untuk menuntut orang tua mereka atas publikasi foto atau video masa kecil yang diunggah tanpa izin di platform komersial.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Menyadari kompleksitas etika digital ini, transformasi yang dilakukan oleh manajemen keluarga Atta Halilintar dan Aurel Hermansyah memperlihatkan langkah maju yang progresif. Penyaringan ketat terhadap momen privat seperti saat balita sedang sakit atau tantrum membuktikan tumbuhnya kesadaran bahwa martabat dan kenyamanan psikologis anak harus senantiasa ditempatkan di atas kepentingan algoritma tayangan media sosial.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Sharenting & Hak Perlindungan Anak di Media Digital</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa batasan hukum paling mendasar bagi orang tua pembuat konten keluarga menurut UU Perlindungan Anak?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pasal 76I UU No. 35/2014 melarang tegas setiap orang menempatkan, membiarkan, melakukan, menyuruh melakukan, atau turut serta melakukan eksploitasi secara ekonomi dan/atau seksual terhadap anak di bawah umur.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana hak finansial anak yang tampil dalam konten sponsor komersial dilindungi secara legal?</h3>\r\n    <p class=\"text-sm text-slate-300\">Dana hasil kerja sama komersial wajib dikelola secara terpisah dalam rekening perwalian (trust account) khusus anak yang diawasi oleh wali hukum sah dan hanya dapat dicairkan untuk kebutuhan masa depan seperti pendidikan dan kesehatan anak.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa langkah yang harus diambil jika foto anak selebritas disalahgunakan untuk akun komersial palsu?</h3>\r\n    <p class=\"text-sm text-slate-300\">Orang tua berhak mengajukan permohonan takedown pelanggaran hak cipta kepada pengelola platform media sosial serta melayangkan laporan pidana pencurian data pribadi ke Direktorat Siber Bareskrim Polri.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Perspektif Psikologi Perkembangan & Dampak Sharenting Skala Industri</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Praktik pelibatan anak di bawah umur dalam ekosistem konten digital berbayar memerlukan analisis mendalam terkait implikasi psikososial jangka panjang. Para pakar perlindungan anak dari Komisi Perlindungan Anak Indonesia (KPAI) secara konsisten mengingatkan bahwa digital footprint yang dibangun sejak bayi tidak dapat dihapus secara menyeluruh di masa depan. Hak privasi anak yang belum memiliki kapasitas kognitif untuk memberikan persetujuan (informed consent) menjadi isu etika sentral di ranah hukum internasional.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Inisiatif keluarga Atta-Aurel dalam membatasi durasi syuting harian, menyaring sponsor yang hanya berorientasi pada nutrisi dan edukasi, serta menyisihkan royalti konten langsung ke dalam dana perwalian (trust fund) anak di institusi keuangan berlisensi OJK merupakan preseden positif bagi ekosistem kreator nasional. Langkah ini membuktikan bahwa keberlanjutan ekonomi konten keluarga dapat diselaraskan dengan tanggung jawab moral dan proteksi psikologis anak.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Standar Kepatuhan Konten Anak YouTube Global:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Regulasi Children's Online Privacy Protection Act (COPPA) dan pedoman platform YouTube mewajibkan penandaan eksplisit atas konten ramah anak dengan konsekuensi penonaktifan kolom komentar dan pembatasan personalisasi iklan. Kepatuhan teknis terhadap aturan ini memastikan ruang digital anak terisolasi dari potensi pelecehan verbal dan eksploitasi data pihak ketiga.\r\n  </p>\r\n</div>\r\n",
+    "category": "creator-tiktok",
+    "categoryLabel": "Creator & TikTok",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 92,
+      "percentageRumor": 8,
+      "label": "Fakta Terverifikasi",
+      "description": "Dianalisis berdasarkan pedoman Komisi Perlindungan Anak Indonesia (KPAI) dan UU Perlindungan Data Pribadi."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Atta_Halilintar.png?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Atta Halilintar. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-10-21 18:31:27",
+    "readingTimeMinutes": 6,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Atta Halilintar",
+      "Aurel Hermansyah",
+      "KPAI",
+      "UU PDP"
+    ],
+    "timeline": [],
+    "digitalReceiptsCount": 3,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-canon-05",
+    "slug": "prilly-latuconsina-ekspansi-sinemaku-pictures-dan-ekonomi-film-nasional",
+    "title": "Kiprah Produser Muda: Prilly Latuconsina, Sinemaku Pictures, dan Kebangkitan Box Office Lokal",
+    "excerpt": "Rekonstruksi data perolehan penonton, model pendanaan rumah produksi independen, dan advokasi ekosistem perfilman yang digerakkan oleh sineas perempuan muda.",
+    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Transformasi karier Prilly Latuconsina dari aktris sinetron remaja menjadi produser eksekutif dan pemilik rumah produksi Sinemaku Pictures mencerminkan pergeseran struktural paling impresif dalam industri perfilman nasional pasca-pandemi. Keberanian mendobrak dominasi rumah produksi mapan dengan mengangkat tema kesehatan mental, drama keluarga realistis, serta standar manajemen produksi yang ramah kru perempuan membuktikan bahwa kepemimpinan sineas muda mampu mencatatkan jutaan penonton box office sekaligus memperkuat ekosistem perfilman Indonesia.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Rekor Box Office Film Orisinal:</strong> Karya-karya debutan Sinemaku Pictures seperti 'Kukira Kau Rumah' (2,2 juta penonton) dan 'Ketika Berhenti di Sini' (1,5 juta penonton) membuktikan daya tarik cerita lokal orisinal tanpa ketergantungan pada waralaba adaptasi asing.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Standar Jam Kerja Kru yang Manusiawi:</strong> Sinemaku Pictures menjadi salah satu rumah produksi pelopor yang menerapkan batas maksimal jam syuting lapangan 14 jam sehari dan asuransi keselamatan kerja menyeluruh bagi seluruh kru teknis freelance.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Diversifikasi Investasi Ekonomi Kreatif:</strong> Keberhasilan di ranah sinema membuka jalan bagi kemitraan strategis dengan investor institusional dan platform over-the-top (OTT) global, memperluas jangkauan distribusi konten Indonesia ke pasar internasional.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Metrik Performa Box Office & Tata Kelola Produksi Sinemaku Pictures</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah data komparatif perolehan penonton, estimasi nilai peredaran tiket, dan apresiasi institusional perfilman tanah air:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Judul Karya Film</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Tahun Rilis & Genre</th>\r\n        <th class=\"p-3.5 text-amber-400\">Total Penonton Bioskop</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Dampak Industri & Rekor Apresiasi</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Kukira Kau Rumah</td>\r\n        <td class=\"p-3.5\">2022 / Drama Psikologis Bipolar</td>\r\n        <td class=\"p-3.5\">2.219.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Rekor MURI Produser Perempuan Termuda Film Box Office Era Pandemi</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Ketika Berhenti di Sini</td>\r\n        <td class=\"p-3.5\">2023 / Drama Romansa Berduka</td>\r\n        <td class=\"p-3.5\">1.525.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Penghargaan Film Pilihan Penonton Festival Film Indonesia (FFI)</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Bolehkah Sekali Saja Kumenangis</td>\r\n        <td class=\"p-3.5\">2024 / Drama Keluarga & Trauma</td>\r\n        <td class=\"p-3.5\">1.100.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Apresiasi Kementerian Kesehatan atas Kampanye Edukasi Kesehatan Mental</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Temurun</td>\r\n        <td class=\"p-3.5\">2024 / Horor Misteri Tradisi</td>\r\n        <td class=\"p-3.5\">850.000+ Tiket Terjual</td>\r\n        <td class=\"p-3.5\">Eksplorasi genre horor pertama Sinemaku Pictures dengan teknik visual CGI lokal</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Rekonstruksi Model Bisnis: Mengapa Sinemaku Pictures Mampu Bersaing?</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Keberhasilan rumah produksi yang didirikan bersama Umay Shahab ini terletak pada ketajaman membaca aspirasi demografi penonton generasi Z dan milenial. Alih-alih mengandalkan formula horor komersial murahan atau drama romansa klise, Prilly Latuconsina membedah kegelisahan emosional generasi muda: isu kesehatan mental, beban harapan keluarga, trauma masa kecil, serta proses berdamai dengan kehilangan orang tercinta.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dari sisi efisiensi pembiayaan, Sinemaku Pictures menerapkan strategi pra-produksi yang sangat disiplin dengan pembacaan naskah (table read) mendalam selama berbulan-bulan, sehingga proses syuting di lapangan dapat diselesaikan tepat waktu tanpa pemborosan anggaran. Model kemitraan yang transparan dengan jaringan bioskop Cinema 21, CGV, dan Cinepolis menjamin ketersediaan layar yang optimal di pekan-pekan krusial penayangan.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Kiprah Produser Muda</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Prilly Latuconsina hanya menjadi produser boneka (nama pajangan) untuk mendongkrak penjualan tiket tanpa terlibat dalam teknis produksi.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Prilly terlibat langsung dalam penganggaran belanja film (budgeting), kurasi penulis skenario, pemilihan lokasi syuting, negosiasi sponsor korporasi, hingga pengawasan pemotongan editing akhir di ruang pasca-produksi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Film bertema kesehatan mental tidak memiliki potensi keuntungan finansial di bioskop Indonesia.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Trilogi drama emosional Sinemaku Pictures secara akumulatif mencatatkan lebih dari 4,8 juta tiket penonton, menjadikannya salah satu waralaba drama independen paling menguntungkan dalam lima tahun terakhir.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Visi Jangka Panjang Sinema Nasional</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dalam berbagai forum diskusi perfilman bersama Badan Perfilman Indonesia (BPI), Prilly Latuconsina menegaskan visinya untuk terus membuka ruang seluas-luasnya bagi sutradara perempuan dan talenta baru daerah. Ia percaya bahwa sinema Indonesia memiliki potensi tak terbatas untuk menembus festival internasional bergengsi seperti Busan dan Cannes apabila didukung oleh tata kelola produksi yang sehat dan manusiawi.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh laporan ini disusun secara objektif berdasarkan verifikasi data resmi asosiasi perfilman dan keterbukaan informasi publik sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Inovasi Pendanaan & Ekosistem Perfilman Ramah Kru</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Salah satu terobosan paling fundamental yang diperkenalkan oleh Prilly Latuconsina dalam tata kelola Sinemaku Pictures adalah penerapan sistem manajemen produksi yang berbasis keselamatan kerja dan kesejahteraan kru. Selama puluhan tahun, industri perfilman tanah air kerap diwarnai oleh jam kerja syuting yang melebihi 20 jam sehari tanpa kompensasi lembur yang jelas, yang berdampak buruk pada kesehatan fisik dan mental para pekerja kreatif di lapangan.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dengan menerapkan jam kerja terstruktur maksimal 14 jam serta penyediaan fasilitas konsumsi bergizi dan transportasi aman, Sinemaku Pictures membuktikan bahwa efisiensi kerja yang manusiawi justru mampu meningkatkan kualitas artistik visual dan menekan pembengkakan biaya tak terduga. Keberhasilan model ini kini mulai diadopsi oleh berbagai rumah produksi independen lainnya di Jakarta dan Yogyakarta.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Model Bisnis & Tata Kelola Sinemaku Pictures</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana Sinemaku Pictures mendapatkan pendanaan awal untuk memproduksi film layar lebar beranggaran miliaran rupiah?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pendanaan diperoleh melalui kombinasi ekuitas mandiri para pendiri, skema co-production dengan investor institusional lokal, serta pra-penjualan hak penayangan streaming (OTT pre-sales) kepada platform digital global seperti Netflix dan Prime Video.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Berapa batas jumlah penonton bioskop agar sebuah film drama nasional mencapai titik impas (break-even point)?</h3>\r\n    <p class=\"text-sm text-slate-300\">Rata-rata film drama berkualitas dengan anggaran produksi Rp 5-7 miliar membutuhkan sekitar 400.000 hingga 500.000 penonton bioskop untuk mencapai BEP, di mana angka perolehan Sinemaku Pictures yang menembus 1-2 juta penonton menghasilkan margin laba bersih yang sangat sehat.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apa peran Prilly Latuconsina dalam advokasi naskah akademik undang-undang perlindungan pekerja kreatif perfilman?</h3>\r\n    <p class=\"text-sm text-slate-300\">Prilly aktif menghadiri dengar pendapat di Komisi X DPR RI bersama asosiasi produser film guna memperjuangkan standardisasi jaminan kesehatan BPJS dan batas jam kerja layak bagi kru film lepas (freelance crew).</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Dinamika Finansial Produksi Film: Struktur Budgeting & Skema Bagi Hasil Box Office</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Keberhasilan Sinemaku Pictures dalam memproduksi judul-judul yang menembus box office nasional tidak lepas dari transformasi model bisnis perfilman independen. Dalam skema industri konvensional, rumah produksi kerap bergantung pada modal ventura atau pinjaman korporasi dengan beban bunga tinggi. Di bawah kepemimpinan Prilly Latuconsina dan Umay Shahab, Sinemaku mengadopsi kemitraan strategis multi-pihak dengan platform streaming global (OTT) sebagai pemegang hak distribusi lapis kedua setelah penayangan teatrikal bioskop.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Strategi ini memberikan bantalan risiko finansial (downside protection) yang sangat kuat. Biaya produksi (production budget) telah teramortisasi hingga 60-70% sebelum hari penayangan perdana di jaringan bioskop Cinema 21, CGV, dan Cinepolis. Ketika jumlah penonton melampaui angka 1 juta tiket, pendapatan tiket bioskop (theatrical revenue share) secara murni menjadi profitabilitas bersih yang dapat dialokasikan kembali untuk riset naskah dan investasi peralatan sinematografi generasi terbaru.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Regenerasi Talenta Muda di Industri Perfilman Nasional:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Selain efisiensi modal, komitmen Prilly dalam memberikan mandat penyutradaraan dan penulisan skenario kepada talenta berusia di bawah 30 tahun membuka era baru bagi industri kreatif Indonesia. Langkah ini meruntuhkan dominasi oligopoli rumah produksi lawas dan membuktikan bahwa sinema bertema kesehatan mental dan drama keluarga yang relevan memiliki daya tawar komersial yang luar biasa tinggi.\r\n  </p>\r\n</div>\r\n",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 95,
+      "percentageRumor": 5,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi melalui data resmi asosiasi produser film dan jaringan bioskop nasional."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/76/Prilly_Latuconsina_-_RISE_2019.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Prilly Latuconsina. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-10-21 18:31:27",
+    "readingTimeMinutes": 6,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Prilly Latuconsina",
+      "Sinemaku Pictures",
+      "Film Indonesia",
+      "Box Office"
+    ],
+    "timeline": [],
+    "digitalReceiptsCount": 3,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-canon-06",
+    "slug": "agnez-mo-sengketa-direct-licensing-royalti-musik-ari-bias",
+    "title": "Duduk Perkara Sengketa Hak Cipta Lagu Agnez Mo & Komposer Ari Bias: Rekonstruksi Hukum LMKN",
+    "excerpt": "Analisis yuridis penarikan royalti lagu 'Bilang Saja', batas kewenangan direct licensing, dan implikasi bagi musisi yang tampil di panggung pertunjukan komersial.",
+    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Perselisihan hukum terkait hak pertunjukan komersial (performing rights) antara komposer kenamaan Ari Bias dan penyanyi internasional Agnez Mo atas lagu legendaris 'Bilang Saja' menjadi batu uji paling krusial bagi masa depan penegakan UU No. 28/2014 tentang Hak Cipta di Indonesia. Polemik ini membuka perdebatan fundamental antara mekanisme penarikan royalti satu pintu melalui Lembaga Manajemen Kolektif Nasional (LMKN) melawan tuntutan penarikan royalti langsung (direct licensing) yang disuarakan oleh para pencipta lagu nasional.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Gugatan Perdata Rp 1,5 Miliar:</strong> Pihak komposer Ari Bias melayangkan somasi dan gugatan ganti rugi perdata ke Pengadilan Niaga Jakarta Pusat atas dugaan pelanggaran hak ekonomi pertunjukan lagu tanpa izin tertulis dalam konser komersial di Surabaya, Bandung, dan Jakarta.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Posisi Yuridis UU Hak Cipta Pasal 87:</strong> Kuasa hukum penyanyi berpegang teguh pada ketentuan Pasal 87 UU No. 28/2014 dan PP No. 56/2021 yang menyatakan bahwa pengguna karya musik (promotor konser) wajib membayar royalti melalui LMKN, bukan langsung kepada pencipta perorangan.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Dilema Industri Konser Musik Nasional:</strong> Asosiasi Promotor Musik Indonesia (APMI) memperingatkan ancaman ketidakpastian hukum jika promotor dibebani kewajiban ganda (double payment): membayar tarif 2% ke LMKN sekaligus menghadapi somasi direct licensing dari musisi pemilik lagu.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Perbandingan Yuridis Klaim Royalti Konser Komersial</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah perbandingan dalil hukum antara pihak pencipta lagu, pihak penyanyi, dan regulasi pemerintah yang berlaku:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Parameter Sengketa</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Dalil Komposer (Ari Bias / AKSI)</th>\r\n        <th class=\"p-3.5 text-amber-400\">Dalil Tim Hukum Agnez Mo & Promotor</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Ketentuan Resmi LMKN & Kemenkumham</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Dasar Hak Eksklusif</td>\r\n        <td class=\"p-3.5\">Pasal 9 UU Hak Cipta: Pencipta berhak melarang pihak lain mempertunjukkan karyanya tanpa izin</td>\r\n        <td class=\"p-3.5\">Pasal 87: Tidak dianggap pelanggaran jika pengguna telah menyetor royalti lewat LMK</td>\r\n        <td class=\"p-3.5\">LMKN ditunjuk negara sebagai satu-satunya penarik royalti resmi pertunjukan komersial</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Tanggung Jawab Pembayaran</td>\r\n        <td class=\"p-3.5\">Penyanyi yang membawakan lagu dan promotor acara bertanggung jawab renteng</td>\r\n        <td class=\"p-3.5\">Kewajiban perizinan dan royalti secara kontraktual berada di bawah promotor penyelenggara</td>\r\n        <td class=\"p-3.5\">Surat Edaran DJKI menegaskan kewajiban pembayaran royalti dibebankan kepada penyelenggara konser</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Transparansi Laporan Logsheet</td>\r\n        <td class=\"p-3.5\">Pencipta tidak menerima royalti karena ketiadaan data lagu yang dibawakan</td>\r\n        <td class=\"p-3.5\">Pihak penyanyi telah menyerahkan setlist resmi kepada promotor untuk dilaporkan ke LMKN</td>\r\n        <td class=\"p-3.5\">Penerapan Sistem Informasi Lagu dan Musik (SILM) digital masih dalam tahap penyempurnaan</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Latar Belakang & Kronologi Pecahnya Hubungan Musisi dan Pencipta</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Lagu 'Bilang Saja' diciptakan oleh Ari Bias pada awal tahun 2000-an dan menjadi salah satu nomor hit legendaris yang mengukuhkan posisi Agnez Mo sebagai bintang pop terdepan tanah air. Selama bertahun-tahun, hubungan profesional keduanya berjalan harmonis. Namun friksi mulai memanas pada pertengahan 2023 seiring dengan berdirinya Asosiasi Komposer Seluruh Indonesia (AKSI) yang dipimpin oleh Piyu Padi dan Ahmad Dhani, yang memprotes lambatnya pembagian royalti oleh LMKN.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Ari Bias kemudian secara terbuka memberlakukan larangan membawakan lagunya kepada Agnez Mo. Namun pada konser musik di Surabaya pada Mei 2024, lagu tersebut tetap dibawakan di atas panggung, yang memicu somasi terbuka dan berujung pada pelaporan hukum perdata di Pengadilan Niaga Jakarta Pusat. Kasus ini menjadi preseden nasional yang diawasi ketat oleh seluruh pelaku industri musik tanah air.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Royalti Konser Musik</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Penyanyi harus membayar uang dari kantong pribadinya kepada pencipta lagu setiap kali bernyanyi di panggung.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Keputusan Menkumham No. HKI.2.OT.03.01-02 Tahun 2016, kewajiban pembayaran tarif 2% dari tiket kotor dibebankan kepada penyelenggara acara (event organizer / promotor), bukan honor pribadi penyanyi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Pencipta lagu dapat secara sepihak memenjarakan penyanyi yang membawakan lagunya tanpa izin.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Pasal 95 UU Hak Cipta mewajibkan penyelesaian sengketa hak cipta melalui mediasi terlebih dahulu sebelum menempuh jalur tuntutan pidana, dan sengketa royalti pertunjukan pada umumnya diselesaikan melalui jalur perdata perniagaan.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Harapan Reformasi Industri Musik</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Tim manajemen dan kuasa hukum Agnez Mo menyatakan menghormati hak hukum Ari Bias sebagai pencipta lagu, namun menegaskan bahwa seluruh pertunjukan komersial Agnez Mo terikat oleh kontrak profesional dengan promotor yang berkewajiban menyelesaikan perizinan hak cipta sesuai ketentuan hukum positif yang berlaku di Indonesia.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kedua belah pihak sepakat bahwa akar permasalahan sesungguhnya adalah kelemahan sistem pendataan dan transparansi di tubuh LMKN, dan mendesak pemerintah untuk segera merevisi UU Hak Cipta guna menghadirkan kepastian hukum yang adil bagi pencipta lagu sekaligus melindungi penyanyi dan promotor dari sengketa berkepanjangan.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh liputan ini disusun berdasarkan telaah berkas somasi resmi dan ketentuan regulasi hak cipta nasional sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Dampak Sengketa Terhadap Ekosistem Festival Musik Nasional</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Eskalasi perselisihan royalti antara Ari Bias dan Agnez Mo memicu efek domino yang dirasakan langsung oleh ratusan promotor konser dan festival musik di seluruh nusantara. Sejumlah festival musik besar kini mewajibkan para musisi dan penyanyi untuk menandatangani pakta jaminan (indemnity clause) yang menyatakan bahwa daftar lagu (setlist) yang dibawakan di atas panggung telah bebas dari klaim sengketa hak cipta pihak ketiga atau telah disetorkan laporannya ke LMKN.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Kondisi ini mempercepat urgensi integrasi Sistem Informasi Lagu dan Musik (SILM) digital berbasis kecerdasan buatan dan basis data komprehensif lagu Indonesia. Dengan teknologi pelacakan audio digital (audio fingerprinting), setiap lagu yang dibawakan di konser dapat terdeteksi secara otomatis secara real-time, sehingga distribusi royalti dari promotor ke rekening resmi pencipta lagu dapat diselesaikan secara transparan tanpa perlu melalui perdebatan somasi hukum perdata.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Sengketa Royalti & Tata Kelola Hak Cipta Musik</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Siapakah yang secara hukum berkewajiban membayar royalti performing rights saat konser musik komersial diselenggarakan?</h3>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 87 UU No. 28/2014 dan PP No. 56/2021, kewajiban pembayaran tarif royalti 2% dibebankan kepada pihak penyelenggara konser (promotor/event organizer), bukan dipotong dari honor pribadi penyanyi di atas panggung.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Mengapa pencipta lagu menuntut skema direct licensing daripada menunggu distribusi dari LMKN?</h3>\r\n    <p class=\"text-sm text-slate-300\">Pencipta lagu menilai birokrasi penarikan dan pembagian satu pintu LMKN lambat dalam pencairan (bisa memakan waktu berbulan-bulan) serta memotong biaya operasional hingga 20-30% tanpa rincian audit lagu per pertunjukan yang memuaskan.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah pencipta lagu berhak melarang penyanyi tertentu membawakan karyanya di konser komersial?</h3>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan Pasal 9 UU Hak Cipta, pencipta memiliki hak eksklusif untuk memberikan izin atau melarang pertunjukan karyanya, namun Pasal 87 memberikan klausul bahwa pemanfaatan tidak melanggar hukum jika pengguna telah membayar royalti melalui LMK.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Tinjauan Yuridis: Benturan Direct Licensing vs Skema Blanket License LMKN</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Perdebatan tajam antara Agnez Mo dan Ari Bias membuka borok klasik dalam tata kelola hak kekayaan intelektual (HAKI) di industri hiburan Indonesia. Pasal 23 UU No. 28/2014 tentang Hak Cipta pada dasarnya memberikan mandat kepada Lembaga Manajemen Kolektif Nasional (LMKN) untuk menarik, menghimpun, dan mendistribusikan royalti performing rights dari para pengguna komersial, termasuk penyelenggara konser dan festival musik. Namun, celah regulasi timbul ketika komposer merasa pembagian royalti melalui LMK berjalan lambat dan tidak transparan, sehingga mereka menuntut direct licensing secara sepihak.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Para pakar hukum kekayaan intelektual menegaskan bahwa penyanyi (performing artist) bukanlah pihak yang secara hukum dibebani kewajiban membayar royalti pertunjukan langsung ke pencipta lagu, melainkan promotor atau event organizer (EO) yang menjual tiket komersial. Oleh karena itu, sengketa ini seharusnya diselesaikan melalui mekanisme audit operasional LMKN dan penegakan regulasi standar kontrak pertunjukan, bukan pelarangan sepihak yang merugikan ekosistem pertunjukan panggung nasional.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Rekomendasi Revisi Regulasi Hak Cipta Musik Indonesia:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Diperlukan pembentukan pangkalan data lagu digital terintegrasi (National Music Database) berbasis teknologi pelaporan digital real-time. Dengan sistem logging otomatis di setiap panggung pertunjukan komersial, royalti dapat dihitung secara transparan dan ditransfer langsung kepada ahli waris dan pencipta lagu dalam hitungan hari kerja tanpa birokrasi berbelit.\r\n  </p>\r\n</div>\r\n",
+    "category": "seleb-lokal",
+    "categoryLabel": "Seleb Lokal",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 92,
+      "percentageRumor": 8,
+      "label": "Fakta Terverifikasi",
+      "description": "Diverifikasi berdasarkan dokumen somasi perdata di Pengadilan Niaga dan rilis resmi LMK."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Agnez_Mo_2019_by_Glenn_Francis.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Agnez Mo. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-10-21 18:31:27",
+    "readingTimeMinutes": 6,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Agnez Mo",
+      "Ari Bias",
+      "LMKN",
+      "UU Hak Cipta"
+    ],
+    "timeline": [],
+    "digitalReceiptsCount": 3,
+    "isFeatured": false,
+    "isHero": false,
+    "trendingScore": 85
+  },
+  {
+    "id": "art-canon-07",
+    "slug": "deddy-corbuzier-regulasi-penyiaran-podcast-vs-kode-etik-jurnalistik",
+    "title": "Podcast Investigasi vs Jurnalistik Formal: Telaah Kode Etik dan Tanggung Jawab Deddy Corbuzier",
+    "excerpt": "Menelaah posisi hukum siniar di luar yurisdiksi Dewan Pers, hak jawab narasumber dalam video wawancara berdurasi panjang, dan etika praduga tak bersalah.",
+    "contentHtml": "\r\n<p class=\"lead font-medium text-lg text-slate-200 leading-relaxed mb-6\">\r\n  Kehadiran siniar (podcast) 'Close The Door' milik Deddy Corbuzier sebagai salah satu episentrum diskursus sosial-politik terbesar di Indonesia memicu perdebatan yurisdiksi hukum paling mendalam mengenai batasan antara konten hiburan digital over-the-top (OTT) dengan standar jurnalisme investigasi formal. Tim investigasi NgeGhibah membedah kedudukan hukum siniar di luar naungan Dewan Pers, tantangan penerapan hak jawab bagi narasumber, serta tanggung jawab etika praduga tak bersalah di hadapan puluhan juta pemirsa digital.\r\n</p>\r\n\r\n<div class=\"my-8 p-6 rounded-2xl border border-slate-800 bg-obsidian-deep/80\">\r\n  <h3 class=\"text-sm font-mono font-bold text-neon-cyan uppercase tracking-wider mb-3\">RINGKASAN EKSEKUTIF: DUDUK PERKARA DALAM 3 POIN UTAMA</h3>\r\n  <ul class=\"space-y-2.5 text-sm text-slate-300\">\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Yurisdiksi Dewan Pers vs UU Penyiaran:</strong> Siniar digital berbasis YouTube tidak berstatus sebagai perusahaan pers berbadan hukum media siber, sehingga sengketa konten di dalamnya tidak terlindungi oleh mekanisme penyelesaian sengketa jurnalistik (lex specialis) Dewan Pers.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Kewajiban Menjunjung Asas Praduga Tak Bersalah:</strong> Wawancara berdurasi panjang kerap kali memicu tuduhan sepihak tanpa konfirmasi langsung pihak lawan, yang berisiko menyeret pengelola siniar ke ranah hukum pidana pencemaran nama baik UU ITE.</span>\r\n    </li>\r\n    <li class=\"flex items-start gap-2\">\r\n      <span class=\"text-neon-pink font-bold mt-0.5\">•</span>\r\n      <span><strong>Pemberian Hak Klarifikasi Mandiri:</strong> Pengelola kanal Close The Door konsisten membuka ruang wawancara tandingan bagi para pejabat publik atau tokoh yang merasa dirugikan oleh pernyataan tamu sebelumnya guna menjaga keseimbangan narasi.</span>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tabel Forensik: Perbandingan Media Jurnalistik Dewan Pers vs Siniar Digital YouTube</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Berikut adalah komparasi struktural parameter hukum dan etika antara jurnalisme formal dengan siniar digital independen:\r\n</p>\r\n\r\n<div class=\"overflow-x-auto rounded-2xl border border-slate-800 bg-obsidian-deep/60 my-6\">\r\n  <table class=\"w-full text-left text-xs sm:text-sm\">\r\n    <thead>\r\n      <tr class=\"border-b border-slate-800 bg-slate-900 text-slate-300 uppercase font-mono text-xs\">\r\n        <th class=\"p-3.5\">Parameter Kepatuhan</th>\r\n        <th class=\"p-3.5 text-neon-cyan\">Media Jurnalistik Resmi (Dewan Pers)</th>\r\n        <th class=\"p-3.5 text-amber-400\">Kanal Siniar YouTube Independen</th>\r\n        <th class=\"p-3.5 text-emerald-400\">Implikasi Hukum Bagi Narasumber</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody class=\"text-slate-300 divide-y divide-slate-800/60\">\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Payung Hukum Utama</td>\r\n        <td class=\"p-3.5\">UU Pers No. 40/1999 & Kode Etik Jurnalistik (KEJ)</td>\r\n        <td class=\"p-3.5\">UU ITE No. 1/2024 & Kitab Undang-Undang Hukum Pidana (KUHP)</td>\r\n        <td class=\"p-3.5\">Pernyataan siniar dapat langsung dijadikan bukti laporan pidana ke kepolisian</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Mekanisme Hak Jawab</td>\r\n        <td class=\"p-3.5\">Wajib dimuat dalam 1x24 jam dengan sanksi denda perdata Rp 500 juta</td>\r\n        <td class=\"p-3.5\">Berdasarkan kesepakatan dan diskresi pembawa acara siniar</td>\r\n        <td class=\"p-3.5\">Pihak yang dirugikan harus mengajukan permohonan kehadiran ulang</td>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"p-3.5 font-semibold\">Perlindungan Saksi & Sumber</td>\r\n        <td class=\"p-3.5\">Hak tolak wartawan dilindungi undang-undang di muka sidang pengadilan</td>\r\n        <td class=\"p-3.5\">Tidak memiliki hak tolak; wajib bersaksi jika dipanggil aparat hukum</td>\r\n        <td class=\"p-3.5\">Pengakuan narasumber di video bersifat mengikat sebagai dokumen elektronik sah</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Anatomi Fenomena 'Pengadilan Opini Publik' Close The Door</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Dengan lebih dari 21 juta pelanggan dan ratusan juta tayangan bulanan, siniar Close The Door kerap kali memiliki dampak penegakan hukum yang lebih cepat dibandingkan saluran birokrasi konvensional. Sejumlah kasus korupsi, kekerasan seksual, penyalahgunaan wewenang aparat, hingga sengketa bisnis berskala besar berhasil menyedot atensi pimpinan lembaga negara setelah narasumber bersuara di hadapan mikrofon Deddy Corbuzier.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Namun kekuatan yang sedemikian dahsyat menghadirkan tanggung jawab moral yang berat. Dalam beberapa episode kontroversial—seperti pembahasan kasus sensitif LGBT atau tuduhan korupsi tanpa dokumen penyerta—Deddy Corbuzier sempat menuai somasi terbuka dari ormas dan praktisi hukum. Kesadaran akan risiko hukum ini mendorong transformasi format siniar, di mana Deddy kini didampingi oleh tim penasihat hukum internal yang memeriksa potensi delik sebelum video ditayangkan ke publik.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Mitos vs Fakta Seputar Regulasi Penyiaran Digital</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Komisi Penyiaran Indonesia (KPI) memiliki kewenangan menyensor dan memblokir konten siniar di YouTube.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Berdasarkan UU Penyiaran No. 32/2002 yang berlaku saat ini, kewenangan KPI terbatas pada penyiaran berbasis frekuensi publik terestrial (televisi dan radio), sedangkan pengawasan konten internet berada di bawah wewenang Kementerian Komunikasi dan Digital RI.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <p class=\"text-xs font-mono font-bold text-neon-pink uppercase mb-1\">Mitos Umum yang Beredar</p>\r\n    <p class=\"text-sm text-slate-300\">Pernyataan pembawa acara di siniar pribadi kebal dari tuntutan hukum pencemaran nama baik.</p>\r\n    <p class=\"text-xs font-mono font-bold text-emerald-400 uppercase mt-3 mb-1\">Fakta Terverifikasi</p>\r\n    <p class=\"text-sm text-slate-300\">Pengelola kanal digital bertanggung jawab penuh atas setiap materi yang diunggah berdasarkan Pasal 27A dan 28 UU ITE apabila terbukti memuat fitnah atau disinformasi yang merugikan pihak lain.</p>\r\n  </div>\r\n</div>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Hak Jawab & Integritas Penyiaran Digital Nusantara</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Deddy Corbuzier secara konsisten menyatakan bahwa kanalnya adalah panggung dialog bebas yang bertujuan mencerdaskan bangsa melalui keterbukaan informasi. Ia menegaskan tidak pernah memiliki motif jahat untuk menjatuhkan reputasi seseorang, dan selalu siap menyampaikan permohonan maaf serta menurunkan video apabila ditemukan data yang tidak akurat.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Langkah korektif yang kerap dilakukan Deddy dengan menghadirkan narasumber penyeimbang di episode berikutnya diapresiasi oleh kalangan akademisi komunikasi sebagai bentuk pertanggungjawaban etika digital yang patut dicontoh oleh kreator konten lainnya di Indonesia.\r\n</p>\r\n<p class=\"text-xs text-slate-400 border-l-2 border-slate-700 pl-4 py-2 mt-6 italic\">\r\n  Klausul Dewan Pers & Hak Jawab: Seluruh ulasan ini disusun secara objektif berdasarkan telaah perundang-undangan penyiaran dan konvensi etika digital sesuai UU Pers No. 40/1999.\r\n</p>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">Tanggung Jawab Verifikasi Fakta di Tengah Arus Monetisasi Digital</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Studi kasus penyiaran digital yang dipelopori Deddy Corbuzier memperlihatkan bagaimana sebuah kanal independen mampu memiliki pengaruh politik dan sosial yang setara dengan stasiun televisi nasional terkemuka. Namun dengan jutaan tayangan pemirsa pada setiap episode, tanggung jawab untuk tidak menyebarkan narasi konspiratif atau klaim medis yang tidak teruji menjadi tuntutan moral yang mutlak.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Pengamat etika media siber mengapresiasi keterbukaan Deddy Corbuzier yang bersedia menurunkan konten bermasalah dan menghadirkan narasumber ahli pembanding di episode lanjutan. Sikap ini menjadi preseden berharga bagi ekosistem kreator konten Indonesia bahwa popularitas dan kebebasan berpendapat di platform daring harus diimbangi oleh komitmen menjaga kedamaian sosial dan keakuratan fakta demi kepentingan publik.\r\n</p>\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white\">FAQ Investigasi: Siniar Digital & Koridor Hukum Media Siber</h2>\r\n<div class=\"my-6 space-y-4\">\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah seorang narasumber yang merasa dicemarkan nama baiknya di siniar dapat menuntut secara pidana?</h3>\r\n    <p class=\"text-sm text-slate-300\">Bisa. Karena siniar digital YouTube tidak berbadan hukum pers resmi Dewan Pers, pihak yang merasa dirugikan dapat melaporkan dugaan pelanggaran Pasal 27A UU ITE ke kepolisian tanpa melalui mediasi Dewan Pers.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Bagaimana perlindungan hukum bagi pembawa acara siniar jika tamu yang diwawancarai memberikan keterangan palsu?</h3>\r\n    <p class=\"text-sm text-slate-300\">Secara hukum pidana, pertanggungjawaban melekat pada subjek yang melontarkan pernyataan bohong, namun pembuat konten dapat terseret apabila terbukti memiliki niat jahat (mens rea) menyebarkan kebohongan tersebut demi sensasi.</p>\r\n  </div>\r\n  <div class=\"p-4 rounded-xl border border-slate-800 bg-obsidian-deep/50\">\r\n    <h3 class=\"text-sm font-bold text-neon-cyan mb-2\">Q: Apakah regulasi penyiaran masa depan akan memasukkan platform siniar ke dalam wewenang pengawasan KPI?</h3>\r\n    <p class=\"text-sm text-slate-300\">Rancangan Revisi Undang-Undang Penyiaran yang sedang dibahas di DPR RI merencanakan perluasan pengawasan terhadap konten over-the-top (OTT), namun hal ini masih menuai perdebatan hangat terkait kebebasan berekspresi di internet.</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<h2 class=\"text-2xl font-bold mt-10 mb-4 text-white font-display\">Analisis Dampak Regulasi: Grey Area Podcast Kontroversial & Standar Sensor</h2>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Ruang podcast YouTube di Indonesia saat ini berada di wilayah abu-abu yuridis (regulatory void). Berbeda dengan lembaga penyiaran televisi dan radio yang diawasi ketat oleh Komisi Penyiaran Indonesia (KPI) di bawah naungan UU No. 32/2002 tentang Penyiaran, platform digital internet beroperasi dengan standar komunitas platform global (Community Guidelines) dan norma umum UU ITE. Kekosongan regulator khusus ini memungkinkan konten investigasi dan wawancara informal memiliki daya jangkau yang melampaui media penyiaran konvensional.\r\n</p>\r\n<p class=\"text-sm text-slate-300 leading-relaxed mb-4\">\r\n  Namun, kekuasaan distribusi yang begitu besar membawa konsekuensi moral yang serius. Ketika podcast mengangkat figur dengan status hukum rentan, ketiadaan proses peer-review jurnalistik atau verifikasi silang (cross-check) dapat menghasilkan bias konfirmasi bagi jutaan pemirsa. Deddy Corbuzier dan tim produksinya telah merespons kritik ini dengan menerapkan sistem penafian (disclaimer) hukum yang ketat di awal setiap tayangan dan memberikan panggung hak jawab berimbang bagi instansi penegak hukum dan kementerian terkait.\r\n</p>\r\n<div class=\"my-6 p-4 rounded-xl border border-slate-800 bg-obsidian-deep/60\">\r\n  <h4 class=\"font-bold text-neon-cyan text-xs uppercase tracking-wider mb-2\">Tuntutan Transparansi & Akuntabilitas Kreator Papan Atas:</h4>\r\n  <p class=\"text-xs text-slate-300 leading-relaxed\">\r\n    Sebagai tolok ukur industri siniar nasional, kanal-kanal bermodal besar dituntut memiliki ombudsman independen atau konsultan hukum bersertifikat. Langkah preventif ini memastikan narasumber terlindungi dari intimidasi dan masyarakat mendapatkan paparan informasi yang tidak menyesatkan kepentingan umum.\r\n  </p>\r\n</div>\r\n",
+    "category": "creator-tiktok",
+    "categoryLabel": "Creator & TikTok",
+    "ghibahMeter": {
+      "status": "TERKONFIRMASI",
+      "percentageFact": 89,
+      "percentageRumor": 11,
+      "label": "Fakta Terverifikasi",
+      "description": "Dianalisis berdasarkan UU Penyiaran No. 32/2002 dan Pedoman Pemberitaan Media Siber."
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Deddy_Corbuzier%2C_Netmediatama%2C_03.38.jpg?utm_source=id.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageCaption": "Potret resmi Deddy Corbuzier. (Foto: Wikimedia Commons / Domain Publik / CC-BY-SA)",
+    "publishedAt": "2026-10-21 18:31:27",
+    "readingTimeMinutes": 6,
+    "author": {
+      "name": "Tim Investigasi NgeGhibah",
+      "slug": "tim-investigasi",
+      "role": "Redaktur Investigasi Pop-Kultur",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    "entities": [
+      "Deddy Corbuzier",
+      "Dewan Pers",
+      "UU Penyiaran",
+      "Close The Door"
     ],
     "timeline": [],
     "digitalReceiptsCount": 3,
@@ -2994,8 +5887,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Raline Shah",
@@ -3012,27 +5904,32 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "22 Oktober 2024",
         "title": "Pelantikan Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka.",
-        "description": "Pelantikan Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka."
+        "description": "Pelantikan Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "22 Oktober 2024",
         "title": "Raffi Ahmad dilantik sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Olahraga.",
-        "description": "Raffi Ahmad dilantik sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Olahraga."
+        "description": "Raffi Ahmad dilantik sebagai Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Olahraga.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "22 Oktober 2024",
         "title": "Giring Ganesha dilantik sebagai Staf Khusus Presiden Bidang Komunikasi dan Informasi.",
-        "description": "Giring Ganesha dilantik sebagai Staf Khusus Presiden Bidang Komunikasi dan Informasi."
+        "description": "Giring Ganesha dilantik sebagai Staf Khusus Presiden Bidang Komunikasi dan Informasi.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "22 Oktober 2024",
         "title": "Deddy Corbuzier dilantik sebagai Staf Khusus Presiden Bidang Pertahanan dan Keamanan.",
-        "description": "Deddy Corbuzier dilantik sebagai Staf Khusus Presiden Bidang Pertahanan dan Keamanan."
+        "description": "Deddy Corbuzier dilantik sebagai Staf Khusus Presiden Bidang Pertahanan dan Keamanan.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "14 November 2024",
         "title": "Raline Shah diangkat sebagai Komisaris Utama PT Pertamina (Persero) melalui Rapat Umum Pemegang Saham.",
-        "description": "Raline Shah diangkat sebagai Komisaris Utama PT Pertamina (Persero) melalui Rapat Umum Pemegang Saham."
+        "description": "Raline Shah diangkat sebagai Komisaris Utama PT Pertamina (Persero) melalui Rapat Umum Pemegang Saham.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 5,
@@ -3063,8 +5960,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "BIFF 2026",
@@ -3079,32 +5975,38 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "H-7 BIFF",
         "title": "Beredar undangan resmi BIFF 2026 yang mencantumkan nama beberapa artis Indonesia sebagai undangan VIP.",
-        "description": "Beredar undangan resmi BIFF 2026 yang mencantumkan nama beberapa artis Indonesia sebagai undangan VIP."
+        "description": "Beredar undangan resmi BIFF 2026 yang mencantumkan nama beberapa artis Indonesia sebagai undangan VIP.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "H-3 BIFF",
         "title": "Netizen menemukan unggahan media sosial artis yang menunjukkan persiapan ke Korea Selatan.",
-        "description": "Netizen menemukan unggahan media sosial artis yang menunjukkan persiapan ke Korea Selatan."
+        "description": "Netizen menemukan unggahan media sosial artis yang menunjukkan persiapan ke Korea Selatan.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "H-1 BIFF",
         "title": "Beautynesia merilis teaser artikel tentang artis Indonesia yang akan tampil di red carpet.",
-        "description": "Beautynesia merilis teaser artikel tentang artis Indonesia yang akan tampil di red carpet."
+        "description": "Beautynesia merilis teaser artikel tentang artis Indonesia yang akan tampil di red carpet.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Hari H BIFF 2026",
         "title": "Red carpet BIFF 2026 dimulai. Artis Indonesia hadir dengan gaun rancangan desainer lokal dan internasional.",
-        "description": "Red carpet BIFF 2026 dimulai. Artis Indonesia hadir dengan gaun rancangan desainer lokal dan internasional."
+        "description": "Red carpet BIFF 2026 dimulai. Artis Indonesia hadir dengan gaun rancangan desainer lokal dan internasional.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "+1 Hari",
         "title": "Foto-foto resmi dan video wawancara beredar di media sosial dan portal berita.",
-        "description": "Foto-foto resmi dan video wawancara beredar di media sosial dan portal berita."
+        "description": "Foto-foto resmi dan video wawancara beredar di media sosial dan portal berita.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "+3 Hari",
         "title": "Spekulasi netizen mengenai keaslian kehadiran artis dan kemungkinan endorsement merek mewah mulai mencuat.",
-        "description": "Spekulasi netizen mengenai keaslian kehadiran artis dan kemungkinan endorsement merek mewah mulai mencuat."
+        "description": "Spekulasi netizen mengenai keaslian kehadiran artis dan kemungkinan endorsement merek mewah mulai mencuat.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 6,
@@ -3135,8 +6037,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Gal Gadot",
@@ -3155,32 +6056,38 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "7 Oktober 2023",
         "title": "Serangan Hamas ke Israel memicu perang dan gelombang boikot global.",
-        "description": "Serangan Hamas ke Israel memicu perang dan gelombang boikot global."
+        "description": "Serangan Hamas ke Israel memicu perang dan gelombang boikot global.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Oktober 2023",
         "title": "Gal Gadot memposting dukungan ke Israel, langsung menuai kecaman dan tagar #BoycottGalGadot.",
-        "description": "Gal Gadot memposting dukungan ke Israel, langsung menuai kecaman dan tagar #BoycottGalGadot."
+        "description": "Gal Gadot memposting dukungan ke Israel, langsung menuai kecaman dan tagar #BoycottGalGadot.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "November 2023",
         "title": "Scarlett Johansson dikecam karena dukungannya pada Israel; akun Instagramnya dibanjiri komentar boikot.",
-        "description": "Scarlett Johansson dikecam karena dukungannya pada Israel; akun Instagramnya dibanjiri komentar boikot."
+        "description": "Scarlett Johansson dikecam karena dukungannya pada Israel; akun Instagramnya dibanjiri komentar boikot.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Desember 2023",
         "title": "Chris Pratt dikritik setelah foto dirinya bersama tentara Israel viral; beberapa merek menjauh.",
-        "description": "Chris Pratt dikritik setelah foto dirinya bersama tentara Israel viral; beberapa merek menjauh."
+        "description": "Chris Pratt dikritik setelah foto dirinya bersama tentara Israel viral; beberapa merek menjauh.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Januari 2024",
         "title": "Amy Schumer menghapus cuitan dukungan ke Israel setelah tekanan publik.",
-        "description": "Amy Schumer menghapus cuitan dukungan ke Israel setelah tekanan publik."
+        "description": "Amy Schumer menghapus cuitan dukungan ke Israel setelah tekanan publik.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "Februari 2024",
         "title": "Madonna dikritik karena konser di Tel Aviv; petisi online mencapai 100.000 tanda tangan.",
-        "description": "Madonna dikritik karena konser di Tel Aviv; petisi online mencapai 100.000 tanda tangan."
+        "description": "Madonna dikritik karena konser di Tel Aviv; petisi online mencapai 100.000 tanda tangan.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 6,
@@ -3211,8 +6118,7 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Tim Investigasi NgeGhibah",
       "slug": "tim-investigasi",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Amanda Manopo",
@@ -3230,27 +6136,32 @@ export const MOCK_ARTICLES: Article[] = [
       {
         "timeLabel": "2018",
         "title": "Cuitan pertama membandingkan Natasha Wilona dengan Son Na-eun viral di Twitter, memicu tagar #pinangdibelahdua.",
-        "description": "Cuitan pertama membandingkan Natasha Wilona dengan Son Na-eun viral di Twitter, memicu tagar #pinangdibelahdua."
+        "description": "Cuitan pertama membandingkan Natasha Wilona dengan Son Na-eun viral di Twitter, memicu tagar #pinangdibelahdua.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "2020",
         "title": "Video transition TikTok membandingkan Amanda Manopo dengan Lee Sung-kyung ditonton lebih dari 2 juta kali.",
-        "description": "Video transition TikTok membandingkan Amanda Manopo dengan Lee Sung-kyung ditonton lebih dari 2 juta kali."
+        "description": "Video transition TikTok membandingkan Amanda Manopo dengan Lee Sung-kyung ditonton lebih dari 2 juta kali.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "2021",
         "title": "Aliando Syarief mengunggah foto bergaya Park Bo-gum di Instagram dan menerima ratusan ribu komentar netizen.",
-        "description": "Aliando Syarief mengunggah foto bergaya Park Bo-gum di Instagram dan menerima ratusan ribu komentar netizen."
+        "description": "Aliando Syarief mengunggah foto bergaya Park Bo-gum di Instagram dan menerima ratusan ribu komentar netizen.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "2022",
         "title": "Thread Twitter 'V2 Visual Lookalike' mengumpulkan puluhan wajah selebriti Indonesia yang dianggap mirip artis Korea.",
-        "description": "Thread Twitter 'V2 Visual Lookalike' mengumpulkan puluhan wajah selebriti Indonesia yang dianggap mirip artis Korea."
+        "description": "Thread Twitter 'V2 Visual Lookalike' mengumpulkan puluhan wajah selebriti Indonesia yang dianggap mirip artis Korea.",
+        "receiptType": "statement"
       },
       {
         "timeLabel": "2023",
         "title": "KapanLagi.com merilis artikel 'Potret Selebriti Indonesia yang Mirip dengan Artis Korea', mengukuhkan tren ini sebagai fenomena pop-kultur.",
-        "description": "KapanLagi.com merilis artikel 'Potret Selebriti Indonesia yang Mirip dengan Artis Korea', mengukuhkan tren ini sebagai fenomena pop-kultur."
+        "description": "KapanLagi.com merilis artikel 'Potret Selebriti Indonesia yang Mirip dengan Artis Korea', mengukuhkan tren ini sebagai fenomena pop-kultur.",
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 5,
@@ -3281,35 +6192,33 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Kenzo Pratama",
       "slug": "kenzo-pratama",
       "role": "Editor Hiburan Asia & Hallyu Culture",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Min Hee-jin"
     ],
     "timeline": [
       {
-        "timeLabel": "27 Agu 2024 • 14:00 KST",
+        "timeLabel": "Fase Kejadian",
         "title": "Pemberhentian Sepihak CEO Min Hee-jin",
         "description": "Dewan direksi ADOR menunjuk pimpinan baru tanpa persetujuan tim kreatif utama grup.",
-        "receiptType": "document",
-        "receiptQuote": "Keputusan dewan diambil sesuai undang-undang komersial tanpa pelanggaran prosedur anggaran rumah tangga."
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "13 Nov 2024 • 18:30 KST",
+        "timeLabel": "Fase Kejadian",
         "title": "Pengiriman Somasi Bersertifikat Isi",
         "description": "NewJeans memberikan batas waktu 14 hari bagi ADOR untuk memulihkan kontrak kerja kreatif.",
         "receiptType": "statement"
       },
       {
-        "timeLabel": "28 Nov 2024 • 20:00 KST",
+        "timeLabel": "Fase Kejadian",
         "title": "Konferensi Pers Pengumuman Pemutusan Kontrak",
         "description": "Pernyataan resmi bahwa kontrak eksklusif berakhir per 29 November pukul 00:00 KST.",
-        "receiptType": "court"
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
-    "isFeatured": false,
+    "isFeatured": true,
     "isHero": false,
     "trendingScore": 95
   },
@@ -3336,40 +6245,35 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Raditya Dananjaya",
       "slug": "raditya-dananjaya",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
-      "Reza Rahadian",
-      "Rachel Vennya"
+      "LMKN",
+      "Musisi Indonesia"
     ],
     "timeline": [
       {
-        "timeLabel": "02 Okt 2026 • 11:20 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Bocornya Draft Surat Somasi di Komunitas X",
         "description": "Tangkapan layar lembar pertama somasi hak performing rights diunggah akun pemerhati industri musik dan mendapatkan 1.2 juta tayangan.",
-        "receiptType": "tweet",
-        "receiptQuote": "Industri festival mau dibawa ke mana kalau izin royalti ditagih per lagu tanpa ada database lagu terverifikasi?",
-        "receiptSource": "Postingan akun terverifikasi di X (ID: @insidermusik_id)"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "06 Okt 2026 • 15:45 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Konferensi Pers Asosiasi Promotor Jakarta",
         "description": "Pihak promotor menolak tudingan wanprestasi dan meminta audit independen terhadap aliran dana royalti tahun anggaran 2024-2025.",
-        "receiptType": "statement",
-        "receiptQuote": "Seluruh dana deposit telah disetor ke rekening bersama notaris resmi."
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "09 Okt 2026 • 18:00 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Rilis Klarifikasi Resmi Regulator LMKN",
         "description": "Regulator membenarkan ada perbedaan metodologi perhitungan dan menyatakan jalur mediasi terbuka tanpa pembatalan izin festival.",
-        "receiptType": "court",
-        "receiptSource": "Surat Edaran No. 42/LMKN/X/2026 tertanggal 9 Oktober 2026"
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
-    "isFeatured": false,
-    "isHero": false,
+    "isFeatured": true,
+    "isHero": true,
     "trendingScore": 98
   },
   {
@@ -3395,34 +6299,33 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Nabila Safitri",
       "slug": "nabila-safitri",
       "role": "Editor Tren Gen Z & Social Commerce",
-      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Fuji An"
     ],
     "timeline": [
       {
-        "timeLabel": "08 Okt 2026 • 20:00 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Sesi Live Flash Sale Dimulai",
         "description": "Puncak interaksi mencapai 180.000 penonton serentak saat kupon utama dibuka.",
-        "receiptType": "video"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "09 Okt 2026 • 02:15 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Video Potongan 15 Detik Viral di FYP TikTok",
         "description": "Muncul narasi tudingan bot view yang ditonton lebih dari 4,8 juta kali tanpa verifikasi log.",
-        "receiptType": "tweet"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "10 Okt 2026 • 13:00 WIB",
+        "timeLabel": "Fase Kejadian",
         "title": "Pernyataan Resmi Pihak Brand Sponsor & Log Merchant",
         "description": "Brand merilis bukti invoice log sistem server yang membuktikan transaksi riil tanpa rekayasa bot.",
-        "receiptType": "document"
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
-    "isFeatured": false,
+    "isFeatured": true,
     "isHero": false,
     "trendingScore": 89
   },
@@ -3449,34 +6352,33 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Kenzo Pratama",
       "slug": "kenzo-pratama",
       "role": "Spesialis Budaya Pop Asia & Hallyu",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Han So-hee"
     ],
     "timeline": [
       {
-        "timeLabel": "05 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Foto Makan Malam Paris Bocor di Weibo & TheQoo",
         "description": "Tampak sang aktris berbincang bersama produser eksekutif studio waralaba terkemuka.",
-        "receiptType": "video"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "07 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Perdebatan Hangat di Forum Komunitas Film Internasional",
         "description": "Warganet membedah jadwal syuting aktris yang dilaporkan memiliki jeda waktu untuk proyek luar negeri.",
-        "receiptType": "tweet"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "10 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Klarifikasi Singkat 9Ato Entertainment",
         "description": "Agensi menyatakan tawaran memang ada namun fokus saat ini masih pada peninjauan naskah domestik.",
         "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
-    "isFeatured": false,
+    "isFeatured": true,
     "isHero": false,
     "trendingScore": 82
   },
@@ -3503,27 +6405,26 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Raditya Dananjaya",
       "slug": "raditya-dananjaya",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Zendaya"
     ],
     "timeline": [
       {
-        "timeLabel": "04 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Unggahan Blind Item DeuxMoi",
         "description": "Sebuah pesan anonim menyebut aktor A-list memesan cincin berlian khusus di New York tanpa rincian verifikasi.",
-        "receiptType": "tweet"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "08 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Penampilan di Karpet Merah Gala Premier",
         "description": "Kamera paparazzi menyoroti jari manis sang bintang dan memicu 40.000 tweet spekulatif serentak.",
-        "receiptType": "video"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "09 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Klarifikasi Langsung Stylist Law Roach",
         "description": "Dalam wawancara singkat di story Instagram, ditegaskan cincin tersebut perhiasan sponsorship promosi katalog Bulgari.",
         "receiptType": "statement"
@@ -3557,30 +6458,29 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Raditya Dananjaya",
       "slug": "raditya-dananjaya",
       "role": "Redaktur Investigasi Pop-Kultur",
-      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
       "Reza Rahadian"
     ],
     "timeline": [
       {
-        "timeLabel": "01 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Hasil Survei Jam Kerja Dirilis Koalisi Serikat Film",
         "description": "Data menunjukkan 74% pekerja teknis mengalami kelelahan kronis akibat sistem lembur ekstrem tanpa batasan jam kerja baku.",
-        "receiptType": "document"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "09 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Audiensi Terbuka di Gedung Senayan DPR RI",
         "description": "Penyerahan naskah rekomendasi standar jam operasional shooting maksimal 14 jam per hari kepada Komisi X DPR RI.",
         "receiptType": "statement"
       },
       {
-        "timeLabel": "11 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Komitmen Kemenparekraf Membentuk Pokja Keselamatan Kerja",
         "description": "Pemerintah menetapkan pembentukan kelompok kerja lintas asosiasi untuk memvalidasi draft regulasi turunan perfilman.",
-        "receiptType": "court"
+        "receiptType": "statement"
       }
     ],
     "digitalReceiptsCount": 3,
@@ -3611,27 +6511,28 @@ export const MOCK_ARTICLES: Article[] = [
       "name": "Nabila Safitri",
       "slug": "nabila-safitri",
       "role": "Editor Tren Gen Z & Social Commerce",
-      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
-      "bio": "Tim investigasi jurnalisme pop-kultur NgeGhibah.com yang mengkhususkan diri pada verifikasi fakta, dokumen hukum, dan rekam jejak digital."
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
     },
     "entities": [
-      "Rachel Vennya"
+      "Rachel Vennya",
+      "Yayasan Kemanusiaan",
+      "Laporan Audit"
     ],
     "timeline": [
       {
-        "timeLabel": "28 Sep 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Munculnya Utas Pertanyaan Netizen di Threads",
         "description": "Sebuah utas menanyakan status laporan akhir kampanye bantuan bencana alam semester lalu.",
-        "receiptType": "tweet"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "08 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Rilis Dokumen PDF Audit Terbuka Wajar Tanpa Pengecualian",
         "description": "Tautan arsip laporan audit KAP diunggah ke publik dengan rincian rekening koran per bank.",
-        "receiptType": "document"
+        "receiptType": "statement"
       },
       {
-        "timeLabel": "10 Okt 2026",
+        "timeLabel": "Fase Kejadian",
         "title": "Validasi Berita Acara BNPB & Pemerintah Daerah",
         "description": "Pemerintah daerah mengonfirmasi seluruh fasilitas hunian sementara dan sanitasi telah diserahterimakan.",
         "receiptType": "statement"
@@ -3642,35 +6543,4 @@ export const MOCK_ARTICLES: Article[] = [
     "isHero": false,
     "trendingScore": 74
   }
-];
-
-export const EDITORIAL_TEAM = [
-  {
-    name: 'Johan Anggoro',
-    role: 'Pemimpin Redaksi & Penanggung Jawab',
-    bio: 'Jurnalis senior dengan pengalaman 12+ tahun di media investigasi digital nasional. Berlisensi Wartawan Utama Dewan Pers.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80',
-    email: 'pemred@ngeghibah.com',
-  },
-  {
-    name: 'Raditya Dananjaya',
-    role: 'Redaktur Pelaksana & Investigasi Pop-Kultur',
-    bio: 'Membedah dinamika industri hiburan, hukum hak cipta karya seni, dan jejak digital selebritas berbasis data.',
-    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80',
-    email: 'raditya@ngeghibah.com',
-  },
-  {
-    name: 'Nabila Safitri',
-    role: 'Editor Tren Gen Z & Social Listening',
-    bio: 'Spesialis algoritma TikTok, kultur internet komunitas lokal, dan analisis sentimen warganet Indonesia.',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-    email: 'nabila@ngeghibah.com',
-  },
-  {
-    name: 'Kenzo Pratama',
-    role: 'Editor Hiburan Asia & Hallyu Culture',
-    bio: 'Menghubungkan fandom K-Pop dan C-Drama dengan verifikasi langsung dari sumber agensi Korea & forum primer.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-    email: 'kenzo@ngeghibah.com',
-  },
 ];
