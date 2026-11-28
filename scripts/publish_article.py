@@ -127,11 +127,21 @@ def fetch_existing_canonical_titles() -> list[dict]:
     try:
         url = "https://ngeghibah-com.pages.dev/api/articles?limit=50"
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=5) as resp:
+        with urllib.request.urlopen(req, timeout=12) as resp:
             data = json.loads(resp.read().decode('utf-8'))
             return data.get('articles', [])
     except Exception as e:
-        print(f"[WARN] Unable to fetch existing articles from API: {e}", file=sys.stderr)
+        # Fallback to local mockData if network timeout
+        try:
+            import re
+            content = open('src/data/mockData.ts', encoding='utf-8').read()
+            idx = content.find('export const MOCK_ARTICLES')
+            if idx != -1:
+                slugs = re.findall(r'"slug":\s*"([^"]+)"', content[idx:])
+                titles = re.findall(r'"title":\s*"([^"]+)"', content[idx:])
+                return [{"slug": s, "title": t, "entities": []} for s, t in zip(slugs, titles)]
+        except Exception:
+            pass
         return []
 
 def check_anti_cannibalization(title: str, entities: list, existing_articles: list[dict]):
